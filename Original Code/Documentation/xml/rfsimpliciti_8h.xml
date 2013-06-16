@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="rfsimpliciti_8h" kind="file">
+    <compoundname>rfsimpliciti.h</compoundname>
+    <includedby refid="ports_8c" local="yes">driver/ports.c</includedby>
+    <includedby refid="radio_8c" local="yes">driver/radio.c</includedby>
+    <includedby refid="timer_8c" local="yes">driver/timer.c</includedby>
+    <includedby refid="bluerobin_8c" local="yes">logic/bluerobin.c</includedby>
+    <includedby refid="menu_8c" local="yes">logic/menu.c</includedby>
+    <includedby refid="miscellaneous_8c" local="yes">logic/miscellaneous.c</includedby>
+    <includedby refid="rfbsl_8c" local="yes">logic/rfbsl.c</includedby>
+    <includedby refid="rfsimpliciti_8c" local="yes">logic/rfsimpliciti.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <invincdepgraph>
+      <node id="760">
+        <label>logic/bluerobin.c</label>
+        <link refid="bluerobin_8c"/>
+      </node>
+      <node id="764">
+        <label>logic/rfsimpliciti.c</label>
+        <link refid="rfsimpliciti_8c"/>
+      </node>
+      <node id="756">
+        <label>logic/rfsimpliciti.h</label>
+        <link refid="rfsimpliciti.h"/>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>logic/miscellaneous.c</label>
+        <link refid="miscellaneous_8c"/>
+      </node>
+      <node id="763">
+        <label>logic/rfbsl.c</label>
+        <link refid="rfbsl_8c"/>
+      </node>
+      <node id="757">
+        <label>driver/ports.c</label>
+        <link refid="ports_8c"/>
+      </node>
+      <node id="765">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="761">
+        <label>logic/menu.c</label>
+        <link refid="menu_8c"/>
+      </node>
+      <node id="759">
+        <label>driver/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="758">
+        <label>driver/radio.c</label>
+        <link refid="radio_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structRFsmpl" prot="public">RFsmpl</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rfsimpliciti_8h_1af005638b3d4d8cc9a53127165a491400" prot="public" static="no">
+        <name>SIMPLICITI_TIMEOUT</name>
+        <initializer>(60*60u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="69" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rfsimpliciti_8h_1a0e1339bd3cddd1b3300dd80848a3b7ee" prot="public" static="no">
+        <name>SIMPLICITI_BUTTON_STAR</name>
+        <initializer>(0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="72" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rfsimpliciti_8h_1a1f1ba5ed5ef1b854fb3bebc2b143ec4e" prot="public" static="no">
+        <name>SIMPLICITI_BUTTON_NUM</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="73" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rfsimpliciti_8h_1ab14c52c7670c3561e6a6249018910ef0" prot="public" static="no">
+        <name>SIMPLICITI_BUTTON_UP</name>
+        <initializer>(0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="74" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rfsimpliciti_8h_1a7e674424242f145000fcda638bb075bf" prot="public" static="no">
+        <name>SIMPLICITI_MOUSE_EVENTS</name>
+        <initializer>(0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rfsimpliciti_8h_1a775d933598481b723bb320fa81001b65" prot="public" static="no">
+        <name>SIMPLICITI_KEY_EVENTS</name>
+        <initializer>(0x02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="78" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ece" prot="public" static="no">
+        <name>simpliciti_mode_t</name>
+        <enumvalue id="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceaa083e1c4ac61e1b1ebd8fc5e4992b42c" prot="public">
+          <name>SIMPLICITI_OFF</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceab617cc0e73b3a0bf07066829c50d79db" prot="public">
+          <name>SIMPLICITI_ACCELERATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea637c449e7db47e4a34b1917c7992b0e1" prot="public">
+          <name>SIMPLICITI_BUTTONS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea3a717bb98f32ad51adce08b87cb6f235" prot="public">
+          <name>SIMPLICITI_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="61" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="60" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rfsimpliciti_8h_1a9a51f364e8748548ef099cce13fa0bd5" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structRFsmpl" kindref="compound">RFsmpl</ref></type>
+        <definition>struct RFsmpl sRFsmpl</definition>
+        <argsstring></argsstring>
+        <name>sRFsmpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="91" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rfsimpliciti_8h_1a2fb62b29918d37d586bcff8d3b38af11" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char simpliciti_flag</definition>
+        <argsstring></argsstring>
+        <name>simpliciti_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="93" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rfsimpliciti_8h_1a862cd02b94eaccaeefa4758ce13de961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reset_rf</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset_rf</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="45" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="123" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1ab606024ff9ac8226f0cf736f7a108a3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sx_rf</definition>
+        <argsstring>(u8 line)</argsstring>
+        <name>sx_rf</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="46" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="139" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1acf60b6348792799e802ce78ee12e3769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sx_ppt</definition>
+        <argsstring>(u8 line)</argsstring>
+        <name>sx_ppt</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="47" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="158" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a5ac1d10c8b948f788cffe8305c5d5c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sx_sync</definition>
+        <argsstring>(u8 line)</argsstring>
+        <name>sx_sync</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="48" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="177" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a19b661dc625592d48c26f9cb735bc7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_rf</definition>
+        <argsstring>(u8 line, u8 update)</argsstring>
+        <name>display_rf</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="49" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="286" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a166e385e367acb928aad255b3feeef1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_ppt</definition>
+        <argsstring>(u8 line, u8 update)</argsstring>
+        <name>display_ppt</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="50" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="302" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a11fb6b98ca7d2d9186125289cb4e7b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_sync</definition>
+        <argsstring>(u8 line, u8 update)</argsstring>
+        <name>display_sync</name>
+        <param>
+          <type>u8</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="51" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="318" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a98d2d00c3ee3c5e9000a79bb4033d49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void send_smpl_data</definition>
+        <argsstring>(u16 data)</argsstring>
+        <name>send_smpl_data</name>
+        <param>
+          <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="rfsimpliciti_8h_1a53e5f49c84c63c0f47eac218ac64854a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 is_rf</definition>
+        <argsstring>(void)</argsstring>
+        <name>is_rf</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.c" bodystart="333" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>-<sp/>http://www.ti.com/<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>are<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RFSIMPLICITI_H_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RFSIMPLICITI_H_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Include<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prototypes<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a862cd02b94eaccaeefa4758ce13de961" kindref="member">reset_rf</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1ab606024ff9ac8226f0cf736f7a108a3e" kindref="member">sx_rf</ref>(u8<sp/>line);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1acf60b6348792799e802ce78ee12e3769" kindref="member">sx_ppt</ref>(u8<sp/>line);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a5ac1d10c8b948f788cffe8305c5d5c92" kindref="member">sx_sync</ref>(u8<sp/>line);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a19b661dc625592d48c26f9cb735bc7ca" kindref="member">display_rf</ref>(u8<sp/>line,<sp/>u8<sp/>update);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a166e385e367acb928aad255b3feeef1c" kindref="member">display_ppt</ref>(u8<sp/>line,<sp/>u8<sp/>update);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a11fb6b98ca7d2d9186125289cb4e7b56" kindref="member">display_sync</ref>(u8<sp/>line,<sp/>u8<sp/>update);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8h_1a98d2d00c3ee3c5e9000a79bb4033d49a" kindref="member">send_smpl_data</ref>(<ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/>data);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="rfsimpliciti_8c_1a53e5f49c84c63c0f47eac218ac64854a" kindref="member">is_rf</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defines<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SimpliciTI<sp/>connection<sp/>states</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ece" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62" refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceaa083e1c4ac61e1b1ebd8fc5e4992b42c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceaa083e1c4ac61e1b1ebd8fc5e4992b42c" kindref="member">SIMPLICITI_OFF</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Not<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceab617cc0e73b3a0bf07066829c50d79db" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38eceab617cc0e73b3a0bf07066829c50d79db" kindref="member">SIMPLICITI_ACCELERATION</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmitting<sp/>acceleration<sp/>data<sp/>and<sp/>button<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea637c449e7db47e4a34b1917c7992b0e1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea637c449e7db47e4a34b1917c7992b0e1" kindref="member">SIMPLICITI_BUTTONS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transmitting<sp/>button<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea3a717bb98f32ad51adce08b87cb6f235" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ecea3a717bb98f32ad51adce08b87cb6f235" kindref="member">SIMPLICITI_SYNC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Syncing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ece" kindref="member">simpliciti_mode_t</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stop<sp/>SimpliciTI<sp/>transmission<sp/>after<sp/>60<sp/>minutes<sp/>to<sp/>save<sp/>power</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="rfsimpliciti_8h_1af005638b3d4d8cc9a53127165a491400" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(60*60u)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Button<sp/>flags<sp/>for<sp/>SimpliciTI<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="rfsimpliciti_8h_1a0e1339bd3cddd1b3300dd80848a3b7ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_BUTTON_STAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x10)</highlight></codeline>
+<codeline lineno="73" refid="rfsimpliciti_8h_1a1f1ba5ed5ef1b854fb3bebc2b143ec4e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_BUTTON_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x20)</highlight></codeline>
+<codeline lineno="74" refid="rfsimpliciti_8h_1ab14c52c7670c3561e6a6249018910ef0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_BUTTON_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x30)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SimpliciTI<sp/>mode<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="rfsimpliciti_8h_1a7e674424242f145000fcda638bb075bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_MOUSE_EVENTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)</highlight></codeline>
+<codeline lineno="78" refid="rfsimpliciti_8h_1a775d933598481b723bb320fa81001b65" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIMPLICITI_KEY_EVENTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>Variable<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structRFsmpl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structRFsmpl" kindref="compound">RFsmpl</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SIMPLICITI_OFF,<sp/>SIMPLICITI_ACCELERATION,<sp/>SIMPLICITI_BUTTONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structRFsmpl_1acd0291bcfc1da85956dd49b6b90e6ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ece" kindref="member">simpliciti_mode_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structRFsmpl_1acd0291bcfc1da85956dd49b6b90e6ca3" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Timeout<sp/>until<sp/>SimpliciTI<sp/>transmission<sp/>is<sp/>automatically<sp/>stopped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="structRFsmpl_1a735bf6536b07682f96c9417b0f1e9079" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structRFsmpl_1a735bf6536b07682f96c9417b0f1e9079" kindref="member">timeout</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structRFsmpl" kindref="compound">RFsmpl</ref><sp/><ref refid="rfsimpliciti_8c_1a9a51f364e8748548ef099cce13fa0bd5" kindref="member">sRFsmpl</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Extern<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*RFSIMPLICITI_H_*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h"/>
+  </compounddef>
+</doxygen>

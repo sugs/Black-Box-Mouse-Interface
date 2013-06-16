@@ -1,0 +1,261 @@
+.TH "driver/ports.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/ports.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "union \fBs_button_flags\fP"
+.br
+.ti -1c
+.RI "struct \fBstruct_button\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBUTTONS_IN\fP   (P2IN)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_OUT\fP   (P2OUT)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_DIR\fP   (P2DIR)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_DS\fP   (P2DS)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_REN\fP   (P2REN)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_IE\fP   (P2IE)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_IES\fP   (P2IES)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_IFG\fP   (P2IFG)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_IRQ_VECT2\fP   (PORT2_VECTOR)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_STAR_PIN\fP   (BIT2)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_NUM_PIN\fP   (BIT1)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_UP_PIN\fP   (BIT4)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_DOWN_PIN\fP   (BIT0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_BACKLIGHT_PIN\fP   (BIT3)"
+.br
+.ti -1c
+.RI "#define \fBALL_BUTTONS\fP   (\fBBUTTON_STAR_PIN\fP + \fBBUTTON_NUM_PIN\fP + \fBBUTTON_UP_PIN\fP + \fBBUTTON_DOWN_PIN\fP + \fBBUTTON_BACKLIGHT_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_STAR_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_STAR_PIN\fP) == \fBBUTTON_STAR_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_NUM_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_NUM_PIN\fP) == \fBBUTTON_NUM_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_UP_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_UP_PIN\fP) == \fBBUTTON_UP_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_DOWN_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_DOWN_PIN\fP) == \fBBUTTON_DOWN_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_BACKLIGHT_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_BACKLIGHT_PIN\fP) == \fBBUTTON_BACKLIGHT_PIN\fP)"
+.br
+.ti -1c
+.RI "#define \fBNO_BUTTON_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBALL_BUTTONS\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_STAR_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_STAR_PIN\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_NUM_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_NUM_PIN\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_UP_IS_RELEASED\fP   (\fBBUTTONS_IN\fP & \fBBUTTON_UP_PIN\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_DOWN_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_DOWN_PIN\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTON_BACKLIGHT_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_BACKLIGHT_PIN\fP) == 0)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_DEBOUNCE_TIME_IN\fP   (5u)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_DEBOUNCE_TIME_OUT\fP   (250u)"
+.br
+.ti -1c
+.RI "#define \fBBUTTONS_DEBOUNCE_TIME_LEFT\fP   (50u)"
+.br
+.ti -1c
+.RI "#define \fBLEFT_BUTTON_LONG_TIME\fP   (2u)"
+.br
+.ti -1c
+.RI "#define \fBINACTIVITY_TIME\fP   (30u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbutton_repeat_on\fP (\fBu16\fP msec)"
+.br
+.ti -1c
+.RI "void \fBbutton_repeat_off\fP (void)"
+.br
+.ti -1c
+.RI "void \fBbutton_repeat_function\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinit_buttons\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBs_button_flags\fP \fBbutton\fP"
+.br
+.ti -1c
+.RI "struct \fBstruct_button\fP \fBsButton\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBALL_BUTTONS\fP   (\fBBUTTON_STAR_PIN\fP + \fBBUTTON_NUM_PIN\fP + \fBBUTTON_UP_PIN\fP + \fBBUTTON_DOWN_PIN\fP + \fBBUTTON_BACKLIGHT_PIN\fP)"
+.PP
+Definition at line 59 of file ports\&.h\&.
+.SS "#define \fBBUTTON_BACKLIGHT_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_BACKLIGHT_PIN\fP) == \fBBUTTON_BACKLIGHT_PIN\fP)"
+.PP
+Definition at line 66 of file ports\&.h\&.
+.SS "#define \fBBUTTON_BACKLIGHT_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_BACKLIGHT_PIN\fP) == 0)"
+.PP
+Definition at line 74 of file ports\&.h\&.
+.SS "#define \fBBUTTON_BACKLIGHT_PIN\fP   (BIT3)"
+.PP
+Definition at line 58 of file ports\&.h\&.
+.SS "#define \fBBUTTON_DOWN_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_DOWN_PIN\fP) == \fBBUTTON_DOWN_PIN\fP)"
+.PP
+Definition at line 65 of file ports\&.h\&.
+.SS "#define \fBBUTTON_DOWN_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_DOWN_PIN\fP) == 0)"
+.PP
+Definition at line 73 of file ports\&.h\&.
+.SS "#define \fBBUTTON_DOWN_PIN\fP   (BIT0)"
+.PP
+Definition at line 57 of file ports\&.h\&.
+.SS "#define \fBBUTTON_NUM_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_NUM_PIN\fP) == \fBBUTTON_NUM_PIN\fP)"
+.PP
+Definition at line 63 of file ports\&.h\&.
+.SS "#define \fBBUTTON_NUM_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_NUM_PIN\fP) == 0)"
+.PP
+Definition at line 71 of file ports\&.h\&.
+.SS "#define \fBBUTTON_NUM_PIN\fP   (BIT1)"
+.PP
+Definition at line 55 of file ports\&.h\&.
+.SS "#define \fBBUTTON_STAR_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_STAR_PIN\fP) == \fBBUTTON_STAR_PIN\fP)"
+.PP
+Definition at line 62 of file ports\&.h\&.
+.SS "#define \fBBUTTON_STAR_IS_RELEASED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_STAR_PIN\fP) == 0)"
+.PP
+Definition at line 70 of file ports\&.h\&.
+.SS "#define \fBBUTTON_STAR_PIN\fP   (BIT2)"
+.PP
+Definition at line 54 of file ports\&.h\&.
+.SS "#define \fBBUTTON_UP_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBBUTTON_UP_PIN\fP) == \fBBUTTON_UP_PIN\fP)"
+.PP
+Definition at line 64 of file ports\&.h\&.
+.SS "#define \fBBUTTON_UP_IS_RELEASED\fP   (\fBBUTTONS_IN\fP & \fBBUTTON_UP_PIN\fP) == 0)"
+.PP
+Definition at line 72 of file ports\&.h\&.
+.SS "#define \fBBUTTON_UP_PIN\fP   (BIT4)"
+.PP
+Definition at line 56 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_DEBOUNCE_TIME_IN\fP   (5u)"
+.PP
+Definition at line 77 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_DEBOUNCE_TIME_LEFT\fP   (50u)"
+.PP
+Definition at line 79 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_DEBOUNCE_TIME_OUT\fP   (250u)"
+.PP
+Definition at line 78 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_DIR\fP   (P2DIR)"
+.PP
+Definition at line 45 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_DS\fP   (P2DS)"
+.PP
+Definition at line 46 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_IE\fP   (P2IE)"
+.PP
+Definition at line 48 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_IES\fP   (P2IES)"
+.PP
+Definition at line 49 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_IFG\fP   (P2IFG)"
+.PP
+Definition at line 50 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_IN\fP   (P2IN)"
+.PP
+Definition at line 43 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_IRQ_VECT2\fP   (PORT2_VECTOR)"
+.PP
+Definition at line 51 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_OUT\fP   (P2OUT)"
+.PP
+Definition at line 44 of file ports\&.h\&.
+.SS "#define \fBBUTTONS_REN\fP   (P2REN)"
+.PP
+Definition at line 47 of file ports\&.h\&.
+.SS "#define \fBINACTIVITY_TIME\fP   (30u)"
+.PP
+Definition at line 85 of file ports\&.h\&.
+.SS "#define \fBLEFT_BUTTON_LONG_TIME\fP   (2u)"
+.PP
+Definition at line 82 of file ports\&.h\&.
+.SS "#define \fBNO_BUTTON_IS_PRESSED\fP   ((\fBBUTTONS_IN\fP & \fBALL_BUTTONS\fP) == 0)"
+.PP
+Definition at line 67 of file ports\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBbutton_repeat_function\fP (void)"
+.PP
+Definition at line 376 of file ports\&.c\&.
+.SS "void \fBbutton_repeat_off\fP (void)"
+.PP
+Definition at line 359 of file ports\&.c\&.
+.SS "void \fBbutton_repeat_on\fP (\fBu16\fPmsec)"
+.PP
+Definition at line 340 of file ports\&.c\&.
+.SS "void \fBinit_buttons\fP (void)"
+.PP
+Definition at line 93 of file ports\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "volatile \fBs_button_flags\fP \fBbutton\fP"
+.PP
+Definition at line 78 of file ports\&.c\&.
+.SS "struct \fBstruct_button\fP \fBsButton\fP"
+.PP
+Definition at line 79 of file ports\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

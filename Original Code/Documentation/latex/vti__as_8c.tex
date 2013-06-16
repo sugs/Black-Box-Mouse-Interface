@@ -1,0 +1,141 @@
+\hypertarget{vti__as_8c}{\section{driver/vti\-\_\-as.c \-File \-Reference}
+\label{vti__as_8c}\index{driver/vti\-\_\-as.\-c@{driver/vti\-\_\-as.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}simpliciti.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}vti\-\_\-as.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}timer.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vti__as_8c_a249c380f9714070193dec9ea88ae3771}{\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R}~(30u)
+\item 
+\#define \hyperlink{vti__as_8c_a451a221e35cdb929583fc575f345a0dc}{\-A\-S\-\_\-\-R\-A\-N\-G\-E}~(2u)
+\item 
+\#define \hyperlink{vti__as_8c_ab72f9da9662f504d53fae09ea4ffa745}{\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E}~(100u)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{vti__as_8c_af9db1a3c5e51ad4d8fb9256d147d4f53}{as\-\_\-start} (void)
+\item 
+void \hyperlink{vti__as_8c_a73481abbeea9355be57fe38b57a79a12}{as\-\_\-stop} (void)
+\item 
+u8 \hyperlink{vti__as_8c_a96fa55d744e21354a039b2b45fe1917f}{as\-\_\-read\-\_\-register} (u8 b\-Address)
+\item 
+u8 \hyperlink{vti__as_8c_a9933ee19268e3864a1415eaf264bd91d}{as\-\_\-write\-\_\-register} (u8 b\-Address, u8 b\-Data)
+\item 
+void \hyperlink{vti__as_8c_a4164ccb278788e063b953efc19e6c296}{as\-\_\-init} (void)
+\item 
+void \hyperlink{vti__as_8c_aa26d0fadf1914407ef42e4ae289f91ae}{as\-\_\-get\-\_\-data} (u8 $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+u8 \hyperlink{vti__as_8c_a0502b27bc40d9a2881d4ed789ecda353}{as\-\_\-ok}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{vti__as_8c_a249c380f9714070193dec9ea88ae3771}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R@{\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R}}
+\index{\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R@{\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{\-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-S\-\_\-\-B\-R\-\_\-\-D\-I\-V\-I\-D\-E\-R}~(30u)}}\label{vti__as_8c_a249c380f9714070193dec9ea88ae3771}
+
+
+\-Definition at line 70 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_a451a221e35cdb929583fc575f345a0dc}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!\-A\-S\-\_\-\-R\-A\-N\-G\-E@{\-A\-S\-\_\-\-R\-A\-N\-G\-E}}
+\index{\-A\-S\-\_\-\-R\-A\-N\-G\-E@{\-A\-S\-\_\-\-R\-A\-N\-G\-E}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{\-A\-S\-\_\-\-R\-A\-N\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-S\-\_\-\-R\-A\-N\-G\-E}~(2u)}}\label{vti__as_8c_a451a221e35cdb929583fc575f345a0dc}
+
+
+\-Definition at line 74 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_ab72f9da9662f504d53fae09ea4ffa745}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E@{\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E}}
+\index{\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E@{\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{\-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-S\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-R\-A\-T\-E}~(100u)}}\label{vti__as_8c_ab72f9da9662f504d53fae09ea4ffa745}
+
+
+\-Definition at line 79 of file vti\-\_\-as.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{vti__as_8c_aa26d0fadf1914407ef42e4ae289f91ae}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-get\-\_\-data@{as\-\_\-get\-\_\-data}}
+\index{as\-\_\-get\-\_\-data@{as\-\_\-get\-\_\-data}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-get\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf as\-\_\-get\-\_\-data} (
+\begin{DoxyParamCaption}
+\item[{u8 $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_aa26d0fadf1914407ef42e4ae289f91ae}
+
+
+\-Definition at line 345 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_a4164ccb278788e063b953efc19e6c296}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-init@{as\-\_\-init}}
+\index{as\-\_\-init@{as\-\_\-init}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf as\-\_\-init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_a4164ccb278788e063b953efc19e6c296}
+
+
+\-Definition at line 100 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_a96fa55d744e21354a039b2b45fe1917f}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-read\-\_\-register@{as\-\_\-read\-\_\-register}}
+\index{as\-\_\-read\-\_\-register@{as\-\_\-read\-\_\-register}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-read\-\_\-register}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf as\-\_\-read\-\_\-register} (
+\begin{DoxyParamCaption}
+\item[{u8}]{b\-Address}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_a96fa55d744e21354a039b2b45fe1917f}
+
+
+\-Definition at line 242 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_af9db1a3c5e51ad4d8fb9256d147d4f53}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-start@{as\-\_\-start}}
+\index{as\-\_\-start@{as\-\_\-start}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf as\-\_\-start} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_af9db1a3c5e51ad4d8fb9256d147d4f53}
+
+
+\-Definition at line 134 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_a73481abbeea9355be57fe38b57a79a12}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-stop@{as\-\_\-stop}}
+\index{as\-\_\-stop@{as\-\_\-stop}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf as\-\_\-stop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_a73481abbeea9355be57fe38b57a79a12}
+
+
+\-Definition at line 212 of file vti\-\_\-as.\-c.
+
+\hypertarget{vti__as_8c_a9933ee19268e3864a1415eaf264bd91d}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-write\-\_\-register@{as\-\_\-write\-\_\-register}}
+\index{as\-\_\-write\-\_\-register@{as\-\_\-write\-\_\-register}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-write\-\_\-register}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf as\-\_\-write\-\_\-register} (
+\begin{DoxyParamCaption}
+\item[{u8}]{b\-Address, }
+\item[{u8}]{b\-Data}
+\end{DoxyParamCaption}
+)}}\label{vti__as_8c_a9933ee19268e3864a1415eaf264bd91d}
+
+
+\-Definition at line 294 of file vti\-\_\-as.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{vti__as_8c_a0502b27bc40d9a2881d4ed789ecda353}{\index{vti\-\_\-as.\-c@{vti\-\_\-as.\-c}!as\-\_\-ok@{as\-\_\-ok}}
+\index{as\-\_\-ok@{as\-\_\-ok}!vti_as.c@{vti\-\_\-as.\-c}}
+\subsubsection[{as\-\_\-ok}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf as\-\_\-ok}}}\label{vti__as_8c_a0502b27bc40d9a2881d4ed789ecda353}
+
+
+\-Definition at line 86 of file vti\-\_\-as.\-c.
+

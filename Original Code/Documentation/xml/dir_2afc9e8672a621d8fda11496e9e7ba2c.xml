@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_2afc9e8672a621d8fda11496e9e7ba2c" kind="dir">
+    <compoundname>simpliciti/Components/mrfi/</compoundname>
+    <innerdir refid="dir_68c135b92cf38deb5aa413c9cfa5b89a">simpliciti/Components/mrfi/radios/</innerdir>
+    <innerdir refid="dir_0e54eeccf7c49dd588fe3e48136f2a15">simpliciti/Components/mrfi/smartrf/</innerdir>
+    <innerfile refid="mrfi_8c">mrfi.c</innerfile>
+    <innerfile refid="mrfi_8h">mrfi.h</innerfile>
+    <innerfile refid="mrfi__defs_8h">mrfi_defs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/"/>
+  </compounddef>
+</doxygen>

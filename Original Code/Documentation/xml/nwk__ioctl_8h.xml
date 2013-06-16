@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="nwk__ioctl_8h" kind="file">
+    <compoundname>nwk_ioctl.h</compoundname>
+    <includedby refid="nwk__app_8h" local="yes">simpliciti/Components/nwk/nwk_app.h</includedby>
+    <includedby refid="nwk__ioctl_8c" local="yes">simpliciti/Components/nwk_applications/nwk_ioctl.c</includedby>
+    <invincdepgraph>
+      <node id="1538">
+        <label>simpliciti/Components/nwk_applications/nwk_ioctl.c</label>
+        <link refid="nwk__ioctl_8c"/>
+      </node>
+      <node id="1533">
+        <label>simpliciti/Components/nwk_applications/nwk_ioctl.h</label>
+        <link refid="nwk_ioctl.h"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <link refid="nwk__api_8c"/>
+      </node>
+      <node id="1534">
+        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <link refid="nwk__app_8h"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <link refid="nwk__frame_8c"/>
+      </node>
+      <node id="1535">
+        <label>simpliciti/Components/nwk/nwk.c</label>
+        <link refid="nwk_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nwk__ioctl_8h_1a095a8893e6e28268e5ab7fe42a69060b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_rawSend</definition>
+        <argsstring>(ioctlRawSend_t *)</argsstring>
+        <name>nwk_rawSend</name>
+        <param>
+          <type><ref refid="structioctlRawSend__t" kindref="compound">ioctlRawSend_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h" line="44" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c" bodystart="102" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__ioctl_8h_1ab727170aa081edd3edd6b4413267bade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_rawReceive</definition>
+        <argsstring>(ioctlRawReceive_t *)</argsstring>
+        <name>nwk_rawReceive</name>
+        <param>
+          <type><ref refid="structioctlRawReceive__t" kindref="compound">ioctlRawReceive_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h" line="45" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c" bodystart="154" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__ioctl_8h_1a706030b4be82385bd7c0726b5282c3d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_radioControl</definition>
+        <argsstring>(ioctlAction_t, void *)</argsstring>
+        <name>nwk_radioControl</name>
+        <param>
+          <type><ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref></type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h" line="46" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c" bodystart="176" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__ioctl_8h_1adbb0c5472444d77fda4b96fe8bcd068b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_deviceAddress</definition>
+        <argsstring>(ioctlAction_t, addr_t *)</argsstring>
+        <name>nwk_deviceAddress</name>
+        <param>
+          <type><ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structaddr__t" kindref="compound">addr_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h" line="47" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c" bodystart="293" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__ioctl_8h_1ab2cc7febe28d96f876348c93caf0de2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_connectionControl</definition>
+        <argsstring>(ioctlAction_t, void *)</argsstring>
+        <name>nwk_connectionControl</name>
+        <param>
+          <type><ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref></type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h" line="48" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c" bodystart="330" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Filename:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>nwk_ioctl.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2008-04-29<sp/>15:47:05<sp/>-0700<sp/>(Tue,<sp/>29<sp/>Apr<sp/>2008)<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>16972<sp/>$</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Author:<sp/>lfriedman<sp/>$</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>Description:<sp/><sp/><sp/><sp/>This<sp/>header<sp/>file<sp/>supports<sp/>the<sp/>SimpliciTI<sp/>IOCTL<sp/>implmentation.<sp/>This<sp/>interface</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gives<sp/>applications<sp/>access<sp/>to<sp/>the<sp/>&quot;driver&quot;<sp/>network<sp/>level<sp/>functions</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when<sp/>necessary.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>Copyright<sp/>2004-2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NWK_IOCTL_H</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NWK_IOCTL_H</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__ioctl_8c_1a2eb9e1b72fda1e4548c19694318d8019" kindref="member">nwk_rawSend</ref>(<ref refid="structioctlRawSend__t" kindref="compound">ioctlRawSend_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__ioctl_8c_1ac1d4a52ef7b3fd41caed59e9ffcfc4a5" kindref="member">nwk_rawReceive</ref>(<ref refid="structioctlRawReceive__t" kindref="compound">ioctlRawReceive_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__ioctl_8c_1aede94bd92bd4a2df0b5e6f062192b107" kindref="member">nwk_radioControl</ref>(<ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__ioctl_8c_1a40b557f449fcf1eabf2e2260d6be6eed" kindref="member">nwk_deviceAddress</ref>(<ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref>,<sp/><ref refid="structaddr__t" kindref="compound">addr_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__ioctl_8c_1a8459b9c1c7799b27f49912c72e73b94e" kindref="member">nwk_connectionControl</ref>(<ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ACCESS_POINT</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/>nwk_joinContext(<ref refid="nwk__types_8h_1a4def9e3c3c03c7df1f33000141ad569f" kindref="member">ioctlAction_t</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,357 @@
+\hypertarget{clock_8c}{\section{logic/clock.c \-File \-Reference}
+\label{clock_8c}\index{logic/clock.\-c@{logic/clock.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ports.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}timer.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}menu.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}clock.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}user.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bluerobin.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}date.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}random.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}agility.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display2.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}miscellaneous.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{clock_8c_aced30d6ba605baf9aca86d4e9a3671f3}{\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}~(0)
+\item 
+\#define \hyperlink{clock_8c_af20030df14a10a1460ac01cd464b12ee}{\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}~(0)
+\item 
+\#define \hyperlink{clock_8c_a280bb7dbde358a0322c4f21e61b79059}{\-D\-S\-T\-\_\-\-N\-O}~0
+\item 
+\#define \hyperlink{clock_8c_a62e6bcad0b96dfe2a408e21f15bac03a}{\-D\-S\-T\-\_\-\-A\-U\-T\-O}~1
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{clock_8c_a7ad7026db6e5f41704969676a27b892e}{reset\-\_\-clock} (void)
+\item 
+void \hyperlink{clock_8c_a4529daa6019ff1f8d068a0d6d4cfbdbf}{clock\-\_\-tick} (void)
+\item 
+void \hyperlink{clock_8c_a39323e613b864c2c65abbe8364089fe5}{mx\-\_\-time} (u8 line)
+\item 
+void \hyperlink{clock_8c_af7625f9c761c24317a37f032b2c1c148}{sx\-\_\-time} (u8 line)
+\item 
+void \hyperlink{clock_8c_a588d2cb34e4b401aa3dba1a4db34f2fa}{calc\-\_\-24\-H\-\_\-to\-\_\-12\-H} (u8 $\ast$hours, u8 $\ast$time\-A\-M)
+\item 
+void \hyperlink{clock_8c_a68a4d19794b01fd576db257fe8ae8572}{conv\-\_\-24\-H\-\_\-to\-\_\-12\-H} (u8 $\ast$hours24, u8 $\ast$hours12, u8 $\ast$time\-A\-Mor\-P\-M)
+\item 
+void \hyperlink{clock_8c_a920c19be555f3778d7e489abae91a577}{number\-\_\-storage\-\_\-tick} (void)
+\item 
+void \hyperlink{clock_8c_a5510e885f7071507a576312afdaf3336}{init\-\_\-ucs} (void)
+\item 
+void \hyperlink{clock_8c_a83cde649caa3c248cc99975ffcab1b5d}{cdtimer\-\_\-tick} (void)
+\item 
+void \hyperlink{clock_8c_ad66abdd64bde75e3b0b96161369f7cdf}{check\-\_\-ucs} (void)
+\item 
+u8 \hyperlink{clock_8c_a43c6a6293f71980edd0e4c772b9ace65}{convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format} (u8 hour)
+\item 
+u8 \hyperlink{clock_8c_a63c7276c5fd65a2c328afc77a868eb63}{is\-\_\-hour\-\_\-am} (u8 hour)
+\item 
+void \hyperlink{clock_8c_ab072847bdd3fedefe5ba4803715e2d9c}{display\-\_\-selection\-\_\-\-Timeformat1} (u8 segments, u32 index, u8 digits, u8 blanks)
+\item 
+void \hyperlink{clock_8c_ae30e1ec1937f55b9800d75e22c1de18c}{display\-\_\-time} (u8 line, u8 update)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-no\-\_\-init struct \hyperlink{structtime}{time} \hyperlink{clock_8c_a5be1b8e878f6ffbf15842d27770f72b0}{s\-Time}
+\item 
+u8 \hyperlink{clock_8c_a3020d8a6046c3faba562e3761318cf06}{\-Time\-Correction\-Flag}
+\item 
+u8 \hyperlink{clock_8c_ab337c12872b9ac61e51320d9d411e6f2}{\-D\-S\-T\-\_\-\-Correction\-Flag}
+\item 
+u8 \hyperlink{clock_8c_adce990b900a2532c257eb7b131b5118b}{\-D\-S\-T\-\_\-\-Auto\-Flag}
+\item 
+s8 \hyperlink{clock_8c_a3b05b0a79e906f6016388f3fddfb2848}{\-Daily\-Corr}
+\item 
+s8 \hyperlink{clock_8c_a93ee6853a128e24a80678f799c3da25b}{\-Weekly\-Corr}
+\item 
+u8 \hyperlink{clock_8c_a85fdc1b2cb5fabc3b8b255558b119346}{\-Bl\-On\-Flag}
+\item 
+u8 \hyperlink{clock_8c_ad9603623c10bb7d0199771117d9fe0f2}{\-Bl\-Timeout\-Counter} = 0
+\item 
+const u8 \hyperlink{clock_8c_a8bec0b207346f3af4711453325a07966}{selection\-\_\-\-Timeformat} \mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}
+\item 
+void($\ast$ \hyperlink{clock_8c_aba4d202f2088c6de95b88c0082283299}{fptr\-\_\-lcd\-\_\-function\-\_\-line1} )(u8 line, u8 update)
+\item 
+void($\ast$ \hyperlink{clock_8c_a67551f5f915e3d572eff4ea2ddd9067f}{fptr\-\_\-lcd\-\_\-function\-\_\-line2} )(u8 line, u8 update)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{clock_8c_aced30d6ba605baf9aca86d4e9a3671f3}{\index{clock.\-c@{clock.\-c}!\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}!clock.c@{clock.\-c}}
+\subsubsection[{\-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-A\-I\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}~(0)}}\label{clock_8c_aced30d6ba605baf9aca86d4e9a3671f3}
+
+
+\-Definition at line 78 of file clock.\-c.
+
+\hypertarget{clock_8c_a62e6bcad0b96dfe2a408e21f15bac03a}{\index{clock.\-c@{clock.\-c}!\-D\-S\-T\-\_\-\-A\-U\-T\-O@{\-D\-S\-T\-\_\-\-A\-U\-T\-O}}
+\index{\-D\-S\-T\-\_\-\-A\-U\-T\-O@{\-D\-S\-T\-\_\-\-A\-U\-T\-O}!clock.c@{clock.\-c}}
+\subsubsection[{\-D\-S\-T\-\_\-\-A\-U\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-S\-T\-\_\-\-A\-U\-T\-O}~1}}\label{clock_8c_a62e6bcad0b96dfe2a408e21f15bac03a}
+
+
+\-Definition at line 81 of file clock.\-c.
+
+\hypertarget{clock_8c_a280bb7dbde358a0322c4f21e61b79059}{\index{clock.\-c@{clock.\-c}!\-D\-S\-T\-\_\-\-N\-O@{\-D\-S\-T\-\_\-\-N\-O}}
+\index{\-D\-S\-T\-\_\-\-N\-O@{\-D\-S\-T\-\_\-\-N\-O}!clock.c@{clock.\-c}}
+\subsubsection[{\-D\-S\-T\-\_\-\-N\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-S\-T\-\_\-\-N\-O}~0}}\label{clock_8c_a280bb7dbde358a0322c4f21e61b79059}
+
+
+\-Definition at line 80 of file clock.\-c.
+
+\hypertarget{clock_8c_af20030df14a10a1460ac01cd464b12ee}{\index{clock.\-c@{clock.\-c}!\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}!clock.c@{clock.\-c}}
+\subsubsection[{\-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-E\-E\-K\-L\-Y\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-S\-E\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}~(0)}}\label{clock_8c_af20030df14a10a1460ac01cd464b12ee}
+
+
+\-Definition at line 79 of file clock.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{clock_8c_a588d2cb34e4b401aa3dba1a4db34f2fa}{\index{clock.\-c@{clock.\-c}!calc\-\_\-24\-H\-\_\-to\-\_\-12\-H@{calc\-\_\-24\-H\-\_\-to\-\_\-12\-H}}
+\index{calc\-\_\-24\-H\-\_\-to\-\_\-12\-H@{calc\-\_\-24\-H\-\_\-to\-\_\-12\-H}!clock.c@{clock.\-c}}
+\subsubsection[{calc\-\_\-24\-H\-\_\-to\-\_\-12\-H}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf calc\-\_\-24\-H\-\_\-to\-\_\-12\-H} (
+\begin{DoxyParamCaption}
+\item[{u8 $\ast$}]{hours, }
+\item[{u8 $\ast$}]{time\-A\-M}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a588d2cb34e4b401aa3dba1a4db34f2fa}
+\hypertarget{clock_8c_a83cde649caa3c248cc99975ffcab1b5d}{\index{clock.\-c@{clock.\-c}!cdtimer\-\_\-tick@{cdtimer\-\_\-tick}}
+\index{cdtimer\-\_\-tick@{cdtimer\-\_\-tick}!clock.c@{clock.\-c}}
+\subsubsection[{cdtimer\-\_\-tick}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf cdtimer\-\_\-tick} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a83cde649caa3c248cc99975ffcab1b5d}
+
+
+\-Definition at line 122 of file countdowntimer.\-c.
+
+\hypertarget{clock_8c_ad66abdd64bde75e3b0b96161369f7cdf}{\index{clock.\-c@{clock.\-c}!check\-\_\-ucs@{check\-\_\-ucs}}
+\index{check\-\_\-ucs@{check\-\_\-ucs}!clock.c@{clock.\-c}}
+\subsubsection[{check\-\_\-ucs}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf check\-\_\-ucs} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_ad66abdd64bde75e3b0b96161369f7cdf}
+
+
+\-Definition at line 117 of file clock.\-c.
+
+\hypertarget{clock_8c_a4529daa6019ff1f8d068a0d6d4cfbdbf}{\index{clock.\-c@{clock.\-c}!clock\-\_\-tick@{clock\-\_\-tick}}
+\index{clock\-\_\-tick@{clock\-\_\-tick}!clock.c@{clock.\-c}}
+\subsubsection[{clock\-\_\-tick}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf clock\-\_\-tick} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a4529daa6019ff1f8d068a0d6d4cfbdbf}
+
+
+\-Definition at line 192 of file clock.\-c.
+
+\hypertarget{clock_8c_a68a4d19794b01fd576db257fe8ae8572}{\index{clock.\-c@{clock.\-c}!conv\-\_\-24\-H\-\_\-to\-\_\-12\-H@{conv\-\_\-24\-H\-\_\-to\-\_\-12\-H}}
+\index{conv\-\_\-24\-H\-\_\-to\-\_\-12\-H@{conv\-\_\-24\-H\-\_\-to\-\_\-12\-H}!clock.c@{clock.\-c}}
+\subsubsection[{conv\-\_\-24\-H\-\_\-to\-\_\-12\-H}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf conv\-\_\-24\-H\-\_\-to\-\_\-12\-H} (
+\begin{DoxyParamCaption}
+\item[{u8 $\ast$}]{hours24, }
+\item[{u8 $\ast$}]{hours12, }
+\item[{u8 $\ast$}]{time\-A\-Mor\-P\-M}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a68a4d19794b01fd576db257fe8ae8572}
+\hypertarget{clock_8c_a43c6a6293f71980edd0e4c772b9ace65}{\index{clock.\-c@{clock.\-c}!convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format@{convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format}}
+\index{convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format@{convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format}!clock.c@{clock.\-c}}
+\subsubsection[{convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf convert\-\_\-hour\-\_\-to\-\_\-12\-H\-\_\-format} (
+\begin{DoxyParamCaption}
+\item[{u8}]{hour}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a43c6a6293f71980edd0e4c772b9ace65}
+
+
+\-Definition at line 372 of file clock.\-c.
+
+\hypertarget{clock_8c_ab072847bdd3fedefe5ba4803715e2d9c}{\index{clock.\-c@{clock.\-c}!display\-\_\-selection\-\_\-\-Timeformat1@{display\-\_\-selection\-\_\-\-Timeformat1}}
+\index{display\-\_\-selection\-\_\-\-Timeformat1@{display\-\_\-selection\-\_\-\-Timeformat1}!clock.c@{clock.\-c}}
+\subsubsection[{display\-\_\-selection\-\_\-\-Timeformat1}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-selection\-\_\-\-Timeformat1} (
+\begin{DoxyParamCaption}
+\item[{u8}]{segments, }
+\item[{u32}]{index, }
+\item[{u8}]{digits, }
+\item[{u8}]{blanks}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_ab072847bdd3fedefe5ba4803715e2d9c}
+
+
+\-Definition at line 406 of file clock.\-c.
+
+\hypertarget{clock_8c_ae30e1ec1937f55b9800d75e22c1de18c}{\index{clock.\-c@{clock.\-c}!display\-\_\-time@{display\-\_\-time}}
+\index{display\-\_\-time@{display\-\_\-time}!clock.c@{clock.\-c}}
+\subsubsection[{display\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-time} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_ae30e1ec1937f55b9800d75e22c1de18c}
+
+
+\-Definition at line 581 of file clock.\-c.
+
+\hypertarget{clock_8c_a5510e885f7071507a576312afdaf3336}{\index{clock.\-c@{clock.\-c}!init\-\_\-ucs@{init\-\_\-ucs}}
+\index{init\-\_\-ucs@{init\-\_\-ucs}!clock.c@{clock.\-c}}
+\subsubsection[{init\-\_\-ucs}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-\_\-ucs} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a5510e885f7071507a576312afdaf3336}
+
+
+\-Definition at line 170 of file main.\-c.
+
+\hypertarget{clock_8c_a63c7276c5fd65a2c328afc77a868eb63}{\index{clock.\-c@{clock.\-c}!is\-\_\-hour\-\_\-am@{is\-\_\-hour\-\_\-am}}
+\index{is\-\_\-hour\-\_\-am@{is\-\_\-hour\-\_\-am}!clock.c@{clock.\-c}}
+\subsubsection[{is\-\_\-hour\-\_\-am}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-hour\-\_\-am} (
+\begin{DoxyParamCaption}
+\item[{u8}]{hour}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a63c7276c5fd65a2c328afc77a868eb63}
+
+
+\-Definition at line 388 of file clock.\-c.
+
+\hypertarget{clock_8c_a39323e613b864c2c65abbe8364089fe5}{\index{clock.\-c@{clock.\-c}!mx\-\_\-time@{mx\-\_\-time}}
+\index{mx\-\_\-time@{mx\-\_\-time}!clock.c@{clock.\-c}}
+\subsubsection[{mx\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-time} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a39323e613b864c2c65abbe8364089fe5}
+
+
+\-Definition at line 418 of file clock.\-c.
+
+\hypertarget{clock_8c_a920c19be555f3778d7e489abae91a577}{\index{clock.\-c@{clock.\-c}!number\-\_\-storage\-\_\-tick@{number\-\_\-storage\-\_\-tick}}
+\index{number\-\_\-storage\-\_\-tick@{number\-\_\-storage\-\_\-tick}!clock.c@{clock.\-c}}
+\subsubsection[{number\-\_\-storage\-\_\-tick}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf number\-\_\-storage\-\_\-tick} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a920c19be555f3778d7e489abae91a577}
+
+
+\-Definition at line 138 of file miscellaneous.\-c.
+
+\hypertarget{clock_8c_a7ad7026db6e5f41704969676a27b892e}{\index{clock.\-c@{clock.\-c}!reset\-\_\-clock@{reset\-\_\-clock}}
+\index{reset\-\_\-clock@{reset\-\_\-clock}!clock.c@{clock.\-c}}
+\subsubsection[{reset\-\_\-clock}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-clock} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_a7ad7026db6e5f41704969676a27b892e}
+
+
+\-Definition at line 158 of file clock.\-c.
+
+\hypertarget{clock_8c_af7625f9c761c24317a37f032b2c1c148}{\index{clock.\-c@{clock.\-c}!sx\-\_\-time@{sx\-\_\-time}}
+\index{sx\-\_\-time@{sx\-\_\-time}!clock.c@{clock.\-c}}
+\subsubsection[{sx\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-time} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{clock_8c_af7625f9c761c24317a37f032b2c1c148}
+
+
+\-Definition at line 566 of file clock.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{clock_8c_a85fdc1b2cb5fabc3b8b255558b119346}{\index{clock.\-c@{clock.\-c}!\-Bl\-On\-Flag@{\-Bl\-On\-Flag}}
+\index{\-Bl\-On\-Flag@{\-Bl\-On\-Flag}!clock.c@{clock.\-c}}
+\subsubsection[{\-Bl\-On\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf \-Bl\-On\-Flag}}}\label{clock_8c_a85fdc1b2cb5fabc3b8b255558b119346}
+
+
+\-Definition at line 113 of file main.\-c.
+
+\hypertarget{clock_8c_ad9603623c10bb7d0199771117d9fe0f2}{\index{clock.\-c@{clock.\-c}!\-Bl\-Timeout\-Counter@{\-Bl\-Timeout\-Counter}}
+\index{\-Bl\-Timeout\-Counter@{\-Bl\-Timeout\-Counter}!clock.c@{clock.\-c}}
+\subsubsection[{\-Bl\-Timeout\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf \-Bl\-Timeout\-Counter} = 0}}\label{clock_8c_ad9603623c10bb7d0199771117d9fe0f2}
+
+
+\-Definition at line 94 of file clock.\-c.
+
+\hypertarget{clock_8c_a3b05b0a79e906f6016388f3fddfb2848}{\index{clock.\-c@{clock.\-c}!\-Daily\-Corr@{\-Daily\-Corr}}
+\index{\-Daily\-Corr@{\-Daily\-Corr}!clock.c@{clock.\-c}}
+\subsubsection[{\-Daily\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}s8 {\bf \-Daily\-Corr}}}\label{clock_8c_a3b05b0a79e906f6016388f3fddfb2848}
+
+
+\-Definition at line 89 of file clock.\-c.
+
+\hypertarget{clock_8c_adce990b900a2532c257eb7b131b5118b}{\index{clock.\-c@{clock.\-c}!\-D\-S\-T\-\_\-\-Auto\-Flag@{\-D\-S\-T\-\_\-\-Auto\-Flag}}
+\index{\-D\-S\-T\-\_\-\-Auto\-Flag@{\-D\-S\-T\-\_\-\-Auto\-Flag}!clock.c@{clock.\-c}}
+\subsubsection[{\-D\-S\-T\-\_\-\-Auto\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf \-D\-S\-T\-\_\-\-Auto\-Flag}}}\label{clock_8c_adce990b900a2532c257eb7b131b5118b}
+
+
+\-Definition at line 88 of file clock.\-c.
+
+\hypertarget{clock_8c_ab337c12872b9ac61e51320d9d411e6f2}{\index{clock.\-c@{clock.\-c}!\-D\-S\-T\-\_\-\-Correction\-Flag@{\-D\-S\-T\-\_\-\-Correction\-Flag}}
+\index{\-D\-S\-T\-\_\-\-Correction\-Flag@{\-D\-S\-T\-\_\-\-Correction\-Flag}!clock.c@{clock.\-c}}
+\subsubsection[{\-D\-S\-T\-\_\-\-Correction\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf \-D\-S\-T\-\_\-\-Correction\-Flag}}}\label{clock_8c_ab337c12872b9ac61e51320d9d411e6f2}
+
+
+\-Definition at line 87 of file clock.\-c.
+
+\hypertarget{clock_8c_aba4d202f2088c6de95b88c0082283299}{\index{clock.\-c@{clock.\-c}!fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}}
+\index{fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}!clock.c@{clock.\-c}}
+\subsubsection[{fptr\-\_\-lcd\-\_\-function\-\_\-line1}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-lcd\-\_\-function\-\_\-line1})(u8 line, u8 update)}}\label{clock_8c_aba4d202f2088c6de95b88c0082283299}
+
+
+\-Definition at line 116 of file main.\-c.
+
+\hypertarget{clock_8c_a67551f5f915e3d572eff4ea2ddd9067f}{\index{clock.\-c@{clock.\-c}!fptr\-\_\-lcd\-\_\-function\-\_\-line2@{fptr\-\_\-lcd\-\_\-function\-\_\-line2}}
+\index{fptr\-\_\-lcd\-\_\-function\-\_\-line2@{fptr\-\_\-lcd\-\_\-function\-\_\-line2}!clock.c@{clock.\-c}}
+\subsubsection[{fptr\-\_\-lcd\-\_\-function\-\_\-line2}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-lcd\-\_\-function\-\_\-line2})(u8 line, u8 update)}}\label{clock_8c_a67551f5f915e3d572eff4ea2ddd9067f}
+
+
+\-Definition at line 117 of file main.\-c.
+
+\hypertarget{clock_8c_a8bec0b207346f3af4711453325a07966}{\index{clock.\-c@{clock.\-c}!selection\-\_\-\-Timeformat@{selection\-\_\-\-Timeformat}}
+\index{selection\-\_\-\-Timeformat@{selection\-\_\-\-Timeformat}!clock.c@{clock.\-c}}
+\subsubsection[{selection\-\_\-\-Timeformat}]{\setlength{\rightskip}{0pt plus 5cm}const u8 {\bf selection\-\_\-\-Timeformat}\mbox{[}$\,$\mbox{]}\mbox{[}4\mbox{]}}}\label{clock_8c_a8bec0b207346f3af4711453325a07966}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+
+{
+        "24H", "12H"
+}
+\end{DoxyCode}
+
+
+\-Definition at line 97 of file clock.\-c.
+
+\hypertarget{clock_8c_a5be1b8e878f6ffbf15842d27770f72b0}{\index{clock.\-c@{clock.\-c}!s\-Time@{s\-Time}}
+\index{s\-Time@{s\-Time}!clock.c@{clock.\-c}}
+\subsubsection[{s\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-no\-\_\-init struct {\bf time} {\bf s\-Time}}}\label{clock_8c_a5be1b8e878f6ffbf15842d27770f72b0}
+
+
+\-Definition at line 85 of file clock.\-c.
+
+\hypertarget{clock_8c_a3020d8a6046c3faba562e3761318cf06}{\index{clock.\-c@{clock.\-c}!\-Time\-Correction\-Flag@{\-Time\-Correction\-Flag}}
+\index{\-Time\-Correction\-Flag@{\-Time\-Correction\-Flag}!clock.c@{clock.\-c}}
+\subsubsection[{\-Time\-Correction\-Flag}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf \-Time\-Correction\-Flag}}}\label{clock_8c_a3020d8a6046c3faba562e3761318cf06}
+
+
+\-Definition at line 86 of file clock.\-c.
+
+\hypertarget{clock_8c_a93ee6853a128e24a80678f799c3da25b}{\index{clock.\-c@{clock.\-c}!\-Weekly\-Corr@{\-Weekly\-Corr}}
+\index{\-Weekly\-Corr@{\-Weekly\-Corr}!clock.c@{clock.\-c}}
+\subsubsection[{\-Weekly\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}s8 {\bf \-Weekly\-Corr}}}\label{clock_8c_a93ee6853a128e24a80678f799c3da25b}
+
+
+\-Definition at line 90 of file clock.\-c.
+

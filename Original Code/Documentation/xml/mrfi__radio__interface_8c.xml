@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mrfi__radio__interface_8c" kind="file">
+    <compoundname>mrfi_radio_interface.c</compoundname>
+    <includes refid="mrfi__radio__interface_8h" local="yes">mrfi_radio_interface.h</includes>
+    <incdepgraph>
+      <node id="1297">
+        <label>bsp_macros.h</label>
+        <link refid="bsp__macros_8h"/>
+      </node>
+      <node id="1291">
+        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c</label>
+        <link refid="mrfi_radio_interface.c"/>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>mrfi_radio_interface.h</label>
+        <link refid="mrfi__radio__interface_8h"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>mcus/bsp_msp430_defs.h</label>
+        <link refid="bsp__msp430__defs_8h"/>
+      </node>
+      <node id="1293">
+        <label>bsp.h</label>
+        <link refid="bsp_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>bsp_config.h</label>
+        <link refid="bsp__config_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1a861e662512db473969940a0a5f2b76c5" prot="public" static="no">
+        <name>MRFI_RADIO_STATUS_READ_CLEAR</name>
+        <param></param>
+        <initializer>RF1AIFCTL1 &amp;= ~(RFSTATIFG);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="55" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1a9d0d6b5f8d32959f7c7c8f2beeac8ff4" prot="public" static="no">
+        <name>MRFI_RADIO_STATUS_READ_WAIT</name>
+        <param></param>
+        <initializer>while( !(RF1AIFCTL1 &amp; RFSTATIFG) );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="57" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" prot="public" static="no">
+        <name>MRFI_RADIO_INST_WRITE_WAIT</name>
+        <param></param>
+        <initializer>while( !(RF1AIFCTL1 &amp; RFINSTRIFG));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="58" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1a4ff841ef85c53350b7c643b16db6afea" prot="public" static="no">
+        <name>MRFI_RADIO_DATA_WRITE_WAIT</name>
+        <param></param>
+        <initializer>while( !(RF1AIFCTL1 &amp; RFDINIFG)  );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1a0280f776f5d7f4d3b778476ae9bee75d" prot="public" static="no">
+        <name>MRFI_RADIO_DATA_READ_WAIT</name>
+        <param></param>
+        <initializer>while( !(RF1AIFCTL1 &amp; RFDOUTIFG) );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="60" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1ae5bf383c5e70170efd1ed59d2ab9bfb3" prot="public" static="no">
+        <name>MRFI_RIF_DEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" prot="public" static="no">
+        <name>MRFI_RIF_ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer><ref refid="bsp_8h_1a5c8b48a52662b002e1ec121c48c16f46" kindref="member">BSP_ASSERT</ref>(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="64" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="mrfi__radio__interface_8c_1a7e5575b2266da23e0d9a5dff2da9881a" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="314" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1a09245ae00dbf4322281fef12cc52a89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>mrfiRadioInterfaceInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="87" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="86" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1ad8967907085371a9791e8221846d93b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t mrfiRadioInterfaceCmdStrobe</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>mrfiRadioInterfaceCmdStrobe</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="111" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="110" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1a11719585933c0185bebb9dbed7176809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t mrfiRadioInterfaceReadReg</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>mrfiRadioInterfaceReadReg</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="187" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="186" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1a8a72d3f71f068d13c6b23e79ecb4d068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceWriteReg</definition>
+        <argsstring>(uint8_t addr, uint8_t value)</argsstring>
+        <name>mrfiRadioInterfaceWriteReg</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="233" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="232" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1ab2cfb2efb218ba7a69501cf4cc96932b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceWriteTxFifo</definition>
+        <argsstring>(uint8_t *pData, uint8_t len)</argsstring>
+        <name>mrfiRadioInterfaceWriteTxFifo</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="271" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="270" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8c_1aa5c6363be8c719be691e37b31f3a9dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceReadRxFifo</definition>
+        <argsstring>(uint8_t *pData, uint8_t len)</argsstring>
+        <name>mrfiRadioInterfaceReadRxFifo</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" line="316" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="315" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2009-11-23<sp/>07:50:43<sp/>-0800<sp/>(Mon,<sp/>23<sp/>Nov<sp/>2009)<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>21225<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Copyright<sp/>2008-2009<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS?</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MRFI<sp/>(Minimal<sp/>RF<sp/>Interface)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Radios:<sp/>CC430</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Radio<sp/>Interface<sp/>(RIF)<sp/>code.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Includes</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mrfi__radio__interface_8h" kindref="compound">mrfi_radio_interface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defines</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mrfi__radio__interface_8c_1a861e662512db473969940a0a5f2b76c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_STATUS_READ_CLEAR()<sp/><sp/>RF1AIFCTL1<sp/>&amp;=<sp/>~(RFSTATIFG);</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="mrfi__radio__interface_8c_1a9d0d6b5f8d32959f7c7c8f2beeac8ff4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_STATUS_READ_WAIT()<sp/><sp/>while(<sp/>!(RF1AIFCTL1<sp/>&amp;<sp/>RFSTATIFG)<sp/>);</highlight></codeline>
+<codeline lineno="58" refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_INST_WRITE_WAIT()<sp/><sp/><sp/>while(<sp/>!(RF1AIFCTL1<sp/>&amp;<sp/>RFINSTRIFG));</highlight></codeline>
+<codeline lineno="59" refid="mrfi__radio__interface_8c_1a4ff841ef85c53350b7c643b16db6afea" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_DATA_WRITE_WAIT()<sp/><sp/><sp/>while(<sp/>!(RF1AIFCTL1<sp/>&amp;<sp/>RFDINIFG)<sp/><sp/>);</highlight></codeline>
+<codeline lineno="60" refid="mrfi__radio__interface_8c_1a0280f776f5d7f4d3b778476ae9bee75d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_DATA_READ_WAIT()<sp/><sp/><sp/><sp/>while(<sp/>!(RF1AIFCTL1<sp/>&amp;<sp/>RFDOUTIFG)<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="mrfi__radio__interface_8c_1ae5bf383c5e70170efd1ed59d2ab9bfb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RIF_DEBUG</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>MRFI_RIF_DEBUG</highlight></codeline>
+<codeline lineno="64" refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RIF_ASSERT(x)<sp/><sp/><sp/><sp/><sp/><sp/>BSP_ASSERT(x)</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RIF_ASSERT(x)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Local<sp/>Prototypes</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceInit</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initialize<sp/>the<sp/>Radio<sp/>Interface</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="mrfi__radio__interface_8h_1a09245ae00dbf4322281fef12cc52a89b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1a09245ae00dbf4322281fef12cc52a89b" kindref="member">mrfiRadioInterfaceInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>interrupt<sp/>on<sp/>interface<sp/>error.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/>*<sp/>The<sp/>code<sp/>behaves<sp/>differently<sp/>between<sp/>different<sp/>runs<sp/>on<sp/>the<sp/>debugger,<sp/>and<sp/>seemingly<sp/>fails</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/>*<sp/>due<sp/>to<sp/>error<sp/>flags<sp/>on<sp/>the<sp/>bench.<sp/>The<sp/>code<sp/>does<sp/>not<sp/>fail,<sp/>however,<sp/>on<sp/>functional<sp/>tests.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/>*<sp/>This<sp/>points<sp/>to<sp/>problems<sp/>with<sp/>the<sp/>debugger<sp/>that<sp/>need<sp/>to<sp/>be<sp/>sorted<sp/>through<sp/>carefully.</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/>*<sp/>For<sp/>the<sp/>time<sp/>being,<sp/>remove<sp/>the<sp/>following<sp/>line,<sp/>since<sp/>it<sp/>will<sp/>likely<sp/>cause<sp/>operational</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/>*<sp/>failures.</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>RF1AIFCTL1<sp/>|=<sp/>RFERRIE;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceCmdStrobe</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Send<sp/>command<sp/>strobe<sp/>to<sp/>the<sp/>radio.<sp/><sp/>Returns<sp/>status<sp/>byte<sp/>read<sp/>during<sp/>transfer</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>strobe<sp/>command.</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>addr<sp/>-<sp/>address<sp/>of<sp/>register<sp/>to<sp/>strobe</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>byte<sp/>of<sp/>radio</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="mrfi__radio__interface_8h_1ad8967907085371a9791e8221846d93b3" refkind="member"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="mrfi__radio__interface_8c_1ad8967907085371a9791e8221846d93b3" kindref="member">mrfiRadioInterfaceCmdStrobe</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>statusByte,<sp/>gdoState;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1afa86cd1e0ce411bcd2484f32f4c36dc7" kindref="member">mrfiRIFIState_t</ref><sp/>s;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>for<sp/>invalid<sp/>address.</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/>*<sp/>0xBD<sp/>is<sp/>for<sp/>SNOP<sp/>with<sp/>MSP<sp/>set<sp/>to<sp/>read<sp/>the<sp/>bytes<sp/>available<sp/>in<sp/>RX<sp/>FIFO.</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" kindref="member">MRFI_RIF_ASSERT</ref>(<sp/>(addr<sp/>==<sp/>0xBD)<sp/>||<sp/>(addr<sp/>&gt;=<sp/>RF_SRES)<sp/>&amp;&amp;<sp/>(addr<sp/>&lt;=<sp/>RF_SNOP));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>out<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1a9f885d4a9217c916acb73acf6d78e577" kindref="member">MRFI_RIF_ENTER_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>Status<sp/>read<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1a861e662512db473969940a0a5f2b76c5" kindref="member">MRFI_RADIO_STATUS_READ_CLEAR</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((addr<sp/>&gt;<sp/>RF_SRES)<sp/>&amp;&amp;<sp/>(addr<sp/>&lt;<sp/>RF_SNOP))</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>buffer<sp/>IOCFG2<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>gdoState<sp/>=<sp/><ref refid="mrfi__radio_8c_1a5d843804cf60bc0171b941c5a78d6592" kindref="member">MRFI_RADIO_REG_READ</ref>(<ref refid="mrfi__radio__interface_8h_1a9da836dbbf177b6f1912355cf62cb73d" kindref="member">IOCFG2</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>c-ready<sp/>to<sp/>GDO2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mrfi__radio_8c_1a8ff4a4e42c9a12514024f81329812ec3" kindref="member">MRFI_RADIO_REG_WRITE</ref>(<ref refid="mrfi__radio__interface_8h_1a9da836dbbf177b6f1912355cf62cb73d" kindref="member">IOCFG2</ref>,<sp/>0x29);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1AINSTRB<sp/>=<sp/>addr;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>chip<sp/>at<sp/>sleep<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((RF1AIN<sp/>&amp;<sp/>0x04)<sp/>==<sp/>0x04)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(addr<sp/>==<sp/>RF_SXOFF)<sp/>||<sp/>(addr<sp/>==<sp/>RF_SPWD)<sp/>||<sp/>(addr<sp/>==<sp/>RF_SWOR)<sp/>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Do<sp/>nothing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>c-ready<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((RF1AIN<sp/>&amp;<sp/>0x04)<sp/>==<sp/>0x04);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Delay<sp/>should<sp/>be<sp/>760us<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mrfi__radio_8c_1aba4df305a531259d11ecc7f6e93eb188" kindref="member">Mrfi_DelayUsec</ref>(760);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>restore<sp/>IOCFG2<sp/>setting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mrfi__radio_8c_1a8ff4a4e42c9a12514024f81329812ec3" kindref="member">MRFI_RADIO_REG_WRITE</ref>(<ref refid="mrfi__radio__interface_8h_1a9da836dbbf177b6f1912355cf62cb73d" kindref="member">IOCFG2</ref>,<sp/>gdoState);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>chip<sp/>active<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1AINSTRB<sp/>=<sp/>addr;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>status<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>statusByte<sp/>=<sp/>RF1ASTAT0B;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1ad4b2031333ee72bf96f35bf432f9b9e2" kindref="member">MRFI_RIF_EXIT_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>the<sp/>status<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>statusByte;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceReadReg</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Read<sp/>value<sp/>from<sp/>radio<sp/>register.</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>addr<sp/>-<sp/>address<sp/>of<sp/>register</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>register<sp/>value</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="mrfi__radio__interface_8h_1a11719585933c0185bebb9dbed7176809" refkind="member"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="mrfi__radio__interface_8c_1a11719585933c0185bebb9dbed7176809" kindref="member">mrfiRadioInterfaceReadReg</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1afa86cd1e0ce411bcd2484f32f4c36dc7" kindref="member">mrfiRIFIState_t</ref><sp/>s;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>regValue;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>for<sp/>valid<sp/>range.<sp/>0x3E<sp/>is<sp/>for<sp/>PATABLE<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" kindref="member">MRFI_RIF_ASSERT</ref>(<sp/>(addr<sp/>&lt;=<sp/>0x3B)<sp/>||<sp/>(addr<sp/>==<sp/>0x3E)<sp/>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>out<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1a9f885d4a9217c916acb73acf6d78e577" kindref="member">MRFI_RIF_ENTER_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(addr<sp/>&lt;=<sp/>0x2E)<sp/>||<sp/>(addr<sp/>==<sp/>0x3E))</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>read<sp/>the<sp/>Configuration<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1AINSTR1B<sp/>=<sp/>(0x80<sp/>|<sp/>addr);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>read<sp/>the<sp/>Status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1AINSTR1B<sp/>=<sp/>(0xC0<sp/>|<sp/>addr);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>out<sp/>the<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>regValue<sp/><sp/><sp/>=<sp/>RF1ADOUT1B;<sp/></highlight><highlight class="comment">//auto<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1ad4b2031333ee72bf96f35bf432f9b9e2" kindref="member">MRFI_RIF_EXIT_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>regValue);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceWriteReg</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Write<sp/>value<sp/>to<sp/>radio<sp/>register.</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>addr<sp/><sp/>-<sp/>address<sp/>of<sp/>register</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>-<sp/>register<sp/>value<sp/>to<sp/>write</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="mrfi__radio__interface_8h_1a8a72d3f71f068d13c6b23e79ecb4d068" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1a8a72d3f71f068d13c6b23e79ecb4d068" kindref="member">mrfiRadioInterfaceWriteReg</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>value)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1afa86cd1e0ce411bcd2484f32f4c36dc7" kindref="member">mrfiRIFIState_t</ref><sp/>s;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>for<sp/>valid<sp/>range.<sp/>0x3E<sp/>is<sp/>for<sp/>PATABLE<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" kindref="member">MRFI_RIF_ASSERT</ref>((addr<sp/>&lt;=<sp/>0x2E)<sp/>||<sp/>(addr<sp/>==<sp/>0x3E));</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>out<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1a9f885d4a9217c916acb73acf6d78e577" kindref="member">MRFI_RIF_ENTER_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>&apos;write<sp/>to<sp/>register&apos;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>RF1AINSTRB<sp/>=<sp/>(0x00<sp/>|<sp/>addr);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>to<sp/>accept<sp/>the<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1a4ff841ef85c53350b7c643b16db6afea" kindref="member">MRFI_RADIO_DATA_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>the<sp/>register<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>RF1ADINB<sp/><sp/><sp/>=<sp/>value;<sp/></highlight><highlight class="comment">/*<sp/>value<sp/>to<sp/>be<sp/>written<sp/>to<sp/>the<sp/>radio<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1ad4b2031333ee72bf96f35bf432f9b9e2" kindref="member">MRFI_RIF_EXIT_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceWriteTxFifo</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Write<sp/>data<sp/>to<sp/>radio<sp/>transmit<sp/>FIFO.</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>pData<sp/>-<sp/>pointer<sp/>for<sp/>storing<sp/>write<sp/>data</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/><sp/><sp/>-<sp/>length<sp/>of<sp/>data<sp/>in<sp/>bytes</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="mrfi__radio__interface_8h_1a9f3258b3c239ba2e1d19f0849804f1eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1ab2cfb2efb218ba7a69501cf4cc96932b" kindref="member">mrfiRadioInterfaceWriteTxFifo</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*<sp/>pData,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1afa86cd1e0ce411bcd2484f32f4c36dc7" kindref="member">mrfiRIFIState_t</ref><sp/>s;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" kindref="member">MRFI_RIF_ASSERT</ref>(len<sp/>!=<sp/>0);<sp/></highlight><highlight class="comment">/*<sp/>zero<sp/>length<sp/>is<sp/>not<sp/>allowed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>out<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1a9f885d4a9217c916acb73acf6d78e577" kindref="member">MRFI_RIF_ENTER_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>TXFIFOWR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>RF1AINSTRB<sp/>=<sp/>0x7F;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>to<sp/>accept<sp/>the<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mrfi__radio__interface_8c_1a4ff841ef85c53350b7c643b16db6afea" kindref="member">MRFI_RADIO_DATA_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>one<sp/>byte<sp/>to<sp/>FIFO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1ADINB<sp/><sp/><sp/>=<sp/>*pData;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>pData++;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>len--;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(len);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1ad4b2031333ee72bf96f35bf432f9b9e2" kindref="member">MRFI_RIF_EXIT_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrfiRadioInterfaceReadRxFifo</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Read<sp/>data<sp/>from<sp/>radio<sp/>receive<sp/>FIFO.</highlight></codeline>
+<codeline lineno="307"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="308"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>pData<sp/>-<sp/>pointer<sp/>for<sp/>storing<sp/>read<sp/>data</highlight></codeline>
+<codeline lineno="309"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/><sp/><sp/>-<sp/>length<sp/>of<sp/>data<sp/>in<sp/>bytes</highlight></codeline>
+<codeline lineno="310"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="311"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="312"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="313"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="mrfi__radio__interface_8c_1a7e5575b2266da23e0d9a5dff2da9881a" refkind="member"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="mrfi__radio__interface_8c_1a7e5575b2266da23e0d9a5dff2da9881a" kindref="member">method</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="315" refid="mrfi__radio__interface_8h_1af27e8692fe2496182dea8582524f7a30" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1aa5c6363be8c719be691e37b31f3a9dab" kindref="member">mrfiRadioInterfaceReadRxFifo</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*<sp/>pData,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1afa86cd1e0ce411bcd2484f32f4c36dc7" kindref="member">mrfiRIFIState_t</ref><sp/>s;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><ref refid="mrfi__radio__interface_8c_1add3ad3c47a9849f144efeb2e4dfe627f" kindref="member">MRFI_RIF_ASSERT</ref>(len<sp/>!=<sp/>0);<sp/></highlight><highlight class="comment">/*<sp/>zero<sp/>length<sp/>is<sp/>not<sp/>allowed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>out<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1a9f885d4a9217c916acb73acf6d78e577" kindref="member">MRFI_RIF_ENTER_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="mrfi__radio__interface_8c_1a7e5575b2266da23e0d9a5dff2da9881a" kindref="member">method</ref><sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>RXFIFORD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>RF1AINSTRB<sp/>=<sp/>0xFF;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>dummy<sp/>write<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RF1ADINB<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>data<sp/>to<sp/>be<sp/>available<sp/>for<sp/>reading<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mrfi__radio__interface_8c_1a0280f776f5d7f4d3b778476ae9bee75d" kindref="member">MRFI_RADIO_DATA_READ_WAIT</ref>();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>one<sp/>byte<sp/>from<sp/>FIFO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*pData<sp/>=<sp/>RF1ADOUT0B;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pData++;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>len--;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(len);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="mrfi__radio__interface_8c_1a7e5575b2266da23e0d9a5dff2da9881a" kindref="member">method</ref><sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>radio<sp/>to<sp/>be<sp/>ready<sp/>for<sp/>next<sp/>instruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mrfi__radio__interface_8c_1abf4bf5423ab9edec3d44fc230dea41b1" kindref="member">MRFI_RADIO_INST_WRITE_WAIT</ref>();</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Write<sp/>cmd:<sp/>SNGLRXRD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RF1AINSTR1B<sp/>=<sp/>0xBF;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Read<sp/>byte<sp/>from<sp/>FIFO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*pData<sp/><sp/>=<sp/>RF1ADOUT1B;<sp/></highlight><highlight class="comment">//auto<sp/>read<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pData++;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>len--;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(len);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>access<sp/>to<sp/>Radio<sp/>IF<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><ref refid="mrfi__board__defs_8h_1ad4b2031333ee72bf96f35bf432f9b9e2" kindref="member">MRFI_RIF_EXIT_CRITICAL_SECTION</ref>(s);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="374"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c"/>
+  </compounddef>
+</doxygen>

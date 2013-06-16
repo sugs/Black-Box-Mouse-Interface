@@ -1,0 +1,1056 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bm_8h" kind="file">
+    <compoundname>bm.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes local="no">float.h</includes>
+    <includedby refid="project_8h" local="no">include/project.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>float.h</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>bluerobin/bm.h</label>
+        <link refid="bm.h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="21">
+        <label>logic/battery.c</label>
+        <link refid="battery_8c"/>
+      </node>
+      <node id="20">
+        <label>logic/altitude.c</label>
+        <link refid="altitude_8c"/>
+      </node>
+      <node id="12">
+        <label>driver/display.c</label>
+        <link refid="display_8c"/>
+      </node>
+      <node id="11">
+        <label>driver/display.h</label>
+        <link refid="display_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>driver/adc12.c</label>
+        <link refid="adc12_8c"/>
+      </node>
+      <node id="22">
+        <label>logic/bluerobin.c</label>
+        <link refid="bluerobin_8c"/>
+      </node>
+      <node id="40">
+        <label>logic/bluerobin.h</label>
+        <link refid="bluerobin_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>logic/rfsimpliciti.c</label>
+        <link refid="rfsimpliciti_8c"/>
+      </node>
+      <node id="29">
+        <label>logic/random.c</label>
+        <link refid="random_8c"/>
+      </node>
+      <node id="41">
+        <label>logic/random.h</label>
+        <link refid="random_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>driver/display1.c</label>
+        <link refid="display1_8c"/>
+      </node>
+      <node id="38">
+        <label>driver/rf1a.c</label>
+        <link refid="rf1a_8c"/>
+      </node>
+      <node id="18">
+        <label>logic/agility.c</label>
+        <link refid="agility_8c"/>
+      </node>
+      <node id="23">
+        <label>logic/clock.c</label>
+        <link refid="clock_8c"/>
+      </node>
+      <node id="28">
+        <label>logic/miscellaneous.c</label>
+        <link refid="miscellaneous_8c"/>
+      </node>
+      <node id="39">
+        <label>driver/vti_ps.c</label>
+        <link refid="vti__ps_8c"/>
+      </node>
+      <node id="8">
+        <label>include/project.h</label>
+        <link refid="project_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>logic/test.c</label>
+        <link refid="test_8c"/>
+      </node>
+      <node id="10">
+        <label>driver/buzzer.c</label>
+        <link refid="buzzer_8c"/>
+      </node>
+      <node id="30">
+        <label>logic/rfbsl.c</label>
+        <link refid="rfbsl_8c"/>
+      </node>
+      <node id="7">
+        <label>bluerobin/bm.h</label>
+        <link refid="bm.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>logic/display2.c</label>
+        <link refid="display2_8c"/>
+      </node>
+      <node id="14">
+        <label>driver/ports.c</label>
+        <link refid="ports_8c"/>
+      </node>
+      <node id="25">
+        <label>logic/date.c</label>
+        <link refid="date_8c"/>
+      </node>
+      <node id="36">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="27">
+        <label>logic/menu.c</label>
+        <link refid="menu_8c"/>
+      </node>
+      <node id="24">
+        <label>logic/countdowntimer.c</label>
+        <link refid="countdowntimer_8c"/>
+      </node>
+      <node id="42">
+        <label>logic/countdowntimer.h</label>
+        <link refid="countdowntimer_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>driver/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="33">
+        <label>logic/temperature.c</label>
+        <link refid="temperature_8c"/>
+      </node>
+      <node id="17">
+        <label>logic/acceleration.c</label>
+        <link refid="acceleration_8c"/>
+      </node>
+      <node id="35">
+        <label>logic/user.c</label>
+        <link refid="user_8c"/>
+      </node>
+      <node id="19">
+        <label>logic/alarm.c</label>
+        <link refid="alarm_8c"/>
+      </node>
+      <node id="37">
+        <label>driver/radio.c</label>
+        <link refid="radio_8c"/>
+      </node>
+      <node id="32">
+        <label>logic/stopwatch.c</label>
+        <link refid="stopwatch_8c"/>
+      </node>
+      <node id="16">
+        <label>driver/vti_as.c</label>
+        <link refid="vti__as_8c"/>
+      </node>
+      <node id="43">
+        <label>logic/stopwatch.h</label>
+        <link refid="stopwatch_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>logic/stubs.c</label>
+        <link refid="stubs_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bm_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>(0 == 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="44" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>(1 == 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="49" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1aea0a5ae167d468ec29f0da2b03d7f725" prot="public" static="no">
+        <name>USE_RAW_ATTR</name>
+        <initializer><ref refid="bm_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="54" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a3a5ca9b6a40bb76ce4ee1dda9f66197d" prot="public" static="no">
+        <name>_TI_MSP430_</name>
+        <initializer>(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="65" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a0142a4dbbfd5ab30a46122ce1f911f01" prot="public" static="no">
+        <name>BITSIZEOF</name>
+        <param><defname>type</defname></param>
+        <initializer>(sizeof(type) * CHAR_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="358" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" prot="public" static="no">
+        <name>BIT</name>
+        <param><defname>x</defname></param>
+        <initializer>(1uL &lt;&lt; (x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="366" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a48de125873899bea8025d333c9e7db10" prot="public" static="no">
+        <name>BIT_T</name>
+        <param><defname>t</defname></param>
+        <param><defname>x</defname></param>
+        <initializer>((t)((t)1 &lt;&lt; (x)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="375" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a6cb59d563dc70e8b4a11d7cc92068244" prot="public" static="no">
+        <name>BIT_HIGHEST</name>
+        <param><defname>Input_u32</defname></param>
+        <initializer>(     \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(31) ) ? 31 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(30) ) ? 30 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(29) ) ? 29 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(28) ) ? 28 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(27) ) ? 27 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(26) ) ? 26 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(25) ) ? 25 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(24) ) ? 24 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(23) ) ? 23 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(22) ) ? 22 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(21) ) ? 21 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(20) ) ? 20 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(19) ) ? 19 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(18) ) ? 18 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(17) ) ? 17 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(16) ) ? 16 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(15) ) ? 15 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(14) ) ? 14 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(13) ) ? 13 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(12) ) ? 12 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(11) ) ? 11 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>(10) ) ? 10 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 9) ) ?  9 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 8) ) ?  8 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 7) ) ?  7 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 6) ) ?  6 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 5) ) ?  5 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 4) ) ?  4 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 3) ) ?  3 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 2) ) ?  2 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 1) ) ?  1 : ( \
+  ( (Input_u32) &amp; <ref refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" kindref="member">BIT</ref>( 0) ) ?  0 :  -1uL ))))))))))))))))))))))))))))))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="413" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1abc5c6b4c2e2bc12eadd440fdb10bfd7c" prot="public" static="no">
+        <name>MONITOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="417" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1afa9fbc67c23846c8b73d6f0afcfafec8" prot="public" static="no">
+        <name>NO_INIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="421" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1ac950c0db046e2f86d15e7ae1f558b017" prot="public" static="no">
+        <name>INTERRUPT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="425" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a5f508dad67615d631d3f28b81a44f329" prot="public" static="no">
+        <name>ISR</name>
+        <param><defname>ignore</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="429" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1adae070f45bf9b301d9043e4373609681" prot="public" static="no">
+        <name>INLINE_FUNC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="433" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a4dec939236270af7daf98e0c7d7a081a" prot="public" static="no">
+        <name>INTERRUPTS_ENABLE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="437" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bm_8h_1a27985ec9aa0a42ef61af6bc122ac9eeb" prot="public" static="no">
+        <name>INTERRUPTS_DISABLE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="441" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bm_8h_1a4ae1dab0fb4b072a66584546209e7d58" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char BYTE</definition>
+        <argsstring></argsstring>
+        <name>BYTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="350" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="bm_8h_1ad2baa11c897721ff6f14b452b547f9bc" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int WORD</definition>
+        <argsstring></argsstring>
+        <name>WORD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="351" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="bm_8h_1ad342ac907eb044443153a22f964bf0af" prot="public" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long DWORD</definition>
+        <argsstring></argsstring>
+        <name>DWORD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" line="352" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>2009<sp/>BM<sp/>innovations<sp/>GmbH<sp/>(www.bm-innovations.com),<sp/>all<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>trial<sp/>version<sp/>of<sp/>the<sp/>&quot;BlueRobin(TM)<sp/>receiver<sp/>library<sp/>for<sp/>the<sp/>Texas<sp/>Instruments<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CC430<sp/>SoC&quot;<sp/>may<sp/>be<sp/>used<sp/>for<sp/>non-profit<sp/>non-commercial<sp/>purposes<sp/>only.<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BlueRobin(TM)<sp/>in<sp/>a<sp/>commercial<sp/>project,<sp/>please<sp/>contact<sp/>the<sp/>copyright<sp/>holder<sp/>for<sp/>a<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>separate<sp/>license<sp/>agreement.<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>By<sp/>using<sp/>this<sp/>trial<sp/>version<sp/>of<sp/>the<sp/>&quot;BlueRobin(TM)<sp/>receiver<sp/>library<sp/>for<sp/>the<sp/>Texas<sp/>Instruments<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CC430<sp/>SoC&quot;,<sp/>you<sp/>implicitly<sp/>agree<sp/>that<sp/>you<sp/>will<sp/>not<sp/>modify,<sp/>adapt,<sp/>disassemble,<sp/>decompile,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reverse<sp/>engineer,<sp/>translate<sp/>or<sp/>otherwise<sp/>attempt<sp/>to<sp/>discover<sp/>the<sp/>source<sp/>code<sp/>of<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;BlueRobin(TM)<sp/>receiver<sp/>library<sp/>for<sp/>the<sp/>Texas<sp/>Instruments<sp/>CC430<sp/>SoC&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Standard<sp/>definitions,<sp/>have<sp/>to<sp/>be<sp/>included<sp/>in<sp/>every<sp/>source<sp/>and<sp/>header<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__BM_H</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__BM_H</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined<sp/>__IAR_SYSTEMS_ASM)<sp/>||<sp/>(defined<sp/>__IAR_SYSTEMS_ASM__)</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_ASSEMBLER_USED_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASSEMBLER_USED_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FALSE</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>classic<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="bm_8h_1aa93f0eb578d23995850d61f7d61c55c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>FALSE<sp/>(0<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRUE</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>classic<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="bm_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>TRUE<sp/><sp/>(1<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USE_RAW_ATTR</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>per<sp/>default<sp/>this<sp/>feature<sp/>is<sp/>disabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="bm_8h_1aea0a5ae167d468ec29f0da2b03d7f725" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>USE_RAW_ATTR<sp/>FALSE</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>First<sp/>Section:<sp/>Basic<sp/>Data<sp/>Types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fundamental<sp/>#definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CPU<sp/>target<sp/>idents<sp/>are<sp/>used<sp/>for<sp/>target<sp/>dependent<sp/>compilations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Texas<sp/>Instruments<sp/>MSP430</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="bm_8h_1a3a5ca9b6a40bb76ce4ee1dda9f66197d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TI_MSP430_<sp/><sp/>(16)</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Find<sp/>the<sp/>currently<sp/>running<sp/>compiler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>make<sp/>the<sp/>related<sp/>#define&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_IAR_TID_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target<sp/>ID<sp/>from<sp/>IAR<sp/>compilers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_TID_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remap<sp/>to<sp/>enum<sp/>of<sp/>processor<sp/>target<sp/>numbers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_8BIT_INT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>for<sp/>8<sp/>bit<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_16BIT_INT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>for<sp/>16<sp/>bit<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_32BIT_INT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>for<sp/>32<sp/>bit<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_32BIT_FLOAT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>for<sp/>32<sp/>bit<sp/>float</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_64BIT_FLOAT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>for<sp/>64<sp/>bit<sp/>float</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>declares<sp/>an<sp/>interrupt<sp/>service<sp/>routine<sp/>without<sp/>an<sp/>entry<sp/>in<sp/>the<sp/>vector<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ISR(vector)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>declares<sp/>an<sp/>interrupt<sp/>service<sp/>routine<sp/>which<sp/>is<sp/>added<sp/>in<sp/>vector<sp/>table<sp/>at<sp/>offset<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MONITOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>declares<sp/>a<sp/>function<sp/>atomic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPTS_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remap<sp/>to<sp/>the<sp/>intrinsic<sp/>for<sp/>enable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INTERRUPTS_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>remap<sp/>to<sp/>the<sp/>intrinsic<sp/>for<sp/>disable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NO_OPERATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remap<sp/>to<sp/>the<sp/>intrinsic<sp/>for<sp/>no<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_DIRECTION_OUT_1_<sp/><sp/><sp/><sp/>if<sp/>TRUE<sp/>the<sp/>direction<sp/>register<sp/>indicates<sp/>with<sp/>an<sp/>1:<sp/>direction<sp/>is<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>_CPU_EDGE_HIGH_LOW_1_<sp/><sp/><sp/><sp/>if<sp/>TRUE<sp/>the<sp/>edge<sp/>select<sp/>register<sp/>indicates<sp/>with<sp/>an<sp/>1:<sp/>trigger<sp/>on<sp/>high<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NO_INIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>declare<sp/>a<sp/>variable<sp/>as<sp/>not<sp/>initialized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>INLINE_FUNC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>declare<sp/>a<sp/>function<sp/>as<sp/>inline<sp/>for<sp/>release<sp/>builds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((defined<sp/>__IAR_SYSTEMS_ICC)<sp/>||<sp/>(defined<sp/>__IAR_SYSTEMS_ASM))<sp/>&amp;&amp;<sp/>(__IAR_SYSTEMS_ICC__<sp/>&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>IAR<sp/>Compiler<sp/>with<sp/>classic<sp/>IAR<sp/>frontend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>_IAR_TID_</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_IAR_TID_<sp/>((__TID__<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0x7f)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPT<sp/><sp/><sp/>interrupt</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>ISR(vector)<sp/>interrupt<sp/>[(vector)]</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MONITOR<sp/><sp/><sp/><sp/><sp/>monitor</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>((_IAR_TID_)<sp/>==<sp/>43)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>Texas<sp/>Instruments<sp/>MSP430<sp/>CPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_TID_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_TI_MSP430_</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_DIRECTION_OUT_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_EDGE_HIGH_LOW_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INTERRUPTS_ENABLE()<sp/><sp/><sp/>_EINT()</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WA<sp/>for<sp/>HW<sp/>bug,<sp/>add<sp/>a<sp/>NOP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INTERRUPTS_DISABLE()<sp/><sp/>{<sp/>_DINT();<sp/>_NOP();<sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NO_OPERATION()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_NOP()</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;Unknown<sp/>IAR<sp/>Compiler,<sp/>the<sp/>file<sp/>bm.h<sp/>has<sp/>to<sp/>be<sp/>expanded<sp/>!&quot;</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__IAR_SYSTEMS_ICC__</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>IAR<sp/>Compiler<sp/>with<sp/>EDG<sp/>frontend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_IAR_TID_<sp/>((__TID__<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0x7f)</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>USE_RAW_ATTR<sp/>==<sp/>TRUE</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>the<sp/>raw<sp/>attribute<sp/>in<sp/>ISR&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_RAW<sp/>__raw</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Empty<sp/>define<sp/>RAW<sp/>as<sp/>it<sp/>is<sp/>not<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_RAW</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPT<sp/><sp/><sp/>_RAW<sp/>__interrupt</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MONITOR<sp/><sp/><sp/><sp/><sp/>__monitor</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>NO_INIT<sp/><sp/><sp/><sp/><sp/>__no_init</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_ENABLE()<sp/><sp/><sp/>__enable_interrupt()</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_DISABLE()<sp/><sp/>__disable_interrupt()</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>NO_OPERATION()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__no_operation()</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Force<sp/>inlining<sp/>of<sp/>function<sp/>in<sp/>release<sp/>builds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INLINE_FUNC<sp/>PRAGMA(inline=forced)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>force<sp/>inlining<sp/>of<sp/>function<sp/>in<sp/>debug<sp/>builds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INLINE_FUNC</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>(!defined<sp/>CODECHECK)<sp/>&amp;&amp;<sp/>(!defined<sp/>__DA_C__)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>to<sp/>a<sp/>new<sp/>way<sp/>of<sp/>using<sp/>#pragmas<sp/>in<sp/>preprocessor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PRAGMA(x)<sp/>_Pragma(#x)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ISR(x)<sp/>PRAGMA(vector<sp/>=<sp/>(x))<sp/>INTERRUPT</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>((_IAR_TID_)<sp/>==<sp/>43)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>Texas<sp/>Instruments<sp/>MSP430<sp/>CPU<sp/><sp/>(V2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_TID_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_TI_MSP430_</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_DIRECTION_OUT_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_EDGE_HIGH_LOW_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_64BIT_INT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>long</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>__VER__<sp/>&lt;<sp/>220</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WA<sp/>for<sp/>HW<sp/>bug,<sp/>add<sp/>a<sp/>nop<sp/>after<sp/>DINT,<sp/>Compiler<sp/>has<sp/>a<sp/>bugfix<sp/>since<sp/>version<sp/>2.20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#undef<sp/><sp/>INTERRUPTS_DISABLE</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>INTERRUPTS_DISABLE()<sp/><sp/>{<sp/>__disable_interrupt();<sp/>__no_operation();<sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;Unknown<sp/>new<sp/>IAR<sp/>Compiler,<sp/>the<sp/>file<sp/>bm.h<sp/>has<sp/>to<sp/>be<sp/>expanded<sp/>!&quot;</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__CCE__</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>CCE<sp/>Compiler<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPT<sp/><sp/><sp/>__interrupt</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MONITOR<sp/><sp/><sp/><sp/>//<sp/>__monitor</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>NO_INIT<sp/><sp/><sp/><sp/><sp/>__no_init</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_ENABLE()<sp/><sp/><sp/>__enable_interrupt()</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_DISABLE()<sp/><sp/>__disable_interrupt()</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>NO_OPERATION()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__no_operation()</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Force<sp/>inlining<sp/>of<sp/>function<sp/>in<sp/>release<sp/>builds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INLINE_FUNC<sp/>PRAGMA(inline=forced)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>force<sp/>inlining<sp/>of<sp/>function<sp/>in<sp/>debug<sp/>builds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>INLINE_FUNC</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Found<sp/>Texas<sp/>Instruments<sp/>MSP430<sp/>CPU<sp/><sp/>(V2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_TID_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_TI_MSP430_</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_DIRECTION_OUT_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_EDGE_HIGH_LOW_1_<sp/>TRUE</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#define<sp/>_CPU_64BIT_INT_<sp/><sp/><sp/><sp/><sp/><sp/><sp/>long<sp/>long</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#error<sp/>&quot;Unknown<sp/>Compiler,<sp/>the<sp/>file<sp/>bm.h<sp/>has<sp/>to<sp/>be<sp/>expanded<sp/>!&quot;</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ASSEMBLER_USED_</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>limits<sp/>to<sp/>autodetect<sp/>the<sp/>size<sp/>of<sp/>integral<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>floats<sp/>to<sp/>autodetect<sp/>the<sp/>size<sp/>of<sp/>float<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;float.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>***********************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Common<sp/>basic<sp/>data<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>***********************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>UCHAR_MAX<sp/>==<sp/>0xFFu</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_8BIT_INT_<sp/>char</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;unable<sp/>to<sp/>get<sp/>size<sp/>of<sp/>u8<sp/>automatically&quot;</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>USHRT_MAX<sp/>==<sp/>0xFFFFu</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_16BIT_INT_<sp/>short</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#elif<sp/>UINT_MAX<sp/>==<sp/>0xFFFFu</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_16BIT_INT_<sp/>int</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;unable<sp/>to<sp/>get<sp/>size<sp/>of<sp/>u16<sp/>automatically&quot;</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>USHRT_MAX<sp/>==<sp/>0xFFFFFFFFu</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_INT_<sp/>short</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#elif<sp/>UINT_MAX<sp/>==<sp/>0xFFFFFFFFu</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_INT_<sp/>int</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#elif<sp/>ULONG_MAX<sp/>==<sp/>0xFFFFFFFFu</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_INT_<sp/>long</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;unable<sp/>to<sp/>get<sp/>size<sp/>of<sp/>u32<sp/>automatically&quot;</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>__IAR_SYSTEMS_ICC__</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>__IAR_SYSTEMS_ICC__<sp/>&gt;<sp/>1</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_FLOAT_<sp/>float</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>__DOUBLE_SIZE__<sp/>==<sp/>8</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_64BIT_FLOAT_<sp/>double</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifndef<sp/>_CPU_32BIT_FLOAT_</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>FLT_MANT_DIG<sp/>==<sp/>24</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_FLOAT_<sp/>float</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#elif<sp/>DBL_MANT_DIG<sp/>==<sp/>24</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_32BIT_FLOAT_<sp/>double</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#error<sp/>&quot;unable<sp/>to<sp/>get<sp/>size<sp/>of<sp/>f32<sp/>automatically&quot;</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>DBL_MANT_DIG<sp/>==<sp/>53</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>_CPU_64BIT_FLOAT_<sp/>double</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>***********************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Following<sp/>lines<sp/>#typedef<sp/>the<sp/>basic<sp/>data<sp/>types<sp/>in<sp/>a<sp/>compiler<sp/>independent<sp/>way.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>***********************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_8BIT_INT_</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>8<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_CPU_8BIT_INT_<sp/>u8<sp/>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>8<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>U8_MAX<sp/>(0xFFU)</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>8<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>_CPU_8BIT_INT_<sp/>s8<sp/>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>8<sp/>bit<sp/>min<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S8_MIN<sp/>(-127<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>8<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S8_MAX<sp/>(127)</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_16BIT_INT_</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>16<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_CPU_16BIT_INT_<sp/><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>16<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>U16_MAX<sp/>(0xFFFFU)</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>16<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>_CPU_16BIT_INT_<sp/>s16<sp/>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>16<sp/>bit<sp/>min<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S16_MIN<sp/>(-32767<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>16<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S16_MAX<sp/>(32767)</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_32BIT_INT_</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>32<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_CPU_32BIT_INT_<sp/>u32<sp/>;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>32<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>U32_MAX<sp/>(0xFFFFFFFFUL)</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>32<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>_CPU_32BIT_INT_<sp/>s32<sp/>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>32<sp/>bit<sp/>min<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S32_MIN<sp/>(-2147483647L<sp/>-<sp/>1L)</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>32<sp/>bit<sp/>max<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>S32_MAX<sp/>(2147483647L)</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_64BIT_INT_</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>64<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_CPU_64BIT_INT_<sp/>u64<sp/>;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signed<sp/>64<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>_CPU_64BIT_INT_<sp/>s64<sp/>;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="303"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_32BIT_FLOAT_</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>float<sp/>32<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>_CPU_32BIT_FLOAT_<sp/>f32<sp/>;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>digits<sp/>in<sp/>mantissa<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MANT_DIG<sp/><sp/><sp/>(24)</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>epsilon<sp/>for<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_EPSILON<sp/><sp/><sp/><sp/>(1.192092896e-07)</highlight></codeline>
+<codeline lineno="311"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>digits<sp/>of<sp/>precision<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_DIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>exponent<sp/>min<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MIN_EXP<sp/><sp/><sp/><sp/>(-125)</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>min<sp/>positive<sp/>value<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1.175494351e-38)</highlight></codeline>
+<codeline lineno="317"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decimal<sp/>exponent<sp/>min<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MIN_10_EXP<sp/>(-37)</highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>exponent<sp/>max<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MAX_EXP<sp/><sp/><sp/><sp/>(128)</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>value<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3.402823466e+38)</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decimal<sp/>exponent<sp/>max<sp/>of<sp/>f32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F32_MAX_10_EXP<sp/>(38)</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>_CPU_64BIT_FLOAT_</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>float<sp/>64<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>_CPU_64BIT_FLOAT_<sp/>f64<sp/>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>digits<sp/>in<sp/>mantissa<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MANT_DIG<sp/><sp/><sp/>(53)</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>epsilon<sp/>for<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_EPSILON<sp/><sp/><sp/><sp/>(2.2204460492503131e-016)</highlight></codeline>
+<codeline lineno="334"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>digits<sp/>of<sp/>precision<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_DIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(15)</highlight></codeline>
+<codeline lineno="336"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>exponent<sp/>min<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MIN_EXP<sp/><sp/><sp/><sp/>(-1021)</highlight></codeline>
+<codeline lineno="338"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>min<sp/>positive<sp/>value<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2.2250738585072014e-308)</highlight></codeline>
+<codeline lineno="340"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decimal<sp/>exponent<sp/>min<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MIN_10_EXP<sp/>(-307)</highlight></codeline>
+<codeline lineno="342"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>exponent<sp/>max<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MAX_EXP<sp/><sp/><sp/><sp/>(1024)</highlight></codeline>
+<codeline lineno="344"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>value<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1.7976931348623158e+308)</highlight></codeline>
+<codeline lineno="346"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decimal<sp/>exponent<sp/>max<sp/>of<sp/>f64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F64_MAX_10_EXP<sp/>(308)</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="349"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="350" refid="bm_8h_1a4ae1dab0fb4b072a66584546209e7d58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="bm_8h_1a4ae1dab0fb4b072a66584546209e7d58" kindref="member">BYTE</ref>;</highlight></codeline>
+<codeline lineno="351" refid="bm_8h_1ad2baa11c897721ff6f14b452b547f9bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="bm_8h_1ad2baa11c897721ff6f14b452b547f9bc" kindref="member">WORD</ref>;</highlight></codeline>
+<codeline lineno="352" refid="bm_8h_1ad342ac907eb044443153a22f964bf0af" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="bm_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref>;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ASSMEBLER_USED_</highlight></codeline>
+<codeline lineno="355"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>macro<sp/>that<sp/>calculates<sp/>the<sp/>number<sp/>of<sp/>bits<sp/>of<sp/>a<sp/>given<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BITSIZEOF</highlight></codeline>
+<codeline lineno="358" refid="bm_8h_1a0142a4dbbfd5ab30a46122ce1f911f01" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BITSIZEOF(type)<sp/>(sizeof(type)<sp/>*<sp/>CHAR_BIT)</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="360"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A<sp/>macro<sp/>that<sp/>generates<sp/>a<sp/>bit<sp/>mask<sp/>according<sp/>to<sp/>a<sp/>given<sp/>bit<sp/>number.</highlight></codeline>
+<codeline lineno="362"><highlight class="comment"><sp/>*<sp/>Example:</highlight></codeline>
+<codeline lineno="363"><highlight class="comment"><sp/>*<sp/>-<sp/>BIT(0)<sp/>expands<sp/>to<sp/>1<sp/>(==<sp/>0x01)</highlight></codeline>
+<codeline lineno="364"><highlight class="comment"><sp/>*<sp/>-<sp/>BIT(3)<sp/>expands<sp/>to<sp/>8<sp/>(==<sp/>0x08)</highlight></codeline>
+<codeline lineno="365"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="bm_8h_1ad27cc17b25bb93134368d5eb21126eae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT(x)<sp/>(1uL<sp/>&lt;&lt;<sp/>(x))</highlight></codeline>
+<codeline lineno="367"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A<sp/>macro<sp/>that<sp/>generates<sp/>a<sp/>bit<sp/>mask<sp/>according<sp/>to<sp/>a<sp/>given<sp/>bit<sp/>number<sp/>with<sp/>a<sp/>cast<sp/>to<sp/>type.</highlight></codeline>
+<codeline lineno="369"><highlight class="comment"><sp/>*<sp/>The<sp/>difference<sp/>to<sp/>BIT(X)<sp/>is<sp/>the<sp/>additional<sp/>type<sp/>argument<sp/>T<sp/>that<sp/>is<sp/>used<sp/>to<sp/>cast<sp/>the<sp/>type<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="370"><highlight class="comment"><sp/>*<sp/>constant<sp/>1<sp/>and<sp/>the<sp/>type<sp/>of<sp/>the<sp/>result<sp/>as<sp/>well.</highlight></codeline>
+<codeline lineno="371"><highlight class="comment"><sp/>*<sp/>Example:</highlight></codeline>
+<codeline lineno="372"><highlight class="comment"><sp/>*<sp/>-<sp/>BIT_T(u8,0)<sp/><sp/>expands<sp/>to<sp/>(u8)1<sp/><sp/>(==<sp/>0x01)</highlight></codeline>
+<codeline lineno="373"><highlight class="comment"><sp/>*<sp/>-<sp/>BIT_T(u32,3)<sp/>expands<sp/>to<sp/>(u32)8<sp/>(==<sp/>0x08L)</highlight></codeline>
+<codeline lineno="374"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="bm_8h_1a48de125873899bea8025d333c9e7db10" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_T(t,<sp/>x)<sp/>((t)((t)1<sp/>&lt;&lt;<sp/>(x)))</highlight></codeline>
+<codeline lineno="376"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A<sp/>macro<sp/>to<sp/>calculate<sp/>the<sp/>position<sp/>of<sp/>the<sp/>highest<sp/>bit.</highlight></codeline>
+<codeline lineno="378"><highlight class="comment"><sp/>*<sp/>The<sp/>result<sp/>is<sp/>same<sp/>as<sp/>LOG2<sp/>in<sp/>case<sp/>only<sp/>one<sp/>bit<sp/>is<sp/>set.<sp/>Use<sp/>with<sp/>constant<sp/>values<sp/>only<sp/>because</highlight></codeline>
+<codeline lineno="379"><highlight class="comment"><sp/>*<sp/>of<sp/>code<sp/>size.</highlight></codeline>
+<codeline lineno="380"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="bm_8h_1a6cb59d563dc70e8b4a11d7cc92068244" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_HIGHEST(Input_u32)<sp/>(<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="382"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(31)<sp/>)<sp/>?<sp/>31<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="383"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(30)<sp/>)<sp/>?<sp/>30<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="384"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(29)<sp/>)<sp/>?<sp/>29<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="385"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(28)<sp/>)<sp/>?<sp/>28<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="386"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(27)<sp/>)<sp/>?<sp/>27<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="387"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(26)<sp/>)<sp/>?<sp/>26<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="388"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(25)<sp/>)<sp/>?<sp/>25<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="389"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(24)<sp/>)<sp/>?<sp/>24<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="390"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(23)<sp/>)<sp/>?<sp/>23<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="391"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(22)<sp/>)<sp/>?<sp/>22<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="392"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(21)<sp/>)<sp/>?<sp/>21<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="393"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(20)<sp/>)<sp/>?<sp/>20<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="394"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(19)<sp/>)<sp/>?<sp/>19<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="395"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(18)<sp/>)<sp/>?<sp/>18<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="396"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(17)<sp/>)<sp/>?<sp/>17<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="397"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(16)<sp/>)<sp/>?<sp/>16<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="398"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(15)<sp/>)<sp/>?<sp/>15<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="399"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(14)<sp/>)<sp/>?<sp/>14<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="400"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(13)<sp/>)<sp/>?<sp/>13<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="401"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(12)<sp/>)<sp/>?<sp/>12<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="402"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(11)<sp/>)<sp/>?<sp/>11<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="403"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(10)<sp/>)<sp/>?<sp/>10<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="404"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>9)<sp/>)<sp/>?<sp/><sp/>9<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="405"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>8)<sp/>)<sp/>?<sp/><sp/>8<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="406"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>7)<sp/>)<sp/>?<sp/><sp/>7<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="407"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>6)<sp/>)<sp/>?<sp/><sp/>6<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="408"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>5)<sp/>)<sp/>?<sp/><sp/>5<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="409"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>4)<sp/>)<sp/>?<sp/><sp/>4<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="410"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>3)<sp/>)<sp/>?<sp/><sp/>3<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="411"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>2)<sp/>)<sp/>?<sp/><sp/>2<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="412"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>1)<sp/>)<sp/>?<sp/><sp/>1<sp/>:<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="413"><highlight class="preprocessor"><sp/><sp/>(<sp/>(Input_u32)<sp/>&amp;<sp/>BIT(<sp/>0)<sp/>)<sp/>?<sp/><sp/>0<sp/>:<sp/><sp/>-1uL<sp/>))))))))))))))))))))))))))))))))</highlight></codeline>
+<codeline lineno="414"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MONITOR</highlight></codeline>
+<codeline lineno="417" refid="bm_8h_1abc5c6b4c2e2bc12eadd440fdb10bfd7c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MONITOR</highlight></codeline>
+<codeline lineno="418"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="419"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NO_INIT</highlight></codeline>
+<codeline lineno="421" refid="bm_8h_1afa9fbc67c23846c8b73d6f0afcfafec8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>NO_INIT</highlight></codeline>
+<codeline lineno="422"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="423"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INTERRUPT</highlight></codeline>
+<codeline lineno="425" refid="bm_8h_1ac950c0db046e2f86d15e7ae1f558b017" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPT</highlight></codeline>
+<codeline lineno="426"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="427"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ISR</highlight></codeline>
+<codeline lineno="429" refid="bm_8h_1a5f508dad67615d631d3f28b81a44f329" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>ISR(ignore)</highlight></codeline>
+<codeline lineno="430"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="431"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INLINE_FUNC</highlight></codeline>
+<codeline lineno="433" refid="bm_8h_1adae070f45bf9b301d9043e4373609681" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INLINE_FUNC</highlight></codeline>
+<codeline lineno="434"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="435"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INTERRUPTS_ENABLE</highlight></codeline>
+<codeline lineno="437" refid="bm_8h_1a4dec939236270af7daf98e0c7d7a081a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_ENABLE()</highlight></codeline>
+<codeline lineno="438"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="439"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INTERRUPTS_DISABLE</highlight></codeline>
+<codeline lineno="441" refid="bm_8h_1a27985ec9aa0a42ef61af6bc122ac9eeb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>INTERRUPTS_DISABLE()</highlight></codeline>
+<codeline lineno="442"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="443"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__BM_H</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/bm.h"/>
+  </compounddef>
+</doxygen>

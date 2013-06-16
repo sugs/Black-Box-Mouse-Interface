@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structioctlScanChan__t" kind="struct" prot="public">
+    <compoundname>ioctlScanChan_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structioctlScanChan__t_1a44e556259f16f30607b7ca7dc8fc7ab9" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t numChan</definition>
+        <argsstring></argsstring>
+        <name>numChan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="178" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structioctlScanChan__t_1af4f77f0a95a9ef3f8d76c23fcc8b9198" prot="public" static="no" mutable="no">
+        <type><ref refid="structfreqEntry__t" kindref="compound">freqEntry_t</ref> *</type>
+        <definition>freqEntry_t* freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="179" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="41">
+        <label>freqEntry_t</label>
+        <link refid="structfreqEntry__t"/>
+      </node>
+      <node id="40">
+        <label>ioctlScanChan_t</label>
+        <link refid="structioctlScanChan__t"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>freq</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="177" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="176" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structioctlScanChan__t_1af4f77f0a95a9ef3f8d76c23fcc8b9198" prot="public" virt="non-virtual"><scope>ioctlScanChan_t</scope><name>freq</name></member>
+      <member refid="structioctlScanChan__t_1a44e556259f16f30607b7ca7dc8fc7ab9" prot="public" virt="non-virtual"><scope>ioctlScanChan_t</scope><name>numChan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

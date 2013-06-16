@@ -1,0 +1,166 @@
+.TH "driver/display.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/display.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <project\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'clock\&.h'\fP
+.br
+\fC#include 'user\&.h'\fP
+.br
+\fC#include 'date\&.h'\fP
+.br
+\fC#include 'stopwatch\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBwrite_lcd_mem\fP (u8 *lcdmem, u8 bits, u8 bitmask, u8 state)"
+.br
+.ti -1c
+.RI "void \fBclear_line\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_symbol\fP (u8 symbol, u8 mode)"
+.br
+.ti -1c
+.RI "void \fBdisplay_char\fP (u8 segment, u8 chr, u8 mode)"
+.br
+.ti -1c
+.RI "void \fBdisplay_chars\fP (u8 segments, u8 *str, u8 mode)"
+.br
+.ti -1c
+.RI "void \fBlcd_init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBclear_display_all\fP (void)"
+.br
+.ti -1c
+.RI "void \fBclear_display\fP (void)"
+.br
+.ti -1c
+.RI "u8 * \fBitoa\fP (u32 n, u8 digits, u8 blanks)"
+.br
+.ti -1c
+.RI "void \fBdisplay_value1\fP (u8 segments, u32 value, u8 digits, u8 blanks)"
+.br
+.ti -1c
+.RI "void \fBdisplay_hours1\fP (u8 segments, u32 value, u8 digits, u8 blanks)"
+.br
+.ti -1c
+.RI "void \fBdisplay_am_pm_symbol\fP (u8 hour)"
+.br
+.ti -1c
+.RI "u8 \fBswitch_seg\fP (u8 line, u8 index1, u8 index2)"
+.br
+.ti -1c
+.RI "void \fBstart_blink\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstop_blink\fP (void)"
+.br
+.ti -1c
+.RI "void \fBclear_blink_mem\fP (void)"
+.br
+.ti -1c
+.RI "void \fBset_blink_rate\fP (u8 bits)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBs_display_flags\fP \fBdisplay\fP"
+.br
+.ti -1c
+.RI "u8 \fBitoa_str\fP [8]"
+.br
+.ti -1c
+.RI "void(* \fBfptr_lcd_function_line1\fP )(u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void(* \fBfptr_lcd_function_line2\fP )(u8 line, u8 update)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void \fBclear_blink_mem\fP (void)"
+.PP
+Definition at line 553 of file display\&.c\&.
+.SS "void \fBclear_display\fP (void)"
+.PP
+Definition at line 145 of file display\&.c\&.
+.SS "void \fBclear_display_all\fP (void)"
+.PP
+Definition at line 126 of file display\&.c\&.
+.SS "void \fBclear_line\fP (u8line)"
+.PP
+Definition at line 158 of file display\&.c\&.
+.SS "void \fBdisplay_am_pm_symbol\fP (u8hour)"
+.PP
+Definition at line 350 of file display\&.c\&.
+.SS "void \fBdisplay_char\fP (u8segment, u8chr, u8mode)"
+.PP
+Definition at line 404 of file display\&.c\&.
+.SS "void \fBdisplay_chars\fP (u8segments, u8 *str, u8mode)"
+.PP
+Definition at line 465 of file display\&.c\&.
+.SS "void \fBdisplay_hours1\fP (u8segments, u32value, u8digits, u8blanks)"
+.PP
+Definition at line 323 of file display\&.c\&.
+.SS "void \fBdisplay_symbol\fP (u8symbol, u8mode)"
+.PP
+Definition at line 373 of file display\&.c\&.
+.SS "void \fBdisplay_value1\fP (u8segments, u32value, u8digits, u8blanks)"
+.PP
+Definition at line 301 of file display\&.c\&.
+.SS "u8* \fBitoa\fP (u32n, u8digits, u8blanks)"
+.PP
+Definition at line 242 of file display\&.c\&.
+.SS "void \fBlcd_init\fP (void)"
+.PP
+Definition at line 93 of file display\&.c\&.
+.SS "void \fBset_blink_rate\fP (u8bits)"
+.PP
+Definition at line 565 of file display\&.c\&.
+.SS "void \fBstart_blink\fP (void)"
+.PP
+Definition at line 529 of file display\&.c\&.
+.SS "void \fBstop_blink\fP (void)"
+.PP
+Definition at line 541 of file display\&.c\&.
+.SS "u8 \fBswitch_seg\fP (u8line, u8index1, u8index2)"
+.PP
+Definition at line 510 of file display\&.c\&.
+.SS "void \fBwrite_lcd_mem\fP (u8 *lcdmem, u8bits, u8bitmask, u8state)"
+.PP
+Definition at line 185 of file display\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "volatile \fBs_display_flags\fP \fBdisplay\fP"
+.PP
+Definition at line 75 of file display\&.c\&.
+.SS "void(* \fBfptr_lcd_function_line1\fP)(u8 line, u8 update)"
+.PP
+Definition at line 116 of file main\&.c\&.
+.SS "void(* \fBfptr_lcd_function_line2\fP)(u8 line, u8 update)"
+.PP
+Definition at line 117 of file main\&.c\&.
+.SS "u8 \fBitoa_str\fP[8]"
+.PP
+Definition at line 78 of file display\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

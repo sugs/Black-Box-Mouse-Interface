@@ -1,0 +1,298 @@
+.TH "simpliciti/Components/nwk/nwk.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/nwk/nwk.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBconnInfo_t\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMPL_PORT_PING\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_LINK\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_JOIN\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_SECURITY\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_FREQ\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_MGMT\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_NWK_BCAST\fP   0x1F"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_USER_BCAST\fP   0x3F"
+.br
+.ti -1c
+.RI "#define \fBSMPL_LINKID_USER_UUD\fP   ((\fBlinkID_t\fP) ~0)"
+.br
+.ti -1c
+.RI "#define \fBPORT_BASE_NUMBER\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBPORT_USER_STATIC_NUM\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_STATIC_MAX\fP   0x3E"
+.br
+.ti -1c
+.RI "#define \fBSMPL_PORT_USER_MAX\fP   (\fBSMPL_PORT_STATIC_MAX\fP - \fBPORT_USER_STATIC_NUM\fP)"
+.br
+.ti -1c
+.RI "#define \fBCHK_RX\fP   0"
+.br
+.ti -1c
+.RI "#define \fBCHK_TX\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSMPL_MY_REPLY\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSMPL_A_REPLY\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSMPL_NOT_REPLY\fP   2"
+.br
+.ti -1c
+.RI "#define \fBLINK_SEND\fP   1"
+.br
+.ti -1c
+.RI "#define \fBLINK_REPLY\fP   2"
+.br
+.ti -1c
+.RI "#define \fBCONNSTATE_FREE\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBCONNSTATE_JOINED\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBCONNSTATE_CONNECTED\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBMAX_APT\fP   ((\fBappPTid_t\fP)~0)    /* max value of application payload TID type */"
+.br
+.ti -1c
+.RI "#define \fBTID_VALID_WINDOW\fP   2                  /* window around max and 0 */"
+.br
+.ti -1c
+.RI "#define \fBCHECK_TID_WRAP\fP(lastTID, newTID)"
+.br
+.ti -1c
+.RI "#define \fBDUP_TID_AFTER_WRAP\fP(lastTID, newTID)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_nwkInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_getNextConnection\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnwk_freeConnection\fP (\fBconnInfo_t\fP *)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_getNextClientPort\fP (void)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_getConnInfo\fP (\fBlinkID_t\fP port)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_isLinkDuplicate\fP (\fBuint8_t\fP *, \fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_findAddressMatch\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_checkConnInfo\fP (\fBconnInfo_t\fP *, \fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_isConnectionValid\fP (\fBmrfiPacket_t\fP *, \fBlinkID_t\fP *)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_allocateLocalRxPort\fP (\fBuint8_t\fP, \fBconnInfo_t\fP *)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_isValidReply\fP (\fBmrfiPacket_t\fP *, \fBuint8_t\fP, \fBuint8_t\fP, \fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_findPeer\fP (\fBaddr_t\fP *, \fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_NVObj\fP (\fBioctlAction_t\fP, \fBioctlNVObj_t\fP *)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_checkAppMsgTID\fP (\fBappPTid_t\fP, \fBappPTid_t\fP)"
+.br
+.ti -1c
+.RI "void \fBnwk_getNumObjectFromMsg\fP (void *, void *, \fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "void \fBnwk_putNumObjectIntoMsg\fP (void *, void *, \fBuint8_t\fP)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBCHECK_TID_WRAP\fP(lastTID, newTID)"\fBValue:\fP
+.PP
+.nf
+((lastTID >= (MAX_APT - TID_VALID_WINDOW)) &&  \
+                                           (newTID <= TID_VALID_WINDOW)                  \
+                                          )
+.fi
+.PP
+Definition at line 124 of file nwk\&.h\&.
+.SS "#define \fBCHK_RX\fP   0"
+.PP
+Definition at line 65 of file nwk\&.h\&.
+.SS "#define \fBCHK_TX\fP   1"
+.PP
+Definition at line 66 of file nwk\&.h\&.
+.SS "#define \fBCONNSTATE_CONNECTED\fP   (0x02)"
+.PP
+Definition at line 81 of file nwk\&.h\&.
+.SS "#define \fBCONNSTATE_FREE\fP   (0x00)"
+.PP
+Definition at line 79 of file nwk\&.h\&.
+.SS "#define \fBCONNSTATE_JOINED\fP   (0x01)"
+.PP
+Definition at line 80 of file nwk\&.h\&.
+.SS "#define \fBDUP_TID_AFTER_WRAP\fP(lastTID, newTID)"\fBValue:\fP
+.PP
+.nf
+((newTID >= (MAX_APT - TID_VALID_WINDOW)) &&  \
+                                                 (lastTID <= TID_VALID_WINDOW)                  \
+                                                )
+.fi
+.PP
+Definition at line 127 of file nwk\&.h\&.
+.SS "#define \fBLINK_REPLY\fP   2"
+.PP
+Definition at line 77 of file nwk\&.h\&.
+.SS "#define \fBLINK_SEND\fP   1"
+.PP
+Definition at line 76 of file nwk\&.h\&.
+.SS "#define \fBMAX_APT\fP   ((\fBappPTid_t\fP)~0)    /* max value of application payload TID type */"
+.PP
+Definition at line 121 of file nwk\&.h\&.
+.SS "#define \fBPORT_BASE_NUMBER\fP   0x20"
+.PP
+Definition at line 54 of file nwk\&.h\&.
+.SS "#define \fBPORT_USER_STATIC_NUM\fP   1"
+.PP
+Definition at line 59 of file nwk\&.h\&.
+.SS "#define \fBSMPL_A_REPLY\fP   1"
+.PP
+Definition at line 70 of file nwk\&.h\&.
+.SS "#define \fBSMPL_LINKID_USER_UUD\fP   ((\fBlinkID_t\fP) ~0)"
+.PP
+Definition at line 52 of file nwk\&.h\&.
+.SS "#define \fBSMPL_MY_REPLY\fP   0"
+.PP
+Definition at line 69 of file nwk\&.h\&.
+.SS "#define \fBSMPL_NOT_REPLY\fP   2"
+.PP
+Definition at line 71 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_FREQ\fP   0x05"
+.PP
+Definition at line 45 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_JOIN\fP   0x03"
+.PP
+Definition at line 43 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_LINK\fP   0x02"
+.PP
+Definition at line 42 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_MGMT\fP   0x06"
+.PP
+Definition at line 46 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_NWK_BCAST\fP   0x1F"
+.PP
+Definition at line 48 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_PING\fP   0x01"
+.PP
+Definition at line 41 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_SECURITY\fP   0x04"
+.PP
+Definition at line 44 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_STATIC_MAX\fP   0x3E"
+.PP
+Definition at line 60 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_USER_BCAST\fP   0x3F"
+.PP
+Definition at line 49 of file nwk\&.h\&.
+.SS "#define \fBSMPL_PORT_USER_MAX\fP   (\fBSMPL_PORT_STATIC_MAX\fP - \fBPORT_USER_STATIC_NUM\fP)"
+.PP
+Definition at line 61 of file nwk\&.h\&.
+.SS "#define \fBTID_VALID_WINDOW\fP   2                  /* window around max and 0 */"
+.PP
+Definition at line 122 of file nwk\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBuint8_t\fP \fBnwk_allocateLocalRxPort\fP (\fBuint8_t\fP, \fBconnInfo_t\fP *)"
+.PP
+Definition at line 684 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_checkAppMsgTID\fP (\fBappPTid_t\fP, \fBappPTid_t\fP)"
+.PP
+Definition at line 906 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_checkConnInfo\fP (\fBconnInfo_t\fP *, \fBuint8_t\fP)"
+.PP
+Definition at line 559 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_findAddressMatch\fP (\fBmrfiPacket_t\fP *)"
+.PP
+Definition at line 407 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_findPeer\fP (\fBaddr_t\fP *, \fBuint8_t\fP)"
+.PP
+Definition at line 866 of file nwk\&.c\&.
+.SS "void \fBnwk_freeConnection\fP (\fBconnInfo_t\fP *)"
+.PP
+Definition at line 327 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_getConnInfo\fP (\fBlinkID_t\fPport)"
+.PP
+Definition at line 347 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_getNextClientPort\fP (void)"
+.SS "\fBconnInfo_t\fP* \fBnwk_getNextConnection\fP (void)"
+.PP
+Definition at line 245 of file nwk\&.c\&.
+.SS "void \fBnwk_getNumObjectFromMsg\fP (void *, void *, \fBuint8_t\fP)"
+.PP
+Definition at line 961 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_isConnectionValid\fP (\fBmrfiPacket_t\fP *, \fBlinkID_t\fP *)"
+.PP
+Definition at line 593 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_isLinkDuplicate\fP (\fBuint8_t\fP *, \fBuint8_t\fP)"
+.PP
+Definition at line 372 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_isValidReply\fP (\fBmrfiPacket_t\fP *, \fBuint8_t\fP, \fBuint8_t\fP, \fBuint8_t\fP)"
+.PP
+Definition at line 803 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_NVObj\fP (\fBioctlAction_t\fP, \fBioctlNVObj_t\fP *)"
+.PP
+Definition at line 1053 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_nwkInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.PP
+Definition at line 176 of file nwk\&.c\&.
+.SS "void \fBnwk_putNumObjectIntoMsg\fP (void *, void *, \fBuint8_t\fP)"
+.PP
+Definition at line 999 of file nwk\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

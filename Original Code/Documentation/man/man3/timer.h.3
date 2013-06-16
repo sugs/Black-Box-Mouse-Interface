@@ -1,0 +1,90 @@
+.TH "driver/timer.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/timer.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtimer\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBUTTON_RESET_SEC\fP   (3u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTimer0_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_Start\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_Stop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A3_Start\fP (\fBu16\fP ticks)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A3_Stop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A4_Delay\fP (\fBu16\fP ticks)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "void(* \fBfptr_Timer0_A3_function\fP )(void)"
+.br
+.ti -1c
+.RI "struct \fBtimer\fP \fBsTimer\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBBUTTON_RESET_SEC\fP   (3u)"
+.PP
+Definition at line 64 of file timer\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBTimer0_A3_Start\fP (\fBu16\fPticks)"
+.PP
+Definition at line 148 of file timer\&.c\&.
+.SS "void \fBTimer0_A3_Stop\fP (void)"
+.PP
+Definition at line 176 of file timer\&.c\&.
+.SS "void \fBTimer0_A4_Delay\fP (\fBu16\fPticks)"
+.PP
+Definition at line 189 of file timer\&.c\&.
+.SS "void \fBTimer0_Init\fP (void)"
+.PP
+Definition at line 99 of file timer\&.c\&.
+.SS "void \fBTimer0_Start\fP (void)"
+.PP
+Definition at line 119 of file timer\&.c\&.
+.SS "void \fBTimer0_Stop\fP (void)"
+.PP
+Definition at line 132 of file timer\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "void(* \fBfptr_Timer0_A3_function\fP)(void)"
+.PP
+Definition at line 76 of file timer\&.c\&.
+.SS "struct \fBtimer\fP \fBsTimer\fP"
+.PP
+Definition at line 85 of file timer\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

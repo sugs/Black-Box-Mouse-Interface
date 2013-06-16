@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="nwk__mgmt_8h" kind="file">
+    <compoundname>nwk_mgmt.h</compoundname>
+    <includedby refid="nwk__app_8h" local="yes">simpliciti/Components/nwk/nwk_app.h</includedby>
+    <includedby refid="nwk__frame_8c" local="yes">simpliciti/Components/nwk/nwk_frame.c</includedby>
+    <includedby refid="nwk__QMgmt_8c" local="yes">simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
+    <includedby refid="nwk__join_8c" local="yes">simpliciti/Components/nwk_applications/nwk_join.c</includedby>
+    <includedby refid="nwk__mgmt_8c" local="yes">simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
+    <invincdepgraph>
+      <node id="1614">
+        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <link refid="nwk__api_8c"/>
+      </node>
+      <node id="1612">
+        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <link refid="nwk__app_8h"/>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <link refid="nwk__mgmt_8c"/>
+      </node>
+      <node id="1611">
+        <label>simpliciti/Components/nwk_applications/nwk_mgmt.h</label>
+        <link refid="nwk_mgmt.h"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1618" relation="include">
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>simpliciti/Components/nwk_applications/nwk_join.c</label>
+        <link refid="nwk__join_8c"/>
+      </node>
+      <node id="1615">
+        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <link refid="nwk__frame_8c"/>
+      </node>
+      <node id="1616">
+        <label>simpliciti/Components/nwk/nwk_QMgmt.c</label>
+        <link refid="nwk__QMgmt_8c"/>
+      </node>
+      <node id="1613">
+        <label>simpliciti/Components/nwk/nwk.c</label>
+        <link refid="nwk_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="nwk__mgmt_8h_1a22e427ee3bda1b8d5b986c1c54a1e514" prot="public" static="no">
+        <name>MGMT_REQ_POLL</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="41" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a5feff8cc1ce5f4ef8e7d7ad840784c40" prot="public" static="no">
+        <name>MAX_MGMT_APP_FRAME</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="44" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a1de4cc362f5abd386e6b2179c9cccaf9" prot="public" static="no">
+        <name>MB_APP_INFO_OS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="48" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a301b82197ede0338a89634e35e47389d" prot="public" static="no">
+        <name>MB_TID_OS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="49" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1aa4a1a7904391fef7f4d8b5eeb1e0b0a2" prot="public" static="no">
+        <name>M_POLL_PORT_OS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="52" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a76ec57af831edf0d8799a58280820f17" prot="public" static="no">
+        <name>M_POLL_ADDR_OS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a5feff8cc1ce5f4ef8e7d7ad840784c40" prot="public" static="no">
+        <name>MAX_MGMT_APP_FRAME</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="56" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__mgmt_8h_1a34e4c4750e3cfeb552e3b62725fadfaa" prot="public" static="no">
+        <name>MGMT_POLL_FRAME_SIZE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nwk__mgmt_8h_1a14ceb8b13d8db46a35f0b2aba952461f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_mgmtInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>nwk_mgmtInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c" bodystart="103" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__mgmt_8h_1ac4364df0a4cb3e3ea3b97119a516d387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af223ab49f851993ce1ca1a2f8c07d588" kindref="member">fhStatus_t</ref></type>
+        <definition>fhStatus_t nwk_processMgmt</definition>
+        <argsstring>(mrfiPacket_t *)</argsstring>
+        <name>nwk_processMgmt</name>
+        <param>
+          <type><ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="63" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c" bodystart="128" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__mgmt_8h_1a3a388e9da5543154fb4e69790cbc299c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_poll</definition>
+        <argsstring>(uint8_t, uint8_t *)</argsstring>
+        <name>nwk_poll</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="64" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c" bodystart="317" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__mgmt_8h_1a5c1526a58f6afb44c9e27495c8e1df70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_resetSFMarker</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>nwk_resetSFMarker</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h" line="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Filename:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>nwk_mgmt.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2009-01-06<sp/>15:45:54<sp/>-0800<sp/>(Tue,<sp/>06<sp/>Jan<sp/>2009)<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>18697<sp/>$</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Author:<sp/>lfriedman<sp/>$</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>Description:<sp/><sp/><sp/><sp/>This<sp/>header<sp/>file<sp/>supports<sp/>the<sp/>SimpliciTI<sp/>Mgmt<sp/>network<sp/>application.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>Copyright<sp/>2004-2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NWK_MGMT_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NWK_MGMT_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MGMT<sp/>frame<sp/>application<sp/>requests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="nwk__mgmt_8h_1a22e427ee3bda1b8d5b986c1c54a1e514" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MGMT_REQ_POLL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>change<sp/>the<sp/>following<sp/>as<sp/>protocol<sp/>developed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MGMT_APP_FRAME<sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>application<sp/>payload<sp/>offsets<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>both<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="nwk__mgmt_8h_1a1de4cc362f5abd386e6b2179c9cccaf9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MB_APP_INFO_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="49" refid="nwk__mgmt_8h_1a301b82197ede0338a89634e35e47389d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MB_TID_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>Poll<sp/>frame<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="nwk__mgmt_8h_1aa4a1a7904391fef7f4d8b5eeb1e0b0a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_POLL_PORT_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="53" refid="nwk__mgmt_8h_1a76ec57af831edf0d8799a58280820f17" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>M_POLL_ADDR_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>change<sp/>the<sp/>following<sp/>as<sp/>protocol<sp/>developed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="nwk__mgmt_8h_1a5feff8cc1ce5f4ef8e7d7ad840784c40" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MGMT_APP_FRAME<sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>frame<sp/>sizes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="nwk__mgmt_8h_1a34e4c4750e3cfeb552e3b62725fadfaa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MGMT_POLL_FRAME_SIZE<sp/><sp/>7</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__mgmt_8c_1a14ceb8b13d8db46a35f0b2aba952461f" kindref="member">nwk_mgmtInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="nwk__types_8h_1af223ab49f851993ce1ca1a2f8c07d588" kindref="member">fhStatus_t</ref><sp/><sp/><sp/><ref refid="nwk__mgmt_8c_1a8064c2234cc276ab90b99295633224e0" kindref="member">nwk_processMgmt</ref>(<ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><ref refid="nwk__mgmt_8c_1aea1bde85184998947209dafe6744536a" kindref="member">nwk_poll</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__mgmt_8h_1a5c1526a58f6afb44c9e27495c8e1df70" kindref="member">nwk_resetSFMarker</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h"/>
+  </compounddef>
+</doxygen>

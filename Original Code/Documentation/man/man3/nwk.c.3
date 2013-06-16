@@ -1,0 +1,187 @@
+.TH "simpliciti/Components/nwk/nwk.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/nwk/nwk.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk_frame\&.h'\fP
+.br
+\fC#include 'nwk\&.h'\fP
+.br
+\fC#include 'nwk_app\&.h'\fP
+.br
+\fC#include 'nwk_globals\&.h'\fP
+.br
+\fC#include 'nwk_QMgmt\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBpersistentContext_t\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_HOPS\fP   3"
+.br
+.ti -1c
+.RI "#define \fBSYS_NUM_CONNECTIONS\fP   (NUM_CONNECTIONS+1)"
+.br
+.ti -1c
+.RI "#define \fBCONNTABLEINFO_STRUCTURE_VERSION\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSIZEOF_NV_OBJ\fP   sizeof(\fBsPersistInfo\fP)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBuint8_t\fP \fBmap_lid2idx\fP (\fBlinkID_t\fP, \fBuint8_t\fP *)"
+.br
+.ti -1c
+.RI "static void \fBinitializeConnection\fP (\fBconnInfo_t\fP *)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_nwkInit\fP (\fBuint8_t\fP(*f)(\fBlinkID_t\fP))"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_getNextConnection\fP ()"
+.br
+.ti -1c
+.RI "void \fBnwk_freeConnection\fP (\fBconnInfo_t\fP *pCInfo)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_getConnInfo\fP (\fBlinkID_t\fP linkID)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_isLinkDuplicate\fP (\fBuint8_t\fP *addr, \fBuint8_t\fP remotePort)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_findAddressMatch\fP (\fBmrfiPacket_t\fP *frame)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_checkConnInfo\fP (\fBconnInfo_t\fP *ptr, \fBuint8_t\fP which)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_isConnectionValid\fP (\fBmrfiPacket_t\fP *frame, \fBlinkID_t\fP *lid)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_allocateLocalRxPort\fP (\fBuint8_t\fP which, \fBconnInfo_t\fP *newPtr)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_isValidReply\fP (\fBmrfiPacket_t\fP *frame, \fBuint8_t\fP tid, \fBuint8_t\fP infoOffset, \fBuint8_t\fP tidOffset)"
+.br
+.ti -1c
+.RI "\fBconnInfo_t\fP * \fBnwk_findPeer\fP (\fBaddr_t\fP *peerAddr, \fBuint8_t\fP peerPort)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_checkAppMsgTID\fP (\fBappPTid_t\fP lastTID, \fBappPTid_t\fP appMsgTID)"
+.br
+.ti -1c
+.RI "void \fBnwk_getNumObjectFromMsg\fP (void *src, void *dest, \fBuint8_t\fP objSize)"
+.br
+.ti -1c
+.RI "void \fBnwk_putNumObjectIntoMsg\fP (void *src, void *dest, \fBuint8_t\fP objSize)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_NVObj\fP (\fBioctlAction_t\fP action, \fBioctlNVObj_t\fP *val)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static \fBpersistentContext_t\fP \fBsPersistInfo\fP = { 1 }"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBCONNTABLEINFO_STRUCTURE_VERSION\fP   1"
+.PP
+Definition at line 110 of file nwk\&.c\&.
+.SS "#define \fBMAX_HOPS\fP   3"
+.PP
+Definition at line 62 of file nwk\&.c\&.
+.SS "#define \fBSIZEOF_NV_OBJ\fP   sizeof(\fBsPersistInfo\fP)"
+.PP
+Definition at line 112 of file nwk\&.c\&.
+.SS "#define \fBSYS_NUM_CONNECTIONS\fP   (NUM_CONNECTIONS+1)"
+.PP
+Definition at line 104 of file nwk\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "static void \fBinitializeConnection\fP (\fBconnInfo_t\fP *pCInfo)\fC [static]\fP"
+.PP
+Definition at line 283 of file nwk\&.c\&.
+.SS "static \fBuint8_t\fP \fBmap_lid2idx\fP (\fBlinkID_t\fPlid, \fBuint8_t\fP *idx)\fC [static]\fP"
+.PP
+Definition at line 836 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_allocateLocalRxPort\fP (\fBuint8_t\fPwhich, \fBconnInfo_t\fP *newPtr)"
+.PP
+Definition at line 684 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_checkAppMsgTID\fP (\fBappPTid_t\fPlastTID, \fBappPTid_t\fPappMsgTID)"
+.PP
+Definition at line 906 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_checkConnInfo\fP (\fBconnInfo_t\fP *ptr, \fBuint8_t\fPwhich)"
+.PP
+Definition at line 559 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_findAddressMatch\fP (\fBmrfiPacket_t\fP *frame)"
+.PP
+Definition at line 407 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_findPeer\fP (\fBaddr_t\fP *peerAddr, \fBuint8_t\fPpeerPort)"
+.PP
+Definition at line 866 of file nwk\&.c\&.
+.SS "void \fBnwk_freeConnection\fP (\fBconnInfo_t\fP *pCInfo)"
+.PP
+Definition at line 327 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_getConnInfo\fP (\fBlinkID_t\fPlinkID)"
+.PP
+Definition at line 347 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_getNextConnection\fP (void)"
+.PP
+Definition at line 245 of file nwk\&.c\&.
+.SS "void \fBnwk_getNumObjectFromMsg\fP (void *src, void *dest, \fBuint8_t\fPobjSize)"
+.PP
+Definition at line 961 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_isConnectionValid\fP (\fBmrfiPacket_t\fP *frame, \fBlinkID_t\fP *lid)"
+.PP
+Definition at line 593 of file nwk\&.c\&.
+.SS "\fBconnInfo_t\fP* \fBnwk_isLinkDuplicate\fP (\fBuint8_t\fP *addr, \fBuint8_t\fPremotePort)"
+.PP
+Definition at line 372 of file nwk\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_isValidReply\fP (\fBmrfiPacket_t\fP *frame, \fBuint8_t\fPtid, \fBuint8_t\fPinfoOffset, \fBuint8_t\fPtidOffset)"
+.PP
+Definition at line 803 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_NVObj\fP (\fBioctlAction_t\fPaction, \fBioctlNVObj_t\fP *val)"
+.PP
+Definition at line 1053 of file nwk\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_nwkInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP)f)"
+.PP
+Definition at line 176 of file nwk\&.c\&.
+.SS "void \fBnwk_putNumObjectIntoMsg\fP (void *src, void *dest, \fBuint8_t\fPobjSize)"
+.PP
+Definition at line 999 of file nwk\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBpersistentContext_t\fP \fBsPersistInfo\fP = { 1 }\fC [static]\fP"
+.PP
+Definition at line 149 of file nwk\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

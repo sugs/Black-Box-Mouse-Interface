@@ -1,0 +1,119 @@
+\hypertarget{nwk__QMgmt_8h}{\section{simpliciti/\-Components/nwk/nwk\-\_\-\-Q\-Mgmt.h \-File \-Reference}
+\label{nwk__QMgmt_8h}\index{simpliciti/\-Components/nwk/nwk\-\_\-\-Q\-Mgmt.\-h@{simpliciti/\-Components/nwk/nwk\-\_\-\-Q\-Mgmt.\-h}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{nwk__QMgmt_8h_adc9db85df4eb352dda1dd638d6051798}{\-I\-N\-Q}~1
+\item 
+\#define \hyperlink{nwk__QMgmt_8h_ab7cca9199a6d0bdcbbc2ad1566626f52}{\-O\-U\-T\-Q}~2
+\item 
+\#define \hyperlink{nwk__QMgmt_8h_afd2f76b1f8b997586258b35b226eb5bd}{\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L}~1
+\item 
+\#define \hyperlink{nwk__QMgmt_8h_a40aa63815b1da2e6102a6f3524fcaef6}{\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D}~2
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{nwk__QMgmt_8h_af4c499cabab7e4a91fb1771c6a745974}{nwk\-\_\-\-Q\-Init} (void)
+\item 
+\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$ \hyperlink{nwk__QMgmt_8h_a0b0b0beaad16ddb6eee4b884a051cd6d}{nwk\-\_\-\-Qfind\-Slot} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+void \hyperlink{nwk__QMgmt_8h_a6c3c17fbc36b3d47796c4f79f61a7353}{nwk\-\_\-\-Qadjust\-Order} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$ \hyperlink{nwk__QMgmt_8h_a1b5e7ab35a531e16675cae22aeb0ce66}{nwk\-\_\-\-Qfind\-Oldest} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{structrcvContext__t}{rcv\-Context\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$ \hyperlink{nwk__QMgmt_8h_a66d5d5dd7ed29d84dc8288a0e5d41834}{nwk\-\_\-get\-Q} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{nwk__QMgmt_8h_adc9db85df4eb352dda1dd638d6051798}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!\-I\-N\-Q@{\-I\-N\-Q}}
+\index{\-I\-N\-Q@{\-I\-N\-Q}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{\-I\-N\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-Q}~1}}\label{nwk__QMgmt_8h_adc9db85df4eb352dda1dd638d6051798}
+
+
+\-Definition at line 40 of file nwk\-\_\-\-Q\-Mgmt.\-h.
+
+\hypertarget{nwk__QMgmt_8h_ab7cca9199a6d0bdcbbc2ad1566626f52}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!\-O\-U\-T\-Q@{\-O\-U\-T\-Q}}
+\index{\-O\-U\-T\-Q@{\-O\-U\-T\-Q}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{\-O\-U\-T\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-O\-U\-T\-Q}~2}}\label{nwk__QMgmt_8h_ab7cca9199a6d0bdcbbc2ad1566626f52}
+
+
+\-Definition at line 41 of file nwk\-\_\-\-Q\-Mgmt.\-h.
+
+\hypertarget{nwk__QMgmt_8h_a40aa63815b1da2e6102a6f3524fcaef6}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D@{\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D}}
+\index{\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D@{\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{\-U\-S\-A\-G\-E\-\_\-\-F\-W\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-A\-G\-E\-\_\-\-F\-W\-D}~2}}\label{nwk__QMgmt_8h_a40aa63815b1da2e6102a6f3524fcaef6}
+
+
+\-Definition at line 44 of file nwk\-\_\-\-Q\-Mgmt.\-h.
+
+\hypertarget{nwk__QMgmt_8h_afd2f76b1f8b997586258b35b226eb5bd}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L@{\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L}}
+\index{\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L@{\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{\-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-A\-G\-E\-\_\-\-N\-O\-R\-M\-A\-L}~1}}\label{nwk__QMgmt_8h_afd2f76b1f8b997586258b35b226eb5bd}
+
+
+\-Definition at line 43 of file nwk\-\_\-\-Q\-Mgmt.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk__QMgmt_8h_a66d5d5dd7ed29d84dc8288a0e5d41834}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!nwk\-\_\-get\-Q@{nwk\-\_\-get\-Q}}
+\index{nwk\-\_\-get\-Q@{nwk\-\_\-get\-Q}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{nwk\-\_\-get\-Q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf frame\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-get\-Q} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__QMgmt_8h_a66d5d5dd7ed29d84dc8288a0e5d41834}
+
+
+\-Definition at line 413 of file nwk\-\_\-\-Q\-Mgmt.\-c.
+
+\hypertarget{nwk__QMgmt_8h_a6c3c17fbc36b3d47796c4f79f61a7353}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!nwk\-\_\-\-Qadjust\-Order@{nwk\-\_\-\-Qadjust\-Order}}
+\index{nwk\-\_\-\-Qadjust\-Order@{nwk\-\_\-\-Qadjust\-Order}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{nwk\-\_\-\-Qadjust\-Order}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-\-Qadjust\-Order} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__QMgmt_8h_a6c3c17fbc36b3d47796c4f79f61a7353}
+
+
+\-Definition at line 217 of file nwk\-\_\-\-Q\-Mgmt.\-c.
+
+\hypertarget{nwk__QMgmt_8h_a1b5e7ab35a531e16675cae22aeb0ce66}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!nwk\-\_\-\-Qfind\-Oldest@{nwk\-\_\-\-Qfind\-Oldest}}
+\index{nwk\-\_\-\-Qfind\-Oldest@{nwk\-\_\-\-Qfind\-Oldest}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{nwk\-\_\-\-Qfind\-Oldest}]{\setlength{\rightskip}{0pt plus 5cm}{\bf frame\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-\-Qfind\-Oldest} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf rcv\-Context\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__QMgmt_8h_a1b5e7ab35a531e16675cae22aeb0ce66}
+
+
+\-Definition at line 268 of file nwk\-\_\-\-Q\-Mgmt.\-c.
+
+\hypertarget{nwk__QMgmt_8h_a0b0b0beaad16ddb6eee4b884a051cd6d}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!nwk\-\_\-\-Qfind\-Slot@{nwk\-\_\-\-Qfind\-Slot}}
+\index{nwk\-\_\-\-Qfind\-Slot@{nwk\-\_\-\-Qfind\-Slot}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{nwk\-\_\-\-Qfind\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf frame\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-\-Qfind\-Slot} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__QMgmt_8h_a0b0b0beaad16ddb6eee4b884a051cd6d}
+
+
+\-Definition at line 124 of file nwk\-\_\-\-Q\-Mgmt.\-c.
+
+\hypertarget{nwk__QMgmt_8h_af4c499cabab7e4a91fb1771c6a745974}{\index{nwk\-\_\-\-Q\-Mgmt.\-h@{nwk\-\_\-\-Q\-Mgmt.\-h}!nwk\-\_\-\-Q\-Init@{nwk\-\_\-\-Q\-Init}}
+\index{nwk\-\_\-\-Q\-Init@{nwk\-\_\-\-Q\-Init}!nwk_QMgmt.h@{nwk\-\_\-\-Q\-Mgmt.\-h}}
+\subsubsection[{nwk\-\_\-\-Q\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-\-Q\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__QMgmt_8h_af4c499cabab7e4a91fb1771c6a745974}
+
+
+\-Definition at line 97 of file nwk\-\_\-\-Q\-Mgmt.\-c.
+

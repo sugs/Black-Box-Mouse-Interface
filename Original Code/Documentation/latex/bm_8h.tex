@@ -1,0 +1,209 @@
+\hypertarget{bm_8h}{\section{bluerobin/bm.h \-File \-Reference}
+\label{bm_8h}\index{bluerobin/bm.\-h@{bluerobin/bm.\-h}}
+}
+{\ttfamily \#include $<$stddef.\-h$>$}\*
+{\ttfamily \#include $<$limits.\-h$>$}\*
+{\ttfamily \#include $<$float.\-h$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bm_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}~(0 == 1)
+\item 
+\#define \hyperlink{bm_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}~(1 == 1)
+\item 
+\#define \hyperlink{bm_8h_aea0a5ae167d468ec29f0da2b03d7f725}{\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R}~\hyperlink{bm_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}
+\item 
+\#define \hyperlink{bm_8h_a3a5ca9b6a40bb76ce4ee1dda9f66197d}{\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-}~(16)
+\item 
+\#define \hyperlink{bm_8h_a0142a4dbbfd5ab30a46122ce1f911f01}{\-B\-I\-T\-S\-I\-Z\-E\-O\-F}(type)~(sizeof(type) $\ast$ \-C\-H\-A\-R\-\_\-\-B\-I\-T)
+\item 
+\#define \hyperlink{bm_8h_ad27cc17b25bb93134368d5eb21126eae}{\-B\-I\-T}(x)~(1u\-L $<$$<$ (x))
+\item 
+\#define \hyperlink{bm_8h_a48de125873899bea8025d333c9e7db10}{\-B\-I\-T\-\_\-\-T}(t, x)~((t)((t)1 $<$$<$ (x)))
+\item 
+\#define \hyperlink{bm_8h_a6cb59d563dc70e8b4a11d7cc92068244}{\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T}(\-Input\-\_\-u32)
+\item 
+\#define \hyperlink{bm_8h_abc5c6b4c2e2bc12eadd440fdb10bfd7c}{\-M\-O\-N\-I\-T\-O\-R}
+\item 
+\#define \hyperlink{bm_8h_afa9fbc67c23846c8b73d6f0afcfafec8}{\-N\-O\-\_\-\-I\-N\-I\-T}
+\item 
+\#define \hyperlink{bm_8h_ac950c0db046e2f86d15e7ae1f558b017}{\-I\-N\-T\-E\-R\-R\-U\-P\-T}
+\item 
+\#define \hyperlink{bm_8h_a5f508dad67615d631d3f28b81a44f329}{\-I\-S\-R}(ignore)
+\item 
+\#define \hyperlink{bm_8h_adae070f45bf9b301d9043e4373609681}{\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C}
+\item 
+\#define \hyperlink{bm_8h_a4dec939236270af7daf98e0c7d7a081a}{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E}()
+\item 
+\#define \hyperlink{bm_8h_a27985ec9aa0a42ef61af6bc122ac9eeb}{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E}()
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{bm_8h_a4ae1dab0fb4b072a66584546209e7d58}{\-B\-Y\-T\-E}
+\item 
+typedef unsigned int \hyperlink{bm_8h_ad2baa11c897721ff6f14b452b547f9bc}{\-W\-O\-R\-D}
+\item 
+typedef unsigned long \hyperlink{bm_8h_ad342ac907eb044443153a22f964bf0af}{\-D\-W\-O\-R\-D}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{bm_8h_a3a5ca9b6a40bb76ce4ee1dda9f66197d}{\index{bm.\-h@{bm.\-h}!\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-@{\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-}}
+\index{\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-@{\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-}!bm.h@{bm.\-h}}
+\subsubsection[{\-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-\-T\-I\-\_\-\-M\-S\-P430\-\_\-}~(16)}}\label{bm_8h_a3a5ca9b6a40bb76ce4ee1dda9f66197d}
+
+
+\-Definition at line 65 of file bm.\-h.
+
+\hypertarget{bm_8h_ad27cc17b25bb93134368d5eb21126eae}{\index{bm.\-h@{bm.\-h}!\-B\-I\-T@{\-B\-I\-T}}
+\index{\-B\-I\-T@{\-B\-I\-T}!bm.h@{bm.\-h}}
+\subsubsection[{\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-I\-T}(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~(1u\-L $<$$<$ (x))}}\label{bm_8h_ad27cc17b25bb93134368d5eb21126eae}
+
+
+\-Definition at line 366 of file bm.\-h.
+
+\hypertarget{bm_8h_a6cb59d563dc70e8b4a11d7cc92068244}{\index{bm.\-h@{bm.\-h}!\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T@{\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T}}
+\index{\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T@{\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T}!bm.h@{bm.\-h}}
+\subsubsection[{\-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-I\-T\-\_\-\-H\-I\-G\-H\-E\-S\-T}(
+\begin{DoxyParamCaption}
+\item[{}]{\-Input\-\_\-u32}
+\end{DoxyParamCaption}
+)}}\label{bm_8h_a6cb59d563dc70e8b4a11d7cc92068244}
+
+
+\-Definition at line 381 of file bm.\-h.
+
+\hypertarget{bm_8h_a48de125873899bea8025d333c9e7db10}{\index{bm.\-h@{bm.\-h}!\-B\-I\-T\-\_\-\-T@{\-B\-I\-T\-\_\-\-T}}
+\index{\-B\-I\-T\-\_\-\-T@{\-B\-I\-T\-\_\-\-T}!bm.h@{bm.\-h}}
+\subsubsection[{\-B\-I\-T\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-I\-T\-\_\-\-T}(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~((t)((t)1 $<$$<$ (x)))}}\label{bm_8h_a48de125873899bea8025d333c9e7db10}
+
+
+\-Definition at line 375 of file bm.\-h.
+
+\hypertarget{bm_8h_a0142a4dbbfd5ab30a46122ce1f911f01}{\index{bm.\-h@{bm.\-h}!\-B\-I\-T\-S\-I\-Z\-E\-O\-F@{\-B\-I\-T\-S\-I\-Z\-E\-O\-F}}
+\index{\-B\-I\-T\-S\-I\-Z\-E\-O\-F@{\-B\-I\-T\-S\-I\-Z\-E\-O\-F}!bm.h@{bm.\-h}}
+\subsubsection[{\-B\-I\-T\-S\-I\-Z\-E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-I\-T\-S\-I\-Z\-E\-O\-F}(
+\begin{DoxyParamCaption}
+\item[{}]{type}
+\end{DoxyParamCaption}
+)~(sizeof(type) $\ast$ \-C\-H\-A\-R\-\_\-\-B\-I\-T)}}\label{bm_8h_a0142a4dbbfd5ab30a46122ce1f911f01}
+
+
+\-Definition at line 358 of file bm.\-h.
+
+\hypertarget{bm_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{bm.\-h@{bm.\-h}!\-F\-A\-L\-S\-E@{\-F\-A\-L\-S\-E}}
+\index{\-F\-A\-L\-S\-E@{\-F\-A\-L\-S\-E}!bm.h@{bm.\-h}}
+\subsubsection[{\-F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-A\-L\-S\-E}~(0 == 1)}}\label{bm_8h_aa93f0eb578d23995850d61f7d61c55c1}
+
+
+\-Definition at line 44 of file bm.\-h.
+
+\hypertarget{bm_8h_adae070f45bf9b301d9043e4373609681}{\index{bm.\-h@{bm.\-h}!\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C@{\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C}}
+\index{\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C@{\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C}!bm.h@{bm.\-h}}
+\subsubsection[{\-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-L\-I\-N\-E\-\_\-\-F\-U\-N\-C}}}\label{bm_8h_adae070f45bf9b301d9043e4373609681}
+
+
+\-Definition at line 433 of file bm.\-h.
+
+\hypertarget{bm_8h_ac950c0db046e2f86d15e7ae1f558b017}{\index{bm.\-h@{bm.\-h}!\-I\-N\-T\-E\-R\-R\-U\-P\-T@{\-I\-N\-T\-E\-R\-R\-U\-P\-T}}
+\index{\-I\-N\-T\-E\-R\-R\-U\-P\-T@{\-I\-N\-T\-E\-R\-R\-U\-P\-T}!bm.h@{bm.\-h}}
+\subsubsection[{\-I\-N\-T\-E\-R\-R\-U\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-T\-E\-R\-R\-U\-P\-T}}}\label{bm_8h_ac950c0db046e2f86d15e7ae1f558b017}
+
+
+\-Definition at line 425 of file bm.\-h.
+
+\hypertarget{bm_8h_a27985ec9aa0a42ef61af6bc122ac9eeb}{\index{bm.\-h@{bm.\-h}!\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E@{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E}}
+\index{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E@{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E}!bm.h@{bm.\-h}}
+\subsubsection[{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-D\-I\-S\-A\-B\-L\-E}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bm_8h_a27985ec9aa0a42ef61af6bc122ac9eeb}
+
+
+\-Definition at line 441 of file bm.\-h.
+
+\hypertarget{bm_8h_a4dec939236270af7daf98e0c7d7a081a}{\index{bm.\-h@{bm.\-h}!\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E@{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E}}
+\index{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E@{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E}!bm.h@{bm.\-h}}
+\subsubsection[{\-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-T\-E\-R\-R\-U\-P\-T\-S\-\_\-\-E\-N\-A\-B\-L\-E}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bm_8h_a4dec939236270af7daf98e0c7d7a081a}
+
+
+\-Definition at line 437 of file bm.\-h.
+
+\hypertarget{bm_8h_a5f508dad67615d631d3f28b81a44f329}{\index{bm.\-h@{bm.\-h}!\-I\-S\-R@{\-I\-S\-R}}
+\index{\-I\-S\-R@{\-I\-S\-R}!bm.h@{bm.\-h}}
+\subsubsection[{\-I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-S\-R}(
+\begin{DoxyParamCaption}
+\item[{}]{ignore}
+\end{DoxyParamCaption}
+)}}\label{bm_8h_a5f508dad67615d631d3f28b81a44f329}
+
+
+\-Definition at line 429 of file bm.\-h.
+
+\hypertarget{bm_8h_abc5c6b4c2e2bc12eadd440fdb10bfd7c}{\index{bm.\-h@{bm.\-h}!\-M\-O\-N\-I\-T\-O\-R@{\-M\-O\-N\-I\-T\-O\-R}}
+\index{\-M\-O\-N\-I\-T\-O\-R@{\-M\-O\-N\-I\-T\-O\-R}!bm.h@{bm.\-h}}
+\subsubsection[{\-M\-O\-N\-I\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-O\-N\-I\-T\-O\-R}}}\label{bm_8h_abc5c6b4c2e2bc12eadd440fdb10bfd7c}
+
+
+\-Definition at line 417 of file bm.\-h.
+
+\hypertarget{bm_8h_afa9fbc67c23846c8b73d6f0afcfafec8}{\index{bm.\-h@{bm.\-h}!\-N\-O\-\_\-\-I\-N\-I\-T@{\-N\-O\-\_\-\-I\-N\-I\-T}}
+\index{\-N\-O\-\_\-\-I\-N\-I\-T@{\-N\-O\-\_\-\-I\-N\-I\-T}!bm.h@{bm.\-h}}
+\subsubsection[{\-N\-O\-\_\-\-I\-N\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-N\-O\-\_\-\-I\-N\-I\-T}}}\label{bm_8h_afa9fbc67c23846c8b73d6f0afcfafec8}
+
+
+\-Definition at line 421 of file bm.\-h.
+
+\hypertarget{bm_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{bm.\-h@{bm.\-h}!\-T\-R\-U\-E@{\-T\-R\-U\-E}}
+\index{\-T\-R\-U\-E@{\-T\-R\-U\-E}!bm.h@{bm.\-h}}
+\subsubsection[{\-T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-T\-R\-U\-E}~(1 == 1)}}\label{bm_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+
+
+\-Definition at line 49 of file bm.\-h.
+
+\hypertarget{bm_8h_aea0a5ae167d468ec29f0da2b03d7f725}{\index{bm.\-h@{bm.\-h}!\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R@{\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R}}
+\index{\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R@{\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R}!bm.h@{bm.\-h}}
+\subsubsection[{\-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-\_\-\-R\-A\-W\-\_\-\-A\-T\-T\-R}~{\bf \-F\-A\-L\-S\-E}}}\label{bm_8h_aea0a5ae167d468ec29f0da2b03d7f725}
+
+
+\-Definition at line 54 of file bm.\-h.
+
+
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{bm_8h_a4ae1dab0fb4b072a66584546209e7d58}{\index{bm.\-h@{bm.\-h}!\-B\-Y\-T\-E@{\-B\-Y\-T\-E}}
+\index{\-B\-Y\-T\-E@{\-B\-Y\-T\-E}!bm.h@{bm.\-h}}
+\subsubsection[{\-B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf \-B\-Y\-T\-E}}}\label{bm_8h_a4ae1dab0fb4b072a66584546209e7d58}
+
+
+\-Definition at line 350 of file bm.\-h.
+
+\hypertarget{bm_8h_ad342ac907eb044443153a22f964bf0af}{\index{bm.\-h@{bm.\-h}!\-D\-W\-O\-R\-D@{\-D\-W\-O\-R\-D}}
+\index{\-D\-W\-O\-R\-D@{\-D\-W\-O\-R\-D}!bm.h@{bm.\-h}}
+\subsubsection[{\-D\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf \-D\-W\-O\-R\-D}}}\label{bm_8h_ad342ac907eb044443153a22f964bf0af}
+
+
+\-Definition at line 352 of file bm.\-h.
+
+\hypertarget{bm_8h_ad2baa11c897721ff6f14b452b547f9bc}{\index{bm.\-h@{bm.\-h}!\-W\-O\-R\-D@{\-W\-O\-R\-D}}
+\index{\-W\-O\-R\-D@{\-W\-O\-R\-D}!bm.h@{bm.\-h}}
+\subsubsection[{\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf \-W\-O\-R\-D}}}\label{bm_8h_ad2baa11c897721ff6f14b452b547f9bc}
+
+
+\-Definition at line 351 of file bm.\-h.
+

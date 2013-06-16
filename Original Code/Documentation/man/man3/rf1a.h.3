@@ -1,0 +1,63 @@
+.TH "driver/rf1a.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/rf1a.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "unsigned char \fBStrobe\fP (unsigned char strobe)"
+.br
+.ti -1c
+.RI "unsigned char \fBReadSingleReg\fP (unsigned char addr)"
+.br
+.ti -1c
+.RI "void \fBWriteSingleReg\fP (unsigned char addr, unsigned char value)"
+.br
+.ti -1c
+.RI "void \fBReadBurstReg\fP (unsigned char addr, unsigned char *buffer, unsigned char count)"
+.br
+.ti -1c
+.RI "void \fBWriteBurstReg\fP (unsigned char addr, unsigned char *buffer, unsigned char count)"
+.br
+.ti -1c
+.RI "void \fBResetRadioCore\fP (void)"
+.br
+.ti -1c
+.RI "void \fBWritePATable\fP (unsigned char value)"
+.br
+.ti -1c
+.RI "void \fBWaitForXT2\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void \fBReadBurstReg\fP (unsigned charaddr, unsigned char *buffer, unsigned charcount)"
+.PP
+Definition at line 151 of file rf1a\&.c\&.
+.SS "unsigned char \fBReadSingleReg\fP (unsigned charaddr)"
+.PP
+Definition at line 105 of file rf1a\&.c\&.
+.SS "void \fBResetRadioCore\fP (void)"
+.PP
+Definition at line 92 of file rf1a\&.c\&.
+.SS "unsigned char \fBStrobe\fP (unsigned charstrobe)"
+.PP
+Definition at line 39 of file rf1a\&.c\&.
+.SS "void \fBWaitForXT2\fP (void)"
+.SS "void \fBWriteBurstReg\fP (unsigned charaddr, unsigned char *buffer, unsigned charcount)"
+.PP
+Definition at line 179 of file rf1a\&.c\&.
+.SS "void \fBWritePATable\fP (unsigned charvalue)"
+.PP
+Definition at line 207 of file rf1a\&.c\&.
+.SS "void \fBWriteSingleReg\fP (unsigned charaddr, unsigned charvalue)"
+.PP
+Definition at line 127 of file rf1a\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

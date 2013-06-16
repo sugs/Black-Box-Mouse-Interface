@@ -1,0 +1,227 @@
+.TH "logic/miscellaneous.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/miscellaneous.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'vti_ps\&.h'\fP
+.br
+\fC#include 'miscellaneous\&.h'\fP
+.br
+\fC#include 'menu\&.h'\fP
+.br
+\fC#include 'user\&.h'\fP
+.br
+\fC#include 'display2\&.h'\fP
+.br
+\fC#include 'clock\&.h'\fP
+.br
+\fC#include 'date\&.h'\fP
+.br
+\fC#include 'alarm\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+\fC#include 'altitude\&.h'\fP
+.br
+\fC#include 'acceleration\&.h'\fP
+.br
+\fC#include 'countdowntimer\&.h'\fP
+.br
+\fC#include 'agility\&.h'\fP
+.br
+\fC#include 'stopwatch\&.h'\fP
+.br
+\fC#include 'random\&.h'\fP
+.br
+\fC#include 'rfsimpliciti\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBnumstore\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBNUMBERSTORAGE_MAX\fP   11"
+.br
+.ti -1c
+.RI "#define \fBSTATE_UNLOCKED\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSTATE_TEMP_UNLOCKED\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSTATE_LOCKED\fP   2"
+.br
+.ti -1c
+.RI "#define \fBMY_DAILY_CORRECTION_SEC\fP   (-2)"
+.br
+.ti -1c
+.RI "#define \fBMY_WEEKLY_CORRECTION_SEC\fP   (-3)"
+.br
+.ti -1c
+.RI "#define \fBMY_AMBIENT_PRESSURE_OFFSET\fP   -2"
+.br
+.ti -1c
+.RI "#define \fBMY_ALTITUDE\fP   30"
+.br
+.ti -1c
+.RI "#define \fBMY_TEMPERATURE_OFFSET\fP   40"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_ucs\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset_number_storage\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnumber_storage_tick\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsx_number_storage\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBmx_number_storage\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_number_storage\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void \fBSetMyDefaults\fP (void)"
+.br
+.ti -1c
+.RI "void \fBResetWatch\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset_ucs_reset_handler\fP (void)"
+.br
+.ti -1c
+.RI "void \fBmx_sync\fP (u8 line)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "s8 \fBDailyCorr\fP"
+.br
+.ti -1c
+.RI "s8 \fBWeeklyCorr\fP"
+.br
+.ti -1c
+.RI "u8 \fBDST_AutoFlag\fP"
+.br
+.ti -1c
+.RI "s16 \fBAmbientPressureOffset\fP"
+.br
+.ti -1c
+.RI "struct \fBUcsResetHandling\fP \fBsUcsResetHandling\fP"
+.br
+.ti -1c
+.RI "struct \fBnumstore\fP \fBsNumStore\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBMY_ALTITUDE\fP   30"
+.PP
+Definition at line 90 of file miscellaneous\&.c\&.
+.SS "#define \fBMY_AMBIENT_PRESSURE_OFFSET\fP   -2"
+.PP
+Definition at line 89 of file miscellaneous\&.c\&.
+.SS "#define \fBMY_DAILY_CORRECTION_SEC\fP   (-2)"
+.PP
+Definition at line 85 of file miscellaneous\&.c\&.
+.SS "#define \fBMY_TEMPERATURE_OFFSET\fP   40"
+.PP
+Definition at line 93 of file miscellaneous\&.c\&.
+.SS "#define \fBMY_WEEKLY_CORRECTION_SEC\fP   (-3)"
+.PP
+Definition at line 86 of file miscellaneous\&.c\&.
+.SS "#define \fBNUMBERSTORAGE_MAX\fP   11"
+.PP
+Definition at line 78 of file miscellaneous\&.c\&.
+.SS "#define \fBSTATE_LOCKED\fP   2"
+.PP
+Definition at line 81 of file miscellaneous\&.c\&.
+.SS "#define \fBSTATE_TEMP_UNLOCKED\fP   1"
+.PP
+Definition at line 80 of file miscellaneous\&.c\&.
+.SS "#define \fBSTATE_UNLOCKED\fP   0"
+.PP
+Definition at line 79 of file miscellaneous\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBdisplay_number_storage\fP (u8line, u8update)"
+.PP
+Definition at line 263 of file miscellaneous\&.c\&.
+.SS "void \fBinit_ucs\fP (void)"
+.PP
+Definition at line 170 of file main\&.c\&.
+.SS "void \fBmx_number_storage\fP (u8line)"
+.PP
+Definition at line 178 of file miscellaneous\&.c\&.
+.SS "void \fBmx_sync\fP (u8line)"
+.PP
+Definition at line 382 of file miscellaneous\&.c\&.
+.SS "void \fBnumber_storage_tick\fP (void)"
+.PP
+Definition at line 138 of file miscellaneous\&.c\&.
+.SS "void \fBreset_number_storage\fP (void)"
+.PP
+Definition at line 121 of file miscellaneous\&.c\&.
+.SS "void \fBreset_ucs_reset_handler\fP (void)"
+.PP
+Definition at line 368 of file miscellaneous\&.c\&.
+.SS "void \fBResetWatch\fP (void)"
+.PP
+Definition at line 353 of file miscellaneous\&.c\&.
+.SS "void \fBSetMyDefaults\fP (void)"
+.PP
+Definition at line 323 of file miscellaneous\&.c\&.
+.SS "void \fBsx_number_storage\fP (u8line)"
+.PP
+Definition at line 158 of file miscellaneous\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "s16 \fBAmbientPressureOffset\fP"
+.PP
+Definition at line 72 of file altitude\&.c\&.
+.SS "s8 \fBDailyCorr\fP"
+.PP
+Definition at line 89 of file clock\&.c\&.
+.SS "u8 \fBDST_AutoFlag\fP"
+.PP
+Definition at line 88 of file clock\&.c\&.
+.SS "struct \fBnumstore\fP \fBsNumStore\fP"
+.PP
+Definition at line 111 of file miscellaneous\&.c\&.
+.SS "struct \fBUcsResetHandling\fP \fBsUcsResetHandling\fP"
+.PP
+Definition at line 103 of file miscellaneous\&.c\&.
+.SS "s8 \fBWeeklyCorr\fP"
+.PP
+Definition at line 90 of file clock\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

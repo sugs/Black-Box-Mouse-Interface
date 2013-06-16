@@ -1,0 +1,123 @@
+.TH "logic/countdowntimer.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/countdowntimer.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <project\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcdtimer\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCDTIMER_STOP\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBCDTIMER_RUN\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBCDTIMER_HIDE\fP   (2u)"
+.br
+.ti -1c
+.RI "#define \fBCDTIMER_MODE_CONTINUE\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBCDTIMER_MODE_ONCE\fP   (1u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstart_cdtimer\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstop_cdtimer\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset_cdtimer\fP (void)"
+.br
+.ti -1c
+.RI "void \fBcdtimer_tick\fP (void)"
+.br
+.ti -1c
+.RI "void \fBmx_cdtimer\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBsx_cdtimer\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_cdtimer\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void \fBset_cdtimer\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcdtimer\fP \fBscdtimer\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBCDTIMER_HIDE\fP   (2u)"
+.PP
+Definition at line 62 of file countdowntimer\&.h\&.
+.SS "#define \fBCDTIMER_MODE_CONTINUE\fP   (0u)"
+.PP
+Definition at line 64 of file countdowntimer\&.h\&.
+.SS "#define \fBCDTIMER_MODE_ONCE\fP   (1u)"
+.PP
+Definition at line 65 of file countdowntimer\&.h\&.
+.SS "#define \fBCDTIMER_RUN\fP   (1u)"
+.PP
+Definition at line 61 of file countdowntimer\&.h\&.
+.SS "#define \fBCDTIMER_STOP\fP   (0u)"
+.PP
+Definition at line 60 of file countdowntimer\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBcdtimer_tick\fP (void)"
+.PP
+Definition at line 122 of file countdowntimer\&.c\&.
+.SS "void \fBdisplay_cdtimer\fP (u8line, u8update)"
+.PP
+Definition at line 282 of file countdowntimer\&.c\&.
+.SS "void \fBmx_cdtimer\fP (u8line)"
+.PP
+Definition at line 232 of file countdowntimer\&.c\&.
+.SS "void \fBreset_cdtimer\fP (void)"
+.PP
+Definition at line 104 of file countdowntimer\&.c\&.
+.SS "void \fBset_cdtimer\fP (void)"
+.PP
+Definition at line 329 of file countdowntimer\&.c\&.
+.SS "void \fBstart_cdtimer\fP (void)"
+.PP
+Definition at line 201 of file countdowntimer\&.c\&.
+.SS "void \fBstop_cdtimer\fP (void)"
+.PP
+Definition at line 216 of file countdowntimer\&.c\&.
+.SS "void \fBsx_cdtimer\fP (u8line)"
+.PP
+Definition at line 255 of file countdowntimer\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "struct \fBcdtimer\fP \fBscdtimer\fP"
+.PP
+Definition at line 74 of file countdowntimer\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

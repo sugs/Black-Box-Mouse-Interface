@@ -1,0 +1,102 @@
+.TH "logic/alarm.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/alarm.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBalarm\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBALARM_DISABLED\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBALARM_ENABLED\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBALARM_ON\fP   (2u)"
+.br
+.ti -1c
+.RI "#define \fBALARM_ON_DURATION\fP   (10u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBreset_alarm\fP (void)"
+.br
+.ti -1c
+.RI "void \fBcheck_alarm\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstop_alarm\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsx_alarm\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBmx_alarm\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_alarm\fP (u8 line, u8 update)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBalarm\fP \fBsAlarm\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBALARM_DISABLED\fP   (0u)"
+.PP
+Definition at line 59 of file alarm\&.h\&.
+.SS "#define \fBALARM_ENABLED\fP   (1u)"
+.PP
+Definition at line 60 of file alarm\&.h\&.
+.SS "#define \fBALARM_ON\fP   (2u)"
+.PP
+Definition at line 61 of file alarm\&.h\&.
+.SS "#define \fBALARM_ON_DURATION\fP   (10u)"
+.PP
+Definition at line 64 of file alarm\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBcheck_alarm\fP (void)"
+.PP
+Definition at line 97 of file alarm\&.c\&.
+.SS "void \fBdisplay_alarm\fP (u8line, u8update)"
+.PP
+Definition at line 243 of file alarm\&.c\&.
+.SS "void \fBmx_alarm\fP (u8line)"
+.PP
+Definition at line 169 of file alarm\&.c\&.
+.SS "void \fBreset_alarm\fP (void)"
+.PP
+Definition at line 79 of file alarm\&.c\&.
+.SS "void \fBstop_alarm\fP (void)"
+.PP
+Definition at line 121 of file alarm\&.c\&.
+.SS "void \fBsx_alarm\fP (u8line)"
+.PP
+Definition at line 137 of file alarm\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "struct \fBalarm\fP \fBsAlarm\fP"
+.PP
+Definition at line 66 of file alarm\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

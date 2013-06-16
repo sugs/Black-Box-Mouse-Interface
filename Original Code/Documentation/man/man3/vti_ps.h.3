@@ -1,0 +1,233 @@
+.TH "driver/vti_ps.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/vti_ps.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPS_TWI_IN\fP   (PJIN)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_OUT\fP   (PJOUT)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_DIR\fP   (PJDIR)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_REN\fP   (PJREN)"
+.br
+.ti -1c
+.RI "#define \fBPS_SCL_PIN\fP   (BIT3)"
+.br
+.ti -1c
+.RI "#define \fBPS_SDA_PIN\fP   (BIT2)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_IN\fP   (P2IN)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_OUT\fP   (P2OUT)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_DIR\fP   (P2DIR)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_IE\fP   (P2IE)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_IES\fP   (P2IES)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_IFG\fP   (P2IFG)"
+.br
+.ti -1c
+.RI "#define \fBPS_INT_PIN\fP   (BIT6)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_WRITE\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_READ\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SEND_START\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SEND_RESTART\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SEND_STOP\fP   (2u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_CHECK_ACK\fP   (3u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_8BIT_ACCESS\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_16BIT_ACCESS\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SCL_HI\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SCL_PIN\fP; }"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SCL_LO\fP   { \fBPS_TWI_OUT\fP &= ~\fBPS_SCL_PIN\fP; }"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SDA_HI\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SDA_PIN\fP; }"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SDA_LO\fP   { \fBPS_TWI_OUT\fP &= ~\fBPS_SDA_PIN\fP; }"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SDA_IN\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SDA_PIN\fP; \fBPS_TWI_DIR\fP &= ~\fBPS_SDA_PIN\fP; }"
+.br
+.ti -1c
+.RI "#define \fBPS_TWI_SDA_OUT\fP   { \fBPS_TWI_DIR\fP |=  \fBPS_SDA_PIN\fP; }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBps_init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBps_start\fP (void)"
+.br
+.ti -1c
+.RI "void \fBps_stop\fP (void)"
+.br
+.ti -1c
+.RI "u32 \fBps_get_pa\fP (void)"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBps_get_temp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinit_pressure_table\fP (void)"
+.br
+.ti -1c
+.RI "void \fBupdate_pressure_table\fP (s16 href, u32 p_meas, \fBu16\fP t_meas)"
+.br
+.ti -1c
+.RI "s16 \fBconv_pa_to_meter\fP (u32 p_meas, \fBu16\fP t_meas)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBPS_INT_DIR\fP   (P2DIR)"
+.PP
+Definition at line 70 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_IE\fP   (P2IE)"
+.PP
+Definition at line 71 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_IES\fP   (P2IES)"
+.PP
+Definition at line 72 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_IFG\fP   (P2IFG)"
+.PP
+Definition at line 73 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_IN\fP   (P2IN)"
+.PP
+Definition at line 68 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_OUT\fP   (P2OUT)"
+.PP
+Definition at line 69 of file vti_ps\&.h\&.
+.SS "#define \fBPS_INT_PIN\fP   (BIT6)"
+.PP
+Definition at line 74 of file vti_ps\&.h\&.
+.SS "#define \fBPS_SCL_PIN\fP   (BIT3)"
+.PP
+Definition at line 64 of file vti_ps\&.h\&.
+.SS "#define \fBPS_SDA_PIN\fP   (BIT2)"
+.PP
+Definition at line 65 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_16BIT_ACCESS\fP   (1u)"
+.PP
+Definition at line 86 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_8BIT_ACCESS\fP   (0u)"
+.PP
+Definition at line 85 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_CHECK_ACK\fP   (3u)"
+.PP
+Definition at line 83 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_DIR\fP   (PJDIR)"
+.PP
+Definition at line 62 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_IN\fP   (PJIN)"
+.PP
+Definition at line 60 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_OUT\fP   (PJOUT)"
+.PP
+Definition at line 61 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_READ\fP   (1u)"
+.PP
+Definition at line 78 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_REN\fP   (PJREN)"
+.PP
+Definition at line 63 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SCL_HI\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SCL_PIN\fP; }"
+.PP
+Definition at line 88 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SCL_LO\fP   { \fBPS_TWI_OUT\fP &= ~\fBPS_SCL_PIN\fP; }"
+.PP
+Definition at line 89 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SDA_HI\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SDA_PIN\fP; }"
+.PP
+Definition at line 90 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SDA_IN\fP   { \fBPS_TWI_OUT\fP |=  \fBPS_SDA_PIN\fP; \fBPS_TWI_DIR\fP &= ~\fBPS_SDA_PIN\fP; }"
+.PP
+Definition at line 92 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SDA_LO\fP   { \fBPS_TWI_OUT\fP &= ~\fBPS_SDA_PIN\fP; }"
+.PP
+Definition at line 91 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SDA_OUT\fP   { \fBPS_TWI_DIR\fP |=  \fBPS_SDA_PIN\fP; }"
+.PP
+Definition at line 93 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SEND_RESTART\fP   (1u)"
+.PP
+Definition at line 81 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SEND_START\fP   (0u)"
+.PP
+Definition at line 80 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_SEND_STOP\fP   (2u)"
+.PP
+Definition at line 82 of file vti_ps\&.h\&.
+.SS "#define \fBPS_TWI_WRITE\fP   (0u)"
+.PP
+Definition at line 77 of file vti_ps\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "s16 \fBconv_pa_to_meter\fP (u32p_meas, \fBu16\fPt_meas)"
+.PP
+Definition at line 509 of file vti_ps\&.c\&.
+.SS "void \fBinit_pressure_table\fP (void)"
+.PP
+Definition at line 445 of file vti_ps\&.c\&.
+.SS "u32 \fBps_get_pa\fP (void)"
+.PP
+Definition at line 384 of file vti_ps\&.c\&.
+.SS "\fBu16\fP \fBps_get_temp\fP (void)"
+.PP
+Definition at line 408 of file vti_ps\&.c\&.
+.SS "void \fBps_init\fP (void)"
+.PP
+Definition at line 85 of file vti_ps\&.c\&.
+.SS "void \fBps_start\fP (void)"
+.PP
+Definition at line 124 of file vti_ps\&.c\&.
+.SS "void \fBps_stop\fP (void)"
+.PP
+Definition at line 138 of file vti_ps\&.c\&.
+.SS "void \fBupdate_pressure_table\fP (s16href, u32p_meas, \fBu16\fPt_meas)"
+.PP
+Definition at line 462 of file vti_ps\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

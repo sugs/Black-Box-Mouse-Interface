@@ -1,0 +1,323 @@
+\hypertarget{bluerobin_8h}{\section{logic/bluerobin.h \-File \-Reference}
+\label{bluerobin_8h}\index{logic/bluerobin.\-h@{logic/bluerobin.\-h}}
+}
+{\ttfamily \#include $<$project.\-h$>$}\*
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbr}{br}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bluerobin_8h_a5e201f593d73d7ce21d9e7016543f012}{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E}~0
+\item 
+\#define \hyperlink{bluerobin_8h_a3d4944f89051789e98f1bc42526a9e62}{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E}~1
+\item 
+\#define \hyperlink{bluerobin_8h_aedcf133121439b2ab679fc97b8622a79}{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G}~30
+\item 
+\#define \hyperlink{bluerobin_8h_a3bd1ae8861323dcde17125faf6553307}{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G}~150
+\item 
+\#define \hyperlink{bluerobin_8h_a88cb396f9b82e2597d7b2ae6c08cf34c}{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B}~70
+\item 
+\#define \hyperlink{bluerobin_8h_a5c2bda7dc602caa9ed3153d8b15bad08}{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B}~400
+\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaef}{\-Blue\-Robin\-\_\-state\-\_\-t} \{ \*
+\hyperlink{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F} =  0, 
+\hyperlink{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}, 
+\hyperlink{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}, 
+\hyperlink{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}, 
+\*
+\hyperlink{stubs_8c_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F} =  0, 
+\hyperlink{stubs_8c_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}, 
+\hyperlink{stubs_8c_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}, 
+\hyperlink{stubs_8c_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}
+ \}
+\item 
+enum \hyperlink{bluerobin_8h_a303857eaff917940fdb83fbbef489e37}{\-Blue\-Robin\-\_\-update\-\_\-t} \{ \hyperlink{bluerobin_8h_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E} =  0, 
+\hyperlink{bluerobin_8h_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}, 
+\hyperlink{stubs_8c_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E} =  0, 
+\hyperlink{stubs_8c_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{bluerobin_8h_a214c5b23539249b6e30cd94b0d6a83da}{reset\-\_\-bluerobin} (void)
+\item 
+void \hyperlink{bluerobin_8h_a4c37baf98ed60f542eb890be63a1691e}{mx\-\_\-bluerobin} (u8 line)
+\item 
+void \hyperlink{bluerobin_8h_afb7a090273ecbb4db358fe47cb6be06e}{sx\-\_\-bluerobin} (u8 line)
+\item 
+void \hyperlink{bluerobin_8h_a2cff21b7173569ac3e30e9e120316158}{mx\-\_\-caldist} (u8 line)
+\item 
+void \hyperlink{bluerobin_8h_ae6b6b65d29e3e5ba156c926967fd4488}{display\-\_\-heartrate} (u8 line, u8 update)
+\item 
+void \hyperlink{bluerobin_8h_a8057769a70e8cc7ff8594dd7eb3c324b}{display\-\_\-speed} (u8 line, u8 update)
+\item 
+void \hyperlink{bluerobin_8h_a066d0c1fae4a14cc4aa5ac1598b82496}{sx\-\_\-caldist} (u8 line)
+\item 
+void \hyperlink{bluerobin_8h_a82525ee9de70a05a72b6c36aab3eb8e8}{display\-\_\-caldist} (u8 line, u8 update)
+\item 
+u8 \hyperlink{bluerobin_8h_a75a6ff1afdfafd92f81d06ac748e6a44}{is\-\_\-bluerobin} (void)
+\item 
+u8 \hyperlink{bluerobin_8h_a212e183ebff7f9ce9ce6ca0128f7e723}{is\-\_\-bluerobin\-\_\-searching} (void)
+\item 
+void \hyperlink{bluerobin_8h_ac5c37b8d63882362098b5fafef705eda}{get\-\_\-bluerobin\-\_\-data} (void)
+\item 
+void \hyperlink{bluerobin_8h_a8db1449d2686efd0227451d8e15646e4}{stop\-\_\-bluerobin} (void)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbr}{br} \hyperlink{bluerobin_8h_a995be3eb7030974d6ea4d089f143ae52}{s\-Blue\-Robin}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{bluerobin_8h_a3d4944f89051789e98f1bc42526a9e62}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E@{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E}}
+\index{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E@{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-F\-E\-M\-A\-L\-E}~1}}\label{bluerobin_8h_a3d4944f89051789e98f1bc42526a9e62}
+
+
+\-Definition at line 82 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_a5e201f593d73d7ce21d9e7016543f012}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E@{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E}}
+\index{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E@{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-S\-E\-X\-\_\-\-M\-A\-L\-E}~0}}\label{bluerobin_8h_a5e201f593d73d7ce21d9e7016543f012}
+
+
+\-Definition at line 81 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_a3bd1ae8861323dcde17125faf6553307}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G}}
+\index{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-K\-G}~150}}\label{bluerobin_8h_a3bd1ae8861323dcde17125faf6553307}
+
+
+\-Definition at line 84 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_a5c2bda7dc602caa9ed3153d8b15bad08}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B}}
+\index{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-A\-X\-\_\-\-L\-B}~400}}\label{bluerobin_8h_a5c2bda7dc602caa9ed3153d8b15bad08}
+
+
+\-Definition at line 86 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_aedcf133121439b2ab679fc97b8622a79}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G}}
+\index{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-K\-G}~30}}\label{bluerobin_8h_aedcf133121439b2ab679fc97b8622a79}
+
+
+\-Definition at line 83 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_a88cb396f9b82e2597d7b2ae6c08cf34c}{\index{bluerobin.\-h@{bluerobin.\-h}!\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B}}
+\index{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B@{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-R\-\_\-\-W\-E\-I\-G\-H\-T\-\_\-\-M\-I\-N\-\_\-\-L\-B}~70}}\label{bluerobin_8h_a88cb396f9b82e2597d7b2ae6c08cf34c}
+
+
+\-Definition at line 85 of file bluerobin.\-h.
+
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaef}{\index{bluerobin.\-h@{bluerobin.\-h}!\-Blue\-Robin\-\_\-state\-\_\-t@{\-Blue\-Robin\-\_\-state\-\_\-t}}
+\index{\-Blue\-Robin\-\_\-state\-\_\-t@{\-Blue\-Robin\-\_\-state\-\_\-t}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-Blue\-Robin\-\_\-state\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Blue\-Robin\-\_\-state\-\_\-t}}}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaef}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-O\-F\-F}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa545ef7ba389142a52417e62492d99fd4}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-S\-E\-A\-R\-C\-H\-I\-N\-G}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa7a202f0b768f19b3e56a2e8731df530a}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefacdf7354fba7789e4c718cac4ed69fec2}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-E\-R\-R\-O\-R}\label{bluerobin_8h_ad20ae2c6baea60c64e9ce5c25924aaefa1e087ef30092dc1401fa6da2d136cb75}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 66 of file bluerobin.\-h.
+
+\hypertarget{bluerobin_8h_a303857eaff917940fdb83fbbef489e37}{\index{bluerobin.\-h@{bluerobin.\-h}!\-Blue\-Robin\-\_\-update\-\_\-t@{\-Blue\-Robin\-\_\-update\-\_\-t}}
+\index{\-Blue\-Robin\-\_\-update\-\_\-t@{\-Blue\-Robin\-\_\-update\-\_\-t}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{\-Blue\-Robin\-\_\-update\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Blue\-Robin\-\_\-update\-\_\-t}}}\label{bluerobin_8h_a303857eaff917940fdb83fbbef489e37}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}}\item[{\em 
+\hypertarget{bluerobin_8h_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}\label{bluerobin_8h_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}}\item[{\em 
+\hypertarget{bluerobin_8h_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}\label{bluerobin_8h_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}}\item[{\em 
+\hypertarget{bluerobin_8h_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-O\-\_\-\-U\-P\-D\-A\-T\-E}\label{bluerobin_8h_a303857eaff917940fdb83fbbef489e37ad7406cb06ad084358002f4f334f35c05}
+}]\index{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}!bluerobin.\-h@{bluerobin.\-h}}\index{bluerobin.\-h@{bluerobin.\-h}!\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A@{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}}\item[{\em 
+\hypertarget{bluerobin_8h_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}{\-B\-L\-U\-E\-R\-O\-B\-I\-N\-\_\-\-N\-E\-W\-\_\-\-D\-A\-T\-A}\label{bluerobin_8h_a303857eaff917940fdb83fbbef489e37a703a4865a07e7fa20d4b2162ac047fe0}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 75 of file bluerobin.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{bluerobin_8h_a82525ee9de70a05a72b6c36aab3eb8e8}{\index{bluerobin.\-h@{bluerobin.\-h}!display\-\_\-caldist@{display\-\_\-caldist}}
+\index{display\-\_\-caldist@{display\-\_\-caldist}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{display\-\_\-caldist}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-caldist} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a82525ee9de70a05a72b6c36aab3eb8e8}
+
+
+\-Definition at line 545 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_ae6b6b65d29e3e5ba156c926967fd4488}{\index{bluerobin.\-h@{bluerobin.\-h}!display\-\_\-heartrate@{display\-\_\-heartrate}}
+\index{display\-\_\-heartrate@{display\-\_\-heartrate}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{display\-\_\-heartrate}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-heartrate} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_ae6b6b65d29e3e5ba156c926967fd4488}
+
+
+\-Definition at line 374 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a8057769a70e8cc7ff8594dd7eb3c324b}{\index{bluerobin.\-h@{bluerobin.\-h}!display\-\_\-speed@{display\-\_\-speed}}
+\index{display\-\_\-speed@{display\-\_\-speed}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{display\-\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-speed} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a8057769a70e8cc7ff8594dd7eb3c324b}
+
+
+\-Definition at line 414 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_ac5c37b8d63882362098b5fafef705eda}{\index{bluerobin.\-h@{bluerobin.\-h}!get\-\_\-bluerobin\-\_\-data@{get\-\_\-bluerobin\-\_\-data}}
+\index{get\-\_\-bluerobin\-\_\-data@{get\-\_\-bluerobin\-\_\-data}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{get\-\_\-bluerobin\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf get\-\_\-bluerobin\-\_\-data} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_ac5c37b8d63882362098b5fafef705eda}
+
+
+\-Definition at line 613 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a75a6ff1afdfafd92f81d06ac748e6a44}{\index{bluerobin.\-h@{bluerobin.\-h}!is\-\_\-bluerobin@{is\-\_\-bluerobin}}
+\index{is\-\_\-bluerobin@{is\-\_\-bluerobin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{is\-\_\-bluerobin}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-bluerobin} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a75a6ff1afdfafd92f81d06ac748e6a44}
+
+
+\-Definition at line 589 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a212e183ebff7f9ce9ce6ca0128f7e723}{\index{bluerobin.\-h@{bluerobin.\-h}!is\-\_\-bluerobin\-\_\-searching@{is\-\_\-bluerobin\-\_\-searching}}
+\index{is\-\_\-bluerobin\-\_\-searching@{is\-\_\-bluerobin\-\_\-searching}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{is\-\_\-bluerobin\-\_\-searching}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-bluerobin\-\_\-searching} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a212e183ebff7f9ce9ce6ca0128f7e723}
+
+
+\-Definition at line 601 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a4c37baf98ed60f542eb890be63a1691e}{\index{bluerobin.\-h@{bluerobin.\-h}!mx\-\_\-bluerobin@{mx\-\_\-bluerobin}}
+\index{mx\-\_\-bluerobin@{mx\-\_\-bluerobin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{mx\-\_\-bluerobin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-bluerobin} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a4c37baf98ed60f542eb890be63a1691e}
+
+
+\-Definition at line 128 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a2cff21b7173569ac3e30e9e120316158}{\index{bluerobin.\-h@{bluerobin.\-h}!mx\-\_\-caldist@{mx\-\_\-caldist}}
+\index{mx\-\_\-caldist@{mx\-\_\-caldist}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{mx\-\_\-caldist}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-caldist} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a2cff21b7173569ac3e30e9e120316158}
+
+
+\-Definition at line 272 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a214c5b23539249b6e30cd94b0d6a83da}{\index{bluerobin.\-h@{bluerobin.\-h}!reset\-\_\-bluerobin@{reset\-\_\-bluerobin}}
+\index{reset\-\_\-bluerobin@{reset\-\_\-bluerobin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{reset\-\_\-bluerobin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-bluerobin} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a214c5b23539249b6e30cd94b0d6a83da}
+
+
+\-Definition at line 97 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a8db1449d2686efd0227451d8e15646e4}{\index{bluerobin.\-h@{bluerobin.\-h}!stop\-\_\-bluerobin@{stop\-\_\-bluerobin}}
+\index{stop\-\_\-bluerobin@{stop\-\_\-bluerobin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{stop\-\_\-bluerobin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stop\-\_\-bluerobin} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a8db1449d2686efd0227451d8e15646e4}
+
+
+\-Definition at line 668 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_afb7a090273ecbb4db358fe47cb6be06e}{\index{bluerobin.\-h@{bluerobin.\-h}!sx\-\_\-bluerobin@{sx\-\_\-bluerobin}}
+\index{sx\-\_\-bluerobin@{sx\-\_\-bluerobin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{sx\-\_\-bluerobin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-bluerobin} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_afb7a090273ecbb4db358fe47cb6be06e}
+
+
+\-Definition at line 152 of file bluerobin.\-c.
+
+\hypertarget{bluerobin_8h_a066d0c1fae4a14cc4aa5ac1598b82496}{\index{bluerobin.\-h@{bluerobin.\-h}!sx\-\_\-caldist@{sx\-\_\-caldist}}
+\index{sx\-\_\-caldist@{sx\-\_\-caldist}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{sx\-\_\-caldist}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-caldist} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{bluerobin_8h_a066d0c1fae4a14cc4aa5ac1598b82496}
+
+
+\-Definition at line 353 of file bluerobin.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{bluerobin_8h_a995be3eb7030974d6ea4d089f143ae52}{\index{bluerobin.\-h@{bluerobin.\-h}!s\-Blue\-Robin@{s\-Blue\-Robin}}
+\index{s\-Blue\-Robin@{s\-Blue\-Robin}!bluerobin.h@{bluerobin.\-h}}
+\subsubsection[{s\-Blue\-Robin}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf br} {\bf s\-Blue\-Robin}}}\label{bluerobin_8h_a995be3eb7030974d6ea4d089f143ae52}
+
+
+\-Definition at line 75 of file bluerobin.\-c.
+

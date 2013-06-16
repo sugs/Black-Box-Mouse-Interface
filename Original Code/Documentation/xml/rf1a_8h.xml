@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="rf1a_8h" kind="file">
+    <compoundname>rf1a.h</compoundname>
+    <includedby refid="radio_8c" local="yes">driver/radio.c</includedby>
+    <includedby refid="rf1a_8c" local="yes">driver/rf1a.c</includedby>
+    <includedby refid="bluerobin_8c" local="yes">logic/bluerobin.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <invincdepgraph>
+      <node id="219">
+        <label>logic/bluerobin.c</label>
+        <link refid="bluerobin_8c"/>
+      </node>
+      <node id="218">
+        <label>driver/rf1a.c</label>
+        <link refid="rf1a_8c"/>
+      </node>
+      <node id="216">
+        <label>driver/rf1a.h</label>
+        <link refid="rf1a.h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="217">
+        <label>driver/radio.c</label>
+        <link refid="radio_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rf1a_8h_1a945d18674a1ebb9b90e50dd79c1b616d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Strobe</definition>
+        <argsstring>(unsigned char strobe)</argsstring>
+        <name>Strobe</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>strobe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="13" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="39" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1a2054867692e5cbdbb05e4e259f9f6638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ReadSingleReg</definition>
+        <argsstring>(unsigned char addr)</argsstring>
+        <name>ReadSingleReg</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="14" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1abcff9c644002de49b819433c321f3e82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriteSingleReg</definition>
+        <argsstring>(unsigned char addr, unsigned char value)</argsstring>
+        <name>WriteSingleReg</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="15" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="127" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1a44996aae6b53078526668aaf1ec41d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadBurstReg</definition>
+        <argsstring>(unsigned char addr, unsigned char *buffer, unsigned char count)</argsstring>
+        <name>ReadBurstReg</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="16" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="151" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1ac80838ceb0a4f8cffd0d41965578a8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriteBurstReg</definition>
+        <argsstring>(unsigned char addr, unsigned char *buffer, unsigned char count)</argsstring>
+        <name>WriteBurstReg</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="17" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="179" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1aee0cc5fe17cf3c53c1608a9dfff86a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResetRadioCore</definition>
+        <argsstring>(void)</argsstring>
+        <name>ResetRadioCore</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="18" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1ae58770f6e34d37297c008738dc2c1bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WritePATable</definition>
+        <argsstring>(unsigned char value)</argsstring>
+        <name>WritePATable</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="19" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.c" bodystart="207" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="rf1a_8h_1ae1a3a0b52e7bd81e882a6216e43bcf2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitForXT2</definition>
+        <argsstring>(void)</argsstring>
+        <name>WaitForXT2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h" line="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Actual<sp/>revision:<sp/>$Revision:<sp/>$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>label:<sp/><sp/>$Name:<sp/>$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>state:<sp/><sp/>$State:<sp/>$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Radio<sp/>core<sp/>access<sp/>functions.<sp/>Taken<sp/>from<sp/>TI<sp/>reference<sp/>code<sp/>for<sp/>CC430.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prototype<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1a945d18674a1ebb9b90e50dd79c1b616d" kindref="member">Strobe</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>strobe);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1a2054867692e5cbdbb05e4e259f9f6638" kindref="member">ReadSingleReg</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>addr);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1abcff9c644002de49b819433c321f3e82" kindref="member">WriteSingleReg</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1a44996aae6b53078526668aaf1ec41d81" kindref="member">ReadBurstReg</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1ac80838ceb0a4f8cffd0d41965578a8a4" kindref="member">WriteBurstReg</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1aee0cc5fe17cf3c53c1608a9dfff86a80" kindref="member">ResetRadioCore</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8c_1ae58770f6e34d37297c008738dc2c1bfc" kindref="member">WritePATable</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="rf1a_8h_1ae1a3a0b52e7bd81e882a6216e43bcf2c" kindref="member">WaitForXT2</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/rf1a.h"/>
+  </compounddef>
+</doxygen>

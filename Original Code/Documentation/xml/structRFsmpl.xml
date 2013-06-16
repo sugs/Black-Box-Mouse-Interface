@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structRFsmpl" kind="struct" prot="public">
+    <compoundname>RFsmpl</compoundname>
+    <includes refid="rfsimpliciti_8h" local="yes">rfsimpliciti.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structRFsmpl_1acd0291bcfc1da85956dd49b6b90e6ca3" prot="public" static="no" mutable="no">
+        <type><ref refid="rfsimpliciti_8h_1a8f634dc8404e983a244ef648a1c38ece" kindref="member">simpliciti_mode_t</ref></type>
+        <definition>simpliciti_mode_t mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="86" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structRFsmpl_1a735bf6536b07682f96c9417b0f1e9079" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="89" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" line="84" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/rfsimpliciti.h" bodystart="83" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structRFsmpl_1acd0291bcfc1da85956dd49b6b90e6ca3" prot="public" virt="non-virtual"><scope>RFsmpl</scope><name>mode</name></member>
+      <member refid="structRFsmpl_1a735bf6536b07682f96c9417b0f1e9079" prot="public" virt="non-virtual"><scope>RFsmpl</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

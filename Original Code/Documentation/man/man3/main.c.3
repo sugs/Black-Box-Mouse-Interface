@@ -1,0 +1,216 @@
+.TH "main.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'clock\&.h'\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'vti_as\&.h'\fP
+.br
+\fC#include 'vti_ps\&.h'\fP
+.br
+\fC#include 'radio\&.h'\fP
+.br
+\fC#include 'buzzer\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include 'pmm\&.h'\fP
+.br
+\fC#include 'rf1a\&.h'\fP
+.br
+\fC#include 'menu\&.h'\fP
+.br
+\fC#include 'date\&.h'\fP
+.br
+\fC#include 'alarm\&.h'\fP
+.br
+\fC#include 'stopwatch\&.h'\fP
+.br
+\fC#include 'battery\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+\fC#include 'altitude\&.h'\fP
+.br
+\fC#include 'acceleration\&.h'\fP
+.br
+\fC#include 'bluerobin\&.h'\fP
+.br
+\fC#include 'rfsimpliciti\&.h'\fP
+.br
+\fC#include 'simpliciti\&.h'\fP
+.br
+\fC#include 'test\&.h'\fP
+.br
+\fC#include 'countdowntimer\&.h'\fP
+.br
+\fC#include 'random\&.h'\fP
+.br
+\fC#include 'agility\&.h'\fP
+.br
+\fC#include 'miscellaneous\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCALIBRATION_DATA_LENGTH\fP   (13u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_application\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinit_global_variables\fP (void)"
+.br
+.ti -1c
+.RI "void \fBwakeup_event\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprocess_requests\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdisplay_update\fP (void)"
+.br
+.ti -1c
+.RI "void \fBidle_loop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBconfigure_ports\fP (void)"
+.br
+.ti -1c
+.RI "void \fBread_calibration_values\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstart_simpliciti_sync\fP (void)"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBps_read_register\fP (u8 address, u8 mode)"
+.br
+.ti -1c
+.RI "u8 \fBps_write_register\fP (u8 address, u8 data)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.ti -1c
+.RI "void \fBinit_ucs\fP (void)"
+.br
+.ti -1c
+.RI "void \fBto_lpm\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBs_system_flags\fP \fBsys\fP"
+.br
+.ti -1c
+.RI "volatile \fBs_request_flags\fP \fBrequest\fP"
+.br
+.ti -1c
+.RI "volatile \fBs_message_flags\fP \fBmessage\fP"
+.br
+.ti -1c
+.RI "u8 \fBrf_frequoffset\fP"
+.br
+.ti -1c
+.RI "u8 \fBBlOnFlag\fP = 0"
+.br
+.ti -1c
+.RI "void(* \fBfptr_lcd_function_line1\fP )(u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void(* \fBfptr_lcd_function_line2\fP )(u8 line, u8 update)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBCALIBRATION_DATA_LENGTH\fP   (13u)"
+.PP
+Definition at line 93 of file main\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBconfigure_ports\fP (void)"
+.SS "void \fBdisplay_update\fP (void)"
+.PP
+Definition at line 579 of file main\&.c\&.
+.SS "void \fBidle_loop\fP (void)"
+.PP
+Definition at line 681 of file main\&.c\&.
+.SS "void \fBinit_application\fP (void)"
+.PP
+Definition at line 211 of file main\&.c\&.
+.SS "void \fBinit_global_variables\fP (void)"
+.PP
+Definition at line 301 of file main\&.c\&.
+.SS "void \fBinit_ucs\fP (void)"
+.PP
+Definition at line 170 of file main\&.c\&.
+.SS "int \fBmain\fP (void)"
+.PP
+Definition at line 133 of file main\&.c\&.
+.SS "void \fBprocess_requests\fP (void)"
+.PP
+Definition at line 551 of file main\&.c\&.
+.SS "\fBu16\fP \fBps_read_register\fP (u8address, u8mode)"
+.PP
+Definition at line 340 of file vti_ps\&.c\&.
+.SS "u8 \fBps_write_register\fP (u8address, u8data)"
+.PP
+Definition at line 308 of file vti_ps\&.c\&.
+.SS "void \fBread_calibration_values\fP (void)"
+.PP
+Definition at line 700 of file main\&.c\&.
+.SS "void \fBstart_simpliciti_sync\fP (void)"
+.PP
+Definition at line 430 of file rfsimpliciti\&.c\&.
+.SS "void \fBto_lpm\fP (void)"
+.PP
+Definition at line 667 of file main\&.c\&.
+.SS "void \fBwakeup_event\fP (void)"
+.PP
+Definition at line 403 of file main\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "u8 \fBBlOnFlag\fP = 0"
+.PP
+Definition at line 113 of file main\&.c\&.
+.SS "void(* \fBfptr_lcd_function_line1\fP)(u8 line, u8 update)"
+.PP
+Definition at line 116 of file main\&.c\&.
+.SS "void(* \fBfptr_lcd_function_line2\fP)(u8 line, u8 update)"
+.PP
+Definition at line 117 of file main\&.c\&.
+.SS "volatile \fBs_message_flags\fP \fBmessage\fP"
+.PP
+Definition at line 106 of file main\&.c\&.
+.SS "volatile \fBs_request_flags\fP \fBrequest\fP"
+.PP
+Definition at line 103 of file main\&.c\&.
+.SS "u8 \fBrf_frequoffset\fP"
+.PP
+Definition at line 110 of file main\&.c\&.
+.SS "volatile \fBs_system_flags\fP \fBsys\fP"
+.PP
+Definition at line 100 of file main\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

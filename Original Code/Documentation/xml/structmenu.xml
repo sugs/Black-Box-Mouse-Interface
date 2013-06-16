@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structmenu" kind="struct" prot="public">
+    <compoundname>menu</compoundname>
+    <includes refid="menu_8h" local="yes">menu.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmenu_1ab821fa0d7f541480110bc8a674b42c79" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* sx_function)(u8 line)</definition>
+        <argsstring>)(u8 line)</argsstring>
+        <name>sx_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu_1a5e810089609d71c50a4fafb16304fc44" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* mx_function)(u8 line)</definition>
+        <argsstring>)(u8 line)</argsstring>
+        <name>mx_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="55" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu_1ae8f9b779300c82730bcfbd833f13bf9d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* display_function)(u8 line, u8 mode)</definition>
+        <argsstring>)(u8 line, u8 mode)</argsstring>
+        <name>display_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="57" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu_1ab8460526701ec3ad0a231a398a963882" prot="public" static="no" mutable="no">
+        <type>u8(*</type>
+        <definition>u8(* display_update)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>display_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu_1aa35c173e9c9b7cab0ea757bbfd988893" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structmenu" kindref="compound">menu</ref> *</type>
+        <definition>struct menu* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="61" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="46">
+        <label>menu</label>
+        <link refid="structmenu"/>
+        <childnode refid="46" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" line="51" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/menu.h" bodystart="50" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structmenu_1ae8f9b779300c82730bcfbd833f13bf9d" prot="public" virt="non-virtual"><scope>menu</scope><name>display_function</name></member>
+      <member refid="structmenu_1ab8460526701ec3ad0a231a398a963882" prot="public" virt="non-virtual"><scope>menu</scope><name>display_update</name></member>
+      <member refid="structmenu_1a5e810089609d71c50a4fafb16304fc44" prot="public" virt="non-virtual"><scope>menu</scope><name>mx_function</name></member>
+      <member refid="structmenu_1aa35c173e9c9b7cab0ea757bbfd988893" prot="public" virt="non-virtual"><scope>menu</scope><name>next</name></member>
+      <member refid="structmenu_1ab821fa0d7f541480110bc8a674b42c79" prot="public" virt="non-virtual"><scope>menu</scope><name>sx_function</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

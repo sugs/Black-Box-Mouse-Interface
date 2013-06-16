@@ -1,0 +1,199 @@
+\hypertarget{stopwatch_8h}{\section{logic/stopwatch.h \-File \-Reference}
+\label{stopwatch_8h}\index{logic/stopwatch.\-h@{logic/stopwatch.\-h}}
+}
+{\ttfamily \#include $<$project.\-h$>$}\*
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstopwatch}{stopwatch}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stopwatch_8h_a79c32899660e8951e59d4ee1f7e874b5}{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K}~(32768/1)
+\item 
+\#define \hyperlink{stopwatch_8h_a9cdc274cd114ee8e8c56d01857570aab}{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K}~(32768/100)
+\item 
+\#define \hyperlink{stopwatch_8h_a42072fc721a975eb66d61f231f69f9fe}{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P}~(0u)
+\item 
+\#define \hyperlink{stopwatch_8h_a0b7660017931b1d692a8b22dcdb890df}{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N}~(1u)
+\item 
+\#define \hyperlink{stopwatch_8h_a248c9b9bea46e56f75d3a6f7e8cec612}{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E}~(2u)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stopwatch_8h_ad927ede9f2eed4d6d52ab4fcc74909b0}{start\-\_\-stopwatch} (void)
+\item 
+void \hyperlink{stopwatch_8h_ad49f9b09815771b35f755b5312dccf41}{stop\-\_\-stopwatch} (void)
+\item 
+void \hyperlink{stopwatch_8h_a58c5d6e22f5e0d627b01693f5fef66bb}{reset\-\_\-stopwatch} (void)
+\item 
+u8 \hyperlink{stopwatch_8h_a2a22ccd151db2e11ecdf2ce86caf127a}{is\-\_\-stopwatch} (void)
+\item 
+void \hyperlink{stopwatch_8h_ae5a797b7f6ee89558db385bc835552eb}{stopwatch\-\_\-tick} (void)
+\item 
+void \hyperlink{stopwatch_8h_a8cce86c06cbb2787d2cb3c8e90a3f1de}{update\-\_\-stopwatch\-\_\-timer} (void)
+\item 
+void \hyperlink{stopwatch_8h_a8dc9f426aa5c60e62348ff0b9ee2d3e9}{mx\-\_\-stopwatch} (u8 line)
+\item 
+void \hyperlink{stopwatch_8h_acacb7af0ff860861923e0d77fe16d88d}{sx\-\_\-stopwatch} (u8 line)
+\item 
+void \hyperlink{stopwatch_8h_a14ca906cccfc6b98d4e8fefd110a37da}{display\-\_\-stopwatch} (u8 line, u8 update)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstopwatch}{stopwatch} \hyperlink{stopwatch_8h_aaefd12e2760dc3e5535ed1f0cf1fa5da}{s\-Stopwatch}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{stopwatch_8h_a9cdc274cd114ee8e8c56d01857570aab}{\index{stopwatch.\-h@{stopwatch.\-h}!\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K}}
+\index{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-100\-H\-Z\-\_\-\-T\-I\-C\-K}~(32768/100)}}\label{stopwatch_8h_a9cdc274cd114ee8e8c56d01857570aab}
+
+
+\-Definition at line 60 of file stopwatch.\-h.
+
+\hypertarget{stopwatch_8h_a79c32899660e8951e59d4ee1f7e874b5}{\index{stopwatch.\-h@{stopwatch.\-h}!\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K}}
+\index{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-1\-H\-Z\-\_\-\-T\-I\-C\-K}~(32768/1)}}\label{stopwatch_8h_a79c32899660e8951e59d4ee1f7e874b5}
+
+
+\-Definition at line 59 of file stopwatch.\-h.
+
+\hypertarget{stopwatch_8h_a248c9b9bea46e56f75d3a6f7e8cec612}{\index{stopwatch.\-h@{stopwatch.\-h}!\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E}}
+\index{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-H\-I\-D\-E}~(2u)}}\label{stopwatch_8h_a248c9b9bea46e56f75d3a6f7e8cec612}
+
+
+\-Definition at line 63 of file stopwatch.\-h.
+
+\hypertarget{stopwatch_8h_a0b7660017931b1d692a8b22dcdb890df}{\index{stopwatch.\-h@{stopwatch.\-h}!\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N}}
+\index{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-R\-U\-N}~(1u)}}\label{stopwatch_8h_a0b7660017931b1d692a8b22dcdb890df}
+
+
+\-Definition at line 62 of file stopwatch.\-h.
+
+\hypertarget{stopwatch_8h_a42072fc721a975eb66d61f231f69f9fe}{\index{stopwatch.\-h@{stopwatch.\-h}!\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P}}
+\index{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P@{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{\-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-T\-O\-P\-W\-A\-T\-C\-H\-\_\-\-S\-T\-O\-P}~(0u)}}\label{stopwatch_8h_a42072fc721a975eb66d61f231f69f9fe}
+
+
+\-Definition at line 61 of file stopwatch.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{stopwatch_8h_a14ca906cccfc6b98d4e8fefd110a37da}{\index{stopwatch.\-h@{stopwatch.\-h}!display\-\_\-stopwatch@{display\-\_\-stopwatch}}
+\index{display\-\_\-stopwatch@{display\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{display\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_a14ca906cccfc6b98d4e8fefd110a37da}
+
+
+\-Definition at line 428 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_a2a22ccd151db2e11ecdf2ce86caf127a}{\index{stopwatch.\-h@{stopwatch.\-h}!is\-\_\-stopwatch@{is\-\_\-stopwatch}}
+\index{is\-\_\-stopwatch@{is\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{is\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_a2a22ccd151db2e11ecdf2ce86caf127a}
+
+
+\-Definition at line 300 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_a8dc9f426aa5c60e62348ff0b9ee2d3e9}{\index{stopwatch.\-h@{stopwatch.\-h}!mx\-\_\-stopwatch@{mx\-\_\-stopwatch}}
+\index{mx\-\_\-stopwatch@{mx\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{mx\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_a8dc9f426aa5c60e62348ff0b9ee2d3e9}
+
+
+\-Definition at line 378 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_a58c5d6e22f5e0d627b01693f5fef66bb}{\index{stopwatch.\-h@{stopwatch.\-h}!reset\-\_\-stopwatch@{reset\-\_\-stopwatch}}
+\index{reset\-\_\-stopwatch@{reset\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{reset\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_a58c5d6e22f5e0d627b01693f5fef66bb}
+
+
+\-Definition at line 120 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_ad927ede9f2eed4d6d52ab4fcc74909b0}{\index{stopwatch.\-h@{stopwatch.\-h}!start\-\_\-stopwatch@{start\-\_\-stopwatch}}
+\index{start\-\_\-stopwatch@{start\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{start\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf start\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_ad927ede9f2eed4d6d52ab4fcc74909b0}
+
+
+\-Definition at line 312 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_ad49f9b09815771b35f755b5312dccf41}{\index{stopwatch.\-h@{stopwatch.\-h}!stop\-\_\-stopwatch@{stop\-\_\-stopwatch}}
+\index{stop\-\_\-stopwatch@{stop\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{stop\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stop\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_ad49f9b09815771b35f755b5312dccf41}
+
+
+\-Definition at line 341 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_ae5a797b7f6ee89558db385bc835552eb}{\index{stopwatch.\-h@{stopwatch.\-h}!stopwatch\-\_\-tick@{stopwatch\-\_\-tick}}
+\index{stopwatch\-\_\-tick@{stopwatch\-\_\-tick}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{stopwatch\-\_\-tick}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stopwatch\-\_\-tick} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_ae5a797b7f6ee89558db385bc835552eb}
+
+
+\-Definition at line 181 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_acacb7af0ff860861923e0d77fe16d88d}{\index{stopwatch.\-h@{stopwatch.\-h}!sx\-\_\-stopwatch@{sx\-\_\-stopwatch}}
+\index{sx\-\_\-stopwatch@{sx\-\_\-stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{sx\-\_\-stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-stopwatch} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_acacb7af0ff860861923e0d77fe16d88d}
+
+
+\-Definition at line 401 of file stopwatch.\-c.
+
+\hypertarget{stopwatch_8h_a8cce86c06cbb2787d2cb3c8e90a3f1de}{\index{stopwatch.\-h@{stopwatch.\-h}!update\-\_\-stopwatch\-\_\-timer@{update\-\_\-stopwatch\-\_\-timer}}
+\index{update\-\_\-stopwatch\-\_\-timer@{update\-\_\-stopwatch\-\_\-timer}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{update\-\_\-stopwatch\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf update\-\_\-stopwatch\-\_\-timer} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{stopwatch_8h_a8cce86c06cbb2787d2cb3c8e90a3f1de}
+
+
+\-Definition at line 134 of file stopwatch.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{stopwatch_8h_aaefd12e2760dc3e5535ed1f0cf1fa5da}{\index{stopwatch.\-h@{stopwatch.\-h}!s\-Stopwatch@{s\-Stopwatch}}
+\index{s\-Stopwatch@{s\-Stopwatch}!stopwatch.h@{stopwatch.\-h}}
+\subsubsection[{s\-Stopwatch}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf stopwatch} {\bf s\-Stopwatch}}}\label{stopwatch_8h_aaefd12e2760dc3e5535ed1f0cf1fa5da}
+
+
+\-Definition at line 79 of file stopwatch.\-c.
+

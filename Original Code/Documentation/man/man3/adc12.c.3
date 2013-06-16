@@ -1,0 +1,54 @@
+.TH "driver/adc12.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+driver/adc12.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <project\&.h>\fP
+.br
+\fC#include 'adc12\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBu16\fP \fBadc12_single_conversion\fP (\fBu16\fP ref, \fBu16\fP sht, \fBu16\fP channel)"
+.br
+.ti -1c
+.RI "__interrupt void \fBADC12ISR\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBu16\fP \fBadc12_result\fP"
+.br
+.ti -1c
+.RI "u8 \fBadc12_data_ready\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBu16\fP \fBadc12_single_conversion\fP (\fBu16\fPref, \fBu16\fPsht, \fBu16\fPchannel)"
+.PP
+Definition at line 120 of file adc12\&.c\&.
+.SS "__interrupt void \fBADC12ISR\fP (void)"
+.PP
+Definition at line 170 of file adc12\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "u8 \fBadc12_data_ready\fP"
+.PP
+Definition at line 61 of file adc12\&.c\&.
+.SS "\fBu16\fP \fBadc12_result\fP"
+.PP
+Definition at line 60 of file adc12\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

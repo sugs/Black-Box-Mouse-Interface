@@ -1,0 +1,212 @@
+\hypertarget{date_8c}{\section{logic/date.c \-File \-Reference}
+\label{date_8c}\index{logic/date.\-c@{logic/date.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ports.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}date.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}clock.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}user.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display2.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{date_8c_afff359d61ad152e5f40bcf81beed4b04}{\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S}~6
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{date_8c_ab53da57f1167a2da0ae9552a6ffb2b1e}{reset\-\_\-date} (void)
+\item 
+u8 \hyperlink{date_8c_ac94782069cd6e87ed2fff4109d949fc1}{get\-\_\-number\-Of\-Days} (u8 month, \hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} year)
+\item 
+void \hyperlink{date_8c_a53efc90f66c6ac2c70b34a8788116f34}{add\-\_\-day} (void)
+\item 
+void \hyperlink{date_8c_a2a7ab992dad34658bec25c99f69c1787}{mx\-\_\-date} (u8 line)
+\item 
+void \hyperlink{date_8c_a1abf746cad847204ec988f271575c050}{sx\-\_\-date} (u8 line)
+\item 
+void \hyperlink{date_8c_a44609f2448260959f34cbe1722325857}{display\-\_\-date} (u8 line, u8 update)
+\item 
+void \hyperlink{date_8c_a6b43fb50175c83afd344b9b09d8a10fd}{display\-\_\-time\-\_\-line2} (u8 \-Time\-Line2\-View\-Style)
+\item 
+void \hyperlink{date_8c_a50c07deb5aeaa0d81e131f9cc3b9bb09}{display\-\_\-\-Day\-Of\-Week} (u8 segments, u32 value, u8 digits, u8 blanks)
+\item 
+void \hyperlink{date_8c_a848c519e0e49311c06cc8c73a06d7ebf}{display\-\_\-\-Day\-Of\-Week\-\_\-\-Language} (u8 segments, u32 value, u8 digits, u8 blanks)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-no\-\_\-init struct \hyperlink{structdate}{date} \hyperlink{date_8c_ad3ac12fb0adf4e19d859f280a423695f}{s\-Date}
+\item 
+\-\_\-\-\_\-no\-\_\-init u8 \hyperlink{date_8c_a456a51362102c5ec672258492accf85d}{\-Second\-Time\-Offset}
+\item 
+s32 \hyperlink{date_8c_af9315ae40bd17ea6f3861b6042fa950f}{\-Do\-W\-\_\-\-Language} = 0
+\item 
+const u8 \hyperlink{date_8c_ac74808de6822cce553ebf9ab019b8963}{\-Day\-Str} \mbox{[}6\mbox{]}\mbox{[}7\mbox{]}\mbox{[}3\mbox{]}
+\item 
+void($\ast$ \hyperlink{date_8c_aba4d202f2088c6de95b88c0082283299}{fptr\-\_\-lcd\-\_\-function\-\_\-line1} )(u8 line, u8 update)
+\item 
+void($\ast$ \hyperlink{date_8c_a67551f5f915e3d572eff4ea2ddd9067f}{fptr\-\_\-lcd\-\_\-function\-\_\-line2} )(u8 line, u8 update)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{date_8c_afff359d61ad152e5f40bcf81beed4b04}{\index{date.\-c@{date.\-c}!\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S@{\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S}}
+\index{\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S@{\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S}!date.c@{date.\-c}}
+\subsubsection[{\-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-A\-X\-\_\-\-L\-A\-N\-G\-U\-A\-G\-E\-S}~6}}\label{date_8c_afff359d61ad152e5f40bcf81beed4b04}
+
+
+\-Definition at line 70 of file date.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{date_8c_a53efc90f66c6ac2c70b34a8788116f34}{\index{date.\-c@{date.\-c}!add\-\_\-day@{add\-\_\-day}}
+\index{add\-\_\-day@{add\-\_\-day}!date.c@{date.\-c}}
+\subsubsection[{add\-\_\-day}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf add\-\_\-day} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a53efc90f66c6ac2c70b34a8788116f34}
+
+
+\-Definition at line 395 of file date.\-c.
+
+\hypertarget{date_8c_a44609f2448260959f34cbe1722325857}{\index{date.\-c@{date.\-c}!display\-\_\-date@{display\-\_\-date}}
+\index{display\-\_\-date@{display\-\_\-date}!date.c@{date.\-c}}
+\subsubsection[{display\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-date} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a44609f2448260959f34cbe1722325857}
+
+
+\-Definition at line 582 of file date.\-c.
+
+\hypertarget{date_8c_a50c07deb5aeaa0d81e131f9cc3b9bb09}{\index{date.\-c@{date.\-c}!display\-\_\-\-Day\-Of\-Week@{display\-\_\-\-Day\-Of\-Week}}
+\index{display\-\_\-\-Day\-Of\-Week@{display\-\_\-\-Day\-Of\-Week}!date.c@{date.\-c}}
+\subsubsection[{display\-\_\-\-Day\-Of\-Week}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-\-Day\-Of\-Week} (
+\begin{DoxyParamCaption}
+\item[{u8}]{segments, }
+\item[{u32}]{value, }
+\item[{u8}]{digits, }
+\item[{u8}]{blanks}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a50c07deb5aeaa0d81e131f9cc3b9bb09}
+
+
+\-Definition at line 314 of file date.\-c.
+
+\hypertarget{date_8c_a848c519e0e49311c06cc8c73a06d7ebf}{\index{date.\-c@{date.\-c}!display\-\_\-\-Day\-Of\-Week\-\_\-\-Language@{display\-\_\-\-Day\-Of\-Week\-\_\-\-Language}}
+\index{display\-\_\-\-Day\-Of\-Week\-\_\-\-Language@{display\-\_\-\-Day\-Of\-Week\-\_\-\-Language}!date.c@{date.\-c}}
+\subsubsection[{display\-\_\-\-Day\-Of\-Week\-\_\-\-Language}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-\-Day\-Of\-Week\-\_\-\-Language} (
+\begin{DoxyParamCaption}
+\item[{u8}]{segments, }
+\item[{u32}]{value, }
+\item[{u8}]{digits, }
+\item[{u8}]{blanks}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a848c519e0e49311c06cc8c73a06d7ebf}
+
+
+\-Definition at line 331 of file date.\-c.
+
+\hypertarget{date_8c_a6b43fb50175c83afd344b9b09d8a10fd}{\index{date.\-c@{date.\-c}!display\-\_\-time\-\_\-line2@{display\-\_\-time\-\_\-line2}}
+\index{display\-\_\-time\-\_\-line2@{display\-\_\-time\-\_\-line2}!date.c@{date.\-c}}
+\subsubsection[{display\-\_\-time\-\_\-line2}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-time\-\_\-line2} (
+\begin{DoxyParamCaption}
+\item[{u8}]{\-Time\-Line2\-View\-Style}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a6b43fb50175c83afd344b9b09d8a10fd}
+\hypertarget{date_8c_ac94782069cd6e87ed2fff4109d949fc1}{\index{date.\-c@{date.\-c}!get\-\_\-number\-Of\-Days@{get\-\_\-number\-Of\-Days}}
+\index{get\-\_\-number\-Of\-Days@{get\-\_\-number\-Of\-Days}!date.c@{date.\-c}}
+\subsubsection[{get\-\_\-number\-Of\-Days}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf get\-\_\-number\-Of\-Days} (
+\begin{DoxyParamCaption}
+\item[{u8}]{month, }
+\item[{{\bf u16}}]{year}
+\end{DoxyParamCaption}
+)}}\label{date_8c_ac94782069cd6e87ed2fff4109d949fc1}
+
+
+\-Definition at line 358 of file date.\-c.
+
+\hypertarget{date_8c_a2a7ab992dad34658bec25c99f69c1787}{\index{date.\-c@{date.\-c}!mx\-\_\-date@{mx\-\_\-date}}
+\index{mx\-\_\-date@{mx\-\_\-date}!date.c@{date.\-c}}
+\subsubsection[{mx\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-date} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a2a7ab992dad34658bec25c99f69c1787}
+
+
+\-Definition at line 436 of file date.\-c.
+
+\hypertarget{date_8c_ab53da57f1167a2da0ae9552a6ffb2b1e}{\index{date.\-c@{date.\-c}!reset\-\_\-date@{reset\-\_\-date}}
+\index{reset\-\_\-date@{reset\-\_\-date}!date.c@{date.\-c}}
+\subsubsection[{reset\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-date} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{date_8c_ab53da57f1167a2da0ae9552a6ffb2b1e}
+
+
+\-Definition at line 288 of file date.\-c.
+
+\hypertarget{date_8c_a1abf746cad847204ec988f271575c050}{\index{date.\-c@{date.\-c}!sx\-\_\-date@{sx\-\_\-date}}
+\index{sx\-\_\-date@{sx\-\_\-date}!date.c@{date.\-c}}
+\subsubsection[{sx\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-date} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{date_8c_a1abf746cad847204ec988f271575c050}
+
+
+\-Definition at line 564 of file date.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{date_8c_ac74808de6822cce553ebf9ab019b8963}{\index{date.\-c@{date.\-c}!\-Day\-Str@{\-Day\-Str}}
+\index{\-Day\-Str@{\-Day\-Str}!date.c@{date.\-c}}
+\subsubsection[{\-Day\-Str}]{\setlength{\rightskip}{0pt plus 5cm}const u8 {\bf \-Day\-Str}\mbox{[}6\mbox{]}\mbox{[}7\mbox{]}\mbox{[}3\mbox{]}}}\label{date_8c_ac74808de6822cce553ebf9ab019b8963}
+
+
+\-Definition at line 86 of file date.\-c.
+
+\hypertarget{date_8c_af9315ae40bd17ea6f3861b6042fa950f}{\index{date.\-c@{date.\-c}!\-Do\-W\-\_\-\-Language@{\-Do\-W\-\_\-\-Language}}
+\index{\-Do\-W\-\_\-\-Language@{\-Do\-W\-\_\-\-Language}!date.c@{date.\-c}}
+\subsubsection[{\-Do\-W\-\_\-\-Language}]{\setlength{\rightskip}{0pt plus 5cm}s32 {\bf \-Do\-W\-\_\-\-Language} = 0}}\label{date_8c_af9315ae40bd17ea6f3861b6042fa950f}
+
+
+\-Definition at line 76 of file date.\-c.
+
+\hypertarget{date_8c_aba4d202f2088c6de95b88c0082283299}{\index{date.\-c@{date.\-c}!fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}}
+\index{fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}!date.c@{date.\-c}}
+\subsubsection[{fptr\-\_\-lcd\-\_\-function\-\_\-line1}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-lcd\-\_\-function\-\_\-line1})(u8 line, u8 update)}}\label{date_8c_aba4d202f2088c6de95b88c0082283299}
+
+
+\-Definition at line 116 of file main.\-c.
+
+\hypertarget{date_8c_a67551f5f915e3d572eff4ea2ddd9067f}{\index{date.\-c@{date.\-c}!fptr\-\_\-lcd\-\_\-function\-\_\-line2@{fptr\-\_\-lcd\-\_\-function\-\_\-line2}}
+\index{fptr\-\_\-lcd\-\_\-function\-\_\-line2@{fptr\-\_\-lcd\-\_\-function\-\_\-line2}!date.c@{date.\-c}}
+\subsubsection[{fptr\-\_\-lcd\-\_\-function\-\_\-line2}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-lcd\-\_\-function\-\_\-line2})(u8 line, u8 update)}}\label{date_8c_a67551f5f915e3d572eff4ea2ddd9067f}
+
+
+\-Definition at line 117 of file main.\-c.
+
+\hypertarget{date_8c_ad3ac12fb0adf4e19d859f280a423695f}{\index{date.\-c@{date.\-c}!s\-Date@{s\-Date}}
+\index{s\-Date@{s\-Date}!date.c@{date.\-c}}
+\subsubsection[{s\-Date}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-no\-\_\-init struct {\bf date} {\bf s\-Date}}}\label{date_8c_ad3ac12fb0adf4e19d859f280a423695f}
+
+
+\-Definition at line 74 of file date.\-c.
+
+\hypertarget{date_8c_a456a51362102c5ec672258492accf85d}{\index{date.\-c@{date.\-c}!\-Second\-Time\-Offset@{\-Second\-Time\-Offset}}
+\index{\-Second\-Time\-Offset@{\-Second\-Time\-Offset}!date.c@{date.\-c}}
+\subsubsection[{\-Second\-Time\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-no\-\_\-init u8 {\bf \-Second\-Time\-Offset}}}\label{date_8c_a456a51362102c5ec672258492accf85d}
+
+
+\-Definition at line 75 of file date.\-c.
+

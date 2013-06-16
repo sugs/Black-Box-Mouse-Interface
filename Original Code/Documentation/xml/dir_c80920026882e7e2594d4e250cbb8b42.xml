@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_c80920026882e7e2594d4e250cbb8b42" kind="dir">
+    <compoundname>simpliciti/Components/mrfi/smartrf/CC430/</compoundname>
+    <innerfile refid="smartrf__CC430_8h">smartrf_CC430.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/smartrf/CC430/"/>
+  </compounddef>
+</doxygen>

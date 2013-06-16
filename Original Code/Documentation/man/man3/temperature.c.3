@@ -1,0 +1,86 @@
+.TH "logic/temperature.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/temperature.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'adc12\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include 'user\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "u8 \fBis_temp_measurement\fP (void)"
+.br
+.ti -1c
+.RI "s16 \fBconvert_C_to_F\fP (s16 value)"
+.br
+.ti -1c
+.RI "s16 \fBconvert_F_to_C\fP (s16 value)"
+.br
+.ti -1c
+.RI "void \fBreset_temp_measurement\fP (void)"
+.br
+.ti -1c
+.RI "void \fBtemperature_measurement\fP (u8 filter)"
+.br
+.ti -1c
+.RI "void \fBmx_temperature\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_temperature\fP (u8 line, u8 update)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtemp\fP \fBsTemp\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "s16 \fBconvert_C_to_F\fP (s16value)"
+.PP
+Definition at line 139 of file temperature\&.c\&.
+.SS "s16 \fBconvert_F_to_C\fP (s16value)"
+.PP
+Definition at line 156 of file temperature\&.c\&.
+.SS "void \fBdisplay_temperature\fP (u8line, u8update)"
+.PP
+Definition at line 263 of file temperature\&.c\&.
+.SS "u8 \fBis_temp_measurement\fP (void)"
+.PP
+Definition at line 173 of file temperature\&.c\&.
+.SS "void \fBmx_temperature\fP (u8line)"
+.PP
+Definition at line 185 of file temperature\&.c\&.
+.SS "void \fBreset_temp_measurement\fP (void)"
+.PP
+Definition at line 82 of file temperature\&.c\&.
+.SS "void \fBtemperature_measurement\fP (u8filter)"
+.PP
+Definition at line 98 of file temperature\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "struct \fBtemp\fP \fBsTemp\fP"
+.PP
+Definition at line 69 of file temperature\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

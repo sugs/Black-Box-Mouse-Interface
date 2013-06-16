@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structbatt" kind="struct" prot="public">
+    <compoundname>batt</compoundname>
+    <includes refid="battery_8h" local="yes">battery.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbatt_1ac6b2518df4ca45cee089e61f152572b2" prot="public" static="no" mutable="no">
+        <type><ref refid="project_8h_1a44455c5614c38dfadce594b2228fd055" kindref="member">menu_t</ref></type>
+        <definition>menu_t state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" line="73" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbatt_1a01593d72362c2d33a60b92c037f399ef" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lobatt_display</definition>
+        <argsstring></argsstring>
+        <name>lobatt_display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbatt_1ad769a752524b8ab13170d3e4940686de" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 voltage</definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" line="79" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbatt_1a0d9e2e9984f21129b2b54a114600b57b" prot="public" static="no" mutable="no">
+        <type>s16</type>
+        <definition>s16 offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" line="82" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" line="71" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/battery.h" bodystart="70" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structbatt_1a01593d72362c2d33a60b92c037f399ef" prot="public" virt="non-virtual"><scope>batt</scope><name>lobatt_display</name></member>
+      <member refid="structbatt_1a0d9e2e9984f21129b2b54a114600b57b" prot="public" virt="non-virtual"><scope>batt</scope><name>offset</name></member>
+      <member refid="structbatt_1ac6b2518df4ca45cee089e61f152572b2" prot="public" virt="non-virtual"><scope>batt</scope><name>state</name></member>
+      <member refid="structbatt_1ad769a752524b8ab13170d3e4940686de" prot="public" virt="non-virtual"><scope>batt</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

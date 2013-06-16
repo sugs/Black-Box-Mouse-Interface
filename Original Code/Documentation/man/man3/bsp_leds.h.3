@@ -1,0 +1,243 @@
+.TH "simpliciti/Components/bsp/drivers/bsp_leds.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/bsp/drivers/bsp_leds.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp_led_defs\&.h'\fP
+.br
+\fC#include 'bsp_macros\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBSP_NUM_LEDS\fP   \fB__bsp_NUM_LEDS__\fP"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED_BLINK_DELAY\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED1\fP()   \fB__bsp_LED1_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED1\fP()   \fB__bsp_LED1_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED1\fP()   \fB__bsp_LED1_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED1_IS_ON\fP()   \fB__bsp_LED1_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED2\fP()   \fB__bsp_LED2_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED2\fP()   \fB__bsp_LED2_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED2\fP()   \fB__bsp_LED2_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED2_IS_ON\fP()   \fB__bsp_LED2_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED3\fP()   \fB__bsp_LED3_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED3\fP()   \fB__bsp_LED3_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED3\fP()   \fB__bsp_LED3_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED3_IS_ON\fP()   \fB__bsp_LED3_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED4\fP()   \fB__bsp_LED4_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED4\fP()   \fB__bsp_LED4_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED4\fP()   \fB__bsp_LED4_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED4_IS_ON\fP()   \fB__bsp_LED4_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED5\fP()   \fB__bsp_LED5_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED5\fP()   \fB__bsp_LED5_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED5\fP()   \fB__bsp_LED5_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED5_IS_ON\fP()   \fB__bsp_LED5_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED6\fP()   \fB__bsp_LED6_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED6\fP()   \fB__bsp_LED6_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED6\fP()   \fB__bsp_LED6_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED6_IS_ON\fP()   \fB__bsp_LED6_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED7\fP()   \fB__bsp_LED7_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED7\fP()   \fB__bsp_LED7_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED7\fP()   \fB__bsp_LED7_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED7_IS_ON\fP()   \fB__bsp_LED7_IS_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_ON_LED8\fP()   \fB__bsp_LED8_TURN_ON__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TURN_OFF_LED8\fP()   \fB__bsp_LED8_TURN_OFF__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_TOGGLE_LED8\fP()   \fB__bsp_LED8_TOGGLE__\fP()"
+.br
+.ti -1c
+.RI "#define \fBBSP_LED8_IS_ON\fP()   \fB__bsp_LED8_IS_ON__\fP()"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBSP_InitLeds\fP (void)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBBSP_LED1_IS_ON\fP()   \fB__bsp_LED1_IS_ON__\fP()"
+.PP
+Definition at line 70 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED2_IS_ON\fP()   \fB__bsp_LED2_IS_ON__\fP()"
+.PP
+Definition at line 76 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED3_IS_ON\fP()   \fB__bsp_LED3_IS_ON__\fP()"
+.PP
+Definition at line 82 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED4_IS_ON\fP()   \fB__bsp_LED4_IS_ON__\fP()"
+.PP
+Definition at line 88 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED5_IS_ON\fP()   \fB__bsp_LED5_IS_ON__\fP()"
+.PP
+Definition at line 94 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED6_IS_ON\fP()   \fB__bsp_LED6_IS_ON__\fP()"
+.PP
+Definition at line 100 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED7_IS_ON\fP()   \fB__bsp_LED7_IS_ON__\fP()"
+.PP
+Definition at line 106 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED8_IS_ON\fP()   \fB__bsp_LED8_IS_ON__\fP()"
+.PP
+Definition at line 112 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_LED_BLINK_DELAY\fP()"\fBValue:\fP
+.PP
+.nf
+st( { volatile uint32_t i; \
+                                      for (i=0; i<__bsp_LED_BLINK_LOOP_COUNT__; i++) { }; } )
+.fi
+.PP
+Definition at line 63 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_NUM_LEDS\fP   \fB__bsp_NUM_LEDS__\fP"
+.PP
+Definition at line 54 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED1\fP()   \fB__bsp_LED1_TOGGLE__\fP()"
+.PP
+Definition at line 69 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED2\fP()   \fB__bsp_LED2_TOGGLE__\fP()"
+.PP
+Definition at line 75 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED3\fP()   \fB__bsp_LED3_TOGGLE__\fP()"
+.PP
+Definition at line 81 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED4\fP()   \fB__bsp_LED4_TOGGLE__\fP()"
+.PP
+Definition at line 87 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED5\fP()   \fB__bsp_LED5_TOGGLE__\fP()"
+.PP
+Definition at line 93 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED6\fP()   \fB__bsp_LED6_TOGGLE__\fP()"
+.PP
+Definition at line 99 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED7\fP()   \fB__bsp_LED7_TOGGLE__\fP()"
+.PP
+Definition at line 105 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TOGGLE_LED8\fP()   \fB__bsp_LED8_TOGGLE__\fP()"
+.PP
+Definition at line 111 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED1\fP()   \fB__bsp_LED1_TURN_OFF__\fP()"
+.PP
+Definition at line 68 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED2\fP()   \fB__bsp_LED2_TURN_OFF__\fP()"
+.PP
+Definition at line 74 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED3\fP()   \fB__bsp_LED3_TURN_OFF__\fP()"
+.PP
+Definition at line 80 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED4\fP()   \fB__bsp_LED4_TURN_OFF__\fP()"
+.PP
+Definition at line 86 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED5\fP()   \fB__bsp_LED5_TURN_OFF__\fP()"
+.PP
+Definition at line 92 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED6\fP()   \fB__bsp_LED6_TURN_OFF__\fP()"
+.PP
+Definition at line 98 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED7\fP()   \fB__bsp_LED7_TURN_OFF__\fP()"
+.PP
+Definition at line 104 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_OFF_LED8\fP()   \fB__bsp_LED8_TURN_OFF__\fP()"
+.PP
+Definition at line 110 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED1\fP()   \fB__bsp_LED1_TURN_ON__\fP()"
+.PP
+Definition at line 67 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED2\fP()   \fB__bsp_LED2_TURN_ON__\fP()"
+.PP
+Definition at line 73 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED3\fP()   \fB__bsp_LED3_TURN_ON__\fP()"
+.PP
+Definition at line 79 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED4\fP()   \fB__bsp_LED4_TURN_ON__\fP()"
+.PP
+Definition at line 85 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED5\fP()   \fB__bsp_LED5_TURN_ON__\fP()"
+.PP
+Definition at line 91 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED6\fP()   \fB__bsp_LED6_TURN_ON__\fP()"
+.PP
+Definition at line 97 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED7\fP()   \fB__bsp_LED7_TURN_ON__\fP()"
+.PP
+Definition at line 103 of file bsp_leds\&.h\&.
+.SS "#define \fBBSP_TURN_ON_LED8\fP()   \fB__bsp_LED8_TURN_ON__\fP()"
+.PP
+Definition at line 109 of file bsp_leds\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBBSP_InitLeds\fP (void)"
+.PP
+Definition at line 76 of file bsp_leds\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bsp__buttons_8h" kind="file">
+    <compoundname>bsp_buttons.h</compoundname>
+    <includes refid="bsp__button__defs_8h" local="yes">bsp_button_defs.h</includes>
+    <includedby refid="main__ED__BM_8c" local="yes">simpliciti/Applications/application/End Device/main_ED_BM.c</includedby>
+    <includedby refid="bsp__drivers_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <includedby refid="bsp__buttons_8c" local="yes">simpliciti/Components/bsp/drivers/code/bsp_buttons.c</includedby>
+    <incdepgraph>
+      <node id="1135">
+        <label>bsp_macros.h</label>
+        <link refid="bsp__macros_8h"/>
+      </node>
+      <node id="1131">
+        <label>bsp_button_defs.h</label>
+        <link refid="bsp__button__defs_8h"/>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+      </node>
+      <node id="1136">
+        <label>code/bsp_generic_buttons.h</label>
+        <link refid="bsp__generic__buttons_8h"/>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+      </node>
+      <node id="1132">
+        <label>bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+      </node>
+      <node id="1133">
+        <label>mcus/bsp_msp430_defs.h</label>
+        <link refid="bsp__msp430__defs_8h"/>
+      </node>
+      <node id="1130">
+        <label>simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
+        <link refid="bsp_buttons.h"/>
+        <childnode refid="1131" relation="include">
+        </childnode>
+      </node>
+      <node id="1134">
+        <label>bsp_config.h</label>
+        <link refid="bsp__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1138">
+        <label>simpliciti/Applications/application/End Device/main_ED_BM.c</label>
+        <link refid="main__ED__BM_8c"/>
+      </node>
+      <node id="1140">
+        <label>simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
+        <link refid="bsp__buttons_8c"/>
+        <childnode refid="1139" relation="include">
+        </childnode>
+      </node>
+      <node id="1139">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <link refid="bsp__drivers_8c"/>
+      </node>
+      <node id="1137">
+        <label>simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
+        <link refid="bsp_buttons.h"/>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bsp__buttons_8h_1ac6a48d52ee298c1ed873f7405dad198d" prot="public" static="no">
+        <name>BSP_NUM_BUTTONS</name>
+        <initializer><ref refid="bsp__button__defs_8h_1ad086de87ea111c6ad8d227fd62a60456" kindref="member">__bsp_NUM_BUTTONS__</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1ac47cef434465938f02da1234357ef205" prot="public" static="no">
+        <name>BSP_BUTTON_DEBOUNCE_WAIT</name>
+        <param><defname>expr</defname></param>
+        <initializer><ref refid="bsp__button__defs_8h_1a7573c1ec08eda58561fc39ad42273b32" kindref="member">__bsp_BUTTON_DEBOUNCE_WAIT__</ref>(expr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="60" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a10665e313e504d0093a943425ce01ff4" prot="public" static="no">
+        <name>BSP_BUTTON1</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1afd0016afb0f4ceba97a0fae8fac4254c" kindref="member">__bsp_BUTTON1__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a937d968c59bf7faeb9538ff1aea7c699" prot="public" static="no">
+        <name>BSP_BUTTON2</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1ac6c7af9ec499386088d9b1dd632ac6cd" kindref="member">__bsp_BUTTON2__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="63" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a0fd9d553ac2ad7c253cc88b0197fd72a" prot="public" static="no">
+        <name>BSP_BUTTON3</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1a1e54278ee99e6257254a4a66d3e040ab" kindref="member">__bsp_BUTTON3__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="64" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a82b82d3bb4b51758526d4927e4d01d08" prot="public" static="no">
+        <name>BSP_BUTTON4</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1a0a0653975931692af3a45d6c9725b568" kindref="member">__bsp_BUTTON4__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="65" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a5939bcd0fe394070d18805396b795ae9" prot="public" static="no">
+        <name>BSP_BUTTON5</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1a894cc0ba694f8169ae10bb8365a90f7d" kindref="member">__bsp_BUTTON5__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="66" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a88ba6de7ae0ca03dca735a988dd657ad" prot="public" static="no">
+        <name>BSP_BUTTON6</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1ac10a7efd446b606837a4e628f2c2ae1f" kindref="member">__bsp_BUTTON6__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="67" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1afd98b2bc4ab312cc6e5317536a40e2ba" prot="public" static="no">
+        <name>BSP_BUTTON7</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1a8829da1c0927f8826a1f839caf8461eb" kindref="member">__bsp_BUTTON7__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="68" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__buttons_8h_1a458a57a78168bf5896a26492a4495f0d" prot="public" static="no">
+        <name>BSP_BUTTON8</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__buttons_8h_1a628e9254192d8f0df6f71f319e462f6d" kindref="member">__bsp_BUTTON8__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="69" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bsp__buttons_8h_1a4e71e66c8d68bd986a5d3e326bd0419d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSP_InitButtons</definition>
+        <argsstring>(void)</argsstring>
+        <name>BSP_InitButtons</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_buttons.c" bodystart="76" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2007-07-06<sp/>11:19:00<sp/>-0700<sp/>(Fri,<sp/>06<sp/>Jul<sp/>2007)<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>13579<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Copyright<sp/>2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/>BSP<sp/>(Board<sp/>Support<sp/>Package)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Button<sp/>driver<sp/>include<sp/>file.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BSP_BUTTONS_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTONS_H</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Includes</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp__button__defs_8h" kindref="compound">bsp_button_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defines</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="bsp__buttons_8h_1ac6a48d52ee298c1ed873f7405dad198d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSP_NUM_BUTTONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bsp_NUM_BUTTONS__</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="bsp__buttons_8h_1ac47cef434465938f02da1234357ef205" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON_DEBOUNCE_WAIT(expr)<sp/><sp/><sp/><sp/>__bsp_BUTTON_DEBOUNCE_WAIT__(expr)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="bsp__buttons_8h_1a10665e313e504d0093a943425ce01ff4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON1()<sp/><sp/><sp/>__bsp_BUTTON1__()</highlight></codeline>
+<codeline lineno="63" refid="bsp__buttons_8h_1a937d968c59bf7faeb9538ff1aea7c699" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON2()<sp/><sp/><sp/>__bsp_BUTTON2__()</highlight></codeline>
+<codeline lineno="64" refid="bsp__buttons_8h_1a0fd9d553ac2ad7c253cc88b0197fd72a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON3()<sp/><sp/><sp/>__bsp_BUTTON3__()</highlight></codeline>
+<codeline lineno="65" refid="bsp__buttons_8h_1a82b82d3bb4b51758526d4927e4d01d08" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON4()<sp/><sp/><sp/>__bsp_BUTTON4__()</highlight></codeline>
+<codeline lineno="66" refid="bsp__buttons_8h_1a5939bcd0fe394070d18805396b795ae9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON5()<sp/><sp/><sp/>__bsp_BUTTON5__()</highlight></codeline>
+<codeline lineno="67" refid="bsp__buttons_8h_1a88ba6de7ae0ca03dca735a988dd657ad" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON6()<sp/><sp/><sp/>__bsp_BUTTON6__()</highlight></codeline>
+<codeline lineno="68" refid="bsp__buttons_8h_1afd98b2bc4ab312cc6e5317536a40e2ba" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON7()<sp/><sp/><sp/>__bsp_BUTTON7__()</highlight></codeline>
+<codeline lineno="69" refid="bsp__buttons_8h_1a458a57a78168bf5896a26492a4495f0d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_BUTTON8()<sp/><sp/><sp/>__bsp_BUTTON8__()</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Prototypes</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bsp__buttons_8h_1a4e71e66c8d68bd986a5d3e326bd0419d" kindref="member">BSP_InitButtons</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>************************************************************************************************</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Compile<sp/>Time<sp/>Integrity<sp/>Checks</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>************************************************************************************************</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BSP_NO_BUTTONS</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;ERROR:<sp/>The<sp/>button<sp/>driver<sp/>is<sp/>disabled.<sp/><sp/>This<sp/>file<sp/>should<sp/>not<sp/>be<sp/>included.&quot;</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h"/>
+  </compounddef>
+</doxygen>

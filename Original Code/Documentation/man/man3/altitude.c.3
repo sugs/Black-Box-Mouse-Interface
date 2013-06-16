@@ -1,0 +1,140 @@
+.TH "logic/altitude.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/altitude.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include 'altitude\&.h'\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'vti_ps\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include 'user\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAMBIENT_PRESSURE_OFFSET_DEFAULT\fP   0"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBreset_altitude_measurement\fP (void)"
+.br
+.ti -1c
+.RI "s16 \fBconvert_m_to_ft\fP (s16 m)"
+.br
+.ti -1c
+.RI "s16 \fBconvert_ft_to_m\fP (s16 ft)"
+.br
+.ti -1c
+.RI "u8 \fBis_altitude_measurement\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstart_altitude_measurement\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstop_altitude_measurement\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdo_altitude_measurement\fP (u8 filter)"
+.br
+.ti -1c
+.RI "void \fBsx_altitude\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBmx_altitude\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_altitude\fP (u8 line, u8 update)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBalt\fP \fBsAlt\fP"
+.br
+.ti -1c
+.RI "u8 \fBPressDisplay\fP"
+.br
+.ti -1c
+.RI "s16 \fBAmbientPressure\fP"
+.br
+.ti -1c
+.RI "s16 \fBAmbientPressureOffset\fP"
+.br
+.ti -1c
+.RI "u8 \fBps_ok\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBAMBIENT_PRESSURE_OFFSET_DEFAULT\fP   0"
+.PP
+Definition at line 63 of file altitude\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "s16 \fBconvert_ft_to_m\fP (s16ft)"
+.PP
+Definition at line 141 of file altitude\&.c\&.
+.SS "s16 \fBconvert_m_to_ft\fP (s16m)"
+.PP
+Definition at line 129 of file altitude\&.c\&.
+.SS "void \fBdisplay_altitude\fP (u8line, u8update)"
+.PP
+Definition at line 379 of file altitude\&.c\&.
+.SS "void \fBdo_altitude_measurement\fP (u8filter)"
+.PP
+Definition at line 224 of file altitude\&.c\&.
+.SS "u8 \fBis_altitude_measurement\fP (void)"
+.PP
+Definition at line 153 of file altitude\&.c\&.
+.SS "void \fBmx_altitude\fP (u8line)"
+.PP
+Definition at line 284 of file altitude\&.c\&.
+.SS "void \fBreset_altitude_measurement\fP (void)"
+.PP
+Definition at line 87 of file altitude\&.c\&.
+.SS "void \fBstart_altitude_measurement\fP (void)"
+.PP
+Definition at line 165 of file altitude\&.c\&.
+.SS "void \fBstop_altitude_measurement\fP (void)"
+.PP
+Definition at line 200 of file altitude\&.c\&.
+.SS "void \fBsx_altitude\fP (u8line)"
+.PP
+Definition at line 265 of file altitude\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "s16 \fBAmbientPressure\fP"
+.PP
+Definition at line 71 of file altitude\&.c\&.
+.SS "s16 \fBAmbientPressureOffset\fP"
+.PP
+Definition at line 72 of file altitude\&.c\&.
+.SS "u8 \fBPressDisplay\fP"
+.PP
+Definition at line 70 of file altitude\&.c\&.
+.SS "u8 \fBps_ok\fP"
+.PP
+Definition at line 71 of file vti_ps\&.c\&.
+.SS "struct \fBalt\fP \fBsAlt\fP"
+.PP
+Definition at line 67 of file altitude\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

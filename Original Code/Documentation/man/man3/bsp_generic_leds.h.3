@@ -1,0 +1,394 @@
+.TH "simpliciti/Components/bsp/drivers/code/bsp_generic_leds.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/bsp/drivers/code/bsp_generic_leds.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp_macros\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__bsp_LED_TURN_ON__\fP(bit, port, ddr, low)   \fBst\fP( if (low) { port &= ~BV(bit); } else { port |= BV(bit); } )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED_TURN_OFF__\fP(bit, port, ddr, low)   \fBst\fP( if (low) { port |= BV(bit); } else { port &= ~BV(bit); } )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED_IS_ON__\fP(bit, port, ddr, low)   ( (low) ? (!((port) & BV(bit))) : ((port) & BV(bit)) )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED_TOGGLE__\fP(bit, port, ddr, low)   \fBst\fP( port ^= BV(bit); )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED_CONFIG__\fP(bit, port, ddr, low)   \fBst\fP( ddr |= BV(bit); )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED1_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED1_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED1_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED1_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED1_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED1_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED2_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED2_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED2_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED2_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED2_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED2_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED3_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED3_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED3_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED3_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED3_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED3_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED4_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED4_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED4_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED4_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED4_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED4_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED5_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED5_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED5_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED5_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED5_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED5_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED6_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED6_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED6_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED6_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED6_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED6_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED7_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED7_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED7_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED7_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED7_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED7_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_LED8_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED8_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED8_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED8_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED8_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_LED8_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fB__bsp_LED1_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 84 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED1_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 83 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED1_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 82 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED1_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 81 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED1_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( \fB__bsp_LED1_BIT__\fP, \fB__bsp_LED1_PORT__\fP, \fB__bsp_LED1_DDR__\fP, \fB__bsp_LED1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 80 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED2_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 106 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED2_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 105 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED2_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 104 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED2_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 103 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED2_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( \fB__bsp_LED2_BIT__\fP, \fB__bsp_LED2_PORT__\fP, \fB__bsp_LED2_DDR__\fP, \fB__bsp_LED2_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 102 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED3_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 128 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED3_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 127 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED3_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 126 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED3_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 125 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED3_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED3_BIT__, __bsp_LED3_PORT__, __bsp_LED3_DDR__, __bsp_LED3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 124 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED4_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 150 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED4_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 149 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED4_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 148 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED4_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 147 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED4_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED4_BIT__, __bsp_LED4_PORT__, __bsp_LED4_DDR__, __bsp_LED4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 146 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED5_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 171 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED5_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 170 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED5_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 169 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED5_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 168 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED5_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED5_BIT__, __bsp_LED5_PORT__, __bsp_LED5_DDR__, __bsp_LED5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 167 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED6_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 192 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED6_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 191 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED6_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 190 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED6_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 189 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED6_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED6_BIT__, __bsp_LED6_PORT__, __bsp_LED6_DDR__, __bsp_LED6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 188 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED7_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 213 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED7_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 212 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED7_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 211 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED7_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 210 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED7_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED7_BIT__, __bsp_LED7_PORT__, __bsp_LED7_DDR__, __bsp_LED7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 209 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED8_CONFIG__\fP()   \fB__bsp_LED_CONFIG__\fP  ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 234 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED8_IS_ON__\fP()   \fB__bsp_LED_IS_ON__\fP   ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 233 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED8_TOGGLE__\fP()   \fB__bsp_LED_TOGGLE__\fP  ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 232 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED8_TURN_OFF__\fP()   \fB__bsp_LED_TURN_OFF__\fP( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 231 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED8_TURN_ON__\fP()   \fB__bsp_LED_TURN_ON__\fP ( __bsp_LED8_BIT__, __bsp_LED8_PORT__, __bsp_LED8_DDR__, __bsp_LED8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 230 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED_CONFIG__\fP(bit, port, ddr, low)   \fBst\fP( ddr |= BV(bit); )"
+.PP
+Definition at line 70 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED_IS_ON__\fP(bit, port, ddr, low)   ( (low) ? (!((port) & BV(bit))) : ((port) & BV(bit)) )"
+.PP
+Definition at line 66 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED_TOGGLE__\fP(bit, port, ddr, low)   \fBst\fP( port ^= BV(bit); )"
+.PP
+Definition at line 69 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED_TURN_OFF__\fP(bit, port, ddr, low)   \fBst\fP( if (low) { port |= BV(bit); } else { port &= ~BV(bit); } )"
+.PP
+Definition at line 63 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_LED_TURN_ON__\fP(bit, port, ddr, low)   \fBst\fP( if (low) { port &= ~BV(bit); } else { port |= BV(bit); } )"
+.PP
+Definition at line 60 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED1_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED1_BIT__)  + \
+                                   (defined __bsp_LED1_PORT__) + \
+                                   (defined __bsp_LED1_DDR__)  + \
+                                   (defined __bsp_LED1_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 75 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED2_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED2_BIT__)  + \
+                                   (defined __bsp_LED2_PORT__) + \
+                                   (defined __bsp_LED2_DDR__)  + \
+                                   (defined __bsp_LED2_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 97 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED3_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED3_BIT__)  + \
+                                   (defined __bsp_LED3_PORT__) + \
+                                   (defined __bsp_LED3_DDR__)  + \
+                                   (defined __bsp_LED3_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 119 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED4_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED4_BIT__)  + \
+                                   (defined __bsp_LED4_PORT__) + \
+                                   (defined __bsp_LED4_DDR__)  + \
+                                   (defined __bsp_LED4_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 141 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED5_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED5_BIT__)  + \
+                                   (defined __bsp_LED5_PORT__) + \
+                                   (defined __bsp_LED5_DDR__)  + \
+                                   (defined __bsp_LED5_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 162 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED6_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED6_BIT__)  + \
+                                   (defined __bsp_LED6_PORT__) + \
+                                   (defined __bsp_LED6_DDR__)  + \
+                                   (defined __bsp_LED6_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 183 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED7_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED7_BIT__)  + \
+                                   (defined __bsp_LED7_PORT__) + \
+                                   (defined __bsp_LED7_DDR__)  + \
+                                   (defined __bsp_LED7_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 204 of file bsp_generic_leds\&.h\&.
+.SS "#define \fB__bsp_NUM_LED8_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_LED8_BIT__)  + \
+                                   (defined __bsp_LED8_PORT__) + \
+                                   (defined __bsp_LED8_DDR__)  + \
+                                   (defined __bsp_LED8_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 225 of file bsp_generic_leds\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

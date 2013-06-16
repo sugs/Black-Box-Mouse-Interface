@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_56a9726a311a3503a191140483112082" kind="dir">
+    <compoundname>simpliciti/Components/bsp/drivers/code/</compoundname>
+    <innerfile refid="bsp__buttons_8c">bsp_buttons.c</innerfile>
+    <innerfile refid="bsp__generic__buttons_8h">bsp_generic_buttons.h</innerfile>
+    <innerfile refid="bsp__generic__leds_8h">bsp_generic_leds.h</innerfile>
+    <innerfile refid="bsp__leds_8c">bsp_leds.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/"/>
+  </compounddef>
+</doxygen>

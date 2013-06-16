@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structioctlRawSend__t" kind="struct" prot="public">
+    <compoundname>ioctlRawSend_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structioctlRawSend__t_1a70c419570d87a9b47ee1157e2c0327f0" prot="public" static="no" mutable="no">
+        <type><ref refid="structaddr__t" kindref="compound">addr_t</ref> *</type>
+        <definition>addr_t* addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="111" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structioctlRawSend__t_1a8dd37bf01473e324d7c15a19fd211de9" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        <definition>uint8_t* msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="112" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structioctlRawSend__t_1a5723e60ffd628510c699eddbce90be23" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="113" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structioctlRawSend__t_1a2fa54f9024782843172506fadbee2ac8" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="114" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="37">
+        <label>ioctlRawSend_t</label>
+        <link refid="structioctlRawSend__t"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>addr_t</label>
+        <link refid="structaddr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="110" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="109" bodyend="115"/>
+    <listofallmembers>
+      <member refid="structioctlRawSend__t_1a70c419570d87a9b47ee1157e2c0327f0" prot="public" virt="non-virtual"><scope>ioctlRawSend_t</scope><name>addr</name></member>
+      <member refid="structioctlRawSend__t_1a5723e60ffd628510c699eddbce90be23" prot="public" virt="non-virtual"><scope>ioctlRawSend_t</scope><name>len</name></member>
+      <member refid="structioctlRawSend__t_1a8dd37bf01473e324d7c15a19fd211de9" prot="public" virt="non-virtual"><scope>ioctlRawSend_t</scope><name>msg</name></member>
+      <member refid="structioctlRawSend__t_1a2fa54f9024782843172506fadbee2ac8" prot="public" virt="non-virtual"><scope>ioctlRawSend_t</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

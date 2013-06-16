@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structrandom" kind="struct" prot="public">
+    <compoundname>random</compoundname>
+    <includes refid="random_8h" local="yes">random.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrandom_1ad0bc4e4e6e6ffc52d9079b73afd73887" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="74" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1a7cea6ae40aa46b41e3806213a39718c6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="75" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1a0adf1bc45ebd31c75e1569a65ae60db4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 Style</definition>
+        <argsstring></argsstring>
+        <name>Style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1aa3468be233ff3e0e9232d1d9dc01f632" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 Digit[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>Digit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1a7f5042d7d2be5a48eb6f5d1a55367dc6" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 RandomNumber</definition>
+        <argsstring></argsstring>
+        <name>RandomNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="78" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1a0bdb70032c7bfe94635e1809fb1d811a" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 RandomMin</definition>
+        <argsstring></argsstring>
+        <name>RandomMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="79" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrandom_1aa6e314a3cc7476d1ffabba6f5d51c16b" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 RandomMax</definition>
+        <argsstring></argsstring>
+        <name>RandomMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="80" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" line="73" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/random.h" bodystart="72" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structrandom_1aa3468be233ff3e0e9232d1d9dc01f632" prot="public" virt="non-virtual"><scope>random</scope><name>Digit</name></member>
+      <member refid="structrandom_1a7cea6ae40aa46b41e3806213a39718c6" prot="public" virt="non-virtual"><scope>random</scope><name>mode</name></member>
+      <member refid="structrandom_1aa6e314a3cc7476d1ffabba6f5d51c16b" prot="public" virt="non-virtual"><scope>random</scope><name>RandomMax</name></member>
+      <member refid="structrandom_1a0bdb70032c7bfe94635e1809fb1d811a" prot="public" virt="non-virtual"><scope>random</scope><name>RandomMin</name></member>
+      <member refid="structrandom_1a7f5042d7d2be5a48eb6f5d1a55367dc6" prot="public" virt="non-virtual"><scope>random</scope><name>RandomNumber</name></member>
+      <member refid="structrandom_1ad0bc4e4e6e6ffc52d9079b73afd73887" prot="public" virt="non-virtual"><scope>random</scope><name>state</name></member>
+      <member refid="structrandom_1a0adf1bc45ebd31c75e1569a65ae60db4" prot="public" virt="non-virtual"><scope>random</scope><name>Style</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

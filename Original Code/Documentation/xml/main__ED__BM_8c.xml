@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="main__ED__BM_8c" kind="file">
+    <compoundname>main_ED_BM.c</compoundname>
+    <includes refid="bsp_8h" local="yes">bsp.h</includes>
+    <includes refid="mrfi_8h" local="yes">mrfi.h</includes>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+    <includes refid="nwk__api_8h" local="yes">nwk_api.h</includes>
+    <includes refid="bsp__leds_8h" local="yes">bsp_leds.h</includes>
+    <includes refid="bsp__buttons_8h" local="yes">bsp_buttons.h</includes>
+    <includes refid="simpliciti_8h" local="yes">simpliciti.h</includes>
+    <incdepgraph>
+      <node id="922">
+        <label>bsp_macros.h</label>
+        <link refid="bsp__macros_8h"/>
+      </node>
+      <node id="917">
+        <label>simpliciti/Applications/application/End Device/main_ED_BM.c</label>
+        <link refid="main_ED_BM.c"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+      </node>
+      <node id="923">
+        <label>mrfi.h</label>
+        <link refid="mrfi_8h"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+        <childnode refid="924" relation="include">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>bsp_button_defs.h</label>
+        <link refid="bsp__button__defs_8h"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>code/bsp_generic_buttons.h</label>
+        <link refid="bsp__generic__buttons_8h"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>nwk_api.h</label>
+        <link refid="nwk__api_8h"/>
+      </node>
+      <node id="928">
+        <label>bsp_led_defs.h</label>
+        <link refid="bsp__led__defs_8h"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>mrfi_defs.h</label>
+        <link refid="mrfi__defs_8h"/>
+        <childnode refid="918" relation="include">
+        </childnode>
+      </node>
+      <node id="919">
+        <label>bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="920" relation="include">
+        </childnode>
+        <childnode refid="921" relation="include">
+        </childnode>
+      </node>
+      <node id="927">
+        <label>bsp_leds.h</label>
+        <link refid="bsp__leds_8h"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="929">
+        <label>code/bsp_generic_leds.h</label>
+        <link refid="bsp__generic__leds_8h"/>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="920">
+        <label>mcus/bsp_msp430_defs.h</label>
+        <link refid="bsp__msp430__defs_8h"/>
+      </node>
+      <node id="918">
+        <label>bsp.h</label>
+        <link refid="bsp_8h"/>
+        <childnode refid="919" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="930">
+        <label>bsp_buttons.h</label>
+        <link refid="bsp__buttons_8h"/>
+        <childnode refid="931" relation="include">
+        </childnode>
+      </node>
+      <node id="925">
+        <label>nwk_types.h</label>
+        <link refid="nwk__types_8h"/>
+      </node>
+      <node id="921">
+        <label>bsp_config.h</label>
+        <link refid="bsp__config_8h"/>
+      </node>
+      <node id="933">
+        <label>simpliciti.h</label>
+        <link refid="simpliciti_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="main__ED__BM_8c_1a45ba202b05caf39795aeca91b0ae547e" prot="public" static="no">
+        <name>TIMEOUT</name>
+        <initializer>(10u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="42" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main__ED__BM_8c_1a8a33de02aa7b8170ae32c18e67d00c34" prot="public" static="no">
+        <name>CONV_MS_TO_TICKS</name>
+        <param><defname>msec</defname></param>
+        <initializer>(((msec) * 32768) / 1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="45" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="48" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t sInit_done</definition>
+        <argsstring></argsstring>
+        <name>sInit_done</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="56" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" prot="public" static="yes" mutable="no">
+        <type><ref refid="nwk__types_8h_1a542d45d12faba7ae8fd0c989ef2c8528" kindref="member">linkID_t</ref></type>
+        <definition>linkID_t sLinkID1</definition>
+        <argsstring></argsstring>
+        <name>sLinkID1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="64" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main__ED__BM_8c_1ac52ea5d7dd8642a0c85208df88a640c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer0_A4_Delay</definition>
+        <argsstring>(u16 ticks)</argsstring>
+        <name>Timer0_A4_Delay</name>
+        <param>
+          <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/timer.c" bodystart="189" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="main__ED__BM_8c_1a255659e83ae7ed0303b75b16e216f292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char simpliciti_link</definition>
+        <argsstring>(void)</argsstring>
+        <name>simpliciti_link</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="75" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="main__ED__BM_8c_1acae539e7f21c55143c19d3b8de8d5557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simpliciti_main_tx_only</definition>
+        <argsstring>(void)</argsstring>
+        <name>simpliciti_main_tx_only</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="168" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="167" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="main__ED__BM_8c_1a476e0ffa3418447a1b32a8a49fb21784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simpliciti_main_sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>simpliciti_main_sync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" line="209" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" bodystart="208" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>2007-2009<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Include<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp_8h" kindref="compound">bsp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mrfi_8h" kindref="compound">mrfi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nwk__types_8h" kindref="compound">nwk_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nwk__api_8h" kindref="compound">nwk_api.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp__leds_8h" kindref="compound">bsp_leds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp__buttons_8h" kindref="compound">bsp_buttons.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="simpliciti_8h" kindref="compound">simpliciti.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defines<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="main__ED__BM_8c_1a45ba202b05caf39795aeca91b0ae547e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10u)</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Conversion<sp/>from<sp/>msec<sp/>to<sp/>ACLK<sp/>timer<sp/>ticks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="main__ED__BM_8c_1a8a33de02aa7b8170ae32c18e67d00c34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONV_MS_TO_TICKS(msec)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((msec)<sp/>*<sp/>32768)<sp/>/<sp/>1000)<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>U16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prototypes<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Extern<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SimpliciTI<sp/>has<sp/>no<sp/>low<sp/>power<sp/>delay<sp/>function,<sp/>so<sp/>we<sp/>have<sp/>to<sp/>use<sp/>ours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8c_1ac52ea5d7dd8642a0c85208df88a640c0" kindref="member">Timer0_A4_Delay</ref>(<ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/>ticks);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>Variable<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="nwk__types_8h_1a542d45d12faba7ae8fd0c989ef2c8528" kindref="member">linkID_t</ref><sp/><ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simpliciti_link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Init<sp/>hardware<sp/>and<sp/>try<sp/>to<sp/>link<sp/>to<sp/>access<sp/>point.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/>=<sp/>Could<sp/>not<sp/>link,<sp/>timeout<sp/>or<sp/>external<sp/>cancel.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/>=<sp/>Linked<sp/>successful.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="simpliciti_8h_1a255659e83ae7ed0303b75b16e216f292" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="main__ED__BM_8c_1a255659e83ae7ed0303b75b16e216f292" kindref="member">simpliciti_link</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>timeout;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="structaddr__t" kindref="compound">addr_t</ref><sp/>lAddr;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>i;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>pwr;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="bsp__board_8c_1a7588615f8808013e0e7cc11350159a17" kindref="member">BSP_InitBoard</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Change<sp/>network<sp/>address<sp/>to<sp/>value<sp/>set<sp/>in<sp/>calling<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;<ref refid="nwk__types_8h_1a0995a88f6bd8e1657ad72b49451b6e24" kindref="member">NET_ADDR_SIZE</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>lAddr.<ref refid="structaddr__t_1a774858e8a0bebe3dc06db9e8e64b2051" kindref="member">addr</ref>[i]<sp/>=<sp/><ref refid="rfsimpliciti_8c_1a0a210cf1c892bdaf29c2fa9f80636c15" kindref="member">simpliciti_ed_address</ref>[i];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1a2f6a36b2d7344989644c4724f6a2b0bb" kindref="member">IOCTL_OBJ_ADDR</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a85b69a6e632d740dffee86ade772f4a7" kindref="member">IOCTL_ACT_SET</ref>,<sp/>&amp;lAddr);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>flag<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref><sp/>=<sp/><ref refid="simpliciti_8h_1a70042e00ec992387ae56483b88df37dd" kindref="member">SIMPLICITI_STATUS_LINKING</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Keep<sp/>trying<sp/>to<sp/>join<sp/>(a<sp/>side<sp/>effect<sp/>of<sp/>successful<sp/>initialization)<sp/>until</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/>*<sp/>successful.<sp/>Toggle<sp/>LEDS<sp/>to<sp/>indicate<sp/>that<sp/>joining<sp/>has<sp/>not<sp/>occurred.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>timeout<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="nwk__types_8h_1ae75a12c6ca837691a132256cd0783b78a900759d60d72913aa3111262a9a2702c" kindref="member">SMPL_SUCCESS</ref><sp/>!=<sp/><ref refid="nwk__api_8c_1a71a827e28babfbc76bdba6fdb32a9c73" kindref="member">SMPL_Init</ref>(0))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nwk__types_8h_1ab7186a547132ea265c9f3615c8c56b3b" kindref="member">NWK_DELAY</ref>(1000);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Service<sp/>watchdog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WDTCTL<sp/>=<sp/>WDTPW<sp/>+<sp/>WDTIS__512K<sp/>+<sp/>WDTSSEL__ACLK<sp/>+<sp/>WDTCNTCL;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stop<sp/>connecting<sp/>after<sp/>defined<sp/>numbers<sp/>of<sp/>seconds<sp/>(15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout++<sp/>&gt;<sp/><ref refid="main__ED__BM_8c_1a45ba202b05caf39795aeca91b0ae547e" kindref="member">TIMEOUT</ref>)<sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref><sp/>=<sp/><ref refid="simpliciti_8h_1a97f102e626f82c6fae6f98d8ba72fe13" kindref="member">SIMPLICITI_STATUS_ERROR</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Break<sp/>when<sp/>flag<sp/>bit<sp/>SIMPLICITI_TRIGGER_STOP<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="simpliciti_8h_1a72c30a14af4240989293c3483f1d6d66" kindref="member">getFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a8c09752e314c9783d2afe39cbce7d35e" kindref="member">SIMPLICITI_TRIGGER_STOP</ref>))<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>output<sp/>power<sp/>to<sp/>+3.3dmB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>pwr<sp/>=<sp/><ref refid="nwk__types_8h_1afcb66c0d076feb1aec4b3625565f37dcac4d65217a729026d1d5ecf4deb576da8" kindref="member">IOCTL_LEVEL_2</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6ab38b1d5f5193576d9eec2998c9b511e7" kindref="member">IOCTL_ACT_RADIO_SETPWR</ref>,<sp/>&amp;pwr);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Unconditional<sp/>link<sp/>to<sp/>AP<sp/>which<sp/>is<sp/>listening<sp/>due<sp/>to<sp/>successful<sp/>join.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>timeout<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="nwk__types_8h_1ae75a12c6ca837691a132256cd0783b78a900759d60d72913aa3111262a9a2702c" kindref="member">SMPL_SUCCESS</ref><sp/>!=<sp/><ref refid="nwk__api_8c_1ab5c3d9195450b8ffa49f81a95ffb803b" kindref="member">SMPL_Link</ref>(&amp;<ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>))</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nwk__types_8h_1ab7186a547132ea265c9f3615c8c56b3b" kindref="member">NWK_DELAY</ref>(1000);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Service<sp/>watchdog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WDTCTL<sp/>=<sp/>WDTPW<sp/>+<sp/>WDTIS__512K<sp/>+<sp/>WDTSSEL__ACLK<sp/>+<sp/>WDTCNTCL;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stop<sp/>linking<sp/>after<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeout++<sp/>&gt;<sp/><ref refid="main__ED__BM_8c_1a45ba202b05caf39795aeca91b0ae547e" kindref="member">TIMEOUT</ref>)<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref><sp/>=<sp/><ref refid="simpliciti_8h_1a97f102e626f82c6fae6f98d8ba72fe13" kindref="member">SIMPLICITI_STATUS_ERROR</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>when<sp/>flag<sp/>bit<sp/>SIMPLICITI_TRIGGER_STOP<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="simpliciti_8h_1a72c30a14af4240989293c3483f1d6d66" kindref="member">getFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a8c09752e314c9783d2afe39cbce7d35e" kindref="member">SIMPLICITI_TRIGGER_STOP</ref>))<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);<sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref><sp/>=<sp/><ref refid="simpliciti_8h_1a915bb9c0b6ef2c1dc07f63abecaaf9d1" kindref="member">SIMPLICITI_STATUS_LINKED</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simpliciti_main_tx_only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Get<sp/>data<sp/>through<sp/>callback.<sp/>Transfer<sp/>data<sp/>when<sp/>external<sp/>trigger<sp/>is<sp/>set.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="simpliciti_8h_1acae539e7f21c55143c19d3b8de8d5557" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main__ED__BM_8c_1acae539e7f21c55143c19d3b8de8d5557" kindref="member">simpliciti_main_tx_only</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>end<sp/>device<sp/>data<sp/>from<sp/>callback<sp/>function<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8c_1a2a837f4aa0ad763c3b354188ba796e34" kindref="member">simpliciti_get_ed_data_callback</ref>();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>data<sp/>when<sp/>flag<sp/>bit<sp/>SIMPLICITI_TRIGGER_SEND_DATA<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="simpliciti_8h_1a72c30a14af4240989293c3483f1d6d66" kindref="member">getFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a0a0e92964bb011b746489344038b6e7a" kindref="member">SIMPLICITI_TRIGGER_SEND_DATA</ref>))<sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>radio<sp/>ready.<sp/>Wakes<sp/>up<sp/>in<sp/>IDLE<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<sp/><ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a958816bf015271031ebc3a7709a76c9c" kindref="member">IOCTL_ACT_RADIO_AWAKE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Acceleration<sp/>/<sp/>button<sp/>events<sp/>packets<sp/>are<sp/>4<sp/>bytes<sp/>long</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a11e387fa24c1d92906e86c21c4fcba28" kindref="member">SMPL_SendOpt</ref>(<ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>,<sp/><ref refid="rfsimpliciti_8c_1ace512611766e2263d68251835f49bd6a" kindref="member">simpliciti_data</ref>,<sp/>4,<sp/><ref refid="nwk__api_8h_1a9a6fcdab1c6378c565a97c6f92cf467d" kindref="member">SMPL_TXOPTION_NONE</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Put<sp/>radio<sp/>back<sp/>to<sp/>SLEEP<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<sp/><ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a47ae3fb03ea1a86dde28bbff067455b9" kindref="member">IOCTL_ACT_RADIO_SLEEP</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="simpliciti_8h_1a615eb72d556e783e6717f2ee632c7094" kindref="member">clearFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a0a0e92964bb011b746489344038b6e7a" kindref="member">SIMPLICITI_TRIGGER_SEND_DATA</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>when<sp/>flag<sp/>bit<sp/>SIMPLICITI_TRIGGER_STOP<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="simpliciti_8h_1a72c30a14af4240989293c3483f1d6d66" kindref="member">getFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a8c09752e314c9783d2afe39cbce7d35e" kindref="member">SIMPLICITI_TRIGGER_STOP</ref>))<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simpliciti_main_sync</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Send<sp/>ready-to-receive<sp/>packets<sp/>in<sp/>regular<sp/>intervals.<sp/>Listen<sp/>shortly<sp/>for<sp/>host<sp/>reply.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Decode<sp/>received<sp/>host<sp/>command<sp/>and<sp/>trigger<sp/>action.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="simpliciti_8h_1a476e0ffa3418447a1b32a8a49fb21784" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main__ED__BM_8c_1a476e0ffa3418447a1b32a8a49fb21784" kindref="member">simpliciti_main_sync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len,<sp/>i;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>ed_data[2];</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sleep<sp/>0.5sec<sp/>between<sp/>ready-to-receive<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SimpliciTI<sp/>has<sp/>no<sp/>low<sp/>power<sp/>delay<sp/>function,<sp/>so<sp/>we<sp/>have<sp/>to<sp/>use<sp/>ours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="timer_8c_1ac52ea5d7dd8642a0c85208df88a640c0" kindref="member">Timer0_A4_Delay</ref>(<ref refid="main__ED__BM_8c_1a8a33de02aa7b8170ae32c18e67d00c34" kindref="member">CONV_MS_TO_TICKS</ref>(500));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>radio<sp/>ready.<sp/>Radio<sp/>wakes<sp/>up<sp/>in<sp/>IDLE<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<sp/><ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a958816bf015271031ebc3a7709a76c9c" kindref="member">IOCTL_ACT_RADIO_AWAKE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Send<sp/>2<sp/>byte<sp/>long<sp/>ready-to-receive<sp/>packet<sp/>to<sp/>stimulate<sp/>host<sp/>reply</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ed_data[0]<sp/>=<sp/><ref refid="simpliciti_8h_1a0362ad8928bdadca71c7bf9e92b08438" kindref="member">SYNC_ED_TYPE_R2R</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ed_data[1]<sp/>=<sp/>0xCB;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a11e387fa24c1d92906e86c21c4fcba28" kindref="member">SMPL_SendOpt</ref>(<ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>,<sp/>ed_data,<sp/>2,<sp/><ref refid="nwk__api_8h_1a9a6fcdab1c6378c565a97c6f92cf467d" kindref="member">SMPL_TXOPTION_NONE</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>shortly<sp/>for<sp/>host<sp/>reply</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<sp/><ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a4795d38b98fe8d4ab1da9e8caaf99926" kindref="member">IOCTL_ACT_RADIO_RXON</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__types_8h_1ab7186a547132ea265c9f3615c8c56b3b" kindref="member">NWK_DELAY</ref>(10);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>a<sp/>command<sp/>packet<sp/>was<sp/>received</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="nwk__api_8c_1a81d1eff090f28dac15a38367be8cd171" kindref="member">SMPL_Receive</ref>(<ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>,<sp/><ref refid="rfsimpliciti_8c_1ace512611766e2263d68251835f49bd6a" kindref="member">simpliciti_data</ref>,<sp/>&amp;len)<sp/>==<sp/><ref refid="nwk__types_8h_1ae75a12c6ca837691a132256cd0783b78a900759d60d72913aa3111262a9a2702c" kindref="member">SMPL_SUCCESS</ref>)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decode<sp/>received<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>callback<sp/>function<sp/>in<sp/>application<sp/>to<sp/>decode<sp/>data<sp/>and<sp/>react</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8c_1a1392176690f9e804e645ead4ee5623d2" kindref="member">simpliciti_sync_decode_ap_cmd_callback</ref>();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>reply<sp/>data<sp/>and<sp/>send<sp/>out<sp/>reply<sp/>packet<sp/>burst<sp/>(19<sp/>bytes<sp/>each)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;<ref refid="rfsimpliciti_8c_1a19b6480feef82dff24fe4174e494e745" kindref="member">simpliciti_reply_count</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__types_8h_1ab7186a547132ea265c9f3615c8c56b3b" kindref="member">NWK_DELAY</ref>(10);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rfsimpliciti_8c_1a8da89e171b66cba33301a1fed1ee4425" kindref="member">simpliciti_sync_get_data_callback</ref>(i);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a11e387fa24c1d92906e86c21c4fcba28" kindref="member">SMPL_SendOpt</ref>(<ref refid="main__ED__BM_8c_1abab965587a788ad6310c10c98a1d2413" kindref="member">sLinkID1</ref>,<sp/><ref refid="rfsimpliciti_8c_1ace512611766e2263d68251835f49bd6a" kindref="member">simpliciti_data</ref>,<sp/><ref refid="simpliciti_8h_1acaa698faf229d0eaa831a44aa2c80cde" kindref="member">BM_SYNC_DATA_LENGTH</ref>,<sp/><ref refid="nwk__api_8h_1a9a6fcdab1c6378c565a97c6f92cf467d" kindref="member">SMPL_TXOPTION_NONE</ref>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Put<sp/>radio<sp/>back<sp/>to<sp/>sleep<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__api_8c_1a61144d51bc2ba0322502df6e165cbea0" kindref="member">SMPL_Ioctl</ref>(<sp/><ref refid="nwk__types_8h_1ae4b0ae4dc4f7832dad58d12c2e5d09d1ad67d00ccc98118eb6659514da2f472e3" kindref="member">IOCTL_OBJ_RADIO</ref>,<sp/><ref refid="nwk__types_8h_1a36cbaec95c997305e0cebe28902c7bc6a47ae3fb03ea1a86dde28bbff067455b9" kindref="member">IOCTL_ACT_RADIO_SLEEP</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Service<sp/>watchdog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WDTCTL<sp/>=<sp/>WDTPW<sp/>+<sp/>WDTIS__512K<sp/>+<sp/>WDTSSEL__ACLK<sp/>+<sp/>WDTCNTCL;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Exit<sp/>when<sp/>flag<sp/>bit<sp/>SIMPLICITI_TRIGGER_STOP<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="simpliciti_8h_1a72c30a14af4240989293c3483f1d6d66" kindref="member">getFlag</ref>(<ref refid="rfsimpliciti_8c_1a2fb62b29918d37d586bcff8d3b38af11" kindref="member">simpliciti_flag</ref>,<sp/><ref refid="simpliciti_8h_1a8c09752e314c9783d2afe39cbce7d35e" kindref="member">SIMPLICITI_TRIGGER_STOP</ref>))<sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>SimpliciTI<sp/>stack<sp/>to<sp/>enable<sp/>restarting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main__ED__BM_8c_1ab02f5e0145aae8805825e581abc01cc9" kindref="member">sInit_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c"/>
+  </compounddef>
+</doxygen>

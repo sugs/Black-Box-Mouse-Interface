@@ -1,0 +1,105 @@
+.TH "bluerobin/BlueRobin_RX_API.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bluerobin/BlueRobin_RX_API.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHR_CHANNEL\fP   (0)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBbrtx_state_t\fP { \fBTX_OFF\fP =  0, \fBTX_ACTIVE\fP, \fBTX_SEARCH\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBRRX_Init_v\fP (void)"
+.br
+.ti -1c
+.RI "void \fBBRRX_SetPowerdownDelay_v\fP (u8 Delay_u8)"
+.br
+.ti -1c
+.RI "void \fBBRRX_SetSearchTimeout_v\fP (u8 Timeout_u8)"
+.br
+.ti -1c
+.RI "void \fBBRRX_SetSignalLevelReduction_v\fP (u8 Reduction_u8)"
+.br
+.ti -1c
+.RI "void \fBBRRX_SetID_v\fP (u8 Index_u8, u32 ID_u32)"
+.br
+.ti -1c
+.RI "u32 \fBBRRX_GetID_u32\fP (u8 Index_u8)"
+.br
+.ti -1c
+.RI "void \fBBRRX_Start_v\fP (u8 Index_u8)"
+.br
+.ti -1c
+.RI "void \fBBRRX_Stop_v\fP (u8 Index_u8)"
+.br
+.ti -1c
+.RI "\fBbrtx_state_t\fP \fBBRRX_GetState_t\fP (u8 Index_u8)"
+.br
+.ti -1c
+.RI "u8 \fBBRRX_GetHeartRate_u8\fP (void)"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBBRRX_GetDistance_u16\fP (void)"
+.br
+.ti -1c
+.RI "u8 \fBBRRX_GetSpeed_u8\fP (void)"
+.br
+.ti -1c
+.RI "void \fBBlueRobin_RadioISR_v\fP (void)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBHR_CHANNEL\fP   (0)"
+.PP
+Definition at line 90 of file BlueRobin_RX_API\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBbrtx_state_t\fP"
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fITX_OFF \fP\fP
+.TP
+\fB\fITX_ACTIVE \fP\fP
+.TP
+\fB\fITX_SEARCH \fP\fP
+
+.PP
+Definition at line 82 of file BlueRobin_RX_API\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBBlueRobin_RadioISR_v\fP (void)"
+.PP
+Definition at line 3 of file stubs\&.c\&.
+.SS "\fBu16\fP \fBBRRX_GetDistance_u16\fP (void)"
+.SS "u8 \fBBRRX_GetHeartRate_u8\fP (void)"
+.SS "u32 \fBBRRX_GetID_u32\fP (u8Index_u8)"
+.SS "u8 \fBBRRX_GetSpeed_u8\fP (void)"
+.SS "\fBbrtx_state_t\fP \fBBRRX_GetState_t\fP (u8Index_u8)"
+.SS "void \fBBRRX_Init_v\fP (void)"
+.SS "void \fBBRRX_SetID_v\fP (u8Index_u8, u32ID_u32)"
+.SS "void \fBBRRX_SetPowerdownDelay_v\fP (u8Delay_u8)"
+.SS "void \fBBRRX_SetSearchTimeout_v\fP (u8Timeout_u8)"
+.SS "void \fBBRRX_SetSignalLevelReduction_v\fP (u8Reduction_u8)"
+.SS "void \fBBRRX_Start_v\fP (u8Index_u8)"
+.SS "void \fBBRRX_Stop_v\fP (u8Index_u8)"
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

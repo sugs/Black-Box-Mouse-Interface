@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_7049232b105943a7ca6694b965832bea" kind="dir">
+    <compoundname>simpliciti/Applications/application/End Device/</compoundname>
+    <innerfile refid="main__ED__BM_8c">main_ED_BM.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/"/>
+  </compounddef>
+</doxygen>

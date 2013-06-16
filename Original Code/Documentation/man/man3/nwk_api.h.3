@@ -1,0 +1,77 @@
+.TH "simpliciti/Components/nwk/nwk_api.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/nwk/nwk_api.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMPL_TXOPTION_NONE\fP   ((\fBtxOpt_t\fP)0x00)"
+.br
+.ti -1c
+.RI "#define \fBSMPL_TXOPTION_ACKREQ\fP   ((\fBtxOpt_t\fP)0x01)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_Init\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_Link\fP (\fBlinkID_t\fP *)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_LinkListen\fP (\fBlinkID_t\fP *)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_Send\fP (\fBlinkID_t\fP lid, \fBuint8_t\fP *msg, \fBuint8_t\fP len)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_SendOpt\fP (\fBlinkID_t\fP lid, \fBuint8_t\fP *msg, \fBuint8_t\fP len, \fBtxOpt_t\fP)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_Receive\fP (\fBlinkID_t\fP lid, \fBuint8_t\fP *msg, \fBuint8_t\fP *len)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBSMPL_Ioctl\fP (\fBioctlObject_t\fP, \fBioctlAction_t\fP, void *)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBSMPL_TXOPTION_ACKREQ\fP   ((\fBtxOpt_t\fP)0x01)"
+.PP
+Definition at line 41 of file nwk_api\&.h\&.
+.SS "#define \fBSMPL_TXOPTION_NONE\fP   ((\fBtxOpt_t\fP)0x00)"
+.PP
+Definition at line 40 of file nwk_api\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBsmplStatus_t\fP \fBSMPL_Init\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.PP
+Definition at line 120 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_Ioctl\fP (\fBioctlObject_t\fP, \fBioctlAction_t\fP, void *)"
+.PP
+Definition at line 684 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_Link\fP (\fBlinkID_t\fP *)"
+.PP
+Definition at line 532 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_LinkListen\fP (\fBlinkID_t\fP *)"
+.PP
+Definition at line 182 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_Receive\fP (\fBlinkID_t\fPlid, \fBuint8_t\fP *msg, \fBuint8_t\fP *len)"
+.PP
+Definition at line 428 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_Send\fP (\fBlinkID_t\fPlid, \fBuint8_t\fP *msg, \fBuint8_t\fPlen)"
+.PP
+Definition at line 245 of file nwk_api\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBSMPL_SendOpt\fP (\fBlinkID_t\fPlid, \fBuint8_t\fP *msg, \fBuint8_t\fPlen, \fBtxOpt_t\fP)"
+.PP
+Definition at line 274 of file nwk_api\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

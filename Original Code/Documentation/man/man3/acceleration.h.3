@@ -1,0 +1,114 @@
+.TH "logic/acceleration.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/acceleration.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBaccel\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDISPLAY_ACCEL_X\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBDISPLAY_ACCEL_Y\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBDISPLAY_ACCEL_Z\fP   (2u)"
+.br
+.ti -1c
+.RI "#define \fBDISPLAY_WATER_BUBBLE\fP   (3u)"
+.br
+.ti -1c
+.RI "#define \fBACCEL_MODE_OFF\fP   (0u)"
+.br
+.ti -1c
+.RI "#define \fBACCEL_MODE_ON\fP   (1u)"
+.br
+.ti -1c
+.RI "#define \fBACCEL_MEASUREMENT_TIMEOUT\fP   (60*60u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBreset_acceleration\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsx_acceleration\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_acceleration\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "u8 \fBis_acceleration_measurement\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdo_acceleration_measurement\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBaccel\fP \fBsAccel\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBACCEL_MEASUREMENT_TIMEOUT\fP   (60*60u)"
+.PP
+Definition at line 60 of file acceleration\&.h\&.
+.SS "#define \fBACCEL_MODE_OFF\fP   (0u)"
+.PP
+Definition at line 56 of file acceleration\&.h\&.
+.SS "#define \fBACCEL_MODE_ON\fP   (1u)"
+.PP
+Definition at line 57 of file acceleration\&.h\&.
+.SS "#define \fBDISPLAY_ACCEL_X\fP   (0u)"
+.PP
+Definition at line 51 of file acceleration\&.h\&.
+.SS "#define \fBDISPLAY_ACCEL_Y\fP   (1u)"
+.PP
+Definition at line 52 of file acceleration\&.h\&.
+.SS "#define \fBDISPLAY_ACCEL_Z\fP   (2u)"
+.PP
+Definition at line 53 of file acceleration\&.h\&.
+.SS "#define \fBDISPLAY_WATER_BUBBLE\fP   (3u)"
+.PP
+Definition at line 54 of file acceleration\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBdisplay_acceleration\fP (u8line, u8update)"
+.PP
+Definition at line 185 of file acceleration\&.c\&.
+.SS "void \fBdo_acceleration_measurement\fP (void)"
+.PP
+Definition at line 168 of file acceleration\&.c\&.
+.SS "u8 \fBis_acceleration_measurement\fP (void)"
+.PP
+Definition at line 155 of file acceleration\&.c\&.
+.SS "void \fBreset_acceleration\fP (void)"
+.PP
+Definition at line 77 of file acceleration\&.c\&.
+.SS "void \fBsx_acceleration\fP (u8line)"
+.PP
+Definition at line 96 of file acceleration\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "struct \fBaccel\fP \fBsAccel\fP"
+.PP
+Definition at line 59 of file acceleration\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

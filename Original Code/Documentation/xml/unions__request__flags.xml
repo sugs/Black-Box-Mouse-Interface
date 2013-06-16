@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unions__request__flags" kind="union" prot="public">
+    <compoundname>s_request_flags</compoundname>
+    <includes refid="project_8h" local="yes">project.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unions__request__flags_1a851b146818d28e82773d793261389b80" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 temperature_measurement</definition>
+        <argsstring></argsstring>
+        <name>temperature_measurement</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="103" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1a34ac0ac4c8f59b9ed016337d132c0961" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 voltage_measurement</definition>
+        <argsstring></argsstring>
+        <name>voltage_measurement</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="104" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1af1788224f8cde9b265d4426ec54989ed" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 altitude_measurement</definition>
+        <argsstring></argsstring>
+        <name>altitude_measurement</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="105" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1a8bfa9030e5a42a8c4745e82e25c0cd57" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 acceleration_measurement</definition>
+        <argsstring></argsstring>
+        <name>acceleration_measurement</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="106" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1a63ef67704ea037b7bd26848aa05a5fa4" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 buzzer</definition>
+        <argsstring></argsstring>
+        <name>buzzer</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="107" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1aa7856aa1edd0e3f26421a3283901e2e7" prot="public" static="no" mutable="no">
+        <type>struct s_request_flags::@3</type>
+        <definition>struct s_request_flags::@3  flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="108"/>
+      </memberdef>
+      <memberdef kind="variable" id="unions__request__flags_1abf876e68df8575f02084e137cc49266b" prot="public" static="no" mutable="no">
+        <type><ref refid="main__ED__BM_8c_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 all_flags</definition>
+        <argsstring></argsstring>
+        <name>all_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="109" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" line="100" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" bodystart="99" bodyend="110"/>
+    <listofallmembers>
+      <member refid="unions__request__flags_1a8bfa9030e5a42a8c4745e82e25c0cd57" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>acceleration_measurement</name></member>
+      <member refid="unions__request__flags_1abf876e68df8575f02084e137cc49266b" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>all_flags</name></member>
+      <member refid="unions__request__flags_1af1788224f8cde9b265d4426ec54989ed" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>altitude_measurement</name></member>
+      <member refid="unions__request__flags_1a63ef67704ea037b7bd26848aa05a5fa4" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>buzzer</name></member>
+      <member refid="unions__request__flags_1aa7856aa1edd0e3f26421a3283901e2e7" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>flag</name></member>
+      <member refid="unions__request__flags_1a851b146818d28e82773d793261389b80" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>temperature_measurement</name></member>
+      <member refid="unions__request__flags_1a34ac0ac4c8f59b9ed016337d132c0961" prot="public" virt="non-virtual"><scope>s_request_flags</scope><name>voltage_measurement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

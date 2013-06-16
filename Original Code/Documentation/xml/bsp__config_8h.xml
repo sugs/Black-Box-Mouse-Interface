@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bsp__config_8h" kind="file">
+    <compoundname>bsp_config.h</compoundname>
+    <includedby refid="bsp__board_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_board.c</includedby>
+    <includedby refid="bsp__board__defs_8h" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_board_defs.h</includedby>
+    <includedby refid="bsp__drivers_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <invincdepgraph>
+      <node id="999">
+        <label>simpliciti/Components/bsp/drivers/code/bsp_leds.c</label>
+        <link refid="bsp__leds_8c"/>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="1005">
+        <label>simpliciti/Components/mrfi/mrfi.c</label>
+        <link refid="mrfi_8c"/>
+      </node>
+      <node id="994">
+        <label>simpliciti/Applications/application/End Device/main_ED_BM.c</label>
+        <link refid="main__ED__BM_8c"/>
+      </node>
+      <node id="1006">
+        <label>simpliciti/Components/mrfi/mrfi.h</label>
+        <link refid="mrfi_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="1002" relation="include">
+        </childnode>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1008" relation="include">
+        </childnode>
+        <childnode refid="1009" relation="include">
+        </childnode>
+        <childnode refid="1010" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+        <childnode refid="1013" relation="include">
+        </childnode>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1016" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+      </node>
+      <node id="992">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_button_defs.h</label>
+        <link refid="bsp__button__defs_8h"/>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="1013">
+        <label>simpliciti/Components/nwk_applications/nwk_ioctl.c</label>
+        <link refid="nwk__ioctl_8c"/>
+      </node>
+      <node id="1021">
+        <label>simpliciti/Components/bsp/drivers/code/bsp_generic_buttons.h</label>
+        <link refid="bsp__generic__buttons_8h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+      </node>
+      <node id="1008">
+        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <link refid="nwk__api_8c"/>
+      </node>
+      <node id="1012">
+        <label>simpliciti/Components/nwk_applications/nwk_freq.c</label>
+        <link refid="nwk__freq_8c"/>
+      </node>
+      <node id="996">
+        <label>simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
+        <link refid="bsp__buttons_8c"/>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="990">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_board.c</label>
+        <link refid="bsp__board_8c"/>
+      </node>
+      <node id="1020">
+        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c</label>
+        <link refid="mrfi__radio__interface_8c"/>
+      </node>
+      <node id="1019">
+        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h</label>
+        <link refid="mrfi__radio__interface_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_led_defs.h</label>
+        <link refid="bsp__led__defs_8h"/>
+        <childnode refid="998" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+      </node>
+      <node id="1004">
+        <label>simpliciti/Components/mrfi/mrfi_defs.h</label>
+        <link refid="mrfi__defs_8h"/>
+        <childnode refid="1005" relation="include">
+        </childnode>
+        <childnode refid="1006" relation="include">
+        </childnode>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1010">
+        <label>simpliciti/Components/nwk/nwk_globals.c</label>
+        <link refid="nwk__globals_8c"/>
+      </node>
+      <node id="991">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="1000" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <link refid="nwk__mgmt_8c"/>
+      </node>
+      <node id="1014">
+        <label>simpliciti/Components/nwk_applications/nwk_join.c</label>
+        <link refid="nwk__join_8c"/>
+      </node>
+      <node id="1009">
+        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <link refid="nwk__frame_8c"/>
+      </node>
+      <node id="998">
+        <label>simpliciti/Components/bsp/drivers/bsp_leds.h</label>
+        <link refid="bsp__leds_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+        <childnode refid="999" relation="include">
+        </childnode>
+      </node>
+      <node id="995">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <link refid="bsp__drivers_8c"/>
+      </node>
+      <node id="1015">
+        <label>simpliciti/Components/nwk_applications/nwk_link.c</label>
+        <link refid="nwk__link_8c"/>
+      </node>
+      <node id="1001">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_external/mrfi_board_defs.h</label>
+        <link refid="mrfi__board__defs_8h"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1003">
+        <label>simpliciti/Components/bsp/bsp.c</label>
+        <link refid="bsp_8c"/>
+      </node>
+      <node id="1000">
+        <label>simpliciti/Components/bsp/bsp.h</label>
+        <link refid="bsp_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="1001" relation="include">
+        </childnode>
+        <childnode refid="1003" relation="include">
+        </childnode>
+        <childnode refid="1004" relation="include">
+        </childnode>
+        <childnode refid="1006" relation="include">
+        </childnode>
+        <childnode refid="1002" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1008" relation="include">
+        </childnode>
+        <childnode refid="1009" relation="include">
+        </childnode>
+        <childnode refid="1010" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+        <childnode refid="1012" relation="include">
+        </childnode>
+        <childnode refid="1013" relation="include">
+        </childnode>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1016" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+      </node>
+      <node id="1011">
+        <label>simpliciti/Components/nwk/nwk_QMgmt.c</label>
+        <link refid="nwk__QMgmt_8c"/>
+      </node>
+      <node id="1017">
+        <label>simpliciti/Components/nwk_applications/nwk_ping.c</label>
+        <link refid="nwk__ping_8c"/>
+      </node>
+      <node id="993">
+        <label>simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
+        <link refid="bsp__buttons_8h"/>
+        <childnode refid="994" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>simpliciti/Components/nwk_applications/nwk_security.c</label>
+        <link refid="nwk__security_8c"/>
+      </node>
+      <node id="989">
+        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_config.h</label>
+        <link refid="bsp_config.h"/>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="991" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="1002">
+        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
+        <link refid="mrfi__radio_8c"/>
+      </node>
+      <node id="1007">
+        <label>simpliciti/Components/nwk/nwk.c</label>
+        <link refid="nwk_8c"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2007-07-06<sp/>11:19:00<sp/>-0700<sp/>(Fri,<sp/>06<sp/>Jul<sp/>2007)<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>13579<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Copyright<sp/>2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/>BSP<sp/>(Board<sp/>Support<sp/>Package)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Target<sp/>:<sp/>Texas<sp/>Instruments<sp/>CC430EM</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Board<sp/>configuration<sp/>file.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BSP_CONFIG_H</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_H</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Nothing<sp/>needed<sp/>for<sp/>this<sp/>platform.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_config.h"/>
+  </compounddef>
+</doxygen>

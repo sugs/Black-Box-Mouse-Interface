@@ -1,0 +1,1065 @@
+\hypertarget{mrfi__radio_8c}{\section{simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio.c \-File \-Reference}
+\label{mrfi__radio_8c}\index{simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio.\-c@{simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include \char`\"{}mrfi.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp\-\_\-macros.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp\-\_\-external/mrfi\-\_\-board\-\_\-defs.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi\-\_\-defs.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi\-\_\-radio\-\_\-interface.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}smartrf/\-C\-C430/smartrf\-\_\-\-C\-C430.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mrfi__radio_8c_a0da8ef923d22d977d308369e46156f70}{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S}~\-\_\-\-\_\-mrfi\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_a04c4ee0d525f9c31993ae451235e2ff1}{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E}~\-\_\-\-\_\-mrfi\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_a61e20276a6dd9ac02e81b9608284f38e}{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E}~\-\_\-\-\_\-mrfi\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_a4ce86ec9ba28dd0ff99dc43aa1882380}{\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S}~\-\_\-\-\_\-mrfi\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-O\-F\-S\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_a28f210c6c01036d6ce3de2e323682112}{\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S}~\-\_\-\-\_\-mrfi\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_adf39d1352e9a6635f0657d73d7362b37}{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T}~67
+\item 
+\#define \hyperlink{mrfi__radio_8c_afddadaf48b68e6de984a18306f18b1b6}{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R}~109
+\item 
+\#define \hyperlink{mrfi__radio_8c_a09db40de2fed1444a1c3eadcb5b880b7}{\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}~(\hyperlink{mrfi__radio_8c_a61e20276a6dd9ac02e81b9608284f38e}{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E} + \hyperlink{mrfi_8h_a7b122b52bf23aef41be992af11be19af}{\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E})
+\item 
+\#define \hyperlink{mrfi__radio_8c_a86ba6280637d3e6f090d3567936576f1}{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K}~\-\_\-\-\_\-mrfi\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_a60160d4d48187c255fca1ec15b9cd588}{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K}~\-\_\-\-\_\-mrfi\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K\-\_\-\-\_\-
+\item 
+\#define \hyperlink{mrfi__radio_8c_ac90b0564721af766d5806a40a5097e71}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M}~0x00
+\item 
+\#define \hyperlink{mrfi__radio_8c_a91061665657c64ad3bcb7d07595f0502}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N}~0x06
+\item 
+\#define \hyperlink{mrfi__radio_8c_ac5cd728a2ad21cd9d9f71290a3350ae7}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0}~27
+\item 
+\#define \hyperlink{mrfi__radio_8c_a713243be30f66a3d88e5331c0e14dbf0}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1}~30
+\item 
+\#define \hyperlink{mrfi__radio_8c_a3aecf8dc39c7cebe38be959e300920f9}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0}~(0x10)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a5ebc21b93631d33f53520d630df00f40}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1}~0x3\-C
+\item 
+\#define \hyperlink{mrfi__radio_8c_ae904776eb9f8e990adba24be3f11c82a}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N}~(\hyperlink{mrfi_8h_abe6c088541b7554888dce7feecb6882e}{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E} -\/ \hyperlink{mrfi__radio_8c_a04c4ee0d525f9c31993ae451235e2ff1}{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E})
+\item 
+\#define \hyperlink{mrfi__radio_8c_a997c5fa58e20ceb3d72ef1642aee0aa6}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0}~(0x05 $|$ (\-S\-M\-A\-R\-T\-R\-F\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0 \& B\-V(6)))
+\item 
+\#define \hyperlink{mrfi__radio_8c_af6efeb83b7aa35aeeb6078fd89bbaadc}{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R}~(0x07 $|$ (\-S\-M\-A\-R\-T\-R\-F\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R \& (\-B\-V(4)$|$\-B\-V(5)$|$\-B\-V(6)$|$\-B\-V(7))))
+\item 
+\#define \hyperlink{mrfi__radio_8c_a47e4855fe6e3331fc4e25a22a62522a3}{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S}~16 /$\ast$ usec $\ast$/
+\item 
+\#define \hyperlink{mrfi__radio_8c_adac7af41fa9315880f24cc6154c9b96e}{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}~\-B\-V(2)
+\item 
+\#define \hyperlink{mrfi__radio_8c_ab55b7b899673901d1799741f5dade4cb}{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}~\hyperlink{mrfi__radio_8c_adac7af41fa9315880f24cc6154c9b96e}{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}
+\item 
+\#define \hyperlink{mrfi__radio_8c_abaa8fa66214d72a45a1bac469f318e8d}{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}~(\hyperlink{mrfi__radio_8c_adac7af41fa9315880f24cc6154c9b96e}{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E} $|$ (\-B\-V(0)$|$\-B\-V(1)))
+\item 
+\#define \hyperlink{mrfi__radio_8c_af8ee2cd717ac3ef42d40ae1ee3761c9f}{\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E}~1000
+\item 
+\#define \hyperlink{mrfi__radio_8c_af0c1d3283d7e3b03db6290f455ee7a78}{\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}()~(\-R\-F1\-A\-I\-E $|$= \-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_a5e587f63a538e9c505e3307942253948}{\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}()~(\-R\-F1\-A\-I\-E \&= $\sim$\-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_afaf143953299bc56ff681bf53f8acba5}{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}()~(\-R\-F1\-A\-I\-F\-G \&= $\sim$\-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_a86d240c1c92c55339b4120817959b762}{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D}()~(\-R\-F1\-A\-I\-E \& \-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_addca5ce5faac29bc9cc9c0bc3c1b1f94}{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}()~(\-R\-F1\-A\-I\-N \& \-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_af89391534a376299a3feb5876a8873f7}{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}()~(\-R\-F1\-A\-I\-F\-G \& \-B\-V(9))
+\item 
+\#define \hyperlink{mrfi__radio_8c_a56e2848aa58fc9dc77670931a552a8f7}{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}()~(\-R\-F1\-A\-I\-F\-G \&= $\sim$\-B\-V(0))
+\item 
+\#define \hyperlink{mrfi__radio_8c_aa1c1aec4671423a25ae9cba8383e969f}{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}()~(\-R\-F1\-A\-I\-N \& \-B\-V(0))
+\item 
+\#define \hyperlink{mrfi__radio_8c_adef92926d2447fe134406a81dfb7bb06}{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}()~(\-R\-F1\-A\-I\-F\-G \& \-B\-V(0))
+\item 
+\#define \hyperlink{mrfi__radio_8c_a99bfbdbcc244f20e208f8ff506ed7f72}{\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T}()~while(!(\-R\-F1\-A\-I\-N \& \-B\-V(1)));
+\item 
+\#define \hyperlink{mrfi__radio_8c_a15dd2e8f3fc2d03b61ee285594e03b3f}{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E}(cmd)~\hyperlink{mrfi__radio__interface_8h_ad8967907085371a9791e8221846d93b3}{mrfi\-Radio\-Interface\-Cmd\-Strobe}(cmd)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a5d843804cf60bc0171b941c5a78d6592}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D}(reg)~\hyperlink{mrfi__radio__interface_8h_a11719585933c0185bebb9dbed7176809}{mrfi\-Radio\-Interface\-Read\-Reg}(reg)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a8ff4a4e42c9a12514024f81329812ec3}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E}(reg, value)~\hyperlink{mrfi__radio__interface_8h_a8a72d3f71f068d13c6b23e79ecb4d068}{mrfi\-Radio\-Interface\-Write\-Reg}(reg, value)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a26a5fc3507fd49d2e84d6eb295092214}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O}(p\-Data, len)~\hyperlink{mrfi__radio__interface_8h_a9f3258b3c239ba2e1d19f0849804f1eb}{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo}(p\-Data, len)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a724b8e50996532ea9d61c34a061911bd}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O}(p\-Data, len)~\hyperlink{mrfi__radio__interface_8h_af27e8692fe2496182dea8582524f7a30}{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo}(p\-Data, len)
+\item 
+\#define \hyperlink{mrfi__radio_8c_a44804b094d8337ac1c4f087eae56ce77}{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T}()
+\item 
+\#define \hyperlink{mrfi__radio_8c_a51f2fb3d75034767bf2acd9b18700b06}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q}~26000000
+\item 
+\#define \hyperlink{mrfi__radio_8c_a675cb21c2b8a1d19f8bc7340a841d3bd}{\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S}~8
+\item 
+\#define \hyperlink{mrfi__radio_8c_addf1c7a9247fbab51c85d782149ef216}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E}~64  /$\ast$ from datasheet $\ast$/
+\item 
+\#define \hyperlink{mrfi__radio_8c_ae4b9533713105c031f9573a961122608}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N}~(\hyperlink{mrfi__radio_8c_addf1c7a9247fbab51c85d782149ef216}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E} -\/ \hyperlink{mrfi__radio_8c_a04c4ee0d525f9c31993ae451235e2ff1}{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E} -\/ \hyperlink{mrfi_8h_a852beca8e3f6f3c1338ceac7a8b4d6a0}{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-S\-I\-Z\-E})
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mrfi__radio_8c_a23e9b7f5d448e280084b42c4803b17dd}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (\hyperlink{mrfi_8h_a5491e55db4c46a461c9e86faa9e0a9b1}{\-M\-R\-F\-I\-\_\-\-A\-D\-D\-R\-\_\-\-S\-I\-Z\-E}==((sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr})/sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))$\ast$sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]})))
+\item 
+\hyperlink{mrfi__radio_8c_a2c23a35efaa6f94b6e602789fc28f6f8}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (\-\_\-\-\_\-mrfi\-\_\-\-N\-U\-M\-\_\-\-L\-O\-G\-I\-C\-A\-L\-\_\-\-C\-H\-A\-N\-S\-\_\-\-\_\-==((sizeof(mrfi\-Logical\-Chan\-Table)/sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))$\ast$sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]})))
+\item 
+\hyperlink{mrfi__radio_8c_ad1c084965066f15fd16fe1e5632b8abb}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (\-\_\-\-\_\-mrfi\-\_\-\-N\-U\-M\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-E\-T\-T\-I\-N\-G\-S\-\_\-\-\_\-==((sizeof(\hyperlink{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}{mrfi\-R\-F\-Power\-Table})/sizeof(\hyperlink{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}{mrfi\-R\-F\-Power\-Table}\mbox{[}0\mbox{]}))$\ast$sizeof(\hyperlink{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}{mrfi\-R\-F\-Power\-Table}\mbox{[}0\mbox{]})))
+\item 
+static void \hyperlink{mrfi__radio_8c_a083771eeaddacd61cdda9949a8d1e3c8}{\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr} (void)
+\item 
+static void \hyperlink{mrfi__radio_8c_a75fb468376bdd2a0153a132ae6e63a57}{\-Mrfi\-\_\-\-Rx\-Mode\-On} (void)
+\item 
+static void \hyperlink{mrfi__radio_8c_a5ecaec7c14473496c253ade03429c4cf}{\-Mrfi\-\_\-\-Random\-Backoff\-Delay} (void)
+\item 
+static void \hyperlink{mrfi__radio_8c_ab5226da2a741902349741985858d0fbe}{\-Mrfi\-\_\-\-Rx\-Mode\-Off} (void)
+\item 
+static void \hyperlink{mrfi__radio_8c_aba4df305a531259d11ecc7f6e93eb188}{\-Mrfi\-\_\-\-Delay\-Usec} (\hyperlink{bsp__msp430__defs_8h_a273cf69d639a59973b6019625df33e30}{uint16\-\_\-t} how\-Long)
+\item 
+static void \hyperlink{mrfi__radio_8c_aad4d0f03bbaa5047b7cee916ac700969}{\-Mrfi\-\_\-\-Delay\-Usec\-Sem} (\hyperlink{bsp__msp430__defs_8h_a273cf69d639a59973b6019625df33e30}{uint16\-\_\-t} how\-Long)
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aef44329758059c91c76d334e8fc09700}{int8\-\_\-t} \hyperlink{mrfi__radio_8c_afc905a5c17aaf33a0eb561035eda6caf}{\-Mrfi\-\_\-\-Calculate\-Rssi} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} raw\-Value)
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a5f770a9f4e5bdbcce429e1cb7311497f}{\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$p\-Addr)
+\item 
+void \hyperlink{mrfi__radio_8c_a904283541714111237662f0720c7643d}{\-M\-R\-F\-I\-\_\-\-Init} (void)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a8a272a2f6067c4ebb3ddbdffb75d4f94}{\-M\-R\-F\-I\-\_\-\-Transmit} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$p\-Packet, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} tx\-Type)
+\item 
+void \hyperlink{mrfi__radio_8c_aade04b28418e5c8c463b3e770671dc89}{\-M\-R\-F\-I\-\_\-\-Receive} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$p\-Packet)
+\item 
+void \hyperlink{mrfi__radio_8c_accfc12020f50d7ac7053f230cbaecaeb}{\-M\-R\-F\-I\-\_\-\-Rx\-On} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_a18ce44f02f22c82b5750eda677313586}{\-M\-R\-F\-I\-\_\-\-Rx\-Idle} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_a796a81bd9697dbaca7ac470b4456a4fb}{\-M\-R\-F\-I\-\_\-\-Sleep} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_ad6e514add1df68c6f3d95f2b40ae675e}{\-M\-R\-F\-I\-\_\-\-Wake\-Up} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_a75f26c779654e013c622fb6b1e477929}{\-M\-R\-F\-I\-\_\-\-Radio\-Isr} (void)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aef44329758059c91c76d334e8fc09700}{int8\-\_\-t} \hyperlink{mrfi__radio_8c_a1cd4ab60377864697beb8c7f8f408adc}{\-M\-R\-F\-I\-\_\-\-Rssi} (void)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a6b3e99528ed42a97268bf7049adb4d54}{\-M\-R\-F\-I\-\_\-\-Random\-Byte} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_a18c106468b2941bb9d7a59c3018c125b}{\-M\-R\-F\-I\-\_\-\-Delay\-Ms} (\hyperlink{bsp__msp430__defs_8h_a273cf69d639a59973b6019625df33e30}{uint16\-\_\-t} milliseconds)
+\item 
+void \hyperlink{mrfi__radio_8c_a5c2aca575e24fe94af467ed01dcbfe3c}{\-M\-R\-F\-I\-\_\-\-Reply\-Delay} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_aaaf153a631431034366287b4bda0e20b}{\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem} (void)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a78b8022aa1ad9df54a267a1294ac6942}{\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_ab72759da83914d510c2302d378a71d30}{\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} chan)
+\item 
+void \hyperlink{mrfi__radio_8c_a289846de3444facbbaace8d79ab6f9fb}{\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} level)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a6e7d9045c88bed685ac7424103aa0b99}{\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$p\-Addr)
+\item 
+void \hyperlink{mrfi__radio_8c_adc6ecae669970becb9917673fe548e55}{\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter} (void)
+\item 
+void \hyperlink{mrfi__radio_8c_a4d01c68a913ebac8aad07c90f333aff1}{\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter} (void)
+\item 
+\hyperlink{mrfi__radio_8c_ae5760a584dc9fd248d7391c006126464}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (sizeof(\hyperlink{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{mrfi\-Radio\-Cfg})==((sizeof(\hyperlink{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{mrfi\-Radio\-Cfg})/sizeof(\hyperlink{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{mrfi\-Radio\-Cfg}\mbox{[}0\mbox{]}))$\ast$sizeof(\hyperlink{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{mrfi\-Radio\-Cfg}\mbox{[}0\mbox{]})))
+\item 
+\hyperlink{mrfi__radio_8c_a300b617841ae221a09ca148ce0cc708f}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (sizeof(mrfi\-Logical\-Chan\-Table)==((sizeof(mrfi\-Logical\-Chan\-Table)/sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))$\ast$sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]})))
+\item 
+\hyperlink{mrfi__radio_8c_aa7c26a2dc6997d0ec6ee05ebf93da3aa}{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr})==((sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr})/sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))$\ast$sizeof(\hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]})))
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{mrfi\-Broadcast\-Addr} \mbox{[}$\,$\mbox{]} = \{ 0x\-F\-F, 0x\-F\-F, 0x\-F\-F, 0x\-F\-F \}
+\item 
+const \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{mrfi\-Radio\-Cfg} \mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}
+\item 
+static const \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}{mrfi\-R\-F\-Power\-Table} \mbox{[}$\,$\mbox{]}
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a6f6fa3a6d7ec2b31dd3daf3b57a7496b}{mrfi\-Radio\-State} = \hyperlink{mrfi_8h_a5f3af80ee18499bbcefd751cb8828665}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-E\-\_\-\-U\-N\-K\-N\-O\-W\-N}
+\item 
+static \hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} \hyperlink{mrfi__radio_8c_a09c03a05a6e2f7bb6f396617c79948db}{mrfi\-Incoming\-Packet}
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_ab9d7f1ca3de7599f48559d639b6e57dc}{mrfi\-Rnd\-Seed} = 0
+\item 
+static volatile \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a8706cd61170522359dfb1328df63da22}{s\-Kill\-Sem} = 0
+\item 
+static volatile \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a468dd8d389647a773c48603f77add77e}{s\-Reply\-Delay\-Context} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a273cf69d639a59973b6019625df33e30}{uint16\-\_\-t} \hyperlink{mrfi__radio_8c_a75fb1d33bb56d58cb4bff1a1e670bc4b}{s\-Reply\-Delay\-Scalar} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a273cf69d639a59973b6019625df33e30}{uint16\-\_\-t} \hyperlink{mrfi__radio_8c_ac5ce5b4dc46a2f656f3911e423ea11b8}{s\-Backoff\-Helper} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_a883da5db4c1f526dcfeb4b718e5d090e}{mrfi\-Rx\-Filter\-Enabled} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio_8c_add2747b769377fe1c9a1bf5d43f91cef}{mrfi\-Rx\-Filter\-Addr} \mbox{[}\hyperlink{mrfi_8h_a5491e55db4c46a461c9e86faa9e0a9b1}{\-M\-R\-F\-I\-\_\-\-A\-D\-D\-R\-\_\-\-S\-I\-Z\-E}\mbox{]} = \{ \-R\-X\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-A\-D\-D\-R\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-V\-A\-L\-U\-E \}
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} \hyperlink{mrfi__radio_8c_a79491f8113deb05c8388d87149fd7e29}{crc\-Fail} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} \hyperlink{mrfi__radio_8c_a62c335c108c5a66c5b989a18eeda96e2}{crc\-Pass} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} \hyperlink{mrfi__radio_8c_a1ab782943ee97431567139bc6ed1b4c0}{no\-Frame} = 0
+\item 
+unsigned char \hyperlink{mrfi__radio_8c_a55a1853b6162eeba67c19fc1c0389901}{rf\-\_\-frequoffset}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{mrfi__radio_8c_af8ee2cd717ac3ef42d40ae1ee3761c9f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E@{\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E}}
+\index{\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E@{\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-P\-P\-\_\-\-U\-S\-E\-C\-\_\-\-V\-A\-L\-U\-E}~1000}}\label{mrfi__radio_8c_af8ee2cd717ac3ef42d40ae1ee3761c9f}
+
+
+\-Definition at line 146 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a28f210c6c01036d6ce3de2e323682112}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S@{\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S}}
+\index{\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S@{\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S}~\-\_\-\-\_\-mrfi\-\_\-\-B\-A\-C\-K\-O\-F\-F\-\_\-\-P\-E\-R\-I\-O\-D\-\_\-\-U\-S\-E\-C\-S\-\_\-\-\_\-}}\label{mrfi__radio_8c_a28f210c6c01036d6ce3de2e323682112}
+
+
+\-Definition at line 75 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a56e2848aa58fc9dc77670931a552a8f7}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G@{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}}
+\index{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G@{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-F\-G \&= $\sim$\-B\-V(0))}}\label{mrfi__radio_8c_a56e2848aa58fc9dc77670931a552a8f7}
+
+
+\-Definition at line 161 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_afaf143953299bc56ff681bf53f8acba5}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G@{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}}
+\index{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G@{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-C\-L\-E\-A\-R\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-F\-G \&= $\sim$\-B\-V(9))}}\label{mrfi__radio_8c_afaf143953299bc56ff681bf53f8acba5}
+
+
+\-Definition at line 155 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5e587f63a538e9c505e3307942253948}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T@{\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T@{\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-D\-I\-S\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-E \&= $\sim$\-B\-V(9))}}\label{mrfi__radio_8c_a5e587f63a538e9c505e3307942253948}
+
+
+\-Definition at line 154 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_af0c1d3283d7e3b03db6290f455ee7a78}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T@{\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T@{\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-E\-N\-A\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-E $|$= \-B\-V(9))}}\label{mrfi__radio_8c_af0c1d3283d7e3b03db6290f455ee7a78}
+
+
+\-Definition at line 153 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a4ce86ec9ba28dd0ff99dc43aa1882380}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S@{\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S}}
+\index{\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S@{\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-F\-R\-A\-M\-E\-\_\-\-B\-O\-D\-Y\-\_\-\-O\-F\-S}~\-\_\-\-\_\-mrfi\-\_\-\-D\-S\-T\-\_\-\-A\-D\-D\-R\-\_\-\-O\-F\-S\-\_\-\-\_\-}}\label{mrfi__radio_8c_a4ce86ec9ba28dd0ff99dc43aa1882380}
+
+
+\-Definition at line 74 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a61e20276a6dd9ac02e81b9608284f38e}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E}~\-\_\-\-\_\-mrfi\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E\-\_\-\-\_\-}}\label{mrfi__radio_8c_a61e20276a6dd9ac02e81b9608284f38e}
+
+
+\-Definition at line 73 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a0da8ef923d22d977d308369e46156f70}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S@{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S}}
+\index{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S@{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S}~\-\_\-\-\_\-mrfi\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-O\-F\-S\-\_\-\-\_\-}}\label{mrfi__radio_8c_a0da8ef923d22d977d308369e46156f70}
+
+
+\-Definition at line 71 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a04c4ee0d525f9c31993ae451235e2ff1}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E}~\-\_\-\-\_\-mrfi\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E\-\_\-\-\_\-}}\label{mrfi__radio_8c_a04c4ee0d525f9c31993ae451235e2ff1}
+
+
+\-Definition at line 72 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a47e4855fe6e3331fc4e25a22a62522a3}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S@{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S}}
+\index{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S@{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-D\-E\-L\-A\-Y\-\_\-\-U\-S}~16 /$\ast$ usec $\ast$/}}\label{mrfi__radio_8c_a47e4855fe6e3331fc4e25a22a62522a3}
+
+
+\-Definition at line 127 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a09db40de2fed1444a1c3eadcb5b880b7}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-M\-I\-N\-\_\-\-S\-M\-P\-L\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E}~({\bf \-M\-R\-F\-I\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-S\-I\-Z\-E} + {\bf \-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E})}}\label{mrfi__radio_8c_a09db40de2fed1444a1c3eadcb5b880b7}
+
+
+\-Definition at line 79 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_adef92926d2447fe134406a81dfb7bb06}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-F\-G \& \-B\-V(0))}}\label{mrfi__radio_8c_adef92926d2447fe134406a81dfb7bb06}
+
+
+\-Definition at line 163 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_aa1c1aec4671423a25ae9cba8383e969f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H@{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}}
+\index{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H@{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-P\-A\-P\-D\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-N \& \-B\-V(0))}}\label{mrfi__radio_8c_aa1c1aec4671423a25ae9cba8383e969f}
+
+
+\-Definition at line 162 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ae4b9533713105c031f9573a961122608}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-M\-A\-X\-\_\-\-P\-K\-T\-L\-E\-N}~({\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E} -\/ {\bf \-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E} -\/ {\bf \-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-S\-I\-Z\-E})}}\label{mrfi__radio_8c_ae4b9533713105c031f9573a961122608}
+
+
+\-Definition at line 1741 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a51f2fb3d75034767bf2acd9b18700b06}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-O\-S\-C\-\_\-\-F\-R\-E\-Q}~26000000}}\label{mrfi__radio_8c_a51f2fb3d75034767bf2acd9b18700b06}
+\hypertarget{mrfi__radio_8c_ac90b0564721af766d5806a40a5097e71}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-P\-A\-R\-T\-N\-U\-M}~0x00}}\label{mrfi__radio_8c_ac90b0564721af766d5806a40a5097e71}
+
+
+\-Definition at line 88 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a724b8e50996532ea9d61c34a061911bd}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-A\-D\-\_\-\-R\-X\-\_\-\-F\-I\-F\-O}(
+\begin{DoxyParamCaption}
+\item[{}]{p\-Data, }
+\item[{}]{len}
+\end{DoxyParamCaption}
+)~{\bf mrfi\-Radio\-Interface\-Read\-Rx\-Fifo}(p\-Data, len)}}\label{mrfi__radio_8c_a724b8e50996532ea9d61c34a061911bd}
+
+
+\-Definition at line 177 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5d843804cf60bc0171b941c5a78d6592}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-R\-E\-A\-D}(
+\begin{DoxyParamCaption}
+\item[{}]{reg}
+\end{DoxyParamCaption}
+)~{\bf mrfi\-Radio\-Interface\-Read\-Reg}(reg)}}\label{mrfi__radio_8c_a5d843804cf60bc0171b941c5a78d6592}
+
+
+\-Definition at line 174 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a8ff4a4e42c9a12514024f81329812ec3}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-R\-E\-G\-\_\-\-W\-R\-I\-T\-E}(
+\begin{DoxyParamCaption}
+\item[{}]{reg, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)~{\bf mrfi\-Radio\-Interface\-Write\-Reg}(reg, value)}}\label{mrfi__radio_8c_a8ff4a4e42c9a12514024f81329812ec3}
+
+
+\-Definition at line 175 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_addf1c7a9247fbab51c85d782149ef216}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O\-\_\-\-S\-I\-Z\-E}~64  /$\ast$ from datasheet $\ast$/}}\label{mrfi__radio_8c_addf1c7a9247fbab51c85d782149ef216}
+
+
+\-Definition at line 1740 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a91061665657c64ad3bcb7d07595f0502}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-V\-E\-R\-S\-I\-O\-N}~0x06}}\label{mrfi__radio_8c_a91061665657c64ad3bcb7d07595f0502}
+
+
+\-Definition at line 89 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a26a5fc3507fd49d2e84d6eb295092214}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-X\-\_\-\-F\-I\-F\-O}(
+\begin{DoxyParamCaption}
+\item[{}]{p\-Data, }
+\item[{}]{len}
+\end{DoxyParamCaption}
+)~{\bf mrfi\-Radio\-Interface\-Write\-Tx\-Fifo}(p\-Data, len)}}\label{mrfi__radio_8c_a26a5fc3507fd49d2e84d6eb295092214}
+
+
+\-Definition at line 176 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_afddadaf48b68e6de984a18306f18b1b6}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R@{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R@{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-M\-U\-L\-T\-I\-P\-L\-I\-E\-R}~109}}\label{mrfi__radio_8c_afddadaf48b68e6de984a18306f18b1b6}
+
+
+\-Definition at line 78 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_adf39d1352e9a6635f0657d73d7362b37}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-N\-D\-O\-M\-\_\-\-O\-F\-F\-S\-E\-T}~67}}\label{mrfi__radio_8c_adf39d1352e9a6635f0657d73d7362b37}
+
+
+\-Definition at line 77 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a99bfbdbcc244f20e208f8ff506ed7f72}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-S\-S\-I\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~while(!(\-R\-F1\-A\-I\-N \& \-B\-V(1)));}}\label{mrfi__radio_8c_a99bfbdbcc244f20e208f8ff506ed7f72}
+
+
+\-Definition at line 167 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a86ba6280637d3e6f090d3567936576f1}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K@{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K@{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K}~\-\_\-\-\_\-mrfi\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-C\-R\-C\-\_\-\-O\-K\-\_\-\-M\-A\-S\-K\-\_\-\-\_\-}}\label{mrfi__radio_8c_a86ba6280637d3e6f090d3567936576f1}
+
+
+\-Definition at line 82 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a60160d4d48187c255fca1ec15b9cd588}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K@{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K@{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K}~\-\_\-\-\_\-mrfi\-\_\-\-R\-X\-\_\-\-M\-E\-T\-R\-I\-C\-S\-\_\-\-L\-Q\-I\-\_\-\-M\-A\-S\-K\-\_\-\-\_\-}}\label{mrfi__radio_8c_a60160d4d48187c255fca1ec15b9cd588}
+
+
+\-Definition at line 83 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_af6efeb83b7aa35aeeb6078fd89bbaadc}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R}~(0x07 $|$ (\-S\-M\-A\-R\-T\-R\-F\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-F\-I\-F\-O\-T\-H\-R \& (\-B\-V(4)$|$\-B\-V(5)$|$\-B\-V(6)$|$\-B\-V(7))))}}\label{mrfi__radio_8c_af6efeb83b7aa35aeeb6078fd89bbaadc}
+
+
+\-Definition at line 121 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ac5cd728a2ad21cd9d9f71290a3350ae7}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G0}~27}}\label{mrfi__radio_8c_ac5cd728a2ad21cd9d9f71290a3350ae7}
+
+
+\-Definition at line 92 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a713243be30f66a3d88e5331c0e14dbf0}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-I\-O\-C\-F\-G1}~30}}\label{mrfi__radio_8c_a713243be30f66a3d88e5331c0e14dbf0}
+
+
+\-Definition at line 95 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a3aecf8dc39c7cebe38be959e300920f9}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M0}~(0x10)}}\label{mrfi__radio_8c_a3aecf8dc39c7cebe38be959e300920f9}
+
+
+\-Definition at line 101 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5ebc21b93631d33f53520d630df00f40}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-M\-C\-S\-M1}~0x3\-C}}\label{mrfi__radio_8c_a5ebc21b93631d33f53520d630df00f40}
+
+
+\-Definition at line 108 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a997c5fa58e20ceb3d72ef1642aee0aa6}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0}~(0x05 $|$ (\-S\-M\-A\-R\-T\-R\-F\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-C\-T\-R\-L0 \& B\-V(6)))}}\label{mrfi__radio_8c_a997c5fa58e20ceb3d72ef1642aee0aa6}
+
+
+\-Definition at line 118 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ae904776eb9f8e990adba24be3f11c82a}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N@{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-E\-T\-T\-I\-N\-G\-\_\-\-P\-K\-T\-L\-E\-N}~({\bf \-M\-R\-F\-I\-\_\-\-M\-A\-X\-\_\-\-F\-R\-A\-M\-E\-\_\-\-S\-I\-Z\-E} -\/ {\bf \-M\-R\-F\-I\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-F\-I\-E\-L\-D\-\_\-\-S\-I\-Z\-E})}}\label{mrfi__radio_8c_ae904776eb9f8e990adba24be3f11c82a}
+
+
+\-Definition at line 115 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a15dd2e8f3fc2d03b61ee285594e03b3f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E@{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E@{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E}(
+\begin{DoxyParamCaption}
+\item[{}]{cmd}
+\end{DoxyParamCaption}
+)~{\bf mrfi\-Radio\-Interface\-Cmd\-Strobe}(cmd)}}\label{mrfi__radio_8c_a15dd2e8f3fc2d03b61ee285594e03b3f}
+
+
+\-Definition at line 173 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a44804b094d8337ac1c4f087eae56ce77}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-T\-R\-O\-B\-E\-\_\-\-I\-D\-L\-E\-\_\-\-A\-N\-D\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a44804b094d8337ac1c4f087eae56ce77}
+{\bfseries \-Value\-:}
+\begin{DoxyCode}
+{                                                \
+  MRFI_STROBE( SIDLE );                          \
+  /* Wait for XOSC to be stable and radio in IDLE state */ \
+  while (MRFI_STROBE( SNOP ) & 0xF0) ;           \
+}
+\end{DoxyCode}
+
+
+\-Definition at line 180 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_af89391534a376299a3feb5876a8873f7}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-F\-L\-A\-G\-\_\-\-I\-S\-\_\-\-S\-E\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-F\-G \& \-B\-V(9))}}\label{mrfi__radio_8c_af89391534a376299a3feb5876a8873f7}
+
+
+\-Definition at line 158 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a86d240c1c92c55339b4120817959b762}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-N\-T\-\_\-\-I\-S\-\_\-\-E\-N\-A\-B\-L\-E\-D}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-E \& \-B\-V(9))}}\label{mrfi__radio_8c_a86d240c1c92c55339b4120817959b762}
+
+
+\-Definition at line 156 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_addca5ce5faac29bc9cc9c0bc3c1b1f94}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}}
+\index{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H@{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-S\-Y\-N\-C\-\_\-\-P\-I\-N\-\_\-\-I\-S\-\_\-\-H\-I\-G\-H}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(\-R\-F1\-A\-I\-N \& \-B\-V(9))}}\label{mrfi__radio_8c_addca5ce5faac29bc9cc9c0bc3c1b1f94}
+
+
+\-Definition at line 157 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a675cb21c2b8a1d19f8bc7340a841d3bd}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S@{\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S}}
+\index{\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S@{\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-H\-Y\-\_\-\-P\-R\-E\-A\-M\-B\-L\-E\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-Y\-T\-E\-S}~8}}\label{mrfi__radio_8c_a675cb21c2b8a1d19f8bc7340a841d3bd}
+\hypertarget{mrfi__radio_8c_ab55b7b899673901d1799741f5dade4cb}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}}
+\index{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}~{\bf \-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}}}\label{mrfi__radio_8c_ab55b7b899673901d1799741f5dade4cb}
+
+
+\-Definition at line 131 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_abaa8fa66214d72a45a1bac469f318e8d}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}}
+\index{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-K\-T\-C\-T\-R\-L1\-\_\-\-A\-D\-D\-R\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}~({\bf \-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E} $|$ (\-B\-V(0)$|$\-B\-V(1)))}}\label{mrfi__radio_8c_abaa8fa66214d72a45a1bac469f318e8d}
+
+
+\-Definition at line 132 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_adac7af41fa9315880f24cc6154c9b96e}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}}
+\index{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E@{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-K\-T\-C\-T\-R\-L1\-\_\-\-B\-A\-S\-E\-\_\-\-V\-A\-L\-U\-E}~\-B\-V(2)}}\label{mrfi__radio_8c_adac7af41fa9315880f24cc6154c9b96e}
+
+
+\-Definition at line 130 of file mrfi\-\_\-radio.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{mrfi__radio_8c_a23e9b7f5d448e280084b42c4803b17dd}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-M\-R\-F\-I\-\_\-\-A\-D\-D\-R\-\_\-\-S\-I\-Z\-E}}]{ = {\ttfamily =((sizeof({\bf mrfi\-Broadcast\-Addr})/sizeof({\bf mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))$\ast$sizeof({\bf mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a23e9b7f5d448e280084b42c4803b17dd}
+\hypertarget{mrfi__radio_8c_a2c23a35efaa6f94b6e602789fc28f6f8}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{\-\_\-\-\_\-mrfi\-\_\-\-N\-U\-M\-\_\-\-L\-O\-G\-I\-C\-A\-L\-\_\-\-C\-H\-A\-N\-S\-\_\-\-\_\-}]{ = {\ttfamily =((sizeof(mrfi\-Logical\-Chan\-Table)/sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))$\ast$sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a2c23a35efaa6f94b6e602789fc28f6f8}
+\hypertarget{mrfi__radio_8c_ad1c084965066f15fd16fe1e5632b8abb}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{\-\_\-\-\_\-mrfi\-\_\-\-N\-U\-M\-\_\-\-P\-O\-W\-E\-R\-\_\-\-S\-E\-T\-T\-I\-N\-G\-S\-\_\-\-\_\-}]{ = {\ttfamily =((sizeof({\bf mrfi\-R\-F\-Power\-Table})/sizeof({\bf mrfi\-R\-F\-Power\-Table}\mbox{[}0\mbox{]}))$\ast$sizeof({\bf mrfi\-R\-F\-Power\-Table}\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_ad1c084965066f15fd16fe1e5632b8abb}
+\hypertarget{mrfi__radio_8c_ae5760a584dc9fd248d7391c006126464}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{sizeof({\bf mrfi\-Radio\-Cfg})}]{ = {\ttfamily =((sizeof({\bf mrfi\-Radio\-Cfg})/sizeof({\bf mrfi\-Radio\-Cfg}\mbox{[}0\mbox{]}))$\ast$sizeof({\bf mrfi\-Radio\-Cfg}\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_ae5760a584dc9fd248d7391c006126464}
+\hypertarget{mrfi__radio_8c_a300b617841ae221a09ca148ce0cc708f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{sizeof(mrfi\-Logical\-Chan\-Table)}]{ = {\ttfamily =((sizeof(mrfi\-Logical\-Chan\-Table)/sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))$\ast$sizeof(mrfi\-Logical\-Chan\-Table\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a300b617841ae221a09ca148ce0cc708f}
+\hypertarget{mrfi__radio_8c_aa7c26a2dc6997d0ec6ee05ebf93da3aa}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T@{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-S\-P\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-A\-S\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+\item[{sizeof({\bf mrfi\-Broadcast\-Addr})}]{ = {\ttfamily =((sizeof({\bf mrfi\-Broadcast\-Addr})/sizeof({\bf mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))$\ast$sizeof({\bf mrfi\-Broadcast\-Addr}\mbox{[}0\mbox{]}))}}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_aa7c26a2dc6997d0ec6ee05ebf93da3aa}
+\hypertarget{mrfi__radio_8c_afc905a5c17aaf33a0eb561035eda6caf}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Calculate\-Rssi@{\-Mrfi\-\_\-\-Calculate\-Rssi}}
+\index{\-Mrfi\-\_\-\-Calculate\-Rssi@{\-Mrfi\-\_\-\-Calculate\-Rssi}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Calculate\-Rssi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int8\-\_\-t} {\bf \-Mrfi\-\_\-\-Calculate\-Rssi} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{raw\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_afc905a5c17aaf33a0eb561035eda6caf}
+
+
+\-Definition at line 1300 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a18c106468b2941bb9d7a59c3018c125b}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Delay\-Ms@{\-M\-R\-F\-I\-\_\-\-Delay\-Ms}}
+\index{\-M\-R\-F\-I\-\_\-\-Delay\-Ms@{\-M\-R\-F\-I\-\_\-\-Delay\-Ms}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Delay\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Delay\-Ms} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint16\-\_\-t}}]{milliseconds}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a18c106468b2941bb9d7a59c3018c125b}
+
+
+\-Definition at line 1450 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_aba4df305a531259d11ecc7f6e93eb188}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Delay\-Usec@{\-Mrfi\-\_\-\-Delay\-Usec}}
+\index{\-Mrfi\-\_\-\-Delay\-Usec@{\-Mrfi\-\_\-\-Delay\-Usec}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Delay\-Usec}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Delay\-Usec} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint16\-\_\-t}}]{how\-Long}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_aba4df305a531259d11ecc7f6e93eb188}
+
+
+\-Definition at line 1385 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_aad4d0f03bbaa5047b7cee916ac700969}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Delay\-Usec\-Sem@{\-Mrfi\-\_\-\-Delay\-Usec\-Sem}}
+\index{\-Mrfi\-\_\-\-Delay\-Usec\-Sem@{\-Mrfi\-\_\-\-Delay\-Usec\-Sem}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Delay\-Usec\-Sem}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Delay\-Usec\-Sem} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint16\-\_\-t}}]{how\-Long}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_aad4d0f03bbaa5047b7cee916ac700969}
+
+
+\-Definition at line 1418 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a4d01c68a913ebac8aad07c90f333aff1}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter}}
+\index{\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Disable\-Rx\-Addr\-Filter} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a4d01c68a913ebac8aad07c90f333aff1}
+
+
+\-Definition at line 1657 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_adc6ecae669970becb9917673fe548e55}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter}}
+\index{\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Enable\-Rx\-Addr\-Filter} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_adc6ecae669970becb9917673fe548e55}
+
+
+\-Definition at line 1635 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a78b8022aa1ad9df54a267a1294ac6942}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State@{\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State}}
+\index{\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State@{\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Get\-Radio\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf \-M\-R\-F\-I\-\_\-\-Get\-Radio\-State} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a78b8022aa1ad9df54a267a1294ac6942}
+
+
+\-Definition at line 1529 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a904283541714111237662f0720c7643d}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Init@{\-M\-R\-F\-I\-\_\-\-Init}}
+\index{\-M\-R\-F\-I\-\_\-\-Init@{\-M\-R\-F\-I\-\_\-\-Init}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a904283541714111237662f0720c7643d}
+
+
+\-Definition at line 383 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_aaaf153a631431034366287b4bda0e20b}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem@{\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem}}
+\index{\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem@{\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Post\-Kill\-Sem} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_aaaf153a631431034366287b4bda0e20b}
+
+
+\-Definition at line 1508 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a75f26c779654e013c622fb6b1e477929}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Radio\-Isr@{\-M\-R\-F\-I\-\_\-\-Radio\-Isr}}
+\index{\-M\-R\-F\-I\-\_\-\-Radio\-Isr@{\-M\-R\-F\-I\-\_\-\-Radio\-Isr}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Radio\-Isr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Radio\-Isr} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a75f26c779654e013c622fb6b1e477929}
+
+
+\-Definition at line 1176 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5ecaec7c14473496c253ade03429c4cf}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Random\-Backoff\-Delay@{\-Mrfi\-\_\-\-Random\-Backoff\-Delay}}
+\index{\-Mrfi\-\_\-\-Random\-Backoff\-Delay@{\-Mrfi\-\_\-\-Random\-Backoff\-Delay}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Random\-Backoff\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Random\-Backoff\-Delay} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a5ecaec7c14473496c253ade03429c4cf}
+
+
+\-Definition at line 1354 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a6b3e99528ed42a97268bf7049adb4d54}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Random\-Byte@{\-M\-R\-F\-I\-\_\-\-Random\-Byte}}
+\index{\-M\-R\-F\-I\-\_\-\-Random\-Byte@{\-M\-R\-F\-I\-\_\-\-Random\-Byte}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Random\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf \-M\-R\-F\-I\-\_\-\-Random\-Byte} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a6b3e99528ed42a97268bf7049adb4d54}
+
+
+\-Definition at line 1337 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_aade04b28418e5c8c463b3e770671dc89}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Receive@{\-M\-R\-F\-I\-\_\-\-Receive}}
+\index{\-M\-R\-F\-I\-\_\-\-Receive@{\-M\-R\-F\-I\-\_\-\-Receive}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Receive}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Receive} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{p\-Packet}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_aade04b28418e5c8c463b3e770671dc89}
+
+
+\-Definition at line 787 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5c2aca575e24fe94af467ed01dcbfe3c}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Reply\-Delay@{\-M\-R\-F\-I\-\_\-\-Reply\-Delay}}
+\index{\-M\-R\-F\-I\-\_\-\-Reply\-Delay@{\-M\-R\-F\-I\-\_\-\-Reply\-Delay}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Reply\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Reply\-Delay} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a5c2aca575e24fe94af467ed01dcbfe3c}
+
+
+\-Definition at line 1472 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a1cd4ab60377864697beb8c7f8f408adc}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Rssi@{\-M\-R\-F\-I\-\_\-\-Rssi}}
+\index{\-M\-R\-F\-I\-\_\-\-Rssi@{\-M\-R\-F\-I\-\_\-\-Rssi}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Rssi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int8\-\_\-t} {\bf \-M\-R\-F\-I\-\_\-\-Rssi} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a1cd4ab60377864697beb8c7f8f408adc}
+
+
+\-Definition at line 1267 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a5f770a9f4e5bdbcce429e1cb7311497f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered@{\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered}}
+\index{\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered@{\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf \-Mrfi\-\_\-\-Rx\-Addr\-Is\-Filtered} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t} $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a5f770a9f4e5bdbcce429e1cb7311497f}
+
+
+\-Definition at line 1678 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a18ce44f02f22c82b5750eda677313586}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Rx\-Idle@{\-M\-R\-F\-I\-\_\-\-Rx\-Idle}}
+\index{\-M\-R\-F\-I\-\_\-\-Rx\-Idle@{\-M\-R\-F\-I\-\_\-\-Rx\-Idle}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Rx\-Idle}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Rx\-Idle} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a18ce44f02f22c82b5750eda677313586}
+
+
+\-Definition at line 1084 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ab5226da2a741902349741985858d0fbe}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Rx\-Mode\-Off@{\-Mrfi\-\_\-\-Rx\-Mode\-Off}}
+\index{\-Mrfi\-\_\-\-Rx\-Mode\-Off@{\-Mrfi\-\_\-\-Rx\-Mode\-Off}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Rx\-Mode\-Off}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Rx\-Mode\-Off} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_ab5226da2a741902349741985858d0fbe}
+
+
+\-Definition at line 1057 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a75fb468376bdd2a0153a132ae6e63a57}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Rx\-Mode\-On@{\-Mrfi\-\_\-\-Rx\-Mode\-On}}
+\index{\-Mrfi\-\_\-\-Rx\-Mode\-On@{\-Mrfi\-\_\-\-Rx\-Mode\-On}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Rx\-Mode\-On}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Rx\-Mode\-On} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a75fb468376bdd2a0153a132ae6e63a57}
+
+
+\-Definition at line 1011 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_accfc12020f50d7ac7053f230cbaecaeb}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Rx\-On@{\-M\-R\-F\-I\-\_\-\-Rx\-On}}
+\index{\-M\-R\-F\-I\-\_\-\-Rx\-On@{\-M\-R\-F\-I\-\_\-\-Rx\-On}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Rx\-On}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Rx\-On} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_accfc12020f50d7ac7053f230cbaecaeb}
+
+
+\-Definition at line 1034 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ab72759da83914d510c2302d378a71d30}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel@{\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel}}
+\index{\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel@{\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Set\-Logical\-Channel} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{chan}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_ab72759da83914d510c2302d378a71d30}
+
+
+\-Definition at line 1545 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a289846de3444facbbaace8d79ab6f9fb}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr@{\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr}}
+\index{\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr@{\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Set\-R\-F\-Pwr} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{level}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a289846de3444facbbaace8d79ab6f9fb}
+
+
+\-Definition at line 1572 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a6e7d9045c88bed685ac7424103aa0b99}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter}}
+\index{\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter@{\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf \-M\-R\-F\-I\-\_\-\-Set\-Rx\-Addr\-Filter} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t} $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a6e7d9045c88bed685ac7424103aa0b99}
+
+
+\-Definition at line 1592 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a796a81bd9697dbaca7ac470b4456a4fb}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Sleep@{\-M\-R\-F\-I\-\_\-\-Sleep}}
+\index{\-M\-R\-F\-I\-\_\-\-Sleep@{\-M\-R\-F\-I\-\_\-\-Sleep}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Sleep} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a796a81bd9697dbaca7ac470b4456a4fb}
+
+
+\-Definition at line 1108 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a083771eeaddacd61cdda9949a8d1e3c8}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr@{\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr}}
+\index{\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr@{\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf \-Mrfi\-\_\-\-Sync\-Pin\-Rx\-Isr} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a083771eeaddacd61cdda9949a8d1e3c8}
+
+
+\-Definition at line 806 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a8a272a2f6067c4ebb3ddbdffb75d4f94}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Transmit@{\-M\-R\-F\-I\-\_\-\-Transmit}}
+\index{\-M\-R\-F\-I\-\_\-\-Transmit@{\-M\-R\-F\-I\-\_\-\-Transmit}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Transmit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf \-M\-R\-F\-I\-\_\-\-Transmit} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{p\-Packet, }
+\item[{{\bf uint8\-\_\-t}}]{tx\-Type}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_a8a272a2f6067c4ebb3ddbdffb75d4f94}
+
+
+\-Definition at line 605 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ad6e514add1df68c6f3d95f2b40ae675e}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!\-M\-R\-F\-I\-\_\-\-Wake\-Up@{\-M\-R\-F\-I\-\_\-\-Wake\-Up}}
+\index{\-M\-R\-F\-I\-\_\-\-Wake\-Up@{\-M\-R\-F\-I\-\_\-\-Wake\-Up}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-Wake\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-M\-R\-F\-I\-\_\-\-Wake\-Up} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio_8c_ad6e514add1df68c6f3d95f2b40ae675e}
+
+
+\-Definition at line 1148 of file mrfi\-\_\-radio.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{mrfi__radio_8c_a79491f8113deb05c8388d87149fd7e29}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!crc\-Fail@{crc\-Fail}}
+\index{crc\-Fail@{crc\-Fail}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{crc\-Fail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\-\_\-t} {\bf crc\-Fail} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a79491f8113deb05c8388d87149fd7e29}
+
+
+\-Definition at line 365 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a62c335c108c5a66c5b989a18eeda96e2}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!crc\-Pass@{crc\-Pass}}
+\index{crc\-Pass@{crc\-Pass}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{crc\-Pass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\-\_\-t} {\bf crc\-Pass} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a62c335c108c5a66c5b989a18eeda96e2}
+
+
+\-Definition at line 366 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Broadcast\-Addr@{mrfi\-Broadcast\-Addr}}
+\index{mrfi\-Broadcast\-Addr@{mrfi\-Broadcast\-Addr}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Broadcast\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf uint8\-\_\-t} {\bf mrfi\-Broadcast\-Addr}\mbox{[}$\,$\mbox{]} = \{ 0x\-F\-F, 0x\-F\-F, 0x\-F\-F, 0x\-F\-F \}}}\label{mrfi__radio_8c_a00c46c3b81bfaffab8fb53bc2cf0a9c5}
+
+
+\-Definition at line 56 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a09c03a05a6e2f7bb6f396617c79948db}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Incoming\-Packet@{mrfi\-Incoming\-Packet}}
+\index{mrfi\-Incoming\-Packet@{mrfi\-Incoming\-Packet}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Incoming\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mrfi\-Packet\-\_\-t} {\bf mrfi\-Incoming\-Packet}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a09c03a05a6e2f7bb6f396617c79948db}
+
+
+\-Definition at line 352 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Radio\-Cfg@{mrfi\-Radio\-Cfg}}
+\index{mrfi\-Radio\-Cfg@{mrfi\-Radio\-Cfg}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Radio\-Cfg}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf uint8\-\_\-t} {\bf mrfi\-Radio\-Cfg}\mbox{[}$\,$\mbox{]}\mbox{[}2\mbox{]}}}\label{mrfi__radio_8c_a97661c4e995b6467bca1eda61067fb4f}
+
+
+\-Definition at line 192 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a6f6fa3a6d7ec2b31dd3daf3b57a7496b}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Radio\-State@{mrfi\-Radio\-State}}
+\index{mrfi\-Radio\-State@{mrfi\-Radio\-State}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Radio\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Radio\-State} = {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-E\-\_\-\-U\-N\-K\-N\-O\-W\-N}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a6f6fa3a6d7ec2b31dd3daf3b57a7496b}
+
+
+\-Definition at line 351 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-R\-F\-Power\-Table@{mrfi\-R\-F\-Power\-Table}}
+\index{mrfi\-R\-F\-Power\-Table@{mrfi\-R\-F\-Power\-Table}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-R\-F\-Power\-Table}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf uint8\-\_\-t} {\bf mrfi\-R\-F\-Power\-Table}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a38b17c489ff64492e96bdd9815de8456}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+
+{
+
+  0x0F,
+  0x27,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+\end{DoxyCode}
+
+
+\-Definition at line 303 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_ab9d7f1ca3de7599f48559d639b6e57dc}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Rnd\-Seed@{mrfi\-Rnd\-Seed}}
+\index{mrfi\-Rnd\-Seed@{mrfi\-Rnd\-Seed}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Rnd\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Rnd\-Seed} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_ab9d7f1ca3de7599f48559d639b6e57dc}
+
+
+\-Definition at line 353 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_add2747b769377fe1c9a1bf5d43f91cef}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Rx\-Filter\-Addr@{mrfi\-Rx\-Filter\-Addr}}
+\index{mrfi\-Rx\-Filter\-Addr@{mrfi\-Rx\-Filter\-Addr}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Rx\-Filter\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Rx\-Filter\-Addr}\mbox{[}{\bf \-M\-R\-F\-I\-\_\-\-A\-D\-D\-R\-\_\-\-S\-I\-Z\-E}\mbox{]} = \{ \-R\-X\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-A\-D\-D\-R\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-V\-A\-L\-U\-E \}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_add2747b769377fe1c9a1bf5d43f91cef}
+
+
+\-Definition at line 362 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a883da5db4c1f526dcfeb4b718e5d090e}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!mrfi\-Rx\-Filter\-Enabled@{mrfi\-Rx\-Filter\-Enabled}}
+\index{mrfi\-Rx\-Filter\-Enabled@{mrfi\-Rx\-Filter\-Enabled}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{mrfi\-Rx\-Filter\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Rx\-Filter\-Enabled} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a883da5db4c1f526dcfeb4b718e5d090e}
+
+
+\-Definition at line 361 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a1ab782943ee97431567139bc6ed1b4c0}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!no\-Frame@{no\-Frame}}
+\index{no\-Frame@{no\-Frame}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{no\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\-\_\-t} {\bf no\-Frame} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a1ab782943ee97431567139bc6ed1b4c0}
+
+
+\-Definition at line 367 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a55a1853b6162eeba67c19fc1c0389901}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!rf\-\_\-frequoffset@{rf\-\_\-frequoffset}}
+\index{rf\-\_\-frequoffset@{rf\-\_\-frequoffset}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{rf\-\_\-frequoffset}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf rf\-\_\-frequoffset}}}\label{mrfi__radio_8c_a55a1853b6162eeba67c19fc1c0389901}
+
+
+\-Definition at line 110 of file main.\-c.
+
+\hypertarget{mrfi__radio_8c_ac5ce5b4dc46a2f656f3911e423ea11b8}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!s\-Backoff\-Helper@{s\-Backoff\-Helper}}
+\index{s\-Backoff\-Helper@{s\-Backoff\-Helper}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{s\-Backoff\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint16\-\_\-t} {\bf s\-Backoff\-Helper} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_ac5ce5b4dc46a2f656f3911e423ea11b8}
+
+
+\-Definition at line 359 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a8706cd61170522359dfb1328df63da22}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!s\-Kill\-Sem@{s\-Kill\-Sem}}
+\index{s\-Kill\-Sem@{s\-Kill\-Sem}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{s\-Kill\-Sem}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint8\-\_\-t} {\bf s\-Kill\-Sem} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a8706cd61170522359dfb1328df63da22}
+
+
+\-Definition at line 356 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a468dd8d389647a773c48603f77add77e}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!s\-Reply\-Delay\-Context@{s\-Reply\-Delay\-Context}}
+\index{s\-Reply\-Delay\-Context@{s\-Reply\-Delay\-Context}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{s\-Reply\-Delay\-Context}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint8\-\_\-t} {\bf s\-Reply\-Delay\-Context} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a468dd8d389647a773c48603f77add77e}
+
+
+\-Definition at line 357 of file mrfi\-\_\-radio.\-c.
+
+\hypertarget{mrfi__radio_8c_a75fb1d33bb56d58cb4bff1a1e670bc4b}{\index{mrfi\-\_\-radio.\-c@{mrfi\-\_\-radio.\-c}!s\-Reply\-Delay\-Scalar@{s\-Reply\-Delay\-Scalar}}
+\index{s\-Reply\-Delay\-Scalar@{s\-Reply\-Delay\-Scalar}!mrfi_radio.c@{mrfi\-\_\-radio.\-c}}
+\subsubsection[{s\-Reply\-Delay\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint16\-\_\-t} {\bf s\-Reply\-Delay\-Scalar} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{mrfi__radio_8c_a75fb1d33bb56d58cb4bff1a1e670bc4b}
+
+
+\-Definition at line 358 of file mrfi\-\_\-radio.\-c.
+

@@ -1,0 +1,85 @@
+.TH "simpliciti/Components/mrfi/mrfi_defs.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/mrfi/mrfi_defs.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMRFI_CCA_RETRIES\fP   4"
+.br
+.ti -1c
+.RI "#define \fBMRFI_ASSERT\fP(x)   \fBBSP_ASSERT\fP(x)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_FORCE_ASSERT\fP()   \fBBSP_FORCE_ASSERT\fP()"
+.br
+.ti -1c
+.RI "#define \fBMRFI_ASSERTS_ARE_ON\fP   \fBBSP_ASSERTS_ARE_ON\fP"
+.br
+.ti -1c
+.RI "#define \fB__mrfi_P_DST_ADDR__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_DST_ADDR_OFS__]))"
+.br
+.ti -1c
+.RI "#define \fB__mrfi_P_SRC_ADDR__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_SRC_ADDR_OFS__]))"
+.br
+.ti -1c
+.RI "#define \fB__mrfi_P_PAYLOAD__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_PAYLOAD_OFS__]))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_NUM_SUPPORTED_RADIOS_SELECTED\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fB__mrfi_P_DST_ADDR__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_DST_ADDR_OFS__]))"
+.PP
+Definition at line 182 of file mrfi_defs\&.h\&.
+.SS "#define \fB__mrfi_P_PAYLOAD__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_PAYLOAD_OFS__]))"
+.PP
+Definition at line 184 of file mrfi_defs\&.h\&.
+.SS "#define \fB__mrfi_P_SRC_ADDR__\fP(\fBp\fP)   (&((\fBp\fP)->frame[__mrfi_SRC_ADDR_OFS__]))"
+.PP
+Definition at line 183 of file mrfi_defs\&.h\&.
+.SS "#define \fBMRFI_ASSERT\fP(x)   \fBBSP_ASSERT\fP(x)"
+.PP
+Definition at line 54 of file mrfi_defs\&.h\&.
+.SS "#define \fBMRFI_ASSERTS_ARE_ON\fP   \fBBSP_ASSERTS_ARE_ON\fP"
+.PP
+Definition at line 56 of file mrfi_defs\&.h\&.
+.SS "#define \fBMRFI_CCA_RETRIES\fP   4"
+.PP
+Definition at line 52 of file mrfi_defs\&.h\&.
+.SS "#define \fBMRFI_FORCE_ASSERT\fP()   \fBBSP_FORCE_ASSERT\fP()"
+.PP
+Definition at line 55 of file mrfi_defs\&.h\&.
+.SS "#define \fBMRFI_NUM_SUPPORTED_RADIOS_SELECTED\fP"\fBValue:\fP
+.PP
+.nf
+((defined MRFI_CC1100) + \
+                                              (defined MRFI_CC1101) + \
+                                              (defined MRFI_CC1110) + \
+                                              (defined MRFI_CC1111) + \
+                                              (defined MRFI_CC1100E_470) + \
+                                              (defined MRFI_CC1100E_950) + \
+                                              (defined MRFI_CC2500) + \
+                                              (defined MRFI_CC2510) + \
+                                              (defined MRFI_CC2511) + \
+                                              (defined MRFI_CC2430) + \
+                                              (defined MRFI_CC2431) + \
+                                              (defined MRFI_CC2520) + \
+                                              (defined MRFI_CC430)  + \
+                                              (defined MRFI_CC2530))
+.fi
+.PP
+Definition at line 193 of file mrfi_defs\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

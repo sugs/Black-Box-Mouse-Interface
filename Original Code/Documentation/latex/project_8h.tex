@@ -1,0 +1,133 @@
+\hypertarget{project_8h}{\section{include/project.h \-File \-Reference}
+\label{project_8h}\index{include/project.\-h@{include/project.\-h}}
+}
+{\ttfamily \#include $<$cc430x613x.\-h$>$}\*
+{\ttfamily \#include $<$bm.\-h$>$}\*
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unions__system__flags}{s\-\_\-system\-\_\-flags}
+\item 
+union \hyperlink{unions__request__flags}{s\-\_\-request\-\_\-flags}
+\item 
+union \hyperlink{unions__message__flags}{s\-\_\-message\-\_\-flags}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{project_8h_a71be4a990011c7b00830abf5f3b2190d}{\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G}
+\item 
+\#define \hyperlink{project_8h_aae3099c72af20d90ab709c2686f518ac}{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}~(0u)
+\item 
+\#define \hyperlink{project_8h_ac58c5203771479887c8956283622499d}{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}~(1u)
+\item 
+\#define \hyperlink{project_8h_a6b01a7e40469fd5fbbe7814f155f9fe4}{\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(usec)~(((usec) $\ast$ 32768) / 1000000)
+\item 
+\#define \hyperlink{project_8h_a8a33de02aa7b8170ae32c18e67d00c34}{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(msec)~(((msec) $\ast$ 32768) / 1000)
+\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{project_8h_a44455c5614c38dfadce594b2228fd055}{menu\-\_\-t} \{ \hyperlink{project_8h_a44455c5614c38dfadce594b2228fd055aa217749391b77f1798c79a1f20e4488d}{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E} =  0, 
+\hyperlink{project_8h_a44455c5614c38dfadce594b2228fd055ae4d6f57e9fd7a310c289a0c167fb7d5b}{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{unions__system__flags}{s\-\_\-system\-\_\-flags} \hyperlink{project_8h_a9cbeab1345b7a91154b338a618ea12f8}{sys}
+\item 
+volatile \hyperlink{unions__request__flags}{s\-\_\-request\-\_\-flags} \hyperlink{project_8h_ae310e91666e5e839292e6869cef21ab9}{request}
+\item 
+volatile \hyperlink{unions__message__flags}{s\-\_\-message\-\_\-flags} \hyperlink{project_8h_a191ae35b2ba53f1cceb7f36884851aea}{message}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{project_8h_a8a33de02aa7b8170ae32c18e67d00c34}{\index{project.\-h@{project.\-h}!\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}}
+\index{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}!project.h@{project.\-h}}
+\subsubsection[{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(
+\begin{DoxyParamCaption}
+\item[{}]{msec}
+\end{DoxyParamCaption}
+)~(((msec) $\ast$ 32768) / 1000)}}\label{project_8h_a8a33de02aa7b8170ae32c18e67d00c34}
+
+
+\-Definition at line 66 of file project.\-h.
+
+\hypertarget{project_8h_a6b01a7e40469fd5fbbe7814f155f9fe4}{\index{project.\-h@{project.\-h}!\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}}
+\index{\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}!project.h@{project.\-h}}
+\subsubsection[{\-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-V\-\_\-\-U\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(
+\begin{DoxyParamCaption}
+\item[{}]{usec}
+\end{DoxyParamCaption}
+)~(((usec) $\ast$ 32768) / 1000000)}}\label{project_8h_a6b01a7e40469fd5fbbe7814f155f9fe4}
+
+
+\-Definition at line 63 of file project.\-h.
+
+\hypertarget{project_8h_aae3099c72af20d90ab709c2686f518ac}{\index{project.\-h@{project.\-h}!\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F@{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}}
+\index{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F@{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}!project.h@{project.\-h}}
+\subsubsection[{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-L\-T\-E\-R\-\_\-\-O\-F\-F}~(0u)}}\label{project_8h_aae3099c72af20d90ab709c2686f518ac}
+
+
+\-Definition at line 55 of file project.\-h.
+
+\hypertarget{project_8h_ac58c5203771479887c8956283622499d}{\index{project.\-h@{project.\-h}!\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N@{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}}
+\index{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N@{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}!project.h@{project.\-h}}
+\subsubsection[{\-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-L\-T\-E\-R\-\_\-\-O\-N}~(1u)}}\label{project_8h_ac58c5203771479887c8956283622499d}
+
+
+\-Definition at line 56 of file project.\-h.
+
+\hypertarget{project_8h_a71be4a990011c7b00830abf5f3b2190d}{\index{project.\-h@{project.\-h}!\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G@{\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G}}
+\index{\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G@{\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G}!project.h@{project.\-h}}
+\subsubsection[{\-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-S\-E\-\_\-\-W\-A\-T\-C\-H\-D\-O\-G}}}\label{project_8h_a71be4a990011c7b00830abf5f3b2190d}
+
+
+\-Definition at line 52 of file project.\-h.
+
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{project_8h_a44455c5614c38dfadce594b2228fd055}{\index{project.\-h@{project.\-h}!menu\-\_\-t@{menu\-\_\-t}}
+\index{menu\-\_\-t@{menu\-\_\-t}!project.h@{project.\-h}}
+\subsubsection[{menu\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf menu\-\_\-t}}}\label{project_8h_a44455c5614c38dfadce594b2228fd055}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E@{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E}!project.\-h@{project.\-h}}\index{project.\-h@{project.\-h}!\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E@{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E}}\item[{\em 
+\hypertarget{project_8h_a44455c5614c38dfadce594b2228fd055aa217749391b77f1798c79a1f20e4488d}{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-N\-O\-T\-\_\-\-V\-I\-S\-I\-B\-L\-E}\label{project_8h_a44455c5614c38dfadce594b2228fd055aa217749391b77f1798c79a1f20e4488d}
+}]\index{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E@{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E}!project.\-h@{project.\-h}}\index{project.\-h@{project.\-h}!\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E@{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E}}\item[{\em 
+\hypertarget{project_8h_a44455c5614c38dfadce594b2228fd055ae4d6f57e9fd7a310c289a0c167fb7d5b}{\-M\-E\-N\-U\-\_\-\-I\-T\-E\-M\-\_\-\-V\-I\-S\-I\-B\-L\-E}\label{project_8h_a44455c5614c38dfadce594b2228fd055ae4d6f57e9fd7a310c289a0c167fb7d5b}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 72 of file project.\-h.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{project_8h_a191ae35b2ba53f1cceb7f36884851aea}{\index{project.\-h@{project.\-h}!message@{message}}
+\index{message@{message}!project.h@{project.\-h}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf s\-\_\-message\-\_\-flags} {\bf message}}}\label{project_8h_a191ae35b2ba53f1cceb7f36884851aea}
+
+
+\-Definition at line 106 of file main.\-c.
+
+\hypertarget{project_8h_ae310e91666e5e839292e6869cef21ab9}{\index{project.\-h@{project.\-h}!request@{request}}
+\index{request@{request}!project.h@{project.\-h}}
+\subsubsection[{request}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf s\-\_\-request\-\_\-flags} {\bf request}}}\label{project_8h_ae310e91666e5e839292e6869cef21ab9}
+
+
+\-Definition at line 103 of file main.\-c.
+
+\hypertarget{project_8h_a9cbeab1345b7a91154b338a618ea12f8}{\index{project.\-h@{project.\-h}!sys@{sys}}
+\index{sys@{sys}!project.h@{project.\-h}}
+\subsubsection[{sys}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf s\-\_\-system\-\_\-flags} {\bf sys}}}\label{project_8h_a9cbeab1345b7a91154b338a618ea12f8}
+
+
+\-Definition at line 100 of file main.\-c.
+

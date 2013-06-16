@@ -1,0 +1,65 @@
+.TH "simpliciti/Components/bsp/boards/CC430EM/bsp_button_defs.h" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+simpliciti/Components/bsp/boards/CC430EM/bsp_button_defs.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp_board_defs\&.h'\fP
+.br
+\fC#include 'bsp_macros\&.h'\fP
+.br
+\fC#include 'code/bsp_generic_buttons\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTONS__\fP   1"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON_DEBOUNCE_WAIT__\fP(expr)   \fBst\fP( int i; for(i=0; i<500; i++) { if (!(expr)) i = 0; } )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON1_BIT__\fP   7"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON1_PORT__\fP   P1IN"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON1_IS_ACTIVE_LOW__\fP   1"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON_EXTENDED_CONFIG__\fP()"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fB__bsp_BUTTON1_BIT__\fP   7"
+.PP
+Definition at line 68 of file bsp_button_defs\&.h\&.
+.SS "#define \fB__bsp_BUTTON1_IS_ACTIVE_LOW__\fP   1"
+.PP
+Definition at line 70 of file bsp_button_defs\&.h\&.
+.SS "#define \fB__bsp_BUTTON1_PORT__\fP   P1IN"
+.PP
+Definition at line 69 of file bsp_button_defs\&.h\&.
+.SS "#define \fB__bsp_BUTTON_DEBOUNCE_WAIT__\fP(expr)   \fBst\fP( int i; for(i=0; i<500; i++) { if (!(expr)) i = 0; } )"
+.PP
+Definition at line 56 of file bsp_button_defs\&.h\&.
+.SS "#define \fB__bsp_BUTTON_EXTENDED_CONFIG__\fP()"\fBValue:\fP
+.PP
+.nf
+st( P1OUT |= BV(__bsp_BUTTON1_BIT__); /* PullUp */ \
+                                             P1REN |= BV(__bsp_BUTTON1_BIT__);)/* Enable PullUp */
+.fi
+.PP
+Definition at line 78 of file bsp_button_defs\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTONS__\fP   1"
+.PP
+Definition at line 55 of file bsp_button_defs\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

@@ -1,0 +1,474 @@
+\hypertarget{bsp__leds_8h}{\section{simpliciti/\-Components/bsp/drivers/bsp\-\_\-leds.h \-File \-Reference}
+\label{bsp__leds_8h}\index{simpliciti/\-Components/bsp/drivers/bsp\-\_\-leds.\-h@{simpliciti/\-Components/bsp/drivers/bsp\-\_\-leds.\-h}}
+}
+{\ttfamily \#include \char`\"{}bsp\-\_\-led\-\_\-defs.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp\-\_\-macros.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{bsp__leds_8h_a9c50124413c5acad1927756738a984ca}{\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S}~\hyperlink{bsp__led__defs_8h_a6426cdbe4c193f803156b2ef37a29bb4}{\-\_\-\-\_\-bsp\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S\-\_\-\-\_\-}
+\item 
+\#define \hyperlink{bsp__leds_8h_a695af883a59202cd0c2e500984ae065e}{\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y}()
+\item 
+\#define \hyperlink{bsp__leds_8h_acb48f8420dd282db33257db40539a8f4}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1}()~\hyperlink{bsp__generic__leds_8h_a91d7fc29b179680c1396c0ed289e964b}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a524331c6e34b582d877378b5b9a59803}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1}()~\hyperlink{bsp__generic__leds_8h_a404b619bbad727b1f8b98b11ff0201a4}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ac02e20e860c2ab67bdcdaed3849427ef}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1}()~\hyperlink{bsp__generic__leds_8h_a3046870feb2513db34173dec8ef85727}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a4a9f40cb4e860e3358e527f4a609dd8e}{\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a7bce86106c6b2017c999bc05b1a57598}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_acf06e15d0c9867c86e63c7cea17f6117}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2}()~\hyperlink{bsp__generic__leds_8h_a4219b8d68970a7e48db301a1b5fae65c}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ac7beaf5aaff727489a74bf27372d9ac1}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2}()~\hyperlink{bsp__generic__leds_8h_a4e5fd888ee6ef218b4675c7136955c66}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a3e18de5d1b8f753be44425b3720043bd}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2}()~\hyperlink{bsp__generic__leds_8h_a7fc523f6c7e436f99c69f7506e6fbd7d}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a2162fd00d2c5c4d61c98e7c615e39449}{\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a0f18c22d2240002d6a9947f9a9ebcdc4}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a38f591427fe70065044d9e949e3a322d}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3}()~\hyperlink{bsp__generic__leds_8h_a07503ca6bd8459a34cc0dd40b6488238}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a794371a478f2d96e048c3867aae845e8}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3}()~\hyperlink{bsp__generic__leds_8h_a130e88d79900071e848cf9be4994f4c7}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a604bae1378b58cfea283a80736383677}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3}()~\hyperlink{bsp__generic__leds_8h_a71af51df26d0bcc9a011033a5d533fe6}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a5ae23928ec100eea890e24a60282d355}{\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a11a4a8d78523967c3619d9418299efe6}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ae40718cc9a2cff89fc75c64595f7c267}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4}()~\hyperlink{bsp__generic__leds_8h_a511a9c79f1ffad845bf4bc3bf0cd666d}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_aa214aa5326da3adce8c84d762729eb97}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4}()~\hyperlink{bsp__generic__leds_8h_abdd45811f3306adf240d2bd29d2d2599}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a3d768e69a1db8aefbf1bbbfca9dfa0fb}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4}()~\hyperlink{bsp__generic__leds_8h_a870d704d5c3ed9c6eca0cf62ab11008c}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a240c2e4ffbff2c4feafd5de690c1dd90}{\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a25976bb71e746c383aeb32806169d33f}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ad6c8af1080c3960183c4644e48507548}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5}()~\hyperlink{bsp__generic__leds_8h_aa6d64477311aed6f9c64142f67b01959}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a21d5e7b083f19e951ce093120f28412c}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5}()~\hyperlink{bsp__generic__leds_8h_a222d9f815c4551d83cdfeb3727e42090}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a62915f4c71a864ec8416b09d89947a74}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5}()~\hyperlink{bsp__generic__leds_8h_a240b22bd264be5f1f07ab670c43b8d27}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ab9a0f4f6375c9caf8578ede99d623026}{\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a5fe663920ba58723d7d3b33177047139}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a90da26897b58c00789a9ccbf1ee525e6}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6}()~\hyperlink{bsp__generic__leds_8h_a7c86a1440abdd2a5e7e265799d9ba959}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_aa0f8f6bfd53cf21057e615c4ce5c1c90}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6}()~\hyperlink{bsp__generic__leds_8h_ab2aace875ce019a9cbfb8f602ca83d7a}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a4672a45b6612bf82ca249e9927fcd207}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6}()~\hyperlink{bsp__generic__leds_8h_a3329b487f578af7d624c4266e2363d75}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a9bd738243f757e5a172fe898f2684fdd}{\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_ae1fdf5a086ec1c803c810667818b8a00}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a2dc4240285f82f529a1391dc67e91180}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7}()~\hyperlink{bsp__generic__leds_8h_a14bc84bdbd5ae1aae88d57ec98365fe4}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a718cb382010f221f8b7f84712f8de8ed}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7}()~\hyperlink{bsp__generic__leds_8h_aff978dda0cf448a2f03c1c78191a18cb}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ac92d557237e9fb34f3db6c4e0fc684f1}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7}()~\hyperlink{bsp__generic__leds_8h_a59fd72a80c2d092bf2d6ced9a4a3e370}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_ad31cc489c7ac4441580ddfb548c7aeda}{\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_a5d050d4ddb0c5418fc3f2bc476eaf70c}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_af7363e184746815618c4981482e24f37}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8}()~\hyperlink{bsp__generic__leds_8h_a489ce85e3ea558c2342e7f0d127aa513}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a5c7c38d51899e22448662e8acc7b8676}{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8}()~\hyperlink{bsp__generic__leds_8h_a4c3f4173be39c7b402c85f5c057f3c29}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a150e6fea9d56aca043fbda3197f22f3c}{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8}()~\hyperlink{bsp__generic__leds_8h_ab8bba3caa5bcc10f8ad4072c579161ad}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()
+\item 
+\#define \hyperlink{bsp__leds_8h_a27b845ab7ec12eeb368f178fffaa24b2}{\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N}()~\hyperlink{bsp__generic__leds_8h_ab9459b50ff37a7cf2bcec8b9a1d02129}{\-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{bsp__leds_8h_a70b3b314162daaa33cadad006506669c}{\-B\-S\-P\-\_\-\-Init\-Leds} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{bsp__leds_8h_a4a9f40cb4e860e3358e527f4a609dd8e}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a4a9f40cb4e860e3358e527f4a609dd8e}
+
+
+\-Definition at line 70 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a2162fd00d2c5c4d61c98e7c615e39449}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a2162fd00d2c5c4d61c98e7c615e39449}
+
+
+\-Definition at line 76 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a5ae23928ec100eea890e24a60282d355}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a5ae23928ec100eea890e24a60282d355}
+
+
+\-Definition at line 82 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a240c2e4ffbff2c4feafd5de690c1dd90}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a240c2e4ffbff2c4feafd5de690c1dd90}
+
+
+\-Definition at line 88 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ab9a0f4f6375c9caf8578ede99d623026}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ab9a0f4f6375c9caf8578ede99d623026}
+
+
+\-Definition at line 94 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a9bd738243f757e5a172fe898f2684fdd}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a9bd738243f757e5a172fe898f2684fdd}
+
+
+\-Definition at line 100 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ad31cc489c7ac4441580ddfb548c7aeda}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ad31cc489c7ac4441580ddfb548c7aeda}
+
+
+\-Definition at line 106 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a27b845ab7ec12eeb368f178fffaa24b2}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N@{\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-I\-S\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a27b845ab7ec12eeb368f178fffaa24b2}
+
+
+\-Definition at line 112 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a695af883a59202cd0c2e500984ae065e}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y@{\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y}}
+\index{\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y@{\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-L\-E\-D\-\_\-\-B\-L\-I\-N\-K\-\_\-\-D\-E\-L\-A\-Y}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{bsp__leds_8h_a695af883a59202cd0c2e500984ae065e}
+{\bfseries \-Value\-:}
+\begin{DoxyCode}
+st( { volatile uint32_t i; \
+                                      for (i=0; i<__bsp_LED_BLINK_LOOP_COUNT__;
+       i++) { }; } )
+\end{DoxyCode}
+
+
+\-Definition at line 63 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a9c50124413c5acad1927756738a984ca}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S@{\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S}}
+\index{\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S@{\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S}~{\bf \-\_\-\-\_\-bsp\-\_\-\-N\-U\-M\-\_\-\-L\-E\-D\-S\-\_\-\-\_\-}}}\label{bsp__leds_8h_a9c50124413c5acad1927756738a984ca}
+
+
+\-Definition at line 54 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ac02e20e860c2ab67bdcdaed3849427ef}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D1}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ac02e20e860c2ab67bdcdaed3849427ef}
+
+
+\-Definition at line 69 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a3e18de5d1b8f753be44425b3720043bd}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D2}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a3e18de5d1b8f753be44425b3720043bd}
+
+
+\-Definition at line 75 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a604bae1378b58cfea283a80736383677}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D3}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a604bae1378b58cfea283a80736383677}
+
+
+\-Definition at line 81 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a3d768e69a1db8aefbf1bbbfca9dfa0fb}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D4}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a3d768e69a1db8aefbf1bbbfca9dfa0fb}
+
+
+\-Definition at line 87 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a62915f4c71a864ec8416b09d89947a74}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D5}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a62915f4c71a864ec8416b09d89947a74}
+
+
+\-Definition at line 93 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a4672a45b6612bf82ca249e9927fcd207}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D6}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a4672a45b6612bf82ca249e9927fcd207}
+
+
+\-Definition at line 99 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ac92d557237e9fb34f3db6c4e0fc684f1}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D7}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ac92d557237e9fb34f3db6c4e0fc684f1}
+
+
+\-Definition at line 105 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a150e6fea9d56aca043fbda3197f22f3c}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8}}
+\index{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-L\-E\-D8}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-O\-G\-G\-L\-E\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a150e6fea9d56aca043fbda3197f22f3c}
+
+
+\-Definition at line 111 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a524331c6e34b582d877378b5b9a59803}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D1}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a524331c6e34b582d877378b5b9a59803}
+
+
+\-Definition at line 68 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ac7beaf5aaff727489a74bf27372d9ac1}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D2}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ac7beaf5aaff727489a74bf27372d9ac1}
+
+
+\-Definition at line 74 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a794371a478f2d96e048c3867aae845e8}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D3}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a794371a478f2d96e048c3867aae845e8}
+
+
+\-Definition at line 80 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_aa214aa5326da3adce8c84d762729eb97}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D4}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_aa214aa5326da3adce8c84d762729eb97}
+
+
+\-Definition at line 86 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a21d5e7b083f19e951ce093120f28412c}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D5}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a21d5e7b083f19e951ce093120f28412c}
+
+
+\-Definition at line 92 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_aa0f8f6bfd53cf21057e615c4ce5c1c90}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D6}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_aa0f8f6bfd53cf21057e615c4ce5c1c90}
+
+
+\-Definition at line 98 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a718cb382010f221f8b7f84712f8de8ed}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D7}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a718cb382010f221f8b7f84712f8de8ed}
+
+
+\-Definition at line 104 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a5c7c38d51899e22448662e8acc7b8676}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-L\-E\-D8}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-U\-R\-N\-\_\-\-O\-F\-F\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a5c7c38d51899e22448662e8acc7b8676}
+
+
+\-Definition at line 110 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_acb48f8420dd282db33257db40539a8f4}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D1}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D1\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_acb48f8420dd282db33257db40539a8f4}
+
+
+\-Definition at line 67 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_acf06e15d0c9867c86e63c7cea17f6117}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D2}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D2\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_acf06e15d0c9867c86e63c7cea17f6117}
+
+
+\-Definition at line 73 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a38f591427fe70065044d9e949e3a322d}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D3}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D3\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a38f591427fe70065044d9e949e3a322d}
+
+
+\-Definition at line 79 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ae40718cc9a2cff89fc75c64595f7c267}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D4}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D4\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ae40718cc9a2cff89fc75c64595f7c267}
+
+
+\-Definition at line 85 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_ad6c8af1080c3960183c4644e48507548}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D5}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D5\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_ad6c8af1080c3960183c4644e48507548}
+
+
+\-Definition at line 91 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a90da26897b58c00789a9ccbf1ee525e6}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D6}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D6\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a90da26897b58c00789a9ccbf1ee525e6}
+
+
+\-Definition at line 97 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_a2dc4240285f82f529a1391dc67e91180}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D7}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D7\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_a2dc4240285f82f529a1391dc67e91180}
+
+
+\-Definition at line 103 of file bsp\-\_\-leds.\-h.
+
+\hypertarget{bsp__leds_8h_af7363e184746815618c4981482e24f37}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8}}
+\index{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8@{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-S\-P\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-L\-E\-D8}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-bsp\-\_\-\-L\-E\-D8\-\_\-\-T\-U\-R\-N\-\_\-\-O\-N\-\_\-\-\_\-}()}}\label{bsp__leds_8h_af7363e184746815618c4981482e24f37}
+
+
+\-Definition at line 109 of file bsp\-\_\-leds.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{bsp__leds_8h_a70b3b314162daaa33cadad006506669c}{\index{bsp\-\_\-leds.\-h@{bsp\-\_\-leds.\-h}!\-B\-S\-P\-\_\-\-Init\-Leds@{\-B\-S\-P\-\_\-\-Init\-Leds}}
+\index{\-B\-S\-P\-\_\-\-Init\-Leds@{\-B\-S\-P\-\_\-\-Init\-Leds}!bsp_leds.h@{bsp\-\_\-leds.\-h}}
+\subsubsection[{\-B\-S\-P\-\_\-\-Init\-Leds}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-B\-S\-P\-\_\-\-Init\-Leds} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{bsp__leds_8h_a70b3b314162daaa33cadad006506669c}
+
+
+\-Definition at line 76 of file bsp\-\_\-leds.\-c.
+

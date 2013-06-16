@@ -1,0 +1,100 @@
+\hypertarget{nwk__ping_8c}{\section{simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ping.c \-File \-Reference}
+\label{nwk__ping_8c}\index{simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ping.\-c@{simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ping.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include \char`\"{}bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-types.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-frame.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-ping.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-globals.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-api.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-freq.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-security.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{nwk__ping_8c_aa074b60349dcbd112cd1208d364b63b7}{smpl\-\_\-send\-\_\-ping\-\_\-reply} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$)
+\item 
+static void \hyperlink{nwk__ping_8c_a0976b6bd1f28777b3af7f2464f2f4cae}{handle\-Ping\-Request} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$)
+\item 
+void \hyperlink{nwk__ping_8c_adb4dadf8d952ab49770642cb0c1159e4}{nwk\-\_\-ping\-Init} (void)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ping_8c_adc908f2d22543c038e2207e83fef3ef9}{nwk\-\_\-ping} (\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t} lid)
+\item 
+\hyperlink{nwk__types_8h_af223ab49f851993ce1ca1a2f8c07d588}{fh\-Status\-\_\-t} \hyperlink{nwk__ping_8c_adef968a3f7478f79b5cfce2f6fd8228f}{nwk\-\_\-process\-Ping} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$frame)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+static volatile \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk__ping_8c_a2075ec83c59208aee2ac7bd3bfae3755}{s\-Tid} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk__ping_8c_a0976b6bd1f28777b3af7f2464f2f4cae}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!handle\-Ping\-Request@{handle\-Ping\-Request}}
+\index{handle\-Ping\-Request@{handle\-Ping\-Request}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{handle\-Ping\-Request}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf handle\-Ping\-Request} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__ping_8c_a0976b6bd1f28777b3af7f2464f2f4cae}
+
+
+\-Definition at line 301 of file nwk\-\_\-ping.\-c.
+
+\hypertarget{nwk__ping_8c_adc908f2d22543c038e2207e83fef3ef9}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!nwk\-\_\-ping@{nwk\-\_\-ping}}
+\index{nwk\-\_\-ping@{nwk\-\_\-ping}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{nwk\-\_\-ping}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-ping} (
+\begin{DoxyParamCaption}
+\item[{{\bf link\-I\-D\-\_\-t}}]{lid}
+\end{DoxyParamCaption}
+)}}\label{nwk__ping_8c_adc908f2d22543c038e2207e83fef3ef9}
+
+
+\-Definition at line 118 of file nwk\-\_\-ping.\-c.
+
+\hypertarget{nwk__ping_8c_adb4dadf8d952ab49770642cb0c1159e4}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!nwk\-\_\-ping\-Init@{nwk\-\_\-ping\-Init}}
+\index{nwk\-\_\-ping\-Init@{nwk\-\_\-ping\-Init}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{nwk\-\_\-ping\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-ping\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__ping_8c_adb4dadf8d952ab49770642cb0c1159e4}
+
+
+\-Definition at line 95 of file nwk\-\_\-ping.\-c.
+
+\hypertarget{nwk__ping_8c_adef968a3f7478f79b5cfce2f6fd8228f}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!nwk\-\_\-process\-Ping@{nwk\-\_\-process\-Ping}}
+\index{nwk\-\_\-process\-Ping@{nwk\-\_\-process\-Ping}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{nwk\-\_\-process\-Ping}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fh\-Status\-\_\-t} {\bf nwk\-\_\-process\-Ping} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{frame}
+\end{DoxyParamCaption}
+)}}\label{nwk__ping_8c_adef968a3f7478f79b5cfce2f6fd8228f}
+
+
+\-Definition at line 252 of file nwk\-\_\-ping.\-c.
+
+\hypertarget{nwk__ping_8c_aa074b60349dcbd112cd1208d364b63b7}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!smpl\-\_\-send\-\_\-ping\-\_\-reply@{smpl\-\_\-send\-\_\-ping\-\_\-reply}}
+\index{smpl\-\_\-send\-\_\-ping\-\_\-reply@{smpl\-\_\-send\-\_\-ping\-\_\-reply}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{smpl\-\_\-send\-\_\-ping\-\_\-reply}]{\setlength{\rightskip}{0pt plus 5cm}static void {\bf smpl\-\_\-send\-\_\-ping\-\_\-reply} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__ping_8c_aa074b60349dcbd112cd1208d364b63b7}
+
+
+\-Definition at line 219 of file nwk\-\_\-ping.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{nwk__ping_8c_a2075ec83c59208aee2ac7bd3bfae3755}{\index{nwk\-\_\-ping.\-c@{nwk\-\_\-ping.\-c}!s\-Tid@{s\-Tid}}
+\index{s\-Tid@{s\-Tid}!nwk_ping.c@{nwk\-\_\-ping.\-c}}
+\subsubsection[{s\-Tid}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint8\-\_\-t} {\bf s\-Tid} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__ping_8c_a2075ec83c59208aee2ac7bd3bfae3755}
+
+
+\-Definition at line 68 of file nwk\-\_\-ping.\-c.
+

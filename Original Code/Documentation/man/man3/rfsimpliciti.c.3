@@ -1,0 +1,222 @@
+.TH "logic/rfsimpliciti.c" 3 "Sun Jun 16 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logic/rfsimpliciti.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'vti_as\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include 'radio\&.h'\fP
+.br
+\fC#include 'acceleration\&.h'\fP
+.br
+\fC#include 'rfsimpliciti\&.h'\fP
+.br
+\fC#include 'bluerobin\&.h'\fP
+.br
+\fC#include 'simpliciti\&.h'\fP
+.br
+\fC#include 'clock\&.h'\fP
+.br
+\fC#include 'date\&.h'\fP
+.br
+\fC#include 'alarm\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+\fC#include 'vti_ps\&.h'\fP
+.br
+\fC#include 'altitude\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBM_SYNC_BURST_PACKETS_IN_DATA\fP   (9u)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsimpliciti_get_data_callback\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstart_simpliciti_tx_only\fP (\fBsimpliciti_mode_t\fP mode)"
+.br
+.ti -1c
+.RI "void \fBstart_simpliciti_sync\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset_rf\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsx_rf\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBsx_ppt\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBsx_sync\fP (u8 line)"
+.br
+.ti -1c
+.RI "void \fBdisplay_rf\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void \fBdisplay_ppt\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "void \fBdisplay_sync\fP (u8 line, u8 update)"
+.br
+.ti -1c
+.RI "u8 \fBis_rf\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsimpliciti_get_ed_data_callback\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsimpliciti_sync_decode_ap_cmd_callback\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsimpliciti_sync_get_data_callback\fP (unsigned int index)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "struct \fBRFsmpl\fP \fBsRFsmpl\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_flag\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_data\fP [\fBSIMPLICITI_MAX_PAYLOAD_LENGTH\fP]"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_ed_address\fP [4]"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_payload_length\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_reply_count\fP"
+.br
+.ti -1c
+.RI "u8 \fBburst_mode\fP"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBburst_start\fP"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBburst_end\fP"
+.br
+.ti -1c
+.RI "\fBu16\fP \fBburst_packet\fP [(9u)]"
+.br
+.ti -1c
+.RI "u8 \fBburst_packet_index\fP"
+.br
+.ti -1c
+.RI "void(* \fBfptr_lcd_function_line1\fP )(u8 line, u8 update)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBBM_SYNC_BURST_PACKETS_IN_DATA\fP   (9u)"
+.PP
+Definition at line 76 of file rfsimpliciti\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBdisplay_ppt\fP (u8line, u8update)"
+.PP
+Definition at line 302 of file rfsimpliciti\&.c\&.
+.SS "void \fBdisplay_rf\fP (u8line, u8update)"
+.PP
+Definition at line 286 of file rfsimpliciti\&.c\&.
+.SS "void \fBdisplay_sync\fP (u8line, u8update)"
+.PP
+Definition at line 318 of file rfsimpliciti\&.c\&.
+.SS "u8 \fBis_rf\fP (void)"
+.PP
+Definition at line 333 of file rfsimpliciti\&.c\&.
+.SS "void \fBreset_rf\fP (void)"
+.PP
+Definition at line 123 of file rfsimpliciti\&.c\&.
+.SS "void \fBsimpliciti_get_data_callback\fP (void)"
+.SS "void \fBsimpliciti_get_ed_data_callback\fP (void)"
+.PP
+Definition at line 347 of file rfsimpliciti\&.c\&.
+.SS "void \fBsimpliciti_sync_decode_ap_cmd_callback\fP (void)"
+.PP
+Definition at line 500 of file rfsimpliciti\&.c\&.
+.SS "void \fBsimpliciti_sync_get_data_callback\fP (unsigned intindex)"
+.PP
+Definition at line 581 of file rfsimpliciti\&.c\&.
+.SS "void \fBstart_simpliciti_sync\fP (void)"
+.PP
+Definition at line 430 of file rfsimpliciti\&.c\&.
+.SS "void \fBstart_simpliciti_tx_only\fP (\fBsimpliciti_mode_t\fPmode)"
+.PP
+Definition at line 196 of file rfsimpliciti\&.c\&.
+.SS "void \fBsx_ppt\fP (u8line)"
+.PP
+Definition at line 158 of file rfsimpliciti\&.c\&.
+.SS "void \fBsx_rf\fP (u8line)"
+.PP
+Definition at line 139 of file rfsimpliciti\&.c\&.
+.SS "void \fBsx_sync\fP (u8line)"
+.PP
+Definition at line 177 of file rfsimpliciti\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBu16\fP \fBburst_end\fP"
+.PP
+Definition at line 103 of file rfsimpliciti\&.c\&.
+.SS "u8 \fBburst_mode\fP"
+.PP
+Definition at line 100 of file rfsimpliciti\&.c\&.
+.SS "\fBu16\fP \fBburst_packet\fP[(9u)]"
+.PP
+Definition at line 106 of file rfsimpliciti\&.c\&.
+.SS "u8 \fBburst_packet_index\fP"
+.PP
+Definition at line 109 of file rfsimpliciti\&.c\&.
+.SS "\fBu16\fP \fBburst_start\fP"
+.PP
+Definition at line 103 of file rfsimpliciti\&.c\&.
+.SS "void(* \fBfptr_lcd_function_line1\fP)(u8 line, u8 update)"
+.PP
+Definition at line 116 of file main\&.c\&.
+.SS "unsigned char \fBsimpliciti_data\fP[\fBSIMPLICITI_MAX_PAYLOAD_LENGTH\fP]"
+.PP
+Definition at line 87 of file rfsimpliciti\&.c\&.
+.SS "unsigned char \fBsimpliciti_ed_address\fP[4]"
+.PP
+Definition at line 90 of file rfsimpliciti\&.c\&.
+.SS "unsigned char \fBsimpliciti_flag\fP"
+.PP
+Definition at line 84 of file rfsimpliciti\&.c\&.
+.SS "unsigned char \fBsimpliciti_payload_length\fP"
+.PP
+Definition at line 93 of file rfsimpliciti\&.c\&.
+.SS "unsigned char \fBsimpliciti_reply_count\fP"
+.PP
+Definition at line 97 of file rfsimpliciti\&.c\&.
+.SS "struct \fBRFsmpl\fP \fBsRFsmpl\fP"
+.PP
+Definition at line 81 of file rfsimpliciti\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.
