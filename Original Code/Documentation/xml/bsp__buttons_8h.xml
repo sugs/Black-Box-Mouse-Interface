@@ -3,9 +3,9 @@
   <compounddef id="bsp__buttons_8h" kind="file">
     <compoundname>bsp_buttons.h</compoundname>
     <includes refid="bsp__button__defs_8h" local="yes">bsp_button_defs.h</includes>
-    <includedby refid="main__ED__BM_8c" local="yes">simpliciti/Applications/application/End Device/main_ED_BM.c</includedby>
-    <includedby refid="bsp__drivers_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
-    <includedby refid="bsp__buttons_8c" local="yes">simpliciti/Components/bsp/drivers/code/bsp_buttons.c</includedby>
+    <includedby refid="main__ED__BM_8c" local="yes">Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c</includedby>
+    <includedby refid="bsp__drivers_8c" local="yes">Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <includedby refid="bsp__buttons_8c" local="yes">Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_buttons.c</includedby>
     <incdepgraph>
       <node id="1135">
         <label>bsp_macros.h</label>
@@ -42,7 +42,7 @@
         <link refid="bsp__msp430__defs_8h"/>
       </node>
       <node id="1130">
-        <label>simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
         <link refid="bsp_buttons.h"/>
         <childnode refid="1131" relation="include">
         </childnode>
@@ -54,21 +54,21 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="1138">
-        <label>simpliciti/Applications/application/End Device/main_ED_BM.c</label>
+        <label>Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c</label>
         <link refid="main__ED__BM_8c"/>
       </node>
       <node id="1140">
-        <label>simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
         <link refid="bsp__buttons_8c"/>
         <childnode refid="1139" relation="include">
         </childnode>
       </node>
       <node id="1139">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
         <link refid="bsp__drivers_8c"/>
       </node>
       <node id="1137">
-        <label>simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/drivers/bsp_buttons.h</label>
         <link refid="bsp_buttons.h"/>
         <childnode refid="1138" relation="include">
         </childnode>

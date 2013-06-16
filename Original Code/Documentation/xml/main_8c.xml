@@ -131,7 +131,7 @@
         <label>string.h</label>
       </node>
       <node id="882">
-        <label>main.c</label>
+        <label>Original Code/V2.2/main.c</label>
         <link refid="main.c"/>
         <childnode refid="883" relation="include">
         </childnode>

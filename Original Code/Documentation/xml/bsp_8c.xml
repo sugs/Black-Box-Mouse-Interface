@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="1060">
-        <label>simpliciti/Components/bsp/bsp.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/bsp.c</label>
         <link refid="bsp.c"/>
         <childnode refid="1061" relation="include">
         </childnode>

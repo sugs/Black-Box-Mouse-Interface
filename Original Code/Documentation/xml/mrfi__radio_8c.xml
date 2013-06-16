@@ -73,7 +73,7 @@
         <link refid="bsp__config_8h"/>
       </node>
       <node id="1278">
-        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
         <link refid="mrfi_radio.c"/>
         <childnode refid="1279" relation="include">
         </childnode>

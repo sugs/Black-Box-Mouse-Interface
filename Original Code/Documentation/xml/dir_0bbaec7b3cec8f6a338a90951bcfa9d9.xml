@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dir_0bbaec7b3cec8f6a338a90951bcfa9d9" kind="dir">
-    <compoundname>simpliciti/Components/mrfi/radios/family5/</compoundname>
+    <compoundname>Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/</compoundname>
     <innerfile refid="mrfi__radio_8c">mrfi_radio.c</innerfile>
     <innerfile refid="mrfi__radio__interface_8c">mrfi_radio_interface.c</innerfile>
     <innerfile refid="mrfi__radio__interface_8h">mrfi_radio_interface.h</innerfile>

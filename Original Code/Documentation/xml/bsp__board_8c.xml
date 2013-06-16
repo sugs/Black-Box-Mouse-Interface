@@ -10,7 +10,7 @@
         <link refid="bsp__macros_8h"/>
       </node>
       <node id="935">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_board.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_board.c</label>
         <link refid="bsp_board.c"/>
         <childnode refid="936" relation="include">
         </childnode>

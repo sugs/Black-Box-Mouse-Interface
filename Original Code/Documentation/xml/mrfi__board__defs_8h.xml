@@ -3,7 +3,7 @@
   <compounddef id="mrfi__board__defs_8h" kind="file">
     <compoundname>mrfi_board_defs.h</compoundname>
     <includes refid="bsp_8h" local="yes">bsp.h</includes>
-    <includedby refid="mrfi__radio_8c" local="yes">simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</includedby>
+    <includedby refid="mrfi__radio_8c" local="yes">Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</includedby>
     <incdepgraph>
       <node id="1046">
         <label>bsp_macros.h</label>
@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="1041">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_external/mrfi_board_defs.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_external/mrfi_board_defs.h</label>
         <link refid="mrfi_board_defs.h"/>
         <childnode refid="1042" relation="include">
         </childnode>
@@ -42,13 +42,13 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="1047">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_external/mrfi_board_defs.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_external/mrfi_board_defs.h</label>
         <link refid="mrfi_board_defs.h"/>
         <childnode refid="1048" relation="include">
         </childnode>
       </node>
       <node id="1048">
-        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
         <link refid="mrfi__radio_8c"/>
       </node>
     </invincdepgraph>

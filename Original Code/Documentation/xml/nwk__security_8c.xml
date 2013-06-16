@@ -55,7 +55,7 @@
         </childnode>
       </node>
       <node id="1644">
-        <label>simpliciti/Components/nwk_applications/nwk_security.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_security.c</label>
         <link refid="nwk_security.c"/>
         <childnode refid="1645" relation="include">
         </childnode>

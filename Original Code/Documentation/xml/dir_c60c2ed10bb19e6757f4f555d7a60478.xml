@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dir_c60c2ed10bb19e6757f4f555d7a60478" kind="dir">
-    <compoundname>simpliciti/Components/bsp/mcus/</compoundname>
+    <compoundname>Original Code/V2.2/simpliciti/Components/bsp/mcus/</compoundname>
     <innerfile refid="bsp__msp430__defs_8h">bsp_msp430_defs.h</innerfile>
     <briefdescription>
     </briefdescription>

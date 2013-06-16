@@ -2,18 +2,18 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="nwk__mgmt_8h" kind="file">
     <compoundname>nwk_mgmt.h</compoundname>
-    <includedby refid="nwk__app_8h" local="yes">simpliciti/Components/nwk/nwk_app.h</includedby>
-    <includedby refid="nwk__frame_8c" local="yes">simpliciti/Components/nwk/nwk_frame.c</includedby>
-    <includedby refid="nwk__QMgmt_8c" local="yes">simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
-    <includedby refid="nwk__join_8c" local="yes">simpliciti/Components/nwk_applications/nwk_join.c</includedby>
-    <includedby refid="nwk__mgmt_8c" local="yes">simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
+    <includedby refid="nwk__app_8h" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</includedby>
+    <includedby refid="nwk__frame_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</includedby>
+    <includedby refid="nwk__QMgmt_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
+    <includedby refid="nwk__join_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.c</includedby>
+    <includedby refid="nwk__mgmt_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
     <invincdepgraph>
       <node id="1614">
-        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</label>
         <link refid="nwk__api_8c"/>
       </node>
       <node id="1612">
-        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</label>
         <link refid="nwk__app_8h"/>
         <childnode refid="1613" relation="include">
         </childnode>
@@ -23,11 +23,11 @@
         </childnode>
       </node>
       <node id="1618">
-        <label>simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
         <link refid="nwk__mgmt_8c"/>
       </node>
       <node id="1611">
-        <label>simpliciti/Components/nwk_applications/nwk_mgmt.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.h</label>
         <link refid="nwk_mgmt.h"/>
         <childnode refid="1612" relation="include">
         </childnode>
@@ -41,19 +41,19 @@
         </childnode>
       </node>
       <node id="1617">
-        <label>simpliciti/Components/nwk_applications/nwk_join.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.c</label>
         <link refid="nwk__join_8c"/>
       </node>
       <node id="1615">
-        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</label>
         <link refid="nwk__frame_8c"/>
       </node>
       <node id="1616">
-        <label>simpliciti/Components/nwk/nwk_QMgmt.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</label>
         <link refid="nwk__QMgmt_8c"/>
       </node>
       <node id="1613">
-        <label>simpliciti/Components/nwk/nwk.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
         <link refid="nwk_8c"/>
       </node>
     </invincdepgraph>

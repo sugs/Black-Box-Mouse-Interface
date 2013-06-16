@@ -72,7 +72,7 @@
         </childnode>
       </node>
       <node id="1619">
-        <label>simpliciti/Components/nwk_applications/nwk_ping.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ping.c</label>
         <link refid="nwk_ping.c"/>
         <childnode refid="1620" relation="include">
         </childnode>

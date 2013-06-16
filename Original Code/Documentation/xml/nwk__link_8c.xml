@@ -55,7 +55,7 @@
         <label>string.h</label>
       </node>
       <node id="1567">
-        <label>simpliciti/Components/nwk_applications/nwk_link.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_link.c</label>
         <link refid="nwk_link.c"/>
         <childnode refid="1568" relation="include">
         </childnode>

@@ -2,20 +2,20 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="adc12_8h" kind="file">
     <compoundname>adc12.h</compoundname>
-    <includedby refid="adc12_8c" local="yes">driver/adc12.c</includedby>
-    <includedby refid="battery_8c" local="yes">logic/battery.c</includedby>
-    <includedby refid="temperature_8c" local="yes">logic/temperature.c</includedby>
+    <includedby refid="adc12_8c" local="yes">Original Code/V2.2/driver/adc12.c</includedby>
+    <includedby refid="battery_8c" local="yes">Original Code/V2.2/logic/battery.c</includedby>
+    <includedby refid="temperature_8c" local="yes">Original Code/V2.2/logic/temperature.c</includedby>
     <invincdepgraph>
       <node id="58">
-        <label>logic/battery.c</label>
+        <label>Original Code/V2.2/logic/battery.c</label>
         <link refid="battery_8c"/>
       </node>
       <node id="57">
-        <label>driver/adc12.c</label>
+        <label>Original Code/V2.2/driver/adc12.c</label>
         <link refid="adc12_8c"/>
       </node>
       <node id="56">
-        <label>driver/adc12.h</label>
+        <label>Original Code/V2.2/driver/adc12.h</label>
         <link refid="adc12.h"/>
         <childnode refid="57" relation="include">
         </childnode>
@@ -25,7 +25,7 @@
         </childnode>
       </node>
       <node id="59">
-        <label>logic/temperature.c</label>
+        <label>Original Code/V2.2/logic/temperature.c</label>
         <link refid="temperature_8c"/>
       </node>
     </invincdepgraph>

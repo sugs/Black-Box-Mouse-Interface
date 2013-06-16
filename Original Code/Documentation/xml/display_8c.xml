@@ -12,7 +12,7 @@
     <includes refid="temperature_8h" local="yes">temperature.h</includes>
     <incdepgraph>
       <node id="82">
-        <label>driver/display.c</label>
+        <label>Original Code/V2.2/driver/display.c</label>
         <link refid="display.c"/>
         <childnode refid="83" relation="include">
         </childnode>

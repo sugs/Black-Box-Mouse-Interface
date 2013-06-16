@@ -59,7 +59,7 @@
         <link refid="nwk__mgmt_8h"/>
       </node>
       <node id="1539">
-        <label>simpliciti/Components/nwk_applications/nwk_join.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.c</label>
         <link refid="nwk_join.c"/>
         <childnode refid="1540" relation="include">
         </childnode>

@@ -2,49 +2,49 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="temperature_8h" kind="file">
     <compoundname>temperature.h</compoundname>
-    <includedby refid="display_8c" local="yes">driver/display.c</includedby>
-    <includedby refid="timer_8c" local="yes">driver/timer.c</includedby>
-    <includedby refid="menu_8c" local="yes">logic/menu.c</includedby>
-    <includedby refid="miscellaneous_8c" local="yes">logic/miscellaneous.c</includedby>
-    <includedby refid="rfsimpliciti_8c" local="yes">logic/rfsimpliciti.c</includedby>
-    <includedby refid="temperature_8c" local="yes">logic/temperature.c</includedby>
-    <includedby refid="test_8c" local="yes">logic/test.c</includedby>
-    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="display_8c" local="yes">Original Code/V2.2/driver/display.c</includedby>
+    <includedby refid="timer_8c" local="yes">Original Code/V2.2/driver/timer.c</includedby>
+    <includedby refid="menu_8c" local="yes">Original Code/V2.2/logic/menu.c</includedby>
+    <includedby refid="miscellaneous_8c" local="yes">Original Code/V2.2/logic/miscellaneous.c</includedby>
+    <includedby refid="rfsimpliciti_8c" local="yes">Original Code/V2.2/logic/rfsimpliciti.c</includedby>
+    <includedby refid="temperature_8c" local="yes">Original Code/V2.2/logic/temperature.c</includedby>
+    <includedby refid="test_8c" local="yes">Original Code/V2.2/logic/test.c</includedby>
+    <includedby refid="main_8c" local="yes">Original Code/V2.2/main.c</includedby>
     <invincdepgraph>
       <node id="821">
-        <label>driver/display.c</label>
+        <label>Original Code/V2.2/driver/display.c</label>
         <link refid="display_8c"/>
       </node>
       <node id="825">
-        <label>logic/rfsimpliciti.c</label>
+        <label>Original Code/V2.2/logic/rfsimpliciti.c</label>
         <link refid="rfsimpliciti_8c"/>
       </node>
       <node id="824">
-        <label>logic/miscellaneous.c</label>
+        <label>Original Code/V2.2/logic/miscellaneous.c</label>
         <link refid="miscellaneous_8c"/>
       </node>
       <node id="827">
-        <label>logic/test.c</label>
+        <label>Original Code/V2.2/logic/test.c</label>
         <link refid="test_8c"/>
       </node>
       <node id="828">
-        <label>main.c</label>
+        <label>Original Code/V2.2/main.c</label>
         <link refid="main_8c"/>
       </node>
       <node id="823">
-        <label>logic/menu.c</label>
+        <label>Original Code/V2.2/logic/menu.c</label>
         <link refid="menu_8c"/>
       </node>
       <node id="822">
-        <label>driver/timer.c</label>
+        <label>Original Code/V2.2/driver/timer.c</label>
         <link refid="timer_8c"/>
       </node>
       <node id="826">
-        <label>logic/temperature.c</label>
+        <label>Original Code/V2.2/logic/temperature.c</label>
         <link refid="temperature_8c"/>
       </node>
       <node id="820">
-        <label>logic/temperature.h</label>
+        <label>Original Code/V2.2/logic/temperature.h</label>
         <link refid="temperature.h"/>
         <childnode refid="821" relation="include">
         </childnode>

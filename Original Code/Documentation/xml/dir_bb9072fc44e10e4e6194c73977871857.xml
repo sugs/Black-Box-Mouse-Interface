@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_bb9072fc44e10e4e6194c73977871857" kind="dir">
+    <compoundname>Original Code/</compoundname>
+    <innerdir refid="dir_53ca2860f01a6f59541fe68865afce28">Original Code/V2.2/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/"/>
+  </compounddef>
+</doxygen>

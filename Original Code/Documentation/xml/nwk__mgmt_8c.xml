@@ -49,7 +49,7 @@
         </childnode>
       </node>
       <node id="1592">
-        <label>simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
         <link refid="nwk_mgmt.c"/>
         <childnode refid="1593" relation="include">
         </childnode>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dir_7af491f5989d4359fbe0b82cf2c25662" kind="dir">
-    <compoundname>simpliciti/Components/</compoundname>
-    <innerdir refid="dir_0d3fce0cfb675bc71af8f2f45f296350">simpliciti/Components/bsp/</innerdir>
-    <innerdir refid="dir_2afc9e8672a621d8fda11496e9e7ba2c">simpliciti/Components/mrfi/</innerdir>
-    <innerdir refid="dir_47f84c227680eded718a35ff17ca9dac">simpliciti/Components/nwk/</innerdir>
-    <innerdir refid="dir_1515dea59910a7c164695f819fb6c84b">simpliciti/Components/nwk_applications/</innerdir>
+    <compoundname>Original Code/V2.2/simpliciti/Components/</compoundname>
+    <innerdir refid="dir_0d3fce0cfb675bc71af8f2f45f296350">Original Code/V2.2/simpliciti/Components/bsp/</innerdir>
+    <innerdir refid="dir_2afc9e8672a621d8fda11496e9e7ba2c">Original Code/V2.2/simpliciti/Components/mrfi/</innerdir>
+    <innerdir refid="dir_47f84c227680eded718a35ff17ca9dac">Original Code/V2.2/simpliciti/Components/nwk/</innerdir>
+    <innerdir refid="dir_1515dea59910a7c164695f819fb6c84b">Original Code/V2.2/simpliciti/Components/nwk_applications/</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

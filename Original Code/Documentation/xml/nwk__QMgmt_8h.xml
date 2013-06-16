@@ -2,25 +2,25 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="nwk__QMgmt_8h" kind="file">
     <compoundname>nwk_QMgmt.h</compoundname>
-    <includedby refid="nwk_8c" local="yes">simpliciti/Components/nwk/nwk.c</includedby>
-    <includedby refid="nwk__frame_8c" local="yes">simpliciti/Components/nwk/nwk_frame.c</includedby>
-    <includedby refid="nwk__QMgmt_8c" local="yes">simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
-    <includedby refid="nwk__mgmt_8c" local="yes">simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
+    <includedby refid="nwk_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk.c</includedby>
+    <includedby refid="nwk__frame_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</includedby>
+    <includedby refid="nwk__QMgmt_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
+    <includedby refid="nwk__mgmt_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
     <invincdepgraph>
       <node id="1474">
-        <label>simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
         <link refid="nwk__mgmt_8c"/>
       </node>
       <node id="1472">
-        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</label>
         <link refid="nwk__frame_8c"/>
       </node>
       <node id="1473">
-        <label>simpliciti/Components/nwk/nwk_QMgmt.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</label>
         <link refid="nwk__QMgmt_8c"/>
       </node>
       <node id="1470">
-        <label>simpliciti/Components/nwk/nwk_QMgmt.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.h</label>
         <link refid="nwk_QMgmt.h"/>
         <childnode refid="1471" relation="include">
         </childnode>
@@ -32,7 +32,7 @@
         </childnode>
       </node>
       <node id="1471">
-        <label>simpliciti/Components/nwk/nwk.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
         <link refid="nwk_8c"/>
       </node>
     </invincdepgraph>

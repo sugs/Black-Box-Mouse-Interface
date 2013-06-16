@@ -120,7 +120,7 @@
         <link refid="bsp__config_8h"/>
       </node>
       <node id="1313">
-        <label>simpliciti/Components/nwk/nwk.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
         <link refid="nwk.c"/>
         <childnode refid="1314" relation="include">
         </childnode>

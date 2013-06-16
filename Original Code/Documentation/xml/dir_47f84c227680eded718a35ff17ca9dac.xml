@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="dir_47f84c227680eded718a35ff17ca9dac" kind="dir">
-    <compoundname>simpliciti/Components/nwk/</compoundname>
+    <compoundname>Original Code/V2.2/simpliciti/Components/nwk/</compoundname>
     <innerfile refid="nwk_8c">nwk.c</innerfile>
     <innerfile refid="nwk_8h">nwk.h</innerfile>
     <innerfile refid="nwk__api_8c">nwk_api.c</innerfile>

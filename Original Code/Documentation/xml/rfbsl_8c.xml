@@ -43,7 +43,7 @@
         <label>cc430x613x.h</label>
       </node>
       <node id="715">
-        <label>logic/rfbsl.c</label>
+        <label>Original Code/V2.2/logic/rfbsl.c</label>
         <link refid="rfbsl.c"/>
         <childnode refid="716" relation="include">
         </childnode>

@@ -15,7 +15,7 @@
         <link refid="bsp__macros_8h"/>
       </node>
       <node id="917">
-        <label>simpliciti/Applications/application/End Device/main_ED_BM.c</label>
+        <label>Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c</label>
         <link refid="main_ED_BM.c"/>
         <childnode refid="918" relation="include">
         </childnode>

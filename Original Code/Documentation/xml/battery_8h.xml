@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="battery_8h" kind="file">
     <compoundname>battery.h</compoundname>
-    <includedby refid="timer_8c" local="yes">driver/timer.c</includedby>
-    <includedby refid="battery_8c" local="yes">logic/battery.c</includedby>
-    <includedby refid="menu_8c" local="yes">logic/menu.c</includedby>
-    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="timer_8c" local="yes">Original Code/V2.2/driver/timer.c</includedby>
+    <includedby refid="battery_8c" local="yes">Original Code/V2.2/logic/battery.c</includedby>
+    <includedby refid="menu_8c" local="yes">Original Code/V2.2/logic/menu.c</includedby>
+    <includedby refid="main_8c" local="yes">Original Code/V2.2/main.c</includedby>
     <invincdepgraph>
       <node id="465">
-        <label>logic/battery.c</label>
+        <label>Original Code/V2.2/logic/battery.c</label>
         <link refid="battery_8c"/>
       </node>
       <node id="463">
-        <label>logic/battery.h</label>
+        <label>Original Code/V2.2/logic/battery.h</label>
         <link refid="battery.h"/>
         <childnode refid="464" relation="include">
         </childnode>
@@ -24,15 +24,15 @@
         </childnode>
       </node>
       <node id="467">
-        <label>main.c</label>
+        <label>Original Code/V2.2/main.c</label>
         <link refid="main_8c"/>
       </node>
       <node id="466">
-        <label>logic/menu.c</label>
+        <label>Original Code/V2.2/logic/menu.c</label>
         <link refid="menu_8c"/>
       </node>
       <node id="464">
-        <label>driver/timer.c</label>
+        <label>Original Code/V2.2/driver/timer.c</label>
         <link refid="timer_8c"/>
       </node>
     </invincdepgraph>

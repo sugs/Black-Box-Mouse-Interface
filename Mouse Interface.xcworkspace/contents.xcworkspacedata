@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Original Code/Original Code.xcodeproj">
+      location = "absolute:Original Code/Original Code.xcodeproj">
    </FileRef>
 </Workspace>

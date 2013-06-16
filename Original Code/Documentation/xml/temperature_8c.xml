@@ -59,7 +59,7 @@
         <link refid="timer_8h"/>
       </node>
       <node id="805">
-        <label>logic/temperature.c</label>
+        <label>Original Code/V2.2/logic/temperature.c</label>
         <link refid="temperature.c"/>
         <childnode refid="806" relation="include">
         </childnode>

@@ -2,16 +2,16 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="smartrf__CC430_8h" kind="file">
     <compoundname>smartrf_CC430.h</compoundname>
-    <includedby refid="mrfi__radio_8c" local="yes">simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</includedby>
+    <includedby refid="mrfi__radio_8c" local="yes">Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</includedby>
     <invincdepgraph>
       <node id="1311">
-        <label>simpliciti/Components/mrfi/smartrf/CC430/smartrf_CC430.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/mrfi/smartrf/CC430/smartrf_CC430.h</label>
         <link refid="smartrf_CC430.h"/>
         <childnode refid="1312" relation="include">
         </childnode>
       </node>
       <node id="1312">
-        <label>simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
         <link refid="mrfi__radio_8c"/>
       </node>
     </invincdepgraph>

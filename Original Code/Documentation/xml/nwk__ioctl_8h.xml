@@ -2,15 +2,15 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="nwk__ioctl_8h" kind="file">
     <compoundname>nwk_ioctl.h</compoundname>
-    <includedby refid="nwk__app_8h" local="yes">simpliciti/Components/nwk/nwk_app.h</includedby>
-    <includedby refid="nwk__ioctl_8c" local="yes">simpliciti/Components/nwk_applications/nwk_ioctl.c</includedby>
+    <includedby refid="nwk__app_8h" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</includedby>
+    <includedby refid="nwk__ioctl_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c</includedby>
     <invincdepgraph>
       <node id="1538">
-        <label>simpliciti/Components/nwk_applications/nwk_ioctl.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c</label>
         <link refid="nwk__ioctl_8c"/>
       </node>
       <node id="1533">
-        <label>simpliciti/Components/nwk_applications/nwk_ioctl.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.h</label>
         <link refid="nwk_ioctl.h"/>
         <childnode refid="1534" relation="include">
         </childnode>
@@ -18,11 +18,11 @@
         </childnode>
       </node>
       <node id="1536">
-        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</label>
         <link refid="nwk__api_8c"/>
       </node>
       <node id="1534">
-        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</label>
         <link refid="nwk__app_8h"/>
         <childnode refid="1535" relation="include">
         </childnode>
@@ -32,11 +32,11 @@
         </childnode>
       </node>
       <node id="1537">
-        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</label>
         <link refid="nwk__frame_8c"/>
       </node>
       <node id="1535">
-        <label>simpliciti/Components/nwk/nwk.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
         <link refid="nwk_8c"/>
       </node>
     </invincdepgraph>

@@ -56,7 +56,7 @@
         <link refid="display2_8h"/>
       </node>
       <node id="349">
-        <label>logic/acceleration.c</label>
+        <label>Original Code/V2.2/logic/acceleration.c</label>
         <link refid="acceleration.c"/>
         <childnode refid="350" relation="include">
         </childnode>

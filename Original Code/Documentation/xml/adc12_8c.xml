@@ -10,7 +10,7 @@
         <label>float.h</label>
       </node>
       <node id="45">
-        <label>driver/adc12.c</label>
+        <label>Original Code/V2.2/driver/adc12.c</label>
         <link refid="adc12.c"/>
         <childnode refid="46" relation="include">
         </childnode>

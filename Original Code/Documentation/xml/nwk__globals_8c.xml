@@ -27,7 +27,7 @@
         </childnode>
       </node>
       <node id="1429">
-        <label>simpliciti/Components/nwk/nwk_globals.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_globals.c</label>
         <link refid="nwk_globals.c"/>
         <childnode refid="1430" relation="include">
         </childnode>

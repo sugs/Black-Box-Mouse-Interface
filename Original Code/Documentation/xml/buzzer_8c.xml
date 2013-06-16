@@ -29,7 +29,7 @@
         <label>stddef.h</label>
       </node>
       <node id="60">
-        <label>driver/buzzer.c</label>
+        <label>Original Code/V2.2/driver/buzzer.c</label>
         <link refid="buzzer.c"/>
         <childnode refid="61" relation="include">
         </childnode>

@@ -72,7 +72,7 @@
         </childnode>
       </node>
       <node id="1026">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
         <link refid="bsp_drivers.c"/>
         <childnode refid="1027" relation="include">
         </childnode>

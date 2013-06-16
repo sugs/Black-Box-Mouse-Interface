@@ -9,9 +9,9 @@
     <includes refid="nwk__join_8h" local="yes">nwk_join.h</includes>
     <includes refid="nwk__security_8h" local="yes">nwk_security.h</includes>
     <includes refid="nwk__ioctl_8h" local="yes">nwk_ioctl.h</includes>
-    <includedby refid="nwk_8c" local="yes">simpliciti/Components/nwk/nwk.c</includedby>
-    <includedby refid="nwk__api_8c" local="yes">simpliciti/Components/nwk/nwk_api.c</includedby>
-    <includedby refid="nwk__frame_8c" local="yes">simpliciti/Components/nwk/nwk_frame.c</includedby>
+    <includedby refid="nwk_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk.c</includedby>
+    <includedby refid="nwk__api_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</includedby>
+    <includedby refid="nwk__frame_8c" local="yes">Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</includedby>
     <incdepgraph>
       <node id="1388">
         <label>nwk_ioctl.h</label>
@@ -22,7 +22,7 @@
         <link refid="nwk__freq_8h"/>
       </node>
       <node id="1381">
-        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</label>
         <link refid="nwk_app.h"/>
         <childnode refid="1382" relation="include">
         </childnode>
@@ -62,11 +62,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="1391">
-        <label>simpliciti/Components/nwk/nwk_api.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</label>
         <link refid="nwk__api_8c"/>
       </node>
       <node id="1389">
-        <label>simpliciti/Components/nwk/nwk_app.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_app.h</label>
         <link refid="nwk_app.h"/>
         <childnode refid="1390" relation="include">
         </childnode>
@@ -76,11 +76,11 @@
         </childnode>
       </node>
       <node id="1392">
-        <label>simpliciti/Components/nwk/nwk_frame.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</label>
         <link refid="nwk__frame_8c"/>
       </node>
       <node id="1390">
-        <label>simpliciti/Components/nwk/nwk.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
         <link refid="nwk_8c"/>
       </node>
     </invincdepgraph>

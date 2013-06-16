@@ -4,7 +4,7 @@
     <compoundname>bsp_buttons.c</compoundname>
     <includes refid="bsp__buttons_8h" local="yes">bsp_buttons.h</includes>
     <includes refid="bsp__button__defs_8h" local="yes">bsp_button_defs.h</includes>
-    <includedby refid="bsp__drivers_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <includedby refid="bsp__drivers_8c" local="yes">Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
     <incdepgraph>
       <node id="1158">
         <label>bsp_macros.h</label>
@@ -29,7 +29,7 @@
         </childnode>
       </node>
       <node id="1152">
-        <label>simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
         <link refid="bsp_buttons.c"/>
         <childnode refid="1153" relation="include">
         </childnode>
@@ -61,13 +61,13 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="1160">
-        <label>simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_buttons.c</label>
         <link refid="bsp_buttons.c"/>
         <childnode refid="1161" relation="include">
         </childnode>
       </node>
       <node id="1161">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
         <link refid="bsp__drivers_8c"/>
       </node>
     </invincdepgraph>

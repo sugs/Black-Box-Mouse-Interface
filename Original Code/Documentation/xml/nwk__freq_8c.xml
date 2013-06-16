@@ -30,7 +30,7 @@
         <link refid="nwk__api_8h"/>
       </node>
       <node id="1490">
-        <label>simpliciti/Components/nwk_applications/nwk_freq.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_freq.c</label>
         <link refid="nwk_freq.c"/>
         <childnode refid="1491" relation="include">
         </childnode>

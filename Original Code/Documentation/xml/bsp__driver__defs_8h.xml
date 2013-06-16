@@ -2,19 +2,19 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="bsp__driver__defs_8h" kind="file">
     <compoundname>bsp_driver_defs.h</compoundname>
-    <includedby refid="bsp__drivers_8c" local="yes">simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
-    <includedby refid="bsp_8c" local="yes">simpliciti/Components/bsp/bsp.c</includedby>
+    <includedby refid="bsp__drivers_8c" local="yes">Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <includedby refid="bsp_8c" local="yes">Original Code/V2.2/simpliciti/Components/bsp/bsp.c</includedby>
     <invincdepgraph>
       <node id="1024">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
         <link refid="bsp__drivers_8c"/>
       </node>
       <node id="1025">
-        <label>simpliciti/Components/bsp/bsp.c</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/bsp.c</label>
         <link refid="bsp_8c"/>
       </node>
       <node id="1023">
-        <label>simpliciti/Components/bsp/boards/CC430EM/bsp_driver_defs.h</label>
+        <label>Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_driver_defs.h</label>
         <link refid="bsp_driver_defs.h"/>
         <childnode refid="1024" relation="include">
         </childnode>

@@ -2,25 +2,25 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="buzzer_8h" kind="file">
     <compoundname>buzzer.h</compoundname>
-    <includedby refid="buzzer_8c" local="yes">driver/buzzer.c</includedby>
-    <includedby refid="ports_8c" local="yes">driver/ports.c</includedby>
-    <includedby refid="timer_8c" local="yes">driver/timer.c</includedby>
-    <includedby refid="alarm_8c" local="yes">logic/alarm.c</includedby>
-    <includedby refid="countdowntimer_8c" local="yes">logic/countdowntimer.c</includedby>
-    <includedby refid="random_8c" local="yes">logic/random.c</includedby>
-    <includedby refid="user_8c" local="yes">logic/user.c</includedby>
-    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="buzzer_8c" local="yes">Original Code/V2.2/driver/buzzer.c</includedby>
+    <includedby refid="ports_8c" local="yes">Original Code/V2.2/driver/ports.c</includedby>
+    <includedby refid="timer_8c" local="yes">Original Code/V2.2/driver/timer.c</includedby>
+    <includedby refid="alarm_8c" local="yes">Original Code/V2.2/logic/alarm.c</includedby>
+    <includedby refid="countdowntimer_8c" local="yes">Original Code/V2.2/logic/countdowntimer.c</includedby>
+    <includedby refid="random_8c" local="yes">Original Code/V2.2/logic/random.c</includedby>
+    <includedby refid="user_8c" local="yes">Original Code/V2.2/logic/user.c</includedby>
+    <includedby refid="main_8c" local="yes">Original Code/V2.2/main.c</includedby>
     <invincdepgraph>
       <node id="79">
-        <label>logic/random.c</label>
+        <label>Original Code/V2.2/logic/random.c</label>
         <link refid="random_8c"/>
       </node>
       <node id="74">
-        <label>driver/buzzer.c</label>
+        <label>Original Code/V2.2/driver/buzzer.c</label>
         <link refid="buzzer_8c"/>
       </node>
       <node id="73">
-        <label>driver/buzzer.h</label>
+        <label>Original Code/V2.2/driver/buzzer.h</label>
         <link refid="buzzer.h"/>
         <childnode refid="74" relation="include">
         </childnode>
@@ -40,27 +40,27 @@
         </childnode>
       </node>
       <node id="75">
-        <label>driver/ports.c</label>
+        <label>Original Code/V2.2/driver/ports.c</label>
         <link refid="ports_8c"/>
       </node>
       <node id="81">
-        <label>main.c</label>
+        <label>Original Code/V2.2/main.c</label>
         <link refid="main_8c"/>
       </node>
       <node id="78">
-        <label>logic/countdowntimer.c</label>
+        <label>Original Code/V2.2/logic/countdowntimer.c</label>
         <link refid="countdowntimer_8c"/>
       </node>
       <node id="76">
-        <label>driver/timer.c</label>
+        <label>Original Code/V2.2/driver/timer.c</label>
         <link refid="timer_8c"/>
       </node>
       <node id="80">
-        <label>logic/user.c</label>
+        <label>Original Code/V2.2/logic/user.c</label>
         <link refid="user_8c"/>
       </node>
       <node id="77">
-        <label>logic/alarm.c</label>
+        <label>Original Code/V2.2/logic/alarm.c</label>
         <link refid="alarm_8c"/>
       </node>
     </invincdepgraph>

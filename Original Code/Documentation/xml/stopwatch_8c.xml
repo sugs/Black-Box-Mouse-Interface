@@ -67,7 +67,7 @@
         <link refid="user_8h"/>
       </node>
       <node id="766">
-        <label>logic/stopwatch.c</label>
+        <label>Original Code/V2.2/logic/stopwatch.c</label>
         <link refid="stopwatch.c"/>
         <childnode refid="767" relation="include">
         </childnode>

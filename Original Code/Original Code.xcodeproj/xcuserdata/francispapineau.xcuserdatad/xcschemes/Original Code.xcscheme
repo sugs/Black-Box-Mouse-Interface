@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F827FD0176E4B4C00B88986"
-               BuildableName = "Ti Chronos - Doxygen"
-               BlueprintName = "Ti Chronos - Doxygen"
+               BlueprintIdentifier = "6F22D4A8176E4F3E00C46D39"
+               BuildableName = "Original Code"
+               BlueprintName = "Original Code"
                ReferencedContainer = "container:Original Code.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

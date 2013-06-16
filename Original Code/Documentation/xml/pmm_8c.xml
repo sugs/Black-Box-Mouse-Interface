@@ -9,7 +9,7 @@
         <label>cc430x613x.h</label>
       </node>
       <node id="140">
-        <label>driver/pmm.c</label>
+        <label>Original Code/V2.2/driver/pmm.c</label>
         <link refid="pmm.c"/>
         <childnode refid="141" relation="include">
         </childnode>
