@@ -22,11 +22,8 @@ libUSER_OBJS.a \
 # All Target
 all: Ti\ Chronos\ -\ Sensor\ Hub.elf
 
-dependents:
-	-cd /Users/francispapineau/Documents/4th\ year\ project/Source\ Code/Black-Box-Mouse-Interface/Sensor\ Hub/Ti\ Chronos\ -\ Sensor\ Hub/Release && $(MAKE) all
-
 # Tool invocations
-Ti\ Chronos\ -\ Sensor\ Hub.elf: $(OBJS) /Users/francispapineau/Documents/4th\ year\ project/Source\ Code/Black-Box-Mouse-Interface/Sensor\ Hub/Ti\ Chronos\ -\ Sensor\ Hub/Release/Ti\ Chronos\ -\ Sensor\ Hub.elf
+Ti\ Chronos\ -\ Sensor\ Hub.elf: $(OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
 	msp430-gcc $(OBJS)  -o "Ti Chronos - Sensor Hub.elf"
@@ -46,6 +43,5 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
-/Users/francispapineau/Documents/4th\ year\ project/Source\ Code/Black-Box-Mouse-Interface/Sensor\ Hub/Ti\ Chronos\ -\ Sensor\ Hub/Release/Ti\ Chronos\ -\ Sensor\ Hub.elf:
 
 -include ../makefile.targets

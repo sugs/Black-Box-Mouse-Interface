@@ -3,6 +3,7 @@
 	<name>Ti Chronos - Sensor Hub</name>
 	<comment></comment>
 	<projects>
+		<project>Ti Chronos - Sensor Hub</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
