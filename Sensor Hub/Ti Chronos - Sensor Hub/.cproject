@@ -36,6 +36,9 @@
 									<listOptionValue builtIn="false" value="&quot;/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti&quot;"/>
 								</option>
+								<option id="dk.xpg.msp430eclipse.compiler.option.includes.files.383888880" name="Include files (-include)" superClass="dk.xpg.msp430eclipse.compiler.option.includes.files" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include/msp430f5509.h&quot;"/>
+								</option>
 								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.1403389585" name="C Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input"/>
 								<inputType id="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc.1791232686" name="C++ Source File" superClass="dk.xpg.msp430eclipse.tool.compiler.gcc.input.cc"/>
 							</tool>

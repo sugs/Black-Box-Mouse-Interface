@@ -4,4 +4,4 @@ msp430/MSP430TARGETMCU=
 msp430/MSPDebugConnection=TTY
 msp430/MSPDebugDriver=flash-bsl
 msp430/MSPDebugProtocol=SBW
-msp430/MSPDebugTTYDevice=tty.Bluetooth-Modem
+msp430/MSPDebugTTYDevice=

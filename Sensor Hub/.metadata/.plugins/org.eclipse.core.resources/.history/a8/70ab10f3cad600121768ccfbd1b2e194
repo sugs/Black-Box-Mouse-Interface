@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+msp430/MSP430TARGETMCU=
+msp430/MSPDebugDriver=gdbc

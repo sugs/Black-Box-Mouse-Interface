@@ -42,6 +42,7 @@
 #include "project.h"
 #include <string.h>
 #include <cc430x613x.h>
+#include <msp430F5509.h>
 
 // driver
 #include "clock.h"
@@ -73,6 +74,7 @@
 #include "random.h"
 #include "agility.h"
 #include "miscellaneous.h"
+
 
 // *************************************************************************************************
 // Prototypes section
@@ -107,22 +109,22 @@ volatile s_message_flags message;
 
 // Global radio frequency offset taken from calibration memory
 // Compensates crystal deviation from 26MHz nominal value
-uint8_t rf_frequoffset;
+u8 rf_frequoffset;
 
 // For Backlight: BL remains on for about 4sec also after button pressed
-uint8_t BlOnFlag = 0;
+u8 BlOnFlag = 0;
 
 // Function pointers for LINE1 and LINE2 display function
-void (*fptr_lcd_function_line1)(uint8_t line, uint8_t update);
-void (*fptr_lcd_function_line2)(uint8_t line, uint8_t update);
+void (*fptr_lcd_function_line1)(u8 line, u8 update);
+void (*fptr_lcd_function_line2)(u8 line, u8 update);
 
 // *************************************************************************************************
 // Extern section
 
 extern void start_simpliciti_sync(void);
 
-extern uint16_t ps_read_register(uint8_t address, uint8_t mode);
-extern uint8_t ps_write_register(uint8_t address, uint8_t data);
+extern u16 ps_read_register(u8 address, u8 mode);
+extern u8 ps_write_register(u8 address, u8 data);
 
 // *************************************************************************************************
 // @fn          main
@@ -132,7 +134,7 @@ extern uint8_t ps_write_register(uint8_t address, uint8_t data);
 // *************************************************************************************************
 int main(void)
 {
-	volatile uint8_t ps;
+	volatile u8 ps;
 
 	// Init MCU
 	init_application();
@@ -578,8 +580,8 @@ void process_requests(void)
 // *************************************************************************************************
 void display_update(void)
 {
-	uint8_t line;
-	uint8_t string[8];
+	u8 line;
+	u8 string[8];
 
 	// ---------------------------------------------------------------------
 	// Call Line1 display function
@@ -699,12 +701,12 @@ void idle_loop(void)
 // *************************************************************************************************
 void read_calibration_values(void)
 {
-	uint8_t cal_data[CALIBRATION_DATA_LENGTH];		// Temporary storage for constants
-	uint8_t i;
-	uint8_t * flash_mem;         					// Memory pointer
+	u8 cal_data[CALIBRATION_DATA_LENGTH];		// Temporary storage for constants
+	u8 i;
+	u8 * flash_mems;         					// Memory pointer
 
 	// Read calibration data from Info D memory
-	flash_mem = (uint8_t *)0x1800;
+	flash_mem = (u8 *)0x1800;
 	for (i=0; i<CALIBRATION_DATA_LENGTH; i++)
 	{
 		cal_data[i] = *flash_mem++;
@@ -731,8 +733,8 @@ void read_calibration_values(void)
 		{
 			rf_frequoffset = 0;
 		}
-		sTemp.offset 	= (int16_t)((cal_data[2] << 8) + cal_data[3]);
-		sBatt.offset 	= (int16_t)((cal_data[4] << 8) + cal_data[5]);
+		sTemp.offset 	= (s16)((cal_data[2] << 8) + cal_data[3]);
+		sBatt.offset 	= (s16)((cal_data[4] << 8) + cal_data[5]);
 		simpliciti_ed_address[0] = cal_data[6];
 		simpliciti_ed_address[1] = cal_data[7];
 		simpliciti_ed_address[2] = cal_data[8];
@@ -740,7 +742,7 @@ void read_calibration_values(void)
 		// S/W version byte set during calibration?
 		if (cal_data[12] != 0xFF)
 		{
-			sAlt.altitude_offset = (int16_t)((cal_data[10] << 8) + cal_data[11]);;
+			sAlt.altitude_offset = (s16)((cal_data[10] << 8) + cal_data[11]);;
 		}
 		else
 		{

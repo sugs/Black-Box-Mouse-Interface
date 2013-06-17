@@ -1,0 +1,30 @@
+
+!ENTRY dk.xpg.msp430eclipse 4 0 2013-06-16 17:22:31.223
+!MESSAGE Failed to launch MSPDebug: No driver set
+
+!ENTRY dk.xpg.msp430eclipse 4 0 2013-06-16 17:22:45.196
+!MESSAGE Failed to launch MSPDebug: No driver set
+
+!ENTRY dk.xpg.msp430eclipse 4 0 2013-06-16 17:23:16.477
+!MESSAGE   Reason: image not found
+!STACK 0
+java.lang.Throwable: dyld: Library not loaded: /opt/local/lib/libreadline.6.2.dylib
+  Referenced from: /bin/mspdebug
+  Reason: image not found
+
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugErrorParser.getError(MSPDebugErrorParser.java:34)
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugProcess.run(MSPDebugProcess.java:148)
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugJob.run(MSPDebugJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY dk.xpg.msp430eclipse 4 0 2013-06-16 17:24:20.699
+!MESSAGE   Reason: image not found
+!STACK 0
+java.lang.Throwable: dyld: Library not loaded: /opt/local/lib/libreadline.6.2.dylib
+  Referenced from: /bin/mspdebug
+  Reason: image not found
+
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugErrorParser.getError(MSPDebugErrorParser.java:34)
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugProcess.run(MSPDebugProcess.java:148)
+	at dk.xpg.msp430eclipse.tools.mspdebug.MSPDebugJob.run(MSPDebugJob.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
