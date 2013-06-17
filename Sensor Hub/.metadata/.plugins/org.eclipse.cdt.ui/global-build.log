@@ -12,3 +12,31 @@ msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
 Invoking: MSP430 C Compiler
 make: *** [Demo App/main.o] Error 1
 msp430-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti" -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -O0 -g -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
+18:35:06 **** Incremental Build of configuration Release for project Ti Chronos - Sensor Hub ****
+make all 
+Building file: ../Demo App/main.c
+msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
+Invoking: MSP430 C Compiler
+make: *** [Demo App/main.o] Error 1
+msp430-gcc -O3 -g0 -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
+18:35:06 **** Incremental Build of configuration Debug for project Ti Chronos - Sensor Hub ****
+make all 
+Building file: ../Demo App/main.c
+msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
+Invoking: MSP430 C Compiler
+make: *** [Demo App/main.o] Error 1
+msp430-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti" -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -O0 -g -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
+18:35:46 **** Incremental Build of configuration Release for project Ti Chronos - Sensor Hub ****
+make all 
+Building file: ../Demo App/main.c
+msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
+make: *** [Demo App/main.o] Error 1
+Invoking: MSP430 C Compiler
+msp430-gcc -O3 -g0 -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
+18:35:46 **** Incremental Build of configuration Debug for project Ti Chronos - Sensor Hub ****
+make all 
+Building file: ../Demo App/main.c
+msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
+Invoking: MSP430 C Compiler
+make: *** [Demo App/main.o] Error 1
+msp430-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti" -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -O0 -g -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
