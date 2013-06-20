@@ -28,7 +28,6 @@ void get_bluerobin_data(void){
   return;
 }
 
-// Double definition
 /*typedef enum
 {
   BLUEROBIN_OFF = 0, // Not connected
@@ -37,13 +36,11 @@ void get_bluerobin_data(void){
   BLUEROBIN_ERROR // Error occurred while trying to connect or while connected
 } BlueRobin_state_t;*/
 
-
-// Double definition
-/*typedef enum
+typedef enum
 {
   BLUEROBIN_NO_UPDATE = 0, // No new data available
   BLUEROBIN_NEW_DATA // New data arrived
-} BlueRobin_update_t;*/
+} BlueRobin_update_t;
 
 struct br
 {
