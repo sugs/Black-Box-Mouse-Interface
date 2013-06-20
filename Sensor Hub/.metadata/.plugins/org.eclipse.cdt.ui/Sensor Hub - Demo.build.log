@@ -1,0 +1,10 @@
+20:14:34 **** Incremental Build of configuration Debug for project Sensor Hub - Demo ****
+make all 
+Building file: ../logic/acceleration.c
+msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
+Invoking: MSP430 C Compiler
+make: *** [logic/acceleration.o] Error 1
+msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
+
+20:14:34 Build Finished (took 142ms)
+
