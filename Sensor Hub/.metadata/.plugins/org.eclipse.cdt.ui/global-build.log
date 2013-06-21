@@ -1,42 +1,15 @@
-23:53:44 **** Incremental Build of configuration Release for project Ti Chronos - Sensor Hub ****
+19:31:09 **** Incremental Build of configuration Debug for project OpenChronos Platform ****
 make all 
-Building file: ../Demo App/main.c
+Building file: ../OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.c
 Invoking: MSP430 C Compiler
-msp430-gcc -O3 -g0 -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
+msp430-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/OpenChronos-master/gcc" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/OpenChronos-master/include" -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -O0 -g -Wall -std=gnu89 -c -o "OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.o" "../OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.c"
 msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-make: *** [Demo App/main.o] Error 1
-23:53:44 **** Incremental Build of configuration Debug for project Ti Chronos - Sensor Hub ****
-make all 
-Building file: ../Demo App/main.c
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-Invoking: MSP430 C Compiler
-make: *** [Demo App/main.o] Error 1
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti" -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -O0 -g -Wall -std=gnu89 -c -o "Demo App/main.o" "../Demo App/main.c"
-20:14:28 **** Build of configuration Debug for project Sensor Hub - Demo ****
-make all 
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-Building file: ../logic/acceleration.c
-make: *** [logic/acceleration.o] Error 1
-Invoking: MSP430 C Compiler
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
-20:14:28 **** Incremental Build of configuration Debug for project Sensor Hub - Demo ****
-make all 
-Building file: ../logic/acceleration.c
-Invoking: MSP430 C Compiler
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-make: *** [logic/acceleration.o] Error 1
-20:14:33 **** Incremental Build of configuration Debug for project Sensor Hub - Demo ****
-make all 
-Building file: ../logic/acceleration.c
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-make: *** [logic/acceleration.o] Error 1
-Invoking: MSP430 C Compiler
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
-20:14:34 **** Incremental Build of configuration Debug for project Sensor Hub - Demo ****
-make all 
-Building file: ../logic/acceleration.c
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-Invoking: MSP430 C Compiler
-make: *** [logic/acceleration.o] Error 1
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
+make: *** [OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.o] Error 1
+19:31:19 **** Clean-only build of configuration Debug for project OpenChronos Platform ****
+make clean 
+rm -rf  ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_ioctl.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_join.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_link.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_mgmt.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_ping.o ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_security.o  ./OpenChronos-master/simpliciti/Components/nwk/nwk.o ./OpenChronos-master/simpliciti/Components/nwk/nwk_QMgmt.o ./OpenChronos-master/simpliciti/Components/nwk/nwk_api.o ./OpenChronos-master/simpliciti/Components/nwk/nwk_frame.o ./OpenChronos-master/simpliciti/Components/nwk/nwk_globals.o  ./OpenChronos-master/simpliciti/Components/mrfi/radios/family5/mrfi_radio.o ./OpenChronos-master/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.o  ./OpenChronos-master/simpliciti/Components/mrfi/mrfi.o  ./OpenChronos-master/simpliciti/Components/bsp/drivers/code/bsp_buttons.o ./OpenChronos-master/simpliciti/Components/bsp/drivers/code/bsp_leds.o  ./OpenChronos-master/simpliciti/Components/bsp/boards/CC430EM/bsp_board.o ./OpenChronos-master/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.o  ./OpenChronos-master/simpliciti/Components/bsp/bsp.o  ./OpenChronos-master/simpliciti/Applications/application/End_Device/main_ED_BM.o  ./OpenChronos-master/logic/MYsimpliciti.o ./OpenChronos-master/logic/acceleration.o ./OpenChronos-master/logic/alarm.o ./OpenChronos-master/logic/altitude.o ./OpenChronos-master/logic/battery.o ./OpenChronos-master/logic/bluerobin.o ./OpenChronos-master/logic/clock.o ./OpenChronos-master/logic/date.o ./OpenChronos-master/logic/dst.o ./OpenChronos-master/logic/eggtimer.o ./OpenChronos-master/logic/gps.o ./OpenChronos-master/logic/menu.o ./OpenChronos-master/logic/phase_clock.o ./OpenChronos-master/logic/prout.o ./OpenChronos-master/logic/rfbsl.o ./OpenChronos-master/logic/rfsimpliciti.o ./OpenChronos-master/logic/sequence.o ./OpenChronos-master/logic/sidereal.o ./OpenChronos-master/logic/stopwatch.o ./OpenChronos-master/logic/strength.o ./OpenChronos-master/logic/temperature.o ./OpenChronos-master/logic/test.o ./OpenChronos-master/logic/user.o ./OpenChronos-master/logic/vario.o  ./OpenChronos-master/gcc/intrinsics.o  ./OpenChronos-master/driver/adc12.o ./OpenChronos-master/driver/buzzer.o ./OpenChronos-master/driver/display.o ./OpenChronos-master/driver/display1.o ./OpenChronos-master/driver/dsp.o ./OpenChronos-master/driver/infomem.o ./OpenChronos-master/driver/pmm.o ./OpenChronos-master/driver/ports.o ./OpenChronos-master/driver/radio.o ./OpenChronos-master/driver/rf1a.o ./OpenChronos-master/driver/timer.o ./OpenChronos-master/driver/vti_as.o ./OpenChronos-master/driver/vti_ps.o  ./OpenChronos-master/ezchronos.o  libUSER_OBJS.a  "OpenChronos Platform.elf"
+ 
+19:31:19 **** Clean-only build of configuration Debug for project Sensor Hub - Demo ****
+make clean 
+rm -rf  ./logic/acceleration.o ./logic/agility.o ./logic/alarm.o ./logic/altitude.o ./logic/battery.o ./logic/bluerobin.o ./logic/clock.o ./logic/countdowntimer.o ./logic/date.o ./logic/display2.o ./logic/menu.o ./logic/miscellaneous.o ./logic/random.o ./logic/rfbsl.o ./logic/rfsimpliciti.o ./logic/stopwatch.o ./logic/stubs.o ./logic/temperature.o ./logic/test.o ./logic/user.o  ./driver/adc12.o ./driver/buzzer.o ./driver/display.o ./driver/display1.o ./driver/pmm.o ./driver/ports.o ./driver/radio.o ./driver/rf1a.o ./driver/timer.o ./driver/vti_as.o ./driver/vti_ps.o  ./Main\ -\ Demo/main.o  libUSER_OBJS.a  "Sensor Hub - Demo.elf"
+ 

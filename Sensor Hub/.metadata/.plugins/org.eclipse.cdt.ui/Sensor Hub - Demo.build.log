@@ -1,10 +1,7 @@
-20:14:34 **** Incremental Build of configuration Debug for project Sensor Hub - Demo ****
-make all 
-Building file: ../logic/acceleration.c
-msp430-gcc: error trying to exec 'cc1': execvp: No such file or directory
-Invoking: MSP430 C Compiler
-make: *** [logic/acceleration.o] Error 1
-msp430-gcc -I"/Users/francispapineau/Documents/4th year project/msp430-toolchain-mac_os_x-x86_64-2.2/msp430/include" -include"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/project.h" -O0 -g -Wall -std=gnu89 -c -o "logic/acceleration.o" "../logic/acceleration.c"
+19:31:19 **** Clean-only build of configuration Debug for project Sensor Hub - Demo ****
+make clean 
+rm -rf  ./logic/acceleration.o ./logic/agility.o ./logic/alarm.o ./logic/altitude.o ./logic/battery.o ./logic/bluerobin.o ./logic/clock.o ./logic/countdowntimer.o ./logic/date.o ./logic/display2.o ./logic/menu.o ./logic/miscellaneous.o ./logic/random.o ./logic/rfbsl.o ./logic/rfsimpliciti.o ./logic/stopwatch.o ./logic/stubs.o ./logic/temperature.o ./logic/test.o ./logic/user.o  ./driver/adc12.o ./driver/buzzer.o ./driver/display.o ./driver/display1.o ./driver/pmm.o ./driver/ports.o ./driver/radio.o ./driver/rf1a.o ./driver/timer.o ./driver/vti_as.o ./driver/vti_ps.o  ./Main\ -\ Demo/main.o  libUSER_OBJS.a  "Sensor Hub - Demo.elf"
+ 
 
-20:14:34 Build Finished (took 142ms)
+19:31:20 Build Finished (took 321ms)
 

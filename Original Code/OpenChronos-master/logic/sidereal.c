@@ -215,7 +215,7 @@ void sync_sidereal(void)
 	sidtime %=60;
 	sSidereal_time.second = sidtime;
 	// Set clock timer for one sidereal second in the future
-	Timer0_A1_Start();
+	Timer0_A1_Start(sSidereal_time.second + 1);
 	
 	//sync=1: automatically sync only one time
 	if (sSidereal_time.sync==1)
@@ -516,7 +516,7 @@ void mx_sidereal(u8 line)
 				sSidereal_time.second = seconds;
 
 				// Set clock timer for one sidereal second in the future
-				Timer0_A1_Start();
+				Timer0_A1_Start(sSidereal_time.second + 1);
 			}
 			
 			// Full display update is done when returning from function
