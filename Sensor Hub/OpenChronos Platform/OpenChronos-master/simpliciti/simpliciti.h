@@ -85,6 +85,8 @@
 // ---------------------------------------------------------------
 // Generic defines and variables
 
+#include "project.h"
+
 // Entry point into SimpliciTI library
 extern unsigned char simpliciti_link(void);
 

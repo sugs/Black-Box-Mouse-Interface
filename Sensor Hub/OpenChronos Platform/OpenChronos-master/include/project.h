@@ -81,6 +81,10 @@
 typedef u8 line_t;
 typedef u8 update_t;
 
+typedef u8 uint8_t;
+typedef u16 uint16_t;
+typedef u32 uint32_t;
+
 typedef enum
 {
   MENU_ITEM_NOT_VISIBLE = 0,   	// Menu item is not visible

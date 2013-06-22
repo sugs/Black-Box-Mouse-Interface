@@ -49,6 +49,10 @@
 #define NWK_FREQ_TBL_SIZE  1
 #endif
 
+
+typedef <#existing#> <#new#>;
+
+
 typedef struct
 {
   uint8_t  addr[NET_ADDR_SIZE];

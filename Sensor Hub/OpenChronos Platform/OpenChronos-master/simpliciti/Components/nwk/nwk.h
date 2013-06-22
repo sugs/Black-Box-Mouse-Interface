@@ -38,6 +38,8 @@
 
 // pfs added
 #include "../../Applications/configuration/smpl_nwk_config.h"
+#include "project.h"
+
 
 /* well known ports*/
 #define SMPL_PORT_PING          0x01
