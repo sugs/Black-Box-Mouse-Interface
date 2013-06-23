@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structsmplVersionInfo__t" kind="struct" prot="public">
+    <compoundname>smplVersionInfo_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmplVersionInfo__t_1a69ba4ce44c8b3df5af22db880cdb9c20" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t protocolVersion</definition>
+        <argsstring></argsstring>
+        <name>protocolVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="279" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmplVersionInfo__t_1a3276b46fb43e043f84b30bf9d61b7a46" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t fwVerString[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>fwVerString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="280" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="278" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="277" bodyend="281"/>
+    <listofallmembers>
+      <member refid="structsmplVersionInfo__t_1a3276b46fb43e043f84b30bf9d61b7a46" prot="public" virt="non-virtual"><scope>smplVersionInfo_t</scope><name>fwVerString</name></member>
+      <member refid="structsmplVersionInfo__t_1a69ba4ce44c8b3df5af22db880cdb9c20" prot="public" virt="non-virtual"><scope>smplVersionInfo_t</scope><name>protocolVersion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

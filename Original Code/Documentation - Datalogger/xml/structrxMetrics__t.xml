@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structrxMetrics__t" kind="struct" prot="public">
+    <compoundname>rxMetrics_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrxMetrics__t_1a587690cf0776e3ab29f446ea6dc988d4" prot="public" static="no" mutable="no">
+        <type><ref refid="nwk__types_8h_1a35d5bc216e33176cc91f2bbff3bb66cc" kindref="member">rssi_t</ref></type>
+        <definition>rssi_t rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="133" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrxMetrics__t_1a0dd69605aea6dba42ffd851067dbfe77" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t lqi</definition>
+        <argsstring></argsstring>
+        <name>lqi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="134" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="132" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="131" bodyend="135"/>
+    <listofallmembers>
+      <member refid="structrxMetrics__t_1a0dd69605aea6dba42ffd851067dbfe77" prot="public" virt="non-virtual"><scope>rxMetrics_t</scope><name>lqi</name></member>
+      <member refid="structrxMetrics__t_1a587690cf0776e3ab29f446ea6dc988d4" prot="public" virt="non-virtual"><scope>rxMetrics_t</scope><name>rssi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

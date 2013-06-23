@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structioctlToken__t" kind="struct" prot="public">
+    <compoundname>ioctlToken_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structioctlToken__t_1a79dabe0f00ed3a1ff15901ad3723f16a" prot="public" static="no" mutable="no">
+        <type><ref refid="nwk__types_8h_1a3369a43c2500da7fabaa8d4b8effb706" kindref="member">tokenType_t</ref></type>
+        <definition>tokenType_t tokenType</definition>
+        <argsstring></argsstring>
+        <name>tokenType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="162" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structioctlToken__t_1a6730f3039f1596a8af51447e361caae5" prot="public" static="no" mutable="no">
+        <type><ref refid="uniontoken__t" kindref="compound">token_t</ref></type>
+        <definition>token_t token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="163" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="44">
+        <label>token_t</label>
+        <link refid="uniontoken__t"/>
+      </node>
+      <node id="43">
+        <label>ioctlToken_t</label>
+        <link refid="structioctlToken__t"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>token</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="161" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="160" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structioctlToken__t_1a6730f3039f1596a8af51447e361caae5" prot="public" virt="non-virtual"><scope>ioctlToken_t</scope><name>token</name></member>
+      <member refid="structioctlToken__t_1a79dabe0f00ed3a1ff15901ad3723f16a" prot="public" virt="non-virtual"><scope>ioctlToken_t</scope><name>tokenType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

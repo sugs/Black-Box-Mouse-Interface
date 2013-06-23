@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structtime" kind="struct" prot="public">
+    <compoundname>time</compoundname>
+    <includes refid="clock_8h" local="yes">clock.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtime_1a6a2672b74bddd00613c7fc2b4cd92b3b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 system_time</definition>
+        <argsstring></argsstring>
+        <name>system_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="66" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1a3e8544bc695992c4f9df78288018341b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 drawFlag</definition>
+        <argsstring></argsstring>
+        <name>drawFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="69" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1ae1915be5ea33290542c98fcc2ec95f8c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 line1ViewStyle</definition>
+        <argsstring></argsstring>
+        <name>line1ViewStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="72" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1aee425ac71759c167362d22f272d89804" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="75" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1ae0a353dafc35c2935794f93a4e473a19" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1abaa2f1dd9c0722c3f314a8d3505fe630" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtime_1a2c7b985e90dbecdd0324cf732375d4ed" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 last_activity</definition>
+        <argsstring></argsstring>
+        <name>last_activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="80" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" line="65" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/clock.h" bodystart="64" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structtime_1a3e8544bc695992c4f9df78288018341b" prot="public" virt="non-virtual"><scope>time</scope><name>drawFlag</name></member>
+      <member refid="structtime_1aee425ac71759c167362d22f272d89804" prot="public" virt="non-virtual"><scope>time</scope><name>hour</name></member>
+      <member refid="structtime_1a2c7b985e90dbecdd0324cf732375d4ed" prot="public" virt="non-virtual"><scope>time</scope><name>last_activity</name></member>
+      <member refid="structtime_1ae1915be5ea33290542c98fcc2ec95f8c" prot="public" virt="non-virtual"><scope>time</scope><name>line1ViewStyle</name></member>
+      <member refid="structtime_1ae0a353dafc35c2935794f93a4e473a19" prot="public" virt="non-virtual"><scope>time</scope><name>minute</name></member>
+      <member refid="structtime_1abaa2f1dd9c0722c3f314a8d3505fe630" prot="public" virt="non-virtual"><scope>time</scope><name>second</name></member>
+      <member refid="structtime_1a6a2672b74bddd00613c7fc2b4cd92b3b" prot="public" virt="non-virtual"><scope>time</scope><name>system_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

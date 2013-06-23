@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_decd48cfde3ba47545e097c003398096" kind="dir">
+    <compoundname>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/</compoundname>
+    <innerfile refid="adc12_8c">adc12.c</innerfile>
+    <innerfile refid="adc12_8h">adc12.h</innerfile>
+    <innerfile refid="buzzer_8c">buzzer.c</innerfile>
+    <innerfile refid="buzzer_8h">buzzer.h</innerfile>
+    <innerfile refid="display_8c">display.c</innerfile>
+    <innerfile refid="display_8h">display.h</innerfile>
+    <innerfile refid="display1_8c">display1.c</innerfile>
+    <innerfile refid="pmm_8c">pmm.c</innerfile>
+    <innerfile refid="pmm_8h">pmm.h</innerfile>
+    <innerfile refid="ports_8c">ports.c</innerfile>
+    <innerfile refid="ports_8h">ports.h</innerfile>
+    <innerfile refid="radio_8c">radio.c</innerfile>
+    <innerfile refid="radio_8h">radio.h</innerfile>
+    <innerfile refid="rf1a_8c">rf1a.c</innerfile>
+    <innerfile refid="rf1a_8h">rf1a.h</innerfile>
+    <innerfile refid="timer_8c">timer.c</innerfile>
+    <innerfile refid="timer_8h">timer.h</innerfile>
+    <innerfile refid="vti__as_8c">vti_as.c</innerfile>
+    <innerfile refid="vti__as_8h">vti_as.h</innerfile>
+    <innerfile refid="vti__ps_8c">vti_ps.c</innerfile>
+    <innerfile refid="vti__ps_8h">vti_ps.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/"/>
+  </compounddef>
+</doxygen>

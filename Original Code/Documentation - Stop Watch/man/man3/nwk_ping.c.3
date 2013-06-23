@@ -1,0 +1,82 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ping.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ping.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk_frame\&.h'\fP
+.br
+\fC#include 'nwk\&.h'\fP
+.br
+\fC#include 'nwk_ping\&.h'\fP
+.br
+\fC#include 'nwk_globals\&.h'\fP
+.br
+\fC#include 'nwk_api\&.h'\fP
+.br
+\fC#include 'nwk_freq\&.h'\fP
+.br
+\fC#include 'nwk_security\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBsmpl_send_ping_reply\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "static void \fBhandlePingRequest\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "void \fBnwk_pingInit\fP (void)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_ping\fP (\fBlinkID_t\fP lid)"
+.br
+.ti -1c
+.RI "\fBfhStatus_t\fP \fBnwk_processPing\fP (\fBmrfiPacket_t\fP *frame)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsTid\fP = 0"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "static void \fBhandlePingRequest\fP (\fBmrfiPacket_t\fP *frame)\fC [static]\fP"
+.PP
+Definition at line 301 of file nwk_ping\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_ping\fP (\fBlinkID_t\fPlid)"
+.PP
+Definition at line 118 of file nwk_ping\&.c\&.
+.SS "void \fBnwk_pingInit\fP (void)"
+.PP
+Definition at line 95 of file nwk_ping\&.c\&.
+.SS "\fBfhStatus_t\fP \fBnwk_processPing\fP (\fBmrfiPacket_t\fP *frame)"
+.PP
+Definition at line 252 of file nwk_ping\&.c\&.
+.SS "static void \fBsmpl_send_ping_reply\fP (\fBmrfiPacket_t\fP *frame)\fC [static]\fP"
+.PP
+Definition at line 219 of file nwk_ping\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "volatile \fBuint8_t\fP \fBsTid\fP = 0\fC [static]\fP"
+.PP
+Definition at line 68 of file nwk_ping\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

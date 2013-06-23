@@ -1,0 +1,138 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/timer.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/timer.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'project\&.h'\fP
+.br
+\fC#include 'timer\&.h'\fP
+.br
+\fC#include 'ports\&.h'\fP
+.br
+\fC#include 'buzzer\&.h'\fP
+.br
+\fC#include 'vti_ps\&.h'\fP
+.br
+\fC#include 'vti_as\&.h'\fP
+.br
+\fC#include 'display\&.h'\fP
+.br
+\fC#include 'clock\&.h'\fP
+.br
+\fC#include 'battery\&.h'\fP
+.br
+\fC#include 'stopwatch\&.h'\fP
+.br
+\fC#include 'alarm\&.h'\fP
+.br
+\fC#include 'altitude\&.h'\fP
+.br
+\fC#include 'rfsimpliciti\&.h'\fP
+.br
+\fC#include 'simpliciti\&.h'\fP
+.br
+\fC#include 'acceleration\&.h'\fP
+.br
+\fC#include 'bluerobin\&.h'\fP
+.br
+\fC#include 'temperature\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTimer0_Init\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_Stop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A1_Start\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A1_Stop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A3_Start\fP (\fBu16\fP ticks)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A3_Stop\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_A4_Delay\fP (\fBu16\fP ticks)"
+.br
+.ti -1c
+.RI "void \fBBRRX_TimerTask_v\fP (void)"
+.br
+.ti -1c
+.RI "void \fBto_lpm\fP (void)"
+.br
+.ti -1c
+.RI "void \fBTimer0_Start\fP (void)"
+.br
+.ti -1c
+.RI "__interrupt void \fBTIMER0_A0_ISR\fP (void)"
+.br
+.ti -1c
+.RI "__interrupt void \fBTIMER0_A1_5_ISR\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "void(* \fBfptr_Timer0_A3_function\fP )(void)"
+.br
+.ti -1c
+.RI "struct \fBtimer\fP \fBsTimer\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void \fBBRRX_TimerTask_v\fP (void)"
+.PP
+Definition at line 7 of file stubs\&.c\&.
+.SS "__interrupt void \fBTIMER0_A0_ISR\fP (void)"
+.PP
+Definition at line 246 of file timer\&.c\&.
+.SS "__interrupt void \fBTIMER0_A1_5_ISR\fP (void)"
+.PP
+Definition at line 460 of file timer\&.c\&.
+.SS "void \fBTimer0_A1_Start\fP (void)"
+.SS "void \fBTimer0_A1_Stop\fP (void)"
+.SS "void \fBTimer0_A3_Start\fP (\fBu16\fPticks)"
+.PP
+Definition at line 148 of file timer\&.c\&.
+.SS "void \fBTimer0_A3_Stop\fP (void)"
+.PP
+Definition at line 176 of file timer\&.c\&.
+.SS "void \fBTimer0_A4_Delay\fP (\fBu16\fPticks)"
+.PP
+Definition at line 189 of file timer\&.c\&.
+.SS "void \fBTimer0_Init\fP (void)"
+.PP
+Definition at line 99 of file timer\&.c\&.
+.SS "void \fBTimer0_Start\fP (void)"
+.PP
+Definition at line 119 of file timer\&.c\&.
+.SS "void \fBTimer0_Stop\fP (void)"
+.PP
+Definition at line 132 of file timer\&.c\&.
+.SS "void \fBto_lpm\fP (void)"
+.PP
+Definition at line 667 of file main\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "void(* \fBfptr_Timer0_A3_function\fP)(void)"
+.PP
+Definition at line 76 of file timer\&.c\&.
+.SS "struct \fBtimer\fP \fBsTimer\fP"
+.PP
+Definition at line 85 of file timer\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

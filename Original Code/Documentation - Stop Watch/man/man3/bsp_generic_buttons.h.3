@@ -1,0 +1,220 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_generic_buttons.h" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_generic_buttons.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp_board_defs\&.h'\fP
+.br
+\fC#include 'bsp_macros\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__bsp_BUTTON__\fP(port, bit, low)   ((low) ? (!((port) & BV(bit))) : ((port) & BV(bit)) )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON1_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON1__\fP()   \fB__bsp_BUTTON__\fP( \fB__bsp_BUTTON1_PORT__\fP, \fB__bsp_BUTTON1_BIT__\fP, \fB__bsp_BUTTON1_IS_ACTIVE_LOW__\fP )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON1_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON2_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON2__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON2_PORT__, __bsp_BUTTON2_BIT__, __bsp_BUTTON2_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON2_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON3_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON3__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON3_PORT__, __bsp_BUTTON3_BIT__, __bsp_BUTTON3_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON3_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON4_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON4__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON4_PORT__, __bsp_BUTTON4_BIT__, __bsp_BUTTON4_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON4_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON5_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON5__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON5_PORT__, __bsp_BUTTON5_BIT__, __bsp_BUTTON5_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON5_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON6_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON6__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON6_PORT__, __bsp_BUTTON6_BIT__, __bsp_BUTTON6_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON6_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON7_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON7__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON7_PORT__, __bsp_BUTTON7_BIT__, __bsp_BUTTON7_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON7_CONFIG__\fP()   /* nothing required */"
+.br
+.ti -1c
+.RI "#define \fB__bsp_NUM_BUTTON8_DEFINES__\fP"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON8__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON8_PORT__, __bsp_BUTTON8_BIT__, __bsp_BUTTON8_IS_ACTIVE_LOW__ )"
+.br
+.ti -1c
+.RI "#define \fB__bsp_BUTTON8_CONFIG__\fP()   /* nothing required */"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fB__bsp_BUTTON1__\fP()   \fB__bsp_BUTTON__\fP( \fB__bsp_BUTTON1_PORT__\fP, \fB__bsp_BUTTON1_BIT__\fP, \fB__bsp_BUTTON1_IS_ACTIVE_LOW__\fP )"
+.PP
+Definition at line 62 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON1_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 63 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON2__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON2_PORT__, __bsp_BUTTON2_BIT__, __bsp_BUTTON2_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 76 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON2_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 77 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON3__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON3_PORT__, __bsp_BUTTON3_BIT__, __bsp_BUTTON3_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 90 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON3_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 91 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON4__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON4_PORT__, __bsp_BUTTON4_BIT__, __bsp_BUTTON4_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 104 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON4_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 105 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON5__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON5_PORT__, __bsp_BUTTON5_BIT__, __bsp_BUTTON5_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 118 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON5_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 119 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON6__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON6_PORT__, __bsp_BUTTON6_BIT__, __bsp_BUTTON6_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 132 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON6_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 133 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON7__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON7_PORT__, __bsp_BUTTON7_BIT__, __bsp_BUTTON7_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 146 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON7_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 147 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON8__\fP()   \fB__bsp_BUTTON__\fP( __bsp_BUTTON8_PORT__, __bsp_BUTTON8_BIT__, __bsp_BUTTON8_IS_ACTIVE_LOW__ )"
+.PP
+Definition at line 160 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON8_CONFIG__\fP()   /* nothing required */"
+.PP
+Definition at line 161 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_BUTTON__\fP(port, bit, low)   ((low) ? (!((port) & BV(bit))) : ((port) & BV(bit)) )"
+.PP
+Definition at line 54 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON1_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON1_PORT__)  + \
+                                      (defined __bsp_BUTTON1_BIT__)   + \
+                                      (defined __bsp_BUTTON1_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 58 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON2_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON2_PORT__)  + \
+                                      (defined __bsp_BUTTON2_BIT__)   + \
+                                      (defined __bsp_BUTTON2_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 72 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON3_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON3_PORT__)  + \
+                                      (defined __bsp_BUTTON3_BIT__)   + \
+                                      (defined __bsp_BUTTON3_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 86 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON4_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON4_PORT__)  + \
+                                      (defined __bsp_BUTTON4_BIT__)   + \
+                                      (defined __bsp_BUTTON4_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 100 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON5_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON5_PORT__)  + \
+                                      (defined __bsp_BUTTON5_BIT__)   + \
+                                      (defined __bsp_BUTTON5_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 114 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON6_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON6_PORT__)  + \
+                                      (defined __bsp_BUTTON6_BIT__)   + \
+                                      (defined __bsp_BUTTON6_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 128 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON7_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON7_PORT__)  + \
+                                      (defined __bsp_BUTTON7_BIT__)   + \
+                                      (defined __bsp_BUTTON7_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 142 of file bsp_generic_buttons\&.h\&.
+.SS "#define \fB__bsp_NUM_BUTTON8_DEFINES__\fP"\fBValue:\fP
+.PP
+.nf
+((defined __bsp_BUTTON8_PORT__)  + \
+                                      (defined __bsp_BUTTON8_BIT__)   + \
+                                      (defined __bsp_BUTTON8_IS_ACTIVE_LOW__))
+.fi
+.PP
+Definition at line 156 of file bsp_generic_buttons\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

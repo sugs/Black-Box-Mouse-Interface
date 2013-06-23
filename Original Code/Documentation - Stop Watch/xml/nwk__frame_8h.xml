@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="nwk__frame_8h" kind="file">
+    <compoundname>nwk_frame.h</compoundname>
+    <includedby refid="nwk_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk.c</includedby>
+    <includedby refid="nwk__api_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</includedby>
+    <includedby refid="nwk__frame_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</includedby>
+    <includedby refid="nwk__QMgmt_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</includedby>
+    <includedby refid="nwk__freq_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_freq.c</includedby>
+    <includedby refid="nwk__ioctl_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c</includedby>
+    <includedby refid="nwk__join_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.c</includedby>
+    <includedby refid="nwk__link_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_link.c</includedby>
+    <includedby refid="nwk__mgmt_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</includedby>
+    <includedby refid="nwk__ping_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ping.c</includedby>
+    <includedby refid="nwk__security_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_security.c</includedby>
+    <invincdepgraph>
+      <node id="1460">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ioctl.c</label>
+        <link refid="nwk__ioctl_8c"/>
+      </node>
+      <node id="1456">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_api.c</label>
+        <link refid="nwk__api_8c"/>
+      </node>
+      <node id="1459">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_freq.c</label>
+        <link refid="nwk__freq_8c"/>
+      </node>
+      <node id="1463">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_mgmt.c</label>
+        <link refid="nwk__mgmt_8c"/>
+      </node>
+      <node id="1461">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.c</label>
+        <link refid="nwk__join_8c"/>
+      </node>
+      <node id="1457">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c</label>
+        <link refid="nwk__frame_8c"/>
+      </node>
+      <node id="1454">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h</label>
+        <link refid="nwk_frame.h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1458" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+      </node>
+      <node id="1462">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_link.c</label>
+        <link refid="nwk__link_8c"/>
+      </node>
+      <node id="1458">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c</label>
+        <link refid="nwk__QMgmt_8c"/>
+      </node>
+      <node id="1464">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_ping.c</label>
+        <link refid="nwk__ping_8c"/>
+      </node>
+      <node id="1465">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_security.c</label>
+        <link refid="nwk__security_8c"/>
+      </node>
+      <node id="1455">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk.c</label>
+        <link refid="nwk_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsigInfo__t" prot="public">sigInfo_t</innerclass>
+    <innerclass refid="structframeInfo__t" prot="public">frameInfo_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="nwk__frame_8h_1a5a7be3a994610a0cb47128d260566c2d" prot="public" static="no">
+        <name>F_PORT_OS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="44" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a77701e0159b288412e6bdde2d7145ddf" prot="public" static="no">
+        <name>F_PORT_OS_MSK</name>
+        <initializer>(0x3F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="45" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a496e790aeb0fd6cbaa710fc5f75299c4" prot="public" static="no">
+        <name>F_ENCRYPT_OS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="46" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ab7bd35af33ef2ddf86e5927a31dfedf6" prot="public" static="no">
+        <name>F_ENCRYPT_OS_MSK</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="47" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ac86565c7a65b06b8f66594c4273d1825" prot="public" static="no">
+        <name>F_FWD_FRAME</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="48" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1aba6c784cf7a9b07dc99aea4920d07f94" prot="public" static="no">
+        <name>F_FWD_FRAME_MSK</name>
+        <initializer>(0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="49" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a5fbc1732342fb58e47c6140c2f4410d9" prot="public" static="no">
+        <name>F_RX_TYPE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="50" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1acf980f9b40b3b065651b67a137f194b2" prot="public" static="no">
+        <name>F_RX_TYPE_MSK</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="51" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a0bfc6d0d6673de70c3fb46f28f8b82a8" prot="public" static="no">
+        <name>F_ACK_REQ</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="52" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a527794f82610bfc3eb6ab865ac07a7c2" prot="public" static="no">
+        <name>F_ACK_REQ_MSK</name>
+        <initializer>(0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ad82c095eadaefe39aba9ca93a06c9b02" prot="public" static="no">
+        <name>F_ACK_RPLY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="54" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a04772e362e0c132e93cad1ef76c1f39b" prot="public" static="no">
+        <name>F_ACK_RPLY_MSK</name>
+        <initializer>(0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="55" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1acd7ccf75846e547ddc8d0faddbbacc60" prot="public" static="no">
+        <name>F_TX_DEVICE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="56" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a9ae7e95b25e8f24cb236188a31ebfa74" prot="public" static="no">
+        <name>F_TX_DEVICE_MSK</name>
+        <initializer>(0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="57" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a02c165094e266b01869ee52db629f067" prot="public" static="no">
+        <name>F_HOP_COUNT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="58" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a8621e4de4faf20a0714b7e281ff721b2" prot="public" static="no">
+        <name>F_HOP_COUNT_MSK</name>
+        <initializer>(0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a1bc1c26c21b26402bfda09bdc1c90868" prot="public" static="no">
+        <name>F_TRACTID_OS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="60" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1afc7c3bb7a82b960f955e4d4b6c545d60" prot="public" static="no">
+        <name>F_TRACTID_OS_MSK</name>
+        <initializer>(0xFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="61" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a77e652a3d021c16099b89c386a8a8dfb" prot="public" static="no">
+        <name>SMPL_NWK_HDR_SIZE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ab7892647ac5e04321278a0775ac8fe98" prot="public" static="no">
+        <name>F_SECURE_OS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a199b7044b1b6881960326547babdbb53" prot="public" static="no">
+        <name>F_APP_PAYLOAD_OS</name>
+        <initializer>(<ref refid="nwk__frame_8h_1a77e652a3d021c16099b89c386a8a8dfb" kindref="member">SMPL_NWK_HDR_SIZE</ref>+<ref refid="nwk__frame_8h_1ab7892647ac5e04321278a0775ac8fe98" kindref="member">F_SECURE_OS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="81" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a011de1bee0564c370081d9433d43d42e" prot="public" static="no">
+        <name>F_RX_TYPE_USER_CTL</name>
+        <initializer>0x00    /* does not poll... */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="84" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a0935cb8a6346b340f78ec3a8a00c2ee1" prot="public" static="no">
+        <name>F_RX_TYPE_POLLS</name>
+        <initializer>0x40    /* polls for held messages */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="85" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a6fd486496ffb070d45a16d26acb27f85" prot="public" static="no">
+        <name>F_ACK_REQ_TYPE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="87" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ae5a51c219304fb398aaf8374fc9a99c2" prot="public" static="no">
+        <name>F_ACK_RPLY_TYPE</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="88" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a62b552c6ba070dd56fc51f812e1de168" prot="public" static="no">
+        <name>F_FRAME_FWD_TYPE</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="89" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1af952d9fe782c4bd531d79a23a07f3c38" prot="public" static="no">
+        <name>F_FRAME_ENCRYPT_TYPE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="90" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a7823315c39ec3c6e7930d0f3ba24a3fa" prot="public" static="no">
+        <name>F_TX_DEVICE_ED</name>
+        <initializer>0x00    /* End Device */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="93" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a34353e113df0cb236e097e60afd2aba1" prot="public" static="no">
+        <name>F_TX_DEVICE_RE</name>
+        <initializer>0x10    /* Range Extender */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="94" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1ab65ec4721517278964d094e8efee1ab4" prot="public" static="no">
+        <name>F_TX_DEVICE_AP</name>
+        <initializer>0x20    /* Access Point */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="95" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1afd30e32e5edd7f396737e4a33dae677d" prot="public" static="no">
+        <name>GET_FROM_FRAME</name>
+        <param><defname>b</defname></param>
+        <param><defname>f</defname></param>
+        <initializer>((b)[f] &amp; (f##_MSK))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="98" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a8f66fe4e5ecbeed97f6058055bdd2820" prot="public" static="no">
+        <name>PUT_INTO_FRAME</name>
+        <param><defname>b</defname></param>
+        <param><defname>f</defname></param>
+        <param><defname>v</defname></param>
+        <initializer>do {(b)[f] = ((b)[f] &amp; ~(f##_MSK)) | (v); } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="103" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1afc16b766b26949d562ece6cb4f42a5a9" prot="public" static="no">
+        <name>FI_AVAILABLE</name>
+        <initializer>0   /* entry available for use */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="109" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1accb9a94b3b958f773da5e1337a65e662" prot="public" static="no">
+        <name>FI_INUSE_UNTIL_DEL</name>
+        <initializer>1   /* in use. will be explicitly reclaimed */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="110" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a6641ecbcd2d2dd36db827ac1bc41f3e7" prot="public" static="no">
+        <name>FI_INUSE_UNTIL_TX</name>
+        <initializer>2   /* in use. will be reclaimed after Tx */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="111" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a89d8f16d40d2678354676e0d42a45d3c" prot="public" static="no">
+        <name>FI_INUSE_UNTIL_FWD</name>
+        <initializer>3   /* in use until forwarded by AP */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="112" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="nwk__frame_8h_1a27fe00ca68dfe76e1d367a4fd9ece1e2" prot="public" static="no">
+        <name>FI_INUSE_TRANSITION</name>
+        <initializer>4   /* being retrieved. do not delete in Rx <ref refid="bm_8h_1a5f508dad67615d631d3f28b81a44f329" kindref="member">ISR</ref> thread. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="113" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nwk__frame_8h_1a2b54b994908377a9667abecc881ae865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref> *</type>
+        <definition>frameInfo_t* nwk_buildFrame</definition>
+        <argsstring>(uint8_t, uint8_t *msg, uint8_t len, uint8_t hops)</argsstring>
+        <name>nwk_buildFrame</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>hops</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="130" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" bodystart="183" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1a1e1acb295cd400fd7aeb4bc047b2d4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_receiveFrame</definition>
+        <argsstring>(void)</argsstring>
+        <name>nwk_receiveFrame</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1a2f59b71a67b189f8e3877f54a3f533b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_frameInit</definition>
+        <argsstring>(uint8_t(*)(linkID_t))</argsstring>
+        <name>nwk_frameInit</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>(*)(<ref refid="nwk__types_8h_1a542d45d12faba7ae8fd0c989ef2c8528" kindref="member">linkID_t</ref>)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="135" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" bodystart="126" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1a4963bd958fdbdf25b0072392056e5796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_retrieveFrame</definition>
+        <argsstring>(rcvContext_t *, uint8_t *, uint8_t *, addr_t *, uint8_t *)</argsstring>
+        <name>nwk_retrieveFrame</name>
+        <param>
+          <type><ref refid="structrcvContext__t" kindref="compound">rcvContext_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structaddr__t" kindref="compound">addr_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1afd3a9e8b37ea6399dcf6bc99c178409a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref></type>
+        <definition>smplStatus_t nwk_sendFrame</definition>
+        <argsstring>(frameInfo_t *, uint8_t txOption)</argsstring>
+        <name>nwk_sendFrame</name>
+        <param>
+          <type><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>txOption</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="137" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" bodystart="646" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1affbba74d1ab96f24ccd1eee147f8c8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref> *</type>
+        <definition>frameInfo_t* nwk_getSandFFrame</definition>
+        <argsstring>(mrfiPacket_t *, uint8_t)</argsstring>
+        <name>nwk_getSandFFrame</name>
+        <param>
+          <type><ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1a9b92ea1e177019598187d98cb9d20f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t nwk_getMyRxType</definition>
+        <argsstring>(void)</argsstring>
+        <name>nwk_getMyRxType</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="139" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" bodystart="685" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1ae2908dda552499370f32846c2b346a3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_SendEmptyPollRspFrame</definition>
+        <argsstring>(mrfiPacket_t *)</argsstring>
+        <name>nwk_SendEmptyPollRspFrame</name>
+        <param>
+          <type><ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="nwk__frame_8h_1a76d56d6cdf21e2f44bfb36464ee13fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nwk_replayFrame</definition>
+        <argsstring>(frameInfo_t *)</argsstring>
+        <name>nwk_replayFrame</name>
+        <param>
+          <type><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h" line="147" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" bodystart="768" bodyend="796"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Filename:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>nwk_frame.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2008-12-23<sp/>13:49:41<sp/>-0800<sp/>(Tue,<sp/>23<sp/>Dec<sp/>2008)<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>18651<sp/>$</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Author:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Author:<sp/>lfriedman<sp/>$</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>Description:<sp/><sp/><sp/><sp/>This<sp/>header<sp/>file<sp/>supports<sp/>the<sp/>SimpliciTI<sp/>frame<sp/>handling<sp/>functions.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>Copyright<sp/>2004-2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NWK_FRAME_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NWK_FRAME_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Frame<sp/>field<sp/>defines<sp/>and<sp/>masks.<sp/>Mask<sp/>name<sp/>must<sp/>be<sp/>field<sp/>name<sp/>with<sp/>&apos;_MSK&apos;<sp/>appended</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>so<sp/>the<sp/>GET<sp/>and<sp/>PUT<sp/>macros<sp/>work<sp/>correctly<sp/>--<sp/>they<sp/>use<sp/>token<sp/>pasting.<sp/>Offset<sp/>values</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>are<sp/>with<sp/>respect<sp/>to<sp/>the<sp/>MRFI<sp/>payload<sp/>and<sp/>not<sp/>the<sp/>entire<sp/>frame.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="nwk__frame_8h_1a5a7be3a994610a0cb47128d260566c2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_PORT_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="45" refid="nwk__frame_8h_1a77701e0159b288412e6bdde2d7145ddf" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_PORT_OS_MSK<sp/><sp/><sp/><sp/><sp/>(0x3F)</highlight></codeline>
+<codeline lineno="46" refid="nwk__frame_8h_1a496e790aeb0fd6cbaa710fc5f75299c4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ENCRYPT_OS<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="47" refid="nwk__frame_8h_1ab7bd35af33ef2ddf86e5927a31dfedf6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ENCRYPT_OS_MSK<sp/><sp/>(0x40)</highlight></codeline>
+<codeline lineno="48" refid="nwk__frame_8h_1ac86565c7a65b06b8f66594c4273d1825" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_FWD_FRAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="49" refid="nwk__frame_8h_1aba6c784cf7a9b07dc99aea4920d07f94" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_FWD_FRAME_MSK<sp/><sp/><sp/>(0x80)</highlight></codeline>
+<codeline lineno="50" refid="nwk__frame_8h_1a5fbc1732342fb58e47c6140c2f4410d9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_RX_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="51" refid="nwk__frame_8h_1acf980f9b40b3b065651b67a137f194b2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_RX_TYPE_MSK<sp/><sp/><sp/><sp/><sp/>(0x40)</highlight></codeline>
+<codeline lineno="52" refid="nwk__frame_8h_1a0bfc6d0d6673de70c3fb46f28f8b82a8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_REQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="53" refid="nwk__frame_8h_1a527794f82610bfc3eb6ab865ac07a7c2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_REQ_MSK<sp/><sp/><sp/><sp/><sp/>(0x80)</highlight></codeline>
+<codeline lineno="54" refid="nwk__frame_8h_1ad82c095eadaefe39aba9ca93a06c9b02" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_RPLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="55" refid="nwk__frame_8h_1a04772e362e0c132e93cad1ef76c1f39b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_RPLY_MSK<sp/><sp/><sp/><sp/>(0x08)</highlight></codeline>
+<codeline lineno="56" refid="nwk__frame_8h_1acd7ccf75846e547ddc8d0faddbbacc60" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_TX_DEVICE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="57" refid="nwk__frame_8h_1a9ae7e95b25e8f24cb236188a31ebfa74" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_TX_DEVICE_MSK<sp/><sp/><sp/>(0x30)</highlight></codeline>
+<codeline lineno="58" refid="nwk__frame_8h_1a02c165094e266b01869ee52db629f067" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_HOP_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="59" refid="nwk__frame_8h_1a8621e4de4faf20a0714b7e281ff721b2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_HOP_COUNT_MSK<sp/><sp/><sp/>(0x07)</highlight></codeline>
+<codeline lineno="60" refid="nwk__frame_8h_1a1bc1c26c21b26402bfda09bdc1c90868" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_TRACTID_OS<sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="61" refid="nwk__frame_8h_1afc7c3bb7a82b960f955e4d4b6c545d60" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_TRACTID_OS_MSK<sp/><sp/>(0xFF)</highlight></codeline>
+<codeline lineno="62" refid="nwk__frame_8h_1a77e652a3d021c16099b89c386a8a8dfb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SMPL_NWK_HDR_SIZE<sp/>3</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SMPL_SECURE</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SECURE_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_CTR_OS<sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>counter<sp/>hint<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_CTR_OS_MSK<sp/><sp/>(0xFF)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_ICHK_OS<sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Message<sp/>integrity<sp/>check<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_ICHK_OS_MSK<sp/>(0xFF)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_MAC_OS<sp/><sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Message<sp/>authentication<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SEC_MAC_OS_MSK<sp/><sp/>(0xFF)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="nwk__frame_8h_1ab7892647ac5e04321278a0775ac8fe98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SECURE_OS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>SMPL_SECURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="nwk__frame_8h_1a199b7044b1b6881960326547babdbb53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_APP_PAYLOAD_OS<sp/><sp/>(SMPL_NWK_HDR_SIZE+F_SECURE_OS)</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>sub<sp/>field<sp/>details.<sp/>they<sp/>are<sp/>in<sp/>the<sp/>correct<sp/>bit<sp/>locations<sp/>(already<sp/>shifted)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="nwk__frame_8h_1a011de1bee0564c370081d9433d43d42e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_RX_TYPE_USER_CTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>does<sp/>not<sp/>poll...<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="nwk__frame_8h_1a0935cb8a6346b340f78ec3a8a00c2ee1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_RX_TYPE_POLLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>polls<sp/>for<sp/>held<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="nwk__frame_8h_1a6fd486496ffb070d45a16d26acb27f85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_REQ_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="88" refid="nwk__frame_8h_1ae5a51c219304fb398aaf8374fc9a99c2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_ACK_RPLY_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="89" refid="nwk__frame_8h_1a62b552c6ba070dd56fc51f812e1de168" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_FRAME_FWD_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="90" refid="nwk__frame_8h_1af952d9fe782c4bd531d79a23a07f3c38" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_FRAME_ENCRYPT_TYPE<sp/><sp/><sp/><sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>device<sp/>type<sp/>fields<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="nwk__frame_8h_1a7823315c39ec3c6e7930d0f3ba24a3fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_TX_DEVICE_ED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>End<sp/>Device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="nwk__frame_8h_1a34353e113df0cb236e097e60afd2aba1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_TX_DEVICE_RE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Range<sp/>Extender<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="nwk__frame_8h_1ab65ec4721517278964d094e8efee1ab4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_TX_DEVICE_AP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Access<sp/>Point<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>macro<sp/>to<sp/>get<sp/>a<sp/>field<sp/>from<sp/>a<sp/>frame<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="nwk__frame_8h_1afd30e32e5edd7f396737e4a33dae677d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_FROM_FRAME(b,f)<sp/><sp/>((b)[f]<sp/>&amp;<sp/>(f##_MSK))</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macro<sp/>to<sp/>put<sp/>a<sp/>value<sp/>&apos;v&apos;<sp/>into<sp/>a<sp/>frame<sp/>buffer<sp/>&apos;b&apos;.<sp/>&apos;v&apos;<sp/>value<sp/>must<sp/>already<sp/>be<sp/>shifted</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>if<sp/>necessary.<sp/>&apos;b&apos;<sp/>is<sp/>a<sp/>byte<sp/>array</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="nwk__frame_8h_1a8f66fe4e5ecbeed97f6058055bdd2820" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PUT_INTO_FRAME(b,f,v)<sp/><sp/>do<sp/>{(b)[f]<sp/>=<sp/>((b)[f]<sp/>&amp;<sp/>~(f##_MSK))<sp/>|<sp/>(v);<sp/>}<sp/>while(0)</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>****<sp/><sp/><sp/>frame<sp/>information<sp/>objects</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/>info<sp/>kept<sp/>on<sp/>each<sp/>frame<sp/>object</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="nwk__frame_8h_1afc16b766b26949d562ece6cb4f42a5a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FI_AVAILABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>entry<sp/>available<sp/>for<sp/>use<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="nwk__frame_8h_1accb9a94b3b958f773da5e1337a65e662" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FI_INUSE_UNTIL_DEL<sp/><sp/><sp/>1<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>in<sp/>use.<sp/>will<sp/>be<sp/>explicitly<sp/>reclaimed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="nwk__frame_8h_1a6641ecbcd2d2dd36db827ac1bc41f3e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FI_INUSE_UNTIL_TX<sp/><sp/><sp/><sp/>2<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>in<sp/>use.<sp/>will<sp/>be<sp/>reclaimed<sp/>after<sp/>Tx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="nwk__frame_8h_1a89d8f16d40d2678354676e0d42a45d3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FI_INUSE_UNTIL_FWD<sp/><sp/><sp/>3<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>in<sp/>use<sp/>until<sp/>forwarded<sp/>by<sp/>AP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="nwk__frame_8h_1a27fe00ca68dfe76e1d367a4fd9ece1e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FI_INUSE_TRANSITION<sp/><sp/>4<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>being<sp/>retrieved.<sp/>do<sp/>not<sp/>delete<sp/>in<sp/>Rx<sp/>ISR<sp/>thread.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structsigInfo__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117" refid="structsigInfo__t_1afb67d818cd76cce8057affabcb1979a6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><sp/><sp/><ref refid="structsigInfo__t_1afb67d818cd76cce8057affabcb1979a6" kindref="member">rssi</ref>;</highlight></codeline>
+<codeline lineno="118" refid="structsigInfo__t_1a0dd69605aea6dba42ffd851067dbfe77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><sp/><sp/><ref refid="structsigInfo__t_1a0dd69605aea6dba42ffd851067dbfe77" kindref="member">lqi</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/><ref refid="structsigInfo__t" kindref="compound">sigInfo_t</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structframeInfo__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123" refid="structframeInfo__t_1aa312b40e2a5575f0eef95b0c4e83df36" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structframeInfo__t_1aa312b40e2a5575f0eef95b0c4e83df36" kindref="member">fi_usage</ref>;</highlight></codeline>
+<codeline lineno="124" refid="structframeInfo__t_1a67b3ffbf7c3dc9ca9c1b6399c3e478a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structframeInfo__t_1a67b3ffbf7c3dc9ca9c1b6399c3e478a1" kindref="member">orderStamp</ref>;</highlight></codeline>
+<codeline lineno="125" refid="structframeInfo__t_1ac7a6c4fea11f56eda913e5c5b1092aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref><sp/><ref refid="structframeInfo__t_1ac7a6c4fea11f56eda913e5c5b1092aa5" kindref="member">mrfiPkt</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}<sp/><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref><sp/><sp/>*<ref refid="nwk__frame_8c_1a0a108d47de5c52904bdefd9d416df591" kindref="member">nwk_buildFrame</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*msg,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>hops);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>APP_AUTO_ACK</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref><sp/><sp/>*nwk_buildAckReqFrame(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>,<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__frame_8h_1a1e1acb295cd400fd7aeb4bc047b2d4b6" kindref="member">nwk_receiveFrame</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__frame_8c_1a864cbf2fbd2b07009ad07be1e51ba959" kindref="member">nwk_frameInit</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>(*)(<ref refid="nwk__types_8h_1a542d45d12faba7ae8fd0c989ef2c8528" kindref="member">linkID_t</ref>));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><sp/><ref refid="nwk__frame_8h_1a4963bd958fdbdf25b0072392056e5796" kindref="member">nwk_retrieveFrame</ref>(<ref refid="structrcvContext__t" kindref="compound">rcvContext_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*,<sp/><ref refid="structaddr__t" kindref="compound">addr_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><ref refid="nwk__types_8h_1af035cb26a73234af8cb7aaf349760c24" kindref="member">smplStatus_t</ref><sp/><sp/><ref refid="nwk__frame_8c_1a400514d33d0b200005e064d6f40eecfb" kindref="member">nwk_sendFrame</ref>(<ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>txOption);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref><sp/><sp/>*<ref refid="nwk__frame_8h_1affbba74d1ab96f24ccd1eee147f8c8df" kindref="member">nwk_getSandFFrame</ref>(<ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__frame_8c_1a9b92ea1e177019598187d98cb9d20f97" kindref="member">nwk_getMyRxType</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nwk__frame_8h_1ae2908dda552499370f32846c2b346a3e" kindref="member">nwk_SendEmptyPollRspFrame</ref>(<ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>APP_AUTO_ACK</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nwk_sendAckReply(<ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref><sp/>*,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>END_DEVICE</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>only<sp/>APs<sp/>and<sp/>REs<sp/>repeat<sp/>frames<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="nwk__frame_8c_1abca6a5922957b44124546013551ba286" kindref="member">nwk_replayFrame</ref>(<ref refid="structframeInfo__t" kindref="compound">frameInfo_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.h"/>
+  </compounddef>
+</doxygen>

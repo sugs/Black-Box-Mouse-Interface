@@ -1,0 +1,104 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Applications/application/End Device/main_ED_BM.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk_api\&.h'\fP
+.br
+\fC#include 'bsp_leds\&.h'\fP
+.br
+\fC#include 'bsp_buttons\&.h'\fP
+.br
+\fC#include 'simpliciti\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIMEOUT\fP   (10u)"
+.br
+.ti -1c
+.RI "#define \fBCONV_MS_TO_TICKS\fP(msec)   (((msec) * 32768) / 1000)"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef unsigned short \fBu16\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTimer0_A4_Delay\fP (\fBu16\fP ticks)"
+.br
+.ti -1c
+.RI "unsigned char \fBsimpliciti_link\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsimpliciti_main_tx_only\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsimpliciti_main_sync\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBuint8_t\fP \fBsInit_done\fP"
+.br
+.ti -1c
+.RI "static \fBlinkID_t\fP \fBsLinkID1\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBCONV_MS_TO_TICKS\fP(msec)   (((msec) * 32768) / 1000)"
+.PP
+Definition at line 45 of file main_ED_BM\&.c\&.
+.SS "#define \fBTIMEOUT\fP   (10u)"
+.PP
+Definition at line 42 of file main_ED_BM\&.c\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef unsigned short \fBu16\fP"
+.PP
+Definition at line 48 of file main_ED_BM\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "unsigned char \fBsimpliciti_link\fP (void)"
+.PP
+Definition at line 75 of file main_ED_BM\&.c\&.
+.SS "void \fBsimpliciti_main_sync\fP (void)"
+.PP
+Definition at line 208 of file main_ED_BM\&.c\&.
+.SS "void \fBsimpliciti_main_tx_only\fP (void)"
+.PP
+Definition at line 167 of file main_ED_BM\&.c\&.
+.SS "void \fBTimer0_A4_Delay\fP (\fBu16\fPticks)"
+.PP
+Definition at line 189 of file timer\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBuint8_t\fP \fBsInit_done\fP"
+.PP
+Definition at line 84 of file nwk_api\&.c\&.
+.SS "\fBlinkID_t\fP \fBsLinkID1\fP\fC [static]\fP"
+.PP
+Definition at line 64 of file main_ED_BM\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

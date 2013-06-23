@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structrcvContext__t" kind="struct" prot="public">
+    <compoundname>rcvContext_t</compoundname>
+    <includes refid="nwk__types_8h" local="yes">nwk_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrcvContext__t_1a3db35c24c9a9e3bbc08b807e05ad5c58" prot="public" static="no" mutable="no">
+        <type><ref refid="nwk__types_8h_1aaf936af9ae60f17cd313577c0022b1e0" kindref="member">rcvType_t</ref></type>
+        <definition>rcvType_t type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="265" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcvContext__t_1ac37c121af45cbf458e3af68c470b5531" prot="public" static="no" mutable="no">
+        <type><ref refid="nwk__types_8h_1a542d45d12faba7ae8fd0c989ef2c8528" kindref="member">linkID_t</ref></type>
+        <definition>linkID_t lid</definition>
+        <argsstring></argsstring>
+        <name>lid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="268" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcvContext__t_1a2fa54f9024782843172506fadbee2ac8" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="269" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcvContext__t_1ad103301359467b3f838dbf32b25299a8" prot="public" static="no" mutable="no">
+        <type><ref refid="structmrfiPacket__t" kindref="compound">mrfiPacket_t</ref> *</type>
+        <definition>mrfiPacket_t* pkt</definition>
+        <argsstring></argsstring>
+        <name>pkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="270" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcvContext__t_1a15f73357939d5a39511cda6e8eb5d198" prot="public" static="no" mutable="no">
+        <type>union rcvContext_t::@5</type>
+        <definition>union rcvContext_t::@5  t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="58">
+        <label>rcvContext_t</label>
+        <link refid="structrcvContext__t"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>pkt</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>mrfiPacket_t</label>
+        <link refid="structmrfiPacket__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" line="264" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_types.h" bodystart="263" bodyend="272"/>
+    <listofallmembers>
+      <member refid="structrcvContext__t_1ac37c121af45cbf458e3af68c470b5531" prot="public" virt="non-virtual"><scope>rcvContext_t</scope><name>lid</name></member>
+      <member refid="structrcvContext__t_1ad103301359467b3f838dbf32b25299a8" prot="public" virt="non-virtual"><scope>rcvContext_t</scope><name>pkt</name></member>
+      <member refid="structrcvContext__t_1a2fa54f9024782843172506fadbee2ac8" prot="public" virt="non-virtual"><scope>rcvContext_t</scope><name>port</name></member>
+      <member refid="structrcvContext__t_1a15f73357939d5a39511cda6e8eb5d198" prot="public" virt="non-virtual"><scope>rcvContext_t</scope><name>t</name></member>
+      <member refid="structrcvContext__t_1a3db35c24c9a9e3bbc08b807e05ad5c58" prot="public" virt="non-virtual"><scope>rcvContext_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structtemp" kind="struct" prot="public">
+    <compoundname>temp</compoundname>
+    <includes refid="temperature_8h" local="yes">temperature.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtemp_1ac6b2518df4ca45cee089e61f152572b2" prot="public" static="no" mutable="no">
+        <type><ref refid="project_8h_1a44455c5614c38dfadce594b2228fd055" kindref="member">menu_t</ref></type>
+        <definition>menu_t state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" line="65" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtemp_1ac7c37e8602d7154e8c1fda8a965a942c" prot="public" static="no" mutable="no">
+        <type>s16</type>
+        <definition>s16 degrees</definition>
+        <argsstring></argsstring>
+        <name>degrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" line="67" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtemp_1a0d9e2e9984f21129b2b54a114600b57b" prot="public" static="no" mutable="no">
+        <type>s16</type>
+        <definition>s16 offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" line="69" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" line="63" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/temperature.h" bodystart="62" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structtemp_1ac7c37e8602d7154e8c1fda8a965a942c" prot="public" virt="non-virtual"><scope>temp</scope><name>degrees</name></member>
+      <member refid="structtemp_1a0d9e2e9984f21129b2b54a114600b57b" prot="public" virt="non-virtual"><scope>temp</scope><name>offset</name></member>
+      <member refid="structtemp_1ac6b2518df4ca45cee089e61f152572b2" prot="public" virt="non-virtual"><scope>temp</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

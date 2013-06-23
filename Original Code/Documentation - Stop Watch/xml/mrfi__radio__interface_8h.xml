@@ -1,0 +1,1151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mrfi__radio__interface_8h" kind="file">
+    <compoundname>mrfi_radio_interface.h</compoundname>
+    <includes refid="bsp_8h" local="yes">bsp.h</includes>
+    <includedby refid="mrfi__radio_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</includedby>
+    <includedby refid="mrfi__radio__interface_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c</includedby>
+    <incdepgraph>
+      <node id="1341">
+        <label>bsp_macros.h</label>
+        <link refid="bsp__macros_8h"/>
+      </node>
+      <node id="1336">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h</label>
+        <link refid="mrfi_radio_interface.h"/>
+        <childnode refid="1337" relation="include">
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+      </node>
+      <node id="1339">
+        <label>mcus/bsp_msp430_defs.h</label>
+        <link refid="bsp__msp430__defs_8h"/>
+      </node>
+      <node id="1337">
+        <label>bsp.h</label>
+        <link refid="bsp_8h"/>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+      </node>
+      <node id="1340">
+        <label>bsp_config.h</label>
+        <link refid="bsp__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1344">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c</label>
+        <link refid="mrfi__radio__interface_8c"/>
+      </node>
+      <node id="1342">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h</label>
+        <link refid="mrfi_radio_interface.h"/>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+      </node>
+      <node id="1343">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c</label>
+        <link refid="mrfi__radio_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a9da836dbbf177b6f1912355cf62cb73d" prot="public" static="no">
+        <name>IOCFG2</name>
+        <initializer>0x00      /*  IOCFG2   - GDO2 output pin configuration  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="54" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a53a1d054e4f61a08fce122ac0fbd520e" prot="public" static="no">
+        <name>IOCFG1</name>
+        <initializer>0x01      /*  IOCFG1   - GDO1 output pin configuration  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="55" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aa05cfcf3fc75713dc691d1ead9e05736" prot="public" static="no">
+        <name>IOCFG0</name>
+        <initializer>0x02      /*  IOCFG1   - GDO0 output pin configuration  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="56" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a33642600de6c703bb5122234d4a8dec6" prot="public" static="no">
+        <name>FIFOTHR</name>
+        <initializer>0x03      /*  FIFOTHR  - RX FIFO and TX FIFO thresholds */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="57" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ad41ec329474c8e0c7d2c9f7bbc729c83" prot="public" static="no">
+        <name>SYNC1</name>
+        <initializer>0x04      /*  SYNC1    - Sync word, high byte */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="58" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a15ee00f2e8b514a2f2dd3be3ba2cf00d" prot="public" static="no">
+        <name>SYNC0</name>
+        <initializer>0x05      /*  SYNC0    - Sync word, low byte */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="59" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aeb4aac5f7c9599c10c864d0353cf6bce" prot="public" static="no">
+        <name>PKTLEN</name>
+        <initializer>0x06      /*  PKTLEN   - Packet length */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="60" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a677bd90f5ee6fe7cf9e1388785b6b1bc" prot="public" static="no">
+        <name>PKTCTRL1</name>
+        <initializer>0x07      /*  PKTCTRL1 - Packet automation control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="61" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a47cb7d5d48dd0e71781409815d4fbbfa" prot="public" static="no">
+        <name>PKTCTRL0</name>
+        <initializer>0x08      /*  PKTCTRL0 - Packet automation control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ac9f31f726d2933782e2efda7136a25fd" prot="public" static="no">
+        <name>ADDR</name>
+        <initializer>0x09      /*  ADDR     - Device address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="63" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a27cd13ed559b193e4a35fc9a6005b1ae" prot="public" static="no">
+        <name>CHANNR</name>
+        <initializer>0x0A      /*  CHANNR   - Channel number */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="64" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a8ff86e3979c5f096719c1aaacedd2a82" prot="public" static="no">
+        <name>FSCTRL1</name>
+        <initializer>0x0B      /*  FSCTRL1  - Frequency synthesizer control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="65" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1af50bd30a5ae1be32bf83c054552cbc8a" prot="public" static="no">
+        <name>FSCTRL0</name>
+        <initializer>0x0C      /*  FSCTRL0  - Frequency synthesizer control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="66" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a1c7beac2b32c50b9c86877e146c442c3" prot="public" static="no">
+        <name>FREQ2</name>
+        <initializer>0x0D      /*  FREQ2    - Frequency control word, high byte */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="67" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a80cabcfa28f947501898b1cdc2ffa5df" prot="public" static="no">
+        <name>FREQ1</name>
+        <initializer>0x0E      /*  FREQ1    - Frequency control word, middle byte */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="68" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1adf6c435c455a2f169dd8b0361cdcbb1c" prot="public" static="no">
+        <name>FREQ0</name>
+        <initializer>0x0F      /*  FREQ0    - Frequency control word, low byte */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="69" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a38cf085a5cfeb29e4b1b90ae764047b2" prot="public" static="no">
+        <name>MDMCFG4</name>
+        <initializer>0x10      /*  MDMCFG4  - Modem configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="70" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a589e4d4ef33f73e8b2db027147ba7be4" prot="public" static="no">
+        <name>MDMCFG3</name>
+        <initializer>0x11      /*  MDMCFG3  - Modem configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="71" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ac5750cb986d051c6489f85a9051f1038" prot="public" static="no">
+        <name>MDMCFG2</name>
+        <initializer>0x12      /*  MDMCFG2  - Modem configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="72" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a3caad8c7db9e2a843da62486ba20a5bc" prot="public" static="no">
+        <name>MDMCFG1</name>
+        <initializer>0x13      /*  MDMCFG1  - Modem configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="73" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a6ad36a2fd474d8b4c094b6a68ebe36a2" prot="public" static="no">
+        <name>MDMCFG0</name>
+        <initializer>0x14      /*  MDMCFG0  - Modem configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="74" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1afda7e6f9fb7386c73859497a6bfcf12c" prot="public" static="no">
+        <name>DEVIATN</name>
+        <initializer>0x15      /*  DEVIATN  - Modem deviation setting */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="75" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aa049f54d36d36cd25df7fb1a80913fc1" prot="public" static="no">
+        <name>MCSM2</name>
+        <initializer>0x16      /*  MCSM2    - Main Radio Control State Machine configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="76" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1af9d17a0852a5dc803395aa5a5e9998f0" prot="public" static="no">
+        <name>MCSM1</name>
+        <initializer>0x17      /*  MCSM1    - Main Radio Control State Machine configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a8b544cfc24a995246f2a973e327b48e1" prot="public" static="no">
+        <name>MCSM0</name>
+        <initializer>0x18      /*  MCSM0    - Main Radio Control State Machine configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="78" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ae24810e04beb0d2178a92e0673499496" prot="public" static="no">
+        <name>FOCCFG</name>
+        <initializer>0x19      /*  FOCCFG   - Frequency Offset Compensation configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="79" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a9ad1a221b397cdae7cebcf1c248b2b30" prot="public" static="no">
+        <name>BSCFG</name>
+        <initializer>0x1A      /*  BSCFG    - Bit Synchronization configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="80" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a617370d4b4b2a1a1368739ee172ecf19" prot="public" static="no">
+        <name>AGCCTRL2</name>
+        <initializer>0x1B      /*  AGCCTRL2 - AGC control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="81" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a2620a8b1c9a344fb7989502946689848" prot="public" static="no">
+        <name>AGCCTRL1</name>
+        <initializer>0x1C      /*  AGCCTRL1 - AGC control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="82" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a2b146a11145e2370da8db5044aba0afc" prot="public" static="no">
+        <name>AGCCTRL0</name>
+        <initializer>0x1D      /*  AGCCTRL0 - AGC control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="83" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a7553c7d007023e8c870cb949480a46e8" prot="public" static="no">
+        <name>WOREVT1</name>
+        <initializer>0x1E      /*  WOREVT1  - High byte Event0 timeout */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="84" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a2c80b405ab8435d969d16663085a35d1" prot="public" static="no">
+        <name>WOREVT0</name>
+        <initializer>0x1F      /*  WOREVT0  - Low byte Event0 timeout */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="85" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a186156bc9caf0835e59d796d768834f7" prot="public" static="no">
+        <name>WORCTRL</name>
+        <initializer>0x20      /*  WORCTRL  - Wake On Radio control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="86" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a07c63bb610a23f75a0b3ebfef8ae65e7" prot="public" static="no">
+        <name>FREND1</name>
+        <initializer>0x21      /*  FREND1   - Front end RX configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="87" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a779f4559a0136208a2c990ee0ba5124f" prot="public" static="no">
+        <name>FREND0</name>
+        <initializer>0x22      /*  FREDN0   - Front end TX configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="88" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ac86903ecd6b7d9921060ec81cb3a8ab3" prot="public" static="no">
+        <name>FSCAL3</name>
+        <initializer>0x23      /*  FSCAL3   - Frequency synthesizer calibration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="89" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a85adcb436e62701a8a35af467e70e16b" prot="public" static="no">
+        <name>FSCAL2</name>
+        <initializer>0x24      /*  FSCAL2   - Frequency synthesizer calibration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="90" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a88d4df9c7bb9e0e8f5bc0ab2266de1f3" prot="public" static="no">
+        <name>FSCAL1</name>
+        <initializer>0x25      /*  FSCAL1   - Frequency synthesizer calibration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="91" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a335ebafae859135220b54e93e8deeec5" prot="public" static="no">
+        <name>FSCAL0</name>
+        <initializer>0x26      /*  FSCAL0   - Frequency synthesizer calibration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="92" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a46f432c892af43d8a437e077bafaae07" prot="public" static="no">
+        <name>RCCTRL1</name>
+        <initializer>0x27      /*  RCCTRL1  - RC oscillator configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="93" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a034b2b62a2deaa00e2fac556c0c4bf0c" prot="public" static="no">
+        <name>RCCTRL0</name>
+        <initializer>0x28      /*  RCCTRL0  - RC oscillator configuration */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="94" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a778654dd7a32e2e6c25dc0c1de5e072f" prot="public" static="no">
+        <name>FSTEST</name>
+        <initializer>0x29      /*  FSTEST   - Frequency synthesizer calibration control */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="95" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a64646998088bad22debf7f6529bc9164" prot="public" static="no">
+        <name>PTEST</name>
+        <initializer>0x2A      /*  PTEST    - Production test */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="96" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ac3aaf5c3eec5b58c5be975b8b842d8e9" prot="public" static="no">
+        <name>AGCTEST</name>
+        <initializer>0x2B      /*  AGCTEST  - AGC test */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="97" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a1b5997c11166c594b80d44bfde1cfa9c" prot="public" static="no">
+        <name>TEST2</name>
+        <initializer>0x2C      /*  TEST2    - Various test settings */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="98" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aef8471770769d5643c8d0e9d49de0678" prot="public" static="no">
+        <name>TEST1</name>
+        <initializer>0x2D      /*  TEST1    - Various test settings */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="99" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ae898d2284301fc88393371e470f8db52" prot="public" static="no">
+        <name>TEST0</name>
+        <initializer>0x2E      /*  TEST0    - Various test settings */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="100" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1abf47da671d641e6da1802fd95e52e23b" prot="public" static="no">
+        <name>PARTNUM</name>
+        <initializer>0x30      /*  PARTNUM    - Chip ID */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="103" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>0x31      /*  VERSION    - Chip ID */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="104" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a34d16356d5a3448a2aacd8c80ff25270" prot="public" static="no">
+        <name>FREQEST</name>
+        <initializer>0x32      /*  FREQEST    – Frequency Offset Estimate from demodulator */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="105" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a78336b0d46d50c8312a6b29044554ab3" prot="public" static="no">
+        <name>LQI</name>
+        <initializer>0x33      /*  LQI        – Demodulator estimate for Link Quality */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="106" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a91888bdc573835ec5a22972f6c7d69ba" prot="public" static="no">
+        <name>RSSI</name>
+        <initializer>0x34      /*  RSSI       – Received signal strength indication */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="107" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aa469366522b44a259354ca58ccde0f93" prot="public" static="no">
+        <name>MARCSTATE</name>
+        <initializer>0x35      /*  MARCSTATE  – Main Radio Control State Machine state */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="108" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1afceafb2c4cfe329e00aca3170cef8b55" prot="public" static="no">
+        <name>WORTIME1</name>
+        <initializer>0x36      /*  WORTIME1   – High byte of WOR time */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="109" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a1da1e27efc55ce042befbac710370731" prot="public" static="no">
+        <name>WORTIME0</name>
+        <initializer>0x37      /*  WORTIME0   – Low byte of WOR time */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="110" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a92460c1fb268e0f30a23bb7163ffb465" prot="public" static="no">
+        <name>PKTSTATUS</name>
+        <initializer>0x38      /*  PKTSTATUS  – Current GDOx status and packet status */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="111" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a548602f9bb60705a5af3978d93786e41" prot="public" static="no">
+        <name>VCO_VC_DAC</name>
+        <initializer>0x39      /*  VCO_VC_DAC – Current setting from PLL calibration module */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="112" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a9f180f03f3cd38aadc9e61001ba8d872" prot="public" static="no">
+        <name>TXBYTES</name>
+        <initializer>0x3A      /*  TXBYTES    – Underflow and number of bytes */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="113" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a8eca6a8fbb83bb59880f98786169519a" prot="public" static="no">
+        <name>RXBYTES</name>
+        <initializer>0x3B      /*  RXBYTES    – Overflow and number of bytes */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="114" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a107f2eeb5b18f9e0b6f63050ef435445" prot="public" static="no">
+        <name>PATABLE</name>
+        <initializer>0x3E      /*  PATABLE - PA control settings table */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="117" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a33f928e7de646c2942c2ff3d8b85f0f7" prot="public" static="no">
+        <name>SRES</name>
+        <initializer>0x30      /*  SRES    - Reset chip. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="120" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a50567015192abe4cc66cd2c1f2d3af43" prot="public" static="no">
+        <name>SFSTXON</name>
+        <initializer>0x31      /*  SFSTXON - Enable and calibrate frequency synthesizer. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="121" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a2ba866e663962a4971cfaa63ebbf101b" prot="public" static="no">
+        <name>SXOFF</name>
+        <initializer>0x32      /*  SXOFF   - Turn off crystal oscillator. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="122" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a2e5a7fc6242912904ee264d30f7de82c" prot="public" static="no">
+        <name>SCAL</name>
+        <initializer>0x33      /*  SCAL    - Calibrate frequency synthesizer and turn it off. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="123" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ab2c756686b69cc7d7f8b94a3bb7805d7" prot="public" static="no">
+        <name>SRX</name>
+        <initializer>0x34      /*  SRX     - Enable RX. Perform calibration if enabled. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="124" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aacd744a917e61146ec8b7175b4761683" prot="public" static="no">
+        <name>STX</name>
+        <initializer>0x35      /*  STX     - Enable TX. If in RX state, only enable TX if CCA passes. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="125" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aef368d9ea417d6c5df128fee7164cdd8" prot="public" static="no">
+        <name>SIDLE</name>
+        <initializer>0x36      /*  SIDLE   - Exit RX / TX, turn off frequency synthesizer. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="126" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ae401ee2773235cb93598227eb695c13a" prot="public" static="no">
+        <name>SRSVD</name>
+        <initializer>0x37      /*  SRVSD   - Reserved.  Do not use. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="127" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a13bc96dbb8fe222006b5d6cbd09601cc" prot="public" static="no">
+        <name>SWOR</name>
+        <initializer>0x38      /*  SWOR    - Start automatic RX polling sequence (Wake-on-Radio) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="128" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a20caf81f2a416bdd4d30f40ab96b14c0" prot="public" static="no">
+        <name>SPWD</name>
+        <initializer>0x39      /*  SPWD    - Enter power down mode when CSn goes high. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="129" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1a793903e47409c82e0b914da66c2d3885" prot="public" static="no">
+        <name>SFRX</name>
+        <initializer>0x3A      /*  SFRX    - Flush the RX FIFO buffer. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="130" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aaf4806b0f66e2e4909e7d23aa4d4d981" prot="public" static="no">
+        <name>SFTX</name>
+        <initializer>0x3B      /*  SFTX    - Flush the TX FIFO buffer. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="131" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1ab0612d97465763e9a6d0d2153c54ff01" prot="public" static="no">
+        <name>SWORRST</name>
+        <initializer>0x3C      /*  SWORRST - Reset real time clock. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="132" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mrfi__radio__interface_8h_1aa3d7d1f0fe23d7285647e73b9d2a8022" prot="public" static="no">
+        <name>SNOP</name>
+        <initializer>0x3D      /*  SNOP    - No operation. Returns status byte. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="133" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1a09245ae00dbf4322281fef12cc52a89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>mrfiRadioInterfaceInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="140" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="86" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1a8a72d3f71f068d13c6b23e79ecb4d068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceWriteReg</definition>
+        <argsstring>(uint8_t addr, uint8_t value)</argsstring>
+        <name>mrfiRadioInterfaceWriteReg</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="141" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="232" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1a9f3258b3c239ba2e1d19f0849804f1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceWriteTxFifo</definition>
+        <argsstring>(uint8_t *pWriteData, uint8_t len)</argsstring>
+        <name>mrfiRadioInterfaceWriteTxFifo</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+          <declname>pWriteData</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="142" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="270" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1af27e8692fe2496182dea8582524f7a30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mrfiRadioInterfaceReadRxFifo</definition>
+        <argsstring>(uint8_t *pReadData, uint8_t len)</argsstring>
+        <name>mrfiRadioInterfaceReadRxFifo</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref> *</type>
+          <declname>pReadData</declname>
+        </param>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="143" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="315" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1ad8967907085371a9791e8221846d93b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t mrfiRadioInterfaceCmdStrobe</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>mrfiRadioInterfaceCmdStrobe</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="145" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="110" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="mrfi__radio__interface_8h_1a11719585933c0185bebb9dbed7176809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t mrfiRadioInterfaceReadReg</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>mrfiRadioInterfaceReadReg</name>
+        <param>
+          <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h" line="146" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" bodystart="186" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2007-07-06<sp/>11:19:00<sp/>-0700<sp/>(Fri,<sp/>06<sp/>Jul<sp/>2007)<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>13579<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Copyright<sp/>2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MRFI<sp/>(Minimal<sp/>RF<sp/>Interface)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Radio<sp/>interface<sp/>code<sp/>for<sp/>CC430</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MRFI_RADIO_INTERFACE_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MRFI_RADIO_INTERFACE_H</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Includes</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp_8h" kindref="compound">bsp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Defines</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>configuration<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="mrfi__radio__interface_8h_1a9da836dbbf177b6f1912355cf62cb73d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IOCFG2<sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>IOCFG2<sp/><sp/><sp/>-<sp/>GDO2<sp/>output<sp/>pin<sp/>configuration<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mrfi__radio__interface_8h_1a53a1d054e4f61a08fce122ac0fbd520e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IOCFG1<sp/><sp/><sp/><sp/><sp/><sp/>0x01<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>IOCFG1<sp/><sp/><sp/>-<sp/>GDO1<sp/>output<sp/>pin<sp/>configuration<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="mrfi__radio__interface_8h_1aa05cfcf3fc75713dc691d1ead9e05736" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IOCFG0<sp/><sp/><sp/><sp/><sp/><sp/>0x02<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>IOCFG1<sp/><sp/><sp/>-<sp/>GDO0<sp/>output<sp/>pin<sp/>configuration<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="mrfi__radio__interface_8h_1a33642600de6c703bb5122234d4a8dec6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFOTHR<sp/><sp/><sp/><sp/><sp/>0x03<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FIFOTHR<sp/><sp/>-<sp/>RX<sp/>FIFO<sp/>and<sp/>TX<sp/>FIFO<sp/>thresholds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="mrfi__radio__interface_8h_1ad41ec329474c8e0c7d2c9f7bbc729c83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYNC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SYNC1<sp/><sp/><sp/><sp/>-<sp/>Sync<sp/>word,<sp/>high<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="mrfi__radio__interface_8h_1a15ee00f2e8b514a2f2dd3be3ba2cf00d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYNC0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SYNC0<sp/><sp/><sp/><sp/>-<sp/>Sync<sp/>word,<sp/>low<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="mrfi__radio__interface_8h_1aeb4aac5f7c9599c10c864d0353cf6bce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PKTLEN<sp/><sp/><sp/><sp/><sp/><sp/>0x06<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PKTLEN<sp/><sp/><sp/>-<sp/>Packet<sp/>length<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="mrfi__radio__interface_8h_1a677bd90f5ee6fe7cf9e1388785b6b1bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PKTCTRL1<sp/><sp/><sp/><sp/>0x07<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PKTCTRL1<sp/>-<sp/>Packet<sp/>automation<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="mrfi__radio__interface_8h_1a47cb7d5d48dd0e71781409815d4fbbfa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PKTCTRL0<sp/><sp/><sp/><sp/>0x08<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PKTCTRL0<sp/>-<sp/>Packet<sp/>automation<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="mrfi__radio__interface_8h_1ac9f31f726d2933782e2efda7136a25fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>ADDR<sp/><sp/><sp/><sp/><sp/>-<sp/>Device<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="mrfi__radio__interface_8h_1a27cd13ed559b193e4a35fc9a6005b1ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHANNR<sp/><sp/><sp/><sp/><sp/><sp/>0x0A<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>CHANNR<sp/><sp/><sp/>-<sp/>Channel<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="mrfi__radio__interface_8h_1a8ff86e3979c5f096719c1aaacedd2a82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCTRL1<sp/><sp/><sp/><sp/><sp/>0x0B<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCTRL1<sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="mrfi__radio__interface_8h_1af50bd30a5ae1be32bf83c054552cbc8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCTRL0<sp/><sp/><sp/><sp/><sp/>0x0C<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCTRL0<sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="mrfi__radio__interface_8h_1a1c7beac2b32c50b9c86877e146c442c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQ2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0D<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREQ2<sp/><sp/><sp/><sp/>-<sp/>Frequency<sp/>control<sp/>word,<sp/>high<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="mrfi__radio__interface_8h_1a80cabcfa28f947501898b1cdc2ffa5df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQ1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0E<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREQ1<sp/><sp/><sp/><sp/>-<sp/>Frequency<sp/>control<sp/>word,<sp/>middle<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="mrfi__radio__interface_8h_1adf6c435c455a2f169dd8b0361cdcbb1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQ0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0F<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREQ0<sp/><sp/><sp/><sp/>-<sp/>Frequency<sp/>control<sp/>word,<sp/>low<sp/>byte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="mrfi__radio__interface_8h_1a38cf085a5cfeb29e4b1b90ae764047b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MDMCFG4<sp/><sp/><sp/><sp/><sp/>0x10<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MDMCFG4<sp/><sp/>-<sp/>Modem<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="mrfi__radio__interface_8h_1a589e4d4ef33f73e8b2db027147ba7be4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MDMCFG3<sp/><sp/><sp/><sp/><sp/>0x11<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MDMCFG3<sp/><sp/>-<sp/>Modem<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="mrfi__radio__interface_8h_1ac5750cb986d051c6489f85a9051f1038" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MDMCFG2<sp/><sp/><sp/><sp/><sp/>0x12<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MDMCFG2<sp/><sp/>-<sp/>Modem<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="mrfi__radio__interface_8h_1a3caad8c7db9e2a843da62486ba20a5bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MDMCFG1<sp/><sp/><sp/><sp/><sp/>0x13<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MDMCFG1<sp/><sp/>-<sp/>Modem<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="mrfi__radio__interface_8h_1a6ad36a2fd474d8b4c094b6a68ebe36a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MDMCFG0<sp/><sp/><sp/><sp/><sp/>0x14<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MDMCFG0<sp/><sp/>-<sp/>Modem<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="mrfi__radio__interface_8h_1afda7e6f9fb7386c73859497a6bfcf12c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVIATN<sp/><sp/><sp/><sp/><sp/>0x15<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>DEVIATN<sp/><sp/>-<sp/>Modem<sp/>deviation<sp/>setting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="mrfi__radio__interface_8h_1aa049f54d36d36cd25df7fb1a80913fc1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCSM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x16<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MCSM2<sp/><sp/><sp/><sp/>-<sp/>Main<sp/>Radio<sp/>Control<sp/>State<sp/>Machine<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="mrfi__radio__interface_8h_1af9d17a0852a5dc803395aa5a5e9998f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCSM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x17<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MCSM1<sp/><sp/><sp/><sp/>-<sp/>Main<sp/>Radio<sp/>Control<sp/>State<sp/>Machine<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="mrfi__radio__interface_8h_1a8b544cfc24a995246f2a973e327b48e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCSM0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x18<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MCSM0<sp/><sp/><sp/><sp/>-<sp/>Main<sp/>Radio<sp/>Control<sp/>State<sp/>Machine<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="mrfi__radio__interface_8h_1ae24810e04beb0d2178a92e0673499496" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FOCCFG<sp/><sp/><sp/><sp/><sp/><sp/>0x19<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FOCCFG<sp/><sp/><sp/>-<sp/>Frequency<sp/>Offset<sp/>Compensation<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="mrfi__radio__interface_8h_1a9ad1a221b397cdae7cebcf1c248b2b30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSCFG<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1A<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>BSCFG<sp/><sp/><sp/><sp/>-<sp/>Bit<sp/>Synchronization<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="mrfi__radio__interface_8h_1a617370d4b4b2a1a1368739ee172ecf19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AGCCTRL2<sp/><sp/><sp/><sp/>0x1B<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>AGCCTRL2<sp/>-<sp/>AGC<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="mrfi__radio__interface_8h_1a2620a8b1c9a344fb7989502946689848" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AGCCTRL1<sp/><sp/><sp/><sp/>0x1C<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>AGCCTRL1<sp/>-<sp/>AGC<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="mrfi__radio__interface_8h_1a2b146a11145e2370da8db5044aba0afc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AGCCTRL0<sp/><sp/><sp/><sp/>0x1D<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>AGCCTRL0<sp/>-<sp/>AGC<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="mrfi__radio__interface_8h_1a7553c7d007023e8c870cb949480a46e8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WOREVT1<sp/><sp/><sp/><sp/><sp/>0x1E<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>WOREVT1<sp/><sp/>-<sp/>High<sp/>byte<sp/>Event0<sp/>timeout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="mrfi__radio__interface_8h_1a2c80b405ab8435d969d16663085a35d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WOREVT0<sp/><sp/><sp/><sp/><sp/>0x1F<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>WOREVT0<sp/><sp/>-<sp/>Low<sp/>byte<sp/>Event0<sp/>timeout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="mrfi__radio__interface_8h_1a186156bc9caf0835e59d796d768834f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WORCTRL<sp/><sp/><sp/><sp/><sp/>0x20<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>WORCTRL<sp/><sp/>-<sp/>Wake<sp/>On<sp/>Radio<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="mrfi__radio__interface_8h_1a07c63bb610a23f75a0b3ebfef8ae65e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREND1<sp/><sp/><sp/><sp/><sp/><sp/>0x21<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREND1<sp/><sp/><sp/>-<sp/>Front<sp/>end<sp/>RX<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="mrfi__radio__interface_8h_1a779f4559a0136208a2c990ee0ba5124f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREND0<sp/><sp/><sp/><sp/><sp/><sp/>0x22<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREDN0<sp/><sp/><sp/>-<sp/>Front<sp/>end<sp/>TX<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="mrfi__radio__interface_8h_1ac86903ecd6b7d9921060ec81cb3a8ab3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCAL3<sp/><sp/><sp/><sp/><sp/><sp/>0x23<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCAL3<sp/><sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>calibration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="mrfi__radio__interface_8h_1a85adcb436e62701a8a35af467e70e16b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCAL2<sp/><sp/><sp/><sp/><sp/><sp/>0x24<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCAL2<sp/><sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>calibration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="mrfi__radio__interface_8h_1a88d4df9c7bb9e0e8f5bc0ab2266de1f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCAL1<sp/><sp/><sp/><sp/><sp/><sp/>0x25<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCAL1<sp/><sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>calibration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="mrfi__radio__interface_8h_1a335ebafae859135220b54e93e8deeec5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSCAL0<sp/><sp/><sp/><sp/><sp/><sp/>0x26<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSCAL0<sp/><sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>calibration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="mrfi__radio__interface_8h_1a46f432c892af43d8a437e077bafaae07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCCTRL1<sp/><sp/><sp/><sp/><sp/>0x27<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>RCCTRL1<sp/><sp/>-<sp/>RC<sp/>oscillator<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="mrfi__radio__interface_8h_1a034b2b62a2deaa00e2fac556c0c4bf0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCCTRL0<sp/><sp/><sp/><sp/><sp/>0x28<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>RCCTRL0<sp/><sp/>-<sp/>RC<sp/>oscillator<sp/>configuration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="mrfi__radio__interface_8h_1a778654dd7a32e2e6c25dc0c1de5e072f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSTEST<sp/><sp/><sp/><sp/><sp/><sp/>0x29<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FSTEST<sp/><sp/><sp/>-<sp/>Frequency<sp/>synthesizer<sp/>calibration<sp/>control<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="mrfi__radio__interface_8h_1a64646998088bad22debf7f6529bc9164" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PTEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2A<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PTEST<sp/><sp/><sp/><sp/>-<sp/>Production<sp/>test<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="mrfi__radio__interface_8h_1ac3aaf5c3eec5b58c5be975b8b842d8e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AGCTEST<sp/><sp/><sp/><sp/><sp/>0x2B<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>AGCTEST<sp/><sp/>-<sp/>AGC<sp/>test<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="mrfi__radio__interface_8h_1a1b5997c11166c594b80d44bfde1cfa9c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2C<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>TEST2<sp/><sp/><sp/><sp/>-<sp/>Various<sp/>test<sp/>settings<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="mrfi__radio__interface_8h_1aef8471770769d5643c8d0e9d49de0678" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2D<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>TEST1<sp/><sp/><sp/><sp/>-<sp/>Various<sp/>test<sp/>settings<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="mrfi__radio__interface_8h_1ae898d2284301fc88393371e470f8db52" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2E<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>TEST0<sp/><sp/><sp/><sp/>-<sp/>Various<sp/>test<sp/>settings<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>status<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="mrfi__radio__interface_8h_1abf47da671d641e6da1802fd95e52e23b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARTNUM<sp/><sp/><sp/><sp/><sp/>0x30<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PARTNUM<sp/><sp/><sp/><sp/>-<sp/>Chip<sp/>ID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="mrfi__radio__interface_8h_1a1c6d5de492ac61ad29aec7aa9a436bbf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VERSION<sp/><sp/><sp/><sp/><sp/>0x31<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>VERSION<sp/><sp/><sp/><sp/>-<sp/>Chip<sp/>ID<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="mrfi__radio__interface_8h_1a34d16356d5a3448a2aacd8c80ff25270" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREQEST<sp/><sp/><sp/><sp/><sp/>0x32<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>FREQEST<sp/><sp/><sp/><sp/>–<sp/>Frequency<sp/>Offset<sp/>Estimate<sp/>from<sp/>demodulator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="mrfi__radio__interface_8h_1a78336b0d46d50c8312a6b29044554ab3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LQI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x33<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>LQI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>–<sp/>Demodulator<sp/>estimate<sp/>for<sp/>Link<sp/>Quality<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="mrfi__radio__interface_8h_1a91888bdc573835ec5a22972f6c7d69ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RSSI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x34<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>RSSI<sp/><sp/><sp/><sp/><sp/><sp/><sp/>–<sp/>Received<sp/>signal<sp/>strength<sp/>indication<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="mrfi__radio__interface_8h_1aa469366522b44a259354ca58ccde0f93" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARCSTATE<sp/><sp/><sp/>0x35<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>MARCSTATE<sp/><sp/>–<sp/>Main<sp/>Radio<sp/>Control<sp/>State<sp/>Machine<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="mrfi__radio__interface_8h_1afceafb2c4cfe329e00aca3170cef8b55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WORTIME1<sp/><sp/><sp/><sp/>0x36<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>WORTIME1<sp/><sp/><sp/>–<sp/>High<sp/>byte<sp/>of<sp/>WOR<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="mrfi__radio__interface_8h_1a1da1e27efc55ce042befbac710370731" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WORTIME0<sp/><sp/><sp/><sp/>0x37<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>WORTIME0<sp/><sp/><sp/>–<sp/>Low<sp/>byte<sp/>of<sp/>WOR<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="mrfi__radio__interface_8h_1a92460c1fb268e0f30a23bb7163ffb465" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PKTSTATUS<sp/><sp/><sp/>0x38<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PKTSTATUS<sp/><sp/>–<sp/>Current<sp/>GDOx<sp/>status<sp/>and<sp/>packet<sp/>status<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="mrfi__radio__interface_8h_1a548602f9bb60705a5af3978d93786e41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCO_VC_DAC<sp/><sp/>0x39<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>VCO_VC_DAC<sp/>–<sp/>Current<sp/>setting<sp/>from<sp/>PLL<sp/>calibration<sp/>module<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="mrfi__radio__interface_8h_1a9f180f03f3cd38aadc9e61001ba8d872" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TXBYTES<sp/><sp/><sp/><sp/><sp/>0x3A<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>TXBYTES<sp/><sp/><sp/><sp/>–<sp/>Underflow<sp/>and<sp/>number<sp/>of<sp/>bytes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="mrfi__radio__interface_8h_1a8eca6a8fbb83bb59880f98786169519a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RXBYTES<sp/><sp/><sp/><sp/><sp/>0x3B<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>RXBYTES<sp/><sp/><sp/><sp/>–<sp/>Overflow<sp/>and<sp/>number<sp/>of<sp/>bytes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>burst<sp/>write<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="mrfi__radio__interface_8h_1a107f2eeb5b18f9e0b6f63050ef435445" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PATABLE<sp/><sp/><sp/><sp/><sp/>0x3E<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PATABLE<sp/>-<sp/>PA<sp/>control<sp/>settings<sp/>table<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>command<sp/>strobe<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="mrfi__radio__interface_8h_1a33f928e7de646c2942c2ff3d8b85f0f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SRES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SRES<sp/><sp/><sp/><sp/>-<sp/>Reset<sp/>chip.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="mrfi__radio__interface_8h_1a50567015192abe4cc66cd2c1f2d3af43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SFSTXON<sp/><sp/><sp/><sp/><sp/>0x31<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SFSTXON<sp/>-<sp/>Enable<sp/>and<sp/>calibrate<sp/>frequency<sp/>synthesizer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="mrfi__radio__interface_8h_1a2ba866e663962a4971cfaa63ebbf101b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SXOFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x32<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SXOFF<sp/><sp/><sp/>-<sp/>Turn<sp/>off<sp/>crystal<sp/>oscillator.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="mrfi__radio__interface_8h_1a2e5a7fc6242912904ee264d30f7de82c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x33<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SCAL<sp/><sp/><sp/><sp/>-<sp/>Calibrate<sp/>frequency<sp/>synthesizer<sp/>and<sp/>turn<sp/>it<sp/>off.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="mrfi__radio__interface_8h_1ab2c756686b69cc7d7f8b94a3bb7805d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SRX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x34<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SRX<sp/><sp/><sp/><sp/><sp/>-<sp/>Enable<sp/>RX.<sp/>Perform<sp/>calibration<sp/>if<sp/>enabled.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="mrfi__radio__interface_8h_1aacd744a917e61146ec8b7175b4761683" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x35<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>STX<sp/><sp/><sp/><sp/><sp/>-<sp/>Enable<sp/>TX.<sp/>If<sp/>in<sp/>RX<sp/>state,<sp/>only<sp/>enable<sp/>TX<sp/>if<sp/>CCA<sp/>passes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="mrfi__radio__interface_8h_1aef368d9ea417d6c5df128fee7164cdd8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x36<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SIDLE<sp/><sp/><sp/>-<sp/>Exit<sp/>RX<sp/>/<sp/>TX,<sp/>turn<sp/>off<sp/>frequency<sp/>synthesizer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="mrfi__radio__interface_8h_1ae401ee2773235cb93598227eb695c13a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SRSVD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x37<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SRVSD<sp/><sp/><sp/>-<sp/>Reserved.<sp/><sp/>Do<sp/>not<sp/>use.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="mrfi__radio__interface_8h_1a13bc96dbb8fe222006b5d6cbd09601cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x38<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SWOR<sp/><sp/><sp/><sp/>-<sp/>Start<sp/>automatic<sp/>RX<sp/>polling<sp/>sequence<sp/>(Wake-on-Radio)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="mrfi__radio__interface_8h_1a20caf81f2a416bdd4d30f40ab96b14c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPWD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x39<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SPWD<sp/><sp/><sp/><sp/>-<sp/>Enter<sp/>power<sp/>down<sp/>mode<sp/>when<sp/>CSn<sp/>goes<sp/>high.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="mrfi__radio__interface_8h_1a793903e47409c82e0b914da66c2d3885" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SFRX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3A<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SFRX<sp/><sp/><sp/><sp/>-<sp/>Flush<sp/>the<sp/>RX<sp/>FIFO<sp/>buffer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="mrfi__radio__interface_8h_1aaf4806b0f66e2e4909e7d23aa4d4d981" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SFTX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3B<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SFTX<sp/><sp/><sp/><sp/>-<sp/>Flush<sp/>the<sp/>TX<sp/>FIFO<sp/>buffer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="mrfi__radio__interface_8h_1ab0612d97465763e9a6d0d2153c54ff01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWORRST<sp/><sp/><sp/><sp/><sp/>0x3C<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SWORRST<sp/>-<sp/>Reset<sp/>real<sp/>time<sp/>clock.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="mrfi__radio__interface_8h_1aa3d7d1f0fe23d7285647e73b9d2a8022" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SNOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3D<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>SNOP<sp/><sp/><sp/><sp/>-<sp/>No<sp/>operation.<sp/>Returns<sp/>status<sp/>byte.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Prototypes</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1a09245ae00dbf4322281fef12cc52a89b" kindref="member">mrfiRadioInterfaceInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1a8a72d3f71f068d13c6b23e79ecb4d068" kindref="member">mrfiRadioInterfaceWriteReg</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>value);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1ab2cfb2efb218ba7a69501cf4cc96932b" kindref="member">mrfiRadioInterfaceWriteTxFifo</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*<sp/>pWriteData,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mrfi__radio__interface_8c_1aa5c6363be8c719be691e37b31f3a9dab" kindref="member">mrfiRadioInterfaceReadRxFifo</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>*<sp/>pReadData,<sp/><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>len);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="mrfi__radio__interface_8c_1ad8967907085371a9791e8221846d93b3" kindref="member">mrfiRadioInterfaceCmdStrobe</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/><ref refid="mrfi__radio__interface_8c_1a11719585933c0185bebb9dbed7176809" kindref="member">mrfiRadioInterfaceReadReg</ref>(<ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref><sp/>addr);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.h"/>
+  </compounddef>
+</doxygen>

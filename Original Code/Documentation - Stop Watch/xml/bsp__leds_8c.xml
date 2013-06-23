@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bsp__leds_8c" kind="file">
+    <compoundname>bsp_leds.c</compoundname>
+    <includes refid="bsp__leds_8h" local="yes">bsp_leds.h</includes>
+    <includes refid="bsp__led__defs_8h" local="yes">bsp_led_defs.h</includes>
+    <includedby refid="bsp__drivers_8c" local="yes">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</includedby>
+    <incdepgraph>
+      <node id="1225">
+        <label>bsp_macros.h</label>
+        <link refid="bsp__macros_8h"/>
+      </node>
+      <node id="1218">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c</label>
+        <link refid="bsp_leds.c"/>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+      </node>
+      <node id="1220">
+        <label>bsp_led_defs.h</label>
+        <link refid="bsp__led__defs_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>bsp_board_defs.h</label>
+        <link refid="bsp__board__defs_8h"/>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+      </node>
+      <node id="1219">
+        <label>bsp_leds.h</label>
+        <link refid="bsp__leds_8h"/>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+      </node>
+      <node id="1224">
+        <label>code/bsp_generic_leds.h</label>
+        <link refid="bsp__generic__leds_8h"/>
+        <childnode refid="1225" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>mcus/bsp_msp430_defs.h</label>
+        <link refid="bsp__msp430__defs_8h"/>
+      </node>
+      <node id="1223">
+        <label>bsp_config.h</label>
+        <link refid="bsp__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1226">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c</label>
+        <link refid="bsp_leds.c"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/boards/CC430EM/bsp_drivers.c</label>
+        <link refid="bsp__drivers_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bsp__leds_8c_1a0c46b23b3524e00909eaf757303ec5f9" prot="public" static="no">
+        <name>BSP_CONFIG_LED1</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1a7bc861e0cd02c33631bdb837a9869ac4" kindref="member">__bsp_LED1_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="50" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1a659dbf9197f9744c6927d53f55c76218" prot="public" static="no">
+        <name>BSP_CONFIG_LED2</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1a31c396d52af1ed33769da3bc37a7d71a" kindref="member">__bsp_LED2_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="51" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1a746bfb4ec743257dc0fcfd0cd3d4c241" prot="public" static="no">
+        <name>BSP_CONFIG_LED3</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1aca220ae3ffcb03790ae7494bf1eb165b" kindref="member">__bsp_LED3_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="52" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1ad2111605988ea819078ecb584e378ecd" prot="public" static="no">
+        <name>BSP_CONFIG_LED4</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1acbccf855cab39e4519af11b8aedc2294" kindref="member">__bsp_LED4_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="53" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1af865da010da2688fd2967963b812ddb1" prot="public" static="no">
+        <name>BSP_CONFIG_LED5</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1acbf250cdb52df37695dc9e3df4c87a82" kindref="member">__bsp_LED5_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="54" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1ad103d0a70fdef0f3f93055561ace1733" prot="public" static="no">
+        <name>BSP_CONFIG_LED6</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1aa1f4ad5c920ca1a13704c61e2979e3f6" kindref="member">__bsp_LED6_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="55" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1a7a8db8a17adee916229b6807945d3f7d" prot="public" static="no">
+        <name>BSP_CONFIG_LED7</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1ab7e89bf10ee4ba7cdeac9edee748302e" kindref="member">__bsp_LED7_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="56" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1ab660e072516f52dd815be95d62d13198" prot="public" static="no">
+        <name>BSP_CONFIG_LED8</name>
+        <param></param>
+        <initializer><ref refid="bsp__generic__leds_8h_1a8ed52dbe1dd7dee9ef7d773b31236138" kindref="member">__bsp_LED8_CONFIG__</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="57" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bsp__leds_8c_1ae45e65829aeddea8f11713373d4651fd" prot="public" static="no">
+        <name>BSP_LED_EXTENDED_CONFIG</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="62" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bsp__leds_8c_1a70b3b314162daaa33cadad006506669c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BSP_InitLeds</definition>
+        <argsstring>(void)</argsstring>
+        <name>BSP_InitLeds</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" line="77" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c" bodystart="76" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Revised:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Date:<sp/>2007-07-06<sp/>11:19:00<sp/>-0700<sp/>(Fri,<sp/>06<sp/>Jul<sp/>2007)<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Revision:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Revision:<sp/>13579<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Copyright<sp/>2007<sp/>Texas<sp/>Instruments<sp/>Incorporated.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>IMPORTANT:<sp/>Your<sp/>use<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>limited<sp/>to<sp/>those<sp/>specific<sp/>rights<sp/>granted<sp/>under</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>terms<sp/>of<sp/>a<sp/>software<sp/>license<sp/>agreement<sp/>between<sp/>the<sp/>user<sp/>who<sp/>downloaded<sp/>the<sp/>software,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>his/her<sp/>employer<sp/>(which<sp/>must<sp/>be<sp/>your<sp/>employer)<sp/>and<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>(the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>&quot;License&quot;).<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>Software<sp/>unless<sp/>you<sp/>agree<sp/>to<sp/>abide<sp/>by<sp/>the<sp/>terms<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>License.<sp/>The<sp/>License<sp/>limits<sp/>your<sp/>use,<sp/>and<sp/>you<sp/>acknowledge,<sp/>that<sp/>the<sp/>Software<sp/>may<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>modified,<sp/>copied<sp/>or<sp/>distributed<sp/>unless<sp/>embedded<sp/>on<sp/>a<sp/>Texas<sp/>Instruments<sp/>microcontroller</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>or<sp/>used<sp/>solely<sp/>and<sp/>exclusively<sp/>in<sp/>conjunction<sp/>with<sp/>a<sp/>Texas<sp/>Instruments<sp/>radio<sp/>frequency</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>transceiver,<sp/>which<sp/>is<sp/>integrated<sp/>into<sp/>your<sp/>product.<sp/>Other<sp/>than<sp/>for<sp/>the<sp/>foregoing<sp/>purpose,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>not<sp/>use,<sp/>reproduce,<sp/>copy,<sp/>prepare<sp/>derivative<sp/>works<sp/>of,<sp/>modify,<sp/>distribute,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>perform,<sp/>display<sp/>or<sp/>sell<sp/>this<sp/>Software<sp/>and/or<sp/>its<sp/>documentation<sp/>for<sp/>any<sp/>purpose.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>YOU<sp/>FURTHER<sp/>ACKNOWLEDGE<sp/>AND<sp/>AGREE<sp/>THAT<sp/>THE<sp/>SOFTWARE<sp/>AND<sp/>DOCUMENTATION<sp/>ARE<sp/>PROVIDED<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>WITHOUT<sp/>LIMITATION,<sp/>ANY</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>WARRANTY<sp/>OF<sp/>MERCHANTABILITY,<sp/>TITLE,<sp/>NON-INFRINGEMENT<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>TEXAS<sp/>INSTRUMENTS<sp/>OR<sp/>ITS<sp/>LICENSORS<sp/>BE<sp/>LIABLE<sp/>OR<sp/>OBLIGATED<sp/>UNDER<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>NEGLIGENCE,<sp/>STRICT<sp/>LIABILITY,<sp/>CONTRIBUTION,<sp/>BREACH<sp/>OF<sp/>WARRANTY,<sp/>OR<sp/>OTHER<sp/>LEGAL<sp/>EQUITABLE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>THEORY<sp/>ANY<sp/>DIRECT<sp/>OR<sp/>INDIRECT<sp/>DAMAGES<sp/>OR<sp/>EXPENSES<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>INDIRECT,<sp/>PUNITIVE<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES,<sp/>LOST<sp/>PROFITS<sp/>OR<sp/>LOST</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>DATA,<sp/>COST<sp/>OF<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS,<sp/>TECHNOLOGY,<sp/>SERVICES,<sp/>OR<sp/>ANY<sp/>CLAIMS<sp/>BY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>THIRD<sp/>PARTIES<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>ANY<sp/>DEFENSE<sp/>THEREOF),<sp/>OR<sp/>OTHER<sp/>SIMILAR<sp/>COSTS.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Should<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>regarding<sp/>your<sp/>right<sp/>to<sp/>use<sp/>this<sp/>Software,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>contact<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>at<sp/>www.TI.com.<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/><sp/>BSP<sp/>(Board<sp/>Support<sp/>Package)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Generic<sp/>LED<sp/>driver<sp/>code<sp/>file.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Includes</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp__leds_8h" kindref="compound">bsp_leds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bsp__led__defs_8h" kindref="compound">bsp_led_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="bsp__leds_8c_1a0c46b23b3524e00909eaf757303ec5f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED1()<sp/><sp/><sp/><sp/>__bsp_LED1_CONFIG__()</highlight></codeline>
+<codeline lineno="51" refid="bsp__leds_8c_1a659dbf9197f9744c6927d53f55c76218" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED2()<sp/><sp/><sp/><sp/>__bsp_LED2_CONFIG__()</highlight></codeline>
+<codeline lineno="52" refid="bsp__leds_8c_1a746bfb4ec743257dc0fcfd0cd3d4c241" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED3()<sp/><sp/><sp/><sp/>__bsp_LED3_CONFIG__()</highlight></codeline>
+<codeline lineno="53" refid="bsp__leds_8c_1ad2111605988ea819078ecb584e378ecd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED4()<sp/><sp/><sp/><sp/>__bsp_LED4_CONFIG__()</highlight></codeline>
+<codeline lineno="54" refid="bsp__leds_8c_1af865da010da2688fd2967963b812ddb1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED5()<sp/><sp/><sp/><sp/>__bsp_LED5_CONFIG__()</highlight></codeline>
+<codeline lineno="55" refid="bsp__leds_8c_1ad103d0a70fdef0f3f93055561ace1733" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED6()<sp/><sp/><sp/><sp/>__bsp_LED6_CONFIG__()</highlight></codeline>
+<codeline lineno="56" refid="bsp__leds_8c_1a7a8db8a17adee916229b6807945d3f7d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED7()<sp/><sp/><sp/><sp/>__bsp_LED7_CONFIG__()</highlight></codeline>
+<codeline lineno="57" refid="bsp__leds_8c_1ab660e072516f52dd815be95d62d13198" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_CONFIG_LED8()<sp/><sp/><sp/><sp/>__bsp_LED8_CONFIG__()</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__bsp_LED_EXTENDED_CONFIG__</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_LED_EXTENDED_CONFIG()<sp/><sp/>__bsp_LED_EXTENDED_CONFIG__()</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="62" refid="bsp__leds_8c_1ae45e65829aeddea8f11713373d4651fd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BSP_LED_EXTENDED_CONFIG()</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>@fn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BSP_InitLeds</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initialize<sp/>LED<sp/>hardware<sp/>and<sp/>driver.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>@param<sp/><sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>@return<sp/><sp/><sp/><sp/><sp/><sp/>none</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>**************************************************************************************************</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="bsp__leds_8c_1a70b3b314162daaa33cadad006506669c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bsp__leds_8h_1a70b3b314162daaa33cadad006506669c" kindref="member">BSP_InitLeds</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>configure<sp/>LEDs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1a0c46b23b3524e00909eaf757303ec5f9" kindref="member">BSP_CONFIG_LED1</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1a659dbf9197f9744c6927d53f55c76218" kindref="member">BSP_CONFIG_LED2</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1a746bfb4ec743257dc0fcfd0cd3d4c241" kindref="member">BSP_CONFIG_LED3</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1ad2111605988ea819078ecb584e378ecd" kindref="member">BSP_CONFIG_LED4</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1af865da010da2688fd2967963b812ddb1" kindref="member">BSP_CONFIG_LED5</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1ad103d0a70fdef0f3f93055561ace1733" kindref="member">BSP_CONFIG_LED6</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1a7a8db8a17adee916229b6807945d3f7d" kindref="member">BSP_CONFIG_LED7</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1ab660e072516f52dd815be95d62d13198" kindref="member">BSP_CONFIG_LED8</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>peform<sp/>extended<sp/>configuration<sp/>if<sp/>needed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8c_1ae45e65829aeddea8f11713373d4651fd" kindref="member">BSP_LED_EXTENDED_CONFIG</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>turn<sp/>all<sp/>LEDs<sp/>off<sp/>as<sp/>power-up<sp/>default<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1a524331c6e34b582d877378b5b9a59803" kindref="member">BSP_TURN_OFF_LED1</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1ac7beaf5aaff727489a74bf27372d9ac1" kindref="member">BSP_TURN_OFF_LED2</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1a794371a478f2d96e048c3867aae845e8" kindref="member">BSP_TURN_OFF_LED3</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1aa214aa5326da3adce8c84d762729eb97" kindref="member">BSP_TURN_OFF_LED4</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1a21d5e7b083f19e951ce093120f28412c" kindref="member">BSP_TURN_OFF_LED5</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1aa0f8f6bfd53cf21057e615c4ce5c1c90" kindref="member">BSP_TURN_OFF_LED6</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1a718cb382010f221f8b7f84712f8de8ed" kindref="member">BSP_TURN_OFF_LED7</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="bsp__leds_8h_1a5c7c38d51899e22448662e8acc7b8676" kindref="member">BSP_TURN_OFF_LED8</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/bsp/drivers/code/bsp_leds.c"/>
+  </compounddef>
+</doxygen>

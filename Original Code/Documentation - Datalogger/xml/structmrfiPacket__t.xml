@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structmrfiPacket__t" kind="struct" prot="public">
+    <compoundname>mrfiPacket_t</compoundname>
+    <includes refid="mrfi_8h" local="yes">mrfi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmrfiPacket__t_1ac596bb226cf04fa6addc35c3c6ac8664" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t frame[(__mrfi_MAX_PAYLOAD_SIZE__+__mrfi_FRAME_OVERHEAD_SIZE__)]</definition>
+        <argsstring>[(__mrfi_MAX_PAYLOAD_SIZE__+__mrfi_FRAME_OVERHEAD_SIZE__)]</argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" line="144" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmrfiPacket__t_1a8b95fbda90600ec59752a405fd198770" prot="public" static="no" mutable="no">
+        <type><ref refid="bsp__msp430__defs_8h_1aba7bc1797add20fe3efdf37ced1182c5" kindref="member">uint8_t</ref></type>
+        <definition>uint8_t rxMetrics[__mrfi_RX_METRICS_SIZE__]</definition>
+        <argsstring>[__mrfi_RX_METRICS_SIZE__]</argsstring>
+        <name>rxMetrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" line="145" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" line="143" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/mrfi.h" bodystart="142" bodyend="146"/>
+    <listofallmembers>
+      <member refid="structmrfiPacket__t_1ac596bb226cf04fa6addc35c3c6ac8664" prot="public" virt="non-virtual"><scope>mrfiPacket_t</scope><name>frame</name></member>
+      <member refid="structmrfiPacket__t_1a8b95fbda90600ec59752a405fd198770" prot="public" virt="non-virtual"><scope>mrfiPacket_t</scope><name>rxMetrics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_53ca2860f01a6f59541fe68865afce28" kind="dir">
+    <compoundname>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/</compoundname>
+    <innerdir refid="dir_48be07ae16447a8e88a2b1a1f341642d">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/bluerobin/</innerdir>
+    <innerdir refid="dir_decd48cfde3ba47545e097c003398096">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/</innerdir>
+    <innerdir refid="dir_9cbb1e5ad1d1d3bdbac3dabba0746179">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/include/</innerdir>
+    <innerdir refid="dir_f7594cade6af145cd0d675bd448ae457">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/</innerdir>
+    <innerdir refid="dir_32556d5c5b4bb6c829a78c033cdc1bea">/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/</innerdir>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/"/>
+  </compounddef>
+</doxygen>

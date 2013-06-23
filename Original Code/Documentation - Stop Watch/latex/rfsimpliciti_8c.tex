@@ -1,0 +1,335 @@
+\hypertarget{rfsimpliciti_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/logic/rfsimpliciti.c \-File \-Reference}
+\label{rfsimpliciti_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/rfsimpliciti.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/rfsimpliciti.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}vti\-\_\-as.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ports.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}timer.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}radio.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}acceleration.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}rfsimpliciti.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bluerobin.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}simpliciti.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}clock.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}date.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}alarm.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}temperature.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}vti\-\_\-ps.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}altitude.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{rfsimpliciti_8c_a3dfbd75644eecbff776ee4e7467fd16b}{\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A}~(9u)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{rfsimpliciti_8c_a2af5994085e2d879f831b8892d027384}{simpliciti\-\_\-get\-\_\-data\-\_\-callback} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_a0dd70353445ab962fec9d944d6e5c4aa}{start\-\_\-simpliciti\-\_\-tx\-\_\-only} (\hyperlink{rfsimpliciti_8h_a8f634dc8404e983a244ef648a1c38ece}{simpliciti\-\_\-mode\-\_\-t} mode)
+\item 
+void \hyperlink{rfsimpliciti_8c_aa5a9acbc28a31ef6ffa435b4cfce032f}{start\-\_\-simpliciti\-\_\-sync} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_a862cd02b94eaccaeefa4758ce13de961}{reset\-\_\-rf} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_ab606024ff9ac8226f0cf736f7a108a3e}{sx\-\_\-rf} (u8 line)
+\item 
+void \hyperlink{rfsimpliciti_8c_acf60b6348792799e802ce78ee12e3769}{sx\-\_\-ppt} (u8 line)
+\item 
+void \hyperlink{rfsimpliciti_8c_a5ac1d10c8b948f788cffe8305c5d5c92}{sx\-\_\-sync} (u8 line)
+\item 
+void \hyperlink{rfsimpliciti_8c_a19b661dc625592d48c26f9cb735bc7ca}{display\-\_\-rf} (u8 line, u8 update)
+\item 
+void \hyperlink{rfsimpliciti_8c_a166e385e367acb928aad255b3feeef1c}{display\-\_\-ppt} (u8 line, u8 update)
+\item 
+void \hyperlink{rfsimpliciti_8c_a11fb6b98ca7d2d9186125289cb4e7b56}{display\-\_\-sync} (u8 line, u8 update)
+\item 
+u8 \hyperlink{rfsimpliciti_8c_a53e5f49c84c63c0f47eac218ac64854a}{is\-\_\-rf} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_a2a837f4aa0ad763c3b354188ba796e34}{simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_a1392176690f9e804e645ead4ee5623d2}{simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback} (void)
+\item 
+void \hyperlink{rfsimpliciti_8c_a8da89e171b66cba33301a1fed1ee4425}{simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback} (unsigned int index)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRFsmpl}{\-R\-Fsmpl} \hyperlink{rfsimpliciti_8c_a9a51f364e8748548ef099cce13fa0bd5}{s\-R\-Fsmpl}
+\item 
+unsigned char \hyperlink{rfsimpliciti_8c_a2fb62b29918d37d586bcff8d3b38af11}{simpliciti\-\_\-flag}
+\item 
+unsigned char \hyperlink{rfsimpliciti_8c_ace512611766e2263d68251835f49bd6a}{simpliciti\-\_\-data} \mbox{[}\hyperlink{simpliciti_8h_a27812ea9f29f5a352cefce7354296e14}{\-S\-I\-M\-P\-L\-I\-C\-I\-T\-I\-\_\-\-M\-A\-X\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-L\-E\-N\-G\-T\-H}\mbox{]}
+\item 
+unsigned char \hyperlink{rfsimpliciti_8c_a0a210cf1c892bdaf29c2fa9f80636c15}{simpliciti\-\_\-ed\-\_\-address} \mbox{[}4\mbox{]}
+\item 
+unsigned char \hyperlink{rfsimpliciti_8c_abd36562835b86e076013b6e3575db939}{simpliciti\-\_\-payload\-\_\-length}
+\item 
+unsigned char \hyperlink{rfsimpliciti_8c_a19b6480feef82dff24fe4174e494e745}{simpliciti\-\_\-reply\-\_\-count}
+\item 
+u8 \hyperlink{rfsimpliciti_8c_a4e9280dd37209b45b6397f326c4bfc62}{burst\-\_\-mode}
+\item 
+\hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} \hyperlink{rfsimpliciti_8c_adb34098e63584f5172717689eddd8566}{burst\-\_\-start}
+\item 
+\hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} \hyperlink{rfsimpliciti_8c_ace235aea0847accf57d41c66dc257e4b}{burst\-\_\-end}
+\item 
+\hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} \hyperlink{rfsimpliciti_8c_a7638ae3bc5a01ef3d0000fb1abe9c127}{burst\-\_\-packet} \mbox{[}(9u)\mbox{]}
+\item 
+u8 \hyperlink{rfsimpliciti_8c_aca268f012d66af8069f848c94fc9343f}{burst\-\_\-packet\-\_\-index}
+\item 
+void($\ast$ \hyperlink{rfsimpliciti_8c_aba4d202f2088c6de95b88c0082283299}{fptr\-\_\-lcd\-\_\-function\-\_\-line1} )(u8 line, u8 update)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{rfsimpliciti_8c_a3dfbd75644eecbff776ee4e7467fd16b}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A@{\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A}}
+\index{\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A@{\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{\-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-M\-\_\-\-S\-Y\-N\-C\-\_\-\-B\-U\-R\-S\-T\-\_\-\-P\-A\-C\-K\-E\-T\-S\-\_\-\-I\-N\-\_\-\-D\-A\-T\-A}~(9u)}}\label{rfsimpliciti_8c_a3dfbd75644eecbff776ee4e7467fd16b}
+
+
+\-Definition at line 76 of file rfsimpliciti.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{rfsimpliciti_8c_a166e385e367acb928aad255b3feeef1c}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!display\-\_\-ppt@{display\-\_\-ppt}}
+\index{display\-\_\-ppt@{display\-\_\-ppt}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{display\-\_\-ppt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-ppt} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a166e385e367acb928aad255b3feeef1c}
+
+
+\-Definition at line 302 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a19b661dc625592d48c26f9cb735bc7ca}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!display\-\_\-rf@{display\-\_\-rf}}
+\index{display\-\_\-rf@{display\-\_\-rf}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{display\-\_\-rf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-rf} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a19b661dc625592d48c26f9cb735bc7ca}
+
+
+\-Definition at line 286 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a11fb6b98ca7d2d9186125289cb4e7b56}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!display\-\_\-sync@{display\-\_\-sync}}
+\index{display\-\_\-sync@{display\-\_\-sync}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{display\-\_\-sync}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-sync} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a11fb6b98ca7d2d9186125289cb4e7b56}
+
+
+\-Definition at line 318 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a53e5f49c84c63c0f47eac218ac64854a}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!is\-\_\-rf@{is\-\_\-rf}}
+\index{is\-\_\-rf@{is\-\_\-rf}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{is\-\_\-rf}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-rf} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a53e5f49c84c63c0f47eac218ac64854a}
+
+
+\-Definition at line 333 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a862cd02b94eaccaeefa4758ce13de961}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!reset\-\_\-rf@{reset\-\_\-rf}}
+\index{reset\-\_\-rf@{reset\-\_\-rf}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{reset\-\_\-rf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-rf} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a862cd02b94eaccaeefa4758ce13de961}
+
+
+\-Definition at line 123 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a2af5994085e2d879f831b8892d027384}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-get\-\_\-data\-\_\-callback@{simpliciti\-\_\-get\-\_\-data\-\_\-callback}}
+\index{simpliciti\-\_\-get\-\_\-data\-\_\-callback@{simpliciti\-\_\-get\-\_\-data\-\_\-callback}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-get\-\_\-data\-\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-get\-\_\-data\-\_\-callback} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a2af5994085e2d879f831b8892d027384}
+\hypertarget{rfsimpliciti_8c_a2a837f4aa0ad763c3b354188ba796e34}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback@{simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback}}
+\index{simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback@{simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-get\-\_\-ed\-\_\-data\-\_\-callback} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a2a837f4aa0ad763c3b354188ba796e34}
+
+
+\-Definition at line 347 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a1392176690f9e804e645ead4ee5623d2}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback@{simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback}}
+\index{simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback@{simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-sync\-\_\-decode\-\_\-ap\-\_\-cmd\-\_\-callback} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a1392176690f9e804e645ead4ee5623d2}
+
+
+\-Definition at line 500 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a8da89e171b66cba33301a1fed1ee4425}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback@{simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback}}
+\index{simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback@{simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-sync\-\_\-get\-\_\-data\-\_\-callback} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a8da89e171b66cba33301a1fed1ee4425}
+
+
+\-Definition at line 581 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_aa5a9acbc28a31ef6ffa435b4cfce032f}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!start\-\_\-simpliciti\-\_\-sync@{start\-\_\-simpliciti\-\_\-sync}}
+\index{start\-\_\-simpliciti\-\_\-sync@{start\-\_\-simpliciti\-\_\-sync}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{start\-\_\-simpliciti\-\_\-sync}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf start\-\_\-simpliciti\-\_\-sync} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_aa5a9acbc28a31ef6ffa435b4cfce032f}
+
+
+\-Definition at line 430 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a0dd70353445ab962fec9d944d6e5c4aa}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!start\-\_\-simpliciti\-\_\-tx\-\_\-only@{start\-\_\-simpliciti\-\_\-tx\-\_\-only}}
+\index{start\-\_\-simpliciti\-\_\-tx\-\_\-only@{start\-\_\-simpliciti\-\_\-tx\-\_\-only}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{start\-\_\-simpliciti\-\_\-tx\-\_\-only}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf start\-\_\-simpliciti\-\_\-tx\-\_\-only} (
+\begin{DoxyParamCaption}
+\item[{{\bf simpliciti\-\_\-mode\-\_\-t}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a0dd70353445ab962fec9d944d6e5c4aa}
+
+
+\-Definition at line 196 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_acf60b6348792799e802ce78ee12e3769}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!sx\-\_\-ppt@{sx\-\_\-ppt}}
+\index{sx\-\_\-ppt@{sx\-\_\-ppt}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{sx\-\_\-ppt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-ppt} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_acf60b6348792799e802ce78ee12e3769}
+
+
+\-Definition at line 158 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_ab606024ff9ac8226f0cf736f7a108a3e}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!sx\-\_\-rf@{sx\-\_\-rf}}
+\index{sx\-\_\-rf@{sx\-\_\-rf}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{sx\-\_\-rf}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-rf} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_ab606024ff9ac8226f0cf736f7a108a3e}
+
+
+\-Definition at line 139 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a5ac1d10c8b948f788cffe8305c5d5c92}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!sx\-\_\-sync@{sx\-\_\-sync}}
+\index{sx\-\_\-sync@{sx\-\_\-sync}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{sx\-\_\-sync}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-sync} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{rfsimpliciti_8c_a5ac1d10c8b948f788cffe8305c5d5c92}
+
+
+\-Definition at line 177 of file rfsimpliciti.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{rfsimpliciti_8c_ace235aea0847accf57d41c66dc257e4b}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!burst\-\_\-end@{burst\-\_\-end}}
+\index{burst\-\_\-end@{burst\-\_\-end}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{burst\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16} {\bf burst\-\_\-end}}}\label{rfsimpliciti_8c_ace235aea0847accf57d41c66dc257e4b}
+
+
+\-Definition at line 103 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a4e9280dd37209b45b6397f326c4bfc62}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!burst\-\_\-mode@{burst\-\_\-mode}}
+\index{burst\-\_\-mode@{burst\-\_\-mode}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{burst\-\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf burst\-\_\-mode}}}\label{rfsimpliciti_8c_a4e9280dd37209b45b6397f326c4bfc62}
+
+
+\-Definition at line 100 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a7638ae3bc5a01ef3d0000fb1abe9c127}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!burst\-\_\-packet@{burst\-\_\-packet}}
+\index{burst\-\_\-packet@{burst\-\_\-packet}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{burst\-\_\-packet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16} {\bf burst\-\_\-packet}\mbox{[}(9u)\mbox{]}}}\label{rfsimpliciti_8c_a7638ae3bc5a01ef3d0000fb1abe9c127}
+
+
+\-Definition at line 106 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_aca268f012d66af8069f848c94fc9343f}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!burst\-\_\-packet\-\_\-index@{burst\-\_\-packet\-\_\-index}}
+\index{burst\-\_\-packet\-\_\-index@{burst\-\_\-packet\-\_\-index}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{burst\-\_\-packet\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf burst\-\_\-packet\-\_\-index}}}\label{rfsimpliciti_8c_aca268f012d66af8069f848c94fc9343f}
+
+
+\-Definition at line 109 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_adb34098e63584f5172717689eddd8566}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!burst\-\_\-start@{burst\-\_\-start}}
+\index{burst\-\_\-start@{burst\-\_\-start}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{burst\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16} {\bf burst\-\_\-start}}}\label{rfsimpliciti_8c_adb34098e63584f5172717689eddd8566}
+
+
+\-Definition at line 103 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_aba4d202f2088c6de95b88c0082283299}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}}
+\index{fptr\-\_\-lcd\-\_\-function\-\_\-line1@{fptr\-\_\-lcd\-\_\-function\-\_\-line1}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{fptr\-\_\-lcd\-\_\-function\-\_\-line1}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-lcd\-\_\-function\-\_\-line1})(u8 line, u8 update)}}\label{rfsimpliciti_8c_aba4d202f2088c6de95b88c0082283299}
+
+
+\-Definition at line 116 of file main.\-c.
+
+\hypertarget{rfsimpliciti_8c_ace512611766e2263d68251835f49bd6a}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-data@{simpliciti\-\_\-data}}
+\index{simpliciti\-\_\-data@{simpliciti\-\_\-data}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-data}\mbox{[}{\bf \-S\-I\-M\-P\-L\-I\-C\-I\-T\-I\-\_\-\-M\-A\-X\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-L\-E\-N\-G\-T\-H}\mbox{]}}}\label{rfsimpliciti_8c_ace512611766e2263d68251835f49bd6a}
+
+
+\-Definition at line 87 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a0a210cf1c892bdaf29c2fa9f80636c15}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-ed\-\_\-address@{simpliciti\-\_\-ed\-\_\-address}}
+\index{simpliciti\-\_\-ed\-\_\-address@{simpliciti\-\_\-ed\-\_\-address}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-ed\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-ed\-\_\-address}\mbox{[}4\mbox{]}}}\label{rfsimpliciti_8c_a0a210cf1c892bdaf29c2fa9f80636c15}
+
+
+\-Definition at line 90 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a2fb62b29918d37d586bcff8d3b38af11}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-flag@{simpliciti\-\_\-flag}}
+\index{simpliciti\-\_\-flag@{simpliciti\-\_\-flag}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-flag}}}\label{rfsimpliciti_8c_a2fb62b29918d37d586bcff8d3b38af11}
+
+
+\-Definition at line 84 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_abd36562835b86e076013b6e3575db939}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-payload\-\_\-length@{simpliciti\-\_\-payload\-\_\-length}}
+\index{simpliciti\-\_\-payload\-\_\-length@{simpliciti\-\_\-payload\-\_\-length}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-payload\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-payload\-\_\-length}}}\label{rfsimpliciti_8c_abd36562835b86e076013b6e3575db939}
+
+
+\-Definition at line 93 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a19b6480feef82dff24fe4174e494e745}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!simpliciti\-\_\-reply\-\_\-count@{simpliciti\-\_\-reply\-\_\-count}}
+\index{simpliciti\-\_\-reply\-\_\-count@{simpliciti\-\_\-reply\-\_\-count}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{simpliciti\-\_\-reply\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-reply\-\_\-count}}}\label{rfsimpliciti_8c_a19b6480feef82dff24fe4174e494e745}
+
+
+\-Definition at line 97 of file rfsimpliciti.\-c.
+
+\hypertarget{rfsimpliciti_8c_a9a51f364e8748548ef099cce13fa0bd5}{\index{rfsimpliciti.\-c@{rfsimpliciti.\-c}!s\-R\-Fsmpl@{s\-R\-Fsmpl}}
+\index{s\-R\-Fsmpl@{s\-R\-Fsmpl}!rfsimpliciti.c@{rfsimpliciti.\-c}}
+\subsubsection[{s\-R\-Fsmpl}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf \-R\-Fsmpl} {\bf s\-R\-Fsmpl}}}\label{rfsimpliciti_8c_a9a51f364e8748548ef099cce13fa0bd5}
+
+
+\-Definition at line 81 of file rfsimpliciti.\-c.
+

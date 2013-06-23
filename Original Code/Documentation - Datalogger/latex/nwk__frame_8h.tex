@@ -1,0 +1,476 @@
+\hypertarget{nwk__frame_8h}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Components/nwk/nwk\-\_\-frame.h \-File \-Reference}
+\label{nwk__frame_8h}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk/nwk\-\_\-frame.\-h@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk/nwk\-\_\-frame.\-h}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsigInfo__t}{sig\-Info\-\_\-t}
+\item 
+struct \hyperlink{structframeInfo__t}{frame\-Info\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{nwk__frame_8h_a5a7be3a994610a0cb47128d260566c2d}{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S}~0
+\item 
+\#define \hyperlink{nwk__frame_8h_a77701e0159b288412e6bdde2d7145ddf}{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x3\-F)
+\item 
+\#define \hyperlink{nwk__frame_8h_a496e790aeb0fd6cbaa710fc5f75299c4}{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S}~0
+\item 
+\#define \hyperlink{nwk__frame_8h_ab7bd35af33ef2ddf86e5927a31dfedf6}{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x40)
+\item 
+\#define \hyperlink{nwk__frame_8h_ac86565c7a65b06b8f66594c4273d1825}{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E}~0
+\item 
+\#define \hyperlink{nwk__frame_8h_aba6c784cf7a9b07dc99aea4920d07f94}{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K}~(0x80)
+\item 
+\#define \hyperlink{nwk__frame_8h_a5fbc1732342fb58e47c6140c2f4410d9}{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E}~1
+\item 
+\#define \hyperlink{nwk__frame_8h_acf980f9b40b3b065651b67a137f194b2}{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K}~(0x40)
+\item 
+\#define \hyperlink{nwk__frame_8h_a0bfc6d0d6673de70c3fb46f28f8b82a8}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q}~1
+\item 
+\#define \hyperlink{nwk__frame_8h_a527794f82610bfc3eb6ab865ac07a7c2}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K}~(0x80)
+\item 
+\#define \hyperlink{nwk__frame_8h_ad82c095eadaefe39aba9ca93a06c9b02}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y}~1
+\item 
+\#define \hyperlink{nwk__frame_8h_a04772e362e0c132e93cad1ef76c1f39b}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K}~(0x08)
+\item 
+\#define \hyperlink{nwk__frame_8h_acd7ccf75846e547ddc8d0faddbbacc60}{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E}~1
+\item 
+\#define \hyperlink{nwk__frame_8h_a9ae7e95b25e8f24cb236188a31ebfa74}{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K}~(0x30)
+\item 
+\#define \hyperlink{nwk__frame_8h_a02c165094e266b01869ee52db629f067}{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T}~1
+\item 
+\#define \hyperlink{nwk__frame_8h_a8621e4de4faf20a0714b7e281ff721b2}{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K}~(0x07)
+\item 
+\#define \hyperlink{nwk__frame_8h_a1bc1c26c21b26402bfda09bdc1c90868}{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S}~2
+\item 
+\#define \hyperlink{nwk__frame_8h_afc7c3bb7a82b960f955e4d4b6c545d60}{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x\-F\-F)
+\item 
+\#define \hyperlink{nwk__frame_8h_a77e652a3d021c16099b89c386a8a8dfb}{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}~3
+\item 
+\#define \hyperlink{nwk__frame_8h_ab7892647ac5e04321278a0775ac8fe98}{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S}~0
+\item 
+\#define \hyperlink{nwk__frame_8h_a199b7044b1b6881960326547babdbb53}{\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S}~(\hyperlink{nwk__frame_8h_a77e652a3d021c16099b89c386a8a8dfb}{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}+\hyperlink{nwk__frame_8h_ab7892647ac5e04321278a0775ac8fe98}{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S})
+\item 
+\#define \hyperlink{nwk__frame_8h_a011de1bee0564c370081d9433d43d42e}{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L}~0x00    /$\ast$ does not poll... $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a0935cb8a6346b340f78ec3a8a00c2ee1}{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S}~0x40    /$\ast$ polls for held messages $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a6fd486496ffb070d45a16d26acb27f85}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E}~0x80
+\item 
+\#define \hyperlink{nwk__frame_8h_ae5a51c219304fb398aaf8374fc9a99c2}{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E}~0x08
+\item 
+\#define \hyperlink{nwk__frame_8h_a62b552c6ba070dd56fc51f812e1de168}{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E}~0x80
+\item 
+\#define \hyperlink{nwk__frame_8h_af952d9fe782c4bd531d79a23a07f3c38}{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E}~0x40
+\item 
+\#define \hyperlink{nwk__frame_8h_a7823315c39ec3c6e7930d0f3ba24a3fa}{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D}~0x00    /$\ast$ End Device $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a34353e113df0cb236e097e60afd2aba1}{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E}~0x10    /$\ast$ Range Extender $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_ab65ec4721517278964d094e8efee1ab4}{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P}~0x20    /$\ast$ Access Point $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_afd30e32e5edd7f396737e4a33dae677d}{\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E}(b, f)~((b)\mbox{[}f\mbox{]} \& (f\#\#\-\_\-\-M\-S\-K))
+\item 
+\#define \hyperlink{nwk__frame_8h_a8f66fe4e5ecbeed97f6058055bdd2820}{\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E}(b, f, v)~do \{(b)\mbox{[}f\mbox{]} = ((b)\mbox{[}f\mbox{]} \& $\sim$(f\#\#\-\_\-\-M\-S\-K)) $|$ (v); \} while(0)
+\item 
+\#define \hyperlink{nwk__frame_8h_afc16b766b26949d562ece6cb4f42a5a9}{\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}~0   /$\ast$ entry available for use $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_accb9a94b3b958f773da5e1337a65e662}{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L}~1   /$\ast$ in use. will be explicitly reclaimed $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a6641ecbcd2d2dd36db827ac1bc41f3e7}{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X}~2   /$\ast$ in use. will be reclaimed after \-Tx $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a89d8f16d40d2678354676e0d42a45d3c}{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D}~3   /$\ast$ in use until forwarded by \-A\-P $\ast$/
+\item 
+\#define \hyperlink{nwk__frame_8h_a27fe00ca68dfe76e1d367a4fd9ece1e2}{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N}~4   /$\ast$ being retrieved. do not delete in \-Rx \hyperlink{bm_8h_a5f508dad67615d631d3f28b81a44f329}{\-I\-S\-R} thread. $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$ \hyperlink{nwk__frame_8h_a2b54b994908377a9667abecc881ae865}{nwk\-\_\-build\-Frame} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$msg, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} len, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} hops)
+\item 
+void \hyperlink{nwk__frame_8h_a1e1acb295cd400fd7aeb4bc047b2d4b6}{nwk\-\_\-receive\-Frame} (void)
+\item 
+void \hyperlink{nwk__frame_8h_a2f59b71a67b189f8e3877f54a3f533b0}{nwk\-\_\-frame\-Init} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}($\ast$)(\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t}))
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__frame_8h_a4963bd958fdbdf25b0072392056e5796}{nwk\-\_\-retrieve\-Frame} (\hyperlink{structrcvContext__t}{rcv\-Context\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$, \hyperlink{structaddr__t}{addr\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__frame_8h_afd3a9e8b37ea6399dcf6bc99c178409a}{nwk\-\_\-send\-Frame} (\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} tx\-Option)
+\item 
+\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$ \hyperlink{nwk__frame_8h_affbba74d1ab96f24ccd1eee147f8c8df}{nwk\-\_\-get\-Sand\-F\-Frame} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk__frame_8h_a9b92ea1e177019598187d98cb9d20f97}{nwk\-\_\-get\-My\-Rx\-Type} (void)
+\item 
+void \hyperlink{nwk__frame_8h_ae2908dda552499370f32846c2b346a3e}{nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$)
+\item 
+void \hyperlink{nwk__frame_8h_a76d56d6cdf21e2f44bfb36464ee13fc8}{nwk\-\_\-replay\-Frame} (\hyperlink{structframeInfo__t}{frame\-Info\-\_\-t} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{nwk__frame_8h_a0bfc6d0d6673de70c3fb46f28f8b82a8}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q}~1}}\label{nwk__frame_8h_a0bfc6d0d6673de70c3fb46f28f8b82a8}
+
+
+\-Definition at line 52 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a527794f82610bfc3eb6ab865ac07a7c2}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-M\-S\-K}~(0x80)}}\label{nwk__frame_8h_a527794f82610bfc3eb6ab865ac07a7c2}
+
+
+\-Definition at line 53 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a6fd486496ffb070d45a16d26acb27f85}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-E\-Q\-\_\-\-T\-Y\-P\-E}~0x80}}\label{nwk__frame_8h_a6fd486496ffb070d45a16d26acb27f85}
+
+
+\-Definition at line 87 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ad82c095eadaefe39aba9ca93a06c9b02}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y}~1}}\label{nwk__frame_8h_ad82c095eadaefe39aba9ca93a06c9b02}
+
+
+\-Definition at line 54 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a04772e362e0c132e93cad1ef76c1f39b}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-M\-S\-K}~(0x08)}}\label{nwk__frame_8h_a04772e362e0c132e93cad1ef76c1f39b}
+
+
+\-Definition at line 55 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ae5a51c219304fb398aaf8374fc9a99c2}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-C\-K\-\_\-\-R\-P\-L\-Y\-\_\-\-T\-Y\-P\-E}~0x08}}\label{nwk__frame_8h_ae5a51c219304fb398aaf8374fc9a99c2}
+
+
+\-Definition at line 88 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a199b7044b1b6881960326547babdbb53}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S@{\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S}}
+\index{\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S@{\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-A\-P\-P\-\_\-\-P\-A\-Y\-L\-O\-A\-D\-\_\-\-O\-S}~({\bf \-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}+{\bf \-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S})}}\label{nwk__frame_8h_a199b7044b1b6881960326547babdbb53}
+
+
+\-Definition at line 81 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a496e790aeb0fd6cbaa710fc5f75299c4}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S@{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S}}
+\index{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S@{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S}~0}}\label{nwk__frame_8h_a496e790aeb0fd6cbaa710fc5f75299c4}
+
+
+\-Definition at line 46 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ab7bd35af33ef2ddf86e5927a31dfedf6}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x40)}}\label{nwk__frame_8h_ab7bd35af33ef2ddf86e5927a31dfedf6}
+
+
+\-Definition at line 47 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_af952d9fe782c4bd531d79a23a07f3c38}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-N\-C\-R\-Y\-P\-T\-\_\-\-T\-Y\-P\-E}~0x40}}\label{nwk__frame_8h_af952d9fe782c4bd531d79a23a07f3c38}
+
+
+\-Definition at line 90 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a62b552c6ba070dd56fc51f812e1de168}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-F\-R\-A\-M\-E\-\_\-\-F\-W\-D\-\_\-\-T\-Y\-P\-E}~0x80}}\label{nwk__frame_8h_a62b552c6ba070dd56fc51f812e1de168}
+
+
+\-Definition at line 89 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ac86565c7a65b06b8f66594c4273d1825}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E@{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E}}
+\index{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E@{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E}~0}}\label{nwk__frame_8h_ac86565c7a65b06b8f66594c4273d1825}
+
+
+\-Definition at line 48 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_aba6c784cf7a9b07dc99aea4920d07f94}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-F\-W\-D\-\_\-\-F\-R\-A\-M\-E\-\_\-\-M\-S\-K}~(0x80)}}\label{nwk__frame_8h_aba6c784cf7a9b07dc99aea4920d07f94}
+
+
+\-Definition at line 49 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a02c165094e266b01869ee52db629f067}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T@{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T}}
+\index{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T@{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T}~1}}\label{nwk__frame_8h_a02c165094e266b01869ee52db629f067}
+
+
+\-Definition at line 58 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a8621e4de4faf20a0714b7e281ff721b2}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K@{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K@{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-H\-O\-P\-\_\-\-C\-O\-U\-N\-T\-\_\-\-M\-S\-K}~(0x07)}}\label{nwk__frame_8h_a8621e4de4faf20a0714b7e281ff721b2}
+
+
+\-Definition at line 59 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a5a7be3a994610a0cb47128d260566c2d}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S@{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S}}
+\index{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S@{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S}~0}}\label{nwk__frame_8h_a5a7be3a994610a0cb47128d260566c2d}
+
+
+\-Definition at line 44 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a77701e0159b288412e6bdde2d7145ddf}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-P\-O\-R\-T\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x3\-F)}}\label{nwk__frame_8h_a77701e0159b288412e6bdde2d7145ddf}
+
+
+\-Definition at line 45 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a5fbc1732342fb58e47c6140c2f4410d9}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E}~1}}\label{nwk__frame_8h_a5fbc1732342fb58e47c6140c2f4410d9}
+
+
+\-Definition at line 50 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_acf980f9b40b3b065651b67a137f194b2}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-S\-K}~(0x40)}}\label{nwk__frame_8h_acf980f9b40b3b065651b67a137f194b2}
+
+
+\-Definition at line 51 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a0935cb8a6346b340f78ec3a8a00c2ee1}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S}}
+\index{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-P\-O\-L\-L\-S}~0x40    /$\ast$ polls for held messages $\ast$/}}\label{nwk__frame_8h_a0935cb8a6346b340f78ec3a8a00c2ee1}
+
+
+\-Definition at line 85 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a011de1bee0564c370081d9433d43d42e}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L}}
+\index{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L@{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-R\-X\-\_\-\-T\-Y\-P\-E\-\_\-\-U\-S\-E\-R\-\_\-\-C\-T\-L}~0x00    /$\ast$ does not poll... $\ast$/}}\label{nwk__frame_8h_a011de1bee0564c370081d9433d43d42e}
+
+
+\-Definition at line 84 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ab7892647ac5e04321278a0775ac8fe98}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S@{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S}}
+\index{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S@{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-S\-E\-C\-U\-R\-E\-\_\-\-O\-S}~0}}\label{nwk__frame_8h_ab7892647ac5e04321278a0775ac8fe98}
+
+
+\-Definition at line 77 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a1bc1c26c21b26402bfda09bdc1c90868}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S@{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S}}
+\index{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S@{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S}~2}}\label{nwk__frame_8h_a1bc1c26c21b26402bfda09bdc1c90868}
+
+
+\-Definition at line 60 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_afc7c3bb7a82b960f955e4d4b6c545d60}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K@{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-R\-A\-C\-T\-I\-D\-\_\-\-O\-S\-\_\-\-M\-S\-K}~(0x\-F\-F)}}\label{nwk__frame_8h_afc7c3bb7a82b960f955e4d4b6c545d60}
+
+
+\-Definition at line 61 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_acd7ccf75846e547ddc8d0faddbbacc60}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E}}
+\index{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E}~1}}\label{nwk__frame_8h_acd7ccf75846e547ddc8d0faddbbacc60}
+
+
+\-Definition at line 56 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_ab65ec4721517278964d094e8efee1ab4}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P}}
+\index{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-P}~0x20    /$\ast$ Access Point $\ast$/}}\label{nwk__frame_8h_ab65ec4721517278964d094e8efee1ab4}
+
+
+\-Definition at line 95 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a7823315c39ec3c6e7930d0f3ba24a3fa}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D}}
+\index{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-E\-D}~0x00    /$\ast$ End Device $\ast$/}}\label{nwk__frame_8h_a7823315c39ec3c6e7930d0f3ba24a3fa}
+
+
+\-Definition at line 93 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a9ae7e95b25e8f24cb236188a31ebfa74}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K}}
+\index{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-M\-S\-K}~(0x30)}}\label{nwk__frame_8h_a9ae7e95b25e8f24cb236188a31ebfa74}
+
+
+\-Definition at line 57 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a34353e113df0cb236e097e60afd2aba1}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E}}
+\index{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E@{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-\_\-\-T\-X\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-R\-E}~0x10    /$\ast$ Range Extender $\ast$/}}\label{nwk__frame_8h_a34353e113df0cb236e097e60afd2aba1}
+
+
+\-Definition at line 94 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_afc16b766b26949d562ece6cb4f42a5a9}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E@{\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}}
+\index{\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E@{\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}~0   /$\ast$ entry available for use $\ast$/}}\label{nwk__frame_8h_afc16b766b26949d562ece6cb4f42a5a9}
+
+
+\-Definition at line 109 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a27fe00ca68dfe76e1d367a4fd9ece1e2}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N}}
+\index{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-T\-R\-A\-N\-S\-I\-T\-I\-O\-N}~4   /$\ast$ being retrieved. do not delete in \-Rx {\bf \-I\-S\-R} thread. $\ast$/}}\label{nwk__frame_8h_a27fe00ca68dfe76e1d367a4fd9ece1e2}
+
+
+\-Definition at line 113 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_accb9a94b3b958f773da5e1337a65e662}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L}}
+\index{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-D\-E\-L}~1   /$\ast$ in use. will be explicitly reclaimed $\ast$/}}\label{nwk__frame_8h_accb9a94b3b958f773da5e1337a65e662}
+
+
+\-Definition at line 110 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a89d8f16d40d2678354676e0d42a45d3c}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D}}
+\index{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-F\-W\-D}~3   /$\ast$ in use until forwarded by \-A\-P $\ast$/}}\label{nwk__frame_8h_a89d8f16d40d2678354676e0d42a45d3c}
+
+
+\-Definition at line 112 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a6641ecbcd2d2dd36db827ac1bc41f3e7}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X}}
+\index{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X@{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-I\-\_\-\-I\-N\-U\-S\-E\-\_\-\-U\-N\-T\-I\-L\-\_\-\-T\-X}~2   /$\ast$ in use. will be reclaimed after \-Tx $\ast$/}}\label{nwk__frame_8h_a6641ecbcd2d2dd36db827ac1bc41f3e7}
+
+
+\-Definition at line 111 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_afd30e32e5edd7f396737e4a33dae677d}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E@{\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E}}
+\index{\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E@{\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-G\-E\-T\-\_\-\-F\-R\-O\-M\-\_\-\-F\-R\-A\-M\-E}(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{f}
+\end{DoxyParamCaption}
+)~((b)\mbox{[}f\mbox{]} \& (f\#\#\-\_\-\-M\-S\-K))}}\label{nwk__frame_8h_afd30e32e5edd7f396737e4a33dae677d}
+
+
+\-Definition at line 98 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a8f66fe4e5ecbeed97f6058055bdd2820}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E@{\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E}}
+\index{\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E@{\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-U\-T\-\_\-\-I\-N\-T\-O\-\_\-\-F\-R\-A\-M\-E}(
+\begin{DoxyParamCaption}
+\item[{}]{b, }
+\item[{}]{f, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~do \{(b)\mbox{[}f\mbox{]} = ((b)\mbox{[}f\mbox{]} \& $\sim$(f\#\#\-\_\-\-M\-S\-K)) $|$ (v); \} while(0)}}\label{nwk__frame_8h_a8f66fe4e5ecbeed97f6058055bdd2820}
+
+
+\-Definition at line 103 of file nwk\-\_\-frame.\-h.
+
+\hypertarget{nwk__frame_8h_a77e652a3d021c16099b89c386a8a8dfb}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E@{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}}
+\index{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E@{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-N\-W\-K\-\_\-\-H\-D\-R\-\_\-\-S\-I\-Z\-E}~3}}\label{nwk__frame_8h_a77e652a3d021c16099b89c386a8a8dfb}
+
+
+\-Definition at line 62 of file nwk\-\_\-frame.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk__frame_8h_a2b54b994908377a9667abecc881ae865}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-build\-Frame@{nwk\-\_\-build\-Frame}}
+\index{nwk\-\_\-build\-Frame@{nwk\-\_\-build\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-build\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf frame\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-build\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf uint8\-\_\-t} $\ast$}]{msg, }
+\item[{{\bf uint8\-\_\-t}}]{len, }
+\item[{{\bf uint8\-\_\-t}}]{hops}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a2b54b994908377a9667abecc881ae865}
+
+
+\-Definition at line 183 of file nwk\-\_\-frame.\-c.
+
+\hypertarget{nwk__frame_8h_a2f59b71a67b189f8e3877f54a3f533b0}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-frame\-Init@{nwk\-\_\-frame\-Init}}
+\index{nwk\-\_\-frame\-Init@{nwk\-\_\-frame\-Init}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-frame\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-frame\-Init} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}($\ast$)({\bf link\-I\-D\-\_\-t})}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a2f59b71a67b189f8e3877f54a3f533b0}
+
+
+\-Definition at line 126 of file nwk\-\_\-frame.\-c.
+
+\hypertarget{nwk__frame_8h_a9b92ea1e177019598187d98cb9d20f97}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-get\-My\-Rx\-Type@{nwk\-\_\-get\-My\-Rx\-Type}}
+\index{nwk\-\_\-get\-My\-Rx\-Type@{nwk\-\_\-get\-My\-Rx\-Type}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-get\-My\-Rx\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-get\-My\-Rx\-Type} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a9b92ea1e177019598187d98cb9d20f97}
+
+
+\-Definition at line 685 of file nwk\-\_\-frame.\-c.
+
+\hypertarget{nwk__frame_8h_affbba74d1ab96f24ccd1eee147f8c8df}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-get\-Sand\-F\-Frame@{nwk\-\_\-get\-Sand\-F\-Frame}}
+\index{nwk\-\_\-get\-Sand\-F\-Frame@{nwk\-\_\-get\-Sand\-F\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-get\-Sand\-F\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf frame\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-get\-Sand\-F\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_affbba74d1ab96f24ccd1eee147f8c8df}
+\hypertarget{nwk__frame_8h_a1e1acb295cd400fd7aeb4bc047b2d4b6}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-receive\-Frame@{nwk\-\_\-receive\-Frame}}
+\index{nwk\-\_\-receive\-Frame@{nwk\-\_\-receive\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-receive\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-receive\-Frame} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a1e1acb295cd400fd7aeb4bc047b2d4b6}
+\hypertarget{nwk__frame_8h_a76d56d6cdf21e2f44bfb36464ee13fc8}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-replay\-Frame@{nwk\-\_\-replay\-Frame}}
+\index{nwk\-\_\-replay\-Frame@{nwk\-\_\-replay\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-replay\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-replay\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf frame\-Info\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a76d56d6cdf21e2f44bfb36464ee13fc8}
+
+
+\-Definition at line 768 of file nwk\-\_\-frame.\-c.
+
+\hypertarget{nwk__frame_8h_a4963bd958fdbdf25b0072392056e5796}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-retrieve\-Frame@{nwk\-\_\-retrieve\-Frame}}
+\index{nwk\-\_\-retrieve\-Frame@{nwk\-\_\-retrieve\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-retrieve\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-retrieve\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf rcv\-Context\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t} $\ast$}]{, }
+\item[{{\bf addr\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_a4963bd958fdbdf25b0072392056e5796}
+\hypertarget{nwk__frame_8h_ae2908dda552499370f32846c2b346a3e}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame@{nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame}}
+\index{nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame@{nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-\-Send\-Empty\-Poll\-Rsp\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_ae2908dda552499370f32846c2b346a3e}
+\hypertarget{nwk__frame_8h_afd3a9e8b37ea6399dcf6bc99c178409a}{\index{nwk\-\_\-frame.\-h@{nwk\-\_\-frame.\-h}!nwk\-\_\-send\-Frame@{nwk\-\_\-send\-Frame}}
+\index{nwk\-\_\-send\-Frame@{nwk\-\_\-send\-Frame}!nwk_frame.h@{nwk\-\_\-frame.\-h}}
+\subsubsection[{nwk\-\_\-send\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-send\-Frame} (
+\begin{DoxyParamCaption}
+\item[{{\bf frame\-Info\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{tx\-Option}
+\end{DoxyParamCaption}
+)}}\label{nwk__frame_8h_afd3a9e8b37ea6399dcf6bc99c178409a}
+
+
+\-Definition at line 646 of file nwk\-\_\-frame.\-c.
+

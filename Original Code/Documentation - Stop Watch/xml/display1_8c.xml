@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="display1_8c" kind="file">
+    <compoundname>display1.c</compoundname>
+    <includes refid="project_8h" local="yes">project.h</includes>
+    <includes refid="display_8h" local="yes">display.h</includes>
+    <incdepgraph>
+      <node id="143">
+        <label>display.h</label>
+        <link refid="display_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>float.h</label>
+      </node>
+      <node id="138">
+        <label>msp430F5509.h</label>
+      </node>
+      <node id="135">
+        <label>/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c</label>
+        <link refid="display1.c"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>project.h</label>
+        <link refid="project_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>stddef.h</label>
+      </node>
+      <node id="137">
+        <label>cc430x613x.h</label>
+      </node>
+      <node id="139">
+        <label>bm.h</label>
+        <link refid="bm_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>limits.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="display1_8c_1a6960e6770dde5a9918330351c92b3215" prot="public" static="no" mutable="no">
+        <type>const u8</type>
+        <definition>const u8 lcd_font[]</definition>
+        <argsstring>[]</argsstring>
+        <name>lcd_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" line="109" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="display1_8c_1a20e0de1ebd5828d2222356e0d74784c2" prot="public" static="no" mutable="no">
+        <type>const u8 *</type>
+        <definition>const u8* segments_lcdmem[]</definition>
+        <argsstring>[]</argsstring>
+        <name>segments_lcdmem</name>
+        <initializer>
+{
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A2A) ) ,
+	 ( ((u8*)0x0A29) ) ,
+	 ( ((u8*)0x0A27) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A21) ) ,
+	 ( ((u8*)0x0A22) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A23) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A25) ) ,
+	 ( ((u8*)0x0A26) ) ,
+	 ( ((u8*)0x0A21) ) ,
+	 ( ((u8*)0x0A22) ) ,
+	 ( ((u8*)0x0A23) ) ,
+	 ( ((u8*)0x0A25) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A2B) ) ,
+	 ( ((u8*)0x0A2B) ) ,
+	 ( ((u8*)0x0A2A) ) ,
+	 ( ((u8*)0x0A29) ) ,
+	 ( ((u8*)0x0A28) ) ,
+	 ( ((u8*)0x0A27) ) ,
+	 ( ((u8*)0x0A20) ) ,
+	 ( ((u8*)0x0A24) ) ,
+	 ( ((u8*)0x0A28) ) ,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" line="157" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="display1_8c_1aafb23fa9f91f6f133b1d9c9b68944781" prot="public" static="no" mutable="no">
+        <type>const u8</type>
+        <definition>const u8 segments_bitmask[]</definition>
+        <argsstring>[]</argsstring>
+        <name>segments_bitmask</name>
+        <initializer>
+{
+	 (BIT1+BIT0) ,
+	 (BIT0) ,
+	 (BIT2) ,
+	 (BIT3) ,
+	 (BIT4) ,
+	 (BIT7) ,
+	 (BIT7) ,
+	 (BIT7) ,
+	 (BIT7) ,
+	 (BIT5) ,
+	 (BIT6) ,
+	 (BIT1) ,
+	 (BIT0) ,
+	 (BIT3) ,
+	 (BIT2) ,
+	 (BIT1) ,
+	 (BIT4) ,
+	 (BIT5) ,
+	 (BIT6) ,
+	 (BIT3) ,
+	 (BIT3) ,
+	 (BIT7) ,
+	 (BIT3) ,
+	 (BIT3) ,
+	 (BIT3) ,
+	 (BIT3) ,
+	 (BIT2+BIT1+BIT0+BIT7+BIT6+BIT5+BIT4) ,
+	 (BIT2+BIT1+BIT0+BIT7+BIT6+BIT5+BIT4) ,
+	 (BIT2+BIT1+BIT0+BIT7+BIT6+BIT5+BIT4) ,
+	 (BIT2+BIT1+BIT0+BIT7+BIT6+BIT5+BIT4) ,
+	 (BIT5) ,
+	 (BIT6) ,
+	 (BIT2) ,
+	 (BIT7) ,
+	 (BIT3+BIT2+BIT1+BIT0+BIT6+BIT5+BIT4) ,
+	 (BIT3+BIT2+BIT1+BIT0+BIT6+BIT5+BIT4) ,
+	 (BIT3+BIT2+BIT1+BIT0+BIT6+BIT5+BIT4) ,
+	 (BIT3+BIT2+BIT1+BIT0+BIT6+BIT5+BIT4) ,
+	 (BIT3+BIT2+BIT1+BIT0+BIT6+BIT5+BIT4) ,
+	 (BIT4) ,
+	 (BIT0) ,
+	 (BIT7) ,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" line="205" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="display1_8c_1a1242c3517ec3135d23c8b14ee25d5e0d" prot="public" static="no" mutable="no">
+        <type>const u8</type>
+        <definition>const u8 itoa_conversion_table[][3]</definition>
+        <argsstring>[][3]</argsstring>
+        <name>itoa_conversion_table</name>
+        <initializer>
+{
+	&quot;000&quot;, &quot;001&quot;, &quot;002&quot;, &quot;003&quot;, &quot;004&quot;, &quot;005&quot;, &quot;006&quot;, &quot;007&quot;, &quot;008&quot;, &quot;009&quot;, &quot;010&quot;, &quot;011&quot;, &quot;012&quot;, &quot;013&quot;, &quot;014&quot;, &quot;015&quot;,
+	&quot;016&quot;, &quot;017&quot;, &quot;018&quot;, &quot;019&quot;, &quot;020&quot;, &quot;021&quot;, &quot;022&quot;, &quot;023&quot;, &quot;024&quot;, &quot;025&quot;, &quot;026&quot;, &quot;027&quot;, &quot;028&quot;, &quot;029&quot;, &quot;030&quot;, &quot;031&quot;,
+	&quot;032&quot;, &quot;033&quot;, &quot;034&quot;, &quot;035&quot;, &quot;036&quot;, &quot;037&quot;, &quot;038&quot;, &quot;039&quot;, &quot;040&quot;, &quot;041&quot;, &quot;042&quot;, &quot;043&quot;, &quot;044&quot;, &quot;045&quot;, &quot;046&quot;, &quot;047&quot;,
+	&quot;048&quot;, &quot;049&quot;, &quot;050&quot;, &quot;051&quot;, &quot;052&quot;, &quot;053&quot;, &quot;054&quot;, &quot;055&quot;, &quot;056&quot;, &quot;057&quot;, &quot;058&quot;, &quot;059&quot;, &quot;060&quot;, &quot;061&quot;, &quot;062&quot;, &quot;063&quot;,
+	&quot;064&quot;, &quot;065&quot;, &quot;066&quot;, &quot;067&quot;, &quot;068&quot;, &quot;069&quot;, &quot;070&quot;, &quot;071&quot;, &quot;072&quot;, &quot;073&quot;, &quot;074&quot;, &quot;075&quot;, &quot;076&quot;, &quot;077&quot;, &quot;078&quot;, &quot;079&quot;,
+	&quot;080&quot;, &quot;081&quot;, &quot;082&quot;, &quot;083&quot;, &quot;084&quot;, &quot;085&quot;, &quot;086&quot;, &quot;087&quot;, &quot;088&quot;, &quot;089&quot;, &quot;090&quot;, &quot;091&quot;, &quot;092&quot;, &quot;093&quot;, &quot;094&quot;, &quot;095&quot;,
+	&quot;096&quot;, &quot;097&quot;, &quot;098&quot;, &quot;099&quot;, &quot;100&quot;, &quot;101&quot;, &quot;102&quot;, &quot;103&quot;, &quot;104&quot;, &quot;105&quot;, &quot;106&quot;, &quot;107&quot;, &quot;108&quot;, &quot;109&quot;, &quot;110&quot;, &quot;111&quot;,
+	&quot;112&quot;, &quot;113&quot;, &quot;114&quot;, &quot;115&quot;, &quot;116&quot;, &quot;117&quot;, &quot;118&quot;, &quot;119&quot;, &quot;120&quot;, &quot;121&quot;, &quot;122&quot;, &quot;123&quot;, &quot;124&quot;, &quot;125&quot;, &quot;126&quot;, &quot;127&quot;,
+	&quot;128&quot;, &quot;129&quot;, &quot;130&quot;, &quot;131&quot;, &quot;132&quot;, &quot;133&quot;, &quot;134&quot;, &quot;135&quot;, &quot;136&quot;, &quot;137&quot;, &quot;138&quot;, &quot;139&quot;, &quot;140&quot;, &quot;141&quot;, &quot;142&quot;, &quot;143&quot;,
+	&quot;144&quot;, &quot;145&quot;, &quot;146&quot;, &quot;147&quot;, &quot;148&quot;, &quot;149&quot;, &quot;150&quot;, &quot;151&quot;, &quot;152&quot;, &quot;153&quot;, &quot;154&quot;, &quot;155&quot;, &quot;156&quot;, &quot;157&quot;, &quot;158&quot;, &quot;159&quot;,
+	&quot;160&quot;, &quot;161&quot;, &quot;162&quot;, &quot;163&quot;, &quot;164&quot;, &quot;165&quot;, &quot;166&quot;, &quot;167&quot;, &quot;168&quot;, &quot;169&quot;, &quot;170&quot;, &quot;171&quot;, &quot;172&quot;, &quot;173&quot;, &quot;174&quot;, &quot;175&quot;,
+	&quot;176&quot;, &quot;177&quot;, &quot;178&quot;, &quot;179&quot;, &quot;180&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" line="223" bodyfile="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>-<sp/>http://www.ti.com/<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>are<sp/>met:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>Texas<sp/>Instruments<sp/>Incorporated<sp/>nor<sp/>the<sp/>names<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>its<sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Basic<sp/>display<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Include<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="project_8h" kindref="compound">project.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>driver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="display_8h" kindref="compound">display.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prototypes<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defines<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*************************************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Global<sp/>Variable<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Table<sp/>with<sp/>memory<sp/>bit<sp/>assignment<sp/>for<sp/>digits<sp/>&quot;0&quot;<sp/>to<sp/>&quot;9&quot;<sp/>and<sp/>characters<sp/>&quot;A&quot;<sp/>to<sp/>&quot;Z&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="display1_8c_1a6960e6770dde5a9918330351c92b3215" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="display_8h_1a6960e6770dde5a9918330351c92b3215" kindref="member">lcd_font</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<ref refid="display_8h_1a41810fa14a326fc41468571948dc09c4" kindref="member">SEG_C</ref>+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<ref refid="display_8h_1a41810fa14a326fc41468571948dc09c4" kindref="member">SEG_C</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;2&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;3&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;5&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;6&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<ref refid="display_8h_1a41810fa14a326fc41468571948dc09c4" kindref="member">SEG_C</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;7&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;8&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;9&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;c&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;A&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;b&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;d&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;E&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;F&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>SEG_A+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+SEG_D+SEG_E+SEG_F+SEG_G,<sp/><sp/><sp/><sp/><sp/>//<sp/>Displays<sp/>&quot;G&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;g&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;H&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;I&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<ref refid="display_8h_1ab408360fd13aeefc34520d9464407419" kindref="member">SEG_D</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;J&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_B+SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_E+SEG_F+SEG_G,<sp/><sp/><sp/><sp/><sp/>//<sp/>Displays<sp/>&quot;k&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;k&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;L&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;M&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;o&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;P&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<ref refid="display_8h_1a2a3e102716f360738446e1e3e5edd762" kindref="member">SEG_F</ref><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;Q&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;r&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+SEG_D+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;S&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref>+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;u&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEG_C+SEG_D+<ref refid="display_8h_1af88257e7e5371478adfbb6d72366d7a1" kindref="member">SEG_E</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;u&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;-&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+<sp/><sp/><sp/><sp/><sp/>+SEG_E+SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;X&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+SEG_C+SEG_D+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_F+<ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;Y&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="display_8h_1a75cb54bcebb299263826f33304ad9265" kindref="member">SEG_A</ref>+<ref refid="display_8h_1a62bb65e0fd3cae8fe6bb8ca3f45b8d42" kindref="member">SEG_B</ref>+<sp/><sp/><sp/><sp/><sp/><sp/>SEG_D+SEG_E+<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf85b76890259838df0ca7462c415848" kindref="member">SEG_G</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Displays<sp/>&quot;Z&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Table<sp/>with<sp/>memory<sp/>address<sp/>for<sp/>each<sp/>display<sp/>element<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="display1_8c_1a20e0de1ebd5828d2222356e0d74784c2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*<sp/><ref refid="display_8h_1a20e0de1ebd5828d2222356e0d74784c2" kindref="member">segments_lcdmem</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ad9574a96cb6d0481f36433ecd05b1f51" kindref="member">LCD_SYMB_AM_MEM</ref>,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a549c4ac2ebea1628925e83d0939b798c" kindref="member">LCD_SYMB_PM_MEM</ref>,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ad3a9f5ddfe57e0f2ac013713dc986da6" kindref="member">LCD_SYMB_ARROW_UP_MEM</ref>,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a65b6066db3d91f76abe3e6deb7192e45" kindref="member">LCD_SYMB_ARROW_DOWN_MEM</ref>,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aaeb770b09266055907bee9037347c338" kindref="member">LCD_SYMB_PERCENT_MEM</ref>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a89ac525b343331e29c1171b40338ecc1" kindref="member">LCD_SYMB_TOTAL_MEM</ref>,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ac4764b34cf951906b03ed28d082eea3c" kindref="member">LCD_SYMB_AVERAGE_MEM</ref>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a36f54bc49a4eccb0999daba57940e237" kindref="member">LCD_SYMB_MAX_MEM</ref>,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a7c8b3d87a04a3a57777dafe7187903ab" kindref="member">LCD_SYMB_BATTERY_MEM</ref>,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a46308d16e8686c992c7b27dfb72fd62d" kindref="member">LCD_UNIT_L1_FT_MEM</ref>,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aeeaed7dab0e2becea7b85b359bef5603" kindref="member">LCD_UNIT_L1_K_MEM</ref>,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ac6dcc4ede64724669f888f697967927b" kindref="member">LCD_UNIT_L1_M_MEM</ref>,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a33cd2ab2db047afc8ba7ee64dc5723aa" kindref="member">LCD_UNIT_L1_I_MEM</ref>,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab3fc2c9c411a9e066bf25f4e1b006793" kindref="member">LCD_UNIT_L1_PER_S_MEM</ref>,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1acda5316218b245af78228ba99d56429d" kindref="member">LCD_UNIT_L1_PER_H_MEM</ref>,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aa2210c4934254aa6cf41308507394f6b" kindref="member">LCD_UNIT_L1_DEGREE_MEM</ref>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a7ad99e710e4565999c3949dbb937d1de" kindref="member">LCD_UNIT_L2_KCAL_MEM</ref>,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a55405243a0f98c7815fac1e55b483b67" kindref="member">LCD_UNIT_L2_KM_MEM</ref>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a11cedd45dd0a90893c90e27c49d55212" kindref="member">LCD_UNIT_L2_MI_MEM</ref>,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af03cd2611d9cf8368b877e5a7b02ed37" kindref="member">LCD_ICON_HEART_MEM</ref>,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab250fcb6e0a1f9654e69cbaaf60d0a26" kindref="member">LCD_ICON_STOPWATCH_MEM</ref>,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a0836a24c55aae607da155c22502d6a84" kindref="member">LCD_ICON_RECORD_MEM</ref>,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab140410908908ba221bb896a81073e60" kindref="member">LCD_ICON_ALARM_MEM</ref>,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ae16f5846c4e044d25ec06ffc255b5749" kindref="member">LCD_ICON_BEEPER1_MEM</ref>,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a59976a67ded556cceb99833eea417257" kindref="member">LCD_ICON_BEEPER2_MEM</ref>,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a84b7830df1ce1e5c3b566cff63cb838a" kindref="member">LCD_ICON_BEEPER3_MEM</ref>,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ac7a12ddab9a29d55bdd45b42346dce90" kindref="member">LCD_SEG_L1_3_MEM</ref>,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1afd6d56994ae0217a8b27b8712405a534" kindref="member">LCD_SEG_L1_2_MEM</ref>,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a22615dc6a30c8c70ce3b0b42f34c71dd" kindref="member">LCD_SEG_L1_1_MEM</ref>,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ac64d32976234e91509631474f0b0c20f" kindref="member">LCD_SEG_L1_0_MEM</ref>,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a9bd14e19746d915bfe1630886e303fb8" kindref="member">LCD_SEG_L1_COL_MEM</ref>,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1acf4ac5645570566d2ec8f3f58616c4ff" kindref="member">LCD_SEG_L1_DP1_MEM</ref>,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a19c75fe3c556ec777a6cf370d7fd495d" kindref="member">LCD_SEG_L1_DP0_MEM</ref>,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a35d9c7e0c6e3cf8465a2fe4dbad9bcca" kindref="member">LCD_SEG_L2_5_MEM</ref>,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a07b2ea33c73e734f4d9d8678e6ac6e02" kindref="member">LCD_SEG_L2_4_MEM</ref>,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ac3454d405f9b9784b7f3bcccb074231a" kindref="member">LCD_SEG_L2_3_MEM</ref>,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a55d357d12ac08074f940f03ce6b3fdd8" kindref="member">LCD_SEG_L2_2_MEM</ref>,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a284e09eead2d969fa79743ec26c0ab0e" kindref="member">LCD_SEG_L2_1_MEM</ref>,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af0583416380a1667f474c4906a9d1e97" kindref="member">LCD_SEG_L2_0_MEM</ref>,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a910934da5326c5e8f5dce5567b7ce5ca" kindref="member">LCD_SEG_L2_COL1_MEM</ref>,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a207d428168754943ae1c1f4b1b99800d" kindref="member">LCD_SEG_L2_COL0_MEM</ref>,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af6605f85838ee0ac7c7b7acda02f5634" kindref="member">LCD_SEG_L2_DP_MEM</ref>,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Table<sp/>with<sp/>bit<sp/>mask<sp/>for<sp/>each<sp/>display<sp/>element<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="display1_8c_1aafb23fa9f91f6f133b1d9c9b68944781" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="display_8h_1aafb23fa9f91f6f133b1d9c9b68944781" kindref="member">segments_bitmask</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aaef327c6b08a2a2626dc27dec496e01d" kindref="member">LCD_SYMB_AM_MASK</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab0b01516619dd11b1d8a2e97d7a0b570" kindref="member">LCD_SYMB_PM_MASK</ref>,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a184c9c632aec06140fa6be0027a4cb60" kindref="member">LCD_SYMB_ARROW_UP_MASK</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a52663d004e64e5e37199a599121bdbee" kindref="member">LCD_SYMB_ARROW_DOWN_MASK</ref>,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aa3204245e49a64c50e60ad57084bdc63" kindref="member">LCD_SYMB_PERCENT_MASK</ref>,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a8067ad8b1d651eef5ba6cacec8c4b8ef" kindref="member">LCD_SYMB_TOTAL_MASK</ref>,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aca57b3199d1d2bf9c4791590dddfa631" kindref="member">LCD_SYMB_AVERAGE_MASK</ref>,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aed5b377370a333bb2036e88b4e518ab4" kindref="member">LCD_SYMB_MAX_MASK</ref>,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aa0782a4ced955059fefaf5de882f7bc8" kindref="member">LCD_SYMB_BATTERY_MASK</ref>,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1afd53a2ad3fba92557726dcb81640aa0b" kindref="member">LCD_UNIT_L1_FT_MASK</ref>,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a42658792ecdda216b5fdf9911a434f7b" kindref="member">LCD_UNIT_L1_K_MASK</ref>,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a5eedc3dd2159f31aee3b10462703114c" kindref="member">LCD_UNIT_L1_M_MASK</ref>,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af6e4dfe4cc5c0539ec8bddbe13fb01e5" kindref="member">LCD_UNIT_L1_I_MASK</ref>,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ae20d7aac678460ba39a64a832fcacc8d" kindref="member">LCD_UNIT_L1_PER_S_MASK</ref>,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a97d26e4e9e49209fa50f63bbcfbf25fe" kindref="member">LCD_UNIT_L1_PER_H_MASK</ref>,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab6e652ed13f2a940db3c2f1d53c5aa71" kindref="member">LCD_UNIT_L1_DEGREE_MASK</ref>,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a40d97ef1c752b9a77690d4b6de14fa9b" kindref="member">LCD_UNIT_L2_KCAL_MASK</ref>,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aef8e17a7c35d30ae579440e5b3f3094f" kindref="member">LCD_UNIT_L2_KM_MASK</ref>,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a984ff07efea594c605e8092f4e580413" kindref="member">LCD_UNIT_L2_MI_MASK</ref>,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab2c41bd69f48137a9cb5bea9167e299a" kindref="member">LCD_ICON_HEART_MASK</ref>,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abbc87b2ea4d7a2d24bd707ba69d1b094" kindref="member">LCD_ICON_STOPWATCH_MASK</ref>,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a0a0a860f177893436a3149a66cbba55b" kindref="member">LCD_ICON_RECORD_MASK</ref>,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ae0ba4a2ee2cdc0c2369d37ed7b2d42bc" kindref="member">LCD_ICON_ALARM_MASK</ref>,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a39bbb9cc76c801fbf3e094a4203df363" kindref="member">LCD_ICON_BEEPER1_MASK</ref>,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a8ed26bfaaba81535a3ce4ce6d6e99d80" kindref="member">LCD_ICON_BEEPER2_MASK</ref>,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af705d1cc9fa5a675de6a131fc6a7e461" kindref="member">LCD_ICON_BEEPER3_MASK</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a0c1432af3bd40e544cc8a064fbd5391a" kindref="member">LCD_SEG_L1_3_MASK</ref>,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ad820642cb37998fabd7287497141b780" kindref="member">LCD_SEG_L1_2_MASK</ref>,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1acf697434ed4302a9c498e31d269be991" kindref="member">LCD_SEG_L1_1_MASK</ref>,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a6b62bae496540ab1c4b80755f4ef0fb2" kindref="member">LCD_SEG_L1_0_MASK</ref>,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a69d3f0b10877e19f4a08334dc85f9704" kindref="member">LCD_SEG_L1_COL_MASK</ref>,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ab774d8e5d5b6b69d6db97abc3fdc61d4" kindref="member">LCD_SEG_L1_DP1_MASK</ref>,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a63e8f579119532e26d080e2239c0c560" kindref="member">LCD_SEG_L1_DP0_MASK</ref>,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1aca152ab3d2fa8bccd437f1af1eae8ed7" kindref="member">LCD_SEG_L2_5_MASK</ref>,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a752cbadb231ab6ccf4225e11f6ba34a4" kindref="member">LCD_SEG_L2_4_MASK</ref>,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a7852552e679c5d4c44b906b73245343c" kindref="member">LCD_SEG_L2_3_MASK</ref>,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1ae7438c69594e7952d6c2e81bf0a3beeb" kindref="member">LCD_SEG_L2_2_MASK</ref>,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1af9a2590b36593be04766a2558e04c655" kindref="member">LCD_SEG_L2_1_MASK</ref>,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a80e4b71fa1184f751d9ba181debaab9a" kindref="member">LCD_SEG_L2_0_MASK</ref>,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a6fffb6b948371847fcd6b93fbe49043f" kindref="member">LCD_SEG_L2_COL1_MASK</ref>,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1a11bcb87c832d0d163996ad2bf7df6262" kindref="member">LCD_SEG_L2_COL0_MASK</ref>,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="display_8h_1abf68df7db7e79dc0c3a2654d22a4be6c" kindref="member">LCD_SEG_L2_DP_MASK</ref>,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Quick<sp/>integer<sp/>to<sp/>array<sp/>conversion<sp/>table<sp/>for<sp/>most<sp/>common<sp/>integer<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="display1_8c_1a1242c3517ec3135d23c8b14ee25d5e0d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="display_8h_1a1242c3517ec3135d23c8b14ee25d5e0d" kindref="member">itoa_conversion_table</ref>[][3]<sp/>=</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;000&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;001&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;002&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;003&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;004&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;005&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;006&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;007&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;008&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;009&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;010&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;011&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;012&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;013&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;014&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;015&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;016&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;017&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;018&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;019&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;020&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;021&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;022&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;024&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;025&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;026&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;027&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;028&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;029&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;030&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;031&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;032&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;033&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;034&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;035&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;036&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;037&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;038&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;039&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;040&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;041&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;042&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;043&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;044&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;045&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;046&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;047&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;048&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;049&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;050&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;051&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;052&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;053&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;054&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;055&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;056&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;057&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;058&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;059&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;060&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;061&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;062&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;063&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;064&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;065&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;066&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;067&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;068&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;069&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;070&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;071&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;072&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;073&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;074&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;075&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;076&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;077&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;078&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;079&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;080&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;081&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;082&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;083&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;084&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;085&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;086&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;087&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;088&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;089&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;090&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;091&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;092&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;093&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;094&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;095&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;096&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;097&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;098&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;099&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;100&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;101&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;102&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;103&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;104&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;105&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;106&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;107&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;108&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;109&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;110&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;111&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;112&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;113&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;114&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;115&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;116&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;117&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;118&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;119&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;120&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;121&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;122&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;123&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;124&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;125&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;126&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;127&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;128&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;129&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;130&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;131&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;132&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;133&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;134&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;135&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;136&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;137&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;138&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;139&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;140&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;141&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;142&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;143&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;144&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;145&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;146&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;147&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;148&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;149&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;150&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;151&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;152&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;153&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;154&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;155&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;156&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;157&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;158&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;159&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;160&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;161&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;162&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;163&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;164&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;165&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;166&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;167&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;168&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;169&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;170&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;171&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;172&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;173&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;174&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;175&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;176&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;177&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;178&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;179&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;180&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/driver/display1.c"/>
+  </compounddef>
+</doxygen>

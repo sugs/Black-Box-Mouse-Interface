@@ -1,0 +1,120 @@
+\hypertarget{nwk__join_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-join.c \-File \-Reference}
+\label{nwk__join_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-join.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-join.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include \char`\"{}bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-types.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-api.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-frame.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-link.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-join.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-globals.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-freq.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-security.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-mgmt.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{nwk__join_8c_a3884ea94a9767eedd6737827a76ac5c0}{nwk\-\_\-join\-Init} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}($\ast$pf)(\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t}))
+\item 
+void \hyperlink{nwk__join_8c_ac55e7c30e9bf2c24ee9d841d2cd24873}{nwk\-\_\-set\-Join\-Token} (\hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} token)
+\item 
+void \hyperlink{nwk__join_8c_ab54f5b377ac4e11ccda1b8728537990b}{nwk\-\_\-get\-Join\-Token} (\hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} $\ast$p\-Token)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__join_8c_acf898737df9b75e37de0d629be3a2e6a}{nwk\-\_\-join} (void)
+\item 
+\hyperlink{nwk__types_8h_af223ab49f851993ce1ca1a2f8c07d588}{fh\-Status\-\_\-t} \hyperlink{nwk__join_8c_ac3855e26318b0d4d99f5e842966a0eea}{nwk\-\_\-process\-Join} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$frame)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{bsp__msp430__defs_8h_a06896e8c53f721507066c079052171f8}{uint32\-\_\-t} \hyperlink{nwk__join_8c_ab63098fa9eeb131dfaa232f11accf234}{s\-Join\-Token} = 0
+\item 
+static \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}($\ast$ \hyperlink{nwk__join_8c_a05f9038c2bceb491521ff87c879413fb}{sp\-Callback} )(\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t}) = \hyperlink{bsp__msp430__defs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\-N\-U\-L\-L}
+\item 
+static volatile \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk__join_8c_a2075ec83c59208aee2ac7bd3bfae3755}{s\-Tid} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk__join_8c_ab54f5b377ac4e11ccda1b8728537990b}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!nwk\-\_\-get\-Join\-Token@{nwk\-\_\-get\-Join\-Token}}
+\index{nwk\-\_\-get\-Join\-Token@{nwk\-\_\-get\-Join\-Token}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{nwk\-\_\-get\-Join\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-get\-Join\-Token} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32\-\_\-t} $\ast$}]{p\-Token}
+\end{DoxyParamCaption}
+)}}\label{nwk__join_8c_ab54f5b377ac4e11ccda1b8728537990b}
+
+
+\-Definition at line 170 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_acf898737df9b75e37de0d629be3a2e6a}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!nwk\-\_\-join@{nwk\-\_\-join}}
+\index{nwk\-\_\-join@{nwk\-\_\-join}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{nwk\-\_\-join}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-join} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk__join_8c_acf898737df9b75e37de0d629be3a2e6a}
+
+
+\-Definition at line 438 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_a3884ea94a9767eedd6737827a76ac5c0}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!nwk\-\_\-join\-Init@{nwk\-\_\-join\-Init}}
+\index{nwk\-\_\-join\-Init@{nwk\-\_\-join\-Init}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{nwk\-\_\-join\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-join\-Init} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}($\ast$)({\bf link\-I\-D\-\_\-t})}]{pf}
+\end{DoxyParamCaption}
+)}}\label{nwk__join_8c_a3884ea94a9767eedd6737827a76ac5c0}
+
+
+\-Definition at line 106 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_ac3855e26318b0d4d99f5e842966a0eea}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!nwk\-\_\-process\-Join@{nwk\-\_\-process\-Join}}
+\index{nwk\-\_\-process\-Join@{nwk\-\_\-process\-Join}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{nwk\-\_\-process\-Join}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fh\-Status\-\_\-t} {\bf nwk\-\_\-process\-Join} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{frame}
+\end{DoxyParamCaption}
+)}}\label{nwk__join_8c_ac3855e26318b0d4d99f5e842966a0eea}
+
+
+\-Definition at line 540 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_ac55e7c30e9bf2c24ee9d841d2cd24873}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!nwk\-\_\-set\-Join\-Token@{nwk\-\_\-set\-Join\-Token}}
+\index{nwk\-\_\-set\-Join\-Token@{nwk\-\_\-set\-Join\-Token}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{nwk\-\_\-set\-Join\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-set\-Join\-Token} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint32\-\_\-t}}]{token}
+\end{DoxyParamCaption}
+)}}\label{nwk__join_8c_ac55e7c30e9bf2c24ee9d841d2cd24873}
+
+
+\-Definition at line 147 of file nwk\-\_\-join.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{nwk__join_8c_ab63098fa9eeb131dfaa232f11accf234}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!s\-Join\-Token@{s\-Join\-Token}}
+\index{s\-Join\-Token@{s\-Join\-Token}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{s\-Join\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint32\-\_\-t} {\bf s\-Join\-Token} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__join_8c_ab63098fa9eeb131dfaa232f11accf234}
+
+
+\-Definition at line 69 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_a05f9038c2bceb491521ff87c879413fb}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!sp\-Callback@{sp\-Callback}}
+\index{sp\-Callback@{sp\-Callback}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{sp\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t}($\ast$ {\bf sp\-Callback})({\bf link\-I\-D\-\_\-t}) = {\bf \-N\-U\-L\-L}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__join_8c_a05f9038c2bceb491521ff87c879413fb}
+
+
+\-Definition at line 70 of file nwk\-\_\-join.\-c.
+
+\hypertarget{nwk__join_8c_a2075ec83c59208aee2ac7bd3bfae3755}{\index{nwk\-\_\-join.\-c@{nwk\-\_\-join.\-c}!s\-Tid@{s\-Tid}}
+\index{s\-Tid@{s\-Tid}!nwk_join.c@{nwk\-\_\-join.\-c}}
+\subsubsection[{s\-Tid}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint8\-\_\-t} {\bf s\-Tid} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{nwk__join_8c_a2075ec83c59208aee2ac7bd3bfae3755}
+
+
+\-Definition at line 71 of file nwk\-\_\-join.\-c.
+

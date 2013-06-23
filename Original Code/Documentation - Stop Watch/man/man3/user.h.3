@@ -1,0 +1,85 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/user.h" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/logic/user.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSETVALUE_ROLLOVER_VALUE\fP   BIT0"
+.br
+.ti -1c
+.RI "#define \fBSETVALUE_DISPLAY_VALUE\fP   BIT1"
+.br
+.ti -1c
+.RI "#define \fBSETVALUE_DISPLAY_ARROWS\fP   BIT2"
+.br
+.ti -1c
+.RI "#define \fBSETVALUE_DISPLAY_SELECTION\fP   BIT3"
+.br
+.ti -1c
+.RI "#define \fBSETVALUE_FAST_MODE\fP   BIT4"
+.br
+.ti -1c
+.RI "#define \fBSETVALUE_NEXT_VALUE\fP   BIT5"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "u8 * \fBselect_view_style\fP (u8 line, u8 *view1, u8 *view2)"
+.br
+.ti -1c
+.RI "void \fBset_value\fP (s32 *value, u8 digits, u8 blanks, s32 limitLow, s32 limitHigh, \fBu16\fP mode, u8 segments, void(*\fBfptr_setValue_display_function1\fP)(u8 segments, u32 value, u8 digits, u8 blanks))"
+.br
+.ti -1c
+.RI "void \fBdummy\fP (u8 line)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "void(* \fBfptr_setValue_display_function1\fP )(u8 segments, u32 value, u8 digits, u8 blanks)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBSETVALUE_DISPLAY_ARROWS\fP   BIT2"
+.PP
+Definition at line 44 of file user\&.h\&.
+.SS "#define \fBSETVALUE_DISPLAY_SELECTION\fP   BIT3"
+.PP
+Definition at line 45 of file user\&.h\&.
+.SS "#define \fBSETVALUE_DISPLAY_VALUE\fP   BIT1"
+.PP
+Definition at line 43 of file user\&.h\&.
+.SS "#define \fBSETVALUE_FAST_MODE\fP   BIT4"
+.PP
+Definition at line 46 of file user\&.h\&.
+.SS "#define \fBSETVALUE_NEXT_VALUE\fP   BIT5"
+.PP
+Definition at line 47 of file user\&.h\&.
+.SS "#define \fBSETVALUE_ROLLOVER_VALUE\fP   BIT0"
+.PP
+Definition at line 42 of file user\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBdummy\fP (u8line)"
+.PP
+Definition at line 81 of file user\&.c\&.
+.SS "u8* \fBselect_view_style\fP (u8line, u8 *view1, u8 *view2)"
+.SS "void \fBset_value\fP (s32 *value, u8digits, u8blanks, s32limitLow, s32limitHigh, \fBu16\fPmode, u8segments, void(*)(u8 segments, u32 value, u8 digits, u8 blanks)fptr_setValue_display_function1)"
+.PP
+Definition at line 99 of file user\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "void(* \fBfptr_setValue_display_function1\fP)(u8 segments, u32 value, u8 digits, u8 blanks)"
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

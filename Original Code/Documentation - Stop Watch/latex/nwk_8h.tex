@@ -1,0 +1,505 @@
+\hypertarget{nwk_8h}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Components/nwk/nwk.h \-File \-Reference}
+\label{nwk_8h}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk/nwk.\-h@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk/nwk.\-h}}
+}
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structconnInfo__t}{conn\-Info\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{nwk_8h_a354a6ad6a45645875d7d6384a47d67ef}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G}~0x01
+\item 
+\#define \hyperlink{nwk_8h_a4b845a265646ae3149d908805a18b531}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K}~0x02
+\item 
+\#define \hyperlink{nwk_8h_a5e1123b0eb14ff50292804d4c95ce442}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N}~0x03
+\item 
+\#define \hyperlink{nwk_8h_a485680e838a08c327d3abf0532caa03d}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y}~0x04
+\item 
+\#define \hyperlink{nwk_8h_a02d0371ecd426afd445dfc71cb7c3c63}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q}~0x05
+\item 
+\#define \hyperlink{nwk_8h_a04794026079bf638949b22d10f5d0345}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T}~0x06
+\item 
+\#define \hyperlink{nwk_8h_a85e3f06b08dfc916a44ac0bc0ffb6ec5}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T}~0x1\-F
+\item 
+\#define \hyperlink{nwk_8h_a2291087c47134491f96af312f1bd5131}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T}~0x3\-F
+\item 
+\#define \hyperlink{nwk_8h_a9eabff8e7b20fc8b94e3647c9f35dc58}{\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D}~((\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t}) $\sim$0)
+\item 
+\#define \hyperlink{nwk_8h_afd4d2cebe6842106704124d792ed883d}{\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R}~0x20
+\item 
+\#define \hyperlink{nwk_8h_a8ef282f00726cc95796e5a9db2a351ab}{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M}~1
+\item 
+\#define \hyperlink{nwk_8h_a5df735953508f2d8f789e72530af4115}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X}~0x3\-E
+\item 
+\#define \hyperlink{nwk_8h_acc572dac7ffdbae8b5fddb5b92022f9c}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}~(\hyperlink{nwk_8h_a5df735953508f2d8f789e72530af4115}{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X} -\/ \hyperlink{nwk_8h_a8ef282f00726cc95796e5a9db2a351ab}{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M})
+\item 
+\#define \hyperlink{nwk_8h_ab81a3c776785df039d8e6734accc8c20}{\-C\-H\-K\-\_\-\-R\-X}~0
+\item 
+\#define \hyperlink{nwk_8h_a70a095e945fd4f2a63f4255bfa51c3d9}{\-C\-H\-K\-\_\-\-T\-X}~1
+\item 
+\#define \hyperlink{nwk_8h_ae358a9b12b82ec4f303d57f4a3a8bd1e}{\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y}~0
+\item 
+\#define \hyperlink{nwk_8h_a392efcddcdde19bacc339c9e402fdbce}{\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y}~1
+\item 
+\#define \hyperlink{nwk_8h_a9a15af86270430b36feac0e57ad09e11}{\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y}~2
+\item 
+\#define \hyperlink{nwk_8h_af9a10d37ad18fbf9b0033ac40e121884}{\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D}~1
+\item 
+\#define \hyperlink{nwk_8h_a723388704e1bbf2ddf8fa7bdfee8aee3}{\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y}~2
+\item 
+\#define \hyperlink{nwk_8h_a8029d74f1b3e0f3b7ce38c641143880d}{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E}~(0x00)
+\item 
+\#define \hyperlink{nwk_8h_afba5e372717ebf678570a2bdffbdde5e}{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D}~(0x01)
+\item 
+\#define \hyperlink{nwk_8h_aa471f39a54ce79b486ae26490ce6eeff}{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}~(0x02)
+\item 
+\#define \hyperlink{nwk_8h_a6271214ce6a5779f5dfd11331125b63d}{\-M\-A\-X\-\_\-\-A\-P\-T}~((\hyperlink{nwk__types_8h_a903f697cfe176439e8645c2584d09249}{app\-P\-Tid\-\_\-t})$\sim$0)    /$\ast$ max value of application payload \-T\-I\-D type $\ast$/
+\item 
+\#define \hyperlink{nwk_8h_a36fccb2808e1a78762309e038d35a0c0}{\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W}~2                  /$\ast$ window around max and 0 $\ast$/
+\item 
+\#define \hyperlink{nwk_8h_a97eb1815c8dcc3cda7fdfbf02f0e2735}{\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P}(last\-T\-I\-D, new\-T\-I\-D)
+\item 
+\#define \hyperlink{nwk_8h_a8c1ddb6cf5ad5d648aefbcbad5f3d1b2}{\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P}(last\-T\-I\-D, new\-T\-I\-D)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk_8h_a79547b3f3ab29d8d4f5319cb0a09315a}{nwk\-\_\-nwk\-Init} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}($\ast$)(\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t}))
+\item 
+\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$ \hyperlink{nwk_8h_af4db6dbffa0ba1559051f0aac5012cd7}{nwk\-\_\-get\-Next\-Connection} (void)
+\item 
+void \hyperlink{nwk_8h_a7f539d38a212c1d98f7b7bb83eae4a61}{nwk\-\_\-free\-Connection} (\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_acbc5c3930ecf3f42cf2f1c7590ca1ec7}{nwk\-\_\-get\-Next\-Client\-Port} (void)
+\item 
+\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$ \hyperlink{nwk_8h_a14194dfa606ef66d441731a8d4b92c87}{nwk\-\_\-get\-Conn\-Info} (\hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t} port)
+\item 
+\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$ \hyperlink{nwk_8h_aaec6d27baf62abb5bc772e1913c454d0}{nwk\-\_\-is\-Link\-Duplicate} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_aeed6dc95802d1a08ae48477f3c09e847}{nwk\-\_\-find\-Address\-Match} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk_8h_ad10aacc4f30337927fcb915c452004d4}{nwk\-\_\-check\-Conn\-Info} (\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_a153a5acbc529972fe6c69adf9d809af7}{nwk\-\_\-is\-Connection\-Valid} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$, \hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t} $\ast$)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_a2e265e1dd42812fe521b8f18162a893b}{nwk\-\_\-allocate\-Local\-Rx\-Port} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_a096e1e089864d745a854fc66cbc55e7e}{nwk\-\_\-is\-Valid\-Reply} (\hyperlink{structmrfiPacket__t}{mrfi\-Packet\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{structconnInfo__t}{conn\-Info\-\_\-t} $\ast$ \hyperlink{nwk_8h_a93bc3efa69ae70ea7ddb7d0d022d7122}{nwk\-\_\-find\-Peer} (\hyperlink{structaddr__t}{addr\-\_\-t} $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk_8h_ab3c1283d374824f18038f937eca65e8f}{nwk\-\_\-\-N\-V\-Obj} (\hyperlink{nwk__types_8h_a4def9e3c3c03c7df1f33000141ad569f}{ioctl\-Action\-\_\-t}, \hyperlink{structioctlNVObj__t}{ioctl\-N\-V\-Obj\-\_\-t} $\ast$)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{nwk_8h_ad84c9beb8def07b08526056d6d8fb3c6}{nwk\-\_\-check\-App\-Msg\-T\-I\-D} (\hyperlink{nwk__types_8h_a903f697cfe176439e8645c2584d09249}{app\-P\-Tid\-\_\-t}, \hyperlink{nwk__types_8h_a903f697cfe176439e8645c2584d09249}{app\-P\-Tid\-\_\-t})
+\item 
+void \hyperlink{nwk_8h_adb60965c45d86dfbc4657b10076f5012}{nwk\-\_\-get\-Num\-Object\-From\-Msg} (void $\ast$, void $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\item 
+void \hyperlink{nwk_8h_ab7818538bcd829c7fee053fa1e9e893a}{nwk\-\_\-put\-Num\-Object\-Into\-Msg} (void $\ast$, void $\ast$, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t})
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{nwk_8h_a97eb1815c8dcc3cda7fdfbf02f0e2735}{\index{nwk.\-h@{nwk.\-h}!\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P@{\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P}}
+\index{\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P@{\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-H\-E\-C\-K\-\_\-\-T\-I\-D\-\_\-\-W\-R\-A\-P}(
+\begin{DoxyParamCaption}
+\item[{}]{last\-T\-I\-D, }
+\item[{}]{new\-T\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a97eb1815c8dcc3cda7fdfbf02f0e2735}
+{\bfseries \-Value\-:}
+\begin{DoxyCode}
+((lastTID >= (MAX_APT - TID_VALID_WINDOW)) &&  \
+                                           (newTID <= TID_VALID_WINDOW)        
+                \
+                                          )
+\end{DoxyCode}
+
+
+\-Definition at line 124 of file nwk.\-h.
+
+\hypertarget{nwk_8h_ab81a3c776785df039d8e6734accc8c20}{\index{nwk.\-h@{nwk.\-h}!\-C\-H\-K\-\_\-\-R\-X@{\-C\-H\-K\-\_\-\-R\-X}}
+\index{\-C\-H\-K\-\_\-\-R\-X@{\-C\-H\-K\-\_\-\-R\-X}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-H\-K\-\_\-\-R\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-H\-K\-\_\-\-R\-X}~0}}\label{nwk_8h_ab81a3c776785df039d8e6734accc8c20}
+
+
+\-Definition at line 65 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a70a095e945fd4f2a63f4255bfa51c3d9}{\index{nwk.\-h@{nwk.\-h}!\-C\-H\-K\-\_\-\-T\-X@{\-C\-H\-K\-\_\-\-T\-X}}
+\index{\-C\-H\-K\-\_\-\-T\-X@{\-C\-H\-K\-\_\-\-T\-X}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-H\-K\-\_\-\-T\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-H\-K\-\_\-\-T\-X}~1}}\label{nwk_8h_a70a095e945fd4f2a63f4255bfa51c3d9}
+
+
+\-Definition at line 66 of file nwk.\-h.
+
+\hypertarget{nwk_8h_aa471f39a54ce79b486ae26490ce6eeff}{\index{nwk.\-h@{nwk.\-h}!\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}}
+\index{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-C\-O\-N\-N\-E\-C\-T\-E\-D}~(0x02)}}\label{nwk_8h_aa471f39a54ce79b486ae26490ce6eeff}
+
+
+\-Definition at line 81 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a8029d74f1b3e0f3b7ce38c641143880d}{\index{nwk.\-h@{nwk.\-h}!\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E}}
+\index{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-F\-R\-E\-E}~(0x00)}}\label{nwk_8h_a8029d74f1b3e0f3b7ce38c641143880d}
+
+
+\-Definition at line 79 of file nwk.\-h.
+
+\hypertarget{nwk_8h_afba5e372717ebf678570a2bdffbdde5e}{\index{nwk.\-h@{nwk.\-h}!\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D}}
+\index{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D@{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-N\-S\-T\-A\-T\-E\-\_\-\-J\-O\-I\-N\-E\-D}~(0x01)}}\label{nwk_8h_afba5e372717ebf678570a2bdffbdde5e}
+
+
+\-Definition at line 80 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a8c1ddb6cf5ad5d648aefbcbad5f3d1b2}{\index{nwk.\-h@{nwk.\-h}!\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P@{\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P}}
+\index{\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P@{\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-U\-P\-\_\-\-T\-I\-D\-\_\-\-A\-F\-T\-E\-R\-\_\-\-W\-R\-A\-P}(
+\begin{DoxyParamCaption}
+\item[{}]{last\-T\-I\-D, }
+\item[{}]{new\-T\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a8c1ddb6cf5ad5d648aefbcbad5f3d1b2}
+{\bfseries \-Value\-:}
+\begin{DoxyCode}
+((newTID >= (MAX_APT - TID_VALID_WINDOW)) &&  \
+                                                 (lastTID <= TID_VALID_WINDOW) 
+                       \
+                                                )
+\end{DoxyCode}
+
+
+\-Definition at line 127 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a723388704e1bbf2ddf8fa7bdfee8aee3}{\index{nwk.\-h@{nwk.\-h}!\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y@{\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y}}
+\index{\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y@{\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-I\-N\-K\-\_\-\-R\-E\-P\-L\-Y}~2}}\label{nwk_8h_a723388704e1bbf2ddf8fa7bdfee8aee3}
+
+
+\-Definition at line 77 of file nwk.\-h.
+
+\hypertarget{nwk_8h_af9a10d37ad18fbf9b0033ac40e121884}{\index{nwk.\-h@{nwk.\-h}!\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D@{\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D}}
+\index{\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D@{\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-L\-I\-N\-K\-\_\-\-S\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-I\-N\-K\-\_\-\-S\-E\-N\-D}~1}}\label{nwk_8h_af9a10d37ad18fbf9b0033ac40e121884}
+
+
+\-Definition at line 76 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a6271214ce6a5779f5dfd11331125b63d}{\index{nwk.\-h@{nwk.\-h}!\-M\-A\-X\-\_\-\-A\-P\-T@{\-M\-A\-X\-\_\-\-A\-P\-T}}
+\index{\-M\-A\-X\-\_\-\-A\-P\-T@{\-M\-A\-X\-\_\-\-A\-P\-T}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-M\-A\-X\-\_\-\-A\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-A\-X\-\_\-\-A\-P\-T}~(({\bf app\-P\-Tid\-\_\-t})$\sim$0)    /$\ast$ max value of application payload \-T\-I\-D type $\ast$/}}\label{nwk_8h_a6271214ce6a5779f5dfd11331125b63d}
+
+
+\-Definition at line 121 of file nwk.\-h.
+
+\hypertarget{nwk_8h_afd4d2cebe6842106704124d792ed883d}{\index{nwk.\-h@{nwk.\-h}!\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R@{\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R}}
+\index{\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R@{\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-O\-R\-T\-\_\-\-B\-A\-S\-E\-\_\-\-N\-U\-M\-B\-E\-R}~0x20}}\label{nwk_8h_afd4d2cebe6842106704124d792ed883d}
+
+
+\-Definition at line 54 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a8ef282f00726cc95796e5a9db2a351ab}{\index{nwk.\-h@{nwk.\-h}!\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M@{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M}}
+\index{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M@{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M}~1}}\label{nwk_8h_a8ef282f00726cc95796e5a9db2a351ab}
+
+
+\-Definition at line 59 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a392efcddcdde19bacc339c9e402fdbce}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y}}
+\index{\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-A\-\_\-\-R\-E\-P\-L\-Y}~1}}\label{nwk_8h_a392efcddcdde19bacc339c9e402fdbce}
+
+
+\-Definition at line 70 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a9eabff8e7b20fc8b94e3647c9f35dc58}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D@{\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D}}
+\index{\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D@{\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-L\-I\-N\-K\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-U\-U\-D}~(({\bf link\-I\-D\-\_\-t}) $\sim$0)}}\label{nwk_8h_a9eabff8e7b20fc8b94e3647c9f35dc58}
+
+
+\-Definition at line 52 of file nwk.\-h.
+
+\hypertarget{nwk_8h_ae358a9b12b82ec4f303d57f4a3a8bd1e}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y}}
+\index{\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-M\-Y\-\_\-\-R\-E\-P\-L\-Y}~0}}\label{nwk_8h_ae358a9b12b82ec4f303d57f4a3a8bd1e}
+
+
+\-Definition at line 69 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a9a15af86270430b36feac0e57ad09e11}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y}}
+\index{\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y@{\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-N\-O\-T\-\_\-\-R\-E\-P\-L\-Y}~2}}\label{nwk_8h_a9a15af86270430b36feac0e57ad09e11}
+
+
+\-Definition at line 71 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a02d0371ecd426afd445dfc71cb7c3c63}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-F\-R\-E\-Q}~0x05}}\label{nwk_8h_a02d0371ecd426afd445dfc71cb7c3c63}
+
+
+\-Definition at line 45 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a5e1123b0eb14ff50292804d4c95ce442}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-J\-O\-I\-N}~0x03}}\label{nwk_8h_a5e1123b0eb14ff50292804d4c95ce442}
+
+
+\-Definition at line 43 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a4b845a265646ae3149d908805a18b531}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-L\-I\-N\-K}~0x02}}\label{nwk_8h_a4b845a265646ae3149d908805a18b531}
+
+
+\-Definition at line 42 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a04794026079bf638949b22d10f5d0345}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-M\-G\-M\-T}~0x06}}\label{nwk_8h_a04794026079bf638949b22d10f5d0345}
+
+
+\-Definition at line 46 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a85e3f06b08dfc916a44ac0bc0ffb6ec5}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-N\-W\-K\-\_\-\-B\-C\-A\-S\-T}~0x1\-F}}\label{nwk_8h_a85e3f06b08dfc916a44ac0bc0ffb6ec5}
+
+
+\-Definition at line 48 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a354a6ad6a45645875d7d6384a47d67ef}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-P\-I\-N\-G}~0x01}}\label{nwk_8h_a354a6ad6a45645875d7d6384a47d67ef}
+
+
+\-Definition at line 41 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a485680e838a08c327d3abf0532caa03d}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-E\-C\-U\-R\-I\-T\-Y}~0x04}}\label{nwk_8h_a485680e838a08c327d3abf0532caa03d}
+
+
+\-Definition at line 44 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a5df735953508f2d8f789e72530af4115}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X}~0x3\-E}}\label{nwk_8h_a5df735953508f2d8f789e72530af4115}
+
+
+\-Definition at line 60 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a2291087c47134491f96af312f1bd5131}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-B\-C\-A\-S\-T}~0x3\-F}}\label{nwk_8h_a2291087c47134491f96af312f1bd5131}
+
+
+\-Definition at line 49 of file nwk.\-h.
+
+\hypertarget{nwk_8h_acc572dac7ffdbae8b5fddb5b92022f9c}{\index{nwk.\-h@{nwk.\-h}!\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}}
+\index{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}~({\bf \-S\-M\-P\-L\-\_\-\-P\-O\-R\-T\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-M\-A\-X} -\/ {\bf \-P\-O\-R\-T\-\_\-\-U\-S\-E\-R\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-N\-U\-M})}}\label{nwk_8h_acc572dac7ffdbae8b5fddb5b92022f9c}
+
+
+\-Definition at line 61 of file nwk.\-h.
+
+\hypertarget{nwk_8h_a36fccb2808e1a78762309e038d35a0c0}{\index{nwk.\-h@{nwk.\-h}!\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W@{\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W}}
+\index{\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W@{\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W}!nwk.h@{nwk.\-h}}
+\subsubsection[{\-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-T\-I\-D\-\_\-\-V\-A\-L\-I\-D\-\_\-\-W\-I\-N\-D\-O\-W}~2                  /$\ast$ window around max and 0 $\ast$/}}\label{nwk_8h_a36fccb2808e1a78762309e038d35a0c0}
+
+
+\-Definition at line 122 of file nwk.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk_8h_a2e265e1dd42812fe521b8f18162a893b}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-allocate\-Local\-Rx\-Port@{nwk\-\_\-allocate\-Local\-Rx\-Port}}
+\index{nwk\-\_\-allocate\-Local\-Rx\-Port@{nwk\-\_\-allocate\-Local\-Rx\-Port}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-allocate\-Local\-Rx\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-allocate\-Local\-Rx\-Port} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf conn\-Info\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a2e265e1dd42812fe521b8f18162a893b}
+
+
+\-Definition at line 684 of file nwk.\-c.
+
+\hypertarget{nwk_8h_ad84c9beb8def07b08526056d6d8fb3c6}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-check\-App\-Msg\-T\-I\-D@{nwk\-\_\-check\-App\-Msg\-T\-I\-D}}
+\index{nwk\-\_\-check\-App\-Msg\-T\-I\-D@{nwk\-\_\-check\-App\-Msg\-T\-I\-D}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-check\-App\-Msg\-T\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-check\-App\-Msg\-T\-I\-D} (
+\begin{DoxyParamCaption}
+\item[{{\bf app\-P\-Tid\-\_\-t}}]{, }
+\item[{{\bf app\-P\-Tid\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_ad84c9beb8def07b08526056d6d8fb3c6}
+
+
+\-Definition at line 906 of file nwk.\-c.
+
+\hypertarget{nwk_8h_ad10aacc4f30337927fcb915c452004d4}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-check\-Conn\-Info@{nwk\-\_\-check\-Conn\-Info}}
+\index{nwk\-\_\-check\-Conn\-Info@{nwk\-\_\-check\-Conn\-Info}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-check\-Conn\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-check\-Conn\-Info} (
+\begin{DoxyParamCaption}
+\item[{{\bf conn\-Info\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_ad10aacc4f30337927fcb915c452004d4}
+
+
+\-Definition at line 559 of file nwk.\-c.
+
+\hypertarget{nwk_8h_aeed6dc95802d1a08ae48477f3c09e847}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-find\-Address\-Match@{nwk\-\_\-find\-Address\-Match}}
+\index{nwk\-\_\-find\-Address\-Match@{nwk\-\_\-find\-Address\-Match}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-find\-Address\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-find\-Address\-Match} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_aeed6dc95802d1a08ae48477f3c09e847}
+
+
+\-Definition at line 407 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a93bc3efa69ae70ea7ddb7d0d022d7122}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-find\-Peer@{nwk\-\_\-find\-Peer}}
+\index{nwk\-\_\-find\-Peer@{nwk\-\_\-find\-Peer}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-find\-Peer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-find\-Peer} (
+\begin{DoxyParamCaption}
+\item[{{\bf addr\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a93bc3efa69ae70ea7ddb7d0d022d7122}
+
+
+\-Definition at line 866 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a7f539d38a212c1d98f7b7bb83eae4a61}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-free\-Connection@{nwk\-\_\-free\-Connection}}
+\index{nwk\-\_\-free\-Connection@{nwk\-\_\-free\-Connection}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-free\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-free\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf conn\-Info\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a7f539d38a212c1d98f7b7bb83eae4a61}
+
+
+\-Definition at line 327 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a14194dfa606ef66d441731a8d4b92c87}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-get\-Conn\-Info@{nwk\-\_\-get\-Conn\-Info}}
+\index{nwk\-\_\-get\-Conn\-Info@{nwk\-\_\-get\-Conn\-Info}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-get\-Conn\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-get\-Conn\-Info} (
+\begin{DoxyParamCaption}
+\item[{{\bf link\-I\-D\-\_\-t}}]{port}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a14194dfa606ef66d441731a8d4b92c87}
+
+
+\-Definition at line 347 of file nwk.\-c.
+
+\hypertarget{nwk_8h_acbc5c3930ecf3f42cf2f1c7590ca1ec7}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-get\-Next\-Client\-Port@{nwk\-\_\-get\-Next\-Client\-Port}}
+\index{nwk\-\_\-get\-Next\-Client\-Port@{nwk\-\_\-get\-Next\-Client\-Port}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-get\-Next\-Client\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-get\-Next\-Client\-Port} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_acbc5c3930ecf3f42cf2f1c7590ca1ec7}
+\hypertarget{nwk_8h_af4db6dbffa0ba1559051f0aac5012cd7}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-get\-Next\-Connection@{nwk\-\_\-get\-Next\-Connection}}
+\index{nwk\-\_\-get\-Next\-Connection@{nwk\-\_\-get\-Next\-Connection}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-get\-Next\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-get\-Next\-Connection} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_af4db6dbffa0ba1559051f0aac5012cd7}
+
+
+\-Definition at line 245 of file nwk.\-c.
+
+\hypertarget{nwk_8h_adb60965c45d86dfbc4657b10076f5012}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-get\-Num\-Object\-From\-Msg@{nwk\-\_\-get\-Num\-Object\-From\-Msg}}
+\index{nwk\-\_\-get\-Num\-Object\-From\-Msg@{nwk\-\_\-get\-Num\-Object\-From\-Msg}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-get\-Num\-Object\-From\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-get\-Num\-Object\-From\-Msg} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{, }
+\item[{void $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_adb60965c45d86dfbc4657b10076f5012}
+
+
+\-Definition at line 961 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a153a5acbc529972fe6c69adf9d809af7}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-is\-Connection\-Valid@{nwk\-\_\-is\-Connection\-Valid}}
+\index{nwk\-\_\-is\-Connection\-Valid@{nwk\-\_\-is\-Connection\-Valid}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-is\-Connection\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-is\-Connection\-Valid} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{, }
+\item[{{\bf link\-I\-D\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a153a5acbc529972fe6c69adf9d809af7}
+
+
+\-Definition at line 593 of file nwk.\-c.
+
+\hypertarget{nwk_8h_aaec6d27baf62abb5bc772e1913c454d0}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-is\-Link\-Duplicate@{nwk\-\_\-is\-Link\-Duplicate}}
+\index{nwk\-\_\-is\-Link\-Duplicate@{nwk\-\_\-is\-Link\-Duplicate}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-is\-Link\-Duplicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-Info\-\_\-t}$\ast$ {\bf nwk\-\_\-is\-Link\-Duplicate} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_aaec6d27baf62abb5bc772e1913c454d0}
+
+
+\-Definition at line 372 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a096e1e089864d745a854fc66cbc55e7e}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-is\-Valid\-Reply@{nwk\-\_\-is\-Valid\-Reply}}
+\index{nwk\-\_\-is\-Valid\-Reply@{nwk\-\_\-is\-Valid\-Reply}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-is\-Valid\-Reply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf nwk\-\_\-is\-Valid\-Reply} (
+\begin{DoxyParamCaption}
+\item[{{\bf mrfi\-Packet\-\_\-t} $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf uint8\-\_\-t}}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a096e1e089864d745a854fc66cbc55e7e}
+
+
+\-Definition at line 803 of file nwk.\-c.
+
+\hypertarget{nwk_8h_ab3c1283d374824f18038f937eca65e8f}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-\-N\-V\-Obj@{nwk\-\_\-\-N\-V\-Obj}}
+\index{nwk\-\_\-\-N\-V\-Obj@{nwk\-\_\-\-N\-V\-Obj}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-\-N\-V\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-\-N\-V\-Obj} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Action\-\_\-t}}]{, }
+\item[{{\bf ioctl\-N\-V\-Obj\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_ab3c1283d374824f18038f937eca65e8f}
+
+
+\-Definition at line 1053 of file nwk.\-c.
+
+\hypertarget{nwk_8h_a79547b3f3ab29d8d4f5319cb0a09315a}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-nwk\-Init@{nwk\-\_\-nwk\-Init}}
+\index{nwk\-\_\-nwk\-Init@{nwk\-\_\-nwk\-Init}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-nwk\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-nwk\-Init} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}($\ast$)({\bf link\-I\-D\-\_\-t})}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_a79547b3f3ab29d8d4f5319cb0a09315a}
+
+
+\-Definition at line 176 of file nwk.\-c.
+
+\hypertarget{nwk_8h_ab7818538bcd829c7fee053fa1e9e893a}{\index{nwk.\-h@{nwk.\-h}!nwk\-\_\-put\-Num\-Object\-Into\-Msg@{nwk\-\_\-put\-Num\-Object\-Into\-Msg}}
+\index{nwk\-\_\-put\-Num\-Object\-Into\-Msg@{nwk\-\_\-put\-Num\-Object\-Into\-Msg}!nwk.h@{nwk.\-h}}
+\subsubsection[{nwk\-\_\-put\-Num\-Object\-Into\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf nwk\-\_\-put\-Num\-Object\-Into\-Msg} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{, }
+\item[{void $\ast$}]{, }
+\item[{{\bf uint8\-\_\-t}}]{}
+\end{DoxyParamCaption}
+)}}\label{nwk_8h_ab7818538bcd829c7fee053fa1e9e893a}
+
+
+\-Definition at line 999 of file nwk.\-c.
+

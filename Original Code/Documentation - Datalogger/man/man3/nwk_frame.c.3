@@ -1,0 +1,106 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_frame.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk_frame\&.h'\fP
+.br
+\fC#include 'nwk\&.h'\fP
+.br
+\fC#include 'nwk_app\&.h'\fP
+.br
+\fC#include 'nwk_QMgmt\&.h'\fP
+.br
+\fC#include 'nwk_globals\&.h'\fP
+.br
+\fC#include 'nwk_mgmt\&.h'\fP
+.br
+\fC#include 'nwk_security\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBnwk_frameInit\fP (\fBuint8_t\fP(*pF)(\fBlinkID_t\fP))"
+.br
+.ti -1c
+.RI "\fBframeInfo_t\fP * \fBnwk_buildFrame\fP (\fBuint8_t\fP port, \fBuint8_t\fP *msg, \fBuint8_t\fP len, \fBuint8_t\fP hops)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_sendFrame\fP (\fBframeInfo_t\fP *pFrameInfo, \fBuint8_t\fP txOption)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBnwk_getMyRxType\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnwk_replayFrame\fP (\fBframeInfo_t\fP *pFrameInfo)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static \fBuint8_t\fP \fBsTRACTID\fP = 0"
+.br
+.ti -1c
+.RI "static \fBaddr_t\fP const * \fBsMyAddr\fP = \fBNULL\fP"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBsMyRxType\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBsMyTxType\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP(* \fBspCallback\fP )(\fBlinkID_t\fP) = \fBNULL\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBframeInfo_t\fP* \fBnwk_buildFrame\fP (\fBuint8_t\fPport, \fBuint8_t\fP *msg, \fBuint8_t\fPlen, \fBuint8_t\fPhops)"
+.PP
+Definition at line 183 of file nwk_frame\&.c\&.
+.SS "void \fBnwk_frameInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP)pF)"
+.PP
+Definition at line 126 of file nwk_frame\&.c\&.
+.SS "\fBuint8_t\fP \fBnwk_getMyRxType\fP (void)"
+.PP
+Definition at line 685 of file nwk_frame\&.c\&.
+.SS "void \fBnwk_replayFrame\fP (\fBframeInfo_t\fP *pFrameInfo)"
+.PP
+Definition at line 768 of file nwk_frame\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_sendFrame\fP (\fBframeInfo_t\fP *pFrameInfo, \fBuint8_t\fPtxOption)"
+.PP
+Definition at line 646 of file nwk_frame\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBaddr_t\fP const* \fBsMyAddr\fP = \fBNULL\fP\fC [static]\fP"
+.PP
+Definition at line 82 of file nwk_frame\&.c\&.
+.SS "\fBuint8_t\fP \fBsMyRxType\fP = 0\fC [static]\fP"
+.PP
+Definition at line 84 of file nwk_frame\&.c\&.
+.SS "\fBuint8_t\fP \fBsMyTxType\fP = 0\fC [static]\fP"
+.PP
+Definition at line 84 of file nwk_frame\&.c\&.
+.SS "\fBuint8_t\fP(* \fBspCallback\fP)(\fBlinkID_t\fP) = \fBNULL\fP\fC [static]\fP"
+.PP
+Definition at line 87 of file nwk_frame\&.c\&.
+.SS "\fBuint8_t\fP \fBsTRACTID\fP = 0\fC [static]\fP"
+.PP
+Definition at line 80 of file nwk_frame\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

@@ -1,0 +1,199 @@
+\hypertarget{mrfi__radio__interface_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio\-\_\-interface.c \-File \-Reference}
+\label{mrfi__radio__interface_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio\-\_\-interface.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/mrfi/radios/family5/mrfi\-\_\-radio\-\_\-interface.\-c}}
+}
+{\ttfamily \#include \char`\"{}mrfi\-\_\-radio\-\_\-interface.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_a861e662512db473969940a0a5f2b76c5}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R}()~\-R\-F1\-A\-I\-F\-C\-T\-L1 \&= $\sim$(\-R\-F\-S\-T\-A\-T\-I\-F\-G);
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_a9d0d6b5f8d32959f7c7c8f2beeac8ff4}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}()~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-S\-T\-A\-T\-I\-F\-G) );
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_abf4bf5423ab9edec3d44fc230dea41b1}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}()~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-I\-N\-S\-T\-R\-I\-F\-G));
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_a4ff841ef85c53350b7c643b16db6afea}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}()~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-D\-I\-N\-I\-F\-G)  );
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_a0280f776f5d7f4d3b778476ae9bee75d}{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}()~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-D\-O\-U\-T\-I\-F\-G) );
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_ae5bf383c5e70170efd1ed59d2ab9bfb3}{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\#define \hyperlink{mrfi__radio__interface_8c_add3ad3c47a9849f144efeb2e4dfe627f}{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T}(x)~\hyperlink{bsp_8h_a5c8b48a52662b002e1ec121c48c16f46}{\-B\-S\-P\-\_\-\-A\-S\-S\-E\-R\-T}(x)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{mrfi__radio__interface_8c_a09245ae00dbf4322281fef12cc52a89b}{mrfi\-Radio\-Interface\-Init} (void)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio__interface_8c_ad8967907085371a9791e8221846d93b3}{mrfi\-Radio\-Interface\-Cmd\-Strobe} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} addr)
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio__interface_8c_a11719585933c0185bebb9dbed7176809}{mrfi\-Radio\-Interface\-Read\-Reg} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} addr)
+\item 
+void \hyperlink{mrfi__radio__interface_8c_a8a72d3f71f068d13c6b23e79ecb4d068}{mrfi\-Radio\-Interface\-Write\-Reg} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} addr, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} value)
+\item 
+void \hyperlink{mrfi__radio__interface_8c_ab2cfb2efb218ba7a69501cf4cc96932b}{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$p\-Data, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} len)
+\item 
+void \hyperlink{mrfi__radio__interface_8c_aa5c6363be8c719be691e37b31f3a9dab}{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo} (\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} $\ast$p\-Data, \hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} len)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{mrfi__radio__interface_8c_a7e5575b2266da23e0d9a5dff2da9881a}{method} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{mrfi__radio__interface_8c_a0280f776f5d7f4d3b778476ae9bee75d}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-D\-O\-U\-T\-I\-F\-G) );}}\label{mrfi__radio__interface_8c_a0280f776f5d7f4d3b778476ae9bee75d}
+
+
+\-Definition at line 60 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a4ff841ef85c53350b7c643b16db6afea}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-D\-A\-T\-A\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-D\-I\-N\-I\-F\-G)  );}}\label{mrfi__radio__interface_8c_a4ff841ef85c53350b7c643b16db6afea}
+
+
+\-Definition at line 59 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_abf4bf5423ab9edec3d44fc230dea41b1}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-I\-N\-S\-T\-\_\-\-W\-R\-I\-T\-E\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-I\-N\-S\-T\-R\-I\-F\-G));}}\label{mrfi__radio__interface_8c_abf4bf5423ab9edec3d44fc230dea41b1}
+
+
+\-Definition at line 58 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a861e662512db473969940a0a5f2b76c5}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-C\-L\-E\-A\-R}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\-R\-F1\-A\-I\-F\-C\-T\-L1 \&= $\sim$(\-R\-F\-S\-T\-A\-T\-I\-F\-G);}}\label{mrfi__radio__interface_8c_a861e662512db473969940a0a5f2b76c5}
+
+
+\-Definition at line 55 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a9d0d6b5f8d32959f7c7c8f2beeac8ff4}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T@{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-A\-D\-I\-O\-\_\-\-S\-T\-A\-T\-U\-S\-\_\-\-R\-E\-A\-D\-\_\-\-W\-A\-I\-T}(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~while( !(\-R\-F1\-A\-I\-F\-C\-T\-L1 \& \-R\-F\-S\-T\-A\-T\-I\-F\-G) );}}\label{mrfi__radio__interface_8c_a9d0d6b5f8d32959f7c7c8f2beeac8ff4}
+
+
+\-Definition at line 57 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_add3ad3c47a9849f144efeb2e4dfe627f}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T@{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T@{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-A\-S\-S\-E\-R\-T}(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~{\bf \-B\-S\-P\-\_\-\-A\-S\-S\-E\-R\-T}(x)}}\label{mrfi__radio__interface_8c_add3ad3c47a9849f144efeb2e4dfe627f}
+
+
+\-Definition at line 64 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_ae5bf383c5e70170efd1ed59d2ab9bfb3}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G@{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G}}
+\index{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G@{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{\-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-R\-F\-I\-\_\-\-R\-I\-F\-\_\-\-D\-E\-B\-U\-G}}}\label{mrfi__radio__interface_8c_ae5bf383c5e70170efd1ed59d2ab9bfb3}
+
+
+\-Definition at line 62 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{mrfi__radio__interface_8c_ad8967907085371a9791e8221846d93b3}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Cmd\-Strobe@{mrfi\-Radio\-Interface\-Cmd\-Strobe}}
+\index{mrfi\-Radio\-Interface\-Cmd\-Strobe@{mrfi\-Radio\-Interface\-Cmd\-Strobe}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Cmd\-Strobe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Radio\-Interface\-Cmd\-Strobe} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{addr}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_ad8967907085371a9791e8221846d93b3}
+
+
+\-Definition at line 110 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a09245ae00dbf4322281fef12cc52a89b}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Init@{mrfi\-Radio\-Interface\-Init}}
+\index{mrfi\-Radio\-Interface\-Init@{mrfi\-Radio\-Interface\-Init}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mrfi\-Radio\-Interface\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_a09245ae00dbf4322281fef12cc52a89b}
+
+
+\-Definition at line 86 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a11719585933c0185bebb9dbed7176809}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Read\-Reg@{mrfi\-Radio\-Interface\-Read\-Reg}}
+\index{mrfi\-Radio\-Interface\-Read\-Reg@{mrfi\-Radio\-Interface\-Read\-Reg}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Read\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf mrfi\-Radio\-Interface\-Read\-Reg} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{addr}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_a11719585933c0185bebb9dbed7176809}
+
+
+\-Definition at line 186 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_aa5c6363be8c719be691e37b31f3a9dab}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Read\-Rx\-Fifo@{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo}}
+\index{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo@{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Read\-Rx\-Fifo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mrfi\-Radio\-Interface\-Read\-Rx\-Fifo} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t} $\ast$}]{p\-Data, }
+\item[{{\bf uint8\-\_\-t}}]{len}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_aa5c6363be8c719be691e37b31f3a9dab}
+
+
+\-Definition at line 315 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_a8a72d3f71f068d13c6b23e79ecb4d068}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Write\-Reg@{mrfi\-Radio\-Interface\-Write\-Reg}}
+\index{mrfi\-Radio\-Interface\-Write\-Reg@{mrfi\-Radio\-Interface\-Write\-Reg}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Write\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mrfi\-Radio\-Interface\-Write\-Reg} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t}}]{addr, }
+\item[{{\bf uint8\-\_\-t}}]{value}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_a8a72d3f71f068d13c6b23e79ecb4d068}
+
+
+\-Definition at line 232 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+\hypertarget{mrfi__radio__interface_8c_ab2cfb2efb218ba7a69501cf4cc96932b}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!mrfi\-Radio\-Interface\-Write\-Tx\-Fifo@{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo}}
+\index{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo@{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{mrfi\-Radio\-Interface\-Write\-Tx\-Fifo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mrfi\-Radio\-Interface\-Write\-Tx\-Fifo} (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8\-\_\-t} $\ast$}]{p\-Data, }
+\item[{{\bf uint8\-\_\-t}}]{len}
+\end{DoxyParamCaption}
+)}}\label{mrfi__radio__interface_8c_ab2cfb2efb218ba7a69501cf4cc96932b}
+
+
+\-Definition at line 270 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{mrfi__radio__interface_8c_a7e5575b2266da23e0d9a5dff2da9881a}{\index{mrfi\-\_\-radio\-\_\-interface.\-c@{mrfi\-\_\-radio\-\_\-interface.\-c}!method@{method}}
+\index{method@{method}!mrfi_radio_interface.c@{mrfi\-\_\-radio\-\_\-interface.\-c}}
+\subsubsection[{method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf method} = 2}}\label{mrfi__radio__interface_8c_a7e5575b2266da23e0d9a5dff2da9881a}
+
+
+\-Definition at line 314 of file mrfi\-\_\-radio\-\_\-interface.\-c.
+

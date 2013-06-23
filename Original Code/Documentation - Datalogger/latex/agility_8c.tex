@@ -1,0 +1,219 @@
+\hypertarget{agility_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/logic/agility.c \-File \-Reference}
+\label{agility_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/agility.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/agility.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}stdlib.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}vti\-\_\-as.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ports.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}user.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}agility.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}acceleration.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}simpliciti.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}menu.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display2.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{agility_8c_a528e77202986dd4c3af10a91b465609a}{\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N}~5
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{agility_8c_af89f253be5c55899837abbe5d4b2fb8e}{start\-\_\-agility} (void)
+\item 
+void \hyperlink{agility_8c_a7a271d101d7aa1e79d258cc5d5d7da03}{stop\-\_\-agility} (void)
+\item 
+void \hyperlink{agility_8c_a56f891fcac58b24f57ffaf08aed95d21}{set\-\_\-agility} (void)
+\item 
+void \hyperlink{agility_8c_a1ed9020b6a616dd5f61e64215723439f}{write\-\_\-agility\-\_\-history} (void)
+\item 
+u8 \hyperlink{agility_8c_acf8ea8be59045727a3fa18ae5bd8f9e7}{acceleration\-\_\-value\-\_\-is\-\_\-positive} (u8 value)
+\item 
+\hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} \hyperlink{agility_8c_a670fa1c8218fee556ebf57669509aa0e}{convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav} (u8 value)
+\item 
+void \hyperlink{agility_8c_a5fbeadef840b8ec04e47187aaa69b1e4}{display\-\_\-agility\-\_\-indicator} (u8 segments, u32 value, u8 digits, u8 blanks)
+\item 
+void \hyperlink{agility_8c_ac6a8b0913a3661d50ecdc2d574f6457d}{agility\-\_\-tick} (void)
+\item 
+void \hyperlink{agility_8c_a271f3f2a250fe98c1987c78af705a7b5}{reset\-\_\-agility} (void)
+\item 
+void \hyperlink{agility_8c_af07fe6b1a7053e24fd056f0b0001c5ca}{mx\-\_\-agility} (u8 line)
+\item 
+void \hyperlink{agility_8c_a6f43b62125ce840057b3781d6b7a190d}{sx\-\_\-agility} (u8 line)
+\item 
+void \hyperlink{agility_8c_aad6d42b09e29672095d934c4c14043b7}{display\-\_\-agility} (u8 line, u8 update)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structagil}{agil} \hyperlink{agility_8c_a178b079d858a60be7ae0f70eb08f9d66}{s\-Agil}
+\item 
+u8 \hyperlink{agility_8c_a0502b27bc40d9a2881d4ed789ecda353}{as\-\_\-ok}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{agility_8c_a528e77202986dd4c3af10a91b465609a}{\index{agility.\-c@{agility.\-c}!\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N@{\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N}}
+\index{\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N@{\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N}!agility.c@{agility.\-c}}
+\subsubsection[{\-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-C\-C\-E\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-P\-R\-E\-V\-E\-N\-T\-I\-O\-N}~5}}\label{agility_8c_a528e77202986dd4c3af10a91b465609a}
+
+
+\-Definition at line 70 of file agility.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{agility_8c_acf8ea8be59045727a3fa18ae5bd8f9e7}{\index{agility.\-c@{agility.\-c}!acceleration\-\_\-value\-\_\-is\-\_\-positive@{acceleration\-\_\-value\-\_\-is\-\_\-positive}}
+\index{acceleration\-\_\-value\-\_\-is\-\_\-positive@{acceleration\-\_\-value\-\_\-is\-\_\-positive}!agility.c@{agility.\-c}}
+\subsubsection[{acceleration\-\_\-value\-\_\-is\-\_\-positive}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf acceleration\-\_\-value\-\_\-is\-\_\-positive} (
+\begin{DoxyParamCaption}
+\item[{u8}]{value}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_acf8ea8be59045727a3fa18ae5bd8f9e7}
+
+
+\-Definition at line 114 of file acceleration.\-c.
+
+\hypertarget{agility_8c_ac6a8b0913a3661d50ecdc2d574f6457d}{\index{agility.\-c@{agility.\-c}!agility\-\_\-tick@{agility\-\_\-tick}}
+\index{agility\-\_\-tick@{agility\-\_\-tick}!agility.c@{agility.\-c}}
+\subsubsection[{agility\-\_\-tick}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf agility\-\_\-tick} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_ac6a8b0913a3661d50ecdc2d574f6457d}
+
+
+\-Definition at line 123 of file agility.\-c.
+
+\hypertarget{agility_8c_a670fa1c8218fee556ebf57669509aa0e}{\index{agility.\-c@{agility.\-c}!convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav@{convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav}}
+\index{convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav@{convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav}!agility.c@{agility.\-c}}
+\subsubsection[{convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u16} {\bf convert\-\_\-acceleration\-\_\-value\-\_\-to\-\_\-mgrav} (
+\begin{DoxyParamCaption}
+\item[{u8}]{value}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a670fa1c8218fee556ebf57669509aa0e}
+
+
+\-Definition at line 126 of file acceleration.\-c.
+
+\hypertarget{agility_8c_aad6d42b09e29672095d934c4c14043b7}{\index{agility.\-c@{agility.\-c}!display\-\_\-agility@{display\-\_\-agility}}
+\index{display\-\_\-agility@{display\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{display\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_aad6d42b09e29672095d934c4c14043b7}
+
+
+\-Definition at line 333 of file agility.\-c.
+
+\hypertarget{agility_8c_a5fbeadef840b8ec04e47187aaa69b1e4}{\index{agility.\-c@{agility.\-c}!display\-\_\-agility\-\_\-indicator@{display\-\_\-agility\-\_\-indicator}}
+\index{display\-\_\-agility\-\_\-indicator@{display\-\_\-agility\-\_\-indicator}!agility.c@{agility.\-c}}
+\subsubsection[{display\-\_\-agility\-\_\-indicator}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-agility\-\_\-indicator} (
+\begin{DoxyParamCaption}
+\item[{u8}]{segments, }
+\item[{u32}]{value, }
+\item[{u8}]{digits, }
+\item[{u8}]{blanks}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a5fbeadef840b8ec04e47187aaa69b1e4}
+
+
+\-Definition at line 98 of file agility.\-c.
+
+\hypertarget{agility_8c_af07fe6b1a7053e24fd056f0b0001c5ca}{\index{agility.\-c@{agility.\-c}!mx\-\_\-agility@{mx\-\_\-agility}}
+\index{mx\-\_\-agility@{mx\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{mx\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_af07fe6b1a7053e24fd056f0b0001c5ca}
+
+
+\-Definition at line 279 of file agility.\-c.
+
+\hypertarget{agility_8c_a271f3f2a250fe98c1987c78af705a7b5}{\index{agility.\-c@{agility.\-c}!reset\-\_\-agility@{reset\-\_\-agility}}
+\index{reset\-\_\-agility@{reset\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{reset\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a271f3f2a250fe98c1987c78af705a7b5}
+
+
+\-Definition at line 181 of file agility.\-c.
+
+\hypertarget{agility_8c_a56f891fcac58b24f57ffaf08aed95d21}{\index{agility.\-c@{agility.\-c}!set\-\_\-agility@{set\-\_\-agility}}
+\index{set\-\_\-agility@{set\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{set\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf set\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a56f891fcac58b24f57ffaf08aed95d21}
+
+
+\-Definition at line 379 of file agility.\-c.
+
+\hypertarget{agility_8c_af89f253be5c55899837abbe5d4b2fb8e}{\index{agility.\-c@{agility.\-c}!start\-\_\-agility@{start\-\_\-agility}}
+\index{start\-\_\-agility@{start\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{start\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf start\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_af89f253be5c55899837abbe5d4b2fb8e}
+
+
+\-Definition at line 214 of file agility.\-c.
+
+\hypertarget{agility_8c_a7a271d101d7aa1e79d258cc5d5d7da03}{\index{agility.\-c@{agility.\-c}!stop\-\_\-agility@{stop\-\_\-agility}}
+\index{stop\-\_\-agility@{stop\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{stop\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf stop\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a7a271d101d7aa1e79d258cc5d5d7da03}
+
+
+\-Definition at line 244 of file agility.\-c.
+
+\hypertarget{agility_8c_a6f43b62125ce840057b3781d6b7a190d}{\index{agility.\-c@{agility.\-c}!sx\-\_\-agility@{sx\-\_\-agility}}
+\index{sx\-\_\-agility@{sx\-\_\-agility}!agility.c@{agility.\-c}}
+\subsubsection[{sx\-\_\-agility}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sx\-\_\-agility} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a6f43b62125ce840057b3781d6b7a190d}
+
+
+\-Definition at line 306 of file agility.\-c.
+
+\hypertarget{agility_8c_a1ed9020b6a616dd5f61e64215723439f}{\index{agility.\-c@{agility.\-c}!write\-\_\-agility\-\_\-history@{write\-\_\-agility\-\_\-history}}
+\index{write\-\_\-agility\-\_\-history@{write\-\_\-agility\-\_\-history}!agility.c@{agility.\-c}}
+\subsubsection[{write\-\_\-agility\-\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf write\-\_\-agility\-\_\-history} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{agility_8c_a1ed9020b6a616dd5f61e64215723439f}
+
+
+\-Definition at line 264 of file agility.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{agility_8c_a0502b27bc40d9a2881d4ed789ecda353}{\index{agility.\-c@{agility.\-c}!as\-\_\-ok@{as\-\_\-ok}}
+\index{as\-\_\-ok@{as\-\_\-ok}!agility.c@{agility.\-c}}
+\subsubsection[{as\-\_\-ok}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf as\-\_\-ok}}}\label{agility_8c_a0502b27bc40d9a2881d4ed789ecda353}
+
+
+\-Definition at line 86 of file vti\-\_\-as.\-c.
+
+\hypertarget{agility_8c_a178b079d858a60be7ae0f70eb08f9d66}{\index{agility.\-c@{agility.\-c}!s\-Agil@{s\-Agil}}
+\index{s\-Agil@{s\-Agil}!agility.c@{agility.\-c}}
+\subsubsection[{s\-Agil}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf agil} {\bf s\-Agil}}}\label{agility_8c_a178b079d858a60be7ae0f70eb08f9d66}
+
+
+\-Definition at line 75 of file agility.\-c.
+

@@ -1,0 +1,86 @@
+\hypertarget{nwk__ioctl_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ioctl.c \-File \-Reference}
+\label{nwk__ioctl_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ioctl.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Components/nwk\-\_\-applications/nwk\-\_\-ioctl.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include \char`\"{}bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-types.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-frame.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-ioctl.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-globals.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-security.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ioctl_8c_a2eb9e1b72fda1e4548c19694318d8019}{nwk\-\_\-raw\-Send} (\hyperlink{structioctlRawSend__t}{ioctl\-Raw\-Send\-\_\-t} $\ast$info)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ioctl_8c_ac1d4a52ef7b3fd41caed59e9ffcfc4a5}{nwk\-\_\-raw\-Receive} (\hyperlink{structioctlRawReceive__t}{ioctl\-Raw\-Receive\-\_\-t} $\ast$info)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ioctl_8c_aede94bd92bd4a2df0b5e6f062192b107}{nwk\-\_\-radio\-Control} (\hyperlink{nwk__types_8h_a4def9e3c3c03c7df1f33000141ad569f}{ioctl\-Action\-\_\-t} action, void $\ast$val)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ioctl_8c_a40b557f449fcf1eabf2e2260d6be6eed}{nwk\-\_\-device\-Address} (\hyperlink{nwk__types_8h_a4def9e3c3c03c7df1f33000141ad569f}{ioctl\-Action\-\_\-t} action, \hyperlink{structaddr__t}{addr\-\_\-t} $\ast$addr)
+\item 
+\hyperlink{nwk__types_8h_af035cb26a73234af8cb7aaf349760c24}{smpl\-Status\-\_\-t} \hyperlink{nwk__ioctl_8c_a8459b9c1c7799b27f49912c72e73b94e}{nwk\-\_\-connection\-Control} (\hyperlink{nwk__types_8h_a4def9e3c3c03c7df1f33000141ad569f}{ioctl\-Action\-\_\-t} action, void $\ast$val)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{nwk__ioctl_8c_a8459b9c1c7799b27f49912c72e73b94e}{\index{nwk\-\_\-ioctl.\-c@{nwk\-\_\-ioctl.\-c}!nwk\-\_\-connection\-Control@{nwk\-\_\-connection\-Control}}
+\index{nwk\-\_\-connection\-Control@{nwk\-\_\-connection\-Control}!nwk_ioctl.c@{nwk\-\_\-ioctl.\-c}}
+\subsubsection[{nwk\-\_\-connection\-Control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-connection\-Control} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Action\-\_\-t}}]{action, }
+\item[{void $\ast$}]{val}
+\end{DoxyParamCaption}
+)}}\label{nwk__ioctl_8c_a8459b9c1c7799b27f49912c72e73b94e}
+
+
+\-Definition at line 330 of file nwk\-\_\-ioctl.\-c.
+
+\hypertarget{nwk__ioctl_8c_a40b557f449fcf1eabf2e2260d6be6eed}{\index{nwk\-\_\-ioctl.\-c@{nwk\-\_\-ioctl.\-c}!nwk\-\_\-device\-Address@{nwk\-\_\-device\-Address}}
+\index{nwk\-\_\-device\-Address@{nwk\-\_\-device\-Address}!nwk_ioctl.c@{nwk\-\_\-ioctl.\-c}}
+\subsubsection[{nwk\-\_\-device\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-device\-Address} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Action\-\_\-t}}]{action, }
+\item[{{\bf addr\-\_\-t} $\ast$}]{addr}
+\end{DoxyParamCaption}
+)}}\label{nwk__ioctl_8c_a40b557f449fcf1eabf2e2260d6be6eed}
+
+
+\-Definition at line 293 of file nwk\-\_\-ioctl.\-c.
+
+\hypertarget{nwk__ioctl_8c_aede94bd92bd4a2df0b5e6f062192b107}{\index{nwk\-\_\-ioctl.\-c@{nwk\-\_\-ioctl.\-c}!nwk\-\_\-radio\-Control@{nwk\-\_\-radio\-Control}}
+\index{nwk\-\_\-radio\-Control@{nwk\-\_\-radio\-Control}!nwk_ioctl.c@{nwk\-\_\-ioctl.\-c}}
+\subsubsection[{nwk\-\_\-radio\-Control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-radio\-Control} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Action\-\_\-t}}]{action, }
+\item[{void $\ast$}]{val}
+\end{DoxyParamCaption}
+)}}\label{nwk__ioctl_8c_aede94bd92bd4a2df0b5e6f062192b107}
+
+
+\-Definition at line 176 of file nwk\-\_\-ioctl.\-c.
+
+\hypertarget{nwk__ioctl_8c_ac1d4a52ef7b3fd41caed59e9ffcfc4a5}{\index{nwk\-\_\-ioctl.\-c@{nwk\-\_\-ioctl.\-c}!nwk\-\_\-raw\-Receive@{nwk\-\_\-raw\-Receive}}
+\index{nwk\-\_\-raw\-Receive@{nwk\-\_\-raw\-Receive}!nwk_ioctl.c@{nwk\-\_\-ioctl.\-c}}
+\subsubsection[{nwk\-\_\-raw\-Receive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-raw\-Receive} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Raw\-Receive\-\_\-t} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{nwk__ioctl_8c_ac1d4a52ef7b3fd41caed59e9ffcfc4a5}
+
+
+\-Definition at line 154 of file nwk\-\_\-ioctl.\-c.
+
+\hypertarget{nwk__ioctl_8c_a2eb9e1b72fda1e4548c19694318d8019}{\index{nwk\-\_\-ioctl.\-c@{nwk\-\_\-ioctl.\-c}!nwk\-\_\-raw\-Send@{nwk\-\_\-raw\-Send}}
+\index{nwk\-\_\-raw\-Send@{nwk\-\_\-raw\-Send}!nwk_ioctl.c@{nwk\-\_\-ioctl.\-c}}
+\subsubsection[{nwk\-\_\-raw\-Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smpl\-Status\-\_\-t} {\bf nwk\-\_\-raw\-Send} (
+\begin{DoxyParamCaption}
+\item[{{\bf ioctl\-Raw\-Send\-\_\-t} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{nwk__ioctl_8c_a2eb9e1b72fda1e4548c19694318d8019}
+
+
+\-Definition at line 102 of file nwk\-\_\-ioctl.\-c.
+

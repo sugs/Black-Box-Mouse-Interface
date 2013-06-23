@@ -1,0 +1,123 @@
+\hypertarget{temperature_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/logic/temperature.c \-File \-Reference}
+\label{temperature_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/temperature.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/temperature.\-c}}
+}
+{\ttfamily \#include \char`\"{}project.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}temperature.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}ports.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}display.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}adc12.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}timer.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}user.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+u8 \hyperlink{temperature_8c_a825ef6a60df527653575aa60106c2b37}{is\-\_\-temp\-\_\-measurement} (void)
+\item 
+s16 \hyperlink{temperature_8c_a320f6b1ff6272db84085d5360b05895c}{convert\-\_\-\-C\-\_\-to\-\_\-\-F} (s16 value)
+\item 
+s16 \hyperlink{temperature_8c_a03ca1dcbe92807209186c6cf1e1e8ea6}{convert\-\_\-\-F\-\_\-to\-\_\-\-C} (s16 value)
+\item 
+void \hyperlink{temperature_8c_a38a9f88297b97db5d23bcc91a4a3e8bb}{reset\-\_\-temp\-\_\-measurement} (void)
+\item 
+void \hyperlink{temperature_8c_a4406e0351660f0a51781fad51724657c}{temperature\-\_\-measurement} (u8 filter)
+\item 
+void \hyperlink{temperature_8c_aa4f76f4f8a843423226e3a129d3ed529}{mx\-\_\-temperature} (u8 line)
+\item 
+void \hyperlink{temperature_8c_aab68a01fda0c93982262bef86a1bebb3}{display\-\_\-temperature} (u8 line, u8 update)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtemp}{temp} \hyperlink{temperature_8c_a0ccdaedb88889e2728ebbbc88fb586a7}{s\-Temp}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{temperature_8c_a320f6b1ff6272db84085d5360b05895c}{\index{temperature.\-c@{temperature.\-c}!convert\-\_\-\-C\-\_\-to\-\_\-\-F@{convert\-\_\-\-C\-\_\-to\-\_\-\-F}}
+\index{convert\-\_\-\-C\-\_\-to\-\_\-\-F@{convert\-\_\-\-C\-\_\-to\-\_\-\-F}!temperature.c@{temperature.\-c}}
+\subsubsection[{convert\-\_\-\-C\-\_\-to\-\_\-\-F}]{\setlength{\rightskip}{0pt plus 5cm}s16 {\bf convert\-\_\-\-C\-\_\-to\-\_\-\-F} (
+\begin{DoxyParamCaption}
+\item[{s16}]{value}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_a320f6b1ff6272db84085d5360b05895c}
+
+
+\-Definition at line 139 of file temperature.\-c.
+
+\hypertarget{temperature_8c_a03ca1dcbe92807209186c6cf1e1e8ea6}{\index{temperature.\-c@{temperature.\-c}!convert\-\_\-\-F\-\_\-to\-\_\-\-C@{convert\-\_\-\-F\-\_\-to\-\_\-\-C}}
+\index{convert\-\_\-\-F\-\_\-to\-\_\-\-C@{convert\-\_\-\-F\-\_\-to\-\_\-\-C}!temperature.c@{temperature.\-c}}
+\subsubsection[{convert\-\_\-\-F\-\_\-to\-\_\-\-C}]{\setlength{\rightskip}{0pt plus 5cm}s16 {\bf convert\-\_\-\-F\-\_\-to\-\_\-\-C} (
+\begin{DoxyParamCaption}
+\item[{s16}]{value}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_a03ca1dcbe92807209186c6cf1e1e8ea6}
+
+
+\-Definition at line 156 of file temperature.\-c.
+
+\hypertarget{temperature_8c_aab68a01fda0c93982262bef86a1bebb3}{\index{temperature.\-c@{temperature.\-c}!display\-\_\-temperature@{display\-\_\-temperature}}
+\index{display\-\_\-temperature@{display\-\_\-temperature}!temperature.c@{temperature.\-c}}
+\subsubsection[{display\-\_\-temperature}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-temperature} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8}]{update}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_aab68a01fda0c93982262bef86a1bebb3}
+
+
+\-Definition at line 263 of file temperature.\-c.
+
+\hypertarget{temperature_8c_a825ef6a60df527653575aa60106c2b37}{\index{temperature.\-c@{temperature.\-c}!is\-\_\-temp\-\_\-measurement@{is\-\_\-temp\-\_\-measurement}}
+\index{is\-\_\-temp\-\_\-measurement@{is\-\_\-temp\-\_\-measurement}!temperature.c@{temperature.\-c}}
+\subsubsection[{is\-\_\-temp\-\_\-measurement}]{\setlength{\rightskip}{0pt plus 5cm}u8 {\bf is\-\_\-temp\-\_\-measurement} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_a825ef6a60df527653575aa60106c2b37}
+
+
+\-Definition at line 173 of file temperature.\-c.
+
+\hypertarget{temperature_8c_aa4f76f4f8a843423226e3a129d3ed529}{\index{temperature.\-c@{temperature.\-c}!mx\-\_\-temperature@{mx\-\_\-temperature}}
+\index{mx\-\_\-temperature@{mx\-\_\-temperature}!temperature.c@{temperature.\-c}}
+\subsubsection[{mx\-\_\-temperature}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mx\-\_\-temperature} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_aa4f76f4f8a843423226e3a129d3ed529}
+
+
+\-Definition at line 185 of file temperature.\-c.
+
+\hypertarget{temperature_8c_a38a9f88297b97db5d23bcc91a4a3e8bb}{\index{temperature.\-c@{temperature.\-c}!reset\-\_\-temp\-\_\-measurement@{reset\-\_\-temp\-\_\-measurement}}
+\index{reset\-\_\-temp\-\_\-measurement@{reset\-\_\-temp\-\_\-measurement}!temperature.c@{temperature.\-c}}
+\subsubsection[{reset\-\_\-temp\-\_\-measurement}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf reset\-\_\-temp\-\_\-measurement} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_a38a9f88297b97db5d23bcc91a4a3e8bb}
+
+
+\-Definition at line 82 of file temperature.\-c.
+
+\hypertarget{temperature_8c_a4406e0351660f0a51781fad51724657c}{\index{temperature.\-c@{temperature.\-c}!temperature\-\_\-measurement@{temperature\-\_\-measurement}}
+\index{temperature\-\_\-measurement@{temperature\-\_\-measurement}!temperature.c@{temperature.\-c}}
+\subsubsection[{temperature\-\_\-measurement}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf temperature\-\_\-measurement} (
+\begin{DoxyParamCaption}
+\item[{u8}]{filter}
+\end{DoxyParamCaption}
+)}}\label{temperature_8c_a4406e0351660f0a51781fad51724657c}
+
+
+\-Definition at line 98 of file temperature.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{temperature_8c_a0ccdaedb88889e2728ebbbc88fb586a7}{\index{temperature.\-c@{temperature.\-c}!s\-Temp@{s\-Temp}}
+\index{s\-Temp@{s\-Temp}!temperature.c@{temperature.\-c}}
+\subsubsection[{s\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf temp} {\bf s\-Temp}}}\label{temperature_8c_a0ccdaedb88889e2728ebbbc88fb586a7}
+
+
+\-Definition at line 69 of file temperature.\-c.
+

@@ -1,0 +1,84 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk/nwk_QMgmt.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <intrinsics\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk\&.h'\fP
+.br
+\fC#include 'nwk_frame\&.h'\fP
+.br
+\fC#include 'nwk_QMgmt\&.h'\fP
+.br
+\fC#include 'nwk_mgmt\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBnwk_QInit\fP (void)"
+.br
+.ti -1c
+.RI "\fBframeInfo_t\fP * \fBnwk_QfindSlot\fP (\fBuint8_t\fP which)"
+.br
+.ti -1c
+.RI "void \fBnwk_QadjustOrder\fP (\fBuint8_t\fP which, \fBuint8_t\fP stamp)"
+.br
+.ti -1c
+.RI "\fBframeInfo_t\fP * \fBnwk_QfindOldest\fP (\fBuint8_t\fP which, \fBrcvContext_t\fP *rcv, \fBuint8_t\fP fi_usage)"
+.br
+.ti -1c
+.RI "\fBframeInfo_t\fP * \fBnwk_getQ\fP (\fBuint8_t\fP which)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static \fBframeInfo_t\fP * \fBsInFrameQ\fP = \fBNULL\fP"
+.br
+.ti -1c
+.RI "static \fBframeInfo_t\fP \fBsOutFrameQ\fP [SIZE_OUTFRAME_Q]"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBframeInfo_t\fP* \fBnwk_getQ\fP (\fBuint8_t\fPwhich)"
+.PP
+Definition at line 413 of file nwk_QMgmt\&.c\&.
+.SS "void \fBnwk_QadjustOrder\fP (\fBuint8_t\fPwhich, \fBuint8_t\fPstamp)"
+.PP
+Definition at line 217 of file nwk_QMgmt\&.c\&.
+.SS "\fBframeInfo_t\fP* \fBnwk_QfindOldest\fP (\fBuint8_t\fPwhich, \fBrcvContext_t\fP *rcv, \fBuint8_t\fPfi_usage)"
+.PP
+Definition at line 268 of file nwk_QMgmt\&.c\&.
+.SS "\fBframeInfo_t\fP* \fBnwk_QfindSlot\fP (\fBuint8_t\fPwhich)"
+.PP
+Definition at line 124 of file nwk_QMgmt\&.c\&.
+.SS "void \fBnwk_QInit\fP (void)"
+.PP
+Definition at line 97 of file nwk_QMgmt\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBframeInfo_t\fP* \fBsInFrameQ\fP = \fBNULL\fP\fC [static]\fP"
+.PP
+Definition at line 69 of file nwk_QMgmt\&.c\&.
+.SS "\fBframeInfo_t\fP \fBsOutFrameQ\fP[SIZE_OUTFRAME_Q]\fC [static]\fP"
+.PP
+Definition at line 72 of file nwk_QMgmt\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

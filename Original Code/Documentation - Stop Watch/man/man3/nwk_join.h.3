@@ -1,0 +1,159 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.h" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_join.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBJOIN_CONTEXT_ON\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBJOIN_CONTEXT_OFF\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBJOIN_LEGACY_MSG_LENGTH\fP   7"
+.br
+.ti -1c
+.RI "#define \fBJOIN_REPLY_LEGACY_MSG_LENGTH\fP   6"
+.br
+.ti -1c
+.RI "#define \fBSEC_CRYPT_KEY_SIZE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBJB_REQ_OS\fP   0"
+.br
+.ti -1c
+.RI "#define \fBJB_TID_OS\fP   1"
+.br
+.ti -1c
+.RI "#define \fBJ_JOIN_TOKEN_OS\fP   2"
+.br
+.ti -1c
+.RI "#define \fBJ_NUMCONN_OS\fP   6"
+.br
+.ti -1c
+.RI "#define \fBJ_PROTOCOL_VERSION_OS\fP   7"
+.br
+.ti -1c
+.RI "#define \fBJR_LINK_TOKEN_OS\fP   2"
+.br
+.ti -1c
+.RI "#define \fBJR_CRYPTKEY_SIZE_OS\fP   6"
+.br
+.ti -1c
+.RI "#define \fBJR_CRYPTKEY_OS\fP   7"
+.br
+.ti -1c
+.RI "#define \fBMAX_JOIN_APP_FRAME\fP   (\fBJR_CRYPTKEY_OS\fP + \fBSEC_CRYPT_KEY_SIZE\fP)"
+.br
+.ti -1c
+.RI "#define \fBJOIN_FRAME_SIZE\fP   8"
+.br
+.ti -1c
+.RI "#define \fBJOIN_REPLY_FRAME_SIZE\fP   \fBMAX_JOIN_APP_FRAME\fP"
+.br
+.ti -1c
+.RI "#define \fBJOIN_REQ_JOIN\fP   1"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBnwk_joinInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_join\fP (void)"
+.br
+.ti -1c
+.RI "\fBfhStatus_t\fP \fBnwk_processJoin\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "void \fBnwk_getJoinToken\fP (\fBuint32_t\fP *)"
+.br
+.ti -1c
+.RI "void \fBnwk_setJoinContext\fP (\fBuint8_t\fP)"
+.br
+.ti -1c
+.RI "void \fBnwk_setJoinToken\fP (\fBuint32_t\fP)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBJ_JOIN_TOKEN_OS\fP   2"
+.PP
+Definition at line 55 of file nwk_join\&.h\&.
+.SS "#define \fBJ_NUMCONN_OS\fP   6"
+.PP
+Definition at line 56 of file nwk_join\&.h\&.
+.SS "#define \fBJ_PROTOCOL_VERSION_OS\fP   7"
+.PP
+Definition at line 57 of file nwk_join\&.h\&.
+.SS "#define \fBJB_REQ_OS\fP   0"
+.PP
+Definition at line 52 of file nwk_join\&.h\&.
+.SS "#define \fBJB_TID_OS\fP   1"
+.PP
+Definition at line 53 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_CONTEXT_OFF\fP   (0x02)"
+.PP
+Definition at line 41 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_CONTEXT_ON\fP   (0x01)"
+.PP
+Definition at line 40 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_FRAME_SIZE\fP   8"
+.PP
+Definition at line 67 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_LEGACY_MSG_LENGTH\fP   7"
+.PP
+Definition at line 44 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_REPLY_FRAME_SIZE\fP   \fBMAX_JOIN_APP_FRAME\fP"
+.PP
+Definition at line 68 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_REPLY_LEGACY_MSG_LENGTH\fP   6"
+.PP
+Definition at line 45 of file nwk_join\&.h\&.
+.SS "#define \fBJOIN_REQ_JOIN\fP   1"
+.PP
+Definition at line 76 of file nwk_join\&.h\&.
+.SS "#define \fBJR_CRYPTKEY_OS\fP   7"
+.PP
+Definition at line 61 of file nwk_join\&.h\&.
+.SS "#define \fBJR_CRYPTKEY_SIZE_OS\fP   6"
+.PP
+Definition at line 60 of file nwk_join\&.h\&.
+.SS "#define \fBJR_LINK_TOKEN_OS\fP   2"
+.PP
+Definition at line 59 of file nwk_join\&.h\&.
+.SS "#define \fBMAX_JOIN_APP_FRAME\fP   (\fBJR_CRYPTKEY_OS\fP + \fBSEC_CRYPT_KEY_SIZE\fP)"
+.PP
+Definition at line 64 of file nwk_join\&.h\&.
+.SS "#define \fBSEC_CRYPT_KEY_SIZE\fP   0"
+.PP
+Definition at line 48 of file nwk_join\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void \fBnwk_getJoinToken\fP (\fBuint32_t\fP *)"
+.PP
+Definition at line 170 of file nwk_join\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_join\fP (void)"
+.PP
+Definition at line 438 of file nwk_join\&.c\&.
+.SS "void \fBnwk_joinInit\fP (\fBuint8_t\fP(*)(\fBlinkID_t\fP))"
+.PP
+Definition at line 106 of file nwk_join\&.c\&.
+.SS "\fBfhStatus_t\fP \fBnwk_processJoin\fP (\fBmrfiPacket_t\fP *)"
+.PP
+Definition at line 540 of file nwk_join\&.c\&.
+.SS "void \fBnwk_setJoinContext\fP (\fBuint8_t\fP)"
+.SS "void \fBnwk_setJoinToken\fP (\fBuint32_t\fP)"
+.PP
+Definition at line 147 of file nwk_join\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

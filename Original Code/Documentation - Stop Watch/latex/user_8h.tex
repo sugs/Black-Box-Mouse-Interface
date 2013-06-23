@@ -1,0 +1,124 @@
+\hypertarget{user_8h}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/logic/user.h \-File \-Reference}
+\label{user_8h}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/user.\-h@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/logic/user.\-h}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{user_8h_a57aa2958692679b7f24b71d0062cae06}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T0
+\item 
+\#define \hyperlink{user_8h_a0069ae29d559524ff6be9f13ab759221}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T1
+\item 
+\#define \hyperlink{user_8h_ab533f85c585038374eee5957f15937da}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S}~\-B\-I\-T2
+\item 
+\#define \hyperlink{user_8h_aa1301f83ddd7579787484eaebd0947f5}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}~\-B\-I\-T3
+\item 
+\#define \hyperlink{user_8h_a1b7c1f586186c5e48ebeefcefab97939}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E}~\-B\-I\-T4
+\item 
+\#define \hyperlink{user_8h_afc7aa0022826bd265856ca83f347aa88}{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T5
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+u8 $\ast$ \hyperlink{user_8h_a77f8dc040d1d10bb804aeb1a3ba6aa57}{select\-\_\-view\-\_\-style} (u8 line, u8 $\ast$view1, u8 $\ast$view2)
+\item 
+void \hyperlink{user_8h_a75c18682d2fda7baa4999f1d5eaa0132}{set\-\_\-value} (s32 $\ast$value, u8 digits, u8 blanks, s32 limit\-Low, s32 limit\-High, \hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} mode, u8 segments, void($\ast$\hyperlink{user_8h_a1045bf0466c1b66ca118850882be9743}{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1})(u8 segments, u32 value, u8 digits, u8 blanks))
+\item 
+void \hyperlink{user_8h_a6aa52b93e04c532d8052c4928bb01406}{dummy} (u8 line)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{user_8h_a1045bf0466c1b66ca118850882be9743}{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1} )(u8 segments, u32 value, u8 digits, u8 blanks)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{user_8h_ab533f85c585038374eee5957f15937da}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-A\-R\-R\-O\-W\-S}~\-B\-I\-T2}}\label{user_8h_ab533f85c585038374eee5957f15937da}
+
+
+\-Definition at line 44 of file user.\-h.
+
+\hypertarget{user_8h_aa1301f83ddd7579787484eaebd0947f5}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}~\-B\-I\-T3}}\label{user_8h_aa1301f83ddd7579787484eaebd0947f5}
+
+
+\-Definition at line 45 of file user.\-h.
+
+\hypertarget{user_8h_a0069ae29d559524ff6be9f13ab759221}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T1}}\label{user_8h_a0069ae29d559524ff6be9f13ab759221}
+
+
+\-Definition at line 43 of file user.\-h.
+
+\hypertarget{user_8h_a1b7c1f586186c5e48ebeefcefab97939}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-F\-A\-S\-T\-\_\-\-M\-O\-D\-E}~\-B\-I\-T4}}\label{user_8h_a1b7c1f586186c5e48ebeefcefab97939}
+
+
+\-Definition at line 46 of file user.\-h.
+
+\hypertarget{user_8h_afc7aa0022826bd265856ca83f347aa88}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-N\-E\-X\-T\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T5}}\label{user_8h_afc7aa0022826bd265856ca83f347aa88}
+
+
+\-Definition at line 47 of file user.\-h.
+
+\hypertarget{user_8h_a57aa2958692679b7f24b71d0062cae06}{\index{user.\-h@{user.\-h}!\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E}}
+\index{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E@{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E}!user.h@{user.\-h}}
+\subsubsection[{\-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-E\-T\-V\-A\-L\-U\-E\-\_\-\-R\-O\-L\-L\-O\-V\-E\-R\-\_\-\-V\-A\-L\-U\-E}~\-B\-I\-T0}}\label{user_8h_a57aa2958692679b7f24b71d0062cae06}
+
+
+\-Definition at line 42 of file user.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{user_8h_a6aa52b93e04c532d8052c4928bb01406}{\index{user.\-h@{user.\-h}!dummy@{dummy}}
+\index{dummy@{dummy}!user.h@{user.\-h}}
+\subsubsection[{dummy}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf dummy} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line}
+\end{DoxyParamCaption}
+)}}\label{user_8h_a6aa52b93e04c532d8052c4928bb01406}
+
+
+\-Definition at line 81 of file user.\-c.
+
+\hypertarget{user_8h_a77f8dc040d1d10bb804aeb1a3ba6aa57}{\index{user.\-h@{user.\-h}!select\-\_\-view\-\_\-style@{select\-\_\-view\-\_\-style}}
+\index{select\-\_\-view\-\_\-style@{select\-\_\-view\-\_\-style}!user.h@{user.\-h}}
+\subsubsection[{select\-\_\-view\-\_\-style}]{\setlength{\rightskip}{0pt plus 5cm}u8$\ast$ {\bf select\-\_\-view\-\_\-style} (
+\begin{DoxyParamCaption}
+\item[{u8}]{line, }
+\item[{u8 $\ast$}]{view1, }
+\item[{u8 $\ast$}]{view2}
+\end{DoxyParamCaption}
+)}}\label{user_8h_a77f8dc040d1d10bb804aeb1a3ba6aa57}
+\hypertarget{user_8h_a75c18682d2fda7baa4999f1d5eaa0132}{\index{user.\-h@{user.\-h}!set\-\_\-value@{set\-\_\-value}}
+\index{set\-\_\-value@{set\-\_\-value}!user.h@{user.\-h}}
+\subsubsection[{set\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf set\-\_\-value} (
+\begin{DoxyParamCaption}
+\item[{s32 $\ast$}]{value, }
+\item[{u8}]{digits, }
+\item[{u8}]{blanks, }
+\item[{s32}]{limit\-Low, }
+\item[{s32}]{limit\-High, }
+\item[{{\bf u16}}]{mode, }
+\item[{u8}]{segments, }
+\item[{void($\ast$)(u8 segments, u32 value, u8 digits, u8 blanks)}]{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1}
+\end{DoxyParamCaption}
+)}}\label{user_8h_a75c18682d2fda7baa4999f1d5eaa0132}
+
+
+\-Definition at line 99 of file user.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{user_8h_a1045bf0466c1b66ca118850882be9743}{\index{user.\-h@{user.\-h}!fptr\-\_\-set\-Value\-\_\-display\-\_\-function1@{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1}}
+\index{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1@{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1}!user.h@{user.\-h}}
+\subsubsection[{fptr\-\_\-set\-Value\-\_\-display\-\_\-function1}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf fptr\-\_\-set\-Value\-\_\-display\-\_\-function1})(u8 segments, u32 value, u8 digits, u8 blanks)}}\label{user_8h_a1045bf0466c1b66ca118850882be9743}

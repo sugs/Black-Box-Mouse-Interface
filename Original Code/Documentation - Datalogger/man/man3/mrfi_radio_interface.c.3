@@ -1,0 +1,116 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio_interface.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'mrfi_radio_interface\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMRFI_RADIO_STATUS_READ_CLEAR\fP()   RF1AIFCTL1 &= ~(RFSTATIFG);"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_STATUS_READ_WAIT\fP()   while( !(RF1AIFCTL1 & RFSTATIFG) );"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_INST_WRITE_WAIT\fP()   while( !(RF1AIFCTL1 & RFINSTRIFG));"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_DATA_WRITE_WAIT\fP()   while( !(RF1AIFCTL1 & RFDINIFG)  );"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_DATA_READ_WAIT\fP()   while( !(RF1AIFCTL1 & RFDOUTIFG) );"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RIF_DEBUG\fP"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RIF_ASSERT\fP(x)   \fBBSP_ASSERT\fP(x)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmrfiRadioInterfaceInit\fP (void)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBmrfiRadioInterfaceCmdStrobe\fP (\fBuint8_t\fP addr)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBmrfiRadioInterfaceReadReg\fP (\fBuint8_t\fP addr)"
+.br
+.ti -1c
+.RI "void \fBmrfiRadioInterfaceWriteReg\fP (\fBuint8_t\fP addr, \fBuint8_t\fP value)"
+.br
+.ti -1c
+.RI "void \fBmrfiRadioInterfaceWriteTxFifo\fP (\fBuint8_t\fP *pData, \fBuint8_t\fP len)"
+.br
+.ti -1c
+.RI "void \fBmrfiRadioInterfaceReadRxFifo\fP (\fBuint8_t\fP *pData, \fBuint8_t\fP len)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBuint8_t\fP \fBmethod\fP = 2"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBMRFI_RADIO_DATA_READ_WAIT\fP()   while( !(RF1AIFCTL1 & RFDOUTIFG) );"
+.PP
+Definition at line 60 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RADIO_DATA_WRITE_WAIT\fP()   while( !(RF1AIFCTL1 & RFDINIFG)  );"
+.PP
+Definition at line 59 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RADIO_INST_WRITE_WAIT\fP()   while( !(RF1AIFCTL1 & RFINSTRIFG));"
+.PP
+Definition at line 58 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RADIO_STATUS_READ_CLEAR\fP()   RF1AIFCTL1 &= ~(RFSTATIFG);"
+.PP
+Definition at line 55 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RADIO_STATUS_READ_WAIT\fP()   while( !(RF1AIFCTL1 & RFSTATIFG) );"
+.PP
+Definition at line 57 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RIF_ASSERT\fP(x)   \fBBSP_ASSERT\fP(x)"
+.PP
+Definition at line 64 of file mrfi_radio_interface\&.c\&.
+.SS "#define \fBMRFI_RIF_DEBUG\fP"
+.PP
+Definition at line 62 of file mrfi_radio_interface\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBuint8_t\fP \fBmrfiRadioInterfaceCmdStrobe\fP (\fBuint8_t\fPaddr)"
+.PP
+Definition at line 110 of file mrfi_radio_interface\&.c\&.
+.SS "void \fBmrfiRadioInterfaceInit\fP (void)"
+.PP
+Definition at line 86 of file mrfi_radio_interface\&.c\&.
+.SS "\fBuint8_t\fP \fBmrfiRadioInterfaceReadReg\fP (\fBuint8_t\fPaddr)"
+.PP
+Definition at line 186 of file mrfi_radio_interface\&.c\&.
+.SS "void \fBmrfiRadioInterfaceReadRxFifo\fP (\fBuint8_t\fP *pData, \fBuint8_t\fPlen)"
+.PP
+Definition at line 315 of file mrfi_radio_interface\&.c\&.
+.SS "void \fBmrfiRadioInterfaceWriteReg\fP (\fBuint8_t\fPaddr, \fBuint8_t\fPvalue)"
+.PP
+Definition at line 232 of file mrfi_radio_interface\&.c\&.
+.SS "void \fBmrfiRadioInterfaceWriteTxFifo\fP (\fBuint8_t\fP *pData, \fBuint8_t\fPlen)"
+.PP
+Definition at line 270 of file mrfi_radio_interface\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBuint8_t\fP \fBmethod\fP = 2"
+.PP
+Definition at line 314 of file mrfi_radio_interface\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

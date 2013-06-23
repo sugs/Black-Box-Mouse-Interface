@@ -1,0 +1,135 @@
+\hypertarget{main__ED__BM_8c}{\section{/\-Users/francispapineau/\-Documents/4th year project/\-Source \-Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original \-Code/\-V2.2/simpliciti/\-Applications/application/\-End \-Device/main\-\_\-\-E\-D\-\_\-\-B\-M.c \-File \-Reference}
+\label{main__ED__BM_8c}\index{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Applications/application/\-End Device/main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{/\-Users/francispapineau/\-Documents/4th year project/\-Source Code/\-Black-\/\-Box-\/\-Mouse-\/\-Interface/\-Original Code/\-V2.\-2/simpliciti/\-Applications/application/\-End Device/main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+}
+{\ttfamily \#include \char`\"{}bsp.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}mrfi.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-types.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nwk\-\_\-api.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp\-\_\-leds.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}bsp\-\_\-buttons.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}simpliciti.\-h\char`\"{}}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main__ED__BM_8c_a45ba202b05caf39795aeca91b0ae547e}{\-T\-I\-M\-E\-O\-U\-T}~(10u)
+\item 
+\#define \hyperlink{main__ED__BM_8c_a8a33de02aa7b8170ae32c18e67d00c34}{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(msec)~(((msec) $\ast$ 32768) / 1000)
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned short \hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main__ED__BM_8c_ac52ea5d7dd8642a0c85208df88a640c0}{\-Timer0\-\_\-\-A4\-\_\-\-Delay} (\hyperlink{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{u16} ticks)
+\item 
+unsigned char \hyperlink{main__ED__BM_8c_a255659e83ae7ed0303b75b16e216f292}{simpliciti\-\_\-link} (void)
+\item 
+void \hyperlink{main__ED__BM_8c_acae539e7f21c55143c19d3b8de8d5557}{simpliciti\-\_\-main\-\_\-tx\-\_\-only} (void)
+\item 
+void \hyperlink{main__ED__BM_8c_a476e0ffa3418447a1b32a8a49fb21784}{simpliciti\-\_\-main\-\_\-sync} (void)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bsp__msp430__defs_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{main__ED__BM_8c_ab02f5e0145aae8805825e581abc01cc9}{s\-Init\-\_\-done}
+\item 
+static \hyperlink{nwk__types_8h_a542d45d12faba7ae8fd0c989ef2c8528}{link\-I\-D\-\_\-t} \hyperlink{main__ED__BM_8c_abab965587a788ad6310c10c98a1d2413}{s\-Link\-I\-D1}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{main__ED__BM_8c_a8a33de02aa7b8170ae32c18e67d00c34}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}}
+\index{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S@{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{\-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-O\-N\-V\-\_\-\-M\-S\-\_\-\-T\-O\-\_\-\-T\-I\-C\-K\-S}(
+\begin{DoxyParamCaption}
+\item[{}]{msec}
+\end{DoxyParamCaption}
+)~(((msec) $\ast$ 32768) / 1000)}}\label{main__ED__BM_8c_a8a33de02aa7b8170ae32c18e67d00c34}
+
+
+\-Definition at line 45 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+\hypertarget{main__ED__BM_8c_a45ba202b05caf39795aeca91b0ae547e}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!\-T\-I\-M\-E\-O\-U\-T@{\-T\-I\-M\-E\-O\-U\-T}}
+\index{\-T\-I\-M\-E\-O\-U\-T@{\-T\-I\-M\-E\-O\-U\-T}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{\-T\-I\-M\-E\-O\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-T\-I\-M\-E\-O\-U\-T}~(10u)}}\label{main__ED__BM_8c_a45ba202b05caf39795aeca91b0ae547e}
+
+
+\-Definition at line 42 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!u16@{u16}}
+\index{u16@{u16}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{u16}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf u16}}}\label{main__ED__BM_8c_a9e6c91d77e24643b888dbd1a1a590054}
+
+
+\-Definition at line 48 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{main__ED__BM_8c_a255659e83ae7ed0303b75b16e216f292}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!simpliciti\-\_\-link@{simpliciti\-\_\-link}}
+\index{simpliciti\-\_\-link@{simpliciti\-\_\-link}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{simpliciti\-\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf simpliciti\-\_\-link} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main__ED__BM_8c_a255659e83ae7ed0303b75b16e216f292}
+
+
+\-Definition at line 75 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+\hypertarget{main__ED__BM_8c_a476e0ffa3418447a1b32a8a49fb21784}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!simpliciti\-\_\-main\-\_\-sync@{simpliciti\-\_\-main\-\_\-sync}}
+\index{simpliciti\-\_\-main\-\_\-sync@{simpliciti\-\_\-main\-\_\-sync}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{simpliciti\-\_\-main\-\_\-sync}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-main\-\_\-sync} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main__ED__BM_8c_a476e0ffa3418447a1b32a8a49fb21784}
+
+
+\-Definition at line 208 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+\hypertarget{main__ED__BM_8c_acae539e7f21c55143c19d3b8de8d5557}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!simpliciti\-\_\-main\-\_\-tx\-\_\-only@{simpliciti\-\_\-main\-\_\-tx\-\_\-only}}
+\index{simpliciti\-\_\-main\-\_\-tx\-\_\-only@{simpliciti\-\_\-main\-\_\-tx\-\_\-only}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{simpliciti\-\_\-main\-\_\-tx\-\_\-only}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simpliciti\-\_\-main\-\_\-tx\-\_\-only} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main__ED__BM_8c_acae539e7f21c55143c19d3b8de8d5557}
+
+
+\-Definition at line 167 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+
+\hypertarget{main__ED__BM_8c_ac52ea5d7dd8642a0c85208df88a640c0}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!\-Timer0\-\_\-\-A4\-\_\-\-Delay@{\-Timer0\-\_\-\-A4\-\_\-\-Delay}}
+\index{\-Timer0\-\_\-\-A4\-\_\-\-Delay@{\-Timer0\-\_\-\-A4\-\_\-\-Delay}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{\-Timer0\-\_\-\-A4\-\_\-\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Timer0\-\_\-\-A4\-\_\-\-Delay} (
+\begin{DoxyParamCaption}
+\item[{{\bf u16}}]{ticks}
+\end{DoxyParamCaption}
+)}}\label{main__ED__BM_8c_ac52ea5d7dd8642a0c85208df88a640c0}
+
+
+\-Definition at line 189 of file timer.\-c.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{main__ED__BM_8c_ab02f5e0145aae8805825e581abc01cc9}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!s\-Init\-\_\-done@{s\-Init\-\_\-done}}
+\index{s\-Init\-\_\-done@{s\-Init\-\_\-done}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{s\-Init\-\_\-done}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8\-\_\-t} {\bf s\-Init\-\_\-done}}}\label{main__ED__BM_8c_ab02f5e0145aae8805825e581abc01cc9}
+
+
+\-Definition at line 84 of file nwk\-\_\-api.\-c.
+
+\hypertarget{main__ED__BM_8c_abab965587a788ad6310c10c98a1d2413}{\index{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}!s\-Link\-I\-D1@{s\-Link\-I\-D1}}
+\index{s\-Link\-I\-D1@{s\-Link\-I\-D1}!main_ED_BM.c@{main\-\_\-\-E\-D\-\_\-\-B\-M.\-c}}
+\subsubsection[{s\-Link\-I\-D1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf link\-I\-D\-\_\-t} {\bf s\-Link\-I\-D1}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{main__ED__BM_8c_abab965587a788ad6310c10c98a1d2413}
+
+
+\-Definition at line 64 of file main\-\_\-\-E\-D\-\_\-\-B\-M.\-c.
+

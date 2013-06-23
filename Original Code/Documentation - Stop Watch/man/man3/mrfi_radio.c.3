@@ -1,0 +1,619 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/mrfi/radios/family5/mrfi_radio.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'bsp_macros\&.h'\fP
+.br
+\fC#include 'bsp_external/mrfi_board_defs\&.h'\fP
+.br
+\fC#include 'mrfi_defs\&.h'\fP
+.br
+\fC#include 'mrfi_radio_interface\&.h'\fP
+.br
+\fC#include 'smartrf/CC430/smartrf_CC430\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMRFI_LENGTH_FIELD_OFS\fP   __mrfi_LENGTH_FIELD_OFS__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_LENGTH_FIELD_SIZE\fP   __mrfi_LENGTH_FIELD_SIZE__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_HEADER_SIZE\fP   __mrfi_HEADER_SIZE__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_FRAME_BODY_OFS\fP   __mrfi_DST_ADDR_OFS__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_BACKOFF_PERIOD_USECS\fP   __mrfi_BACKOFF_PERIOD_USECS__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RANDOM_OFFSET\fP   67"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RANDOM_MULTIPLIER\fP   109"
+.br
+.ti -1c
+.RI "#define \fBMRFI_MIN_SMPL_FRAME_SIZE\fP   (\fBMRFI_HEADER_SIZE\fP + \fBNWK_HDR_SIZE\fP)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RX_METRICS_CRC_OK_MASK\fP   __mrfi_RX_METRICS_CRC_OK_MASK__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RX_METRICS_LQI_MASK\fP   __mrfi_RX_METRICS_LQI_MASK__"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_PARTNUM\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_VERSION\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_IOCFG0\fP   27"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_IOCFG1\fP   30"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_MCSM0\fP   (0x10)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_MCSM1\fP   0x3C"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_PKTLEN\fP   (\fBMRFI_MAX_FRAME_SIZE\fP - \fBMRFI_LENGTH_FIELD_SIZE\fP)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_PKTCTRL0\fP   (0x05 | (SMARTRF_SETTING_PKTCTRL0 & BV(6)))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SETTING_FIFOTHR\fP   (0x07 | (SMARTRF_SETTING_FIFOTHR & (BV(4)|BV(5)|BV(6)|BV(7))))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_MAX_DELAY_US\fP   16 /* usec */"
+.br
+.ti -1c
+.RI "#define \fBPKTCTRL1_BASE_VALUE\fP   BV(2)"
+.br
+.ti -1c
+.RI "#define \fBPKTCTRL1_ADDR_FILTER_OFF\fP   \fBPKTCTRL1_BASE_VALUE\fP"
+.br
+.ti -1c
+.RI "#define \fBPKTCTRL1_ADDR_FILTER_ON\fP   (\fBPKTCTRL1_BASE_VALUE\fP | (BV(0)|BV(1)))"
+.br
+.ti -1c
+.RI "#define \fBAPP_USEC_VALUE\fP   1000"
+.br
+.ti -1c
+.RI "#define \fBMRFI_ENABLE_SYNC_PIN_INT\fP()   (RF1AIE |= BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_DISABLE_SYNC_PIN_INT\fP()   (RF1AIE &= ~BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_CLEAR_SYNC_PIN_INT_FLAG\fP()   (RF1AIFG &= ~BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SYNC_PIN_INT_IS_ENABLED\fP()   (RF1AIE & BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SYNC_PIN_IS_HIGH\fP()   (RF1AIN & BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_SYNC_PIN_INT_FLAG_IS_SET\fP()   (RF1AIFG & BV(9))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_CLEAR_PAPD_PIN_INT_FLAG\fP()   (RF1AIFG &= ~BV(0))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_PAPD_PIN_IS_HIGH\fP()   (RF1AIN & BV(0))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_PAPD_INT_FLAG_IS_SET\fP()   (RF1AIFG & BV(0))"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RSSI_VALID_WAIT\fP()   while(!(RF1AIN & BV(1)));"
+.br
+.ti -1c
+.RI "#define \fBMRFI_STROBE\fP(cmd)   \fBmrfiRadioInterfaceCmdStrobe\fP(cmd)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_REG_READ\fP(reg)   \fBmrfiRadioInterfaceReadReg\fP(reg)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_REG_WRITE\fP(reg, value)   \fBmrfiRadioInterfaceWriteReg\fP(reg, value)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_WRITE_TX_FIFO\fP(pData, len)   \fBmrfiRadioInterfaceWriteTxFifo\fP(pData, len)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_READ_RX_FIFO\fP(pData, len)   \fBmrfiRadioInterfaceReadRxFifo\fP(pData, len)"
+.br
+.ti -1c
+.RI "#define \fBMRFI_STROBE_IDLE_AND_WAIT\fP()"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_OSC_FREQ\fP   26000000"
+.br
+.ti -1c
+.RI "#define \fBPHY_PREAMBLE_SYNC_BYTES\fP   8"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_TX_FIFO_SIZE\fP   64  /* from datasheet */"
+.br
+.ti -1c
+.RI "#define \fBMRFI_RADIO_MAX_PKTLEN\fP   (\fBMRFI_RADIO_TX_FIFO_SIZE\fP - \fBMRFI_LENGTH_FIELD_SIZE\fP - \fBMRFI_RX_METRICS_SIZE\fP)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (\fBMRFI_ADDR_SIZE\fP==((sizeof(\fBmrfiBroadcastAddr\fP)/sizeof(\fBmrfiBroadcastAddr\fP[0]))*sizeof(\fBmrfiBroadcastAddr\fP[0])))"
+.br
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (__mrfi_NUM_LOGICAL_CHANS__==((sizeof(mrfiLogicalChanTable)/sizeof(mrfiLogicalChanTable[0]))*sizeof(mrfiLogicalChanTable[0])))"
+.br
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (__mrfi_NUM_POWER_SETTINGS__==((sizeof(\fBmrfiRFPowerTable\fP)/sizeof(\fBmrfiRFPowerTable\fP[0]))*sizeof(\fBmrfiRFPowerTable\fP[0])))"
+.br
+.ti -1c
+.RI "static void \fBMrfi_SyncPinRxIsr\fP (void)"
+.br
+.ti -1c
+.RI "static void \fBMrfi_RxModeOn\fP (void)"
+.br
+.ti -1c
+.RI "static void \fBMrfi_RandomBackoffDelay\fP (void)"
+.br
+.ti -1c
+.RI "static void \fBMrfi_RxModeOff\fP (void)"
+.br
+.ti -1c
+.RI "static void \fBMrfi_DelayUsec\fP (\fBuint16_t\fP howLong)"
+.br
+.ti -1c
+.RI "static void \fBMrfi_DelayUsecSem\fP (\fBuint16_t\fP howLong)"
+.br
+.ti -1c
+.RI "static \fBint8_t\fP \fBMrfi_CalculateRssi\fP (\fBuint8_t\fP rawValue)"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBMrfi_RxAddrIsFiltered\fP (\fBuint8_t\fP *pAddr)"
+.br
+.ti -1c
+.RI "void \fBMRFI_Init\fP (void)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBMRFI_Transmit\fP (\fBmrfiPacket_t\fP *pPacket, \fBuint8_t\fP txType)"
+.br
+.ti -1c
+.RI "void \fBMRFI_Receive\fP (\fBmrfiPacket_t\fP *pPacket)"
+.br
+.ti -1c
+.RI "void \fBMRFI_RxOn\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_RxIdle\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_Sleep\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_WakeUp\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_RadioIsr\fP (void)"
+.br
+.ti -1c
+.RI "\fBint8_t\fP \fBMRFI_Rssi\fP (void)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBMRFI_RandomByte\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_DelayMs\fP (\fBuint16_t\fP milliseconds)"
+.br
+.ti -1c
+.RI "void \fBMRFI_ReplyDelay\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_PostKillSem\fP (void)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBMRFI_GetRadioState\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_SetLogicalChannel\fP (\fBuint8_t\fP chan)"
+.br
+.ti -1c
+.RI "void \fBMRFI_SetRFPwr\fP (\fBuint8_t\fP level)"
+.br
+.ti -1c
+.RI "\fBuint8_t\fP \fBMRFI_SetRxAddrFilter\fP (\fBuint8_t\fP *pAddr)"
+.br
+.ti -1c
+.RI "void \fBMRFI_EnableRxAddrFilter\fP (void)"
+.br
+.ti -1c
+.RI "void \fBMRFI_DisableRxAddrFilter\fP (void)"
+.br
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (sizeof(\fBmrfiRadioCfg\fP)==((sizeof(\fBmrfiRadioCfg\fP)/sizeof(\fBmrfiRadioCfg\fP[0]))*sizeof(\fBmrfiRadioCfg\fP[0])))"
+.br
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (sizeof(mrfiLogicalChanTable)==((sizeof(mrfiLogicalChanTable)/sizeof(mrfiLogicalChanTable[0]))*sizeof(mrfiLogicalChanTable[0])))"
+.br
+.ti -1c
+.RI "\fBBSP_STATIC_ASSERT\fP (sizeof(\fBmrfiBroadcastAddr\fP)==((sizeof(\fBmrfiBroadcastAddr\fP)/sizeof(\fBmrfiBroadcastAddr\fP[0]))*sizeof(\fBmrfiBroadcastAddr\fP[0])))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBuint8_t\fP \fBmrfiBroadcastAddr\fP [] = { 0xFF, 0xFF, 0xFF, 0xFF }"
+.br
+.ti -1c
+.RI "const \fBuint8_t\fP \fBmrfiRadioCfg\fP [][2]"
+.br
+.ti -1c
+.RI "static const \fBuint8_t\fP \fBmrfiRFPowerTable\fP []"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBmrfiRadioState\fP = \fBMRFI_RADIO_STATE_UNKNOWN\fP"
+.br
+.ti -1c
+.RI "static \fBmrfiPacket_t\fP \fBmrfiIncomingPacket\fP"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBmrfiRndSeed\fP = 0"
+.br
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsKillSem\fP = 0"
+.br
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsReplyDelayContext\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint16_t\fP \fBsReplyDelayScalar\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint16_t\fP \fBsBackoffHelper\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBmrfiRxFilterEnabled\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint8_t\fP \fBmrfiRxFilterAddr\fP [\fBMRFI_ADDR_SIZE\fP] = { RX_FILTER_ADDR_INITIAL_VALUE }"
+.br
+.ti -1c
+.RI "static \fBuint32_t\fP \fBcrcFail\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint32_t\fP \fBcrcPass\fP = 0"
+.br
+.ti -1c
+.RI "static \fBuint32_t\fP \fBnoFrame\fP = 0"
+.br
+.ti -1c
+.RI "unsigned char \fBrf_frequoffset\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBAPP_USEC_VALUE\fP   1000"
+.PP
+Definition at line 146 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_BACKOFF_PERIOD_USECS\fP   __mrfi_BACKOFF_PERIOD_USECS__"
+.PP
+Definition at line 75 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_CLEAR_PAPD_PIN_INT_FLAG\fP()   (RF1AIFG &= ~BV(0))"
+.PP
+Definition at line 161 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_CLEAR_SYNC_PIN_INT_FLAG\fP()   (RF1AIFG &= ~BV(9))"
+.PP
+Definition at line 155 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_DISABLE_SYNC_PIN_INT\fP()   (RF1AIE &= ~BV(9))"
+.PP
+Definition at line 154 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_ENABLE_SYNC_PIN_INT\fP()   (RF1AIE |= BV(9))"
+.PP
+Definition at line 153 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_FRAME_BODY_OFS\fP   __mrfi_DST_ADDR_OFS__"
+.PP
+Definition at line 74 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_HEADER_SIZE\fP   __mrfi_HEADER_SIZE__"
+.PP
+Definition at line 73 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_LENGTH_FIELD_OFS\fP   __mrfi_LENGTH_FIELD_OFS__"
+.PP
+Definition at line 71 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_LENGTH_FIELD_SIZE\fP   __mrfi_LENGTH_FIELD_SIZE__"
+.PP
+Definition at line 72 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_MAX_DELAY_US\fP   16 /* usec */"
+.PP
+Definition at line 127 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_MIN_SMPL_FRAME_SIZE\fP   (\fBMRFI_HEADER_SIZE\fP + \fBNWK_HDR_SIZE\fP)"
+.PP
+Definition at line 79 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_PAPD_INT_FLAG_IS_SET\fP()   (RF1AIFG & BV(0))"
+.PP
+Definition at line 163 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_PAPD_PIN_IS_HIGH\fP()   (RF1AIN & BV(0))"
+.PP
+Definition at line 162 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_MAX_PKTLEN\fP   (\fBMRFI_RADIO_TX_FIFO_SIZE\fP - \fBMRFI_LENGTH_FIELD_SIZE\fP - \fBMRFI_RX_METRICS_SIZE\fP)"
+.PP
+Definition at line 1741 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_OSC_FREQ\fP   26000000"
+.SS "#define \fBMRFI_RADIO_PARTNUM\fP   0x00"
+.PP
+Definition at line 88 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_READ_RX_FIFO\fP(pData, len)   \fBmrfiRadioInterfaceReadRxFifo\fP(pData, len)"
+.PP
+Definition at line 177 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_REG_READ\fP(reg)   \fBmrfiRadioInterfaceReadReg\fP(reg)"
+.PP
+Definition at line 174 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_REG_WRITE\fP(reg, value)   \fBmrfiRadioInterfaceWriteReg\fP(reg, value)"
+.PP
+Definition at line 175 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_TX_FIFO_SIZE\fP   64  /* from datasheet */"
+.PP
+Definition at line 1740 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_VERSION\fP   0x06"
+.PP
+Definition at line 89 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RADIO_WRITE_TX_FIFO\fP(pData, len)   \fBmrfiRadioInterfaceWriteTxFifo\fP(pData, len)"
+.PP
+Definition at line 176 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RANDOM_MULTIPLIER\fP   109"
+.PP
+Definition at line 78 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RANDOM_OFFSET\fP   67"
+.PP
+Definition at line 77 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RSSI_VALID_WAIT\fP()   while(!(RF1AIN & BV(1)));"
+.PP
+Definition at line 167 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RX_METRICS_CRC_OK_MASK\fP   __mrfi_RX_METRICS_CRC_OK_MASK__"
+.PP
+Definition at line 82 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_RX_METRICS_LQI_MASK\fP   __mrfi_RX_METRICS_LQI_MASK__"
+.PP
+Definition at line 83 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_FIFOTHR\fP   (0x07 | (SMARTRF_SETTING_FIFOTHR & (BV(4)|BV(5)|BV(6)|BV(7))))"
+.PP
+Definition at line 121 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_IOCFG0\fP   27"
+.PP
+Definition at line 92 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_IOCFG1\fP   30"
+.PP
+Definition at line 95 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_MCSM0\fP   (0x10)"
+.PP
+Definition at line 101 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_MCSM1\fP   0x3C"
+.PP
+Definition at line 108 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_PKTCTRL0\fP   (0x05 | (SMARTRF_SETTING_PKTCTRL0 & BV(6)))"
+.PP
+Definition at line 118 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SETTING_PKTLEN\fP   (\fBMRFI_MAX_FRAME_SIZE\fP - \fBMRFI_LENGTH_FIELD_SIZE\fP)"
+.PP
+Definition at line 115 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_STROBE\fP(cmd)   \fBmrfiRadioInterfaceCmdStrobe\fP(cmd)"
+.PP
+Definition at line 173 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_STROBE_IDLE_AND_WAIT\fP()"\fBValue:\fP
+.PP
+.nf
+{                                                \
+  MRFI_STROBE( SIDLE );                          \
+  /* Wait for XOSC to be stable and radio in IDLE state */ \
+  while (MRFI_STROBE( SNOP ) & 0xF0) ;           \
+}
+.fi
+.PP
+Definition at line 180 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SYNC_PIN_INT_FLAG_IS_SET\fP()   (RF1AIFG & BV(9))"
+.PP
+Definition at line 158 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SYNC_PIN_INT_IS_ENABLED\fP()   (RF1AIE & BV(9))"
+.PP
+Definition at line 156 of file mrfi_radio\&.c\&.
+.SS "#define \fBMRFI_SYNC_PIN_IS_HIGH\fP()   (RF1AIN & BV(9))"
+.PP
+Definition at line 157 of file mrfi_radio\&.c\&.
+.SS "#define \fBPHY_PREAMBLE_SYNC_BYTES\fP   8"
+.SS "#define \fBPKTCTRL1_ADDR_FILTER_OFF\fP   \fBPKTCTRL1_BASE_VALUE\fP"
+.PP
+Definition at line 131 of file mrfi_radio\&.c\&.
+.SS "#define \fBPKTCTRL1_ADDR_FILTER_ON\fP   (\fBPKTCTRL1_BASE_VALUE\fP | (BV(0)|BV(1)))"
+.PP
+Definition at line 132 of file mrfi_radio\&.c\&.
+.SS "#define \fBPKTCTRL1_BASE_VALUE\fP   BV(2)"
+.PP
+Definition at line 130 of file mrfi_radio\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBBSP_STATIC_ASSERT\fP (\fBMRFI_ADDR_SIZE\fP = \fC=((sizeof(\fBmrfiBroadcastAddr\fP)/sizeof(\fBmrfiBroadcastAddr\fP[0]))*sizeof(\fBmrfiBroadcastAddr\fP[0]))\fP)"
+.SS "\fBBSP_STATIC_ASSERT\fP (__mrfi_NUM_LOGICAL_CHANS__ = \fC=((sizeof(mrfiLogicalChanTable)/sizeof(mrfiLogicalChanTable[0]))*sizeof(mrfiLogicalChanTable[0]))\fP)"
+.SS "\fBBSP_STATIC_ASSERT\fP (__mrfi_NUM_POWER_SETTINGS__ = \fC=((sizeof(\fBmrfiRFPowerTable\fP)/sizeof(\fBmrfiRFPowerTable\fP[0]))*sizeof(\fBmrfiRFPowerTable\fP[0]))\fP)"
+.SS "\fBBSP_STATIC_ASSERT\fP (sizeof(\fBmrfiRadioCfg\fP) = \fC=((sizeof(\fBmrfiRadioCfg\fP)/sizeof(\fBmrfiRadioCfg\fP[0]))*sizeof(\fBmrfiRadioCfg\fP[0]))\fP)"
+.SS "\fBBSP_STATIC_ASSERT\fP (sizeof(mrfiLogicalChanTable) = \fC=((sizeof(mrfiLogicalChanTable)/sizeof(mrfiLogicalChanTable[0]))*sizeof(mrfiLogicalChanTable[0]))\fP)"
+.SS "\fBBSP_STATIC_ASSERT\fP (sizeof(\fBmrfiBroadcastAddr\fP) = \fC=((sizeof(\fBmrfiBroadcastAddr\fP)/sizeof(\fBmrfiBroadcastAddr\fP[0]))*sizeof(\fBmrfiBroadcastAddr\fP[0]))\fP)"
+.SS "\fBint8_t\fP \fBMrfi_CalculateRssi\fP (\fBuint8_t\fPrawValue)\fC [static]\fP"
+.PP
+Definition at line 1300 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_DelayMs\fP (\fBuint16_t\fPmilliseconds)"
+.PP
+Definition at line 1450 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_DelayUsec\fP (\fBuint16_t\fPhowLong)\fC [static]\fP"
+.PP
+Definition at line 1385 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_DelayUsecSem\fP (\fBuint16_t\fPhowLong)\fC [static]\fP"
+.PP
+Definition at line 1418 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_DisableRxAddrFilter\fP (void)"
+.PP
+Definition at line 1657 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_EnableRxAddrFilter\fP (void)"
+.PP
+Definition at line 1635 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBMRFI_GetRadioState\fP (void)"
+.PP
+Definition at line 1529 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_Init\fP (void)"
+.PP
+Definition at line 383 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_PostKillSem\fP (void)"
+.PP
+Definition at line 1508 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_RadioIsr\fP (void)"
+.PP
+Definition at line 1176 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_RandomBackoffDelay\fP (void)\fC [static]\fP"
+.PP
+Definition at line 1354 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBMRFI_RandomByte\fP (void)"
+.PP
+Definition at line 1337 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_Receive\fP (\fBmrfiPacket_t\fP *pPacket)"
+.PP
+Definition at line 787 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_ReplyDelay\fP (void)"
+.PP
+Definition at line 1472 of file mrfi_radio\&.c\&.
+.SS "\fBint8_t\fP \fBMRFI_Rssi\fP (void)"
+.PP
+Definition at line 1267 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBMrfi_RxAddrIsFiltered\fP (\fBuint8_t\fP *pAddr)\fC [static]\fP"
+.PP
+Definition at line 1678 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_RxIdle\fP (void)"
+.PP
+Definition at line 1084 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_RxModeOff\fP (void)\fC [static]\fP"
+.PP
+Definition at line 1057 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_RxModeOn\fP (void)\fC [static]\fP"
+.PP
+Definition at line 1011 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_RxOn\fP (void)"
+.PP
+Definition at line 1034 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_SetLogicalChannel\fP (\fBuint8_t\fPchan)"
+.PP
+Definition at line 1545 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_SetRFPwr\fP (\fBuint8_t\fPlevel)"
+.PP
+Definition at line 1572 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBMRFI_SetRxAddrFilter\fP (\fBuint8_t\fP *pAddr)"
+.PP
+Definition at line 1592 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_Sleep\fP (void)"
+.PP
+Definition at line 1108 of file mrfi_radio\&.c\&.
+.SS "static void \fBMrfi_SyncPinRxIsr\fP (void)\fC [static]\fP"
+.PP
+Definition at line 806 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBMRFI_Transmit\fP (\fBmrfiPacket_t\fP *pPacket, \fBuint8_t\fPtxType)"
+.PP
+Definition at line 605 of file mrfi_radio\&.c\&.
+.SS "void \fBMRFI_WakeUp\fP (void)"
+.PP
+Definition at line 1148 of file mrfi_radio\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBuint32_t\fP \fBcrcFail\fP = 0\fC [static]\fP"
+.PP
+Definition at line 365 of file mrfi_radio\&.c\&.
+.SS "\fBuint32_t\fP \fBcrcPass\fP = 0\fC [static]\fP"
+.PP
+Definition at line 366 of file mrfi_radio\&.c\&.
+.SS "const \fBuint8_t\fP \fBmrfiBroadcastAddr\fP[] = { 0xFF, 0xFF, 0xFF, 0xFF }"
+.PP
+Definition at line 56 of file mrfi_radio\&.c\&.
+.SS "\fBmrfiPacket_t\fP \fBmrfiIncomingPacket\fP\fC [static]\fP"
+.PP
+Definition at line 352 of file mrfi_radio\&.c\&.
+.SS "const \fBuint8_t\fP \fBmrfiRadioCfg\fP[][2]"
+.PP
+Definition at line 192 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBmrfiRadioState\fP = \fBMRFI_RADIO_STATE_UNKNOWN\fP\fC [static]\fP"
+.PP
+Definition at line 351 of file mrfi_radio\&.c\&.
+.SS "const \fBuint8_t\fP \fBmrfiRFPowerTable\fP[]\fC [static]\fP"\fBInitial value:\fP
+.PP
+.nf
+
+{
+
+  0x0F,
+  0x27,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.fi
+.PP
+Definition at line 303 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBmrfiRndSeed\fP = 0\fC [static]\fP"
+.PP
+Definition at line 353 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBmrfiRxFilterAddr\fP[\fBMRFI_ADDR_SIZE\fP] = { RX_FILTER_ADDR_INITIAL_VALUE }\fC [static]\fP"
+.PP
+Definition at line 362 of file mrfi_radio\&.c\&.
+.SS "\fBuint8_t\fP \fBmrfiRxFilterEnabled\fP = 0\fC [static]\fP"
+.PP
+Definition at line 361 of file mrfi_radio\&.c\&.
+.SS "\fBuint32_t\fP \fBnoFrame\fP = 0\fC [static]\fP"
+.PP
+Definition at line 367 of file mrfi_radio\&.c\&.
+.SS "unsigned char \fBrf_frequoffset\fP"
+.PP
+Definition at line 110 of file main\&.c\&.
+.SS "\fBuint16_t\fP \fBsBackoffHelper\fP = 0\fC [static]\fP"
+.PP
+Definition at line 359 of file mrfi_radio\&.c\&.
+.SS "volatile \fBuint8_t\fP \fBsKillSem\fP = 0\fC [static]\fP"
+.PP
+Definition at line 356 of file mrfi_radio\&.c\&.
+.SS "volatile \fBuint8_t\fP \fBsReplyDelayContext\fP = 0\fC [static]\fP"
+.PP
+Definition at line 357 of file mrfi_radio\&.c\&.
+.SS "\fBuint16_t\fP \fBsReplyDelayScalar\fP = 0\fC [static]\fP"
+.PP
+Definition at line 358 of file mrfi_radio\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.

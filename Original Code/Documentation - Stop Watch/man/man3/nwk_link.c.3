@@ -1,0 +1,140 @@
+.TH "/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_link.c" 3 "Sat Jun 22 2013" "Version VER 0.0" "Chronos Ti - Original Firmware" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Original Code/V2.2/simpliciti/Components/nwk_applications/nwk_link.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'bsp\&.h'\fP
+.br
+\fC#include 'mrfi\&.h'\fP
+.br
+\fC#include 'nwk_types\&.h'\fP
+.br
+\fC#include 'nwk_api\&.h'\fP
+.br
+\fC#include 'nwk_frame\&.h'\fP
+.br
+\fC#include 'nwk\&.h'\fP
+.br
+\fC#include 'nwk_link\&.h'\fP
+.br
+\fC#include 'nwk_globals\&.h'\fP
+.br
+\fC#include 'nwk_security\&.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSENT_REPLY\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSENT_NO_REPLY\fP   2"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBuint8_t\fP \fBsmpl_send_link_reply\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "static \fBfhStatus_t\fP \fBhandleLinkRequest\fP (\fBmrfiPacket_t\fP *)"
+.br
+.ti -1c
+.RI "void \fBnwk_linkInit\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnwk_setLinkToken\fP (\fBuint32_t\fP token)"
+.br
+.ti -1c
+.RI "void \fBnwk_getLinkToken\fP (\fBuint32_t\fP *pToken)"
+.br
+.ti -1c
+.RI "\fBsmplStatus_t\fP \fBnwk_link\fP (\fBlinkID_t\fP *lid)"
+.br
+.ti -1c
+.RI "\fBfhStatus_t\fP \fBnwk_processLink\fP (\fBmrfiPacket_t\fP *frame)"
+.br
+.ti -1c
+.RI "\fBlinkID_t\fP \fBnwk_getLocalLinkID\fP (void)"
+.br
+.ti -1c
+.RI "void \fBnwk_setListenContext\fP (\fBuint8_t\fP context)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "static \fBuint32_t\fP \fBsLinkToken\fP = 0"
+.br
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsListenActive\fP = 0"
+.br
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsNumLinkers\fP = 0"
+.br
+.ti -1c
+.RI "static volatile \fBuint8_t\fP \fBsTid\fP = 0"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define \fBSENT_NO_REPLY\fP   2"
+.PP
+Definition at line 80 of file nwk_link\&.c\&.
+.SS "#define \fBSENT_REPLY\fP   1"
+.PP
+Definition at line 79 of file nwk_link\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "static \fBfhStatus_t\fP \fBhandleLinkRequest\fP (\fBmrfiPacket_t\fP *frame)\fC [static]\fP"
+.PP
+Definition at line 811 of file nwk_link\&.c\&.
+.SS "void \fBnwk_getLinkToken\fP (\fBuint32_t\fP *pToken)"
+.PP
+Definition at line 162 of file nwk_link\&.c\&.
+.SS "\fBlinkID_t\fP \fBnwk_getLocalLinkID\fP (void)"
+.PP
+Definition at line 736 of file nwk_link\&.c\&.
+.SS "\fBsmplStatus_t\fP \fBnwk_link\fP (\fBlinkID_t\fP *lid)"
+.PP
+Definition at line 277 of file nwk_link\&.c\&.
+.SS "void \fBnwk_linkInit\fP (void)"
+.PP
+Definition at line 107 of file nwk_link\&.c\&.
+.SS "\fBfhStatus_t\fP \fBnwk_processLink\fP (\fBmrfiPacket_t\fP *frame)"
+.PP
+Definition at line 685 of file nwk_link\&.c\&.
+.SS "void \fBnwk_setLinkToken\fP (\fBuint32_t\fPtoken)"
+.PP
+Definition at line 139 of file nwk_link\&.c\&.
+.SS "void \fBnwk_setListenContext\fP (\fBuint8_t\fPcontext)"
+.PP
+Definition at line 793 of file nwk_link\&.c\&.
+.SS "static \fBuint8_t\fP \fBsmpl_send_link_reply\fP (\fBmrfiPacket_t\fP *frame)\fC [static]\fP"
+.PP
+Definition at line 481 of file nwk_link\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBuint32_t\fP \fBsLinkToken\fP = 0\fC [static]\fP"
+.PP
+Definition at line 67 of file nwk_link\&.c\&.
+.SS "volatile \fBuint8_t\fP \fBsListenActive\fP = 0\fC [static]\fP"
+.PP
+Definition at line 68 of file nwk_link\&.c\&.
+.SS "volatile \fBuint8_t\fP \fBsNumLinkers\fP = 0\fC [static]\fP"
+.PP
+Definition at line 72 of file nwk_link\&.c\&.
+.SS "volatile \fBuint8_t\fP \fBsTid\fP = 0\fC [static]\fP"
+.PP
+Definition at line 73 of file nwk_link\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Chronos Ti - Original Firmware from the source code\&.
