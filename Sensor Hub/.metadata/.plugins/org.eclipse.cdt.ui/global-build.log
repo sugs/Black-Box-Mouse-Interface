@@ -13,3 +13,25 @@ rm -rf  ./OpenChronos-master/simpliciti/Components/nwk_applications/nwk_freq.o .
 make clean 
 rm -rf  ./logic/acceleration.o ./logic/agility.o ./logic/alarm.o ./logic/altitude.o ./logic/battery.o ./logic/bluerobin.o ./logic/clock.o ./logic/countdowntimer.o ./logic/date.o ./logic/display2.o ./logic/menu.o ./logic/miscellaneous.o ./logic/random.o ./logic/rfbsl.o ./logic/rfsimpliciti.o ./logic/stopwatch.o ./logic/stubs.o ./logic/temperature.o ./logic/test.o ./logic/user.o  ./driver/adc12.o ./driver/buzzer.o ./driver/display.o ./driver/display1.o ./driver/pmm.o ./driver/ports.o ./driver/radio.o ./driver/rf1a.o ./driver/timer.o ./driver/vti_as.o ./driver/vti_ps.o  ./Main\ -\ Demo/main.o  libUSER_OBJS.a  "Sensor Hub - Demo.elf"
  
+
+**** Build of configuration 868MHz - Unrestricted CCS Platinum for project ez430_chronos ****
+
+Nothing to build for project ez430_chronos
+
+**** Build of configuration 868MHz - Unrestricted CCS Platinum for project ez430_chronos ****
+
+Nothing to build for project ez430_chronos
+18:42:57 **** Clean-only build of configuration 433MHz - Limited CCS Core Edition for project ez430_chronos_datalogger ****
+make clean 
+rm -rf  "ez430_chronos_datalogger_433MHz.out"
+rm -rf "main.pp" "logic/acceleration.pp" "logic/altitude.pp" "logic/battery.pp" "logic/bluerobin.pp" "logic/clock.pp" "logic/datalog.pp" "logic/date.pp" "logic/menu.pp" "logic/rfbsl.pp" "logic/rfsimpliciti.pp" "logic/temperature.pp" "logic/user.pp" "driver/ports.pp" "driver/radio.pp" "driver/rf1a.pp" 
+rm -rf "main.obj" "logic/acceleration.obj" "logic/altitude.obj" "logic/battery.obj" "logic/bluerobin.obj" "logic/clock.obj" "logic/datalog.obj" "logic/date.obj" "logic/menu.obj" "logic/rfbsl.obj" "logic/rfsimpliciti.obj" "logic/temperature.obj" "logic/user.obj" "driver/ports.obj" "driver/radio.obj" "driver/rf1a.obj" 
+Finished clean
+ 
+18:42:57 **** Build of configuration 433MHz - Limited CCS Core Edition for project ez430_chronos_datalogger ****
+make all 
+Building target: ez430_chronos_datalogger_433MHz.out
+Invoking: MSP430 Linker
+80 80 "ez430_chronos_datalogger_433MHz.out" "ez430_chronos_datalogger_433MHz.map" "/msp430/include" "/lib" "/include" "/msp430/include"  "ez430_chronos_datalogger_433MHz.out"
+/bin/sh: 80: command not found
+make: *** [ez430_chronos_datalogger_433MHz.out] Error 127
