@@ -1,0 +1,53 @@
+/*
+ * Main_Defines.h
+ *
+ *  Created on: Jul 10, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef MAIN_DEFINES_H_
+#define MAIN_DEFINES_H_
+
+/**
+ * This file contains all of the device DEFINE macros, and
+ * also includes all of the libraries that are needed to
+ * be references. All of the structures and classes are also
+ * built by default in this header file.
+ **/
+
+ #define DEBUG								// Serial Debug Define
+ #define USER_INPUT							// User Button Define
+ #define DEBUG_LED							// Debug LEDs Define
+
+ // Normal Output Stream
+ #define PRINT				Serial.print	// Serial API
+ #define PRINTLN			Serial.println  // Serial API
+ #define PRINTHEX			PrintHex		// Serial API
+
+// Debug Output Stream
+ #ifdef DEBUG
+	#define DEBUG_PRINT 	Serial.print 	// Serial API
+	#define DEBUG_PRINTLN 	Serial.println 	// Serial API
+	#define DEBUG_PRINTHEX 	PrintHex 		// Serial API
+ #endif
+
+ // User Button Activation
+ // TODO - ADD THE PORT MAP
+
+ #ifdef USER_INPUT
+	#define SELECT_BUTTON_1	??				// PORT MAPS
+	#define SELECT_BUTTON_2	??
+	#define SELECT_BUTTON_3	??
+ #endif
+
+ // Debug LEDs Activation
+ // TODO - ADD THE PORT MAP
+
+ #ifdef DEBUG_LED
+	#define DBG_LED_1		??				// PORT MAPS
+	#define DBG_LED_2		??
+	#define DBG_LED_3		??
+	#define DBG_LED_4		??
+ #endif
+
+#endif /* MAIN_DEFINES_H_ */

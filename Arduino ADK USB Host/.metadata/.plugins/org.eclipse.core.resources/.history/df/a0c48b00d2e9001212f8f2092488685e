@@ -1,0 +1,20 @@
+/*
+ * Main.h
+ *
+ *  Created on: Jul 10, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef MAIN_H_
+#define MAIN_H_
+
+extern "C" void __cxa_pure_virtual()
+{
+#ifdef __AVR__
+    asm("cli");
+#endif
+    while (1)
+	;
+}
+
+#endif /* MAIN_H_ */

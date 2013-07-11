@@ -1,0 +1,34 @@
+
+#include "State_Machine_Implementation.h"
+
+EMULATION_DEVICE::EMULATION_DEVICE(){
+
+}
+
+void EMULATION_DEVICE::go_back_one_state(){
+
+}
+
+void EMULATION_DEVICE::go_error_hang(){
+
+}
+
+void EMULATION_DEVICE::go_error_reboot(){
+
+}
+
+void EMULATION_DEVICE::set_state(byte state){
+
+}
+
+void EMULATION_DEVICE::set_next_state(){
+
+}
+
+byte EMULATION_DEVICE::return_current_state(){
+
+}
+
+byte EMULATION_DEVICE::return_next_state(){
+
+}

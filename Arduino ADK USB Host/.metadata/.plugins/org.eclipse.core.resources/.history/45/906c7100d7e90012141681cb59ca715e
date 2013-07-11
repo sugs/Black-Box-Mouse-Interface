@@ -1,0 +1,92 @@
+/*
+ * State_Machine_Implementation.h
+ *
+ *  Created on: Jul 10, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef STATE_MACHINE_IMPLEMENTATION_H_
+#define STATE_MACHINE_IMPLEMENTATION_H_
+
+ // Emulation Device Class used to group
+ // all data needed to operate such an
+ // emulation.
+ class EMULATION_DEVICE {
+
+	private:
+
+	 	enum STATE_MACHINE {
+
+	 		// Generic states
+	 		PWR_ON_STATE,
+	 		INITIALIZATION_STATE,
+	 		SETUP_STATE,
+	 		USB_SETUP_STATE,
+	 		START_STATE,
+	 		REBOOT_ERROR_STATE,
+	 		RUN_ERROR_STATE,
+	 		SYSTEM_HANG_STATE
+	 	};
+
+		void set_state(byte state);
+		void step_next_state();
+		void go_back_one_state();
+		void go_error_reboot();
+		void go_error_hang();
+
+	public:
+		byte return_current_state();
+		byte return_next_state();
+ };
+
+ // USB HOST Device Class used to group
+ // all data needed to operate such a
+ // device.
+ class USB_HOST_DEVICE {
+
+ 	 private:
+
+	 	enum STATE_MACHINE {
+
+
+	 	};
+
+ 		void set_state(byte state);
+ 		void step_next_state();
+ 		void go_back_one_state();
+ 		void go_error_reboot();
+ 		void go_error_hang();
+
+ 	public:
+ 		byte return_current_state();
+ 		byte return_next_state();
+ };
+
+#endif /* STATE_MACHINE_IMPLEMENTATION_H_ */
+
+	// Generic states
+	PWR_ON_STATE,
+	INITIALIZATION_STATE,
+	SETUP_STATE,
+	USB_SETUP_STATE,
+	START_STATE,
+
+	// Emulation states
+  enum EMULATION_STATES{
+		ASSEMBLE_REPORT_STATE,
+		ASSEMBLE_USB_FRAME_STATE,
+		SEND_USB_FRAME_STATE
+	},
+
+ // USB States
+	enum USB_HOST_STATES{
+		RECEIVE_PACKET_NUMBER_STATE,
+		RECEIVE_PACKET_STATE,
+		PARSE_PACKET_STATE,
+		ASSEMBLE_USB_REPORT_STATE
+		SEND_USB_FRAME_STATE
+ },
+
+	REBOOT_ERROR_STATE,
+	RUN_ERROR_STATE,
+	SYSTEM_HANG_STATE

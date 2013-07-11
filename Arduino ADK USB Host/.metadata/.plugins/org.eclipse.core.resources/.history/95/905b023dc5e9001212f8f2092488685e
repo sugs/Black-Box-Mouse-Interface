@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Mar 5, 2010
+ *      Author: ssmethurst
+ */
+#include "Main.h"
+#include <Arduino.h>
+
+
+int main(void) {
+
+  /* Must call init for arduino to work properly */
+  init();
+
+  /****************************/
+  /* Add your setup code here */
+  /****************************/
+
+  for (;;) {
+
+    /****************************/
+    /*** write main loop here ***/
+    /****************************/
+
+  } // end for
+
+} // end main

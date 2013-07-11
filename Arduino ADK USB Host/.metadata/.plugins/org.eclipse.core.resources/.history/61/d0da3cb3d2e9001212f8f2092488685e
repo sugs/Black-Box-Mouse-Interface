@@ -1,0 +1,13 @@
+#include <Arduino.h>
+
+void main(void)
+{
+	init();
+
+	setup();
+
+	for (;;) {
+		loop();
+	}
+}
+

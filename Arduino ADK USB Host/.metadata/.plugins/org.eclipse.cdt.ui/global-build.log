@@ -1,0 +1,18 @@
+23:35:08 **** Incremental Build of configuration Release for project Arduino_USB_HOST_ADK ****
+make all 
+Building file: ../System_Defines/State_Machine_Implementation.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/variants/mega" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/bin" -Wall -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega2560 -DF_CPU=1600000UL -MMD -MP -MF"System_Defines/State_Machine_Implementation.d" -MT"System_Defines/State_Machine_Implementation.d" -c -o "System_Defines/State_Machine_Implementation.o" "../System_Defines/State_Machine_Implementation.cpp"
+In file included from ../System_Defines/State_Machine_Implementation.cpp:2:0:
+../System_Defines/State_Machine_Implementation.h:51:18: error: 'byte' has not been declared
+../System_Defines/State_Machine_Implementation.h:79:3: error: 'byte' does not name a type
+../System_Defines/State_Machine_Implementation.h:85:3: error: 'byte' does not name a type
+../System_Defines/State_Machine_Implementation.h:129:19: error: 'byte' has not been declared
+../System_Defines/State_Machine_Implementation.h:157:4: error: 'byte' does not name a type
+../System_Defines/State_Machine_Implementation.h:163:4: error: 'byte' does not name a type
+../System_Defines/State_Machine_Implementation.cpp:20:34: error: variable or field 'set_state' declared void
+../System_Defines/State_Machine_Implementation.cpp:20:34: error: 'byte' was not declared in this scope
+../System_Defines/State_Machine_Implementation.cpp:24:39: error: no 'void EMULATION_DEVICE::set_next_state()' member function declared in class 'EMULATION_DEVICE'
+../System_Defines/State_Machine_Implementation.cpp:28:1: error: 'byte' does not name a type
+../System_Defines/State_Machine_Implementation.cpp:32:1: error: 'byte' does not name a type
+make: *** [System_Defines/State_Machine_Implementation.o] Error 1
