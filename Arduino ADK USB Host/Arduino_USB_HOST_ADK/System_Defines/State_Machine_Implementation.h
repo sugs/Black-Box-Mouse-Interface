@@ -39,8 +39,11 @@
 	 		SYSTEM_HANG_STATE 			= 0x0A
 	 	};
 
+	public:
+	
 	 	/**
-	 	 *
+	 	 * This is the default constructor.
+		 * Nothing is done here.
 	 	 */
 	 	EMULATION_DEVICE();
 
@@ -69,8 +72,6 @@
 		 *
 		 */
 		void go_error_hang();
-
-	public:
 
 		/**
 		 *
@@ -116,6 +117,8 @@
 			SYSTEM_HANG_STATE 			= 0x0C
 
 	 	};
+		
+	public:
 
 	 	/**
 	 	 *
@@ -147,8 +150,6 @@
 	 	 *
 	 	 */
 	 	void go_error_hang();
-
-	 public:
 
 	 	/**
 		 *
