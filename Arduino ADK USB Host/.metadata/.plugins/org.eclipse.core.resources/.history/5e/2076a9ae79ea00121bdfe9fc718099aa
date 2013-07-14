@@ -1,0 +1,188 @@
+/**
+ * State_Machine_Implementation.h
+ *
+ *  Created on: Jul 10, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef STATE_MACHINE_IMPLEMENTATION_H_
+#define STATE_MACHINE_IMPLEMENTATION_H_
+
+#include "Main_Defines.h"
+
+/**
+ * This class handles the EMULATION DEVICE state machine.
+ * It controls the process of which the processor runs.
+ */
+ class EMULATION_DEVICE_STATE_MACHINE {
+
+	private:
+
+	 	 /// The CURRENT_STATE of the machine.
+	 	 static byte CURRENT_STATE;
+
+	 	 /// The NEXT_STATE of the machine.
+	 	 static byte NEXT_STATE;
+
+	 	/**
+	 	 * This enumeration is the definition for the
+	 	 * USB Emulation physical device. It is chosen
+	 	 * by reading a button or switch on the Arduino
+	 	 * Mega.
+	 	 */
+	 	class STATE_MACHINE {
+
+	 		/// Generic states
+	 		const byte PWR_ON_STATE 					= 0x00;
+	 		const byte INITIALIZATION_STATE 			= 0x01;
+	 		const byte SETUP_STATE 						= 0x02;
+	 		const byte USB_SETUP_STATE 					= 0x03;
+	 		const byte START_STATE 						= 0x04;
+	 		const byte ASSEMBLE_REPORT_STATE 			= 0x05;
+	 		const byte ASSEMBLE_USB_FRAME_STATE 		= 0x06;
+	 		const byte SEND_USB_FRAME_STATE				= 0x07;
+	 		const byte REBOOT_ERROR_STATE 				= 0x08;
+	 		const byte RUN_ERROR_STATE 					= 0x09;
+	 		const byte SYSTEM_HANG_STATE 				= 0x0A;
+	 	}STATE_MACHINE;
+
+	public:
+
+	 	/**
+	 	 * This is the default constructor.
+		 * The PWR_ON_STATE is set to the CURRENT_STATE.
+	 	 */
+	 	EMULATION_DEVICE_STATE_MACHINE();
+
+	 	/**
+	 	 * This sets the CURRENT_STATE to the passed parameter.
+	 	 * @param state - byte
+	 	 */
+		void set_state(byte state);
+
+		/**
+		 * This increases the state to the next available state,
+		 * or goes to the START_STATE if it is bigger than the
+		 * SEND_USB_FRAME_STATE.
+		 */
+		void step_next_state();
+
+		/**
+		 * This goes back to the previous state.
+		 */
+		void go_back_one_state();
+
+		/**
+		 * This is a direct access to the REBOOT_ERROR_STATE.
+		 */
+		void go_error_reboot();
+
+		/**
+		 * This is a direct access to the RUN_ERROR_STATE ->
+		 * SYSTEM_HANG_STATE.
+		 */
+		void go_error_hang();
+
+		/**
+		 * This returns the CURRENT_STATE value.
+		 * @return byte - CURRENT_STATE
+		 */
+		byte return_current_state();
+
+		/**
+		 * This returns the CURRENT_STATE + 1
+		 * @return byte - NEXT_STATE
+		 */
+		byte return_next_state();
+ };
+
+ /**
+  * This class handles the USB HOST DEVICE state machine.
+  * It controls the process of which the processor runs.
+  */
+ class USB_HOST_DEVICE_STATE_MACHINE {
+
+ 	 private:
+
+ 	 	 /// The CURRENT_STATE of the machine.
+ 	 	 static byte CURRENT_STATE;
+
+ 	 	 /// The NEXT_STATE of the machine.
+ 	 	 static byte NEXT_STATE;
+
+	 	/**
+	 	 * This enumeration is the definition for the
+	 	 * USB HOST physical device. It is chosen
+	 	 * by reading a button or switch on the Arduino
+	 	 * Mega.
+	 	 */
+	 	struct STATE_MACHINE {
+
+	 		/// Generic states
+	 		byte PWR_ON_STATE 					= 0x00;
+	 		byte INITIALIZATION_STATE 			= 0x01;
+	 		byte SETUP_STATE 					= 0x02;
+	 		byte USB_SETUP_STATE 				= 0x03;
+	 		byte START_STATE 					= 0x04;
+	 		byte RECEIVE_PACKET_NUMBER_STATE 	= 0x05;
+	 		byte RECEIVE_PACKET_STATE 			= 0x06;
+	 		byte PARSE_PACKET_STATE 			= 0x07;
+	 		byte ASSEMBLE_USB_REPORT_STATE		= 0x08;
+	 		byte SEND_USB_FRAME_STATE			= 0x09;
+	 		byte REBOOT_ERROR_STATE 			= 0x0A;
+	 		byte RUN_ERROR_STATE 				= 0x0B;
+	 		byte SYSTEM_HANG_STATE 				= 0x0C;
+
+	 	}STATE_MACHINE;
+		
+ 	public:
+
+	 	/**
+	 	 * This is the default constructor.
+		 * The PWR_ON_STATE is set to the CURRENT_STATE.
+	 	 */
+	 	USB_HOST_DEVICE_STATE_MACHINE();
+
+	 	/**
+	 	 * This sets the CURRENT_STATE to the passed parameter.
+	 	 * @param state - byte
+	 	 */
+		void set_state(byte state);
+
+		/**
+		 * This increases the state to the next available state,
+		 * or goes to the START_STATE if it is bigger than the
+		 * SEND_USB_FRAME_STATE.
+		 */
+		void step_next_state();
+
+		/**
+		 * This goes back to the previous state.
+		 */
+		void go_back_one_state();
+
+		/**
+		 * This is a direct access to the REBOOT_ERROR_STATE.
+		 */
+		void go_error_reboot();
+
+		/**
+		 * This is a direct access to the RUN_ERROR_STATE ->
+		 * SYSTEM_HANG_STATE.
+		 */
+		void go_error_hang();
+
+		/**
+		 * This returns the CURRENT_STATE value.
+		 * @return byte - CURRENT_STATE
+		 */
+		byte return_current_state();
+
+		/**
+		 * This returns the CURRENT_STATE + 1
+		 * @return byte - NEXT_STATE
+		 */
+		byte return_next_state();
+ };
+
+#endif /* STATE_MACHINE_IMPLEMENTATION_H_ */

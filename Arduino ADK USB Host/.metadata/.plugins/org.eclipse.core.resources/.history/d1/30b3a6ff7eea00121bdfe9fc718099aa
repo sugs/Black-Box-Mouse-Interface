@@ -1,0 +1,93 @@
+
+#include "FiniteStateMachine.h"
+
+//FINITE STATE
+STATE_MACHINE::STATE_MACHINE( void (*updateFunction)() ){
+	user_enter = 0;
+	user_update = updateFunction;
+	user_exit = 0;
+}
+
+STATE_MACHINE::STATE_MACHINE( void (*enterFunction)(), void (*updateFunction)(), void (*exitFunction)() ){
+	user_enter = enterFunction;
+	user_update = updateFunction;
+	user_exit = exitFunction;
+}
+
+//what to do when entering this state
+void STATE_MACHINE::enter(){
+	if (user_enter){
+		user_enter();
+	}
+}
+
+//what to do when this state updates
+void STATE_MACHINE::update(){
+	if (user_update){
+		user_update();
+	}
+}
+
+//what to do when exiting this state
+void STATE_MACHINE::exit(){
+	if (user_exit){
+		user_exit();
+	}
+}
+//END FINITE STATE
+
+
+//FINITE STATE MACHINE
+FSM::FSM(STATE_MACHINE& current){
+	NEED_TO_TRIGGER_ENTER = true;
+	CURRENT_STATE = NEXT_STATE = &current;
+	STATE_CHANGE_TIME = 0;
+}
+
+FSM& FSM::update() {
+	//simulate a transition to the first state
+	//this only happens the first time update is called
+	if (NEED_TO_TRIGGER_ENTER) { 
+		CURRENT_STATE->enter();
+		NEED_TO_TRIGGER_ENTER = false;
+	} else {
+		if (CURRENT_STATE != NEXT_STATE){
+			immidiate_transition_to(*NEXT_STATE);
+		}
+		CURRENT_STATE->update();
+	}
+	return *this;
+}
+
+FSM& FSM::transition_to(STATE_MACHINE& state){
+	NEXT_STATE = &state;
+	STATE_CHANGE_TIME = millis();
+	return *this;
+}
+
+FSM& FSM::immidiate_transition_to(STATE_MACHINE& state){
+	CURRENT_STATE->exit();
+	CURRENT_STATE = NEXT_STATE = &state;
+	CURRENT_STATE->enter();
+	STATE_CHANGE_TIME = millis();
+	return *this;
+}
+
+//return the current state
+STATE_MACHINE& FSM::get_current_state() {
+	return *CURRENT_STATE;
+}
+
+//check if state is equal to the currentState
+bool FSM::is_in_state( STATE_MACHINE &state ){
+	if (&state == CURRENT_STATE) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+unsigned long FSM::timeInCurrentState() {
+	return millis() - STATE_CHANGE_TIME;
+}
+//END FINITE STATE MACHINE

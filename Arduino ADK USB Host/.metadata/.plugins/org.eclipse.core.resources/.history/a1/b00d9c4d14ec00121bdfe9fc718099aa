@@ -1,0 +1,46 @@
+/*
+ * Emulation_Packet_Aseembler.cpp
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "../USB_Implementation/USB_Reports.h"
+#include "Emulation_Packet_Assembler.h"
+
+#include <avr/interrupt.h>
+
+EMULATION_PACKET_ASSEMBLER::EMULATION_PACKET_ASSEMBLER(){
+	packet_buffer = EMPTY;
+	packet_id = EMPTY;
+	send_success = false;
+	packet_in_sending_queue = true;
+	packet_size = USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH;
+}
+
+byte EMULATION_PACKET_ASSEMBLER::init_usb_emulation_packet_buffer(){
+
+	//! Timer is initialized to keep track of the CPU idle time.
+	TCCR1B = _BV(CS12) | _BV(CS11);
+
+	//! USB Initialize the buffers and structures pertaining to the
+	//! USB device class.
+	usbInit();
+
+	//! Resume interrupt handling
+	sei();
+}
+
+byte EMULATION_PACKET_ASSEMBLER::create_usb_report_frame(){
+#ifdef MOUSE_REORT
+#endif
+
+}
+
+byte EMULATION_PACKET_ASSEMBLER::send_usb_report_frame(){
+
+}
+
+void EMULATION_PACKET_ASSEMBLER::emulate_usb(){
+
+}

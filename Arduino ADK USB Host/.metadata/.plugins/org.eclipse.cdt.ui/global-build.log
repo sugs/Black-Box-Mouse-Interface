@@ -1,18 +1,32 @@
-23:35:08 **** Incremental Build of configuration Release for project Arduino_USB_HOST_ADK ****
+20:33:56 **** Build of configuration Debug for project Arduino_ADK_USB_HOST ****
 make all 
-Building file: ../System_Defines/State_Machine_Implementation.cpp
+Building file: ../other/aJson-master/utility/stringbuffer.c
+Invoking: AVR Compiler
+avr-gcc -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/variants/mega" -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"other/aJson-master/utility/stringbuffer.d" -MT"other/aJson-master/utility/stringbuffer.d" -c -o "other/aJson-master/utility/stringbuffer.o" "../other/aJson-master/utility/stringbuffer.c"
+Finished building: ../other/aJson-master/utility/stringbuffer.c
+ 
+Building file: ../other/aJson-master/aJSON.cpp
 Invoking: AVR C++ Compiler
-avr-g++ -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/variants/mega" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/bin" -Wall -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega2560 -DF_CPU=1600000UL -MMD -MP -MF"System_Defines/State_Machine_Implementation.d" -MT"System_Defines/State_Machine_Implementation.d" -c -o "System_Defines/State_Machine_Implementation.o" "../System_Defines/State_Machine_Implementation.cpp"
-In file included from ../System_Defines/State_Machine_Implementation.cpp:2:0:
-../System_Defines/State_Machine_Implementation.h:51:18: error: 'byte' has not been declared
-../System_Defines/State_Machine_Implementation.h:79:3: error: 'byte' does not name a type
-../System_Defines/State_Machine_Implementation.h:85:3: error: 'byte' does not name a type
-../System_Defines/State_Machine_Implementation.h:129:19: error: 'byte' has not been declared
-../System_Defines/State_Machine_Implementation.h:157:4: error: 'byte' does not name a type
-../System_Defines/State_Machine_Implementation.h:163:4: error: 'byte' does not name a type
-../System_Defines/State_Machine_Implementation.cpp:20:34: error: variable or field 'set_state' declared void
-../System_Defines/State_Machine_Implementation.cpp:20:34: error: 'byte' was not declared in this scope
-../System_Defines/State_Machine_Implementation.cpp:24:39: error: no 'void EMULATION_DEVICE::set_next_state()' member function declared in class 'EMULATION_DEVICE'
-../System_Defines/State_Machine_Implementation.cpp:28:1: error: 'byte' does not name a type
-../System_Defines/State_Machine_Implementation.cpp:32:1: error: 'byte' does not name a type
-make: *** [System_Defines/State_Machine_Implementation.o] Error 1
+avr-g++ -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/variants/mega" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino" -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"other/aJson-master/aJSON.d" -MT"other/aJson-master/aJSON.d" -c -o "other/aJson-master/aJSON.o" "../other/aJson-master/aJSON.cpp"
+In file included from /Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/Arduino.h:10:0,
+                 from ../other/aJson-master/aJSON.h:31,
+                 from ../other/aJson-master/aJSON.cpp:41:
+/usr/local/CrossPack-AVR-20120217/lib/gcc/avr/4.5.1/../../../../avr/include/avr/interrupt.h:126:23: error: "[" may not appear in macro parameter list
+In file included from /Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/Client.h:5:0,
+                 from ../other/aJson-master/aJSON.h:30,
+                 from ../other/aJson-master/aJSON.cpp:41:
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/IPAddress.h: In member function 'IPAddress::operator uint32_t()':
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/IPAddress.h:51:55: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/IPAddress.h: In member function 'bool IPAddress::operator==(const IPAddress&)':
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/IPAddress.h:52:75: warning: dereferencing type-punned pointer will break strict-aliasing rules
+/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/IPAddress.h:52:108: warning: dereferencing type-punned pointer will break strict-aliasing rules
+../other/aJson-master/aJSON.cpp: In member function 'int aJsonStream::printArray(aJsonObject*)':
+../other/aJson-master/aJSON.cpp:773:27: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp:786:35: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp:792:27: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp: In member function 'int aJsonStream::printObject(aJsonObject*)':
+../other/aJson-master/aJSON.cpp:884:27: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp:894:31: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp:905:35: warning: comparison between signed and unsigned integer expressions
+../other/aJson-master/aJSON.cpp:911:27: warning: comparison between signed and unsigned integer expressions
+make: *** [other/aJson-master/aJSON.o] Error 1

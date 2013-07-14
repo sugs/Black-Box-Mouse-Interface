@@ -1,0 +1,72 @@
+#include <Arduino.h>
+
+#include "../System_Defines/Main_Defines.h"
+
+void setup();
+void loop();
+void init();
+
+void(*reset_device) (void) = 0; //declare reset function @ address 0
+
+int main(void){
+	init();
+
+	setup();
+
+	for (;;) {
+		loop();
+	}
+	return 0;
+}
+
+void setup(){
+
+	//! Check choice (default = Emulation).
+		//! 1 - Emulation
+		//! 0 - Real USB device
+	if(digitalRead(SELECT_PIN_1)){
+
+	}else{
+
+	}
+
+	//! Timer is initialized to keep track of the CPU idle time.
+	TCCR1B = _BV(CS12) | _BV(CS11);
+
+	//! USB Initialize the buffers and structures pertaining to the
+	//! USB device class.
+	usbInit();
+
+	//! This allows the USB device to re-enumerate in the PC OS.
+    usbDeviceDisconnect();
+    delay(250);
+    usbDeviceConnect();
+
+	//! Resume interrupt handling
+	sei();
+
+	attachInterrupt(SELECT_BUTTON_1, reset_device, CHANGE);
+	// Setup objects.
+		// complier choice... MOUSE, JOYSTICK, MOUSE+JOYSTIK
+
+	// Start Debug Engine.
+
+	// Start process.
+
+}
+
+void loop(){
+
+	// check if emulation | real usb device.
+
+	// if usb device,
+		// get number of packets. <-|
+		// get usb data. -----------|
+		// assemble usb frame
+		// send frame to host
+
+	// if emulation,
+		// get random values
+		// assemble usb frame
+		// send frame to host
+}

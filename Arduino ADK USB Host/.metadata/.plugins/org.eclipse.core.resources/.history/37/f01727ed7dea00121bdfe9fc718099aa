@@ -1,0 +1,87 @@
+/*
+||
+|| @file FiniteStateMachine.h
+|| @version 1.7
+|| @author Alexander Brevig
+|| @contact alexanderbrevig@gmail.com
+||
+|| @description
+|| | Provide an easy way of making finite state machines
+|| #
+||
+|| @license
+|| | This library is free software; you can redistribute it and/or
+|| | modify it under the terms of the GNU Lesser General Public
+|| | License as published by the Free Software Foundation; version
+|| | 2.1 of the License.
+|| |
+|| | This library is distributed in the hope that it will be useful,
+|| | but WITHOUT ANY WARRANTY; without even the implied warranty of
+|| | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+|| | Lesser General Public License for more details.
+|| |
+|| | You should have received a copy of the GNU Lesser General Public
+|| | License along with this library; if not, write to the Free Software
+|| | Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+|| #
+||
+*/
+
+#ifndef FINITESTATEMACHINE_H
+#define FINITESTATEMACHINE_H
+
+#include <Arduino.h>
+
+/// Define Precompiler features
+#define NO_ENTER (0)
+#define NO_UPDATE (0)
+#define NO_EXIT (0)
+
+/**
+ * This class holds the functionality of the state machine
+ * and allows for jumping and changing of the state.
+ */
+class STATE_MACHINE {
+
+	public:
+		STATE_MACHINE(void (*update_function)());
+		STATE_MACHINE(void (*exit_function)(),
+				void (*update_function)(), void (*exit_function)());
+		STATE_MACHINE(byte new_id, void (*enter_function)(),
+				void (*update_function)(), void (*exit_function)());
+		
+		//void getId();
+		void enter();
+		void update();
+		void exit();
+
+	private:
+		//byte id;
+		void (*userEnter)();
+		void (*userUpdate)();
+		void (*userExit)();
+};
+
+//define the finite state machine functionality
+class FSM {
+
+	private:
+		bool 	NEED_TO_TRIGGER_ENTER;
+		STATE_MACHINE* 	CURRENT_STATE;
+		STATE_MACHINE* 	NEXT_STATE;
+		unsigned long STATE_CHANGE_TIME;
+
+	public:
+		FSM(STATE_MACHINE& CURRENT_STATE);
+		
+		FSM& update();
+		FSM& transition_to(STATE_MACHINE& STATE);
+		FSM& immidiate_transition_to(STATE_MACHINE& STATE);
+		
+		STATE_MACHINE& get_current_state();
+		bool is_in_state(STATE_MACHINE &STATE);
+		
+		unsigned long timeInCurrentState();
+};
+
+#endif

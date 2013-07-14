@@ -1,0 +1,36 @@
+/*
+ * Emulation_Packet_Assembler.h
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "../System_Defines/Main_Defines.h"
+#include "../USB_Implementation/USB_Reports.h"
+
+/**
+ * This class is implemented to be able to assemble a
+ * USB Frame to send to the host PC.
+ */
+
+class EMULATION_PACKET_ASSEMBLER {
+
+	private:
+
+		byte* packet_buffer;
+		int size_of_report = USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH;
+
+		EMULATION_PACKET_ASSEMBLER();
+		byte init_usb_emulation_packet_buffer();
+		byte assemble_usb_emulation_frame();
+
+		byte create_usb_report_frame();
+		byte send_usb_report_frame();
+		byte dealloc_usb_report_frame();
+
+	public:
+
+		void emulate_usb();
+
+};
+

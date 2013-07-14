@@ -1,0 +1,43 @@
+/*
+ * Emulation_Packet_Aseembler.cpp
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "../USB_Implementation/USB_Reports.h"
+#include "Emulation_Packet_Assembler.h"
+//		byte* packet_buffer;
+//		uint16_t packet_id;
+//		byte send_success;
+
+EMULATION_PACKET_ASSEMBLER::EMULATION_PACKET_ASSEMBLER(){
+	packet_buffer = EMPTY;
+	packet_id = EMPTY;
+	send_success = false;
+	packet_size = USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH;
+}
+
+byte EMULATION_PACKET_ASSEMBLER::init_usb_emulation_packet_buffer(){
+
+}
+
+byte EMULATION_PACKET_ASSEMBLER::assemble_usb_emulation_frame(){
+
+}
+
+byte EMULATION_PACKET_ASSEMBLER::create_usb_report_frame(){
+
+}
+
+byte EMULATION_PACKET_ASSEMBLER::send_usb_report_frame(){
+
+}
+
+byte EMULATION_PACKET_ASSEMBLER::dealloc_usb_report_frame(){
+
+}
+
+void EMULATION_PACKET_ASSEMBLER::emulate_usb(){
+
+}

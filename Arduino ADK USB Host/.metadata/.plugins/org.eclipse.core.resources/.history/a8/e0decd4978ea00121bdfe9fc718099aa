@@ -1,0 +1,88 @@
+
+#include "State_Machine_Implementation.h"
+#include "Debug_Macros.h"
+
+/**
+ * This sets up the State machine
+ */
+EMULATION_DEVICE_STATE_MACHINE::EMULATION_DEVICE_STATE_MACHINE(){
+	CURRENT_STATE = STATE_MACHINE.PWR_ON_STATE;
+	NEXT_STATE = STATE_MACHINE.INITIALIZATION_STATE;
+
+}
+
+/**
+ * This goes back one state in the state machine.
+ */
+void EMULATION_DEVICE_STATE_MACHINE::go_back_one_state(){
+	CURRENT_STATE = CURRENT_STATE --;
+	NEXT_STATE = NEXT_STATE --;
+
+}
+
+/**
+ * This goes to the error hang system state.
+ */
+void EMULATION_DEVICE_STATE_MACHINE::go_error_hang(){
+	CURRENT_STATE = STATE_MACHINE.RUN_ERROR_STATE;
+	NEXT_STATE = CURRENT_STATE ++;
+
+}
+
+/**
+ * This goes to the system reboot state.
+ */
+void EMULATION_DEVICE_STATE_MACHINE::go_error_reboot(){
+	CURRENT_STATE = STATE_MACHINE.RUN_ERROR_STATE;
+	NEXT_STATE = CURRENT_STATE ++;
+
+}
+
+/**
+ * This sets the CURRENT_STATE from the passed state.
+ * @param state - byte.
+ */
+void EMULATION_DEVICE_STATE_MACHINE::set_state(byte state){
+
+	if(state > STATE_MACHINE.SEND_USB_FRAME_STATE){
+		CURRENT_STATE = STATE_MACHINE.START_STATE;
+
+	}else{
+		CURRENT_STATE = state;
+	}
+
+#ifdef DEBUG_MESSAGE
+	log_info("State Machine State Changed to: %d", CURRENT_STATE);
+#endif
+}
+
+/**
+ * This sets the CURRENT_STATE to the NEXT_STATE.
+ */
+void EMULATION_DEVICE_STATE_MACHINE::set_next_state(){
+
+	CURRENT_STATE = NEXT_STATE;
+	NEXT_STATE ++;
+
+#ifdef DEBUG_MESSAGE
+	log_info("State Machine State Changed to: %d", CURRENT_STATE);
+#endif
+}
+
+/**
+ * This returns the CURRENT_STATE.
+ * @return byte - CURRENT_STATE
+ */
+byte EMULATION_DEVICE_STATE_MACHINE::return_current_state(){
+
+	return CURRENT_STATE;
+}
+
+/**
+ * This returns the NEXT_STATE.
+ * @return byte - NEXT_STATE
+ */
+byte EMULATION_DEVICE_STATE_MACHINE::return_next_state(){
+
+	return NEXT_STATE;
+}
