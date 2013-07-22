@@ -43,8 +43,8 @@ void setup(){
 		//define the generic pointer (USB HOST DEVICE).
 		//this is where we setup the object pointer.
 
-		// USB_HOST_DEVICE usb_host_device();
-		// generic_pointer = &usb_host_device();
+		USB_HOST_DEVICE usb_host_device;
+		generic_pointer = &usb_host_device;
 		usb_device_chosen = true;
 
 	}else{
@@ -84,6 +84,8 @@ void loop(){
 		((EMULATION_PACKET_ASSEMBLER*) generic_pointer)->emulate_usb();
 
 	}else if(usb_device_chosen){
+		//! Cast to the USB device pointer
+		((USB_HOST_DEVICE*) generic_pointer)->run_usb();
 
 	}else{ //! Something went wrong.
 		reset_device();
