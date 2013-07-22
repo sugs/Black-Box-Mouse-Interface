@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Sensor_Parser_Implementation/Emulation_Packet_Aseembler.cpp \
 ../Sensor_Parser_Implementation/Sensor_Data_Buffer.cpp \
 ../Sensor_Parser_Implementation/Sensor_Packet_Assembler.cpp 
 
@@ -12,7 +11,6 @@ C_SRCS += \
 ../Sensor_Parser_Implementation/Sensor_Parser.c 
 
 OBJS += \
-./Sensor_Parser_Implementation/Emulation_Packet_Aseembler.o \
 ./Sensor_Parser_Implementation/Sensor_Data_Buffer.o \
 ./Sensor_Parser_Implementation/Sensor_Packet_Assembler.o \
 ./Sensor_Parser_Implementation/Sensor_Parser.o 
@@ -21,7 +19,6 @@ C_DEPS += \
 ./Sensor_Parser_Implementation/Sensor_Parser.d 
 
 CPP_DEPS += \
-./Sensor_Parser_Implementation/Emulation_Packet_Aseembler.d \
 ./Sensor_Parser_Implementation/Sensor_Data_Buffer.d \
 ./Sensor_Parser_Implementation/Sensor_Packet_Assembler.d 
 

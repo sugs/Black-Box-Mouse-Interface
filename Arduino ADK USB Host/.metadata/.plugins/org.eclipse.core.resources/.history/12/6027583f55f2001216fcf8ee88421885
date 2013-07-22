@@ -1,0 +1,31 @@
+/*
+ * Sensor_Parser.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "Sensor_Parser.h"
+#include "../JSON_API/json_arduino.h"
+
+
+void* PARSER::allocate_packet_memory(void* packet){
+	return malloc(sizeof(packet));
+}
+
+void PARSER::free_memory(void* memory){
+	free(memory);
+}
+
+void PARSER::parse_packet(String packet, byte packet_type){
+
+	create_token_list(MAX_TOKENS);
+	json_to_token_list((json_string)packet.c_str(), token_list); // Convert JSON String to a Hashmap of Key/Value Pairs
+
+}
+
+union packet* PARSER::get_parsed_handle(){
+
+
+}
+

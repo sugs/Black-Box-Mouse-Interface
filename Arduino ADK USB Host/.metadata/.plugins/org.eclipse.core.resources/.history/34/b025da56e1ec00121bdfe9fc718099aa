@@ -1,0 +1,101 @@
+/*
+ * Debug_LED_Function.h
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef DEBUG_LED_FUNCTION_H_
+#define DEBUG_LED_FUNCTION_H_
+
+#include "../System_Defines/Main_Defines.h"
+
+#define FATAL			1
+#define WARNING			2
+#define INFO			3
+#define DEBUG			4
+#define MEMORY			5
+#define REBOOT			6
+#define DEBUG_ERROR		7
+#define STATE_CHANGE	8
+
+typedef struct DEBUG_CODES_STRUCT {
+
+		byte ERROR_INDEX; // Cannot be bigger than 9;
+
+		String DEBUG_STRINGS[9]{
+
+				"FATAL  ",
+				"WARNING",
+				"INFO   ",
+				"DEBUG  ",
+				"MEMORY ",
+				"REBOOT ",
+				"DEBUG E",
+				"STATE  "
+		};
+
+		byte DEBUG_CODES[9]{
+
+				0b0000001,	// FATAL ERROR
+				0b0000010,	// STATE CHANGE
+				0b0000100,	// WARNING ERROR
+				0b0001000,	// INFO ERROR
+				0b0010000,	// DEBUG INFO
+				0b0100000,	// MEMORY ERROR
+				0b1000000,	// DEBUG ERROR
+				0b1111111, 	// REBOOT ERRORS
+				0b0000000 	// CLEAR ERRORS
+		};
+
+		byte DEBUG_LED_CODES[9]{
+
+				0b0001,		// FATAL ERROR
+				0b0000,		// CLEAR ERRORS
+				0b0010,		// WARNING ERROR
+				0b0100,		// INFO ERROR
+				0b1000,		// DEBUG INFO
+				0b0011,		// MEMORY ERROR
+				0b0101,		// DEBUG ERROR
+				0b1111		// REBOOT ERROR
+		};
+	}debug_code_struct_t;
+
+/**
+ * This class is implemented to handle debug commands and
+ * states to then output the LED states and show a debug
+ * code.
+ */
+class DEBUG_API {
+
+	private:
+
+		String* debug_type;
+		byte* debug_code;
+		byte* led_debug_code;
+
+		byte debug_set = false;
+
+		void set_error_type(String error_type);
+		void set_led_error_code(byte error_code);
+		void set_error_code(byte error_code);
+		void reboot_cause_error(byte cause);
+		// string, code, led
+		void print_error(String error_type, byte error_code,
+				byte error_led_code, String* string);
+
+	public:
+
+		// string, code, led
+		void print_error(byte error_index, String* string);
+
+		void enable_debug();
+		void disable_debug();
+
+		byte get_number_of(String debug_type);
+		void set_threshold(byte threshold);
+		void check();
+};
+
+
+#endif /* DEBUG_LED_FUNCTION_H_ */

@@ -1,0 +1,40 @@
+/*
+ * Sensor_Parser.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "Sensor_Parser.h"
+
+
+//private:
+//
+//		void* allocate_packet_memory(); // gives a pointer to memory
+//		void free_memory(void* memory);
+//
+//	public:
+//
+//		void parse_packet(union packet, byte packet_type);
+//		union packet* get_parsed_handle();
+//
+
+void* PARSER::allocate_packet_memory(void* packet){
+
+	malloc(sizeof(packet));
+
+}
+
+void PARSER::free_memory(void* memory){
+
+}
+
+void PARSER::parse_packet(union packet, byte packet_type){
+
+}
+
+union packet* PARSER::get_parsed_handle(){
+
+
+}
+

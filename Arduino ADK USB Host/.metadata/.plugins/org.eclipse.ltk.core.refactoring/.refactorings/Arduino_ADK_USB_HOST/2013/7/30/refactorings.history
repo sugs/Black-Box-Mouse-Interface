@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Arduino_ADK_USB_HOST/Sensor_Parser_Implementation/Sensor_Parser.c&apos; to &apos;Sensor_Parser.cpp&apos;" description="Rename resource &apos;Sensor_Parser.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sensor_Parser_Implementation/Sensor_Parser.c" name="Sensor_Parser.cpp" stamp="1374445017501" updateReferences="true"/>
+</session>

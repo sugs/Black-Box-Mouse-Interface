@@ -1,0 +1,155 @@
+/*
+ * USB_Device_Implementation.h
+ *
+ *  Created on: Jul 17, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef USB_DEVICE_IMPLEMENTATION_H_
+#define USB_DEVICE_IMPLEMENTATION_H_
+
+	/*		// flow:
+			// GND_STATION (request) -----------------------> ROUTER (Acknowledge)
+			//                       <-----------------------
+			// Poll for results		 <----------------------- Results are sent (with id)
+			// Send stanby command   -----------------------> Standby (Poll for run)
+		/->	// Send run command 	 -----------------------> Run
+		|-	// Receive data structs  <-----------------------
+	*/
+
+typedef struct packet_structure_info_t {
+
+	byte message_size;
+	byte packet_id;
+	byte sensor_id;
+	byte time_stamp;
+	byte run_time;
+	byte crc_checksum;
+
+};
+
+typedef struct router_status_info_t {
+
+	// general status
+	byte system_status;
+	byte error_count;
+	byte debug_enable_flag;
+	String power_state;
+	String machine_state;
+	byte battey_level;
+
+	// wireless debug
+	byte acks_sent_counter;
+	byte sent_request_counter;
+	byte packet_counter;
+	byte rx_count;
+	byte tx_count;
+
+	// device info
+	byte address;
+	String mode;
+	byte router_address;
+	String router_id;
+};
+
+// Network map linked list
+typedef struct router_nmap_info_t {
+
+	// remote sensor information
+	word size; //size of the linked list
+	byte index;
+	struct data {
+		byte sensor_id;
+		byte sensor_address;
+		byte sensor_speed;
+		byte data_type; // 0 = int, 2 = float, 3 = double
+		word rx_buffer_size;
+		byte battery_charge;
+	};
+
+	struct router_nmap_info_t *next;
+};
+
+typedef struct router_ack_info_t {
+	bool ack_message;
+};
+
+typedef struct router_sensor_enable_report_t {
+
+	word size;
+	byte index;
+	struct report {
+		sensor_id;
+		sensor_address;
+	};
+
+	struct router_sensor_enable_report_t * next;
+};
+
+typedef struct error_message_t {
+
+	byte sensor_id;
+	byte sensor_address;
+	String error_cause;
+};
+
+typedef struct remote_sensor_configuration_t {
+
+	word size;
+	byte index;
+	struct data {
+		byte sensor_id;
+		word packet_id;
+		String mode;
+		byte channels;
+		byte index_channels;
+		struct channels_config {
+			byte channel_id;
+			byte data_type; // 0 = Analog, 1 = Digital
+		};
+
+		struct channels_config* next;
+	};
+	remote_sensor_configuration_t* next_config;
+};
+
+typedef struct remote_sensor_data_t {
+
+};
+
+union packet_structure {
+
+	packet_structure_info_t packet_structure_info;
+	router_status_info_t router_status_info;
+	router_nmap_info_t router_nmap_info;
+	router_ack_info_t router_ack_info;
+	router_sensor_enable_report_t router_sensor_enable_report;
+	error_message_t error_message;
+	remote_sensor_configuration_t remote_sensor_configuration;
+	remote_sensor_data_t remote_sensor_data;
+
+};
+
+class USB_DEVICE {
+
+	union packet_structure packet;
+	private:
+
+		void create_network_mem_map();
+	public:
+
+		void send_id_request(byte sensor_address);
+		void poll_for_results();
+		void send_standby_command(byte sensor_address);
+		void send_run_command(byte sensor_address);
+
+		byte get_number_of_packets();
+		byte receive_packet();
+
+		String get_sensor_map();
+		String get_sensor_info();
+		router_nmap_info_t* get_network_topology();
+};
+
+
+#endif /* USB_DEVICE_IMPLEMENTATION_H_ */

@@ -1,0 +1,37 @@
+/*
+ * USB_Device_Implementation.h
+ *
+ *  Created on: Jul 17, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef USB_DEVICE_IMPLEMENTATION_H_
+#define USB_DEVICE_IMPLEMENTATION_H_
+
+	/*		// flow:
+			// GND_STATION (request) -----------------------> ROUTER (Acknowledge)
+			//                       <-----------------------
+			// Poll for results		 <----------------------- Results are sent (with id)
+			// Send stanby command   -----------------------> Standby (Poll for run)
+		/->	// Send run command 	 -----------------------> Run
+		|-	// Receive data structs  <-----------------------
+	*/
+
+
+class USB_DEVICE {
+
+	private:
+
+	public:
+
+	void send_id_request(byte sensor_address);
+	void poll_for_results();
+	void send_standby_command(byte sensor_address);
+	void send_run_command(byte sensor_address);
+	byte get_number_of_packets();
+	byte receive_packet();
+
+};
+
+
+#endif /* USB_DEVICE_IMPLEMENTATION_H_ */

@@ -5,8 +5,6 @@ void setup();
 void loop();
 void init();
 
-void(*reset_device) (void) = 0; //declare reset function @ address 0
-
 int main(void){
 	init();
 
@@ -70,7 +68,10 @@ void setup(){
 	//! Resume interrupt handling
 	sei();
 
+	// Check LEDs
+
 	// Start Debug Engine.
+
 
 }
 

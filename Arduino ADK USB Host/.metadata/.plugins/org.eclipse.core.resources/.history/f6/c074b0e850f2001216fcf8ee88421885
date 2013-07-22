@@ -1,0 +1,24 @@
+/*
+ * Sensor_Parser.h
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef SENSOR_PARSER_H_
+#define SENSOR_PARSER_H_
+
+#include "../JSON_API/json_arduino.h"
+
+	/*		// flow:
+			// GND_STATION (request) -----------------------> ROUTER (Acknowledge)
+			//                       <-----------------------
+			// Poll for results		 <----------------------- Results are sent (with id)
+			// Send stanby command   -----------------------> Standby (Poll for run)
+		/->	// Send run command 	 -----------------------> Run
+		|-	// Receive data structs  <-----------------------
+	*/
+
+
+
+#endif /* SENSOR_PARSER_H_ */

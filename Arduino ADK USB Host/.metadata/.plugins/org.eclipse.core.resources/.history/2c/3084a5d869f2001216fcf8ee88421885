@@ -1,0 +1,97 @@
+/*
+ * Sensor_Parser.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "Sensor_Parser.h"
+#include "../JSON_API/json_arduino.h"
+
+PARSER::PARSER(){
+	packet_type = 0;
+    packet = "<DEFAULT>";
+    token_list = nullptr;
+}
+void* PARSER::allocate_packet_memory(void* packet){
+	return malloc(sizeof(packet));
+}
+
+void PARSER::free_memory(void* memory){
+
+	if(token_list->length != NULL)
+		release_token_list(token_list);
+
+	free(memory);
+}
+
+void PARSER::parse_packet(String packet){
+
+	byte packet_type = packet.c_str()[1];
+	char* token_list_str = packet.substring(3, (packet.length() - 2));
+
+	create_token_list(MAX_TOKENS);
+
+	// Convert JSON String to a Hashmap of Key/Value Pairs
+	json_to_token_list(token_list_str, token_list);
+
+	parse(token_list, packet_type);
+
+}
+
+union packet* PARSER::get_parsed_handle(){
+
+
+}
+
+bool PARSER::check_packet_integrity(String packet_str){
+
+	byte length = packet_str.c_str()[2];
+	byte header = packet_str.c_str()[0];
+	byte tail = packet_str.c_str()[3];
+
+	if(packet_str == NULL)
+		if(length < 1)
+			if(header != "+")
+				if(tail != "*")
+					return false;
+
+	this->packet_str = packet_str;
+	this->packet_type = packet_str.c_str()[1];
+
+	return true;
+}
+
+void PARSER::parse(token_list_t* token_list, byte packet_type){
+
+	switch(packet_type){
+
+		case PACKET_INFO:
+			packet.packet_structure_info.message_size = json_get_value(token_list, "SIZE");
+			packet.packet_structure_info.packet_id = json_get_value(token_list, "ID");
+			packet.packet_structure_info.run_time = json_get_value(token_list, "RUN");
+			packet.packet_structure_info.sensor_id = json_get_value(token_list, "SID");
+			packet.packet_structure_info.time_stamp = json_get_value(token_list, "TIME");
+			break;
+		case ROUTER_STATUS:
+			//packet.router_status_info
+			break;
+		case ROUTER_NMAP:
+			//packet.router_nmap_info.
+			break;
+		case ROUTER_ACK:
+			packet.router_ack_info.ack_message = json_get_value(token_list, "ACK");
+			break;
+		case SENSOR_EN:
+			//packet.router_sensor_enable_report
+			break;
+		case ERROR_MSG:
+			//packet.error_message
+			break;
+		case SENSOR_CONFIG:
+
+		case SENSOR_DATA:
+		default:
+			break;
+	}
+}

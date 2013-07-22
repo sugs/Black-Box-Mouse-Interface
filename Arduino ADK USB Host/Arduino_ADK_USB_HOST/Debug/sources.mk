@@ -38,7 +38,8 @@ aJSON_API/utility \
 aJSON_API \
 USB_Implementation \
 USB_HID_API \
-System_Defines \
 Sensor_Parser_Implementation \
 . \
+Emulation_Device_Implementation \
+Debug_API \
 

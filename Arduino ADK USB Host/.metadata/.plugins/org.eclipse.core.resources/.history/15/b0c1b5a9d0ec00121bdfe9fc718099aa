@@ -1,0 +1,48 @@
+/*
+ * Debug_LED_Function.h
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef DEBUG_LED_FUNCTION_H_
+#define DEBUG_LED_FUNCTION_H_
+
+#include "../System_Defines/Main_Defines.h"
+
+/**
+ * This class is implemented to handle debug commands and
+ * states to then output the LED states and show a debug
+ * code.
+ */
+class DEBUG_LEDS {
+
+	private:
+
+		struct DEBUG_CODES {
+
+			String DEBUG_STRINGS[5]{
+
+					"FATAL ERROR",
+					"WARNING ERROR",
+					"INFO ERROR",
+					"DEBUG INFO",
+					"MEMORY ERROR"
+			};
+
+			word DEBUG_CODES[]{
+
+			};
+
+			word DEBUG_LED_CODES[]{
+
+			};
+		};
+
+	public:
+
+
+};
+
+
+#endif /* DEBUG_LED_FUNCTION_H_ */

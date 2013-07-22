@@ -1,0 +1,72 @@
+/*
+ * USB_Device_Implementation.h
+ *
+ *  Created on: Jul 17, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef USB_DEVICE_IMPLEMENTATION_H_
+#define USB_DEVICE_IMPLEMENTATION_H_
+
+	/*		// flow:
+			// GND_STATION (request) -----------------------> ROUTER (Acknowledge)
+			//                       <-----------------------
+			// Poll for results		 <----------------------- Results are sent (with id)
+			// Send stanby command   -----------------------> Standby (Poll for run)
+		/->	// Send run command 	 -----------------------> Run
+		|-	// Receive data structs  <-----------------------
+	*/
+
+typedef struct packet_structure_info_t {
+
+};
+
+typedef struct router_status_info_t {
+
+};
+
+typedef struct router_nmap_info_t {
+
+};
+
+typedef struct router_ack_info_t {
+
+};
+
+typedef struct router_sensor_enable_report_t {
+
+};
+
+typedef struct error_message_t {
+
+};
+
+typedef struct remote_sensor_configuration_t {
+
+};
+
+typedef struct remote_sensor_data_t {
+
+};
+
+class USB_DEVICE {
+
+	private:
+
+	public:
+
+	void send_id_request(byte sensor_address);
+	void poll_for_results();
+	void send_standby_command(byte sensor_address);
+	void send_run_command(byte sensor_address);
+	byte get_number_of_packets();
+	byte receive_packet();
+
+	String get_sensor_map();
+	String get_sensor_info();
+	String get_network_topology();
+
+};
+
+
+#endif /* USB_DEVICE_IMPLEMENTATION_H_ */
