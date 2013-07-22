@@ -153,6 +153,7 @@ void PARSER::assign_nmap_variables(){
 		end->sensor_address = json_get_value(token_list, "SADD");
 		end->sensor_id = json_get_value(token_list, "SID");
 		end->sensor_speed = json_get_value(token_list, "SSPD");
+		end->next = new router_nmap_info_t::data;
 		end = end->next;
 	}
 }
