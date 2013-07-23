@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Emulation_Device_Implementation/Emulation_Packet_Aseembler.cpp 
+../Emulation_Device_Implementation/Emulation_Device_Implementation.cpp 
 
 OBJS += \
-./Emulation_Device_Implementation/Emulation_Packet_Aseembler.o 
+./Emulation_Device_Implementation/Emulation_Device_Implementation.o 
 
 CPP_DEPS += \
-./Emulation_Device_Implementation/Emulation_Packet_Aseembler.d 
+./Emulation_Device_Implementation/Emulation_Device_Implementation.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

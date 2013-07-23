@@ -25,15 +25,14 @@ static byte protocol_version = 0; // see HID1_11.pdf sect 7.2.6
  * This is used to be able to vary the data from the
  * input parameters such as buttons (Setting them HIGH/LOW).
  */
-typedef struct {
+typedef struct mouse_report_t {
 
 	byte report_id; /*! the REPORT_ID of the message (8bits)*/
 	byte buttons;   /*! Houses all the bits to toggle for each button. (8bits)*/
 	int8_t x;		/*! X axis analog values (8bits) */
 	int8_t y;		/*! Y axis analog values (8bits) */
 	int8_t wheel;	/*! Wheel analog values. (8bits) */
-
-} mouse_report_t;
+};
 
 /// Defining a mouse_report_t structure.
 static mouse_report_t mouse_report;
@@ -53,14 +52,14 @@ void send_mouse_report(mouse_report_t* report);
  * This is used to be able to vary the data from the
  * input parameters such as buttons (Setting them HIGH/LOW).
  */
-typedef struct {
+typedef struct joystick_report_t {
 
 	byte report_id; /*! the REPORT_ID of the message (8bits)*/
 	int16_t x;		/*! X axis analog values (16bits) */
 	int16_t y;		/*! Y axis analog values (16bits) */
 	byte buttons;	/*! Houses all the bits to toggle for each button. (8bits)*/
 
-} joystick_report_t;
+};
 
 /// Defining a joystick_report_t structure
 static joystick_report_t joystick_report;
@@ -79,7 +78,7 @@ void send_joystick_report(joystick_report_t* report);
  * input parameters such as buttons (Setting them HIGH/LOW).
  */
 #ifdef MOUSE_JOYSTICK_REPORT
-typedef struct {
+typedef struct joystick_mouse_report_t {
 
 	/**
 	 * Combining the above structs together
@@ -88,7 +87,7 @@ typedef struct {
 	mouse_report_t mouse;
 	joystick_report_t joystick;
 
-} joystick_mouse_report_t;
+} ;
 
 /// Defining a joystick_mouse_report_t structure
 static joystick_mouse_report_t joystick_mouse_report;

@@ -21,111 +21,148 @@
 
 #define MAX_TOKENS		40
 
+/**
+ * The generic time info for an incoming packet.
+ */
 struct packet_structure_info_t {
 
-	char* message_size;
-	char* packet_id;
-	char* sensor_id;
-	char* time_stamp;
-	char* run_time;
+	char* message_size; 		//! The mesage size
+	char* packet_id; 			//! The packet id
+	char* sensor_id; 			//! The sensor node id
+	char* time_stamp; 			//! The timestamp of the rx
+	char* run_time;				//! The runtime of the sensor.
 
 };
 
+/**
+ * The router status information structure.
+ */
 struct router_status_info_t {
 
-	// general status
-	char* system_status;
-	char* error_count;
-	char* debug_enable_flag;
-	String power_state;
-	String machine_state;
-	char* battey_level;
+	//! general status
+	char* system_status;		//! The overall system status
+	char* error_count;			//! The error count... network errors
+	char* debug_enable_flag;	//! If the debug flag is enabled
+	String power_state;			//! The power state
+	String machine_state;		//! The machine state
+	char* battey_level;			//! The battery level
 
-	// wireless debug
-	char* acks_sent_counter;
-	char* sent_request_counter;
-	char* packet_counter;
-	char* rx_count;
-	char* tx_count;
+	//! wireless debug
+	char* acks_sent_counter;	//! The number of acks sent
+	char* sent_request_counter;	//! The sent_request to sensor count
+	char* packet_counter;		//! Packet counter
+	char* rx_count;				//! The rx counter
+	char* tx_count;				//! The tx counter
 
-	// device info
-	char* address;
-	String mode;
-	char* router_address;
-	String router_id;
+	//! device info
+	char* address;				//! The device address
+	String mode;				//! The router mode
+	char* router_address;		//! The router address
+	String router_id;			//! The router id
 };
 
-// Network map linked list
+/**
+ * This is the network map structure.
+ * It houses all the network critical information
+ * to each sensor.
+ */
 struct router_nmap_info_t {
 
-	// remote sensor information
-	word size; //size of the linked list
-	char* number_sensors;
+	//! remote sensor information
+	char* number_sensors;		//! The number of sensors in the network
 
-	// we need to make this for each sensor
+	//! we need to make this for each sensor
+	//! this is a linked list for each sensor
 	struct data {
-		char* sensor_id;
-		char* sensor_address;
-		char* sensor_speed;
-		char* data_type; // 0 = int, 2 = float, 3 = double
-		char* rx_buffer_size;
-		char* battery_charge;
-		struct data* next;
+		char* sensor_id;		//! The sensor id
+		char* sensor_address;	//! The sensor address
+		char* sensor_speed;		//! The sensor speed (CPU, read)
+		char* data_type; 		//! 0 = int, 2 = float, 3 = double
+		char* rx_buffer_size;	//! The rx buffer size
+		char* battery_charge;	//! The sensor battery charge
+		struct data* next;		//! The next node
 	};
 };
 
+/**
+ * The ack message from the router.
+ */
 struct router_ack_info_t {
-	bool ack_message;
+	bool ack_message;			//! ack = true
 };
 
+/**
+ * The router sensor enabled report structure.
+ */
 struct router_sensor_enable_report_t {
 
-	word size;
-	char* number_sensors;
-	byte* sensor_config_enable;
-
+	char* number_sensors;		//! The number of sensors
+	byte* sensor_config_enable;	//! Binary number [10000000]
+								//! Represents the number of sensors
+								//! enabled
 };
 
+/**
+ * Error message structure
+ */
 struct error_message_t {
 
-	char* sensor_id;
-	char* sensor_address;
-	String error_cause;
+	char* sensor_id;			//! Sensor id
+	char* sensor_address;		//! Sensor address
+	String error_cause;			//! Error cause from remote
 };
 
+/**
+ * The configuration structure for each sensor,
+ * and for each channel.
+ */
 struct remote_sensor_configuration_t {
 
-	word size;
-	char* number_sensors;
+	char* number_sensors;		//! Number of sensors to config
+
+	//! struct -> linked list for each sensor
 	struct data {
-		char* sensor_id;
-		char* packet_id;
-		String mode;
-		char* channels;
+		char* sensor_id;		//! The sensor id
+		String mode;			//! The mode of the sensor
+		char* channels;			//! The number of channels
+
+		//! struct -> linked list for each channel
 		struct channels_config {
-			char* channel_id;
-			char* data_type; // 0 = Analog, 1 = Digital
-			struct channels_config* next;
+			char* channel_id;	//! Channel id
+			char* data_type; 	//! 0 = Analog, 1 = Digital
+			struct channels_config* next; //! Next node for channels
 		};
 	};
-	struct remote_sensor_configuration_t* next_config;
+	struct remote_sensor_configuration_t* next_config;  //! Next node for sensor
 };
 
+/**
+ * The remote sensor data structure
+ */
 struct remote_sensor_data_t {
 
-	char* sensor_id;
-	char* packet_id;
-	String mode;
-	char* channels;
+	char* sensor_id;			//! The sensor id
+	String mode;				//! The sensor mode
+	char* channels;				//! Number of channels to read
+
+	//! struct -> linked list for each channel to read
 	struct channel_data {
-		char* channel_id;
-		char* channel_data;
-		struct channel_data* next;
+		char* channel_id;		//! Channel id
+		char* channel_data;		//! Channel data
+		struct channel_data* next;	//! Next channel data node.
 	};
 };
 
+/**
+ * A shared memory resource
+ */
 union packet_structure {
 
+	/**
+	 * Define one structure each. This union will
+	 * shared the memory context while running.
+	 * Watch for overrides.
+	 */
 	struct packet_structure_info_t packet_structure_info;
 	struct router_status_info_t router_status_info;
 	struct router_nmap_info_t router_nmap_info;
@@ -135,22 +172,37 @@ union packet_structure {
 	struct remote_sensor_configuration_t remote_sensor_configuration;
 	struct remote_sensor_data_t remote_sensor_data;
 
-}packet;
+}packet; //! Define packet
+
 
 /**
- * [HEADER][ID][MESSAGE_LENGTH][JSON_STRING][TAIL]
- * [+][##][##][{SRINGS}][*]
+ * This class groups all methods needed to parse and process
+ * each packet type.
  */
-
 class PARSER {
+
+	/**
+	 * Packet Definition
+	 * [HEADER][ID][MESSAGE_LENGTH][JSON_STRING][TAIL]
+	 * [+][##][##][{SRINGS}][*]
+	 */
 
 	private:
 
-		token_list_t *token_list = NULL;
-		byte packet_type;
-		String packet_str;
+		token_list_t *token_list = NULL; //! Houses the parsed tokens
+		byte packet_type;				 //! The packet type
+		String packet_str;				 //! The received packet String
 
+		/**
+		 * Parses a JSON string.
+		 * @param token_list - a token list
+		 * @param packet_type - a packet type
+		 */
 		void parse(token_list_t* token_list, byte packet_type);
+
+		/**
+		 * These functions assign the global structure variables
+		 */
 		void assign_run_variables();
 		void assign_router_status_variables();
 		void assign_nmap_variables();
@@ -161,9 +213,23 @@ class PARSER {
 		void assign_sensor_data();
 
 	public :
+
+		/**
+		 * Default constructor.
+		 */
 		PARSER();
 
+		/**
+		 * This checks the integrity of a received packet.
+		 * @param packet - String
+		 * @return bool
+		 */
 		bool check_packet_integrity(String packet);
+
+		/**
+		 * This parses a packet string (JSON)
+		 * @param packet - String
+		 */
 		void parse_packet(String packet);
 };
 

@@ -26,7 +26,6 @@ void PARSER::parse_packet(String packet){
 	json_to_token_list(token_list_str, token_list);
 
 	parse(this->token_list, packet_type);
-
 }
 
 bool PARSER::check_packet_integrity(String packet_str){
@@ -129,7 +128,7 @@ void PARSER::assign_nmap_variables(){
 
 	// loop through all the sensors
 	packet.router_nmap_info.number_sensors = json_get_value(token_list, "NUM");
-	/*for(register byte i = 0; i < atoi(packet.router_nmap_info.number_sensors); i++){
+	for(register byte i = 0; i < atoi(packet.router_nmap_info.number_sensors); i++){
 
 		// assign info
 		end->battery_charge = json_get_value(token_list, "BATT");
@@ -140,7 +139,7 @@ void PARSER::assign_nmap_variables(){
 		end->sensor_speed = json_get_value(token_list, "SSPD");
 		end->next = new router_nmap_info_t::data;
 		end = end->next;
-	}*/
+	}
 }
 
 void PARSER::assign_ack(){
@@ -188,10 +187,9 @@ void PARSER::assign_sensor_config(){
 
 	// loop to the end
 	packet.remote_sensor_configuration.number_sensors = json_get_value(token_list, "NUM");
-	/*for(register byte i = 0; i < atoi(packet.remote_sensor_configuration.number_sensors); i++){
+	for(register byte i = 0; i < atoi(packet.remote_sensor_configuration.number_sensors); i++){
 
 		end_config->data::sensor_id = json_get_value(token_list, "SID");
-		end_config->data::packet_id = json_get_value(token_list, "PID");
 		end_config->data::mode = json_get_value(token_list, "MODE");
 		end_config->data::channels = json_get_value(token_list, "CHN");
 
@@ -203,13 +201,12 @@ void PARSER::assign_sensor_config(){
 		}
 		end_config->next_config = new remote_sensor_configuration_t;
 		end_config = end_config->next_config;
-	}*/
+	}
 }
 
 void PARSER::assign_sensor_data(){
 
 	packet.remote_sensor_data.sensor_id = json_get_value(token_list, "SID");
-	packet.remote_sensor_data.packet_id = json_get_value(token_list, "PID");
 	packet.remote_sensor_data.mode = json_get_value(token_list, "MODE");
 	packet.remote_sensor_data.channels = json_get_value(token_list, "CHNS");
 
@@ -222,11 +219,11 @@ void PARSER::assign_sensor_data(){
 	// loop to find the end node
 	end = end->next;
 
-	/*for(register byte i = 0; i < atoi(packet.remote_sensor_data.channels); i++){
+	for(register byte i = 0; i < atoi(packet.remote_sensor_data.channels); i++){
 		packet.remote_sensor_data.channel_data::channel_id = json_get_value(token_list, "CID");
 		packet.remote_sensor_data.channel_data::channel_data = json_get_value(token_list, "CDAT");
 
 		end->next = new remote_sensor_data_t::channel_data;
 		end = end->next;
-	}*/
+	}
 }

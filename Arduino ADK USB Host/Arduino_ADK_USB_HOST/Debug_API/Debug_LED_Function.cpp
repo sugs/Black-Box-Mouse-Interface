@@ -21,9 +21,9 @@ void DEBUG_API::DEBUG_API(){
 void DEBUG_API::reboot_cause_error(byte cause){
 
 	String string = "[%s]: Rebooting Device. ERR: %d, LED: %h";
-	print_error(debug_api.DEBUG_STRINGS[cause],
-			debug_api.DEBUG_CODES[cause],
-			debug_api.DEBUG_LED_CODES[cause],
+	print_error(DEBUG_STRINGS[cause],
+			DEBUG_CODES[cause],
+			DEBUG_LED_CODES[cause],
 			&string);
 	reset_device();
 }
@@ -46,12 +46,12 @@ void DEBUG_API::print_error(byte error_index, String* string){
 	if(debug_set){
 		char temp_string[sizeof(string) + 11];
 			sprintf(temp_string, string->c_str(),
-					debug_api.DEBUG_STRINGS[error_index],
-					debug_api.DEBUG_CODES[error_index],
-					debug_api.DEBUG_LED_CODES[error_index]);
+					DEBUG_STRINGS[error_index],
+					DEBUG_CODES[error_index],
+					DEBUG_LED_CODES[error_index]);
 			DEBUG_PRINTLN(temp_string);
 	}
-	set_leds(debug_api.DEBUG_CODES[error_index]);
+	set_leds(DEBUG_CODES[error_index]);
 
 	switch(error_index){
 
@@ -63,9 +63,9 @@ void DEBUG_API::print_error(byte error_index, String* string){
 			if((error_type_counts.info_errors ++) > MAX_INFO)
 				reboot_cause_error(INFO);
 			break;
-		case DEBUG:
+		case DEBUG_LED:
 			if((error_type_counts.debug_errors ++) > MAX_DEBUG)
-				reboot_cause_error(DEBUG);
+				reboot_cause_error(DEBUG_LED);
 			break;
 		case MEMORY:
 			if((error_type_counts.memory_errors ++) > MAX_MEMORY)
@@ -95,7 +95,7 @@ byte DEBUG_API::get_number_of(String error_index){
 			return error_type_counts.warnings_errors;
 		case INFO:
 			return error_type_counts.info_errors;
-		case DEBUG:
+		case DEBUG_LED:
 			return error_type_counts.debug_errors;
 		case MEMORY:
 			return error_type_counts.memory_errors;
@@ -107,7 +107,7 @@ byte DEBUG_API::get_number_of(String error_index){
 //! This sets LEDS.
 void DEBUG_API::set_leds(byte error_code){
 
-	byte led_output = debug_api.DEBUG_LED_CODES[error_code];
+	byte led_output = DEBUG_LED_CODES[error_code];
 
 	digitalWrite(DBG_LED_1, (error_code & 0b0001));
 	digitalWrite(DBG_LED_2, (((error_code & 0b0010) >> 1)));

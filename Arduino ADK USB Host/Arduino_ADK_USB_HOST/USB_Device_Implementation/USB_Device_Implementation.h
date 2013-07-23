@@ -24,7 +24,6 @@ class USB_DEVICE {
 	private:
 
 		void create_network_mem_map();
-	public:
 
 		void send_id_request(byte sensor_address);
 		void poll_for_results();
@@ -37,6 +36,11 @@ class USB_DEVICE {
 		String get_sensor_map();
 		String get_sensor_info();
 		router_nmap_info_t* get_network_topology();
+
+	public:
+
+		void run();
+
 };
 
 

@@ -18,7 +18,7 @@
  */
 usbMsgLen_t usbFunctionSetup(byte data[8]){
 	//! see HID1_11.pdf sect 7.2 and http://vusb.wikidot.com/driver-api
-	usbRequest_t *rq = (void *)data;
+	usbRequest_t *rq = (usbRequest_t *)data;
 
 	if ((rq->bmRequestType & USBRQ_TYPE_MASK) != USBRQ_TYPE_CLASS)
 		return 0; //! ignore request if it's not a class specific request
@@ -41,19 +41,19 @@ usbMsgLen_t usbFunctionSetup(byte data[8]){
 #ifdef JOYSTICK_REPORT
 			//! check for report ID then send back report
 			if (rq->wValue.bytes[0] == 1){
-				usbMsgPtr = &joystick_report;
+				usbMsgPtr = (uchar*)&joystick_report;
 				return sizeof(joystick_report);
 			}
 #endif
 
 			if (rq->wValue.bytes[0] == 2){
-				usbMsgPtr = &mouse_report;
+				usbMsgPtr = (uchar*)&mouse_report;
 				return sizeof(mouse_report);
 			}
 
 #ifdef MOUSE_JOYSTICK_REPORT
 			if (rq->wValue.bytes[0] == 3){
-				usbMsgPtr = &joystick_mouse_report;
+				usbMsgPtr = (uchar*)&joystick_mouse_report;
 				return sizeof(joystick_mouse_report);
 			}
 #endif

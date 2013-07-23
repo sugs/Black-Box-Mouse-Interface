@@ -10,8 +10,8 @@
 
 #include <Arduino.h>
 #include "../Debug_API/Debug_LED_Function.h"
-#include "usbconfig.h"
-#include "USB_HID_API/usbdrv.h"
+#include "../USB_HID_API/usbconfig.h"
+#include "../USB_HID_API/usbdrv.h"
 
 /**
  * This file contains all of the device DEFINE macros, and
@@ -23,7 +23,7 @@
  //#define DEVELOPMENT						//! In Windows Development Mode
  #define DEBUG								//! Serial Debug Define
  #define USER_INPUT							//! User Button Define
- #define DEBUG_LED							//! Debug LEDs Define
+ #define DEBUG_LEDs							//! Debug LEDs Define
 
  //! ONLY ONE OF THE FOLLOWING SHOULD BE CHOSEN!
  #define MOUSE_REPORT						//! Only send the Mouse USB report
@@ -63,7 +63,7 @@
  //! Debug LEDs Activation
  //! TODO - ADD THE PORT MAP
 
- #ifdef DEBUG_LED
+ #ifdef DEBUG_LEDs
 	#define DBG_LED_1		3				//! PORT MAPS
 	#define DBG_LED_2		4
 	#define DBG_LED_3		5

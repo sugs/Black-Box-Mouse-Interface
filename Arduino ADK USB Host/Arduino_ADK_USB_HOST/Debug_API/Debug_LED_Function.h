@@ -14,10 +14,10 @@
 #define FATAL			1
 #define WARNING			2
 #define INFO			3
-#define DEBUG			4
+#define DEBUG_LED		4
 #define MEMORY			5
-#define REBOOT			6
-#define DEBUG_ERROR		7
+#define REBOOT			7
+#define DEBUG_ERROR		6
 #define STATE_CHANGE	8
 
 //! LED error codes
@@ -27,20 +27,11 @@
 #define INFO_ERROR		3
 #define DEBUG_INFO		4
 #define MEMORY_ERROR	5
-#define DEBUG_ERROR		6
 #define REBOOT_ERROR	7
 
-/**
- * This structure holds all the definitions for
- * states and strings associated debug messages.
- */
-typedef struct DEBUG_CODES_STRUCT {
-
-		//! The index to the arrays.
-		byte ERROR_INDEX; //! Cannot be bigger than 9;
 
 		//! The Strings needed
-		String DEBUG_STRINGS[9]{
+		const String DEBUG_STRINGS[9] = {
 
 				"FATAL  ",
 				"WARNING",
@@ -53,7 +44,7 @@ typedef struct DEBUG_CODES_STRUCT {
 		};
 
 		//! The debug codes.
-		byte DEBUG_CODES[9]{
+		const byte DEBUG_CODES[9] = {
 
 				0b0000001,	// FATAL ERROR
 				0b0000010,	// STATE CHANGE
@@ -67,7 +58,7 @@ typedef struct DEBUG_CODES_STRUCT {
 		};
 
 		//! The LED codes
-		byte DEBUG_LED_CODES[9]{
+		const byte DEBUG_LED_CODES[9] = {
 
 				0b0001,		// FATAL ERROR
 				0b0000,		// CLEAR ERRORS
@@ -78,6 +69,16 @@ typedef struct DEBUG_CODES_STRUCT {
 				0b0101,		// DEBUG ERROR
 				0b1111		// REBOOT ERROR
 		};
+
+/**
+ * This structure holds all the definitions for
+ * states and strings associated debug messages.
+ */
+typedef struct DEBUG_CODES_STRUCT {
+
+		//! The index to the arrays.
+		byte ERROR_INDEX; //! Cannot be bigger than 9;
+
 	}debug_code_struct_t; //! Defining a type
 
 /**
@@ -110,8 +111,8 @@ class DEBUG_API {
 		byte* led_debug_code;
 
 		//! Boolean mutexes for the process
-		byte debug_set = false;
-		byte reboot_wd = false;
+		bool debug_set;
+		bool reboot_wd;
 
 		/**
 		 * The default constructor

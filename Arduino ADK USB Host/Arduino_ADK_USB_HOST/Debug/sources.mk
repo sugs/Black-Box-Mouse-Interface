@@ -32,14 +32,13 @@ SIZEDUMMY :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-other/aJson-master/utility \
-other/aJson-master \
-aJSON_API/utility \
-aJSON_API \
 USB_Implementation \
 USB_HID_API \
+USB_Device_Implementation \
 Sensor_Parser_Implementation \
 . \
+JSON_API/utility \
+JSON_API \
 Emulation_Device_Implementation \
 Debug_API \
 

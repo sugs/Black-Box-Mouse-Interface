@@ -8,13 +8,12 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include other/aJson-master/utility/subdir.mk
--include other/aJson-master/subdir.mk
--include aJSON_API/utility/subdir.mk
--include aJSON_API/subdir.mk
 -include USB_Implementation/subdir.mk
 -include USB_HID_API/subdir.mk
+-include USB_Device_Implementation/subdir.mk
 -include Sensor_Parser_Implementation/subdir.mk
+-include JSON_API/utility/subdir.mk
+-include JSON_API/subdir.mk
 -include Emulation_Device_Implementation/subdir.mk
 -include Debug_API/subdir.mk
 -include subdir.mk
