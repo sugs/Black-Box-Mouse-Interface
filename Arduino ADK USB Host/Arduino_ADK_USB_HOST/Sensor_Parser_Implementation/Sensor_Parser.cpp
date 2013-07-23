@@ -13,17 +13,6 @@ PARSER::PARSER(){
     packet = "<DEFAULT>";
     token_list = nullptr;
 }
-void* PARSER::allocate_packet_memory(void* packet){
-	return malloc(sizeof(packet));
-}
-
-void PARSER::free_memory(void* memory){
-
-	if(token_list->length != NULL)
-		release_token_list(token_list);
-
-	free(memory);
-}
 
 void PARSER::parse_packet(String packet){
 
@@ -35,12 +24,7 @@ void PARSER::parse_packet(String packet){
 	// Convert JSON String to a Hashmap of Key/Value Pairs
 	json_to_token_list(token_list_str, token_list);
 
-	parse(token_list, packet_type);
-
-}
-
-union packet* PARSER::get_parsed_handle(){
-
+	parse(this->token_list, packet_type);
 
 }
 
@@ -83,7 +67,7 @@ void PARSER::parse(token_list_t* token_list, byte packet_type){
 			break;
 		case SENSOR_EN:
 
-			//packet.router_sensor_enable_report
+			assign_sensor_en();
 			break;
 		case ERROR_MSG:
 
@@ -91,8 +75,12 @@ void PARSER::parse(token_list_t* token_list, byte packet_type){
 			break;
 		case SENSOR_CONFIG:
 
+			assign_sensor_config();
+			break;
 		case SENSOR_DATA:
 
+			assign_sensor_data();
+			break;
 		default:
 			break;
 	}
@@ -136,15 +124,11 @@ void PARSER::assign_nmap_variables(){
 	router_nmap_info_t::data* end = nmap.data;
 
 	root = packet.router_nmap_info.data;
-
-	// loop to find the end node
-	while(end != 0){
-		end = end->next;
-	}
+	end = end->next;
 
 	// loop through all the sensors
 	packet.router_nmap_info.number_sensors = json_get_value(token_list, "NUM");
-	for(register byte i = 0; i < atoi(packet.router_nmap_info.number_sensors); i++){
+	/*for(register byte i = 0; i < atoi(packet.router_nmap_info.number_sensors); i++){
 
 		// assign info
 		end->battery_charge = json_get_value(token_list, "BATT");
@@ -153,8 +137,9 @@ void PARSER::assign_nmap_variables(){
 		end->sensor_address = json_get_value(token_list, "SADD");
 		end->sensor_id = json_get_value(token_list, "SID");
 		end->sensor_speed = json_get_value(token_list, "SSPD");
+		end->next = new router_nmap_info_t::data;
 		end = end->next;
-	}
+	}*/
 }
 
 void PARSER::assign_ack(){
@@ -169,4 +154,78 @@ void PARSER::assign_error_message(){
 	packet.error_message.sensor_address = json_get_value(token_list, "ADD");
 	packet.error_message.sensor_id - json_get_value(token_list, "SID");
 
+}
+
+void PARSER::assign_sensor_en(){
+
+	packet.router_sensor_enable_report.number_sensors = json_get_value(token_list, "NUM");
+
+	byte size_array = atoi(packet.router_sensor_enable_report.number_sensors);
+	packet.router_sensor_enable_report.sensor_config_enable = new byte[size_array];
+	char* sid;
+
+	for(register byte i = 0; i < size_array; i++){
+			sprintf(sid, "SID%d", i);
+			packet.router_sensor_enable_report.sensor_config_enable [i] = json_get_value(token_list, sid);
+	}
+}
+
+void PARSER::assign_sensor_config(){
+
+	remote_sensor_configuration_t* root_config;
+	remote_sensor_configuration_t* end_config;
+
+	remote_sensor_configuration_t::data::channels_config* root_channel;
+	remote_sensor_configuration_t::data::channels_config* end_channel;
+
+	root_config = packet.remote_sensor_configuration.data;
+	root_channel = packet.remote_sensor_configuration.data::channels_config;
+
+	// loop to find the end node
+	end_config = end_config->next_config;
+	end_channel = end_channel->next;
+
+	// loop to the end
+	packet.remote_sensor_configuration.number_sensors = json_get_value(token_list, "NUM");
+	/*for(register byte i = 0; i < atoi(packet.remote_sensor_configuration.number_sensors); i++){
+
+		end_config->data::sensor_id = json_get_value(token_list, "SID");
+		end_config->data::packet_id = json_get_value(token_list, "PID");
+		end_config->data::mode = json_get_value(token_list, "MODE");
+		end_config->data::channels = json_get_value(token_list, "CHN");
+
+		for(register byte i = 0; i < atoi(packet.remote_sensor_configuration.data::channels); i++){
+			end_channel->channel_id = json_get_value(token_list, "CHID");
+			end_channel->data_type = json_get_value(token_list, "DTYPE");
+			end_channel->next = new remote_sensor_configuration_t::data::channels_config;
+			end_channel = end_channel->next;
+		}
+		end_config->next_config = new remote_sensor_configuration_t;
+		end_config = end_config->next_config;
+	}*/
+}
+
+void PARSER::assign_sensor_data(){
+
+	packet.remote_sensor_data.sensor_id = json_get_value(token_list, "SID");
+	packet.remote_sensor_data.packet_id = json_get_value(token_list, "PID");
+	packet.remote_sensor_data.mode = json_get_value(token_list, "MODE");
+	packet.remote_sensor_data.channels = json_get_value(token_list, "CHNS");
+
+
+	remote_sensor_data_t::channel_data* root;
+	remote_sensor_data_t::channel_data* end;
+
+	root = packet.remote_sensor_data.channel_data;
+
+	// loop to find the end node
+	end = end->next;
+
+	/*for(register byte i = 0; i < atoi(packet.remote_sensor_data.channels); i++){
+		packet.remote_sensor_data.channel_data::channel_id = json_get_value(token_list, "CID");
+		packet.remote_sensor_data.channel_data::channel_data = json_get_value(token_list, "CDAT");
+
+		end->next = new remote_sensor_data_t::channel_data;
+		end = end->next;
+	}*/
 }

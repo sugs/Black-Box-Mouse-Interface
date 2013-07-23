@@ -60,7 +60,6 @@ struct router_nmap_info_t {
 
 	// remote sensor information
 	word size; //size of the linked list
-	char* index;
 	char* number_sensors;
 
 	// we need to make this for each sensor
@@ -82,13 +81,9 @@ struct router_ack_info_t {
 struct router_sensor_enable_report_t {
 
 	word size;
-	char* index;
-	struct report {
-		char* sensor_id;
-		char* sensor_address;
-	};
+	char* number_sensors;
+	byte* sensor_config_enable;
 
-	struct router_sensor_enable_report_t* next;
 };
 
 struct error_message_t {
@@ -101,13 +96,12 @@ struct error_message_t {
 struct remote_sensor_configuration_t {
 
 	word size;
-	char* index;
+	char* number_sensors;
 	struct data {
 		char* sensor_id;
 		char* packet_id;
 		String mode;
 		char* channels;
-		char* index_channels;
 		struct channels_config {
 			char* channel_id;
 			char* data_type; // 0 = Analog, 1 = Digital
@@ -123,7 +117,6 @@ struct remote_sensor_data_t {
 	char* packet_id;
 	String mode;
 	char* channels;
-	char* index;
 	struct channel_data {
 		char* channel_id;
 		char* channel_data;
@@ -157,21 +150,21 @@ class PARSER {
 		byte packet_type;
 		String packet_str;
 
-		void* allocate_packet_memory(void* packet); // gives a pointer to memory
-		void free_memory(void* memory);
 		void parse(token_list_t* token_list, byte packet_type);
 		void assign_run_variables();
 		void assign_router_status_variables();
 		void assign_nmap_variables();
 		void assign_ack();
 		void assign_error_message();
+		void assign_sensor_en();
+		void assign_sensor_config();
+		void assign_sensor_data();
 
 	public :
 		PARSER();
 
 		bool check_packet_integrity(String packet);
 		void parse_packet(String packet);
-		union packet* get_parsed_handle();
 };
 
 #endif /* SENSOR_PARSER_H_ */
