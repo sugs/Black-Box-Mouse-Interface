@@ -1,0 +1,37 @@
+/*
+ * Command_Interpreter.cpp
+ *
+ *  Created on: Jul 25, 2013
+ *      Author: francispapineau
+ */
+
+#include "Command_Interpreter.h"
+
+void COMMAND_INTERPRETER::_set_value(byte packet_id, byte packet_ver, void *buf){
+
+}
+void COMMAND_INTERPRETER::_get_value(byte packet_id, byte packet_ver, void *buf){
+
+}
+void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
+
+}
+
+void COMMAND_INTERPRETER::set(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_set(packet_id, packet_ver, buf);
+}
+void COMMAND_INTERPRETER::get(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_get(packet_id, packet_ver, buf);
+}
+
+void COMMAND_INTERPRETER::send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_send_cmd(packet_id, packet_ver, buf);
+}
+
+

@@ -37,7 +37,7 @@ void PACKET_DECODER::poll(void){
 
 	byte available;
 
-	available = Serial2.available(void);
+	available = RF_SERIAL.available(void);
 	if(EMPTY == available){
 		//check timeout watchdog and if over reset.
 		if((millis() - _last_received) > PACKET_TIMEOUT)
@@ -45,7 +45,7 @@ void PACKET_DECODER::poll(void){
 	} else {
 		// new data was discovered
 		while (available--){
-			_move_state((byte)Serial2.read(void));
+			_move_state((byte)RF_SERIAL.read(void));
 			_last_received = millis();
 		}
 	}
@@ -79,7 +79,7 @@ void PACKET_DECODER::_move_state(byte data_byte){
             break;
 		}
 		_phase = PACKET_WAIT_PHASE_1;
-		/* no break */
+
     //! FALLTHROUGH
 	case PACKET_WAIT_PHASE_1:
 		if ('+' == data_byte) {
@@ -145,7 +145,7 @@ void PACKET_DECODER::_move_state(byte data_byte){
 
             // !call any handler interested in this message
             for (table_index = 0; 0xff != _handler_table[table_index].packet_id; table_index++)
-                    if ((_handler_table[table_index].packet_id == MSG_ANY) ||
+                    if ((_handler_table[table_index].packet_id == PACKET_ANY) ||
                         (_handler_table[table_index].packet_id == _packet_id))
                             _handler_table[table_index].handler(_handler_table[table_index].args, _packet_id, _packet_ver, &_buf);
 		} else {}

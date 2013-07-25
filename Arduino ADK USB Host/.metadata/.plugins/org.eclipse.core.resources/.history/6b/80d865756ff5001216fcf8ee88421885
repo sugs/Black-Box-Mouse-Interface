@@ -1,0 +1,46 @@
+/*
+ * Sensor_PACKET_PARSER.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "Sensor_PACKET_PARSER.h"
+#include "../JSON_API/json_arduino.h"
+
+PACKET_PARSER::PACKET_PARSER(){
+
+}
+
+void PACKET_PARSER::parse_packet(String packet){
+
+}
+
+bool PACKET_PARSER::check_packet_integrity(String packet_str){
+
+
+}
+
+void PACKET_PARSER::parse(){
+
+	switch(packet_type){
+
+		case PACKET_INFO: // Always run.
+		case ROUTER_STATUS:
+
+		case ROUTER_NMAP:
+
+		case ROUTER_ACK:
+
+		case SENSOR_EN:
+
+		case ERROR_MSG:
+
+		case SENSOR_CONFIG:
+
+		case SENSOR_DATA:
+
+		default:
+			break;
+	}
+}

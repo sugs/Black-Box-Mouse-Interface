@@ -12,10 +12,6 @@
 
 #define PACKET_TIMEOUT				100 //100ms timeout
 
-//! Internal packet_id values
-#define MSG_ANY						0xFE
-#define MSG_NULL					0xFF
-
 //! Internal State Machine
 #define PACKET_WAIT_PHASE_1 		0
 #define PACKET_WAIT_PHASE_2 		1

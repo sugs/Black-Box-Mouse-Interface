@@ -40,7 +40,6 @@ class USB_DEVICE {
 	public:
 
 		void run();
-
 };
 
 

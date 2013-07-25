@@ -100,6 +100,13 @@ class HardwareSerial : public Stream
   #include "USBAPI.h"
 //  extern HardwareSerial Serial_;  
 #endif
+
+/**
+ * THIS IS TO DEBUG ONLY
+ */
+  /*
+   * todo
+   */
 #if defined(UBRR1H)
   extern HardwareSerial Serial1;
 #endif

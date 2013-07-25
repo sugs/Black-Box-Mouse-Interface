@@ -31,6 +31,10 @@
 #define ROUTER_DEBUG			0x07
 #define ERROR_MSG				0x0A
 
+//! Internal packet_id values
+#define PACKET_ANY					0xFE
+#define PACKET_NULL					0xFF
+
 // *************************************************
 // *************** REMOTE DOMAIN *******************
 // *************************************************
@@ -42,8 +46,8 @@ struct packet_header_t {
 	byte packet_id;
 	byte node_id;
 	byte sensor_id;
-	byte time_stamp;
-	byte sensor_run_time;
+	uint32_t time_stamp;
+	uint32_t sensor_run_time;
 	byte packet_version;
 };
 
@@ -202,7 +206,9 @@ struct local_get_t{
 
 // *************************************************
 //! This executes a command on the local system.
-struct local_command{
+struct local_command_t{
+	byte command_id;
+	byte target_address;
 
 };
 
@@ -221,6 +227,9 @@ union packet_structure {
 	struct remote_sensor_configuration_t 	configs;
 	struct remote_sensor_data_t 			data;
 	struct remote_radio_values_t			radio_configs;
+	struct local_set_t						set;
+	struct local_get_t						get;
+	struct local_command_t					command;
 
 	struct error_message_t	 				error;
 

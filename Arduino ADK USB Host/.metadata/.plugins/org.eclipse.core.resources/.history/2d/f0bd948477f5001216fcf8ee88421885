@@ -1,0 +1,138 @@
+/*
+ * Sensor_PACKET_PARSER.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "../System_Defines/Main_Defines.h"
+#include "Packet_Parser.h"
+
+//
+//		byte packet_type;
+//
+//		struct router_ack_t						_ack;
+//		struct router_heartbeat_t 				_heartbeat;
+//		struct router_status_info_t 			_status;
+//		struct router_debug_status_t 			_debug;
+//		struct router_nmap_info_t 				_nmap;
+//		struct router_sensor_enable_report_t 	_en_sensors;
+//		struct remote_sensor_configuration_t 	_configs;
+//		struct remote_sensor_data_t 			_data;
+//		struct remote_radio_values_t			_radio_configs;
+//
+//		void _check_memory_space();
+//		bool _check_packet_integrity(byte* packet);
+//		void _parse_packet(byte* packet);
+//		void _parse(byte packet_id, byte packet_ver, void *buf);
+//
+//	public :
+//
+//		PACKET_PARSER();
+//
+//		static void	parse(void *arg, byte packet_id, byte packet_ver, void *buf);
+
+static void PACKET_PARSER::parse(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Check if there is space left
+	_check_memory_space();
+
+	//! Check if the string is ok to process.
+	_check_packet_integrity((String*) buf);
+
+	//! Process String
+	((PACKET_PARSER*)arg)->_parse(packet_id, packet_ver, buf);
+}
+
+void PACKET_PARSER::_check_memory_space(){
+
+    //! Check memory integrity
+    if(memory_check() <= EMPTY)
+    	reset_device();
+}
+
+bool PACKET_PARSER::_check_packet_integrity(String* packet){
+
+	//! Checks length, Header, Tail
+	if(packet->len > EMPTY)
+		if(packet[2] > EMPTY)
+			if(packet[0] == '+')
+				if(packet[packet->len - 1] == '*')
+					return true;
+
+	return false;
+}
+
+void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
+
+	String* buffer = (String*) buf;
+	void* destination_pointer;
+	size_t size_of_destination_struct;
+
+	//! Grabs the header structure from the String.
+	String header = buffer->substring(1, 13);
+
+	//! Assigns the new construct
+	memcpy(&packet_header_t, buffer, sizeof(packet_header_t));
+
+	switch (packet_id) {
+
+		case ROUTER_ACK:
+			destination_pointer = &_ack;
+			size_of_destination_struct = sizeof(_ack);
+			break;
+
+		case ROUTER_HEARTBEAT:
+			destination_pointer = &_heartbeat;
+			size_of_destination_struct = sizeof(_heartbeat);
+			break;
+
+		case ROUTER_STATUS:
+			destination_pointer = &_status;
+			size_of_destination_struct = sizeof(_status);
+			break;
+
+		case ROUTER_NMAP:
+			destination_pointer = &_nmap;
+			size_of_destination_struct = sizeof(_nmap);
+			break;
+
+		case ROUTER_RADIO:
+			destination_pointer = &_radio_configs;
+			size_of_destination_struct = sizeof(_radio_configs);
+			break;
+
+		case SENSOR_ENABLE:
+			destination_pointer = &_en_sensors;
+			size_of_destination_struct = sizeof(_en_sensors);
+			break;
+
+		case SENSOR_CONFIGS:
+			destination_pointer = &_configs;
+			size_of_destination_struct = sizeof(_configs);
+	        break;
+
+		case SENSOR_DATA:
+			destination_pointer = &_data;
+			size_of_destination_struct = sizeof(_data);
+	        break;
+
+		case ROUTER_DEBUG:
+			destination_pointer = &_debug;
+			size_of_destination_struct = sizeof(_debug);
+	        break;
+
+		case ERROR_MSG:
+			destination_pointer = &_error;
+			size_of_destination_struct = sizeof(_error);
+	        break;
+
+	        default:
+	                dst = NULL;
+	        }
+	        if (NULL != dst)
+	                memcpy(dst, buf, len);
+
+
+
+}

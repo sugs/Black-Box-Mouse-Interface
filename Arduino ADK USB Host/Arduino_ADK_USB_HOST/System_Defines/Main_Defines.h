@@ -9,6 +9,10 @@
 #define MAIN_DEFINES_H_
 
 #include <Arduino.h>
+#include <EEPROM/EEPROM.h>
+
+#include "../Emulation_Device_Implementation/Emulation_Device_Implementation.h"
+#include "../Sensor_Parser_Implementation/Network_Protocol.h"
 #include "../Debug_API/Debug_LED_Function.h"
 #include "../USB_HID_API/usbconfig.h"
 #include "../USB_HID_API/usbdrv.h"
@@ -19,6 +23,11 @@
  * be references. All of the structures and classes are also
  * built by default in this header file.
  **/
+
+extern "C" {
+//! external reference to the end of the BSS for use in checking memory consumption
+	extern word __bss_end;
+}
 
  //#define DEVELOPMENT						//! In Windows Development Mode
  #define DEBUG								//! Serial Debug Define
@@ -40,18 +49,25 @@
 #define NUMBER_OF_LEDS		4
 
 //! Serial device map
-//!	- Serial 1 - USB Endpoint
-//! - Serial 2 - USB Host
-//! - Serial 3 - Debug
+//!	- Serial 1 - USB Endpoint - PC COMS
+//! - Serial 2 - USB Host 	  - RF COMS
+//! - Serial 3 - Debug		  - FTDI COMS
 
  //! Normal Output Stream
- #define PRINT				Serial2.print	//! Serial API
- #define PRINTLN			Serial2.println //! Serial API
+#define SERIAL				Serial1
+#define PRINT				Serial1.print	//! Serial API
+#define PRINTLN				Serial1.println //! Serial API
+
+//! RF output stream
+#define RF_SERIAL			Serial2
+#define RF_PRINT			Serial2.print
+#define RF_PRINTLN			Serial2.println
 
 //! Debug Output Stream
  #ifdef DEBUG
-	#define DEBUG_PRINT 	Serial2.print 	//! Serial API
-	#define DEBUG_PRINTLN 	Serial2.println //! Serial API
+	#define DEBUG_SERIAL	Serial3
+	#define DEBUG_PRINT 	Serial3.print 	//! Serial API
+	#define DEBUG_PRINTLN 	Serial3.println //! Serial API
 
 	debug_code_struct_t debug_api;
 	error_type_counts_t error_type_counts;
@@ -83,14 +99,88 @@
 	typedef int  int16_t;
 #endif
 
-	//! Reset the device.
-	void(*reset_device) (void) = 0; //declare reset function @ address 0
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~ OBJECT DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	//! Define an EEPROM object.
+	EEPROM eeprom;
+
+	//! Define an NVRAM object
+	NVRAM nvram;
+
+	//! Define an WATCHDOG object
+	WATCHDOG watchdog;
+
+	//! Define an PACKET_PARSER object
+	PACKET_PARSER packet_parser;
+
+	//! Define a COMMAND_INTERPRETER object
+	COMMAND_INTERPRETER command_interpreter;
+
+	//! Define a packet decoder function table.
+	struct packet_handler packet_handlers[] = {
+
+			//{/*PACKET ID*/, /*TARGET FUNCTION*/, /*OBJECT ADDRESS*/},
+
+			//! Any packet will trigger this event.
+			{PACKET_ANY,       	WATCHDOG::reset,        		&watchdog},
+
+			//! Packet specific function tables for rx.
+			{ROUTER_ACK,	   	PACKET_PARSER::parse, 			&packet_parser},
+			{ROUTER_HEARTBEAT, 	PACKET_PARSER::parse, 			&packet_parser},
+			{ROUTER_STATUS,    	PACKET_PARSER::parse, 			&packet_parser},
+			{ROUTER_NMAP,	   	PACKET_PARSER::parse, 			&packet_parser},
+			{ROUTER_RADIO,     	PACKET_PARSER::parse, 			&packet_parser},
+			{SENSOR_ENABLE,    	PACKET_PARSER::parse, 			&packet_parser},
+			{SENSOR_CONFIGS,   	PACKET_PARSER::parse, 			&packet_parser},
+			{SENSOR_DATA,      	PACKET_PARSER::parse, 			&packet_parser},
+
+			//! USB local device function calls
+			{USB_DEVICE_CMD,   COMMAND_INTERPRETER::send_cmd,	&command_interpreter},
+			{USB_DEVICE_SET,   COMMAND_INTERPRETER::set			&command_interpreter},
+			{USB_DEVICE_GET,   COMMAND_INTERPRETER::get,		&command_interpreter},
+
+			//! Optional
+			{ROUTER_DEBUG,     PACKET_PARSER::parse, 		&packet_parser},
+			{ERROR_MSG,        PACKET_PARSER::parse, 		&packet_parser}
+	};
+
+	//! Define a PACKET_DECODER object
+	PACKET_DECODER packet_decoder(packet_handlers);
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~ VARIABLE DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	//! A generic pointer to the chosen object.
 	void* generic_pointer;
 
+	//! The base station address
+	byte base_station_address;
+
+	//! The base station state machine mode
+	byte base_station_mode;
+
 	//! Define which device was chosen.
 	byte emulation_chosen;
 	byte usb_device_chosen;
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~ FUNCTION DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	//! Reset the device.
+	void(*reset_device) (void) = 0; //declare reset function @ address 0
+
+	/**
+	 * This does a memory check of the whole system, and checks
+	 * to see how much free mem there is.
+	 */
+	word memory_check(){
+		word freemem;
+		freemem = ((word)&freemem) - ((word)&__bss_end);
+		return freemem;
+	}
 
 #endif /* MAIN_DEFINES_H_ */
