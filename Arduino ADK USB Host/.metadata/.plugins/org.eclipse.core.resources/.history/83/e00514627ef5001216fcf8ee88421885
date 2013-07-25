@@ -15,7 +15,6 @@
 #define MAX_TOKENS		40
 
 /**
- * Packet Structure Definition.
  * [HEADER][ID][MESSAGE_LENGTH][JSON_STRING][TAIL]
  * [+][##][##][{SRINGS}][*]
  */

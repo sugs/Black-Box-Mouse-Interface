@@ -47,6 +47,7 @@ class COMMAND_INTERPRETER {
 		 * @param buf - void*
 		 */
 		void send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf);
+
 };
 
 

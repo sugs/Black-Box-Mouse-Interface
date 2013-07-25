@@ -21,7 +21,6 @@ void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
 	}
 }
 
-//! Execute a command from a sensor or router
 void COMMAND_INTERPRETER::_execute_command(byte command){
 
 	switch(command){
@@ -36,7 +35,7 @@ void COMMAND_INTERPRETER::_execute_command(byte command){
 	//...
 
 	default:
-		break;
+		break;;
 	}
 }
 

@@ -21,23 +21,18 @@ void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
 	}
 }
 
-//! Execute a command from a sensor or router
-void COMMAND_INTERPRETER::_execute_command(byte command){
+//! The public set method
+void COMMAND_INTERPRETER::set(void *arg, byte packet_id, byte packet_ver, void *buf){
 
-	switch(command){
-	case 1:
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_set_value(packet_id, packet_ver, buf);
+}
 
-	case 2:
+//! The public get method
+void COMMAND_INTERPRETER::get(void *arg, byte packet_id, byte packet_ver, void *buf){
 
-	case 3:
-
-	case 4:
-
-	//...
-
-	default:
-		break;
-	}
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_get_value(packet_id, packet_ver, buf);
 }
 
 //! The public send command method

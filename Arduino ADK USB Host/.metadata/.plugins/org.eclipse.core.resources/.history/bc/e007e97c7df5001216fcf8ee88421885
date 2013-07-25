@@ -5,6 +5,7 @@
  *      Author: francispapineau
  */
 
+#include "../System_Defines/Main_Defines.h"
 #include "Packet_Parser.h"
 
 //! Parse the structures.
@@ -112,8 +113,8 @@ void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
 		case USB_DEVICE_CMD:
 			destination_pointer = &_command;
 			size_of_destination_struct = sizeof(_command);
-			memcpy(destination_pointer, buf, size_of_destination_struct);
-			command_interpreter._execute_command(_command.command_id);
+			_execute_command(byte command);
+	        break;
 
 	    default:
 	    	destination_pointer = NULL;

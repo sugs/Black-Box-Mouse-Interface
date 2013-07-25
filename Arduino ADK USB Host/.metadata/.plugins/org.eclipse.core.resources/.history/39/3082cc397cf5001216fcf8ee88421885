@@ -23,15 +23,15 @@
 #define SENSOR_DATA				0x08
 
 //! Command Descriptors
-#define USB_DEVICE_CMD			0x31
+#define USB_DEVICE_GET			0x31
 
 //! Optional
 #define ROUTER_DEBUG			0x07
 #define ERROR_MSG				0x0A
 
 //! Internal packet_id values
-#define PACKET_ANY				0xFE
-#define PACKET_NULL				0xFF
+#define PACKET_ANY					0xFE
+#define PACKET_NULL					0xFF
 
 // *************************************************
 // *************** REMOTE DOMAIN *******************
@@ -187,6 +187,22 @@ struct remote_radio_configs_t {
 // ************* LOCAL DOMAIN **********************
 // *************************************************
 
+//! Sets an environment variable on the local system.
+struct local_set_t {
+
+	byte value_id_map;
+	uint32_t value;
+};
+
+// *************************************************
+//! This gets a value from the local system.
+struct local_get_t{
+
+	byte value_id_map;
+	byte broadcast;
+};
+
+// *************************************************
 //! This executes a command on the local system.
 struct local_command_t{
 	byte command_id;

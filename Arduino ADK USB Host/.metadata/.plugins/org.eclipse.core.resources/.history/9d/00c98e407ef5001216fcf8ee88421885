@@ -15,19 +15,14 @@
 #define MAX_TOKENS		40
 
 /**
- * Packet Structure Definition.
  * [HEADER][ID][MESSAGE_LENGTH][JSON_STRING][TAIL]
  * [+][##][##][{SRINGS}][*]
  */
 
-/**
- * This class takes care of the packet parsing.
- */
 class PACKET_PARSER {
 
 	private:
 
-		//! The structures needed to parse info into.
 		struct router_ack_t						_ack;
 		struct router_heartbeat_t 				_heartbeat;
 		struct router_status_info_t 			_status;
@@ -40,44 +35,14 @@ class PACKET_PARSER {
 		struct error_message_t					_error;
 		struct local_command_t					_command;
 
-		/**
-		 * Checks the memory space to see if we can allocate
-		 * more structures.
-		 */
 		void _check_memory_space();
-
-		/**
-		 * Checks the packet integrity
-		 *
-		 * @param packet - String*
-		 * @return bool
-		 */
 		bool _check_packet_integrity(String* packet);
-
-		/**
-		 * Parses a packet
-		 *
-		 * @param packet_id - byte
-		 * @param packet_ver - byte
-		 * @param buf - void*
-		 */
 		void _parse(byte packet_id, byte packet_ver, void *buf);
 
 	public :
 
-		/**
-		 * Default constructor
-		 */
 		PACKET_PARSER();
 
-		/**
-		 * Publicly accessible parsing method.
-		 *
-		 * @param arg - void*
-		 * @param packet_id - byte
-		 * @param packet_ver - byte
-		 * @param buf - void*
-		 */
 		static void	parse(void *arg, byte packet_id, byte packet_ver, void *buf);
 
 };

@@ -184,17 +184,6 @@ struct remote_radio_configs_t {
 };
 
 // *************************************************
-// ************* LOCAL DOMAIN **********************
-// *************************************************
-
-//! This executes a command on the local system.
-struct local_command_t{
-	byte command_id;
-	byte target_address;
-
-};
-
-// *************************************************
 //! This union contains all possible messages from the router
 //! device and their descriptions.
 union packet_structure {

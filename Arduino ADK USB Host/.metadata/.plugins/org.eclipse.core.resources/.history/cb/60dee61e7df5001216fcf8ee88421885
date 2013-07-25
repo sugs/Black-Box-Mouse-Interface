@@ -137,11 +137,13 @@ extern "C" {
 			{SENSOR_DATA,      	PACKET_PARSER::parse, 			&packet_parser},
 
 			//! USB local device function calls
-			{USB_DEVICE_CMD,   PACKET_PARSER::parse,			&packet_parser},
+			{USB_DEVICE_CMD,   COMMAND_INTERPRETER::send_cmd,	&command_interpreter},
+			{USB_DEVICE_SET,   COMMAND_INTERPRETER::set			&command_interpreter},
+			{USB_DEVICE_GET,   COMMAND_INTERPRETER::get,		&command_interpreter},
 
 			//! Optional
-			{ROUTER_DEBUG,     PACKET_PARSER::parse, 			&packet_parser},
-			{ERROR_MSG,        PACKET_PARSER::parse, 			&packet_parser}
+			{ROUTER_DEBUG,     PACKET_PARSER::parse, 		&packet_parser},
+			{ERROR_MSG,        PACKET_PARSER::parse, 		&packet_parser}
 	};
 
 	//! Define a PACKET_DECODER object

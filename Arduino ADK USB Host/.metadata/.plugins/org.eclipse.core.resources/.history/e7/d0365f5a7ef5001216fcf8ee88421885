@@ -15,7 +15,6 @@
 #define MAX_TOKENS		40
 
 /**
- * Packet Structure Definition.
  * [HEADER][ID][MESSAGE_LENGTH][JSON_STRING][TAIL]
  * [+][##][##][{SRINGS}][*]
  */
@@ -48,7 +47,6 @@ class PACKET_PARSER {
 
 		/**
 		 * Checks the packet integrity
-		 *
 		 * @param packet - String*
 		 * @return bool
 		 */
@@ -56,7 +54,6 @@ class PACKET_PARSER {
 
 		/**
 		 * Parses a packet
-		 *
 		 * @param packet_id - byte
 		 * @param packet_ver - byte
 		 * @param buf - void*
@@ -65,19 +62,8 @@ class PACKET_PARSER {
 
 	public :
 
-		/**
-		 * Default constructor
-		 */
 		PACKET_PARSER();
 
-		/**
-		 * Publicly accessible parsing method.
-		 *
-		 * @param arg - void*
-		 * @param packet_id - byte
-		 * @param packet_ver - byte
-		 * @param buf - void*
-		 */
 		static void	parse(void *arg, byte packet_id, byte packet_ver, void *buf);
 
 };
