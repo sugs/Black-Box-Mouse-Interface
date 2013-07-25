@@ -1,0 +1,23 @@
+/*
+ * Packet_Watchdog.cpp
+ *
+ *  Created on: Jul 24, 2013
+ *      Author: fjpapin
+ */
+
+
+//! Reset the timer, accessible publicly.
+void WATCHDOG::reset(void *arg, uint8_t packet_id, uint8_t pakcet_ver, void *packet_data) {
+        ((WATCHDOG *)arg)->_reset();
+}
+
+//! Reset the watchog timer.
+void WATCHDOG::_reset(void){
+        //! Kill the alarm if it's going and swap the bug character back
+        if (0 != _last_alarm) {
+                _last_alarm = 0;
+        }
+
+        //! Remember when we saw this packet
+        _last_time_stamp = millis();
+}

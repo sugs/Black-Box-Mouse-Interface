@@ -39,11 +39,6 @@
 
 #define NUMBER_OF_LEDS		4
 
-//! Serial device map
-//!	- Serial 1 - USB Endpoint
-//! - Serial 2 - USB Host
-//! - Serial 3 - Debug
-
  //! Normal Output Stream
  #define PRINT				Serial2.print	//! Serial API
  #define PRINTLN			Serial2.println //! Serial API

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/Arduino_ADK_USB_HOST/Sensor_Parser_Implementation/Sensor_Packet_Assembler.cpp" element2="/Arduino_ADK_USB_HOST/Sensor_Parser_Implementation/Sensor_Packet_Assembler.h" element3="/Arduino_ADK_USB_HOST/Sensor_Parser_Implementation/Sensor_Parser.cpp" element4="/Arduino_ADK_USB_HOST/Sensor_Parser_Implementation/Sensor_Parser.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1374721115035"/>
+</session>
