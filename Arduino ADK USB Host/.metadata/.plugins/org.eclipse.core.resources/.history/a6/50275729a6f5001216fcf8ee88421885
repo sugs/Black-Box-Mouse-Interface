@@ -1,0 +1,102 @@
+/*
+ * Command_Interpreter.cpp
+ *
+ *  Created on: Jul 25, 2013
+ *      Author: francispapineau
+ */
+
+#include "Command_Interpreter.h"
+
+/**
+ * buf. definition: [Target Address][Command Predicate][Arg 1][Arg 2]
+ */
+//! Sends a command
+void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
+
+	String* buffer = (String*) buf;
+
+	if(packet_id == USB_DEVICE_CMD){
+
+		//! Construct a command
+		_construct_command((byte*)buf[0]);
+
+		//! First send the address
+		RF_SERIAL.print(buffer->c_str()[0]);
+
+		//! Second send the command
+		RF_SERIAL.print(buffer->substring(1).c_str());
+	}
+}
+
+//! Execute a command from a sensor or router
+void COMMAND_INTERPRETER::_construct_command(byte* command){
+
+	switch(command[0]){
+
+		case WAKEUP_ROUTER: 	// Wake up the router
+
+			break;
+		case WAKEUP_SENSOR: 	// Wake up a sensor
+
+			break;
+		case POWEROFF_ROUTER: 	// Power off router
+
+			break;
+		case POWEROFF_SENSOR: 	// Power off sensor
+
+			break;
+		case POWERON_ROUTER: 	// Power on router
+
+			break;
+		case POWERON_SENSOR: 	// Power on sensor
+
+			break;
+		case PAUSE_ROUTER: 	// Pause router
+
+			break;
+		case PAUSE_SENSOR: 	// Pause sensor
+
+			break;
+		case ROUTER_STATUS: 	// Router status
+
+			break;
+		case REQUEST_NMAP: 	// Request NMAP
+
+			break;
+		case REQUEST_SENSOR_CHANNEL:	// Request sensor channel info
+
+			break;
+		case REQUEST_SENSOR_ENABLE: 	// Request sensor enable
+
+			break;
+		case REQUEST_SENSOR_CONFIG:	// Request sensor config
+
+			break;
+		case REQUEST_SENSOR_STATE: 	// Request sensor state
+
+			break;
+		case REQUEST_ROUTER_RUN: 	// Request router run
+
+			break;
+		case PING_ROUTER: 	// Ping Router
+
+			_ping_router();
+			break;
+
+		case PING_SENSOR: 	// Ping sensor
+
+			_ping_sensor(command*);
+			break;
+		default:	// Other commands don't exist
+			break;
+	}
+}
+
+//! The public send command method
+void COMMAND_INTERPRETER::send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_send_cmd(packet_id, packet_ver, buf);
+}
+
+

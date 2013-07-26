@@ -6366,3 +6366,81 @@ java.io.IOException: Stream closed
 	at java.io.BufferedReader.readLine(BufferedReader.java:362)
 	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:118)
 	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY org.eclipse.ui.console 4 120 2013-07-25 23:27:37.704
+!MESSAGE Error logged from Console plug-in: 
+!STACK 0
+java.io.IOException: Output Stream is closed
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:230)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:225)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:130)
+	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY de.innot.avreclipse.core 4 0 2013-07-25 23:27:37.706
+!MESSAGE I/O Error reading output
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:264)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158)
+	at java.io.InputStreamReader.read(InputStreamReader.java:167)
+	at java.io.BufferedReader.fill(BufferedReader.java:136)
+	at java.io.BufferedReader.readLine(BufferedReader.java:299)
+	at java.io.BufferedReader.readLine(BufferedReader.java:362)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:118)
+	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY org.eclipse.ui.console 4 120 2013-07-25 23:27:39.274
+!MESSAGE Error logged from Console plug-in: 
+!STACK 0
+java.io.IOException: Output Stream is closed
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:230)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:225)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:130)
+	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY de.innot.avreclipse.core 4 0 2013-07-25 23:27:39.276
+!MESSAGE I/O Error reading output
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:264)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158)
+	at java.io.InputStreamReader.read(InputStreamReader.java:167)
+	at java.io.BufferedReader.fill(BufferedReader.java:136)
+	at java.io.BufferedReader.readLine(BufferedReader.java:299)
+	at java.io.BufferedReader.readLine(BufferedReader.java:362)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:118)
+	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY org.eclipse.ui.console 4 120 2013-07-25 23:27:39.393
+!MESSAGE Error logged from Console plug-in: 
+!STACK 0
+java.io.IOException: Output Stream is closed
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:230)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:225)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:130)
+	at java.lang.Thread.run(Thread.java:680)
+
+!ENTRY de.innot.avreclipse.core 4 0 2013-07-25 23:27:39.395
+!MESSAGE I/O Error reading output
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:264)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:306)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:158)
+	at java.io.InputStreamReader.read(InputStreamReader.java:167)
+	at java.io.BufferedReader.fill(BufferedReader.java:136)
+	at java.io.BufferedReader.readLine(BufferedReader.java:299)
+	at java.io.BufferedReader.readLine(BufferedReader.java:362)
+	at de.innot.avreclipse.core.toolinfo.ExternalCommandLauncher$LogStreamRunner.run(ExternalCommandLauncher.java:118)
+	at java.lang.Thread.run(Thread.java:680)

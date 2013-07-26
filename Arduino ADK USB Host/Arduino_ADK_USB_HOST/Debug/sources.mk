@@ -35,10 +35,9 @@ SUBDIRS := \
 USB_Implementation \
 USB_HID_API \
 USB_Device_Implementation \
+System_Defines \
 Sensor_Parser_Implementation \
 . \
-JSON_API/utility \
-JSON_API \
 Emulation_Device_Implementation \
 Debug_API \
 

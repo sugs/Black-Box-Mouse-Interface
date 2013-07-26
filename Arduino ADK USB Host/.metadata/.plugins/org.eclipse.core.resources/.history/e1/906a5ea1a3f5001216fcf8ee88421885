@@ -1,0 +1,53 @@
+/*
+ * Command_Interpreter.h
+ *
+ *  Created on: Jul 25, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef COMMAND_INTERPRETER_H_
+#define COMMAND_INTERPRETER_H_
+
+#include <avr/pgmspace.h>
+#include "../System_Defines/Main_Defines.h"
+
+/**
+ * This class handles commands sent from the sensor nodes to the
+ * base station, and executes them.
+ * We can also send commands through this class.
+ */
+class COMMAND_INTERPRETER {
+
+	private:
+
+		/**
+		 * Constructs a command
+		 *
+		 * @param command - byte
+		 */
+		void _construct_command(byte command);
+
+		/**
+		 * Sends a command from the local board
+		 *
+		 * @param packet_id - byte
+		 * @param packet_ver - byte
+		 * @param buf - void*
+		 */
+		void _send_cmd(byte packet_id, byte packet_ver, void *buf);
+
+	public:
+
+		/**
+		 * Sends a command via the public domain.
+		 *
+		 * @param arg - void*
+		 * @param packet_id - byte
+		 * @param packet_ver - byte
+		 * @param buf - void*
+		 */
+		void send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf);
+};
+
+
+#endif /* COMMAND_INTERPRETER_H_ */

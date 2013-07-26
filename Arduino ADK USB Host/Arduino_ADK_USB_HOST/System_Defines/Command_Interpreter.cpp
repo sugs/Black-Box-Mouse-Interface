@@ -7,44 +7,180 @@
 
 #include "Command_Interpreter.h"
 
+/**
+ * buf. definition: [Target Address][Command Predicate][Arg 1][Arg 2]
+ */
 //! Sends a command
-void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
+void COMMAND_INTERPRETER::_send_cmd(byte packet_id, void *buf){
 
 	String* buffer = (String*) buf;
 
 	if(packet_id == USB_DEVICE_CMD){
-		//! First send the address
-		RF_SERIAL.print(buffer->c_str()[0]);
 
-		//! Second send the command
-		RF_SERIAL.print(buffer->substring(1).c_str());
+		//! Construct a command
+		_send_command((byte*)buf[0]);
 	}
 }
 
 //! Execute a command from a sensor or router
-void COMMAND_INTERPRETER::_execute_command(byte command){
+void COMMAND_INTERPRETER::_send_command(byte* command){
 
-	switch(command){
-	case 1:
+	byte* command_send;
 
-	case 2:
+	switch(command[0]){
 
-	case 3:
+		case WAKEUP_ROUTER: 	// Wake up the router
+			_wakeup_router();
+			break;
 
-	case 4:
+		case WAKEUP_SENSOR: 	// Wake up a sensor
+			_wakeup_sensor(command);
+			break;
 
-	//...
+		case POWEROFF_ROUTER: 	// Power off router
+			_poweroff_router();
+			break;
 
-	default:
-		break;
+		case POWEROFF_SENSOR: 	// Power off sensor
+			_poweroff_sensor(command);
+			break;
+
+		case POWERON_ROUTER: 	// Power on router
+			_power_on_router();
+			break;
+
+		case POWERON_SENSOR: 	// Power on sensor
+			_power_on_sensor(command);
+			break;
+
+		case PAUSE_ROUTER: 	// Pause router
+			_pause_router();
+			break;
+
+		case PAUSE_SENSOR: 	// Pause sensor
+			_pause_sensor(command);
+			break;
+
+		case ROUTER_STATUS: 	// Router status
+			_request_router_status();
+			break;
+
+		case REQUEST_NMAP: 	// Request NMAP
+			_request_nmap();
+			break;
+
+		case REQUEST_SENSOR_CHANNEL:	// Request sensor channel info
+			_request_sensor_channel(command);
+			break;
+
+		case REQUEST_SENSOR_ENABLE: 	// Request sensor enable
+			_request_sensor_enable();
+			break;
+
+		case REQUEST_SENSOR_CONFIG:	// Request sensor config
+			_request_sensor_config();
+			break;
+
+		case REQUEST_SENSOR_STATE: 	// Request sensor state
+			_request_sensor_state(command);
+			break;
+
+		case REQUEST_ROUTER_RUN: 	// Request router run
+			_request_router_run();
+			break;
+
+		case PING_ROUTER: 	// Ping Router
+			_ping_router();
+			break;
+
+		case PING_SENSOR: 	// Ping sensor
+			command_send = _ping_sensor(command[1]);
+			break;
+
+		default:	// Other commands don't exist
+			command_send = nullptr;
+			break;
+	}
+	if(nullptr != command_send) {
+		RF_SERIAL.print((char*) command_send);
 	}
 }
 
 //! The public send command method
-void COMMAND_INTERPRETER::send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf){
+void COMMAND_INTERPRETER::send_cmd(byte packet_id, void *buf){
 
 	//! Process String
-	((COMMAND_INTERPRETER*)arg)->_send_cmd(packet_id, packet_ver, buf);
+	_send_cmd(packet_id, buf);
 }
 
+//! Ping router
+byte* COMMAND_INTERPRETER::_ping_router(){
+	byte command[] = {'p', 'i', 'n', 'g'};
+	return &command;
+}
+
+byte* COMMAND_INTERPRETER::_ping_sensor(byte sensor_address){
+	byte command[] = {'p', 'i', 'n', 'g', sensor_address};
+	return &command;
+}
+
+byte* COMMAND_INTERPRETER::_request_router_run(){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_sensor_state(byte* command){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_sensor_config(){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_sensor_enable(){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_sensor_channel(byte* command){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_nmap(){
+
+}
+
+byte* COMMAND_INTERPRETER::_request_router_status(){
+
+}
+
+byte* COMMAND_INTERPRETER::_pause_sensor(byte* command){
+
+}
+
+byte* COMMAND_INTERPRETER::_pause_router(){
+
+}
+
+byte* COMMAND_INTERPRETER::_power_on_router(){
+
+}
+
+byte* COMMAND_INTERPRETER::_power_on_sensor(byte* command){
+
+}
+
+byte* COMMAND_INTERPRETER::_poweroff_router(){
+
+}
+
+byte* COMMAND_INTERPRETER::_poweroff_sensor(byte* command){
+
+}
+
+byte* COMMAND_INTERPRETER::_wakeup_router(){
+
+}
+
+byte* COMMAND_INTERPRETER::_wakeup_sensor(byte* command){
+
+}
 

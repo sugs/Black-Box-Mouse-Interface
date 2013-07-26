@@ -1,15 +1,6 @@
-23:30:31 **** Incremental Build of configuration Debug for project Arduino_ADK_USB_HOST ****
+23:27:39 **** Incremental Build of configuration Debug for project Arduino_ADK_USB_HOST ****
 make all 
-Building file: ../USB_Implementation/USB_Functions.cpp
-Invoking: AVR C++ Compiler
-avr-g++ -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/variants/mega" -I"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino" -Wall -g2 -gstabs -Os -fpack-struct -fshort-enums -funsigned-char -funsigned-bitfields -fno-exceptions -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"USB_Implementation/USB_Functions.d" -MT"USB_Implementation/USB_Functions.d" -c -o "USB_Implementation/USB_Functions.o" "../USB_Implementation/USB_Functions.cpp"
-In file included from /Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host/arduino/cores/arduino/Arduino.h:10:0,
-                 from ../USB_Implementation/../System_Defines/Main_Defines.h:11,
-                 from ../USB_Implementation/USB_Functions.cpp:8:
-/usr/local/CrossPack-AVR-20120217/lib/gcc/avr/4.5.1/../../../../avr/include/avr/interrupt.h:126:23: error: "[" may not appear in macro parameter list
-In file included from ../USB_Implementation/USB_Functions.cpp:9:0:
-../USB_Implementation/USB_Defines.h:35:1: warning: 'typedef' was ignored in this declaration
-make: *** [USB_Implementation/USB_Functions.o] Error 1
+Command canceled
 
-23:30:31 Build Finished (took 230ms)
+23:27:39 Build Cancelled (took 49ms)
 

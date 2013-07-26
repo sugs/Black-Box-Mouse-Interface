@@ -10,3 +10,10 @@ In file included from /Users/francispapineau/Documents/4th year project/Source C
 In file included from ../USB_Implementation/USB_Functions.cpp:9:0:
 ../USB_Implementation/USB_Defines.h:35:1: warning: 'typedef' was ignored in this declaration
 make: *** [USB_Implementation/USB_Functions.o] Error 1
+23:27:37 **** Clean-only build of configuration Debug for project Arduino_ADK_USB_HOST ****
+make clean 
+rm -rf  ./USB_Implementation/USB_Functions.o  ./USB_HID_API/oddebug.o ./USB_HID_API/usbdrv.o ./USB_HID_API/usbdrvasm.o  ./USB_Device_Implementation/USB_Device_Implementation.o  ./Sensor_Parser_Implementation/Sensor_Data_Buffer.o ./Sensor_Parser_Implementation/Sensor_Packet_Assembler.o ./Sensor_Parser_Implementation/Sensor_Parser.o  ./JSON_API/utility/jsmn.o  ./JSON_API/json_arduino.o  ./Emulation_Device_Implementation/Emulation_Device_Implementation.o  ./Debug_API/Debug_LED_Function.o  ./Main_USB_Host.o  ./USB_HID_API/oddebug.d ./USB_HID_API/usbdrv.d  Arduino_ADK_USB_HOST.eep  Arduino_ADK_USB_HOST.hex  Arduino_ADK_USB_HOST.lss  ./USB_HID_API/usbdrvasm.d  ./USB_HID_API/usbdrvasm.d  avrdudedummy  ./USB_Implementation/USB_Functions.d  ./USB_Device_Implementation/USB_Device_Implementation.d  ./Sensor_Parser_Implementation/Sensor_Data_Buffer.d ./Sensor_Parser_Implementation/Sensor_Packet_Assembler.d ./Sensor_Parser_Implementation/Sensor_Parser.d  ./JSON_API/utility/jsmn.d  ./JSON_API/json_arduino.d  ./Emulation_Device_Implementation/Emulation_Device_Implementation.d  ./Debug_API/Debug_LED_Function.d  ./Main_USB_Host.d  sizedummy  Arduino_ADK_USB_HOST.elf
+ 
+23:27:39 **** Incremental Build of configuration Debug for project Arduino_ADK_USB_HOST ****
+make all 
+Command canceled

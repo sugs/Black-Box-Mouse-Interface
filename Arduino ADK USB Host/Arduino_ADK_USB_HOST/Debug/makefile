@@ -11,9 +11,8 @@ RM := rm -rf
 -include USB_Implementation/subdir.mk
 -include USB_HID_API/subdir.mk
 -include USB_Device_Implementation/subdir.mk
+-include System_Defines/subdir.mk
 -include Sensor_Parser_Implementation/subdir.mk
--include JSON_API/utility/subdir.mk
--include JSON_API/subdir.mk
 -include Emulation_Device_Implementation/subdir.mk
 -include Debug_API/subdir.mk
 -include subdir.mk

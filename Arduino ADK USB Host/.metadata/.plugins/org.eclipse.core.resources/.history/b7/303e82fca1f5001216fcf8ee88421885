@@ -1,0 +1,89 @@
+/*
+ * Command_Interpreter.cpp
+ *
+ *  Created on: Jul 25, 2013
+ *      Author: francispapineau
+ */
+
+#include "Command_Interpreter.h"
+
+//! Sends a command
+void COMMAND_INTERPRETER::_send_cmd(byte packet_id, byte packet_ver, void *buf){
+
+	String* buffer = (String*) buf;
+
+	if(packet_id == USB_DEVICE_CMD){
+		//! First send the address
+		RF_SERIAL.print(buffer->c_str()[0]);
+
+		//! Second send the command
+		RF_SERIAL.print(buffer->substring(1).c_str());
+	}
+}
+
+//! Execute a command from a sensor or router
+void COMMAND_INTERPRETER::_execute_command(byte command){
+
+	switch(command){
+
+		case 0x01: 	// Wake up the router
+
+			break;
+		case 0x02: 	// Wake up a sensor
+
+			break;
+		case 0x03: 	// Power off router
+
+			break;
+		case 0x04: 	// Power off sensor
+
+			break;
+		case 0x05: 	// Power on router
+
+			break;
+		case 0x06: 	// Power on sensor
+
+			break;
+		case 0x07: 	// Pause router
+
+			break;
+		case 0x08: 	// Pause sensor
+
+			break;
+		case 0x09: 	// Router status
+
+			break;
+		case 0x0A: 	// Request NMAP
+
+			break;
+		case 0x0B:	// Request sensor channel info
+
+			break;
+		case 0x0C: 	// Request sensor enable
+
+			break;
+		case 0X0D:	// Request sensor config
+
+			break;
+		case 0x0E:
+
+			break;
+		case 0x0F:
+
+			break;
+		case 0x10:
+
+			break;
+		default:
+			break;
+	}
+}
+
+//! The public send command method
+void COMMAND_INTERPRETER::send_cmd(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Process String
+	((COMMAND_INTERPRETER*)arg)->_send_cmd(packet_id, packet_ver, buf);
+}
+
+
