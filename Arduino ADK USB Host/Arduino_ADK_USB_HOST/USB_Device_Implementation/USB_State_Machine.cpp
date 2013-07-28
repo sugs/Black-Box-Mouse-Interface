@@ -28,6 +28,9 @@ void USB_STATE_MACHINE::move_state_forward(){
 
 	current_state = next_state;
 	next_state ++;
+	if(next_state == 13){
+		next_state = LOCAL_PACKET_WAIT;
+	}
 }
 
 //! Move to local error

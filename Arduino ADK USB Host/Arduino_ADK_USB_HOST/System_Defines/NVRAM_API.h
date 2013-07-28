@@ -78,6 +78,25 @@ class NVRAM {
 			byte led_4;
 			byte led4_setting;
 
+			//! Possible Commands;
+			byte _ping_router[6];
+			byte _ping_sensor[6];
+			byte _request_router_run[3];
+			byte _request_router_config[7];
+			byte _request_sensor_config[6];
+			byte _request_sensor_enable[7];
+			byte _request_sensor_channel[10];
+			byte _request_nmap[4];
+			byte _request_router_status[6];
+			byte _pause_sensor[7];
+			byte _pause_router[7];
+			byte _power_on_router[6];
+			byte _power_on_sensor[6];
+			byte _poweroff_router[6];
+			byte _poweroff_sensor[6];
+			byte _wakeup_router[6];
+			byte _wakeup_sensor[6];
+
 		};
 
 		//! The exported structure definition.

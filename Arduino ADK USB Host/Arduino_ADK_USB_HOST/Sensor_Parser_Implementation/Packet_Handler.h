@@ -10,7 +10,7 @@
 
 #include "Network_Protocol.h"
 
-#define PACKET_TIMEOUT				100 //100ms timeout
+//#define PACKET_TIMEOUT				100 //100ms timeout
 
 //! Internal State Machine
 #define PACKET_WAIT_PHASE_1 		0

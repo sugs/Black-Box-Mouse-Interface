@@ -17,7 +17,7 @@
 #define ROUTER_HEARTBEAT		0x02
 #define ROUTER_STATUS			0x03
 #define ROUTER_NMAP				0x04
-#define ROUTER_RADIO			0x05
+#define ROUTER_CONFIG			0x05
 #define SENSOR_ENABLE			0x06
 #define SENSOR_CONFIGS			0x07
 #define SENSOR_DATA				0x08

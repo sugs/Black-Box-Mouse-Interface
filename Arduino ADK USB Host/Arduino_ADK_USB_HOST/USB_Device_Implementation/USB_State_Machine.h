@@ -13,7 +13,7 @@
 #define NETWORK_RESET						-2
 #define LOCAL_DEVICE_SETUP					0
 #define NETWORK_SETUP						1
-	#define NETWORK_ID_REQUEST				2
+	#define NETWORK_WAKE_ID_REQUEST			2
 	#define NETWORK_STATUS_REQUEST			3
 	#define NETWORK_MAP_REQUEST				4
 	#define NETWORK_SENSOR_CONFIGS			5

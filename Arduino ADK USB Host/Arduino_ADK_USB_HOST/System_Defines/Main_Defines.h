@@ -11,8 +11,13 @@
 #include <Arduino.h>
 #include <EEPROM/EEPROM.h>
 
+#include "Hardware_Defines.h"
+
 #include "../Emulation_Device_Implementation/Emulation_Device_Implementation.h"
+#include "../System_Defines/Command_Interpreter.h"
 #include "../Sensor_Parser_Implementation/Network_Protocol.h"
+#include "../Sensor_Parser_Implementation/Packet_Handler.h"
+#include "../System_Defines/Packet_Watchdog.h"
 #include "../Debug_API/Debug_LED_Function.h"
 #include "../USB_HID_API/usbconfig.h"
 #include "../USB_HID_API/usbdrv.h"
@@ -29,11 +34,6 @@ extern "C" {
 	extern word __bss_end;
 }
 
- //#define DEVELOPMENT						//! In Windows Development Mode
- #define DEBUG								//! Serial Debug Define
- #define USER_INPUT							//! User Button Define
- #define DEBUG_LEDs							//! Debug LEDs Define
-
  //! ONLY ONE OF THE FOLLOWING SHOULD BE CHOSEN!
  #define MOUSE_REPORT						//! Only send the Mouse USB report
  //#define JOYSTICK_REPORT					//! Only send the joystick USB report
@@ -45,59 +45,6 @@ extern "C" {
 #define MAX_INFO			INFINITY
 #define MAX_DEBUG			INFINITY
 #define MAX_MEMORY			1
-
-#define NUMBER_OF_LEDS		4
-
-//! Serial device map
-//!	- Serial 1 - USB Endpoint - PC COMS
-//! - Serial 2 - USB Host 	  - RF COMS
-//! - Serial 3 - Debug		  - FTDI COMS
-
- //! Normal Output Stream
-#define SERIAL				Serial1
-#define PRINT				Serial1.print	//! Serial API
-#define PRINTLN				Serial1.println //! Serial API
-
-//! RF output stream
-#define RF_SERIAL			Serial2
-#define RF_PRINT			Serial2.print
-#define RF_PRINTLN			Serial2.println
-
-//! Debug Output Stream
- #ifdef DEBUG
-	#define DEBUG_SERIAL	Serial3
-	#define DEBUG_PRINT 	Serial3.print 	//! Serial API
-	#define DEBUG_PRINTLN 	Serial3.println //! Serial API
-
-	debug_code_struct_t debug_api;
-	error_type_counts_t error_type_counts;
- #endif
-
- //! User Button Activation
- //! TODO - ADD THE PORT MAP
-
- #ifdef USER_INPUT
-	#define SELECT_BUTTON_1	2				//! PORT MAPS
-	#define SELECT_BUTTON_2 3
- #endif
-
- //! Debug LEDs Activation
- //! TODO - ADD THE PORT MAP
-
- #ifdef DEBUG_LEDs
-	#define DBG_LED_1		3				//! PORT MAPS
-	#define DBG_LED_2		4
-	#define DBG_LED_3		5
-	#define DBG_LED_4		6
- #endif
-
-//! If we are developing and the env is not set properly
-#ifdef DEVELOPMENT
-	typedef unsigned char byte;					//! Redefine the 8 bit values
-	typedef unsigned char prog_byte;
-	typedef char int8_t;
-	typedef int  int16_t;
-#endif
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~ OBJECT DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,7 +63,10 @@ extern "C" {
 	PACKET_PARSER packet_parser;
 
 	//! Define a COMMAND_INTERPRETER object
-	COMMAND_INTERPRETER command_interpreter;
+	COMMAND_INTERPRETER command_interpreter(&nvram);
+
+	//! Define a common USB_STATE_MACHINE object
+	USB_STATE_MACHINE usb_state_machine;
 
 	//! Define a packet decoder function table.
 	struct packet_handler packet_handlers[] = {
@@ -131,7 +81,7 @@ extern "C" {
 			{ROUTER_HEARTBEAT, 	PACKET_PARSER::parse, 			&packet_parser},
 			{ROUTER_STATUS,    	PACKET_PARSER::parse, 			&packet_parser},
 			{ROUTER_NMAP,	   	PACKET_PARSER::parse, 			&packet_parser},
-			{ROUTER_RADIO,     	PACKET_PARSER::parse, 			&packet_parser},
+			{ROUTER_CONFIG,     PACKET_PARSER::parse, 			&packet_parser},
 			{SENSOR_ENABLE,    	PACKET_PARSER::parse, 			&packet_parser},
 			{SENSOR_CONFIGS,   	PACKET_PARSER::parse, 			&packet_parser},
 			{SENSOR_DATA,      	PACKET_PARSER::parse, 			&packet_parser},
@@ -179,6 +129,11 @@ extern "C" {
 		word freemem;
 		freemem = ((word)&freemem) - ((word)&__bss_end);
 		return freemem;
+	}
+
+	//TODO
+	void error(){
+
 	}
 
 #endif /* MAIN_DEFINES_H_ */

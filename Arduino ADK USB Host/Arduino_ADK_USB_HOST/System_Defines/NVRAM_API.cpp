@@ -7,14 +7,16 @@
 
 #include "Main_Defines.h"
 
+#define SPACE 	' '
+
 //! Define the structure
 struct NVRAM::nv_data_t NVRAM_default PROGMEM = {
 
-        9600,   // serial1 speed
-        9600,	// serial2 speed
-        9600,   // serial3 speed
-        0x0A,	// node address
-        0x01,   // device mode, setup.
+        9600,
+        9600,
+        9600,
+        0x0A,
+        0x01,
         SELECT_BUTTON_1,
         INPUT,
         SELECT_BUTTON_2,
@@ -26,13 +28,33 @@ struct NVRAM::nv_data_t NVRAM_default PROGMEM = {
         DBG_LED_3,
         OUTPUT,
         DBG_LED_4,
-        OUTPUT
+        OUTPUT,
+
+        //! Possible commands stored to save ram space.
+		{'p', 'i', 'n', 'g', ':', '0'},
+		{'p', 'i', 'n', 'g', ':', SPACE},
+		{'r', 'u', 'n'},
+		{'c', 'o', 'n', 'f', 'i', 'g', 'r'},
+		{'c', 'o', 'n', 'f', 'i', 'g'},
+		{'e', 'n', 'a', 'b', 'l', 'e', 'd'},
+		{'c', 'h', 'a', 'n', 'n', 'e', 'l', 's', ':', SPACE},
+		{'n', 'm', 'a', 'p'},
+		{'s', 't', 'a', 't', 'u', 's'},
+		{'p', 'a', 'u', 's', 'e', ':', SPACE},
+		{'p', 'a', 'u', 's', 'e', ':', '0'},
+		{'p', 'w', 'r', '1', ':', '0'},
+		{'p', 'w', 'r', '1', ':', SPACE},
+		{'p', 'w', 'r', '0', ':', '0'},
+		{'p', 'w', 'r', '0', ':', SPACE},
+		{'w', 'a', 'k', 'e', ':', '0'},
+		{'w', 'a', 'k', 'e', ':', SPACE}
+
 };
 
 //! Load the saved args.
 void NVRAM::load(void){
         // check for signature
-        if (('m' != EEPROM.read(0)) ||
+        if (('f' != EEPROM.read(0)) ||
             ('s' != EEPROM.read(1))) {
                 // load defaults
                 memcpy_P(&nv, &NVRAM_default, sizeof(nv));
@@ -47,7 +69,7 @@ void NVRAM::save(void){
         // save to NVRAM
         _savex(2, sizeof(nv), &nv);
 
-        EEPROM.write(0, 'm');
+        EEPROM.write(0, 'f');
         EEPROM.write(1, 's');
 }
 

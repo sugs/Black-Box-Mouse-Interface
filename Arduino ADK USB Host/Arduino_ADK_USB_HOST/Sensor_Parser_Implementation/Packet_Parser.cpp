@@ -77,7 +77,7 @@ void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
 			size_of_destination_struct = sizeof(_nmap);
 			break;
 
-		case ROUTER_RADIO:
+		case ROUTER_CONFIG:
 			destination_pointer = &_radio_configs;
 			size_of_destination_struct = sizeof(_radio_configs);
 			break;
@@ -113,7 +113,7 @@ void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
 			destination_pointer = &_command;
 			size_of_destination_struct = sizeof(_command);
 			memcpy(destination_pointer, buf, size_of_destination_struct);
-			command_interpreter._execute_command(_command.command_id);
+			command_interpreter.send_cmd(_command.command_id, (void*)_command.target_address);
 
 	    default:
 	    	destination_pointer = NULL;

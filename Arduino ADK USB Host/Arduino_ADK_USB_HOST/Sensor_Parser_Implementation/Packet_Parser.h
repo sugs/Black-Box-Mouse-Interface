@@ -9,7 +9,6 @@
 #define SENSOR_PARSER_H_
 
 #include "Network_Protocol.h"
-#include "Packet_Handler.h"
 #include "../System_Defines/Main_Defines.h"
 
 #define MAX_TOKENS		40

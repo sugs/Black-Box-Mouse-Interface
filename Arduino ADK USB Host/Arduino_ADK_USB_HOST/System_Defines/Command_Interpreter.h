@@ -24,10 +24,10 @@
 #define REQUEST_SENSOR_CHANNEL		0x0B	// Request sensor channel info
 #define REQUEST_SENSOR_ENABLE		0x0C 	// Request sensor enable
 #define REQUEST_SENSOR_CONFIG		0X0D	// Request sensor config
-#define REQUEST_SENSOR_STATE		0x0E 	// Request sensor state
 #define REQUEST_ROUTER_RUN			0x0F 	// Request router run
 #define PING_ROUTER					0x10 	// Ping Router
 #define PING_SENSOR					0x11 	// Ping sensor
+#define REQUEST_ROUTER_CONFIG		0x12	// Get Router Config
 
 /**
  * This class handles commands sent from the sensor nodes to the
@@ -40,6 +40,9 @@ class COMMAND_INTERPRETER {
 
 		//! The command buffer to send.
 		byte* command_buffer;
+
+		//! Our command database loaded in cache.
+		NVRAM* nvram_object;
 
 		/**
 		 * Constructs a command
@@ -57,41 +60,31 @@ class COMMAND_INTERPRETER {
 		 */
 		void _send_cmd(byte packet_id, void *buf);
 
-		byte* _ping_router();
+		/**
+		 * Loads bytes from NVRAM
+		 *
+		 * @param address - byte
+		 * @param size - byte
+		 * @param value - void*
+		 */
+		void _loadx(byte address, byte size, void* value);
 
-		byte* _ping_sensor(byte sensor_address);
-
-		byte* _request_router_run();
-
-		byte* _request_sensor_state(byte* command);
-
-		byte* _request_sensor_config();
-
-		byte* _request_sensor_enable();
-
-		byte* _request_sensor_channel(byte* command);
-
-		byte* _request_nmap();
-
-		byte* _request_router_status();
-
-		byte* _pause_sensor(byte* command);
-
-		byte* _pause_router();
-
-		byte* _power_on_router();
-
-		byte* _power_on_sensor(byte* command);
-
-		byte* _poweroff_router();
-
-		byte* _poweroff_sensor(byte* command);
-
-		byte* _wakeup_router();
-
-		byte* _wakeup_sensor(byte* command);
+		/**
+		 * Sends and checks for a response.
+		 *
+		 * @param packet_id - byte
+		 * @param command - byte*
+		 */
+		void _send_check(byte receive_packet_id, byte* command);
 
 	public:
+
+		/**
+		 * Default constructor.
+		 *
+		 * @param nvram_object
+		 */
+		COMMAND_INTERPRETER(NVRAM* nvram_object);
 
 		/**
 		 * Sends a command via the public domain.
@@ -99,6 +92,12 @@ class COMMAND_INTERPRETER {
 		 * @param buf - void*
 		 */
 		void send_cmd(byte packet_id, void *buf);
+
+
+		/**
+		 * Load all of the saved variables.
+		 */
+		void load(void);
 };
 
 

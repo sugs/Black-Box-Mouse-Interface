@@ -101,6 +101,7 @@ void setup(){
 	TCCR1B = _BV(CS12) | _BV(CS11);
 
 	//! Loads the settings saved in NVRAM
+	//! Also loads the commands to the cached mem.
 	nvram.load();
 	configure_device(&nvram);
 

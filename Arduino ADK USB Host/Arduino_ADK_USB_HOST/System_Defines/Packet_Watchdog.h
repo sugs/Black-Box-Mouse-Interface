@@ -9,7 +9,7 @@
 #define PACKET_WATCHDOG_H_
 
 //! Global packet macros definition
-#define PACKET_TIMEOUT		5000 //!5sec
+#define PACKET_TIMEOUT		1000 //!5sec
 #define PACKET_ALARM_RATE	500
 
 /**
