@@ -38,6 +38,7 @@ class PACKET_PARSER {
 		struct remote_radio_values_t			_radio_configs;
 		struct error_message_t					_error;
 		struct local_command_t					_command;
+		struct remote_number_of_sensors			_num_sensors;
 
 		/**
 		 * Checks the memory space to see if we can allocate

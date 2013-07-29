@@ -35,7 +35,7 @@ struct NVRAM::nv_data_t NVRAM_default PROGMEM = {
 		{'p', 'i', 'n', 'g', ':', SPACE},
 		{'r', 'u', 'n'},
 		{'c', 'o', 'n', 'f', 'i', 'g', 'r'},
-		{'c', 'o', 'n', 'f', 'i', 'g'},
+		{'c', 'o', 'n', 'f', 'i', 'g', SPACE},
 		{'e', 'n', 'a', 'b', 'l', 'e', 'd'},
 		{'c', 'h', 'a', 'n', 'n', 'e', 'l', 's', ':', SPACE},
 		{'n', 'm', 'a', 'p'},
@@ -47,7 +47,8 @@ struct NVRAM::nv_data_t NVRAM_default PROGMEM = {
 		{'p', 'w', 'r', '0', ':', '0'},
 		{'p', 'w', 'r', '0', ':', SPACE},
 		{'w', 'a', 'k', 'e', ':', '0'},
-		{'w', 'a', 'k', 'e', ':', SPACE}
+		{'w', 'a', 'k', 'e', ':', SPACE},
+        {'s', 'e', 'n', 's', 'n', 'u', 'm'}
 
 };
 

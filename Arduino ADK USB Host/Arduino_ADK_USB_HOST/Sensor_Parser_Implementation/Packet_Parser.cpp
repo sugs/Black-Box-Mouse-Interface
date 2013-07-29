@@ -109,6 +109,12 @@ void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
 			size_of_destination_struct = sizeof(_error);
 	        break;
 
+		case SENSOR_NUMBER:
+			destination_pointer = &_num_sensors;
+			size_of_destination_struct = sizeof(_num_sensors);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			break;
+
 		case USB_DEVICE_CMD:
 			destination_pointer = &_command;
 			size_of_destination_struct = sizeof(_command);

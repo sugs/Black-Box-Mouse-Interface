@@ -85,6 +85,7 @@ extern "C" {
 			{SENSOR_ENABLE,    	PACKET_PARSER::parse, 			&packet_parser},
 			{SENSOR_CONFIGS,   	PACKET_PARSER::parse, 			&packet_parser},
 			{SENSOR_DATA,      	PACKET_PARSER::parse, 			&packet_parser},
+			{SENSOR_NUMBER,		PACKET_PARSER::parse,			&packet_parser},
 
 			//! USB local device function calls
 			{USB_DEVICE_CMD,   PACKET_PARSER::parse,			&packet_parser},
@@ -96,6 +97,11 @@ extern "C" {
 
 	//! Define a PACKET_DECODER object
 	PACKET_DECODER packet_decoder(packet_handlers);
+
+	#ifdef DEBUG
+		//! Define a DEBUG_API object if debug.
+		DEBUG_API debug_api;
+	#endif
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~ VARIABLE DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,9 +137,23 @@ extern "C" {
 		return freemem;
 	}
 
-	//TODO
+	/**
+	 * This function is accessible throughout the code repo
+	 * it allows the functions to return and terminate the process
+	 * as an error.
+	 */
 	void error(){
 
+	//! Print if defined
+	#ifdef DEBUG_SERIAL
+		printf("[ERROR]: %d, %s", __LINE__,  __func__ );
+	#endif
+
+	#ifdef DEBUG
+		debug_api.print_error(FATAL, FATAL_ERROR);
+	#endif
+		//! Disconnect the device.
+		usbDeviceDisconnect();
 	}
 
 #endif /* MAIN_DEFINES_H_ */

@@ -116,4 +116,12 @@ void DEBUG_API::set_leds(byte error_code){
 
 }
 
+//! This tests the leds
+void DEBUG_API::test_leds(){
+
+	for(register byte i = 0; i < NUMBER_OF_LEDS; i++){
+		digitalWrite(DBG_LED_1 + i, );
+	}
+}
+
 

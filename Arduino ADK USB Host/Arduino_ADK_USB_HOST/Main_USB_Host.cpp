@@ -59,11 +59,16 @@ void setup(){
 	//! coming in during the setup phase
 	cli();
 
-	// Start Debug Engine.
-	// TODO
+	#ifdef DEBUG
+		//! Start Debug Engine.
+		debug_api.enable_debug();
+	#endif
 
-	// Check LEDs
-	// TODO
+	#ifdef DEBUG_LEDs
+		// Check LEDs
+		debug_api.
+	#endif
+
 
 	//! Reset and reboot device.
 	attachInterrupt(SELECT_BUTTON_2, reset_device, CHANGE);

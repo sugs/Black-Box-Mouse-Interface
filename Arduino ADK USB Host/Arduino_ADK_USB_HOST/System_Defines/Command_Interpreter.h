@@ -28,6 +28,7 @@
 #define PING_ROUTER					0x10 	// Ping Router
 #define PING_SENSOR					0x11 	// Ping sensor
 #define REQUEST_ROUTER_CONFIG		0x12	// Get Router Config
+#define REQUEST_NUMBER_SENSORS		0x13 	// Get the number of sensors
 
 /**
  * This class handles commands sent from the sensor nodes to the

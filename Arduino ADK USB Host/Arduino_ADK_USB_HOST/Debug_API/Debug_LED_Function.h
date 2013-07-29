@@ -166,7 +166,12 @@ class DEBUG_API {
 		 * @return byte - number
 		 */
 		byte get_number_of(String debug_type);
-};
 
+		/**
+		 * Tests the leds.
+		 * Only happens if there are defined.
+		 */
+		void test_leds();
+};
 
 #endif /* DEBUG_LED_FUNCTION_H_ */

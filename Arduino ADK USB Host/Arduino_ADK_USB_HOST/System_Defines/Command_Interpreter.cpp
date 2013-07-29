@@ -135,6 +135,12 @@ void COMMAND_INTERPRETER::_send_command(byte* command){
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+		case REQUEST_NUMBER_SENSORS:
+			_send_check(SENSOR_NUMBER, (byte*)this->nvram_object->nv._request_sensor_number);
+			break;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 		default:	// Other commands don't exist
 			command_send = nullptr;
 			break;

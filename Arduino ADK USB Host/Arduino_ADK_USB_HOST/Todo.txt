@@ -9,9 +9,6 @@
 	Packet_Parser.h / Packet_Parser.cpp
 		- implement	the parsing algorithm for the linked lists.
 		
-	Main_Defines.h
-		- implement error();
-		
 	USB_Device_Implementation.h / USB_Implementation.cpp
 		- finish implementation
 		
