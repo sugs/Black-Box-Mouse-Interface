@@ -119,13 +119,10 @@ void DEBUG_API::set_leds(byte error_code){
 //! This tests the leds
 void DEBUG_API::test_leds(){
 
-	//! turn them on...
 	for(register byte i = 0; i < NUMBER_OF_LEDS; i++){
 		digitalWrite(DBG_LED_1 + i, HIGH);
 	}
-	delay(500); //! delay
-
-	//! Turn them off
+	delay(500);
 	for(register byte i = NUMBER_OF_LEDS; i > NUMBER_OF_LEDS; i--){
 		digitalWrite(DBG_LED_1 + i, HIGH);
 	}

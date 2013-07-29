@@ -66,7 +66,7 @@ void setup(){
 
 	#ifdef DEBUG_LEDs
 		// Check LEDs
-		debug_api.test_leds();
+		debug_api.
 	#endif
 
 
