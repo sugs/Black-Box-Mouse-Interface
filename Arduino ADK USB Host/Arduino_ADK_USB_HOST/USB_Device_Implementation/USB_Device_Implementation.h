@@ -8,7 +8,7 @@
 #ifndef USB_DEVICE_IMPLEMENTATION_H_
 #define USB_DEVICE_IMPLEMENTATION_H_
 
-#include "../System_Defines/Main_Defines.h"
+#include "../System_Defines/Includes.h"
 
 /**
  	// GENERAL INFO ABOUT USB DEVICE FUNCTIONS
@@ -192,9 +192,12 @@
 
 class USB_DEVICE {
 
+	private:
+		void _setup_rf_network();
+
 	public:
 
-		void run();
+		void run_usb();
 };
 
 

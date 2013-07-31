@@ -8,8 +8,7 @@
 #ifndef USB_REPORTS_H_
 #define USB_REPORTS_H_
 
-#include "Main_Defines.h"
-#include "avr/pgmspace.h"
+#include "../System_Defines/Includes.h"
 
 //! Mouse USB report chosen
 #ifdef MOUSE_REPORT

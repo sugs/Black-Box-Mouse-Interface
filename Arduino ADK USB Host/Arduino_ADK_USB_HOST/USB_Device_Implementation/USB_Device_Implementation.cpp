@@ -7,8 +7,23 @@
 
 #include "USB_Device_Implementation.h"
 
-void USB_DEVICE::run(){
+void USB_DEVICE::run_usb(){
 
+	//! Sets up the rf link
+	//_setup_rf_link();
+
+	/**
+	 * Once the state machine gets here, it polls for data from the router
+	 * and parses it into the structures.
+	 */
+
+	for(;;){
+
+	}
+}
+
+//! Setup rf link
+void USB_DEVICE::_setup_rf_network(){
 	/**
 	 * Start the state machine and push the state to start.
 	 *
@@ -123,7 +138,7 @@ void USB_DEVICE::run(){
 	 * 		4. request_sensor_channel_info();
 	 * 			-> receive_channel_info();
 	 */
-	for(byte i = 1; i <= packet_parser._nmap.number_sensors; i ++){
+	for(byte i = 1; i <= packet_parser._num_sensors.number_of_sensors; i ++){
 
 		byte command[] = {REQUEST_SENSOR_CONFIG, i};
 		command_interpreter.send_cmd(USB_DEVICE_CMD, (void*)command);
@@ -139,13 +154,4 @@ void USB_DEVICE::run(){
 
 	//...
 
-	/**
-	 * Once the state machine gets here, it polls for data from the router
-	 * and parses it into the structures.
-	 */
-
-	for(;;){
-
-	}
 }
-

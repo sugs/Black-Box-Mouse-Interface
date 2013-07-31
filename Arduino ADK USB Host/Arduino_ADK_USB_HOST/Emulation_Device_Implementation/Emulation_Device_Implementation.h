@@ -5,10 +5,7 @@
  *      Author: francispapineau
  */
 
-#include "../System_Defines/Main_Defines.h"
-#include "../USB_Implementation/USB_Reports.h"
-#include "../USB_Implementation/USB_Defines.h"
-
+#include "../System_Defines/Includes.h"
 
 #define EMPTY	0
 

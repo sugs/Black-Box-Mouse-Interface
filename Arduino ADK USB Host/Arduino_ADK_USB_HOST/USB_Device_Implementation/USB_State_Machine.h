@@ -5,8 +5,7 @@
  *      Author: fjpapin
  */
 
-#ifndef USB_STATE_MACHINE_H_
-#define USB_STATE_MACHINE_H_
+#include "../System_Defines/Includes.h"
 
 //! USB State machine
 #define LOCAL_RESET							-1

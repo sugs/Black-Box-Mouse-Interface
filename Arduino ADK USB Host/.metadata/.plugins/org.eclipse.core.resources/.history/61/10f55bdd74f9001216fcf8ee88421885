@@ -1,0 +1,15 @@
+
+	Protocol.h
+		- change the linked lists to array of structs. (dynamic)
+		
+	Packet_Parser.h / Packet_Parser.cpp
+		- implement	the parsing algorithm for the linked lists.
+		
+	USB_Device_Implementation.h / USB_Implementation.cpp
+		- finish implementation
+		
+	Hardware_Defines.h
+		- Port Maps
+		
+	ALL
+		- Review.

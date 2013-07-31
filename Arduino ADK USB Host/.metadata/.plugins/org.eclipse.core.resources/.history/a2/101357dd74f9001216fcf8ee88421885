@@ -1,0 +1,184 @@
+/*
+ * Sensor_PACKET_PARSER.c
+ *
+ *  Created on: Jul 13, 2013
+ *      Author: francispapineau
+ */
+
+#include "Packet_Parser.h"
+
+//! Parse the structures.
+static void PACKET_PARSER::parse(void *arg, byte packet_id, byte packet_ver, void *buf){
+
+	//! Check if there is space left
+	_check_memory_space();
+
+	//! Check if the string is ok to process.
+	_check_packet_integrity((String*) buf);
+
+	//! Process String
+	((PACKET_PARSER*)arg)->_parse(packet_id, packet_ver, buf);
+}
+
+//! Check the memory space
+void PACKET_PARSER::_check_memory_space(){
+
+    //! Check memory integrity
+    if(memory_check() <= EMPTY)
+	#ifdef DEBUG_LEDs
+    	debug_api.set_leds(MEMORY_ERROR);
+	#endif
+	error((void*)__LINE__, (void*)__func__);
+}
+
+//! Check packet integrity
+bool PACKET_PARSER::_check_packet_integrity(String* packet){
+
+	//! Checks length, Header, Tail
+	if(packet->len > EMPTY)
+		if(packet[2] > EMPTY)
+			if(packet[0] == '+')
+				if(packet[packet->len - 1] == '*')
+					return true;
+
+	return false;
+}
+
+//! Checks the ack signal
+void PACKET_PARSER::_check_ack(){
+	if(this->_ack.ack){
+		return;
+	} else {
+		#ifdef DEBUG_LEDs
+			debug_api.set_leds(REBOOT_ERROR);
+		#endif
+		error((void*)__LINE__, (void*)__func__);
+	}
+}
+
+//! Checks the heartbeat signal
+void PACKET_PARSER::_check_heartbeat(){
+
+}
+
+//! Checks the router status.
+void PACKET_PARSER::_check_router_status(){
+
+}
+
+//! Parse the packet
+void PACKET_PARSER::_parse(byte packet_id, byte packet_ver, void *buf){
+
+	String* buffer = (String*) buf;
+	void* destination_pointer;
+	size_t size_of_destination_struct;
+
+	//! Grabs the header structure from the String.
+	String header = buffer->substring(1, 13);
+
+	//! Assigns the new construct
+	memcpy(&packet_header_t, buffer, sizeof(packet_header_t));
+
+	switch (packet_id) {
+
+		case ROUTER_ACK:
+			destination_pointer = &_ack;
+			size_of_destination_struct = sizeof(_ack);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			_check_ack();
+			return;
+
+		case ROUTER_HEARTBEAT:
+			destination_pointer = &_heartbeat;
+			size_of_destination_struct = sizeof(_heartbeat);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			_check_heartbeat();
+			return;
+
+		case ROUTER_STATUS:
+			destination_pointer = &_status;
+			size_of_destination_struct = sizeof(_status);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			_check_router_status();
+			return;
+
+			// TODO
+		case ROUTER_NMAP:
+			destination_pointer = &_nmap;
+			size_of_destination_struct = sizeof(_nmap);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			return;
+
+		case ROUTER_CONFIG:
+			destination_pointer = &_radio_configs;
+			size_of_destination_struct = sizeof(_radio_configs);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			return;
+
+		case SENSOR_ENABLE:
+			destination_pointer = &_en_sensors;
+			size_of_destination_struct = sizeof(_en_sensors);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			return;
+
+			// TODO
+		case SENSOR_CONFIGS:
+			destination_pointer = &_configs;
+			size_of_destination_struct = sizeof(_configs);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+
+	        return;
+
+	        // TODO
+		case SENSOR_DATA:
+			destination_pointer = &_data;
+			size_of_destination_struct = sizeof(_data);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+	        return;
+
+		case ROUTER_DEBUG:
+			destination_pointer = &_debug;
+			size_of_destination_struct = sizeof(_debug);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+
+			#ifdef DEBUG
+				char* debug_info;
+				sprintf(debug_info, "acks: %d \npckts: %d\nrx_count: %d\nsnt_rqs: %d\ntx_count: %d",
+					_debug.router_acks_sent_counter, _debug.router_packet_counter,
+					_debug.router_rx_count, _debug.router_sent_request_counter,
+					_debug.router_tx_count);
+				DEBUG_SERIAL.println(debug_info);
+			#endif
+	        return;
+
+		case ERROR_MSG:
+			destination_pointer = &_error;
+			size_of_destination_struct = sizeof(_error);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+
+			#ifdef DEBUG
+				char* debug_info;
+				sprintf(debug_info, "[%d] %d -> %d", _error.error_code,
+					_error.sensor_address, _error.sensor_id);
+				DEBUG_SERIAL.println(debug_info);
+			#endif
+	        return;
+
+		case SENSOR_NUMBER:
+			destination_pointer = &_num_sensors;
+			size_of_destination_struct = sizeof(_num_sensors);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			return;
+
+		case USB_DEVICE_CMD:
+			destination_pointer = &_command;
+			size_of_destination_struct = sizeof(_command);
+			memcpy(destination_pointer, buf, size_of_destination_struct);
+			command_interpreter.send_cmd(_command.command_id, (void*)_command.target_address);
+			return;
+
+	    default:
+	    	destination_pointer = NULL;
+	    	return;
+	}
+}

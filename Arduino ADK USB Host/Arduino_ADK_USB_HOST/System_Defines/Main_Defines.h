@@ -5,21 +5,9 @@
  *      Author: francispapineau
  */
 
-#ifndef MAIN_DEFINES_H_
-#define MAIN_DEFINES_H_
-
-#include <Arduino.h>
-#include <EEPROM/EEPROM.h>
-
-#include "Hardware_Defines.h"
-
-#include "../Emulation_Device_Implementation/Emulation_Device_Implementation.h"
-#include "../System_Defines/Command_Interpreter.h"
+#include "Includes.h"
 #include "../Sensor_Parser_Implementation/Network_Protocol.h"
-#include "../Sensor_Parser_Implementation/Packet_Handler.h"
-#include "../System_Defines/Packet_Watchdog.h"
 #include "../Debug_API/Debug_LED_Function.h"
-#include "../USB_HID_API/usbconfig.h"
 #include "../USB_HID_API/usbdrv.h"
 
 /**
@@ -39,12 +27,16 @@ extern "C" {
  //#define JOYSTICK_REPORT					//! Only send the joystick USB report
  //#define MOUSE_JOYSTICK_REPORT			//! Send both joystick and mouse USb reports
 
+//! Environment wide defines.
+#define MAX_ROUTER_ERRORS	10
+#define MIN_BATT_LEVEL		100
+#define GOOD				1
 #define FIVE_SECONDS		5000
 #define EMPTY				0
 #define MAX_WARNINGS 		10
 #define MAX_INFO			INFINITY
 #define MAX_DEBUG			INFINITY
-#define MAX_MEMORY			1
+#define MAX_MEMORY			10
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~ OBJECT DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +61,7 @@ extern "C" {
 	USB_STATE_MACHINE usb_state_machine;
 
 	//! Define a packet decoder function table.
-	struct packet_handler packet_handlers[] = {
+	struct packet_handler packet_handlers[13] = {
 
 			//{/*PACKET ID*/, /*TARGET FUNCTION*/, /*OBJECT ADDRESS*/},
 
@@ -98,9 +90,10 @@ extern "C" {
 	//! Define a PACKET_DECODER object
 	PACKET_DECODER packet_decoder(packet_handlers);
 
-	#ifdef DEBUG
+	#ifdef DEBUG_LEDs
 		//! Define a DEBUG_API object if debug.
 		DEBUG_API debug_api;
+		error_type_counts_t error_type_counts;
 	#endif
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,18 +135,22 @@ extern "C" {
 	 * it allows the functions to return and terminate the process
 	 * as an error.
 	 */
-	void error(){
+	void error(void* line, void* function){
 
 	//! Print if defined
 	#ifdef DEBUG_SERIAL
-		printf("[ERROR]: %d, %s", __LINE__,  __func__ );
+		printf("[ERROR]: %d, %s", (int)line,  (char*)function);
 	#endif
-
-	#ifdef DEBUG
+	#ifdef DEBUG_LEDs
 		debug_api.print_error(FATAL, FATAL_ERROR);
+		debug_api.set_leds(FATAL_ERROR);
 	#endif
 		//! Disconnect the device.
 		usbDeviceDisconnect();
-	}
 
-#endif /* MAIN_DEFINES_H_ */
+	#ifdef SELECT_BUTTON_2
+		//! Infinite loop hangs the system
+		for(;;);
+	#endif
+		reset_device();
+	}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Arduino_ADK_USB_HOST/USB_Implementation/usbconfig.h&apos;" deleteContents="false" description="Delete resource &apos;Arduino_ADK_USB_HOST/USB_Implementation/usbconfig.h&apos;" element1="/Arduino_ADK_USB_HOST/USB_Implementation/usbconfig.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1375234360958"/>
+</session>

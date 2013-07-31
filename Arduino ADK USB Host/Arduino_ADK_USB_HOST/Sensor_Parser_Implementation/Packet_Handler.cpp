@@ -6,6 +6,7 @@
  */
 
 #include "Packet_Handler.h"
+#include "../System_Defines/Packet_Watchdog.h"
 #include "../System_Defines/Main_Defines.h"
 
 /**
@@ -37,7 +38,7 @@ void PACKET_DECODER::poll(void){
 
 	byte available;
 
-	available = RF_SERIAL.available(void);
+	available = RF_SERIAL.available();
 	if(EMPTY == available){
 		//check timeout watchdog and if over reset.
 		if((millis() - _last_received) > PACKET_TIMEOUT)
@@ -45,10 +46,14 @@ void PACKET_DECODER::poll(void){
 	} else {
 		// new data was discovered
 		while (available--){
-			_move_state((byte)RF_SERIAL.read(void));
+			_move_state((byte)RF_SERIAL.read());
 			_last_received = millis();
 		}
 	}
+	#ifdef DEBUG
+		//! Bang for every packet received.
+		DEBUG_SERIAL.print("!");
+	#endif
 }
 
 /**

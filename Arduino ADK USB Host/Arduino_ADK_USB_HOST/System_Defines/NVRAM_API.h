@@ -5,14 +5,12 @@
  *      Author: fjpapin
  */
 
-#ifndef NVRAM_API_H_
-#define NVRAM_API_H_
+#include "../System_Defines/Includes.h"
 
 /**
  * This class handles the NVRAM accesses and storage
  * structure.
  */
-
 class NVRAM {
 
 	private:
@@ -97,12 +95,10 @@ class NVRAM {
 			byte _wakeup_router[6];
 			byte _wakeup_sensor[6];
 			byte _request_sensor_number[7];
+			byte _request_sensor_channels[7];
 
 		};
 
 		//! The exported structure definition.
 		struct nv_data_t nv;
 };
-
-
-#endif /* NVRAM_API_H_ */

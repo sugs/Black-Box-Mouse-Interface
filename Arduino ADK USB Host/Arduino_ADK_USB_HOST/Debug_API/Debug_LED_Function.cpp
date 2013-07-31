@@ -35,7 +35,9 @@ void DEBUG_API::print_error(String error_type, byte error_code, byte error_led_c
 		char temp_string[sizeof(string) + 11];
 			sprintf(temp_string, string->c_str(),
 					error_type, error_code, error_led_code);
+#ifdef DEBUG
 			DEBUG_PRINTLN(temp_string);
+#endif
 			set_leds(error_code);
 	}
 }
@@ -49,7 +51,10 @@ void DEBUG_API::print_error(byte error_index, String* string){
 					DEBUG_STRINGS[error_index],
 					DEBUG_CODES[error_index],
 					DEBUG_LED_CODES[error_index]);
+#ifdef DEBUG
 			DEBUG_PRINTLN(temp_string);
+#endif
+
 	}
 	set_leds(DEBUG_CODES[error_index]);
 

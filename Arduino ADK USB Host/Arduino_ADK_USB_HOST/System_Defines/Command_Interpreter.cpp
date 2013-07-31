@@ -86,7 +86,7 @@ void COMMAND_INTERPRETER::_send_command(byte* command){
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-		case ROUTER_STATUS: 	// Router status
+		case REQUEST_ROUTER_STATUS: 	// Router status
 			_send_check(ROUTER_STATUS, (byte*)this->nvram_object->nv._request_router_status);
 			break;
 
@@ -141,6 +141,14 @@ void COMMAND_INTERPRETER::_send_command(byte* command){
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+		case REQUEST_NUMBER_CHANNELS:
+			command_send = (byte*)this->nvram_object->nv._request_sensor_channels;
+			command_send[6] = command[1];
+			_send_check(SENSOR_CHANNELS, command_send);
+			break;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 		default:	// Other commands don't exist
 			command_send = nullptr;
 			break;
@@ -164,6 +172,9 @@ void COMMAND_INTERPRETER::_send_check(byte receive_packet_id, byte* command){
 		if(packet_decoder._packet_id == receive_packet_id)
 			return;
 		else if ((millis() - packet_decoder._last_received) > PACKET_TIMEOUT)
-			error();
+		#ifdef DEBUG_LEDs
+			debug_api.set_leds(FATAL_ERROR);
+		#endif
+			error((void*)__LINE__, (void*)__func__);
 	}
 }

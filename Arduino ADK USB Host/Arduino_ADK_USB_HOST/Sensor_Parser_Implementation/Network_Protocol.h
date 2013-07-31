@@ -8,7 +8,6 @@
 
 //! Internal State Machine.
 
-
 // ENABLES THE COMS DEBUG MESSAGES OVER SERIAL2;
 #define ROUTER_COMS_DEBUG
 
@@ -22,6 +21,7 @@
 #define SENSOR_CONFIGS			0x07
 #define SENSOR_DATA				0x08
 #define SENSOR_NUMBER			0x09
+#define SENSOR_CHANNELS			0x0A
 
 //! Command Descriptors
 #define USB_DEVICE_CMD			0x31
@@ -33,6 +33,10 @@
 //! Internal packet_id values
 #define PACKET_ANY				0xFE
 #define PACKET_NULL				0xFF
+
+//! Router modes
+#define ERROR_MODE				0xFF
+#define PWR_ERROR_MODE			0xFE
 
 // *************************************************
 // *************** REMOTE DOMAIN *******************
@@ -59,11 +63,11 @@ struct router_ack_info_t {
 
 // *************************************************
 //! The heartbeat sent to the ground station
+//! THIS OCCURS EVERY 2 SECS
 struct router_heartbeat_t {
 
 	byte router_mode;
 	byte battery_voltage;
-	word command_index;
 };
 
 // *************************************************
@@ -71,7 +75,6 @@ struct router_heartbeat_t {
 struct router_status_info_t {
 
 	// general status
-	byte system_status;
 	byte power_state;
 	byte router_mode;
 
@@ -99,21 +102,12 @@ struct router_debug_status_t {
 #endif
 // *************************************************
 //! We need to make this for each sensor
-struct router_nmap_data_t {
+//! Network map object
+struct router_nmap_info_t {
 
 	byte sensor_id;
 	byte sensor_address;
-	router_nmap_data_t* next_node;
-};
 
-//! Network map linked list
-struct router_nmap_info_t {
-
-	//! Remote sensor information
-	byte number_sensors;
-
-	//! Implement a list for each sensor node;
-	struct router_nmap_data_t sensor_node;
 };
 
 // *************************************************
@@ -132,50 +126,33 @@ struct error_message_t {
 };
 
 // *************************************************
-//! Individual channel configuration.
-//! Needs to cycle through each channel
-struct channels_config {
-
-	byte channel_id;
-	byte data_type; //! 0 = Analog, 1 = Digital
-	struct channels_config* next;
-};
-
-//! The Sensor config structure.
-//! Needs to cycle through each sensor
-struct sensor_config {
-
-	byte sensor_id;
-	byte packet_id;
-	byte sensor_speed;
-	byte sensor_data_type; //! 0 = int, 2 = float, 3 = double
-	byte channels_config;
-	struct channel_config* next_node;
-};
-
 //! This is the top level structure
-struct remote_sensor_configuration_t {
+class sensor_configs_t {
 
-	byte number_sensors;
-	struct sensor_config sensor_node;
-	struct remote_sensor_configuration_t* next_config;
+	//! For each sensor
+		byte sensor_id;
+		byte sensor_speed;
+		byte sensor_data_type; //! 0 = int, 2 = float, 3 = double
+
+		//! Individual channel configuration.
+		//! Needs to cycle through each channel
+		class channels_t {
+			byte channel_id;
+			byte data_type; //! 0 = Analog, 1 = Digital
+		}channel_configs;
 };
 
 // *************************************************
-//! This is the structure containing each data point
-//! from each channel.
-struct channel_data {
-	byte channel_id;
-	word channel_data;
-	struct channel_data* next;
-};
-
 //! The container for each sensor input.
-struct remote_sensor_data_t {
+class remote_sensor_data_t {
 
 	byte sensor_id;
-	byte channels;
-	struct channel_data sensor_input;
+	class channels_t {
+		//! This is the structure containing each data point
+		//! from each channel.
+		byte channel_id;
+		word channel_data;
+	}channels;
 };
 
 // *************************************************
@@ -191,38 +168,21 @@ struct number_of_sensors_t {
 };
 
 // *************************************************
+//! This is the ack message for the number of channels for a sensor.
+struct number_of_channels_t {
+	byte sensor_id;
+	byte number_of_channels;
+};
+
+
+// *************************************************
 // ************* LOCAL DOMAIN **********************
 // *************************************************
 
 //! This executes a command on the local system.
-struct local_command_t{
+struct local_command_t {
 	byte command_id;
 	byte target_address;
-
-};
-
-// *************************************************
-//! This union contains all possible messages from the router
-//! device and their descriptions.
-union packet_structure {
-
-	struct packet_header_t 					header;
-	struct router_ack_t						ack;
-	struct router_heartbeat_t 				heartbeat;
-	struct router_status_info_t 			status;
-	struct router_debug_status_t 			debug;
-	struct router_nmap_info_t 				nmap;
-	struct router_sensor_enable_report_t 	en_sensors;
-	struct remote_sensor_configuration_t 	configs;
-	struct remote_sensor_data_t 			data;
-	struct remote_radio_values_t			radio_configs;
-	struct local_set_t						set;
-	struct local_get_t						get;
-	struct local_command_t					command;
-
-	struct number_of_sensors_t				num_sensors;
-
-	struct error_message_t	 				error;
 
 };
 

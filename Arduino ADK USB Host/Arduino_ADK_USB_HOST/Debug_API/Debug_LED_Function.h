@@ -5,10 +5,7 @@
  *      Author: francispapineau
  */
 
-#ifndef DEBUG_LED_FUNCTION_H_
-#define DEBUG_LED_FUNCTION_H_
-
-#include "../System_Defines/Main_Defines.h"
+#include "../System_Defines/Includes.h"
 
 //! Debug indexes
 #define FATAL			1
@@ -115,11 +112,6 @@ class DEBUG_API {
 		bool reboot_wd;
 
 		/**
-		 * The default constructor
-		 */
-		DEBUG_API();
-
-		/**
 		 * This reboots the device given a reason.
 		 * @param cause - the debug code
 		 */
@@ -135,13 +127,12 @@ class DEBUG_API {
 		void print_error(String error_type, byte error_code,
 				byte error_led_code, String* string);
 
-		/**
-		 * Sets the leds based on the error_message index passed.
-		 * @param error_index - byte
-		 */
-		void set_leds(byte error_index);
-
 	public:
+
+		/**
+		 * The default constructor
+		 */
+		DEBUG_API();
 
 		/**
 		 * The print error externally from the api.
@@ -172,6 +163,10 @@ class DEBUG_API {
 		 * Only happens if there are defined.
 		 */
 		void test_leds();
-};
 
-#endif /* DEBUG_LED_FUNCTION_H_ */
+		/**
+		 * Sets the leds based on the error_message index passed.
+		 * @param error_index - byte
+		 */
+		void set_leds(byte error_index);
+};

@@ -8,8 +8,7 @@
 #ifndef SENSOR_PARSER_H_
 #define SENSOR_PARSER_H_
 
-#include "Network_Protocol.h"
-#include "../System_Defines/Main_Defines.h"
+#include "../System_Defines/Includes.h"
 
 #define MAX_TOKENS		40
 
@@ -27,24 +26,72 @@ class PACKET_PARSER {
 	private:
 
 		//! The structures needed to parse info into.
-		struct router_ack_t						_ack;
+		struct packet_header_t					_header;
+		struct router_ack_info_t				_ack;
 		struct router_heartbeat_t 				_heartbeat;
 		struct router_status_info_t 			_status;
 		struct router_debug_status_t 			_debug;
-		struct router_nmap_info_t 				_nmap;
 		struct router_sensor_enable_report_t 	_en_sensors;
-		struct remote_sensor_configuration_t 	_configs;
-		struct remote_sensor_data_t 			_data;
 		struct remote_radio_values_t			_radio_configs;
 		struct error_message_t					_error;
 		struct local_command_t					_command;
-		struct remote_number_of_sensors			_num_sensors;
+		struct number_of_sensors_t				_num_sensors;
+		struct number_of_channels_t				_num_channels;
+
+		/**
+		 * These will get reallocated to how many sensors there are in
+		 * the sensor network.
+		 */
+		sensor_configs_t			 			_configs[1];
+		router_nmap_info_t						_nmap	[1];
+		remote_sensor_data_t 					_data	[1];
+
+		/**
+		 * Gets the sensor data.
+		 * @param buf - void*
+		 */
+		void _get_sensor_data(void* buf);
+
+		/**
+		 * Gets the sensor configs based on the buf passed.
+		 * @param buf - void*
+		 */
+		void _get_sensor_configs(void* buf);
+
+		/**
+		 * Gets the nmap from the passed buffer.
+		 * @param buf - void*
+		 */
+		void _get_nmap(void* buf);
+
+		/**
+		 * Checks the packet header as any packet comes in.
+		 */
+		void _check_packet_header();
+
+		/**
+		 * Checks the ack signal and returns if true.
+		 * If false, the router reloads as there might be an error.
+		 */
+		void _check_ack();
+
+		/**
+		 * Checks the heartbeat signals and sees if any error should be
+		 * fired off.
+		 */
+		void _check_heartbeat();
+
+		/**
+		 * Checks the router status and sees if any errors should
+		 * be fired off.
+		 */
+		void _check_router_status();
 
 		/**
 		 * Checks the memory space to see if we can allocate
 		 * more structures.
 		 */
-		void _check_memory_space();
+		void _check_memory_space(size_t mem_space = MAX_MEMORY);
 
 		/**
 		 * Checks the packet integrity
@@ -53,6 +100,14 @@ class PACKET_PARSER {
 		 * @return bool
 		 */
 		bool _check_packet_integrity(String* packet);
+
+		/**
+		 * Allocates the memory... saves mem
+		 * @param dest_pointer - void*
+		 * @param size - size_t
+		 * @param buf - void *
+		 */
+		void _alloc_mem(void* dest_pointer, size_t size, void* buff);
 
 		/**
 		 * Parses a packet

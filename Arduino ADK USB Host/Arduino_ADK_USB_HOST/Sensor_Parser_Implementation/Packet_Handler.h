@@ -8,7 +8,7 @@
 #ifndef PACKET_HANDLER_H_
 #define PACKET_HANDLER_H_
 
-#include "Network_Protocol.h"
+#include "../System_Defines/Includes.h"
 
 //#define PACKET_TIMEOUT				100 //100ms timeout
 
@@ -59,7 +59,7 @@ class PACKET_DECODER {
 		union {
 			byte bytes[1];
 			struct packet_header_t header;
-			union packet_structure packet;
+			//union packet_structure packet;
 		} _buf;
 
 		/**

@@ -1,0 +1,47 @@
+/*
+ * Includes.h
+ *
+ *  Created on: Jul 30, 2013
+ *      Author: francispapineau
+ */
+
+#ifndef INCLUDES_H_
+#define INCLUDES_H_
+
+#include <Arduino.h>
+#include <EEPROM/EEPROM.h>
+#include <HardwareSerial.h>
+
+#include "../Emulation_Device_Implementation/Emulation_Device_Implementation.h"
+#include "../System_Defines/Command_Interpreter.h"
+#include "../Sensor_Parser_Implementation/Network_Protocol.h"
+#include "../Sensor_Parser_Implementation/Packet_Handler.h"
+#include "../System_Defines/Packet_Watchdog.h"
+#include "../Debug_API/Debug_LED_Function.h"
+
+
+#include "Hardware_Defines.h"
+#include "NVRAM_API.h"
+
+//USB Implementation
+#include "../USB_Implementation/USB_Reports.h"
+#include "../USB_Implementation/USB_Defines.h"
+
+//USB HID API
+#include "../USB_HID_API/usbconfig.h"
+#include "../USB_HID_API/usbdrv.h"
+
+//USB Device Implementation
+#include "../USB_Device_Implementation/USB_Device_Implementation.h"
+#include "../USB_Device_Implementation/USB_State_Machine.h"
+
+//System Defines
+#include "../System_Defines/Command_Interpreter.h"
+#include "../System_Defines/Hardware_Defines.h"
+#include "../System_Defines/Main_Defines.h"
+#include "../System_Defines/NVRAM_API.h"
+#include "../System_Defines/Packet_Watchdog.h"
+
+
+
+#endif /* INCLUDES_H_ */

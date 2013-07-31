@@ -1,4 +1,4 @@
-#include <Arduino.h>
+
 #include "../System_Defines/Main_Defines.h"
 
 void setup();
@@ -12,9 +12,13 @@ void init();
  */
 void configure_device(NVRAM* nvram_object){
 
-	SERIAL.begin(nvram_object->nv.serial1_speed);
+	SERIAL_OUTPUT.begin(nvram_object->nv.serial1_speed);
 	RF_SERIAL.begin(nvram_object->nv.serial2_speed);
-	DEBUG_SERIAL.begin(nvram_object->nv.serial3_speed);
+
+	#ifdef DEBUG
+		DEBUG_SERIAL.begin(nvram_object->nv.serial3_speed);
+		DEBUG_SERIAL.println("BOOT SERIAL");
+	#endif
 
 	//! Buttons setup
 	pinMode(nvram_object->nv.button_1,
@@ -35,6 +39,9 @@ void configure_device(NVRAM* nvram_object){
 	//! Set RF data.
 	base_station_address = nvram_object->nv.node_address;
 	base_station_mode = nvram_object->nv.device_mode;
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("NVRAM READ");
+	#endif
 }
 
 /**
@@ -47,6 +54,9 @@ int main(void){
 	init();
 	setup();
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("ENTERING RUN LOOP");
+	#endif
 	for (;;) {
 		loop();
 	}
@@ -59,19 +69,36 @@ void setup(){
 	//! coming in during the setup phase
 	cli();
 
+	//! Loads the settings saved in NVRAM
+	//! Also loads the commands to the cached mem.
+	nvram.load();
+	configure_device(&nvram);
+
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("STARTING DEBUG ENGINE");
+	#endif
 	#ifdef DEBUG
 		//! Start Debug Engine.
 		debug_api.enable_debug();
 	#endif
 
 	#ifdef DEBUG_LEDs
-		// Check LEDs
+		//! Check LEDs
 		debug_api.test_leds();
+		debug_api.set_leds(CLEAR_ERRORS);
 	#endif
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("STARTED DEBUG ENGINE");
+	#endif
 
 	//! Reset and reboot device.
 	attachInterrupt(SELECT_BUTTON_2, reset_device, CHANGE);
+
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("INTERRUPT ATTACHED TO BUTTON 2");
+		DEBUG_SERIAL.println("ENTERING SELECT LOOP");
+	#endif
 
 	//! Wait 5sec to check the pin.
 	delay(FIVE_SECONDS);
@@ -87,41 +114,62 @@ void setup(){
 		generic_pointer = &emulation_device;
 		emulation_chosen = true;
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("EMULATION CHOSEN");
+	#endif
+
 	}else if(digitalRead(SELECT_BUTTON_1) == LOW){
 
-		//define the generic pointer (USB HOST DEVICE).
-		//this is where we setup the object pointer.
+		//! Define the generic pointer (USB HOST DEVICE).
+		//! This is where we setup the object pointer.
 
 		USB_DEVICE usb_host_device;
 		generic_pointer = &usb_host_device;
 		usb_device_chosen = true;
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("USB DEVICE CHOSEN");
+	#endif
+
 	}else{
 
 		//! If none of the above, reset the device.
-		reset_device();
+		debug_api.set_leds(REBOOT_ERROR);
+		error((void*)__LINE__, (void*)__func__);
 	}
 
 	//! Timer is initialized to keep track of the CPU idle time.
 	TCCR1B = _BV(CS12) | _BV(CS11);
 
-	//! Loads the settings saved in NVRAM
-	//! Also loads the commands to the cached mem.
-	nvram.load();
-	configure_device(&nvram);
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("USB INIT STATE");
+	#endif
 
 	//! USB Initialize the buffers and structures pertaining to the
 	//! USB device class.
 	usbInit();
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("USB ENUM STATE");
+	#endif
 	//! This allows the USB device to re-enumerate in the PC OS.
     usbDeviceDisconnect();
     delay(250);
     usbDeviceConnect();
 
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("MEM CHECK");
+	#endif
     //! Check memory integrity
     if(memory_check() <= EMPTY)
-    	reset_device();
+	#ifdef DEBUG_LEDs
+    	debug_api.set_leds(MEMORY_ERROR);
+	#endif
+		error((void*)__LINE__, (void*)__func__);
+
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("RESUME INTERRUPTS");
+	#endif
 
 	//! Resume interrupt handling
 	sei();
@@ -132,14 +180,24 @@ void loop(){
 	//! If the emulation device is chosen.
 	//! Start the emulation process.
 	if(emulation_chosen){
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("STARTING EMULATION ENGINE");
+	#endif
 		//! Cast to the emulation device pointer.
 		((EMULATION_DEVICE*) generic_pointer)->emulate_usb();
 
 	}else if(usb_device_chosen){
+	#ifdef DEBUG
+		DEBUG_SERIAL.println("STARTING USB DEVICE ENGINE");
+	#endif
 		//! Cast to the USB device pointer
-		((USB_DEVICE*) generic_pointer)->run();
+		((USB_DEVICE*) generic_pointer)->run_usb();
 
 	}else{ //! Something went wrong.
-		reset_device();
+	#ifdef DEBUG_LEDs
+		debug_api.set_leds(FATAL_ERROR);
+	#endif
+		error((void*)__LINE__, (void*)__func__);
 	}
 }
+
