@@ -1,7 +1,15 @@
+Refactoring.savealleditors=true
 content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
 eclipse.preferences.version=1
 org.eclipse.cdt.ui.add_comments=true
+org.eclipse.cdt.ui.cview.groupincludes=true
+org.eclipse.cdt.ui.cview.groupmacros=true
+org.eclipse.cdt.ui.outline.groupincludes=true
+org.eclipse.cdt.ui.outline.groupmacros=true
+org.eclipse.cdt.ui.outline.groupmembers=true
+org.eclipse.cdt.ui.outline.groupnamespaces=true
 org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+properties.sd.page.enable=true
 sourceHoverBackgroundColor=250,251,197
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true

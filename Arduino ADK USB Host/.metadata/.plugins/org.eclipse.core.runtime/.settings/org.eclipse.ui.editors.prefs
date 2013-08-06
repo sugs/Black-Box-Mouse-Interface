@@ -1,2 +1,7 @@
+additionIndicationColor=16,214,8
+changeIndicationColor=58,142,255
+deletionIndicationColor=255,31,48
 eclipse.preferences.version=1
+lineNumberRuler=true
 overviewRuler_migration=migrated_3.1
+spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine

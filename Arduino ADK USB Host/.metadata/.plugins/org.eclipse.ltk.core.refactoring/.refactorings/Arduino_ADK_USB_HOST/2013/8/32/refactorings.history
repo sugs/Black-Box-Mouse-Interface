@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Arduino_ADK_USB_HOST/USB_Implementation/USB_Defines.h&apos; to &apos;USB_Functions.h&apos;" description="Rename resource &apos;USB_Defines.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="USB_Implementation/USB_Defines.h" name="USB_Functions.h" stamp="1375750496891" updateReferences="true"/>
+</session>

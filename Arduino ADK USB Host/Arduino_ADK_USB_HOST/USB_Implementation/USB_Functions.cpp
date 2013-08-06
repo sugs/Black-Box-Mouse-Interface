@@ -5,8 +5,8 @@
  *      Author: fjpapin
  */
 
+#include "USB_Functions.h"
 #include "../System_Defines/Main_Defines.h"
-#include "USB_Defines.h"
 
 /**
  * This function is used to setup the USB functionality. Its sets up
@@ -74,7 +74,7 @@ usbMsgLen_t usbFunctionSetup(byte data[8]){
  * @param data - USB Report type
  * @param len - sizeof(USB Report)
  */
-void usbSendHidReport(uchar* data, uchar len){
+void usbSendHidReport(byte* data, uchar len){
 	while(1){
 		usbPoll();
 		if (usbInterruptIsReady()){

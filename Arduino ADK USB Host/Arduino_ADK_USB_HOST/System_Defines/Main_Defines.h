@@ -5,10 +5,9 @@
  *      Author: francispapineau
  */
 
-#include "Includes.h"
-#include "../Sensor_Parser_Implementation/Network_Protocol.h"
-#include "../Debug_API/Debug_LED_Function.h"
-#include "../USB_HID_API/usbdrv.h"
+#include "System_Defines/Includes.h"
+#include "Sensor_Parser_Implementation/Network_Protocol.h"
+
 
 /**
  * This file contains all of the device DEFINE macros, and
@@ -27,12 +26,18 @@ extern "C" {
  //#define JOYSTICK_REPORT					//! Only send the joystick USB report
  //#define MOUSE_JOYSTICK_REPORT			//! Send both joystick and mouse USb reports
 
+//! This determines the sensor data maps
+#define WATCH_ONLY
+//#define WATCH_SENSOR_EMG
+//#define WATCH_SENSOR_OTHER
+
 //! Environment wide defines.
 #define MAX_ROUTER_ERRORS	10
 #define MIN_BATT_LEVEL		100
 #define GOOD				1
 #define FIVE_SECONDS		5000
 #define EMPTY				0
+
 #define MAX_WARNINGS 		10
 #define MAX_INFO			INFINITY
 #define MAX_DEBUG			INFINITY
@@ -113,6 +118,11 @@ extern "C" {
 	byte emulation_chosen;
 	byte usb_device_chosen;
 
+	//! Cached structs to keep
+	router_nmap_info_t* nmap;
+	sensor_configs_t* configs;
+	remote_sensor_data_t* data;
+
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~ FUNCTION DEFINITIONS ~~~~~~~~~~~~~~~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -124,33 +134,11 @@ extern "C" {
 	 * This does a memory check of the whole system, and checks
 	 * to see how much free mem there is.
 	 */
-	word memory_check(){
-		word freemem;
-		freemem = ((word)&freemem) - ((word)&__bss_end);
-		return freemem;
-	}
+	word memory_check();
 
 	/**
 	 * This function is accessible throughout the code repo
 	 * it allows the functions to return and terminate the process
 	 * as an error.
 	 */
-	void error(void* line, void* function){
-
-	//! Print if defined
-	#ifdef DEBUG_SERIAL
-		printf("[ERROR]: %d, %s", (int)line,  (char*)function);
-	#endif
-	#ifdef DEBUG_LEDs
-		debug_api.print_error(FATAL, FATAL_ERROR);
-		debug_api.set_leds(FATAL_ERROR);
-	#endif
-		//! Disconnect the device.
-		usbDeviceDisconnect();
-
-	#ifdef SELECT_BUTTON_2
-		//! Infinite loop hangs the system
-		for(;;);
-	#endif
-		reset_device();
-	}
+	void error(void* line, void* function);

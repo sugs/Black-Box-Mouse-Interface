@@ -52,68 +52,41 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-Arduino_ADK_USB_HOST.lss \
-
-FLASH_IMAGE += \
-Arduino_ADK_USB_HOST.hex \
-
-EEPROM_IMAGE += \
-Arduino_ADK_USB_HOST.eep \
+USB_Device.lss \
 
 SIZEDUMMY += \
 sizedummy \
 
-AVRDUDEDUMMY += \
-avrdudedummy \
-
 
 # All Target
-all: Arduino_ADK_USB_HOST.elf secondary-outputs
+all: USB_Device.elf secondary-outputs
 
 # Tool invocations
-Arduino_ADK_USB_HOST.elf: $(OBJS) $(USER_OBJS)
+USB_Device.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -Wl,-Map,Arduino_ADK_USB_HOST.map,--cref -L"/Users/francispapineau/Documents/4th year project/Source Code/Black-Box-Mouse-Interface/Arduino ADK USB Host" -mmcu=atmega16 -o "Arduino_ADK_USB_HOST.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-g++ -Wl,-Map,USB_Device.map,--cref -mmcu=atmega2560 -o "USB_Device.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-Arduino_ADK_USB_HOST.lss: Arduino_ADK_USB_HOST.elf
+USB_Device.lss: USB_Device.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S Arduino_ADK_USB_HOST.elf  >"Arduino_ADK_USB_HOST.lss"
+	-avr-objdump -h -S USB_Device.elf  >"USB_Device.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Arduino_ADK_USB_HOST.hex: Arduino_ADK_USB_HOST.elf
-	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -O ihex Arduino_ADK_USB_HOST.elf  "Arduino_ADK_USB_HOST.hex"
-	@echo 'Finished building: $@'
-	@echo ' '
-
-Arduino_ADK_USB_HOST.eep: Arduino_ADK_USB_HOST.elf
-	@echo 'Create eeprom image (ihex format)'
-	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Arduino_ADK_USB_HOST.elf  "Arduino_ADK_USB_HOST.eep"
-	@echo 'Finished building: $@'
-	@echo ' '
-
-sizedummy: Arduino_ADK_USB_HOST.elf
+sizedummy: USB_Device.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega16 Arduino_ADK_USB_HOST.elf
-	@echo 'Finished building: $@'
-	@echo ' '
-
-avrdudedummy: Arduino_ADK_USB_HOST.elf
-	@echo 'Invoking: AVRDude'
-	/usr/local/CrossPack-AVR-20120217/bin/avrdude -pnull -Uflash:w:Arduino_ADK_USB_HOST.hex:a
+	-avr-size --format=avr --mcu=atmega2560 USB_Device.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EEPROM_IMAGE)$(ELFS)$(FLASH_IMAGE)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(AVRDUDEDUMMY)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) Arduino_ADK_USB_HOST.elf
+	-$(RM) $(OBJS)$(C_DEPS)$(ELFS)$(LSS)$(S_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C++_DEPS)$(ASM_DEPS)$(CC_DEPS)$(CPP_DEPS)$(C_UPPER_DEPS)$(SIZEDUMMY) USB_Device.elf
 	-@echo ' '
 
-secondary-outputs: $(LSS) $(FLASH_IMAGE) $(EEPROM_IMAGE) $(SIZEDUMMY) $(AVRDUDEDUMMY)
+secondary-outputs: $(LSS) $(SIZEDUMMY)
 
 .PHONY: all clean dependents
 .SECONDARY:

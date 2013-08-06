@@ -131,15 +131,9 @@ class sensor_configs_t {
 
 	//! For each sensor
 		byte sensor_id;
-		byte sensor_speed;
 		byte sensor_data_type; //! 0 = int, 2 = float, 3 = double
-
-		//! Individual channel configuration.
-		//! Needs to cycle through each channel
-		class channels_t {
-			byte channel_id;
-			byte data_type; //! 0 = Analog, 1 = Digital
-		}channel_configs;
+		byte data_size;
+		byte number_of_channels;
 };
 
 // *************************************************
@@ -152,7 +146,7 @@ class remote_sensor_data_t {
 		//! from each channel.
 		byte channel_id;
 		word channel_data;
-	}channels;
+	}channels[1];
 };
 
 // *************************************************

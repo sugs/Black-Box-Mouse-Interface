@@ -5,8 +5,8 @@
  *      Author: fjpapin
  */
 
-#include "../System_Defines/Main_Defines.h"
 #include "USB_State_Machine.h"
+#include "../System_Defines/Main_Defines.h"
 
 //! Setup the state machine
 USB_STATE_MACHINE::USB_STATE_MACHINE(){
@@ -28,8 +28,8 @@ void USB_STATE_MACHINE::move_state_forward(){
 
 	current_state = next_state;
 	next_state ++;
-	if(next_state == 13){
-		next_state = LOCAL_PACKET_WAIT;
+	if(next_state == 7){
+		next_state = LOCAL_RESET;
 	}
 }
 

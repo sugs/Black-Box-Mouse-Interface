@@ -8,7 +8,7 @@
 #ifndef USB_DEVICE_IMPLEMENTATION_H_
 #define USB_DEVICE_IMPLEMENTATION_H_
 
-#include "../System_Defines/Includes.h"
+#include "System_Defines/Main_Defines.h"
 
 /**
  	// GENERAL INFO ABOUT USB DEVICE FUNCTIONS
@@ -193,10 +193,58 @@
 class USB_DEVICE {
 
 	private:
-		void _setup_rf_network();
+    	//! The pointer to the data structure
+		byte* _packet_buffer;
+
+        //! The packet id
+        word _packet_id;
+
+        //! The packet size
+        byte _packet_size;
+
+        //! The mutex for the packet in the queue
+        byte _packet_in_sending_queue;
+
+        //! The sending packet mutex
+        byte _sending_mutex;
+
+        //! The pointers to changing data
+        //! Mouse
+        byte* buttons_mouse;
+        word* wheel_mouse;
+        word* x_axis_mouse;
+        word* y_axis_mouse;
+
+        /**
+         * Init the rf network
+         */
+		void _init_rf_network();
+
+		/**
+		 * Setup the usb report parameter pointers
+		 */
+		void _setup_usb_report_params();
+
+		/**
+		 * Creates a usb report frame to send
+		 */
+		void _create_usb_report_frame();
+
+		/**
+		 * Sends the usb report
+		 */
+		void _send_usb_report_frame();
 
 	public:
 
+		/**
+		 * The class constructor
+		 */
+		USB_DEVICE();
+
+		/**
+		 * Runs the usb device
+		 */
 		void run_usb();
 };
 
