@@ -1,7 +1,4 @@
-
-	USB_Device_Implementation.h / USB_Implementation.cpp
-		- finish implementation
-		
+	
 	Hardware_Defines.h
 		- Port Maps
 		
