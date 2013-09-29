@@ -8,6 +8,4 @@
 	<rts value="rts430x.lib"/>
 	<defaultAssemblyOnly value="false"/>
 	<deviceFamily value="MSP430"/>
-	<connection value="common/targetdb/connections/TIMSP430-USB.xml"/>
-	<isTargetManual value="false"/>
 </projectOptions>

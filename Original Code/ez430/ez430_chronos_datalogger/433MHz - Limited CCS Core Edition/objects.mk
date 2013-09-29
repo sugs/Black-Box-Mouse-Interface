@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -l"rts430x.lib"
+LIBS := $(GEN_CMDS_QUOTED) rts430x.lib
 

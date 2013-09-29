@@ -22,14 +22,14 @@ C_DEPS += \
 ./driver/rf1a.pp 
 
 C_DEPS__QUOTED += \
-"driver\ports.pp" \
-"driver\radio.pp" \
-"driver\rf1a.pp" 
+"driver/ports.pp" \
+"driver/radio.pp" \
+"driver/rf1a.pp" 
 
 OBJS__QUOTED += \
-"driver\ports.obj" \
-"driver\radio.obj" \
-"driver\rf1a.obj" 
+"driver/ports.obj" \
+"driver/radio.obj" \
+"driver/rf1a.obj" 
 
 C_SRCS__QUOTED += \
 "../driver/ports.c" \
