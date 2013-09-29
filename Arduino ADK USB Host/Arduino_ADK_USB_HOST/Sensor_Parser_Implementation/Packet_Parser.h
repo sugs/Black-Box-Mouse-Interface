@@ -103,6 +103,7 @@ class PACKET_PARSER {
 		 *
 		 * @param packet - String*
 		 * @return bool
+		 *
 		 */
 		static bool _check_packet_integrity(String* packet);
 
